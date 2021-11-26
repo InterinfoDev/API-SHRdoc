@@ -86,3 +86,15 @@ Here is a JSON representation of request.
    }
 }
 ```
+
+### HTTP Response when Failed
+```json
+{
+    "status": "fail",
+    "code": 500,
+    "message": [
+        "登入失敗"
+    ],
+    "data": {}
+}
+```
