@@ -18,7 +18,7 @@ POST
 
 | Key | Value | Type | Description |
 |:----------|:-------------|:-----|:------------|
-| request | {"uid:"admin","pwd":"1234"} | Object | 請將帳號密碼組成物件 |
+| request | {uid:admin,pwd:1234} | Object | 請將帳號密碼組成物件 |
 
 
 ### JSON representation
