@@ -1,4 +1,4 @@
-# appAttendDetail
+# appSalaryQuery
 
 取得指定年月、員工薪資條明細資訊
 
