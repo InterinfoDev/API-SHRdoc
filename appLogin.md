@@ -46,6 +46,10 @@ Here is a JSON representation of request.
 ### HTTP Response when Successful
 ```json
 {
+   "status":"success",
+   "message":[
+      "回傳成功"
+   ],
    "data":{
       "uid":"99660492215776850458",
       "right":"xxxxx",
