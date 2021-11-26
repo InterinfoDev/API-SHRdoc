@@ -43,7 +43,7 @@ Here is a JSON representation of request.
 | **pwd** | String | 密碼 |
 
 
-### HTTP Response Code 200
+### HTTP Response when Successful
 ```json
 {
    "data":{
