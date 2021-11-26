@@ -271,9 +271,9 @@ Here is a JSON representation of request.
 ```json
 {
     "status": "fail",
-    "code": 500,
+    "code": 406,
     "message": [
-        "登入失敗"
+        "系統錯誤"
     ],
     "data": {}
 }
