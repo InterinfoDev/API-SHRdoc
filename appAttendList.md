@@ -20,16 +20,7 @@ POST
 |:----------|:-------------|:-----|:------------|
 | uid | 98599308101484732326 | String | 需透過appLogin取得
 | right | 51341911904173543336756162544864820 | String | 需透過appLogin取得 |
-| request | {'depno':'1', 'ym':'202104', 'empid':'', 'cpnyid':'1'} | Object | 查詢條件
-
-### request value structure
-
-| Key | Value | Type | Description
-|:----------|:-------------|:-----|:------------|
-| attendYM | 202104 | String | 查詢年月 |
-| comopanyId | 97090920| String | 公司別代號 |
-| deptNumber | 1 | String | 部門代號 |
-| empid | admin| String | 員工編號 |
+| request | {'deptNumber':'1', 'attendYM':'202104', 'empid':'', 'companyId':'1'} | Object | 查詢條件
 
 
 ### JSON representation
@@ -42,9 +33,9 @@ Here is a JSON representation of request.
     "right":"51341911904173543336756162544864820",
     "request":{
         "attendYM":"202104", 
-        "comopanyId":"97090920",
+        "companyId":"97090920",
         "deptNumber":"1",
-        "empid':''
+        "empid":"admin"
     }
 }
 ```
@@ -57,6 +48,15 @@ Here is a JSON representation of request.
 | **uid**   | String | 加密後帳號 |
 | **right** | String | 加密後系統相關資料 |
 | **request** | 要求本文 |
+
+### request Properties
+
+| Key | Value | Type | Description
+|:----------|:-------------|:-----|:------------|
+| attendYM | 202104 | String | 查詢年月 |
+| companyId | 97090920| String | 公司別代號 |
+| deptNumber | 1 | String | 部門代號 |
+| empid | admin| String | 員工編號 |
 
 
 ### HTTP Response when Successful
