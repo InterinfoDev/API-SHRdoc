@@ -1,6 +1,6 @@
 # appAttendDetail
 
-取得考勤列表資訊
+取得考勤指定年月、員工詳細資料
 
 ### HTTP Request
 
