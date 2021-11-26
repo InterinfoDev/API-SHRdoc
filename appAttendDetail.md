@@ -58,6 +58,11 @@ Here is a JSON representation of request.
 ### HTTP Response when Successful
 ```json
 {
+	{
+   "status":"success",
+   "message":[
+      "回傳成功"
+   ],
    "data":{
       "main":{
          "id":"attendInfo",
@@ -183,7 +188,7 @@ Here is a JSON representation of request.
                      "type":"array",
                      "format":"n/a"
                   },
-		  "overtimeInfo":{
+                  "overtimeInfo":{
                      "id":"overtimeInfo",
                      "name":"加班說明",
                      "value":[
