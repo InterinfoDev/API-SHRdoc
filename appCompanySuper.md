@@ -1,4 +1,4 @@
-# appAttendDetail
+# appCompanySuper
 
 取得公司別可視範圍資料
 
