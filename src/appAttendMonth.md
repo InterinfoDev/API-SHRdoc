@@ -1,9 +1,7 @@
 # appAttendMonth 
-
 取得員工指定某年月考勤資訊
 
 ### HTTP Request
-
 ```
 https://114.34.125.246:8090/servlet/HRNative/appAttendMonth
 ```
@@ -13,20 +11,15 @@ https://114.34.125.246:8090/servlet/HRNative/appAttendMonth
 POST
 ```
 
-
 ### Request body
-
 | Key | Value | Type | Description |
 |:----------|:-------------|:-----|:------------|
 | uid | 98599308101484732326 | String | 需透過appLogin取得 |
 | right | 51341911904173543336756162544864820 | String | 需透過appLogin取得 |
 | request | {empid:admin , attendYM:202111} | Object | 查詢條件 |
 
-
 ### JSON representation
-
 Here is a JSON representation of request.
-
 ```json
 {
     "uid":"98599308101484732326",
@@ -37,18 +30,14 @@ Here is a JSON representation of request.
     }
 }
 ```
-
-
 ### Properties
-
 | Property | Type | Description |
 |:---------|:-----|:------------|
-| **uid**   | String | 加密後帳號 |
-| **right** | String | 加密後系統相關資料 |
-| **request** | 要求本文 |
+| uid   | String | 加密後帳號 |
+| right | String | 加密後系統相關資料 |
+| request | 要求本文 |
 
-### request Properties
-
+### Request Properties
 | Key | Value | Type | Description
 |:----------|:-------------|:-----|:------------|
 | empid | admin | String | 員工編號 |
@@ -162,6 +151,7 @@ Here is a JSON representation of request.
     "data": {}
 }
 ```
+
 ### HTTP Response when Exception
 ```json
 {
