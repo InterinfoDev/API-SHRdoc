@@ -38,10 +38,10 @@ Here is a JSON representation of request.
 | request | 要求本文 |
 
 ### Request Properties
-| Key | Value | Type | Description
-|:----------|:-------------|:-----|:------------|
-| empid | admin | String | 員工編號 |
-| attendYM | 202111 | String | 考勤年月 |
+| Key | Value | Type | Description | Required | Format |
+|:----------|:-------------|:-----|:------------|:------------|:------------|
+| empid | admin | String | 員工編號 | Y | n/a |
+| attendYM | 202111 | String | 考勤年月 | Y | AC(YYYYmm) |
 
 ### HTTP Response when Successful
 ```json
