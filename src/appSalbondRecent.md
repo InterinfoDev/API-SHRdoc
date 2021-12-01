@@ -1,9 +1,7 @@
 # appSalbondRecent
-
-取得最近一次獎金發放資訊
+取得某員工最近一次獎金發放資訊
 
 ### HTTP Request
-
 ```
 https://114.34.125.246:8090/servlet/HRNative/appSalbondRecent
 ```
@@ -13,44 +11,36 @@ https://114.34.125.246:8090/servlet/HRNative/appSalbondRecent
 POST
 ```
 
-
 ### Request body
-
 | Key | Value | Type | Description |
 |:----------|:-------------|:-----|:------------|
 | uid | 98599308101484732326 | String | 需透過appLogin取得
 | right | 51341911904173543336756162544864820 | String | 需透過appLogin取得 |
-| request | {salaryPwd:123454656} | Object | 查詢條件
-
+| request | {empid:admin} | Object | 查詢條件
 
 ### JSON representation
-
 Here is a JSON representation of request.
-
 ```json
 {
     "uid":"98599308101484732326",
     "right":"51341911904173543336756162544864820",
     "request":{
-        "salbondPwd":"123457334"
+        "empid":"admin"
     }
 }
 ```
 
-
 ### Properties
-
 | Property | Type | Description |
 |:---------|:-----|:------------|
-| **uid**   | String | 加密後帳號 |
-| **right** | String | 加密後系統相關資料 |
-| **request** | 要求本文 |
+| uid   | String | 加密後帳號 |
+| right | String | 加密後系統相關資料 |
+| request | Object | 要求本文 |
 
-### request Properties
-
-| Key | Value | Type | Description
-|:----------|:-------------|:-----|:------------|
-| salbondPwd | 123457334 | String | 獎金條密碼 |
+### Request Properties
+| Key | Value | Type | Description | Required | Format |
+|:----------|:-------------|:-----|:------------|:------------|:------------|
+| empid | admin | String | 員工編號 | Y | n/a |
 
 
 ### HTTP Response when Successful
@@ -91,9 +81,21 @@ Here is a JSON representation of request.
 ```json
 {
     "status": "fail",
+    "code": 500,
+    "message": [
+        "XXX"
+    ],
+    "data": {}
+}
+```
+
+### HTTP Response when Exception
+```json
+{
+    "status": "fail",
     "code": 406,
     "message": [
-        "系統錯誤"
+        "XXX"
     ],
     "data": {}
 }
