@@ -97,7 +97,7 @@ Here is a JSON representation of request.
     "status": "fail",
     "code": 500,
     "message": [
-        "登入失敗"
+        "XXX"
     ],
     "data": {}
 }
