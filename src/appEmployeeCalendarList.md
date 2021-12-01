@@ -65,12 +65,12 @@ Case 3 . Here is a JSON representation of request.
 | Case No | Key | Value | Type | Description | Required | Format |
 |:----------|:----------|:-------------|:-----|:------------|:------------|:------------|
 | 1 | empid | admin | String | 員工編號 | Y | n/a |
-|   | eventStartDate | 20211101 | String | 事件起始日期 | N | AC(YYYYmmdd) |
-|   | eventEndDate | 20211130 | String | 事件結束日期 | N | AC(YYYYmmdd) |
+|   | eventStartDate | 20211101 | String | 事件起始日期 | Y | AC(YYYYmmdd) |
+|   | eventEndDate | 20211130 | String | 事件結束日期 | Y | AC(YYYYmmdd) |
 | 2 | empid | admin | String | 員工編號 | Y | n/a |
-|   | eventYM | 202111 | String | 事件年月 | N | AC(YYYYmm) |
+|   | eventYM | 202111 | String | 事件年月 | Y | AC(YYYYmm) |
 | 3 | empid | admin | String | 員工編號 | Y | n/a |
-|   | eventDate | 20211130 | String | 事件日期 | N | AC(YYYYmmdd) |
+|   | eventDate | 20211130 | String | 事件日期 | Y | AC(YYYYmmdd) |
 
 ### HTTP Response when Successful
 ```json
