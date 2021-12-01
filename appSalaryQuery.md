@@ -1,9 +1,7 @@
 # appSalaryQuery
-
 取得指定年月、員工薪資條明細資訊
 
 ### HTTP Request
-
 ```
 https://114.34.125.246:8090/servlet/HRNative/appSalaryQuery
 ```
@@ -13,51 +11,40 @@ https://114.34.125.246:8090/servlet/HRNative/appSalaryQuery
 POST
 ```
 
-
 ### Request body
-
 | Key | Value | Type | Description |
 |:----------|:-------------|:-----|:------------|
 | uid | 98599308101484732326 | String | 需透過appLogin取得
 | right | 51341911904173543336756162544864820 | String | 需透過appLogin取得 |
-| request | {salaryYM:202104, empid:admin , salaryCount:1 , salaryPwd:123457334} | Object | 查詢條件
-
+| request | {salaryYM:202111 , salaryCount:1 , empid:admin} | Object | 查詢條件
 
 ### JSON representation
-
 Here is a JSON representation of request.
-
 ```json
 {
     "uid":"98599308101484732326",
     "right":"51341911904173543336756162544864820",
     "request":{
-        "salaryYM":"202104", 
+        "salaryYM":"202111", 
         "salaryCount":"1",
-        "salaryPwd":"123457334",
         "empid":"admin"
     }
 }
 ```
 
-
 ### Properties
-
 | Property | Type | Description |
 |:---------|:-----|:------------|
-| **uid**   | String | 加密後帳號 |
-| **right** | String | 加密後系統相關資料 |
-| **request** | 要求本文 |
+| uid   | String | 加密後帳號 |
+| right | String | 加密後系統相關資料 |
+| request | Object | 要求本文 |
 
-### request Properties
-
-| Key | Value | Type | Description
-|:----------|:-------------|:-----|:------------|
-| salaryYM | 202104 | String | 薪資年月 |
-| salaryCount | 1 | String | 發薪次數 |
-| salaryPwd | 123457334 | String | 薪資條密碼 |
-| empid | admin | String | 員工編號 |
-
+### Request Properties
+| Key | Value | Type | Description | Required | Format |
+|:----------|:-------------|:-----|:------------|:------------|:------------|
+| salaryYM | 202111 | String | 薪資年月 | Y | AC(YYYYmm) |
+| salaryCount | 1 | String | 發薪次數 | Y | n/a |
+| empid | admin | String | 員工編號 | Y | n/a |
 
 ### HTTP Response when Successful
 ```json
@@ -674,15 +661,26 @@ Here is a JSON representation of request.
       }
    }
 }
-```
 
 ### HTTP Response when Failed
 ```json
 {
     "status": "fail",
+    "code": 500,
+    "message": [
+        "XXX"
+    ],
+    "data": {}
+}
+```
+
+### HTTP Response when Exception
+```json
+{
+    "status": "fail",
     "code": 406,
     "message": [
-        "系統錯誤"
+        "XXX"
     ],
     "data": {}
 }
