@@ -58,6 +58,20 @@ Here is a JSON representation of request.
          "type":"boolean",
          "format":"n/a"
       },
+      "identifier":{
+         "id":"identifier",
+         "name":"唯一識別碼",
+         "value":"fb59dfaa-33c0-4f83-b409-ee83eaf6d6a8",
+         "type":"string",
+         "format":"n/a"
+      },
+      "key":{
+         "id":"key",
+         "name":"密鑰",
+         "value":"32262008498747441193712198021232260366087649257856381618231",
+         "type":"string",
+         "format":"n/a"
+      },
       "properties":{
          "format":{
             "n/a":""
