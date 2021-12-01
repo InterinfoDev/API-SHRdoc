@@ -1,9 +1,7 @@
 # appGpsPunchCard
-
 GPS線上打卡
 
 ### HTTP Request
-
 ```
 https://114.34.125.246:8090/servlet/HRNative/appGpsPunchCard
 ```
@@ -13,20 +11,15 @@ https://114.34.125.246:8090/servlet/HRNative/appGpsPunchCard
 POST
 ```
 
-
 ### Request body
-
 | Key | Value | Type | Description |
 |:----------|:-------------|:-----|:------------|
 | uid | 98599308101484732326 | String | 需透過appLogin取得
 | right | 51341911904173543336756162544864820 | String | 需透過appLogin取得 |
-| request | {punchDate:20211126 , punchTime:1706 , gps:{lat:21.23444,lon:345.32344} , ip :117.24.10.125 , empid: admin} | Object | 打卡資訊
-
+| request | {punchDate:20211126 , punchTime:1706 , gps:{latitude:21.23444,longitude:345.32344} , ip :117.24.10.125 , empid: admin} | Object | 打卡資訊
 
 ### JSON representation
-
 Here is a JSON representation of request.
-
 ```json
 {
     "uid":"98599308101484732326",
@@ -46,27 +39,23 @@ Here is a JSON representation of request.
 }
 ```
 
-
 ### Properties
-
 | Property | Type | Description |
 |:---------|:-----|:------------|
-| **uid**   | String | 加密後帳號 |
-| **right** | String | 加密後系統相關資料 |
-| **request** | 要求本文 |
+| uid   | String | 加密後帳號 |
+| right | String | 加密後系統相關資料 |
+| request | Object | 要求本文 |
 
-### request Properties
-
-| Key | Value | Type | Description
-|:----------|:-------------|:-----|:------------|
-| punchDate | 20211126 | String | 打卡日期 |
-| punchTime | 1706 | String | 打卡時間 |
-| gps |  | Object | GPS定位點資訊 |
-| lat | 21.23444 | Deciaml | 緯度 |
-| lon | 345.32344 | Deciaml | 經度 |
-| ip | 117.24.10.125 | String | 使用者裝置IP |
-| empid | admin| String | 員工編號 |
-
+### Request Properties
+| Key | Value | Type | Description | Required | Format |
+|:----------|:-------------|:-----|:------------|:------------|:------------|
+| punchDate | 20211130 | String | 打卡日期 | Y | AC(YYYYmmdd) |
+| punchTime | 1801 | String | 打卡時間 | Y | TIME(HHmm) |
+| gps |  | Object | GPS資訊 | Y | n/a |
+| latitude | 21.23444 | Decimal | 緯度 | Y | GPS Location Data |
+| longitude | 345.32344 | Decimal | 經度 | Y | GPS Location Data |
+| ip | 117.24.10.125 | String | IP位置 | Y | IP Address(xx.xx.xx.xx) |
+| empid | admin | String | 員工編號 | Y | n/a |
 
 ### HTTP Response when Successful
 ```json
@@ -157,9 +146,21 @@ Here is a JSON representation of request.
 ```json
 {
     "status": "fail",
+    "code": 500,
+    "message": [
+        "XXX"
+    ],
+    "data": {}
+}
+```
+
+### HTTP Response when Exception
+```json
+{
+    "status": "fail",
     "code": 406,
     "message": [
-        "系統錯誤"
+        "XXX"
     ],
     "data": {}
 }
