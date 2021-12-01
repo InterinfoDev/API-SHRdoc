@@ -1,9 +1,7 @@
 # appHomePage
-
-取得APP個人首頁資訊
+取得首頁資訊
 
 ### HTTP Request
-
 ```
 https://114.34.125.246:8090/servlet/HRNative/appHomePage
 ```
@@ -13,37 +11,37 @@ https://114.34.125.246:8090/servlet/HRNative/appHomePage
 POST
 ```
 
-
 ### Request body
-
 | Key | Value | Type | Description |
 |:----------|:-------------|:-----|:------------|
 | uid | 98599308101484732326 | String | 需透過appLogin取得 |
 | right | 51341911904173543336756162544864820 | String | 需透過appLogin取得 |
-| empid | admin | String | 需透過appLogin取得 |
+| request | {empid:admin} | Object | 將帳號組成物件 |
 
 
 ### JSON representation
-
 Here is a JSON representation of request.
-
 ```json
 {
     "uid":"98599308101484732326",
     "right":"51341911904173543336756162544864820",
-    "empid":"admin"
+    "request":{
+    	"empid":"admin"
+    }
 }
 ```
 
-
 ### Properties
-
 | Property | Type | Description |
 |:---------|:-----|:------------|
-| **uid**   | String | 加密後帳號 |
-| **right** | String | 加密後系統相關資料 |
-| **empid** | String | 員工編號 |
+| uid   | String | 加密後帳號 |
+| right | String | 加密後系統相關資料 |
+| request | Object | 要求本文 |
 
+### Request Properties
+| Property | Type | Description | 
+|:---------|:-----|:------------|
+| uid   | String | 登入帳號 |
 
 ### HTTP Response when Successful
 ```json
@@ -285,6 +283,7 @@ Here is a JSON representation of request.
     "data": {}
 }
 ```
+
 ### HTTP Response when Exception
 ```json
 {
