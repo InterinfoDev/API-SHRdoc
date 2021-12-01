@@ -32,7 +32,7 @@ Here is a JSON representation of request.
 |:---------|:-----|:------------|
 | request | Object | 要求本文 |
 
-### request Properties
+### Request Properties
 | Property | Type | Description | 
 |:---------|:-----|:------------|
 | uid   | String | 登入帳號 |
