@@ -46,7 +46,6 @@ Here is a JSON representation of request.
 | deptNumber | 1 | String | 部門代號 | N | n/a |
 | empid | admin | String | 員工編號 | Y | n/a |
 
-
 ### HTTP Response when Successful
 ```json
 {
