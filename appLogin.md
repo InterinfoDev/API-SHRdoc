@@ -38,7 +38,7 @@ Here is a JSON representation of request.
 
 | Property | Type | Description |
 |:---------|:-----|:------------|
-| **request** | O | 要求本文 |
+| request | Object | 要求本文 |
 
 ### request Properties
 
