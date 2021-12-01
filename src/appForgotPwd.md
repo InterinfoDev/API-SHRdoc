@@ -56,7 +56,9 @@ Here is a JSON representation of request.
                "type":"string",
                "format":"email"
             }
-         }
+         },
+         "type":"object",
+         "format":"n/a"
       },
       "properties":{
          "format":{
