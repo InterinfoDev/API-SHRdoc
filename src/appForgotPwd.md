@@ -14,7 +14,7 @@ POST
 ### Request body
 | Key | Value | Type | Description |
 |:----------|:-------------|:-----|:------------|
-| request | {uid:admin} | Object | 帳號 |
+| request | {uid:admin} | Object | 將帳號組成物件 |
 
 
 ### JSON representation
