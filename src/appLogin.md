@@ -1,9 +1,7 @@
 # appLogin
-
 驗證使用者帳號密碼
 
 ### HTTP Request
-
 ```
 https://114.34.125.246:8090/servlet/HRNative/appLogin
 ```
@@ -13,18 +11,13 @@ https://114.34.125.246:8090/servlet/HRNative/appLogin
 POST
 ```
 
-
 ### Request body
-
 | Key | Value | Type | Description |
 |:----------|:-------------|:-----|:------------|
 | request | {uid:admin,pwd:1234} | Object | 請將帳號密碼組成物件 |
 
-
 ### JSON representation
-
 Here is a JSON representation of request.
-
 ```json
 {
   "request":{
@@ -35,19 +28,15 @@ Here is a JSON representation of request.
 ```
 
 ### Properties
-
 | Property | Type | Description |
 |:---------|:-----|:------------|
 | request | Object | 要求本文 |
 
 ### Request Properties
-
 | Key | Value | Type | Description
 |:----------|:-------------|:-----|:------------|
 | uid | admin | String | 登入帳號 |
 | pwd | 1234 | String | 登入密碼 |
-
-
 
 ### HTTP Response when Successful
 ```json
@@ -108,6 +97,7 @@ Here is a JSON representation of request.
     "data": {}
 }
 ```
+
 ### HTTP Response when Exception
 ```json
 {
