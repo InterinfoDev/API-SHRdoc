@@ -41,7 +41,7 @@ Here is a JSON representation of request.
 ### Request Properties
 | Property | Type | Description | 
 |:---------|:-----|:------------|
-| uid   | String | 登入帳號 |
+| empid   | String | 登入帳號 |
 
 ### HTTP Response when Successful
 ```json
