@@ -1,9 +1,7 @@
 # appAttendDetail
-
-取得考勤指定年月、員工詳細資料
+取得指定年月、員工考勤詳細資料
 
 ### HTTP Request
-
 ```
 https://114.34.125.246:8090/servlet/HRNative/appAttendDetail
 ```
@@ -13,20 +11,15 @@ https://114.34.125.246:8090/servlet/HRNative/appAttendDetail
 POST
 ```
 
-
 ### Request body
-
 | Key | Value | Type | Description |
 |:----------|:-------------|:-----|:------------|
 | uid | 98599308101484732326 | String | 需透過appLogin取得
 | right | 51341911904173543336756162544864820 | String | 需透過appLogin取得 |
 | request | {attendYM:202104, empid:admin} | Object | 查詢條件
 
-
 ### JSON representation
-
 Here is a JSON representation of request.
-
 ```json
 {
     "uid":"98599308101484732326",
@@ -38,21 +31,18 @@ Here is a JSON representation of request.
 }
 ```
 
-
 ### Properties
-
 | Property | Type | Description |
 |:---------|:-----|:------------|
-| **uid**   | String | 加密後帳號 |
-| **right** | String | 加密後系統相關資料 |
-| **request** | 要求本文 |
+| uid   | String | 加密後帳號 |
+| right | String | 加密後系統相關資料 |
+| request | 要求本文 |
 
-### request Properties
-
-| Key | Value | Type | Description
-|:----------|:-------------|:-----|:------------|
-| attendYM | 202104 | String | 查詢年月 |
-| empid | admin| String | 員工編號 |
+### Request Properties
+| Key | Value | Type | Description | Required | Format |
+|:----------|:-------------|:-----|:------------|:------------|:------------|
+| attendYM | 202104 | String | 員工編號 | Y | AC(YYYYmmdd) |
+| empid | admin | String | 員工編號 | Y | n/a |
 
 
 ### HTTP Response when Successful
@@ -316,9 +306,21 @@ Here is a JSON representation of request.
 ```json
 {
     "status": "fail",
+    "code": 500,
+    "message": [
+        "XXX"
+    ],
+    "data": {}
+}
+```
+
+### HTTP Response when Exception
+```json
+{
+    "status": "fail",
     "code": 406,
     "message": [
-        "系統錯誤"
+        "XXX"
     ],
     "data": {}
 }
