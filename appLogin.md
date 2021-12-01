@@ -34,13 +34,19 @@ Here is a JSON representation of request.
 }
 ```
 
-
 ### Properties
 
 | Property | Type | Description |
 |:---------|:-----|:------------|
-| **uid**   | String | 帳號 |
-| **pwd** | String | 密碼 |
+| **request** | O | 要求本文 |
+
+### request Properties
+
+| Key | Value | Type | Description
+|:----------|:-------------|:-----|:------------|
+| uid | admin | String | 登入帳號 |
+| pwd | 1234 | String | 登入密碼 |
+
 
 
 ### HTTP Response when Successful
