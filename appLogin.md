@@ -108,3 +108,14 @@ Here is a JSON representation of request.
     "data": {}
 }
 ```
+### HTTP Response when Exception
+```json
+{
+    "status": "fail",
+    "code": 406,
+    "message": [
+        "XXX"
+    ],
+    "data": {}
+}
+```
