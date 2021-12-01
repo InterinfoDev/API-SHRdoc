@@ -36,7 +36,7 @@ Here is a JSON representation of request.
 |:---------|:-----|:------------|
 | uid   | String | 加密後帳號 |
 | right | String | 加密後系統相關資料 |
-| request | 要求本文 |
+| request | Object | 要求本文 |
 
 ### Request Properties
 | Key | Value | Type | Description | Required | Format |
