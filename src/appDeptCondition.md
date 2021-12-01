@@ -1,9 +1,9 @@
-# appAttendDetail
+# appDeptCondition
 取得某員工可視部門資料
 
 ### HTTP Request
 ```
-https://114.34.125.246:8090/servlet/HRNative/appDpetCondition
+https://114.34.125.246:8090/servlet/HRNative/appDeptCondition
 ```
 
 ### HTTP Request Mehod
