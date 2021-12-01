@@ -30,6 +30,7 @@ Here is a JSON representation of request.
     }
 }
 ```
+
 ### Properties
 | Property | Type | Description |
 |:---------|:-----|:------------|
