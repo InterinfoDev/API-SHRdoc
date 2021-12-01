@@ -39,9 +39,9 @@ Here is a JSON representation of request.
 | request | Object | 要求本文 |
 
 ### Request Properties
-| Key | Value | Type | Description
-|:----------|:-------------|:-----|:------------|
-| empid | admin | String | 員工編號 |
+| Key | Value | Type | Description | Required | Format |
+|:----------|:-------------|:-----|:------------|:------------|:------------|
+| empid | admin | String | 員工編號 | Y | n/a |
 
 ### HTTP Response when Successful
 ```json
