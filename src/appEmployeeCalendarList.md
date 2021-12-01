@@ -62,8 +62,8 @@ Case 3 . Here is a JSON representation of request.
 | request | Object | 要求本文 |
 
 ### Request Properties
-| Case No | Key | Value | Type | Description |
-|:----------|:----------|:-------------|:-----|:------------|
+| Case No | Key | Value | Type | Description | Required | Format |
+|:----------|:----------|:-------------|:-----|:------------|:------------|:------------|
 | 1 | empid | admin | String | 員工編號 | Y | n/a |
 |   | eventStartDate | 20211101 | String | 事件起始日期 | N | AC(YYYYmmdd) |
 |   | eventEndDate | 20211130 | String | 事件結束日期 | N | AC(YYYYmmdd) |
