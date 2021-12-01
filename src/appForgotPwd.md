@@ -32,14 +32,17 @@ Here is a JSON representation of request.
   }
 }
 ```
-
-
 ### Properties
 
 | Property | Type | Description |
 |:---------|:-----|:------------|
-| **uid**   | String | 帳號 |
+| **request** | Object | 要求本文 |
 
+### request Properties
+
+| Property | Type | Description |
+|:---------|:-----|:------------|
+| **uid**   | String | 登入帳號 |
 
 ### HTTP Response when Successful
 ```json
@@ -71,7 +74,6 @@ Here is a JSON representation of request.
    }
 }
 ```
-
 ### HTTP Response when Failed
 ```json
 {
