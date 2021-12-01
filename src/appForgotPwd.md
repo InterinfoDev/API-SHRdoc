@@ -1,9 +1,7 @@
 # appForgotPwd 
-
 執行忘記密碼
 
 ### HTTP Request
-
 ```
 https://114.34.125.246:8090/servlet/HRNative/appForgotPwd
 ```
@@ -13,18 +11,14 @@ https://114.34.125.246:8090/servlet/HRNative/appForgotPwd
 POST
 ```
 
-
 ### Request body
-
 | Key | Value | Type | Description |
 |:----------|:-------------|:-----|:------------|
 | request | {uid:admin} | Object | 帳號 |
 
 
 ### JSON representation
-
 Here is a JSON representation of request.
-
 ```json
 {
   "request":{
@@ -32,17 +26,16 @@ Here is a JSON representation of request.
   }
 }
 ```
-### Properties
 
+### Properties
 | Property | Type | Description |
 |:---------|:-----|:------------|
-| **request** | Object | 要求本文 |
+| request | Object | 要求本文 |
 
 ### request Properties
-
 | Property | Type | Description |
 |:---------|:-----|:------------|
-| **uid**   | String | 登入帳號 |
+| uid   | String | 登入帳號 |
 
 ### HTTP Response when Successful
 ```json
@@ -74,6 +67,7 @@ Here is a JSON representation of request.
    }
 }
 ```
+
 ### HTTP Response when Failed
 ```json
 {
@@ -85,6 +79,7 @@ Here is a JSON representation of request.
     "data": {}
 }
 ```
+
 ### HTTP Response when Exception
 ```json
 {
