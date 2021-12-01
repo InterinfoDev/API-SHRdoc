@@ -26,7 +26,7 @@ Here is a JSON representation of request.
     "right":"51341911904173543336756162544864820",
     "request":{
         "salaryYM":"202111", 
-        "salaryCount":"1",
+        "salaryCount":1,
         "empid":"admin"
     }
 }
@@ -43,7 +43,7 @@ Here is a JSON representation of request.
 | Key | Value | Type | Description | Required | Format |
 |:----------|:-------------|:-----|:------------|:------------|:------------|
 | salaryYM | 202111 | String | 薪資年月 | Y | AC(YYYYmm) |
-| salaryCount | 1 | String | 發薪次數 | Y | n/a |
+| salaryCount | 1 | Integer | 發薪次數 | Y | n/a |
 | empid | admin | String | 員工編號 | Y | n/a |
 
 ### HTTP Response when Successful
