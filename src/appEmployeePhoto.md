@@ -1,4 +1,4 @@
-# appEmployeeCondition
+# appEmployeePhoto
 取得特定員工照片資訊
 
 ### HTTP Request
