@@ -31,7 +31,7 @@ POST
 | 取得首頁 | appHomePage | Y | 取得首頁資訊 | AndyHou | 20211202 |
 | 驗證帳號密碼 | appLogin | Y | 驗證使用者帳號密碼 | AndyHou | 20211201 |
 | 發薪次數 | appSalaryCount | Y | 發薪次數資訊 | Kevin | 20211202 |
-| 驗證薪資條密碼 | appSalaryPwd | N | 驗證員工薪資條密碼(獎金通用) |  |  |
+| 驗證薪資條密碼 | appSalaryPwd | Y | 驗證員工薪資條密碼(獎金通用) | Kevin | 20211202 |
 | 薪資條明細 | appSalaryQuery | N | 取得指定年月、員工薪資條明細資訊 |  |  |
 | 最近一次薪資發放 | appSalaryRecent | N | 取得某員工最近一次薪資發放資訊 |  |  |
 | 獎金條明細 | appSalbondQuery | N | 取得指定年月、員工獎金條明細資訊 |  |  |
