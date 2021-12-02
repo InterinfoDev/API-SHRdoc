@@ -28,7 +28,7 @@ POST
 | 忘記密碼 | appForgotPwd | N | 執行忘記密碼 |  |  |
 | APP功能權限 | appFunctionRight | N | 取得員工APP功能資訊 |  |  |
 | 線上打卡 | appGpsPunchCardGPS | Y | 線上打卡 | AndyHou | 20211202 | 
-| 取得首頁 | appHomePage | N | 取得首頁資訊 |  |  |
+| 取得首頁 | appHomePage | Y | 取得首頁資訊 | AndyHou | 20211202 |
 | 驗證帳號密碼 | appLogin | Y | 驗證使用者帳號密碼 | AndyHou | 20211201 |
 | 發薪次數 | appSalaryCount | Y | 發薪次數資訊 | Kevin | 20211202 |
 | 驗證薪資條密碼 | appSalaryPwd | N | 驗證員工薪資條密碼(獎金通用) |  |  |
