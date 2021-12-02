@@ -36,4 +36,4 @@ POST
 | 最近一次薪資發放 | appSalaryRecent | N | 取得某員工最近一次薪資發放資訊 |  |  |
 | 獎金條明細 | appSalbondQuery | N | 取得指定年月、員工獎金條明細資訊 |  |  |
 | 最近一次獎金發放 | appSalbondRecent | N | 取得某員工最近一次獎金發放資訊 |  |  |
-| 體溫回報 | appBodyTemperature | N | 提供使用者回報體溫資訊 |  |  |
+| 體溫回報 | appBodyTemperature | Y | 提供使用者回報體溫資訊 | AndyHou | 20211202 |
