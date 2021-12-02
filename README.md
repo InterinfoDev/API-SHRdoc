@@ -18,12 +18,12 @@ POST
 | 考勤詳細 | appAttendDetail | N | 取得指定年月、員工考勤詳細資料 |  |  |
 | 考勤列表 | appAttendList | N | 取得考勤列表資訊 |  |  |
 | 年月考勤 | appAttendMonth | N | 取得員工指定某年月考勤資訊 |  |  |
-| 公司別權限 | appCompanySuper | N | 取得某員工公司別可視範圍資料 |  |  |
+| 公司別權限 | appCompanySuper | Y | 取得某員工公司別可視範圍資料 | AndyHou | 20211202 |
 | 夥伴查詢 | appContact | N | 取得夥伴查詢資料 |  |  |
-| 部門權限 | appDeptCondition | N | 取得某員工可視部門資料 |  |  |
+| 部門權限 | appDeptCondition | Y | 取得某員工可視部門資料 | AndyHou | 20211202 |
 | 特定員工行事曆 | appEmployeeCalendarList | N | 取得特定員工行事曆資訊 |  |  |
 | 個人行事曆詳細 | appEmployeeCalendarQuery | N | 取得員工個人行事曆特定事件詳細資料 |  |  |
-| 員工權限 | appEmployeeCondition | N | 取得某員工可視範圍員工資料 |  |  |
+| 員工權限 | appEmployeeCondition | Y | 取得某員工可視範圍員工資料 | AndyHou | 20211202 |
 | 員工照片 | appEmployeePhoto | N | 取得特定員工照片資訊 |  |  |
 | 忘記密碼 | appForgotPwd | N | 執行忘記密碼 |  |  |
 | APP功能權限 | appFunctionRight | N | 取得員工APP功能資訊 |  |  |
