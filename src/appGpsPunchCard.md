@@ -90,20 +90,6 @@ Here is a JSON representation of request.
                      "id":"punchResult",
                      "name":"實際打卡結果",
                      "value":{
-                        "isWarrning":{
-                           "id":"isWarrning",
-                           "name":"是否發生警示打卡",
-                           "value":true,
-                           "type":"boolean",
-                           "format":"n/a"
-                        },
-                        "warrningMessage":{
-                           "id":"warrningMessage",
-                           "name":"警示訊息",
-                           "value":"XXXXXXX",
-                           "type":"string",
-                           "format":"n/a"
-                        },
                         "isError":{
                            "id":"isError",
                            "name":"是否為錯誤打卡",
