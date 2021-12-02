@@ -17,7 +17,7 @@ POST
 |:----------|:----------|:----------|:----------|:----------|:----------|
 | 考勤詳細 | appAttendDetail | N | 取得指定年月、員工考勤詳細資料 |  |  |
 | 考勤列表 | appAttendList | Y | 取得考勤列表資訊 | AndyHou | 20211202 |
-| 年月考勤 | appAttendMonth | N | 取得員工指定某年月考勤資訊 |  |  |
+| 年月考勤 | appAttendMonth | Y | 取得員工指定某年月考勤資訊 | AndyHou | 20211202 |
 | 公司別權限 | appCompanySuper | Y | 取得某員工公司別可視範圍資料 | AndyHou | 20211202 |
 | 夥伴查詢 | appContact | Y | 取得夥伴查詢資料 | Kevin | 20211202 |
 | 部門權限 | appDeptCondition | Y | 取得某員工可視部門資料 | AndyHou | 20211202 |
