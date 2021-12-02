@@ -131,9 +131,7 @@ Here is a JSON representation of request.
                "type":"object",
                "format":"n/a"
             }
-         },
-         "type":"object",
-         "format":"n/a"
+         }
       },
       "properties":{
          "format":{
