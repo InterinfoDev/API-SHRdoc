@@ -82,7 +82,7 @@ Here is a JSON representation of request.
                            "format":"n/a"
                         },
                         "depCode":{
-                           "id":"deoCode",
+                           "id":"depCode",
                            "name":"部門代號",
                            "value":"D2000",
                            "type":"string",
