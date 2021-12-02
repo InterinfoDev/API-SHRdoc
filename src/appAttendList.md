@@ -134,9 +134,7 @@ Here is a JSON representation of request.
 		     "value":"",
 		     "type":"string",
 		     "format":"base64"
-		  },
-                  "type":"object",
-                  "format":"n/a"
+		  }
                },
                "type":"object",
                "format":"n/a"
