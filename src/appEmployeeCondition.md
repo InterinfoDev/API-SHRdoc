@@ -77,7 +77,7 @@ Here is a JSON representation of request.
                      "format":"n/a"
                   },
                   "depNumber":{
-                     "id":"deoCode",
+                     "id":"depNumber",
                      "name":"部門暗碼",
                      "value":2,
                      "type":"integer",
