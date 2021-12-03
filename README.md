@@ -37,3 +37,4 @@ POST
 | 獎金條明細 | appSalbondQuery | N | 取得指定年月、員工獎金條明細資訊 |  |  |
 | 最近一次獎金發放 | appSalbondRecent | N | 取得某員工最近一次獎金發放資訊 |  |  |
 | 體溫回報 | appBodyTemperature | Y | 提供使用者回報體溫資訊 | AndyHou | 20211202 |
+| GoogleMap | appGoogleMapKey | N | 提供GoogleMapKey資訊 |  |  |
