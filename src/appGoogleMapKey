@@ -56,7 +56,7 @@ Here is a JSON representation of request.
             "key":{
                "id":"key",
                "name":"地圖金鑰",
-               "value":"Abcdefgerhuik56789432",
+               "value":"AIzaSyCMhGdpB5AXt0KElEwsK6tjmxxxxB7bwhGoMg",
                "type":"string",
                "format":"n/a"
             }
