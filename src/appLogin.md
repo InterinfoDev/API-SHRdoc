@@ -72,6 +72,20 @@ Here is a JSON representation of request.
                "value":"Lucas",
                "type":"string",
                "format":"n/a"
+            },
+            "companyId":{
+               "id":"companyId",
+               "name":"公司代號",
+               "value":"97090920",
+               "type":"string",
+               "format":"n/a"
+            },
+            "depNumber":{
+               "id":"depNumber",
+               "name":"部門暗碼",
+               "value":1,
+               "type":"integer",
+               "format":"n/a"
             }
          },
          "type":"object",
