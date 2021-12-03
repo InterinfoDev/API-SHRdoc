@@ -70,7 +70,7 @@ Here is a JSON representation of request.
             "count":{
                "id":"count",
                "name":"計薪次數",
-               "value":"1",
+               "value":1,
                "type":"integer",
                "format":"count"
             },
