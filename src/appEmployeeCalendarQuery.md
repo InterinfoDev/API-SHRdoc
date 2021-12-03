@@ -122,7 +122,7 @@ Here is a JSON representation of request.
                   "format":"n/a"
                },
                "eventLocation":{
-                  "id":"location",
+                  "id":"eventLocation",
                   "name":"地點資訊",
                   "value":"英特內軟體",
                   "type":"string",
