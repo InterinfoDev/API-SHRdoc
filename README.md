@@ -14,10 +14,28 @@ POST
 
 ### Query Filter Style
 公司別下拉選單
+
 | Current Field | Display Field | | Current Value | Display Value | 
 |:----------|:----------|:----------|:----------|
 | companyId | companySimpleName | 97090920  | 英特內軟體 |
 
+部門下拉選單
+
+| Current Field | Display Field | | Current Value | Display Value | 
+|:----------|:----------|:----------|:----------|
+| depNumber | depCode + ' ' + depFullName | 10  | C3200 研發處 |
+
+員工下拉選單
+
+| Current Field | Display Field | | Current Value | Display Value | 
+|:----------|:----------|:----------|:----------|
+| empid | empid + ' ' + empName | L100387  | L100387 林奇杰 |
+
+發薪次數下拉選單
+
+| Current Field | Display Field | | Current Value | Display Value | 
+|:----------|:----------|:----------|:----------|
+| countInfo | countInfo | 1  | 1 |
 
 ### Program list
 | Program Senario | Program Name | ReadyToUse | Description | Author | Last Modify Date |
