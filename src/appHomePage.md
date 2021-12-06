@@ -272,6 +272,61 @@ Here is a JSON representation of request.
 }
 ```
 
+### HTTP Response when No Board Data
+Board無資料，則隱藏該區塊，但整體來說不算是錯誤，正常來說可以不用有資料
+{
+   "status":"success",
+   "message":[
+      "回傳成功"
+   ],
+   "data":{
+      "personal":{
+         "id":"personalInfo",
+         "name":"個人資訊",
+         "value":{"...":"..."},
+         "type":"object",
+         "format":"n/a"
+      },
+      "attend":{
+         "id":"attendInfo",
+         "name":"考勤資訊",
+         "value":["..."],
+         "type":"array",
+         "format":"n/a"
+      },
+      "board":{
+         "id":"publishBoardInfo",
+         "name":"公告資訊",
+         "value":[],
+         "type":"array",
+         "format":"n/a"
+      },
+      "properties":{
+         "format":{
+            "YYYYmm":"西元年月",
+            "YYYYmmdd":"西元年月日",
+            "HHmm":"時間時分",
+	    "base64":"Base64資料庫格式",
+            "n/a":""
+         }
+      }
+   }
+}
+```
+
+### HTTP Response when No Data
+無資料則屬於 Code 500 錯誤，正常來說一般使用者一定會有Personal資料，若Personal無資料，則出錯。
+```json
+{
+    "status": "fail",
+    "code": 500,
+    "message": [
+        "查無資料"
+    ],
+    "data": {}
+}
+```
+
 ### HTTP Response when Failed
 ```json
 {
