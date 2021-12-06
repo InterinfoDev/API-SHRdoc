@@ -274,6 +274,7 @@ Here is a JSON representation of request.
 
 ### HTTP Response when No Board Data
 Board無資料，則隱藏該區塊，但整體來說不算是錯誤，正常來說可以不用有資料
+```json
 {
    "status":"success",
    "message":[
