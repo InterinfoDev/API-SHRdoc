@@ -46,9 +46,9 @@ POST
 | 公司別權限 | appCompanySuper | Y | 取得某員工公司別可視範圍資料 | AndyHou | 20211202 |
 | 夥伴查詢 | appContact | Y | 取得夥伴查詢資料 | Kevin | 20211202 |
 | 部門權限 | appDeptCondition | Y | 取得某員工可視部門資料 | AndyHou | 20211202 |
-| 特定員工行事曆 | appEmployeeCalendarList | N | 取得特定員工行事曆資訊 | Kevin |  |
-| 個人行事曆詳細 | appEmployeeCalendarQuery | N | 取得員工個人行事曆特定事件詳細資料 | Kevin |  |
-| 異動行事曆 | appEditEmployeeCalendar | N | 取得員工個人行事曆特定事件詳細資料 | Kevin |  |
+| 特定員工行事曆 | appEmployeeCalendarList | Y | 取得特定員工行事曆資訊 | Kevin | 20211206 |
+| 個人行事曆詳細 | appEmployeeCalendarQuery | Y | 取得員工個人行事曆特定事件詳細資料 | Kevin | 20211206 |
+| 異動行事曆 | appEditEmployeeCalendar | Y | 取得員工個人行事曆特定事件詳細資料 | Kevin | 20211206 |
 | 員工權限 | appEmployeeCondition | Y | 取得某員工可視範圍員工資料 | AndyHou | 20211202 |
 | 員工照片 | appEmployeePhoto | Y | 取得特定員工照片資訊 | AndyHou | 20211202 |
 | 忘記密碼 | appForgotPwd | N | 執行忘記密碼 |  |  |
