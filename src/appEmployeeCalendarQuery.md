@@ -144,6 +144,33 @@ Here is a JSON representation of request.
 }
 ```
 
+### HTTP Response when No Data
+無資料則屬於正常範圍，正常來說可以沒有資料
+```json
+{
+   "status":"success",
+   "message":[
+      "回傳成功"
+   ],
+   "data":{
+      "employeeCalendar":{
+         "id":"employeeCalendar",
+         "name":"員工個人行事曆詳細資料",
+         "value":[],
+         "type":"array",
+         "format":"n/a"
+      },
+      "properties":{
+         "format":{
+            "n/a":"",
+            "YYYYmmdd":"西元年月日",
+            "HHmm":"時間時分"
+         }
+      }
+   }
+}
+```
+
 ### HTTP Response when Failed
 ```json
 {
