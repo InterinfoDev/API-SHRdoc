@@ -80,12 +80,26 @@ Here is a JSON representation of request.
                "type":"string",
                "format":"n/a"
             },
+            "companySimpleName": {
+               "name": "公司簡稱",
+               "type": "string",
+               "value": "72英特內(中和)",
+               "format": "n/a",
+               "id": "companySimpleName"
+            },              
             "depNumber":{
                "id":"depNumber",
                "name":"部門暗碼",
                "value":1,
                "type":"integer",
                "format":"n/a"
+            }
+            "depSimpleName": {
+               "name": "部門簡稱",
+               "type": "string",
+               "value": "研發處",
+               "format": "n/a",
+               "id": "depSimpleName"
             }
          },
          "type":"object",
