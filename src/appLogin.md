@@ -97,7 +97,7 @@ Here is a JSON representation of request.
             "depSimpleName": {
                "name": "部門簡稱",
                "type": "string",
-               "value": "研發處",
+               "value": "CTO",
                "format": "n/a",
                "id": "depSimpleName"
             }
