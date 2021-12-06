@@ -85,8 +85,8 @@ Case 3 . Here is a JSON representation of request.
          "name":"員工個人行事曆列表",
          "value":[
             {
-               "seriesNo":{
-                  "id":"seriesNo",
+               "eventNo":{
+                  "id":"eventNo",
                   "name":"行事曆編號",
                   "value":"XXXXXXXXXXXXXX",
                   "type":"string",
