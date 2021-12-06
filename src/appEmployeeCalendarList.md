@@ -165,22 +165,7 @@ Case 3 . Here is a JSON representation of request.
    "message":[
       "回傳成功"
    ],
-   "data":{
-      "employeeCalendarList":{
-         "id":"employeeCalendarList",
-         "name":"員工個人行事曆列表",
-         "value":[],
-         "type":"array",
-         "format":"n/a"
-      },
-      "properties":{
-         "format":{
-            "n/a":"",
-            "YYYYmmdd":"西元年月日",
-            "HHmm":"時間時分"
-         }
-      }
-   }
+   "data":{}
 }
 ```
 
