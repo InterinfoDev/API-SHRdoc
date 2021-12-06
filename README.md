@@ -60,7 +60,7 @@ POST
 | 驗證薪資條密碼 | appSalaryPwd | Y | 驗證員工薪資條密碼(獎金通用) | Kevin | 20211202 |
 | 薪資條明細 | appSalaryQuery | Y | 取得指定年月、員工薪資條明細資訊 | Daniel | 20211203 |
 | 最近一次薪資發放 | appSalaryRecent | Y | 取得某員工最近一次薪資發放資訊 | Daniel | 20211203 |
-| 獎金條明細 | appSalbondQuery | N | 取得指定年月、員工獎金條明細資訊 |  |  |
-| 最近一次獎金發放 | appSalbondRecent | N | 取得某員工最近一次獎金發放資訊 |  |  |
+| 獎金條明細 | appSalbondQuery | N | 取得指定年月、員工獎金條明細資訊 | Daniel | 20211206 |
+| 最近一次獎金發放 | appSalbondRecent | N | 取得某員工最近一次獎金發放資訊 | Daniel | 20211206 |
 | 體溫回報 | appBodyTemperature | Y | 提供使用者回報體溫資訊 | AndyHou | 20211202 |
 | GoogleMap | appGoogleMapKey | N | 提供GoogleMapKey資訊 | AndyHou | 20211205 |
