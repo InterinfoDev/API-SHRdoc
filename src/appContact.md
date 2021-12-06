@@ -212,6 +212,37 @@ Here is a JSON representation of request.
 }
 ```
 
+### HTTP Response when No Data
+```json
+{
+   "status":"success",
+   "message":[
+      "回傳成功"
+   ],
+   "data":{
+      "main":{
+         "id":"contact",
+         "name":"通訊錄功能",
+         "value":[],
+               "type":"array",
+               "format":"n/a"
+            }
+         ],
+         "type":"array",
+         "format":"n/a"
+      },
+      "properties":{
+         "format":{
+            "phone":"電話號碼，可撥打",
+            "base64":"Base64資料庫格式",
+            "email":"電子郵件",
+            "n/a":""
+         }
+      }
+   }
+}
+```
+
 ### HTTP Response when Failed
 ```json
 {
