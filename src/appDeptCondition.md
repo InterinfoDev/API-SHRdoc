@@ -134,6 +134,19 @@ Here is a JSON representation of request.
 }
 ```
 
+### HTTP Response when No Data 
+無資料則屬於 Code 500 錯誤，正常來說一般使用者一定會有資料
+```json
+{
+    "status": "fail",
+    "code": 500,
+    "message": [
+        "查無資料"
+    ],
+    "data": {}
+}
+```
+
 ### HTTP Response when Failed
 ```json
 {
