@@ -16,7 +16,7 @@ POST
 |:----------|:-------------|:-----|:------------|
 | uid | 98599308101484732326 | String | 需透過appLogin取得
 | right | 51341911904173543336756162544864820 | String | 需透過appLogin取得 |
-| request | {seriesNo:uuid,empid:admin,eventBeginDate:20211101,eventEndDate:20211101,isFullDayEvent:false,eventBeginTime:0900,eventEndTime:1000,eventSubject:xxx,eventContent:xxx,eventLocation:interinfo} | Object | 查詢條件
+| request | {eventNo:uuid,empid:admin,eventBeginDate:20211101,eventEndDate:20211101,isFullDayEvent:false,eventBeginTime:0900,eventEndTime:1000,eventSubject:xxx,eventContent:xxx,eventLocation:interinfo} | Object | 查詢條件
 
 ### JSON representation
 Here is a JSON representation of request.
@@ -25,7 +25,7 @@ Here is a JSON representation of request.
     "uid":"98599308101484732326",
     "right":"51341911904173543336756162544864820",
     "request":{
-        "seriesNo":"uuid", 
+        "eventNo":"uuid", 
         "empid":"admin",
         "eventBeginDate":"20211101", 
         "eventEndDate":"20211101", 
@@ -49,7 +49,7 @@ Here is a JSON representation of request.
 ### Request Properties
 | Key | Value | Type | Description | Required | Format |
 |:----------|:-------------|:-----|:------------|:------------|:------------|
-| seriesNo | uuid | String | 行事曆單號 | Y | UUID |
+| eventNo | uuid | String | 行事曆單號 | Y | UUID |
 | empid | admin | String | 員工編號 | Y | n/a |
 | eventBeginDate | 20211101 | String | 事件起始日期 | Y | AC(YYYYmmdd) |
 | eventEndDate | 20211101 | String | 事件結束日期 | Y | AC(YYYYmmdd) |
@@ -80,8 +80,8 @@ Here is a JSON representation of request.
                "type":"boolean",
                "format":"n/a"
             },
-            "seriesNo":{
-               "id":"seriesNo",
+            "eventNo":{
+               "id":"eventNo",
                "name":"行事曆編號",
                "value":"XXXXXXXXXXXXXX",
                "type":"string",
