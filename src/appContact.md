@@ -224,10 +224,6 @@ Here is a JSON representation of request.
          "id":"contact",
          "name":"通訊錄功能",
          "value":[],
-               "type":"array",
-               "format":"n/a"
-            }
-         ],
          "type":"array",
          "format":"n/a"
       },
