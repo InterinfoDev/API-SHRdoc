@@ -155,6 +155,18 @@ Here is a JSON representation of request.
 }
 ```
 
+### HTTP Response when No Data
+```json
+{
+    "status": "fail",
+    "code": 500,
+    "message": [
+        "查無資料"
+    ],
+    "data": {}
+}
+```
+
 ### HTTP Response when Failed
 ```json
 {
