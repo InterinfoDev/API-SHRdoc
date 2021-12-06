@@ -303,7 +303,7 @@ Here is a JSON representation of request.
 ```
 
 ### HTTP Response when No Data 
-(若無資料，基本上是傳入錯誤的條件，正常來說一定會有資料)
+無資料則屬於 Code 500 錯誤，正常來說一般使用者一定會有資料
 ```json
 {
     "status": "fail",
