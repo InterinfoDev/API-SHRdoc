@@ -52,7 +52,7 @@ POST
 | 員工權限 | appEmployeeCondition | Y | 取得某員工可視範圍員工資料 | AndyHou | 20211202 |
 | 員工照片 | appEmployeePhoto | Y | 取得特定員工照片資訊 | AndyHou | 20211202 |
 | 忘記密碼 | appForgotPwd | N | 執行忘記密碼 |  |  |
-| APP功能權限 | appFunctionRight | N | 取得員工APP功能資訊 |  |  |
+| APP功能權限 | appFunctionRight | Y | 取得員工APP功能資訊 | Danielweng | 20211207 |
 | 線上打卡 | appGpsPunchCardGPS | Y | 線上打卡 | AndyHou | 20211202 | 
 | 取得首頁 | appHomePage | Y | 取得首頁資訊 | AndyHou | 20211202 |
 | 驗證帳號密碼 | appLogin | Y | 驗證使用者帳號密碼 | AndyHou | 20211203 |
