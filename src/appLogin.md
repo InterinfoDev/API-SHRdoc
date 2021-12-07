@@ -81,11 +81,11 @@ Here is a JSON representation of request.
                "format":"n/a"
             },
             "companySimpleName": {
+               "id": "companySimpleName",
                "name": "公司簡稱",
-               "type": "string",
                "value": "72英特內(中和)",
-               "format": "n/a",
-               "id": "companySimpleName"
+               "type": "string",
+               "format": "n/a"
             },              
             "depNumber":{
                "id":"depNumber",
@@ -93,13 +93,20 @@ Here is a JSON representation of request.
                "value":1,
                "type":"integer",
                "format":"n/a"
-            }
-            "depSimpleName": {
-               "name": "部門簡稱",
+            },
+            "depCode": {
+               "id": "depCode"
+               "name": "部門代號",
+               "value": "5",
                "type": "string",
-               "value": "CTO",
                "format": "n/a",
+            },
+            "depSimpleName": {
                "id": "depSimpleName"
+               "name": "部門簡稱",
+               "value": "CTO",
+               "type": "string",
+               "format": "n/a",
             }
          },
          "type":"object",
