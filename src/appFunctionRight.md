@@ -1,4 +1,4 @@
-# appAttendMonth 
+# appFunctionRight 
 取得員工APP功能資訊
 
 ### HTTP Request
