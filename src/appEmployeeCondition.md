@@ -26,7 +26,7 @@ Here is a JSON representation of request.
     "right":"51341911904173543336756162544864820",
     "request":{
         "companyId":"97090920",
-        "deptNumber":"1",
+        "deptNumber":1,
         "empid":"admin"
     }
 }
