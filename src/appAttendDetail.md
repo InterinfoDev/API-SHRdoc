@@ -14,9 +14,9 @@ POST
 ### Request body
 | Key | Value | Type | Description |
 |:----------|:-------------|:-----|:------------|
-| uid | 98599308101484732326 | String | 需透過appLogin取得
+| uid | 98599308101484732326 | String | 需透過appLogin取得 |
 | right | 51341911904173543336756162544864820 | String | 需透過appLogin取得 |
-| request | {attendYM:202104, empid:admin} | Object | 查詢條件
+| request | {attendYM:202104, empid:admin} | Object | 查詢條件 |
 
 ### JSON representation
 Here is a JSON representation of request.
@@ -54,7 +54,7 @@ Here is a JSON representation of request.
    ],
    "data":{
       "main":{
-         "id":"attendInfo",
+         "id":"main", --lucas 修改為main
          "name":"考勤資訊列表",
          "value":{
             "ym":{
@@ -81,7 +81,7 @@ Here is a JSON representation of request.
                      "name":"出勤日期",
                      "value":"20211001",
                      "type":"string",
-                     "format":"n/a"
+                     "format":"YYYYmmdd"  --lucas 修改YYYYmmdd
                   },
                   "workClass":{
                      "id":"workClass",
@@ -290,11 +290,10 @@ Here is a JSON representation of request.
          "format":"n/a"
       },
       "properties":{
-         "format":{
+         "format":{--lucas 移除count
             "YYYYmm":"西元年月",
             "YYYYmmdd":"西元年月日",
             "HHmm":"時間時分",
-            "count":"數量",
             "n/a":""
          }
       }
