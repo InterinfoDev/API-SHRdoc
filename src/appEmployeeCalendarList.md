@@ -158,18 +158,18 @@ Case 3 . Here is a JSON representation of request.
 ```
 
 ### HTTP Response when No Data
-### 無資料則屬於正常範圍，正常來說可以沒有資料
-```json　　
-{　　
+無資料則屬於正常範圍，正常來說可以沒有資料
+```json
+{
    "status":"success",
    "message":[
       "回傳成功"
    ],
-   "data":{ 
+   "data":{
       "employeeCalendarList":{
-         "id":"employeeCalendarList", 
+         "id":"employeeCalendarList",
          "name":"員工個人行事曆列表",
-         "value":[],--lucas 修改結構
+         "value":[],  --lucas 修改
          "type":"array",
          "format":"n/a"
       },
