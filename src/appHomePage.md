@@ -74,8 +74,8 @@ Here is a JSON representation of request.
                "type":"string",
                "format":"n/a"
             },
-            "depName":{
-               "id":"depName",
+            "depFullName":{ --
+               "id":"depFullName",
                "name":"部門名稱",
                "value":"CTO",
                "type":"string",
