@@ -16,7 +16,7 @@ POST
 |:----------|:-------------|:-----|:------------|
 | uid | 98599308101484732326 | String | 需透過appLogin取得 |
 | right | 51341911904173543336756162544864820 | String | 需透過appLogin取得 |
-| request | {empid:admin , attendYM:202111} | Object | 查詢條件 |
+| request | {attendYM:202111} | Object | 查詢條件 |
 
 ### JSON representation
 Here is a JSON representation of request.
@@ -24,8 +24,7 @@ Here is a JSON representation of request.
 {
     "uid":"98599308101484732326",
     "right":"51341911904173543336756162544864820",
-    "request":{
-        "empid":"admin", 
+    "request":{  --lucas 取消empid傳入,改使用getUser
         "attendYM":"202111"
     }
 }
@@ -41,7 +40,6 @@ Here is a JSON representation of request.
 ### Request Properties
 | Key | Value | Type | Description | Required | Format |
 |:----------|:-------------|:-----|:------------|:------------|:------------|
-| empid | admin | String | 員工編號 | Y | n/a |
 | attendYM | 202111 | String | 考勤年月 | Y | AC(YYYYmm) |
 
 ### HTTP Response when Successful
@@ -53,9 +51,8 @@ Here is a JSON representation of request.
    ],
    "data":{
       "attend":{
-         "id":"attendInfo",
+         "id":"attend", --lucas
          "name":"考勤資訊",
-         "type":"array",
          "value":[
             {
                "id":"20211101",
@@ -66,7 +63,7 @@ Here is a JSON representation of request.
                      "name":"出勤日期",
                      "value":"20211101",
                      "type":"string",
-                     "format":"n/a"
+                     "format":"YYYYmmdd"--lucas
                   },
                   "workClass":{
                      "id":"workClass",
@@ -129,11 +126,13 @@ Here is a JSON representation of request.
                "format":"n/a"
             }
          ],
+         "type":"array",
          "format":"n/a"
       },
       "properties":{
          "format":{
-            "HHmm":"時間時分秒",
+            "YYYYmmdd":"西元年月日", --lucas 增加
+            "HHmm":"時間時分",  --lucas 描述更改
             "n/a":""
          }
       }
