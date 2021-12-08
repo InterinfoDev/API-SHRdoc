@@ -16,7 +16,7 @@ POST
 |:----------|:-------------|:-----|:------------|
 | uid | 98599308101484732326 | String | 需透過appLogin取得 |
 | right | 51341911904173543336756162544864820 | String | 需透過appLogin取得 |
-| request | {empid:admin} | Object | 查詢條件 |
+| request | {} | Object | 查詢條件 |
 
 
 ### JSON representation
@@ -25,8 +25,7 @@ Here is a JSON representation of request.
 {
     "uid":"98599308101484732326",
     "right":"51341911904173543336756162544864820",
-    "request":{
-        "empid":"admin"
+    "request":{ --lucas 移除empid 條件，改用getUser
     }
 }
 ```
@@ -41,7 +40,6 @@ Here is a JSON representation of request.
 ### Request Properties
 | Key | Value | Type | Description | Required | Format |
 |:----------|:-------------|:-----|:------------|:------------|:------------|
-| empid | admin | String | 員工編號 | Y | n/a |
 
 ### HTTP Response when Successful
 ```json
@@ -51,12 +49,12 @@ Here is a JSON representation of request.
       "回傳成功"
    ],
    "data":{
-      "main":{
+      "companySuper":{  --lucas 改名companySuper
          "id":"companySuper",
          "name":"公司查詢權限",
          "value":[
             {
-               "id":"companyInfo",
+               "id":"company",  --lucas  改名company
                "name":"公司資訊",
                "value":{
                   "companyId":{
