@@ -66,8 +66,8 @@ Here is a JSON representation of request.
                "type":"string",
                "format":"n/a"
             },
-            "fulllEname":{
-               "id":"fulllEname",
+            "fullEname":{
+               "id":"fullEname",
                "name":"員工英文姓名",
                "value":"Lucas",
                "type":"string",
