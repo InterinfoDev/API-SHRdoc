@@ -60,8 +60,8 @@ Here is a JSON representation of request.
          "id":"main",  --lucas 修改為main
          "name":"考勤資訊列表",
          "value":{
-            "ym":{
-               "id":"ym",
+            "attendYM":{  --lucas 修改
+               "id":"attendYM", --lucas 修改
                "name":"考勤年月",
                "value":"202110",
                "type":"string",
