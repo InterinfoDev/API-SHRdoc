@@ -59,15 +59,15 @@ Here is a JSON representation of request.
                "type":"string",
                "format":"n/a"
             },
-            "fullName":{
-               "id":"fullName",
+            "empFullName":{ --lucas
+               "id":"empFullName",
                "name":"員工姓名",
                "value":"林奇杰",
                "type":"string",
                "format":"n/a"
             },
-            "fullEname":{
-               "id":"fullEname",
+            "empFullEname":{ --lucas
+               "id":"empFullEname",
                "name":"員工英文姓名",
                "value":"Lucas",
                "type":"string",
@@ -101,9 +101,9 @@ Here is a JSON representation of request.
                "type": "string",
                "format": "n/a",
             },
-            "depSimpleName": {
-               "id": "depSimpleName"
-               "name": "部門簡稱",
+            "depFullName": {  --lucas
+               "id": "depFullName"
+               "name": "部門名稱",
                "value": "CTO",
                "type": "string",
                "format": "n/a",
