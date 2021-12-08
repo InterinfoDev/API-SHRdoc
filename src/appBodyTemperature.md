@@ -24,13 +24,12 @@ Here is a JSON representation of request.
 {
     "uid":"98599308101484732326",
     "right":"51341911904173543336756162544864820",
-    "request":{
+    "request":{ --lucas 移除empid，改用getUser
         "measureDate":"20211202", 
         "measureTime":"0830", 
         "bodyTemperature":36.5, 
         "measureInterface":"A", 
         "measureUnit":"C", 
-        "empid":"admin"
     }
 }
 ```
@@ -50,7 +49,6 @@ Here is a JSON representation of request.
 | bodyTemperature | 36.5 | Decimal | 測量溫度 | Y | Degrees |
 | measureInterface | A | String | 測量介面 | Y | A額溫槍,B耳溫搶,C體溫計,D紅外線熱像儀 |
 | measureUnit | C | String | 測量單位 | Y | F 華氏 C 攝氏 |
-| empid | admin | String | 員工編號 | Y | n/a |
 
 
 ### HTTP Response when Successful
