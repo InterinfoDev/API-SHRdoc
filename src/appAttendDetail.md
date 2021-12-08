@@ -69,7 +69,7 @@ Here is a JSON representation of request.
          "format":"n/a"
       },
       "attend":{
-         "id":"attendInfo",
+         "id":"attend", --lucas修改
          "name":"考勤資訊",
          "value":[
             {
