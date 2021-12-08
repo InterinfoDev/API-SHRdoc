@@ -141,15 +141,29 @@ Here is a JSON representation of request.
 ```
 
 ### HTTP Response when No Data
-無資料則屬於 Code 500 錯誤，正常來說一般使用者一定會有資料
+無資料則屬於正常範圍，所以回傳空陣列
 ```json
 {
-    "status": "fail",
-    "code": 500,
-    "message": [
-        "查無資料"
-    ],
-    "data": {}
+   "status":"success",
+   "message":[
+      "回傳成功"
+   ],
+   "data":{
+      "attend":{
+         "id":"attend", --lucas
+         "name":"考勤資訊",
+         "value":[],
+         "type":"array",
+         "format":"n/a"
+      },
+      "properties":{
+         "format":{
+            "YYYYmmdd":"西元年月日", --lucas 增加
+            "HHmm":"時間時分",  --lucas 描述更改
+            "n/a":""
+         }
+      }
+   }
 }
 ```
 
