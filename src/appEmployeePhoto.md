@@ -16,7 +16,7 @@ POST
 |:----------|:-------------|:-----|:------------|
 | uid | 98599308101484732326 | String | 需透過appLogin取得
 | right | 51341911904173543336756162544864820 | String | 需透過appLogin取得 |
-| request | {empid:admin} | Object | 查詢條件
+| request | { empid:admin } | Object | 查詢條件
 
 ### JSON representation
 Here is a JSON representation of request.
@@ -51,7 +51,48 @@ Here is a JSON representation of request.
    ],
    "data":{
       "personal":{
-         "id":"personalInfo",
+         "id":"personal", --lucas 修改
+         "name":"個人資訊",
+         "value":{
+            "empid":{
+               "id":"empid",
+               "name":"員工編號",
+               "value":"L100387",
+               "type":"string",
+               "format":"n/a"
+            },
+            "photo":{
+               "id":"photo",
+               "name":"員工照片",
+               "value":"",
+               "type":"string",
+               "format":"base64"
+            }
+         },
+         "type":"object",
+         "format":"n/a"
+      },
+      "properties":{
+         "format":{
+            "base64":"Base64資料庫格式",
+            "n/a":""
+         }
+      }
+   }
+}
+```
+
+### HTTP Response when No Photo Data
+若有查到使用者，但使用者沒有照片時候，回傳空白
+```json
+{  --lucas 增加新的可能
+   "status":"success",
+   "message":[
+      "回傳成功"
+   ],
+   "data":{
+      "personal":{
+         "id":"personal", --lucas 修改
          "name":"個人資訊",
          "value":{
             "empid":{
