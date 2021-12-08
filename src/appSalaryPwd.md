@@ -41,7 +41,7 @@ Here is a JSON representation of request.
 |:----------|:-------------|:-----|:------------|:------------|:------------|
 | salaryPwd  | 1234 | String | 薪資條密碼 | Y | n/a |
 
-### HTTP Response when Successful
+### HTTP Response when Passowrd correct
 ```json
 {
    "status":"success",
@@ -72,16 +72,35 @@ Here is a JSON representation of request.
 }
 ```
 
-### HTTP Response when No Data
-無資料則屬於 Code 500 錯誤，正常來說一般使用者一定會有資料
-```json
-{
-    "status": "fail",
-    "code": 500,
-    "message": [
-        "查無資料"
-    ],
-    "data": {}
+### HTTP Response when Passowrd incorrect
+無論驗證與否，只會拋出錯誤的情況
+```json 
+{  -- lucas 增加案例
+   "status":"success",
+   "message":[
+      "回傳成功"
+   ],
+   "data":{
+      "checkPwd":{
+         "id":"checkPwd",
+         "name":"驗證薪資條密碼(獎金通用)",
+         "value":false,
+         "type":"boolean",
+         "format":"n/a"
+      },
+      "key":{
+         "id":"key",
+         "name":"通行金鑰",
+         "value":"",
+         "type":"string",
+         "format":"n/a"
+      },
+      "properties":{
+         "format":{
+            "n/a":""
+         }
+      }
+   }
 }
 ```
 
