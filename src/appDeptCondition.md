@@ -16,7 +16,7 @@ POST
 |:----------|:-------------|:-----|:------------|
 | uid | 98599308101484732326 | String | 需透過appLogin取得
 | right | 51341911904173543336756162544864820 | String | 需透過appLogin取得 |
-| request | {companyId:97090920 , empid:admin} | Object | 查詢條件
+| request | {companyId:97090920} | Object | 查詢條件
 
 ### JSON representation
 Here is a JSON representation of request.
@@ -24,9 +24,8 @@ Here is a JSON representation of request.
 {
     "uid":"98599308101484732326",
     "right":"51341911904173543336756162544864820",
-    "request":{
-        "companyId":"97090920",
-        "empid":"admin"
+    "request":{  --lucas 移除 empid 改用 getUser
+        "companyId":"97090920"
     }
 }
 ```
@@ -41,7 +40,6 @@ Here is a JSON representation of request.
 ### Request Properties
 | Key | Value | Type | Description | Required | Format |
 |:----------|:-------------|:-----|:------------|:------------|:------------|
-| empid | admin | String | 員工編號 | Y | n/a |
 | companyId | 97090920 | String | 公司別代號 | N | n/a |
 
 ### HTTP Response when Successful
@@ -52,12 +50,12 @@ Here is a JSON representation of request.
       "回傳成功"
    ],
    "data":{
-      "main":{
-         "id":"depCondition",
+      "deptCondition":{  -- lucas 改名 deptCondition
+         "id":"deptCondition", -- lucas 改名 deptCondition
          "name":"部門查詢權限",
          "value":[
             {
-               "id":"departmentInfo",
+               "id":"department", -- lucas 改名 department
                "name":"部門資訊",
                "value":{
                   "companyId":{
@@ -106,7 +104,7 @@ Here is a JSON representation of request.
                            "type":"string",
                            "format":"n/a"
                         },
-                        "empName":{
+                        "empFullName":{  -- lucas 改名 empFullName
                            "id":"empName",
                            "name":"員工姓名",
                            "value":"李 員",
