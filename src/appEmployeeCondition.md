@@ -42,7 +42,7 @@ Here is a JSON representation of request.
 | Key | Value | Type | Description | Required | Format |
 |:----------|:-------------|:-----|:------------|:------------|:------------|
 | companyId | 97090920 | String | 公司代號 | N | n/a |
-| depNumber | [1] | Integer | 部門代號 | N | n/a |
+| depNumber | [1] | Array(Integer) | 部門代號 | N | n/a |
 
 ### HTTP Response when Successful
 ```json
