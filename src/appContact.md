@@ -48,7 +48,7 @@ Here is a JSON representation of request.
       "回傳成功"
    ],
    "data":{
-      "main":{
+      "contact":{ --lucas 修改
          "id":"contact",
          "name":"通訊錄功能",
          "value":[
@@ -60,21 +60,21 @@ Here is a JSON representation of request.
                      "id":"employeeInfo",
                      "name":"員工資訊",
                      "value":{
-                        "empName":{
-                           "id":"empName",
+                        "empFullName":{ --lucas 修改
+                           "id":"empFullName",--lucas 修改
                            "name":"員工中文姓名",
                            "value":"林奇杰",
                            "type":"string",
                            "format":"n/a"
                         },
-                        "empEname":{
-                           "id":"empEname",
+                        "empFullEname":{--lucas 修改
+                           "id":"empFullEname",--lucas 修改
                            "name":"員工英文姓名",
                            "value":"Lucas",
                            "type":"string",
                            "format":"n/a"
                         },
-                        "depNumber":{
+                        "depNumber":{ 
                            "id":"depNumber",
                            "name":"部門暗碼",
                            "value":2,
