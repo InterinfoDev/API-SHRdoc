@@ -49,8 +49,8 @@ Here is a JSON representation of request.
          "id":"resetPwd",
          "name":"忘記密碼執行結果",
          "value":{
-            "email":{
-               "id":"email",
+            "validationEmail":{ --lucas
+               "id":"validationEmail", --lucas
                "name":"電子郵件",
                "value":"xxx@interinfo.com.tw",
                "type":"string",
