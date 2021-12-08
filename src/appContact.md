@@ -88,8 +88,8 @@ Here is a JSON representation of request.
                            "type":"string",
                            "format":"n/a"
                         },
-                        "depName":{
-                           "id":"depName",
+                        "depFullName":{  --lucas 改名
+                           "id":"depFullName", --lucas 改名
                            "name":"部門名稱",
                            "value":"CTO",
                            "type":"string",
