@@ -53,15 +53,15 @@ Here is a JSON representation of request.
          "id":"personal", --lucas
          "name":"員工資訊",
          "value":{
-            "empName":{
-               "id":"empName",
+            "empFullName":{ --lucas
+               "id":"empFullName", --lucas
                "name":"員工中文姓名",
                "value":"林奇杰",
                "type":"string",
                "format":"n/a"
             },
-            "empEname":{
-               "id":"empEname",
+            "empFullEname":{ --lucas
+               "id":"empFullEname", --lucas
                "name":"員工英文姓名",
                "value":"Lucas",
                "type":"string",
