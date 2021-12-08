@@ -366,6 +366,8 @@ Here is a JSON representation of request.
          "id":"salbond", --lucas 改名
          "name":"獎金資訊",
          "value":{},
+         "type":"object",
+         "format":"n/a"
       },
       "properties":{
          "format":{
