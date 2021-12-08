@@ -165,9 +165,9 @@ Case 3 . Here is a JSON representation of request.
    "message":[
       "回傳成功"
    ],
-   "data":{ --lucas 修改結構
+   "data":{ 
       "employeeCalendarList":{
-         "id":"employeeCalendarList",
+         "id":"employeeCalendarList", --lucas 修改結構
          "name":"員工個人行事曆列表",
          "value":[],
          "type":"array",
