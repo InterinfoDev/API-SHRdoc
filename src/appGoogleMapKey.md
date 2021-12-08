@@ -50,7 +50,7 @@ Here is a JSON representation of request.
    ],
    "data":{
       "map":{
-         "id":"map",
+         "id":"map", --lucas修改
          "name":"地圖資訊",
          "value":{
             "key":{
