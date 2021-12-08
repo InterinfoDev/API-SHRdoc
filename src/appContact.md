@@ -57,7 +57,7 @@ Here is a JSON representation of request.
                "name":"技術處",
                "value":[
                   {
-                     "id":"employeeInfo",
+                     "id":"employee", --lucas 修改
                      "name":"員工資訊",
                      "value":{
                         "empFullName":{ --lucas 修改
