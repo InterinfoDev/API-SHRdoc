@@ -26,7 +26,7 @@ Here is a JSON representation of request.
     "right":"51341911904173543336756162544864820",
     "request":{  --lucas 取消empid傳入，若有需要者改用getUser判斷
         "companyId":"97090920",
-        "depNumber":[1],  --lucas 改成array 改名 
+        "depNumber":[1],  --lucas 改成array 改名  並改成integer傳入
     }
 }
 ```
