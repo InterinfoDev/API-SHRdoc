@@ -16,7 +16,7 @@ POST
 |:----------|:-------------|:-----|:------------|
 | uid | 98599308101484732326 | String | 需透過appLogin取得 |
 | right | 51341911904173543336756162544864820 | String | 需透過appLogin取得 |
-| request | {empid:admin} | Object | 查詢條件 |
+| request | {} | Object | 查詢條件 |
 
 
 ### JSON representation
@@ -25,8 +25,7 @@ Here is a JSON representation of request.
 {
     "uid":"98599308101484732326",
     "right":"51341911904173543336756162544864820",
-    "request":{
-    	"empid":"admin"
+    "request":{ --取消empid傳入
     }
 }
 ```
@@ -41,7 +40,6 @@ Here is a JSON representation of request.
 ### Request Properties
 | Key | Value | Type | Description | Required | Format |
 |:----------|:-------------|:-----|:------------|:------------|:------------|
-| empid | admin | String | 員工編號 | Y | n/a |
 
 ### HTTP Response when Successful
 ```json
@@ -52,8 +50,8 @@ Here is a JSON representation of request.
    ],
    "data":{
       "personal":{
-         "id":"personalInfo",
-         "name":"個人資訊",
+         "id":"personal", --lucas
+         "name":"員工資訊",
          "value":{
             "empName":{
                "id":"empName",
@@ -109,7 +107,7 @@ Here is a JSON representation of request.
          "format":"n/a"
       },
       "attend":{
-         "id":"attendInfo",
+         "id":"attend", --lucas
          "name":"考勤資訊",
          "value":[
             {
@@ -121,7 +119,7 @@ Here is a JSON representation of request.
                      "name":"出勤日期",
                      "value":"20211001",
                      "type":"string",
-                     "format":"n/a"
+                     "format":"YYYYmmdd" --lucas
                   },
                   "workClass":{
                      "id":"workClass",
@@ -188,7 +186,7 @@ Here is a JSON representation of request.
          "format":"n/a"
       },
       "board":{
-         "id":"publishBoardInfo",
+         "id":"board", --lucas
          "name":"公告資訊",
          "value":[
             {
@@ -219,9 +217,9 @@ Here is a JSON representation of request.
                   "picture":{
                      "id":"picture",
                      "name":"公告圖片",
-                     "value":"base64url",
+                     "value":"base64",  --lucas
                      "type":"string",
-                     "format":"n/a"
+                     "format":"base64"  --lucas
                   },
                   "publisher":{
                      "id":"publisher",
@@ -260,8 +258,7 @@ Here is a JSON representation of request.
          "format":"n/a"
       },
       "properties":{
-         "format":{
-            "YYYYmm":"西元年月",
+         "format":{ --lucas 拿掉YYYYmm
             "YYYYmmdd":"西元年月日",
             "HHmm":"時間時分",
 	    "base64":"Base64資料庫格式",
@@ -272,8 +269,8 @@ Here is a JSON representation of request.
 }
 ```
 
-### HTTP Response when No Board Data
-Board無資料，則隱藏該區塊，但整體來說不算是錯誤，正常來說可以不用有資料
+### HTTP Response when No Board Data or Attend Data
+Board 或 Attend 無資料，但Board無資料則隱藏該區塊，但整體來說不算是錯誤，正常來說可以不用有資料
 ```json
 {
    "status":"success",
@@ -291,7 +288,7 @@ Board無資料，則隱藏該區塊，但整體來說不算是錯誤，正常來
       "attend":{
          "id":"attendInfo",
          "name":"考勤資訊",
-         "value":["..."],
+         "value":[],    --
          "type":"array",
          "format":"n/a"
       },
@@ -303,8 +300,7 @@ Board無資料，則隱藏該區塊，但整體來說不算是錯誤，正常來
          "format":"n/a"
       },
       "properties":{
-         "format":{
-            "YYYYmm":"西元年月",
+         "format":{ --lucas 拿掉YYYYmm
             "YYYYmmdd":"西元年月日",
             "HHmm":"時間時分",
 	    "base64":"Base64資料庫格式",
