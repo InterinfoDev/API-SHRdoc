@@ -16,7 +16,7 @@ POST
 |:----------|:-------------|:-----|:------------|
 | uid | 98599308101484732326 | String | 需透過appLogin取得
 | right | 51341911904173543336756162544864820 | String | 需透過appLogin取得 |
-| request | {empid:admin, key:32262008498747441193712198021232260366087649257856381618231} | Object | 查詢條件
+| request | {key:32262008498747441193712198021232260366087649257856381618231} | Object | 查詢條件
 
 ### JSON representation
 Here is a JSON representation of request.
@@ -24,8 +24,7 @@ Here is a JSON representation of request.
 {
     "uid":"98599308101484732326",
     "right":"51341911904173543336756162544864820",
-    "request":{
-        "empid":"admin",
+    "request":{ --lucas取消empid傳入，改用getUser
         "key":"32262008498747441193712198021232260366087649257856381618231"
     }
 }
@@ -41,7 +40,6 @@ Here is a JSON representation of request.
 ### Request Properties
 | Key | Value | Type | Description | Required | Format |
 |:----------|:-------------|:-----|:------------|:------------|:------------|
-| empid | admin | String | 員工編號 | Y | n/a |
 | key | 32262008498747441193712198021232260366087649257856381618231 | String | 通行金鑰 | Y | n/a |
 
 
@@ -53,12 +51,12 @@ Here is a JSON representation of request.
       "回傳成功"
    ],
    "data":{
-      "salbondRecent":{
-         "id":"salbondRecentInfo",
+      "salbondRecent":{ --lucas 調整架構
+         "id":"salbondRecent", --lucas 調整架構
          "name":"最近一次獎金發放資訊",
          "value":{
-            "ym":{
-               "id":"ym",
+            "salbondYM":{ --lucas 調整架構
+               "id":"salbondYM", --lucas 調整架構
                "name":"獎金年月",
                "value":"202109",
                "type":"string",
@@ -82,12 +80,20 @@ Here is a JSON representation of request.
 ### HTTP Response when No Data
 無資料則屬於正常範圍，正常來說可以沒有資料
 ```json
-{
+{ --lucas 調整架構
    "status":"success",
    "message":[
       "回傳成功"
    ],
-   "data":{}
+   "data":{
+      "salbondRecent":{
+         "id":"salbondRecent", --lucas改名
+         "name":"最近一次獎金發放資訊",
+         "value":{},
+         "type":"object",
+         "format":"n/a"
+      }
+   }
 }
 ```
 
