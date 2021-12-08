@@ -45,8 +45,8 @@ Here is a JSON representation of request.
 |:----------|:-------------|:-----|:------------|:------------|:------------|
 | attendYM | 202104 | String | 查詢年月 | Y | AC(YYYYmm) |
 | companyId | 97090920 | String | 公司代號 | N | n/a |
-| depNumber | [1] | Array<Integer> | 部門代號 | N | n/a |
-| empid | [admin] | Array<String> | 員工編號 | N | n/a |
+| depNumber | [1] | Array(Integer) | 部門代號 | N | n/a |
+| empid | [admin] | Array(String) | 員工編號 | N | n/a |
 
 ### HTTP Response when Successful
 ```json
