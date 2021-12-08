@@ -16,7 +16,7 @@ POST
 |:----------|:-------------|:-----|:------------|
 | uid | 98599308101484732326 | String | 需透過appLogin取得
 | right | 51341911904173543336756162544864820 | String | 需透過appLogin取得 |
-| request | {salbondYM:202111, indate:20211115, empid:admin, key:32262008498747441193712198021232260366087649257856381618231} | Object | 查詢條件
+| request | {salbondYM:202111, indate:20211115, key:32262008498747441193712198021232260366087649257856381618231} | Object | 查詢條件
 
 ### JSON representation
 Here is a JSON representation of request.
@@ -24,10 +24,9 @@ Here is a JSON representation of request.
 {
     "uid":"98599308101484732326",
     "right":"51341911904173543336756162544864820",
-    "request":{
+    "request":{ --lucas 取消empid傳入，改用getUser
         "salbondYM":"202111", 
         "indate":"20211115",
-        "empid":"admin",
         "key":"32262008498747441193712198021232260366087649257856381618231"
     }
 }
@@ -45,7 +44,6 @@ Here is a JSON representation of request.
 |:----------|:-------------|:-----|:------------|:------------|:------------|
 | salbondYM | 202111 | String | 薪資年月 | Y | AC(YYYYmm) |
 | indate | 20211115 | String | 入帳日期 | Y | AC(YYYYmmdd) |
-| empid | admin | String | 員工編號 | Y | n/a |
 | key | 32262008498747441193712198021232260366087649257856381618231 | String | 通行金鑰 | Y | n/a |
 
 ### HTTP Response when Successful
@@ -56,12 +54,12 @@ Here is a JSON representation of request.
       "回傳成功"
    ],
    "data":{
-      "main":{
-         "id":"salbondInfo",
+      "salbond":{ --lucas 改名
+         "id":"salbond", --lucas 改名
          "name":"獎金資訊",
          "value":{
-            "ym":{
-               "id":"ym",
+            "salbondYM":{ --lucas 改名
+               "id":"salbondYM", --lucas 改名
                "name":"獎金年月",
                "value":"202109",
                "type":"string",
@@ -78,19 +76,19 @@ Here is a JSON representation of request.
          "type":"object",
          "format":"n/a"
       },
-      "personal":{
-         "id":"personalInfo",
-         "name":"個人資訊",
+      "employee":{ --lucas 改名
+         "id":"employee", --lucas 改名
+         "name":"員工資訊",  --lucas 改名
          "value":{
-            "empName":{
-               "id":"empName",
+            "empFullName":{ --lucas 改名
+               "id":"empFullName", --lucas 改名
                "name":"員工中文姓名",
                "value":"林奇杰",
                "type":"string",
                "format":"n/a"
             },
-            "empEname":{
-               "id":"empEname",
+            "empFullEname":{ --lucas 改名
+               "id":"empFullEname", --lucas 改名
                "name":"員工英文姓名",
                "value":"Lucas",
                "type":"string",
@@ -103,8 +101,8 @@ Here is a JSON representation of request.
                "type":"string",
                "format":"n/a"
             },
-            "depName":{
-               "id":"depName",
+            "depFullName":{ --lucas 改名
+               "id":"depFullName", --lucas 改名
                "name":"部門名稱",
                "value":"CTO",
                "type":"string",
@@ -129,7 +127,7 @@ Here is a JSON representation of request.
          "format":"n/a"
       },
       "due":{
-         "id":"salbondDueInfo",
+         "id":"due", --lucas 改名
          "name":"應領資訊",
          "value":[
             {
@@ -194,8 +192,8 @@ Here is a JSON representation of request.
          "type":"array",
          "format":"n/a"
       },
-      "deduct":{
-         "id":"salbondDeductInfo",
+      "deduct":{ 
+         "id":"deduct", --lucas 改名
          "name":"減項資訊",
          "value":[
             {
@@ -261,12 +259,12 @@ Here is a JSON representation of request.
          "format":"n/a"
       },
       "total":{
-         "id":"totalInfo",
+         "id":"total", --lucas 改名
          "name":"核給資訊",
          "value":[
             {
                "id":"due",
-               "name":"小計資訊",
+               "name":"應領小計資訊", --lucas 改名
                "value":{
                   "paidNo":{
                      "id":"paidNo",
@@ -288,7 +286,7 @@ Here is a JSON representation of request.
             },
             {
                "id":"deduct",
-               "name":"小計資訊",
+               "name":"應扣小計資訊", --lucas 改名
                "value":{
                   "paidNo":{
                      "id":"paidNo",
@@ -310,7 +308,7 @@ Here is a JSON representation of request.
             },
             {
                "id":"current",
-               "name":"小計資訊",
+               "name":"實領小計資訊", --lucas 改名
                "value":{
                   "paidNo":{
                      "id":"paidNo",
@@ -335,7 +333,7 @@ Here is a JSON representation of request.
          "format":"n/a"
       },
       "notes":{
-         "id":"otherNotes",
+         "id":"notes", --lucas 改名
          "name":"其他補充事項(預留空間)",
          "value":[
             
@@ -363,7 +361,21 @@ Here is a JSON representation of request.
    "message":[
       "回傳成功"
    ],
-   "data":{}    
+   "data":{
+      "salbond":{ --lucas 改名
+         "id":"salbond", --lucas 改名
+         "name":"獎金資訊",
+         "value":{},
+      },
+      "properties":{
+         "format":{
+            "YYYYmm":"西元年月",
+            "YYYYmmdd":"西元年月日",
+            "currency":"元",
+            "n/a":""
+         }
+      }
+   }
 }
 ```
 
