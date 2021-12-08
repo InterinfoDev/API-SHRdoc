@@ -24,8 +24,7 @@ Here is a JSON representation of request.
 {
     "uid":"98599308101484732326",
     "right":"51341911904173543336756162544864820",
-    "request":{
-        "empid":"admin",
+    "request":{ --lucas移除 empid，改用getUser
         "key":"32262008498747441193712198021232260366087649257856381618231"
     }
 }
@@ -41,7 +40,6 @@ Here is a JSON representation of request.
 ### Request Properties
 | Key | Value | Type | Description | Required | Format |
 |:----------|:-------------|:-----|:------------|:------------|:------------|
-| empid | admin | String | 員工編號 | Y | n/a |
 | key | 32262008498747441193712198021232260366087649257856381618231 | String | 通行金鑰 | Y | n/a |
 
 
@@ -54,11 +52,11 @@ Here is a JSON representation of request.
    ],
    "data":{
       "salaryRecent":{
-         "id":"salaryRecentInfo",
+         "id":"salaryRecent", --lucas 改名
          "name":"最近一次薪資發放資訊",
          "value":{
-            "ym":{
-               "id":"ym",
+            "salaryYM":{ --lucas 改名
+               "id":"salaryYM", --lucas 改名
                "name":"薪資年月",
                "value":"202109",
                "type":"string",
@@ -89,12 +87,20 @@ Here is a JSON representation of request.
 ### HTTP Response when No Data
 無資料則屬於正常範圍，正常來說可以沒有資料
 ```json
-{
+{ --lucas修改架構
    "status":"success",
    "message":[
       "回傳成功"
    ],
-   "data":{}
+   "data":{
+      "salaryRecent":{
+         "id":"salaryRecent", --lucas 改名
+         "name":"最近一次薪資發放資訊",
+         "value":{},
+         "type":"object",
+         "format":"n/a"
+      }
+   }
 }
 ```
 
