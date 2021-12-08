@@ -16,7 +16,7 @@ POST
 |:----------|:-------------|:-----|:------------|
 | uid | 98599308101484732326 | String | 需透過appLogin取得
 | right | 51341911904173543336756162544864820 | String | 需透過appLogin取得 |
-| request | {deptNumber:[1], attendYM:202104, empid:[admin], companyId:97090920} | Object | 查詢條件(deptNumber/companyId/empid至少選一輸入)
+| request | {depNumber:[1], attendYM:202104, empid:[admin], companyId:97090920} | Object | 查詢條件(deptNumber/companyId/empid至少選一輸入)
 
 ### JSON representation Case 1
 Here is a JSON representation of request.
@@ -27,7 +27,7 @@ Here is a JSON representation of request.
     "request":{
         "attendYM":"202104", 
         "companyId":"97090920",
-        "deptNumber":["1"], --lucas 改成陣列
+        "depNumber":["1"], --lucas 改成陣列 改名 depNumber
         "empid":["admin"] --lucas 改成陣列
     }
 }
@@ -45,7 +45,7 @@ Here is a JSON representation of request.
 |:----------|:-------------|:-----|:------------|:------------|:------------|
 | attendYM | 202104 | String | 查詢年月 | Y | AC(YYYYmm) |
 | companyId | 97090920 | String | 公司代號 | N | n/a |
-| deptNumber | [1] | Array | 部門代號 | N | n/a |
+| depNumber | [1] | Array | 部門代號 | N | n/a |
 | empid | [admin] | Array | 員工編號 | N | n/a |
 
 ### HTTP Response when Successful
