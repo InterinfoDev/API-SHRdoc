@@ -16,9 +16,9 @@ POST
 |:----------|:-------------|:-----|:------------|
 | uid | 98599308101484732326 | String | 需透過appLogin取得
 | right | 51341911904173543336756162544864820 | String | 需透過appLogin取得 |
-| request | {deptNumber:1, attendYM:202104, empid:admin, companyId:97090920} | Object | 查詢條件
+| request | {deptNumber:[1], attendYM:202104, empid:[admin], companyId:97090920} | Object | 查詢條件(deptNumber/companyId/empid至少選一輸入)
 
-### JSON representation
+### JSON representation Case 1
 Here is a JSON representation of request.
 ```json
 {
@@ -27,8 +27,8 @@ Here is a JSON representation of request.
     "request":{
         "attendYM":"202104", 
         "companyId":"97090920",
-        "deptNumber":"1",
-        "empid":"admin"
+        "deptNumber":["1"], --lucas 改成陣列
+        "empid":["admin"] --lucas 改成陣列
     }
 }
 ```
@@ -45,8 +45,8 @@ Here is a JSON representation of request.
 |:----------|:-------------|:-----|:------------|:------------|:------------|
 | attendYM | 202104 | String | 查詢年月 | Y | AC(YYYYmm) |
 | companyId | 97090920 | String | 公司代號 | N | n/a |
-| deptNumber | 1 | String | 部門代號 | N | n/a |
-| empid | admin | String | 員工編號 | N | n/a |
+| deptNumber | [1] | Array | 部門代號 | N | n/a |
+| empid | [admin] | Array | 員工編號 | N | n/a |
 
 ### HTTP Response when Successful
 ```json
@@ -56,8 +56,8 @@ Here is a JSON representation of request.
       "回傳成功"
    ],
    "data":{
-      "main":{
-         "id":"attendInfo",
+      "main":{  --lucas 修改為main
+         "id":"main",  --lucas 修改為main
          "name":"考勤資訊列表",
          "value":{
             "ym":{
@@ -86,15 +86,15 @@ Here is a JSON representation of request.
                      "type":"string",
                      "format":"n/a"
                   },
-                  "empName":{
-                     "id":"empName",
+                  "empFullName":{--lucas
+                     "id":"empFullName",--lucas
                      "name":"員工中文姓名",
                      "value":"林奇杰",
                      "type":"string",
                      "format":"n/a"
                   },
-                  "empEname":{
-                     "id":"empEname",
+                  "empFullEnName":{ --lucas
+                     "id":"empFullEnName",--lucas
                      "name":"員工英文姓名",
                      "value":"Lucas",
                      "type":"string",
@@ -107,8 +107,8 @@ Here is a JSON representation of request.
                      "type":"string",
                      "format":"n/a"
                   },
-                  "depName":{
-                     "id":"depName",
+                  "depFullName":{	--lucas
+                     "id":"depFullName", --lucas
                      "name":"部門名稱",
                      "value":"CTO",
                      "type":"string",
@@ -131,7 +131,7 @@ Here is a JSON representation of request.
 		  "photo":{
 		     "id":"photo",
 		     "name":"員工照片",
-		     "value":"",
+		     "value":"base64",--lucas
 		     "type":"string",
 		     "format":"base64"
 		  }
