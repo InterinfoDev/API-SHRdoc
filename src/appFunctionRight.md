@@ -16,7 +16,7 @@ POST
 |:----------|:-------------|:-----|:------------|
 | uid | 98599308101484732326 | String | 需透過appLogin取得 |
 | right | 51341911904173543336756162544864820 | String | 需透過appLogin取得 |
-| request | {empid:admin} | Object | 將員工編號組成物件 |
+| request | {} | Object | 將員工編號組成物件 |
 
 ### JSON representation
 Here is a JSON representation of request.
@@ -24,8 +24,7 @@ Here is a JSON representation of request.
 {
     "uid":"98599308101484732326",
     "right":"51341911904173543336756162544864820",
-    "request":{
-        "empid":"admin"
+    "request":{ --lucas 拿掉empid傳入，改用getUser()
     }
 }
 ```
@@ -39,7 +38,6 @@ Here is a JSON representation of request.
 ### Request Properties
 | Key | Value | Type | Description | Required | Format |
 |:----------|:-------------|:-----|:------------|:------------|:------------|
-| empid | admin | String | 員工編號 | Y | n/a |
 
 ### HTTP Response when Successful
 ```json
@@ -118,7 +116,7 @@ Here is a JSON representation of request.
 ```
 
 ### HTTP Response when No Data
-無資料則屬於 Code 500 錯誤，正常來說一般使用者一定會有資料
+通常使用者一定會有資料，若無資料代表無權限使用APP，拋出500錯誤
 ```json
 {
     "status": "fail",
