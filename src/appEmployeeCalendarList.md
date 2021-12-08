@@ -16,7 +16,7 @@ POST
 |:----------|:-------------|:-----|:------------|
 | uid | 98599308101484732326 | String | 需透過appLogin取得
 | right | 51341911904173543336756162544864820 | String | 需透過appLogin取得 |
-| request | {empid:admin, eventYM:202111, eventStartDate:20211101, eventEndDate:20211130, eventDate:20211130} | Object | 查詢條件
+| request | {eventYM:202111, eventStartDate:20211101, eventEndDate:20211130, eventDate:20211130} | Object | 查詢條件
 
 ### JSON representation
 Case 1 . Here is a JSON representation of request. 
@@ -24,8 +24,7 @@ Case 1 . Here is a JSON representation of request.
 {
     "uid":"98599308101484732326",
     "right":"51341911904173543336756162544864820",
-    "request":{
-        "empid":"admin",
+    "request":{ --lucas 移除empid，改用getUser
         "eventStartDate":"20211101",
         "eventEndDate":"20211130"
     }
@@ -36,8 +35,7 @@ Case 2 . Here is a JSON representation of request.
 {
     "uid":"98599308101484732326",
     "right":"51341911904173543336756162544864820",
-    "request":{
-        "empid":"admin",
+    "request":{ --lucas 移除empid，改用getUser
         "eventYM":"202111"
     }
 }
@@ -47,8 +45,7 @@ Case 3 . Here is a JSON representation of request.
 {
     "uid":"98599308101484732326",
     "right":"51341911904173543336756162544864820",
-    "request":{
-        "empid":"admin",
+    "request":{ --lucas 移除empid，改用getUser
         "eventDate":"20211101",
     }
 }
@@ -64,13 +61,10 @@ Case 3 . Here is a JSON representation of request.
 ### Request Properties
 | Case No | Key | Value | Type | Description | Required | Format |
 |:----------|:----------|:-------------|:-----|:------------|:------------|:------------|
-| 1 | empid | admin | String | 員工編號 | Y | n/a |
-|   | eventStartDate | 20211101 | String | 事件起始日期 | Y | AC(YYYYmmdd) |
+| 1 | eventStartDate | 20211101 | String | 事件起始日期 | Y | AC(YYYYmmdd) |
 |   | eventEndDate | 20211130 | String | 事件結束日期 | Y | AC(YYYYmmdd) |
-| 2 | empid | admin | String | 員工編號 | Y | n/a |
-|   | eventYM | 202111 | String | 事件年月 | Y | AC(YYYYmm) |
-| 3 | empid | admin | String | 員工編號 | Y | n/a |
-|   | eventDate | 20211130 | String | 事件日期 | Y | AC(YYYYmmdd) |
+| 2  | eventYM | 202111 | String | 事件年月 | Y | AC(YYYYmm) |
+| 3  | eventDate | 20211130 | String | 事件日期 | Y | AC(YYYYmmdd) |
 
 ### HTTP Response when Successful
 ```json
