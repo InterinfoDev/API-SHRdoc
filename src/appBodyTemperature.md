@@ -69,6 +69,13 @@ Here is a JSON representation of request.
                "id":"temperatureInfo",
                "name":"體溫資料",
                "value":{
+                  "executeResult":{
+                     "id":"executeResult",  --lucas 增加
+                     "name":"異動結果",
+                     "value":true,
+                     "type":"boolean",
+                     "format":"n/a"
+                  },
                   "temperature":{
                      "id":"temperature",
                      "name":"測量體溫",
