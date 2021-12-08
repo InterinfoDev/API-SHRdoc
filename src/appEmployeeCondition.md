@@ -16,7 +16,7 @@ POST
 |:---------|:-----|:------------|
 | uid | 98599308101484732326 | String | 需透過appLogin取得
 | right | 51341911904173543336756162544864820 | String | 需透過appLogin取得 |
-| request | {companyId:97090920 , deptNumber:1 , empid:admin} | Object | 查詢條件
+| request | {companyId:97090920 , depNumber:[1] } | Object | 查詢條件
 
 ### JSON representation
 Here is a JSON representation of request.
@@ -24,10 +24,9 @@ Here is a JSON representation of request.
 {
     "uid":"98599308101484732326",
     "right":"51341911904173543336756162544864820",
-    "request":{
+    "request":{  --lucas 取消empid傳入，若有需要者改用getUser判斷
         "companyId":"97090920",
-        "deptNumber":1,
-        "empid":"admin"
+        "depNumber":[1],  --lucas 改成array 改名 
     }
 }
 ```
@@ -43,8 +42,7 @@ Here is a JSON representation of request.
 | Key | Value | Type | Description | Required | Format |
 |:----------|:-------------|:-----|:------------|:------------|:------------|
 | companyId | 97090920 | String | 公司代號 | N | n/a |
-| deptNumber | 1 | String | 部門代號 | N | n/a |
-| empid | admin | String | 員工編號 | Y | n/a |
+| depNumber | [1] | String | 部門代號 | N | n/a |
 
 ### HTTP Response when Successful
 ```json
@@ -54,23 +52,23 @@ Here is a JSON representation of request.
       "回傳成功"
    ],
    "data":{
-      "main":{
+      "employeeCondition":{  --lucas 改名employeeCondition
          "id":"employeeCondition",
          "name":"人員查詢權限",
          "value":[
             {
-               "id":"employeeInfo",
+               "id":"employee", --lucas 改名
                "name":"員工資訊",
                "value":{
-                  "empName":{
-                     "id":"empName",
+                  "empFullName":{  --lucas 改名
+                     "id":"empFullName", --lucas 改名
                      "name":"員工中文姓名",
                      "value":"林奇杰",
                      "type":"string",
                      "format":"n/a"
                   },
-                  "empEname":{
-                     "id":"empEname",
+                  "empFullEname":{--lucas 改名
+                     "id":"empFullEname",--lucas 改名
                      "name":"員工英文姓名",
                      "value":"Lucas",
                      "type":"string",
