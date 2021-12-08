@@ -167,9 +167,9 @@ Case 3 . Here is a JSON representation of request.
    ],
    "data":{ 
       "employeeCalendarList":{
-         "id":"employeeCalendarList", --lucas 修改結構
+         "id":"employeeCalendarList", 
          "name":"員工個人行事曆列表",
-         "value":[],
+         "value":[],--lucas 修改結構
          "type":"array",
          "format":"n/a"
       },
