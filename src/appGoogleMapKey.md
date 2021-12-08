@@ -49,8 +49,8 @@ Here is a JSON representation of request.
       "回傳成功"
    ],
    "data":{
-      "mapInfo":{
-         "id":"mapInfo",
+      "map":{
+         "id":"map",
          "name":"地圖資訊",
          "value":{
             "key":{
@@ -74,7 +74,7 @@ Here is a JSON representation of request.
 ```
 
 ### HTTP Response when No Data
-無資料則屬於 Code 500 錯誤，正常來說一般使用者一定會有資料
+無資料則屬於 Code 500 錯誤，正常來說應該要設定KEY
 ```json
 {
     "status": "fail",
