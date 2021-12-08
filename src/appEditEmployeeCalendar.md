@@ -18,15 +18,14 @@ POST
 | right | 51341911904173543336756162544864820 | String | 需透過appLogin取得 |
 | request | {eventNo:uuid,empid:admin,eventBeginDate:20211101,eventEndDate:20211101,isFullDayEvent:false,eventBeginTime:0900,eventEndTime:1000,eventSubject:xxx,eventContent:xxx,eventLocation:interinfo} | Object | 查詢條件
 
-### JSON representation
+### JSON representation Case 1 - Not Full Day Event
 Here is a JSON representation of request.
 ```json
 {
     "uid":"98599308101484732326",
     "right":"51341911904173543336756162544864820",
     "request":{
-        "eventNo":"uuid", 
-        "empid":"admin",
+        "eventNo":"uuid",  --lucas 移除empid，應該從getUser來
         "eventBeginDate":"20211101", 
         "eventEndDate":"20211101", 
         "isFullDayEvent":false, 
@@ -38,7 +37,25 @@ Here is a JSON representation of request.
     }
 }
 ```
-
+### JSON representation Case 1 - Full Day Event
+Here is a JSON representation of request.
+```json
+{
+    "uid":"98599308101484732326",
+    "right":"51341911904173543336756162544864820",
+    "request":{
+        "eventNo":"uuid",  --lucas 移除empid，應該從getUser來
+        "eventBeginDate":"20211101", 
+        "eventEndDate":"20211101", 
+        "isFullDayEvent":false, 
+        "eventBeginTime":"",  --lucas 若為全天事件，起始時間空白
+        "eventEndTime":"",    --lucas 若為全天事件，結束時間空白
+        "eventSubject":"XXX", 
+        "eventContent":"XXX", 
+        "eventLocation":"interinfo", 
+    }
+}
+```
 ### Properties
 | Property | Type | Description |
 |:---------|:-----|:------------|
@@ -50,7 +67,6 @@ Here is a JSON representation of request.
 | Key | Value | Type | Description | Required | Format |
 |:----------|:-------------|:-----|:------------|:------------|:------------|
 | eventNo | uuid | String | 行事曆單號 | Y | UUID |
-| empid | admin | String | 員工編號 | Y | n/a |
 | eventBeginDate | 20211101 | String | 事件起始日期 | Y | AC(YYYYmmdd) |
 | eventEndDate | 20211101 | String | 事件結束日期 | Y | AC(YYYYmmdd) |
 | isFullDayEvent | true | boolean | 是否全天事件 | Y | n/a |
@@ -101,7 +117,7 @@ Here is a JSON representation of request.
 ```
 
 ### HTTP Response when No Data 
-若有傳入eventNo，無資料則屬於 Code 500 錯誤，正常來說一般使用者一定會有資料
+若有傳入eventNo，不屬於登入者，無資料則屬於 Code 500 錯誤，正常來說一般使用者一定會有資料
 ```json
 {
     "status": "fail",
