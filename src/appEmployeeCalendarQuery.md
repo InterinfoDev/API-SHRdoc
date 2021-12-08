@@ -16,7 +16,7 @@ POST
 |:----------|:-------------|:-----|:------------|
 | uid | 98599308101484732326 | String | 需透過appLogin取得
 | right | 51341911904173543336756162544864820 | String | 需透過appLogin取得 |
-| request | {eventNo:XXXXXXXXXXXXXX, empid:admin} | Object | 查詢條件
+| request | {eventNo:XXXXXXXXXXXXXX } | Object | 查詢條件
 
 ### JSON representation
 Here is a JSON representation of request.
@@ -24,9 +24,8 @@ Here is a JSON representation of request.
 {
     "uid":"98599308101484732326",
     "right":"51341911904173543336756162544864820",
-    "request":{
-        "eventNo":"XXXXXXXXXXXXXX", 
-        "empid":"admin"
+    "request":{ --lucas 移除empid,改用getUser
+        "eventNo":"XXXXXXXXXXXXXX"
     }
 }
 ```
@@ -42,7 +41,6 @@ Here is a JSON representation of request.
 | Key | Value | Type | Description | Required | Format |
 |:----------|:-------------|:-----|:------------|:------------|:------------|
 | eventNo | XXXXXXXXXXXXXX | String | 事件序號 | Y | n/a |
-| empid | admin | String | 員工編號 | Y | n/a |
 
 
 ### HTTP Response when Successful
@@ -145,29 +143,15 @@ Here is a JSON representation of request.
 ```
 
 ### HTTP Response when No Data
-無資料則屬於正常範圍，正常來說可以沒有資料
+若查無資料，代表資料已遺失，應屬於 Code 500 錯誤
 ```json
-{
-   "status":"success",
-   "message":[
-      "回傳成功"
-   ],
-   "data":{
-      "employeeCalendar":{
-         "id":"employeeCalendar",
-         "name":"員工個人行事曆詳細資料",
-         "value":[],
-         "type":"array",
-         "format":"n/a"
-      },
-      "properties":{
-         "format":{
-            "n/a":"",
-            "YYYYmmdd":"西元年月日",
-            "HHmm":"時間時分"
-         }
-      }
-   }
+{  --lucas查無資料 應屬於500錯誤
+    "status": "fail",
+    "code": 500,
+    "message": [
+        "查無資料"
+    ],
+    "data": {}
 }
 ```
 
