@@ -49,8 +49,8 @@ Here is a JSON representation of request.
       "回傳成功"
    ],
    "data":{
-      "personal":{
-         "id":"personal", --lucas
+      "employee":{
+         "id":"employee", --lucas 二次修改
          "name":"員工資訊",
          "value":{
             "empFullName":{ --lucas
@@ -278,22 +278,22 @@ Board 或 Attend 無資料，但Board無資料則隱藏該區塊，但整體來�
       "回傳成功"
    ],
    "data":{
-      "personal":{
-         "id":"personalInfo",
+      "employee":{--lucas修改
+         "id":"employee",   --lucas修改
          "name":"個人資訊",
          "value":{"...":"..."},
          "type":"object",
          "format":"n/a"
       },
       "attend":{
-         "id":"attendInfo",
+         "id":"attend", --lucas修改
          "name":"考勤資訊",
          "value":[],    --無資料則是顯示
          "type":"array",
          "format":"n/a"
       },
       "board":{
-         "id":"publishBoardInfo",
+         "id":"board",  --lucas修改
          "name":"公告資訊",
          "value":[],
          "type":"array",
