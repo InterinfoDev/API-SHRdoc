@@ -64,8 +64,7 @@ Here is a JSON representation of request.
 {
     "uid":"98599308101484732326",
     "right":"51341911904173543336756162544864820",
-    "request":{
-        "eventNo":"",  --lucas 移除empid，應該從getUser來
+    "request":{--lucas 移除empid，應該從getUser來
         "eventBeginDate":"20211101", 
         "eventEndDate":"20211101", 
         "isFullDayEvent":false, 
@@ -84,8 +83,7 @@ Here is a JSON representation of request.
 {
     "uid":"98599308101484732326",
     "right":"51341911904173543336756162544864820",
-    "request":{
-        "eventNo":"",  --lucas 移除empid，應該從getUser來
+    "request":{--lucas 移除empid，應該從getUser來
         "eventBeginDate":"20211101", 
         "eventEndDate":"20211101", 
         "isFullDayEvent":false, 
@@ -108,7 +106,7 @@ Here is a JSON representation of request.
 ### Request Properties
 | Key | Value | Type | Description | Required | Format | Note |
 |:----------|:-------------|:-----|:------------|:------------|:------------|:------------|
-| eventNo | uuid | String | 行事曆單號 | Y | UUID | 新增時請放空白，修改時為必須傳入 |
+| eventNo | uuid | String | 行事曆單號 | N | UUID | 新增時不需傳入，修改時為必須傳入且不可空白 |
 | eventBeginDate | 20211101 | String | 開始日期 | Y | AC(YYYYmmdd) |新增與修改時必須傳入 |
 | eventEndDate | 20211101 | String | 結束日期 | Y | AC(YYYYmmdd) |新增與修改時必須傳入 |
 | isFullDayEvent | true | boolean | 全天 | Y | n/a |新增與修改時必須傳入，若傳入為true，開始時間與結束時間必須為空白傳入，反之開始時間與結束時間不可空白 |
