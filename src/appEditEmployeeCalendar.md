@@ -111,11 +111,11 @@ Here is a JSON representation of request.
 | eventNo | uuid | String | 行事曆單號 | Y | UUID | 新增時請放空白，修改時為必須傳入 |
 | eventBeginDate | 20211101 | String | 開始日期 | Y | AC(YYYYmmdd) |新增與修改時必須傳入 |
 | eventEndDate | 20211101 | String | 結束日期 | Y | AC(YYYYmmdd) |新增與修改時必須傳入 |
-| isFullDayEvent | true | boolean | 是否全天事件 | Y | n/a |新增與修改時必須傳入，若傳入為true，開始時間與結束時間必須為空白傳入，反之開始時間與結束時間不可空白 |
+| isFullDayEvent | true | boolean | 全天 | Y | n/a |新增與修改時必須傳入，若傳入為true，開始時間與結束時間必須為空白傳入，反之開始時間與結束時間不可空白 |
 | eventBeginTime | 0900 | String | 開始時間 | Y | TIME(HHmm) |新增與修改時必須傳入，若全天候傳入為true，開始時間必須為空白傳入，反之不可空白 |
 | eventEndTime | 1000 | String | 結束時間 | Y | TIME(HHmm) | 新增與修改時必須傳入，若全天候傳入為true，結束時間必須為空白傳入，反之不可空白 |
 | eventSubject | XXX | String | 事件標題 | Y | n/a |新增與修改時必須傳入，但可空白 |
-| eventContent | XXX | String | 事件內容 | Y | n/a |新增與修改時必須傳入，但可空白 |
+| eventContent | XXX | String | 內文 | Y | n/a |新增與修改時必須傳入，但可空白 |
 | eventLocation | interinfo | String | 地點 | Y | n/a |新增與修改時必須傳入，但可空白 |
 
 
