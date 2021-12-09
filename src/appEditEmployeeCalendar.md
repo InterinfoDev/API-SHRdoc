@@ -67,10 +67,10 @@ Here is a JSON representation of request.
 | Key | Value | Type | Description | Required | Format |
 |:----------|:-------------|:-----|:------------|:------------|:------------|
 | eventNo | uuid | String | 行事曆單號 | Y | UUID |
-| eventBeginDate | 20211101 | String | 事件起始日期 | Y | AC(YYYYmmdd) |
-| eventEndDate | 20211101 | String | 事件結束日期 | Y | AC(YYYYmmdd) |
+| eventBeginDate | 20211101 | String | 開始日期 | Y | AC(YYYYmmdd) |
+| eventEndDate | 20211101 | String | 結束日期 | Y | AC(YYYYmmdd) |
 | isFullDayEvent | true | boolean | 是否全天事件 | Y | n/a |
-| eventBeginTime | 0900 | String | 起始時間 | Y | TIME(HHmm) |
+| eventBeginTime | 0900 | String | 開始時間 | Y | TIME(HHmm) |
 | eventEndTime | 1000 | String | 結束時間 | Y | TIME(HHmm) |
 | eventSubject | XXX | String | 事件標題 | Y | n/a |
 | eventContent | XXX | String | 事件內容 | Y | n/a |
