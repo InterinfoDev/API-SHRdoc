@@ -18,7 +18,7 @@ POST
 | right | 51341911904173543336756162544864820 | String | 需透過appLogin取得 |
 | request | {eventNo:uuid,empid:admin,eventBeginDate:20211101,eventEndDate:20211101,isFullDayEvent:false,eventBeginTime:0900,eventEndTime:1000,eventSubject:xxx,eventContent:xxx,eventLocation:interinfo} | Object | 查詢條件
 
-### JSON representation Case 1 - Not Full Day Event
+### JSON representation Case 1 - Not Full Day Event  (Update)
 Here is a JSON representation of request.
 ```json
 {
@@ -37,7 +37,8 @@ Here is a JSON representation of request.
     }
 }
 ```
-### JSON representation Case 1 - Full Day Event
+
+### JSON representation Case 2 - Full Day Event (Update)
 Here is a JSON representation of request.
 ```json
 {
@@ -56,6 +57,47 @@ Here is a JSON representation of request.
     }
 }
 ```
+
+### JSON representation Case 3 - Not Full Day Event  (Add)
+Here is a JSON representation of request.
+```json
+{
+    "uid":"98599308101484732326",
+    "right":"51341911904173543336756162544864820",
+    "request":{
+        "eventNo":"",  --lucas 移除empid，應該從getUser來
+        "eventBeginDate":"20211101", 
+        "eventEndDate":"20211101", 
+        "isFullDayEvent":false, 
+        "eventBeginTime":"0900", 
+        "eventEndTime":"1000", 
+        "eventSubject":"XXX", 
+        "eventContent":"XXX", 
+        "eventLocation":"interinfo", 
+    }
+}
+```
+
+### JSON representation Case 4 - Full Day Event (Add)
+Here is a JSON representation of request.
+```json
+{
+    "uid":"98599308101484732326",
+    "right":"51341911904173543336756162544864820",
+    "request":{
+        "eventNo":"",  --lucas 移除empid，應該從getUser來
+        "eventBeginDate":"20211101", 
+        "eventEndDate":"20211101", 
+        "isFullDayEvent":false, 
+        "eventBeginTime":"",  --lucas 若為全天事件，起始時間空白
+        "eventEndTime":"",    --lucas 若為全天事件，結束時間空白
+        "eventSubject":"XXX", 
+        "eventContent":"XXX", 
+        "eventLocation":"interinfo", 
+    }
+}
+```
+
 ### Properties
 | Property | Type | Description |
 |:---------|:-----|:------------|
@@ -64,17 +106,17 @@ Here is a JSON representation of request.
 | request | Object | 要求本文 |
 
 ### Request Properties
-| Key | Value | Type | Description | Required | Format |
-|:----------|:-------------|:-----|:------------|:------------|:------------|
-| eventNo | uuid | String | 行事曆單號 | Y | UUID |
-| eventBeginDate | 20211101 | String | 開始日期 | Y | AC(YYYYmmdd) |
-| eventEndDate | 20211101 | String | 結束日期 | Y | AC(YYYYmmdd) |
-| isFullDayEvent | true | boolean | 是否全天事件 | Y | n/a |
-| eventBeginTime | 0900 | String | 開始時間 | Y | TIME(HHmm) |
-| eventEndTime | 1000 | String | 結束時間 | Y | TIME(HHmm) |
-| eventSubject | XXX | String | 事件標題 | Y | n/a |
-| eventContent | XXX | String | 事件內容 | Y | n/a |
-| eventLocation | interinfo | String | 地點 | Y | n/a |
+| Key | Value | Type | Description | Required | Format | | Format |
+|:----------|:-------------|:-----|:------------|:------------|:------------|:------------|
+| eventNo | uuid | String | 行事曆單號 | Y | UUID | 新增時請放空白，修改時為必須傳入 |
+| eventBeginDate | 20211101 | String | 開始日期 | Y | AC(YYYYmmdd) |新增與修改時必須傳入 |
+| eventEndDate | 20211101 | String | 結束日期 | Y | AC(YYYYmmdd) |新增與修改時必須傳入 |
+| isFullDayEvent | true | boolean | 是否全天事件 | Y | n/a |新增與修改時必須傳入，若傳入為true，開始時間與結束時間必須為空白傳入，反之開始時間與結束時間不可空白 |
+| eventBeginTime | 0900 | String | 開始時間 | Y | TIME(HHmm) |新增與修改時必須傳入，若全天候傳入為true，開始時間必須為空白傳入，反之不可空白 |
+| eventEndTime | 1000 | String | 結束時間 | Y | TIME(HHmm) | 新增與修改時必須傳入，若全天候傳入為true，結束時間必須為空白傳入，反之不可空白 |
+| eventSubject | XXX | String | 事件標題 | Y | n/a |新增與修改時必須傳入，但可空白 |
+| eventContent | XXX | String | 事件內容 | Y | n/a |新增與修改時必須傳入，但可空白 |
+| eventLocation | interinfo | String | 地點 | Y | n/a |新增與修改時必須傳入，但可空白 |
 
 
 ### HTTP Response when Successful
