@@ -71,56 +71,56 @@ Here is a JSON representation of request.
             },
             "eventBeginDate":{
                "id":"eventBeginDate",
-               "name":"事件起始日期",
+               "name":"開始日期",  --lucas 改名
                "value":"20211123",
                "type":"string",
                "format":"YYYYmmdd"
             },
             "eventEndDate":{
                "id":"eventEndDate",
-               "name":"事件結束日期",
+               "name":"結束日期", --lucas 改名
                "value":"20211123",
                "type":"string",
                "format":"YYYYmmdd"
             },
             "isFullDayEvent":{
                "id":"isFullDayEvent",
-               "name":"是否為全天候事件",
+               "name":"全天", --lucas 改名
                "value":true,
                "type":"boolean",
                "format":"n/a"
             },
             "eventBeginTime":{
                "id":"eventBeginTime",
-               "name":"事件起始時間",
+               "name":"開始時間", --lucas 改名
                "value":"0900",
                "type":"string",
                "format":"HHmm"
             },
             "eventEndTime":{
                "id":"eventEndTime",
-               "name":"事件結束時間",
+               "name":"結束時間", --lucas 改名
                "value":"1500",
                "type":"string",
                "format":"HHmm"
             },
             "eventSubject":{
                "id":"eventSubject",
-               "name":"行事曆主旨",
+               "name":"事件標題",   --lucas 改名
                "value":"HR APP會議",
                "type":"string",
                "format":"n/a"
             },
             "eventContent":{
                "id":"eventContent",
-               "name":"行事曆內容",
+               "name":"內文",
                "value":"今天要開會XXXX",
                "type":"string",
                "format":"n/a"
             },
             "eventLocation":{
                "id":"eventLocation",
-               "name":"地點資訊",
+               "name":"地點",
                "value":"英特內軟體",
                "type":"string",
                "format":"n/a"
