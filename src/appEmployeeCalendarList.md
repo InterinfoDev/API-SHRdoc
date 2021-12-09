@@ -61,10 +61,10 @@ Case 3 . Here is a JSON representation of request.
 ### Request Properties
 | Case No | Key | Value | Type | Description | Required | Format |
 |:----------|:----------|:-------------|:-----|:------------|:------------|:------------|
-| 1 | eventStartDate | 20211101 | String | 事件起始日期 | Y | AC(YYYYmmdd) |
-|   | eventEndDate | 20211130 | String | 事件結束日期 | Y | AC(YYYYmmdd) |
-| 2  | eventYM | 202111 | String | 事件年月 | Y | AC(YYYYmm) |
-| 3  | eventDate | 20211130 | String | 事件日期 | Y | AC(YYYYmmdd) |
+| 1 | eventStartDate | 20211101 | String | 開始日期 | Y | AC(YYYYmmdd) |
+|   | eventEndDate | 20211130 | String | 結束日期 | Y | AC(YYYYmmdd) |
+| 2  | eventYM | 202111 | String | 年月 | Y | AC(YYYYmm) |
+| 3  | eventDate | 20211130 | String | 日期 | Y | AC(YYYYmmdd) |
 
 ### HTTP Response when Successful
 ```json
@@ -95,42 +95,42 @@ Case 3 . Here is a JSON representation of request.
                },
                "eventBeginDate":{
                   "id":"eventBeginDate",
-                  "name":"事件起始日期",
+                  "name":"開始日期", --lucas改名
                   "value":"20211123",
                   "type":"string",
                   "format":"YYYYmmdd"
                },
                "eventEndDate":{
                   "id":"eventEndDate",
-                  "name":"事件結束日期",
+                  "name":"結束日期", --lucas改名
                   "value":"20211123",
                   "type":"string",
                   "format":"YYYYmmdd"
                },
                "isFullDayEvent":{
                   "id":"isFullDayEvent",
-                  "name":"是否為全天候事件",
+                  "name":"全天", --lucas改名
                   "value":true,
                   "type":"boolean",
                   "format":"n/a"
                },
                "eventBeginTime":{
                   "id":"eventBeginTime",
-                  "name":"事件起始時間",
+                  "name":"開始時間", --lucas改名
                   "value":"0900",
                   "type":"string",
                   "format":"HHmm"
                },
                "eventEndTime":{
                   "id":"eventEndTime",
-                  "name":"事件結束時間",
+                  "name":"結束時間", --lucas改名
                   "value":"1500",
                   "type":"string",
                   "format":"HHmm"
                },
                "eventSubject":{
                   "id":"eventSubject",
-                  "name":"行事曆主旨",
+                  "name":"事件標題", --lucas改名
                   "value":"HR APP會議",
                   "type":"string",
                   "format":"n/a"
