@@ -106,7 +106,7 @@ Here is a JSON representation of request.
 | request | Object | 要求本文 |
 
 ### Request Properties
-| Key | Value | Type | Description | Required | Format | N |
+| Key | Value | Type | Description | Required | Format | Note |
 |:----------|:-------------|:-----|:------------|:------------|:------------|:------------|
 | eventNo | uuid | String | 行事曆單號 | Y | UUID | 新增時請放空白，修改時為必須傳入 |
 | eventBeginDate | 20211101 | String | 開始日期 | Y | AC(YYYYmmdd) |新增與修改時必須傳入 |
