@@ -37,6 +37,23 @@ POST
 |:----------|:----------|:----------|:----------|
 | countInfo | countInfo | 1  | 1 |
 
+
+### Calendar List Style
+行事曆列表有資料時顯示
+<dl>
+  <dt>樣式一</dt>
+  <dd>2021/12/01 ~ 2021/12/31 全天</dd>
+
+  <dt>樣式二</dt>
+  <dd>2021/12/01 全天</dd>
+
+  <dt>樣式三</dt>
+  <dd>2021/12/01 09:00 ~ 18:00</dd>
+
+  <dt>樣式四</dt>
+  <dd>2021/12/01 09:00 ~ 2021/12/31 18:00</dd>
+</dl>
+
 ### Program list
 | Program Senario | Program Name | ReadyToUse | Description | Author | Last Modify Date |
 |:----------|:----------|:----------|:----------|:----------|:----------|
