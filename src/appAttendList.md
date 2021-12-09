@@ -94,7 +94,7 @@ Here is a JSON representation of request.
                      "format":"n/a"
                   },
                   "empFullEnName":{ --lucas
-                     "id":"empFullEName",--lucas
+                     "id":"empFullEname",--lucas
                      "name":"員工英文姓名",
                      "value":"Lucas",
                      "type":"string",
