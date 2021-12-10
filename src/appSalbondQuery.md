@@ -360,24 +360,8 @@ Here is a JSON representation of request.
    "status":"success",
    "message":[
       "回傳成功"
-   ],
-   "data":{
-      "salbond":{ --lucas 改名
-         "id":"salbond", --lucas 改名
-         "name":"獎金資訊",
-         "value":{},
-         "type":"object",
-         "format":"n/a"
-      },
-      "properties":{
-         "format":{
-            "YYYYmm":"西元年月",
-            "YYYYmmdd":"西元年月日",
-            "currency":"元",
-            "n/a":""
-         }
-      }
-   }
+   ],  --lucas 修改架構
+   "data":{}
 }
 ```
 
