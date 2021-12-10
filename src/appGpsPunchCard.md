@@ -56,54 +56,54 @@ Here is a JSON representation of request.
 
 ### HTTP Response when Successful
 ```json
-{
+{ 
    "status":"success",
    "message":[
       "回傳成功"
    ],
    "data":{
-      "gpsPunchCard":{
+      "gpsPunchCard":{ --lucas 移除punch 這層 20211210
          "id":"gpsPunchCard",
          "name":"GPS線上打卡結果",
-         "value":{ --lucas 移除punch 這層 20211210
-            "punchDate":{
-               "id":"punchDate",
-               "name":"實際打卡日期",
-               "value":"20211122",
-               "type":"string",
-               "format":"YYYYmmdd"
-            },
-            "punchTime":{
-               "id":"punchTime",
-               "name":"實際打卡時間",
-               "value":"0911",
-               "type":"string",
-               "format":"HHmm"
-            },
-            "punchResult":{
+         "value":{ 
+              "punchDate":{
+                 "id":"punchDate",
+                 "name":"實際打卡日期",
+                 "value":"20211122",
+                 "type":"string",
+                 "format":"YYYYmmdd"
+              },
+              "punchTime":{
+                 "id":"punchTime",
+                 "name":"實際打卡時間",
+                 "value":"0911",
+                 "type":"string",
+                 "format":"HHmm"
+              },
+              "punchResult":{
                  "id":"punchResult",
                  "name":"實際打卡結果",
                  "value":{
                     "isError":{
                        "id":"isError",
                        "name":"是否為錯誤打卡",
-                       "value":false,
+                       "value":true,
                        "type":"boolean",
                        "format":"n/a"
                     },
                     "errorMessage":{
                        "id":"errorMessage",
                        "name":"錯誤訊息(如果isError為true，代表使用者要重新打卡)",
-                       "value":"",
+                       "value":"XXXXXXX",
                        "type":"string",
                        "format":"n/a"
                     }
                  },
                  "type":"object",
                  "format":"n/a"
-               }
-            }
-         },
+              }
+            },
+         
          "type":"object",
          "format":"n/a"
       },
