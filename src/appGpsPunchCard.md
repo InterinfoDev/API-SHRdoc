@@ -65,50 +65,36 @@ Here is a JSON representation of request.
       "gpsPunchCard":{
          "id":"gpsPunchCard",
          "name":"GPS線上打卡結果",
-         "value":{
-            "punch":{ --lucas改名
-               "id":"punch", --lucas改名
-               "name":"打卡資料",
-               "value":{
-                  "punchDate":{
-                     "id":"punchDate",
-                     "name":"實際打卡日期",
-                     "value":"20211122",
-                     "type":"string",
-                     "format":"YYYYmmdd"
-                  },
-                  "punchTime":{
-                     "id":"punchTime",
-                     "name":"實際打卡時間",
-                     "value":"0911",
-                     "type":"string",
-                     "format":"HHmm"
-                  },
-                  "punchResult":{
-                     "id":"punchResult",
-                     "name":"實際打卡結果",
-                     "value":{
-                        "isError":{
-                           "id":"isError",
-                           "name":"是否為錯誤打卡",
-                           "value":false, --lucas修改
-                           "type":"boolean",
-                           "format":"n/a"
-                        },
-                        "errorMessage":{
-                           "id":"errorMessage",
-                           "name":"錯誤訊息(如果isError為true，代表使用者要重新打卡)",
-                           "value":"", --lucas修改
-                           "type":"string",
-                           "format":"n/a"
-                        }
-                     },
-                     "type":"object",
-                     "format":"n/a"
-                  }
+         "value":{ --lucas 移除punch 這層 20211210
+            "punchDate":{
+               "id":"punchDate",
+               "name":"實際打卡日期",
+               "value":"20211122",
+               "type":"string",
+               "format":"YYYYmmdd"
+            },
+            "punchTime":{
+               "id":"punchTime",
+               "name":"實際打卡時間",
+               "value":"0911",
+               "type":"string",
+               "format":"HHmm"
+            },
+            "punchResult":{
+               "isError":{
+                  "id":"isError",
+                  "name":"是否為錯誤打卡",
+                  "value":false,
+                  "type":"boolean",
+                  "format":"n/a"
                },
-               "type":"object",
-               "format":"n/a"
+               "errorMessage":{
+                  "id":"errorMessage",
+                  "name":"錯誤訊息(如果isError為true，代表使用者要重新打卡)",
+                  "value":"",
+                  "type":"string",
+                  "format":"n/a"
+               }
             }
          },
          "type":"object",
