@@ -667,30 +667,11 @@ Here is a JSON representation of request.
 無資料則屬於正常範圍，正常來說可以沒有資料
 ```json
 {
-   "status":"success",
+   "status":"success",  --lucas 修改架構
    "message":[
       "回傳成功"
    ],
    "data":{
-      "salary":{  --lucas 改名
-         "id":"salary", --lucas 改名
-         "name":"薪資資訊",
-         "value":{},
-         "type":"object",
-         "format":"n/a"
-      },
-      "properties":{
-         "format":{
-            "YYYYmm":"西元年月",
-            "YYYYmmdd":"西元年月日",
-            "hour":"小時",
-            "day":"天",
-            "currency":"元",
-            "people":"人",
-            "count":"次數",
-            "n/a":""
-         }
-      }
    }
 }
 ```
