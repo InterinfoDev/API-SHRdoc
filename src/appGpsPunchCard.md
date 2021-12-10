@@ -81,20 +81,26 @@ Here is a JSON representation of request.
                "format":"HHmm"
             },
             "punchResult":{
-               "isError":{
-                  "id":"isError",
-                  "name":"是否為錯誤打卡",
-                  "value":false,
-                  "type":"boolean",
-                  "format":"n/a"
-               },
-               "errorMessage":{
-                  "id":"errorMessage",
-                  "name":"錯誤訊息(如果isError為true，代表使用者要重新打卡)",
-                  "value":"",
-                  "type":"string",
-                  "format":"n/a"
-               }
+               "id":"punchResult",
+                 "name":"實際打卡結果",
+                 "value":{
+                    "isError":{
+                       "id":"isError",
+                       "name":"是否為錯誤打卡",
+                       "value":false,
+                       "type":"boolean",
+                       "format":"n/a"
+                    },
+                    "errorMessage":{
+                       "id":"errorMessage",
+                       "name":"錯誤訊息(如果isError為true，代表使用者要重新打卡)",
+                       "value":"",
+                       "type":"string",
+                       "format":"n/a"
+                    }
+                 },
+                 "type":"object",
+                 "format":"n/a"
             }
          },
          "type":"object",
