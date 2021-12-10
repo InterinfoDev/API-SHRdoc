@@ -81,7 +81,7 @@ Here is a JSON representation of request.
                "format":"HHmm"
             },
             "punchResult":{
-               "id":"punchResult",
+                 "id":"punchResult",
                  "name":"實際打卡結果",
                  "value":{
                     "isError":{
@@ -101,6 +101,7 @@ Here is a JSON representation of request.
                  },
                  "type":"object",
                  "format":"n/a"
+               }
             }
          },
          "type":"object",
