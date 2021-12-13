@@ -68,7 +68,7 @@ POST
 | 異動行事曆 | appEditEmployeeCalendar | Y | 取得員工個人行事曆特定事件詳細資料 | Kevin | 20211206 |
 | 員工權限 | appEmployeeCondition | Y | 取得某員工可視範圍員工資料 | AndyHou | 20211202 |
 | 員工照片 | appEmployeePhoto | Y | 取得特定員工照片資訊 | AndyHou | 20211202 |
-| 忘記密碼 | appForgotPwd | N | 執行忘記密碼 |  |  |
+| 忘記密碼 | appForgotPwd | Y | 執行忘記密碼 |  |  |
 | APP功能權限 | appFunctionRight | Y | 取得員工APP功能資訊 | Daniel | 20211207 |
 | 線上打卡 | appGpsPunchCardGPS | Y | 線上打卡 | AndyHou | 20211202 | 
 | 取得首頁 | appHomePage | Y | 取得首頁資訊 | AndyHou | 20211202 |
@@ -77,7 +77,7 @@ POST
 | 驗證薪資條密碼 | appSalaryPwd | Y | 驗證員工薪資條密碼(獎金通用) | Kevin | 20211202 |
 | 薪資條明細 | appSalaryQuery | Y | 取得指定年月、員工薪資條明細資訊 | Daniel | 20211203 |
 | 最近一次薪資發放 | appSalaryRecent | Y | 取得某員工最近一次薪資發放資訊 | Daniel | 20211203 |
-| 獎金條明細 | appSalbondQuery | N | 取得指定年月、員工獎金條明細資訊 | Daniel | 20211206 |
-| 最近一次獎金發放 | appSalbondRecent | N | 取得某員工最近一次獎金發放資訊 | Daniel | 20211206 |
+| 獎金條明細 | appSalbondQuery | Y | 取得指定年月、員工獎金條明細資訊 | Daniel | 20211206 |
+| 最近一次獎金發放 | appSalbondRecent | Y | 取得某員工最近一次獎金發放資訊 | Daniel | 20211206 |
 | 體溫回報 | appBodyTemperature | Y | 提供使用者回報體溫資訊 | AndyHou | 20211202 |
-| GoogleMap | appGoogleMapKey | N | 提供GoogleMapKey資訊 | AndyHou | 20211205 |
+| GoogleMap | appGoogleMapKey | Y | 提供GoogleMapKey資訊 | AndyHou | 20211205 |
