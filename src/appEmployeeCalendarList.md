@@ -79,62 +79,68 @@ Case 3 . Here is a JSON representation of request.
          "name":"員工個人行事曆列表",
          "value":[
             {
-               "eventNo":{
-                  "id":"eventNo",
-                  "name":"行事曆編號",
-                  "value":"XXXXXXXXXXXXXX",
-                  "type":"string",
-                  "format":"n/a"
+               "id":"calendarEvent",
+               "name":"行事曆資訊",
+               "value":{
+                  "eventNo":{
+                     "id":"eventNo",
+                     "name":"行事曆編號", 
+                     "value":"XXXXXXXXXXXXXX",
+                     "type":"string",
+                     "format":"n/a"
+                  },
+                  "empid":{
+                     "id":"empid",
+                     "name":"員工編號", 
+                     "value":"L100387",
+                     "type":"string",
+                     "format":"n/a"
+                  },
+                  "eventBeginDate":{
+                     "id":"eventBeginDate",
+                     "name":"開始日期", --lucas改名
+                     "value":"20211123",
+                     "type":"string",
+                     "format":"YYYYmmdd"
+                  },
+                  "eventEndDate":{
+                     "id":"eventEndDate",
+                     "name":"結束日期", --lucas改名
+                     "value":"20211123",
+                     "type":"string",
+                     "format":"YYYYmmdd"
+                  },
+                  "isFullDayEvent":{
+                     "id":"isFullDayEvent",
+                     "name":"全天", --lucas改名
+                     "value":true,
+                     "type":"boolean",
+                     "format":"n/a"
+                  },
+                  "eventBeginTime":{
+                     "id":"eventBeginTime",
+                     "name":"開始時間", --lucas改名
+                     "value":"0900",
+                     "type":"string",
+                     "format":"HHmm"
+                  },
+                  "eventEndTime":{
+                     "id":"eventEndTime",
+                     "name":"結束時間", --lucas改名
+                     "value":"1500",
+                     "type":"string",
+                     "format":"HHmm"
+                  },
+                  "eventSubject":{
+                     "id":"eventSubject",
+                     "name":"事件標題", --lucas改名
+                     "value":"HR APP會議",
+                     "type":"string",
+                     "format":"n/a"
+                  }
                },
-               "empid":{
-                  "id":"empid",
-                  "name":"員工編號",
-                  "value":"L100387",
-                  "type":"string",
-                  "format":"n/a"
-               },
-               "eventBeginDate":{
-                  "id":"eventBeginDate",
-                  "name":"開始日期", --lucas改名
-                  "value":"20211123",
-                  "type":"string",
-                  "format":"YYYYmmdd"
-               },
-               "eventEndDate":{
-                  "id":"eventEndDate",
-                  "name":"結束日期", --lucas改名
-                  "value":"20211123",
-                  "type":"string",
-                  "format":"YYYYmmdd"
-               },
-               "isFullDayEvent":{
-                  "id":"isFullDayEvent",
-                  "name":"全天", --lucas改名
-                  "value":true,
-                  "type":"boolean",
-                  "format":"n/a"
-               },
-               "eventBeginTime":{
-                  "id":"eventBeginTime",
-                  "name":"開始時間", --lucas改名
-                  "value":"0900",
-                  "type":"string",
-                  "format":"HHmm"
-               },
-               "eventEndTime":{
-                  "id":"eventEndTime",
-                  "name":"結束時間", --lucas改名
-                  "value":"1500",
-                  "type":"string",
-                  "format":"HHmm"
-               },
-               "eventSubject":{
-                  "id":"eventSubject",
-                  "name":"事件標題", --lucas改名
-                  "value":"HR APP會議",
-                  "type":"string",
-                  "format":"n/a"
-               },
+               "type":"object",
+               "format":"n/a"
             }
          ],
          "type":"array",
