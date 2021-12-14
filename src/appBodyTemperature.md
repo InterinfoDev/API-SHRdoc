@@ -16,7 +16,7 @@ POST
 |:----------|:-------------|:-----|:------------|
 | uid | 98599308101484732326 | String | 需透過appLogin取得
 | right | 51341911904173543336756162544864820 | String | 需透過appLogin取得 |
-| request | {measureDate :20211202,measureTime :0830, empid:admin, bodyTemperature:36.5, measureInterface:A, measureUnit:C} | Object | 送出資料
+| request | {measureDate :20211202,measureTime :0830, bodyTemperature:36.5, measureInterface:A, measureUnit:C} | Object | 送出資料
 
 ### JSON representation
 Here is a JSON representation of request.
