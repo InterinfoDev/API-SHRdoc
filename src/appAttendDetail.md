@@ -280,10 +280,10 @@ Here is a JSON representation of request.
                      ],
                      "type":"array",
                      "format":"n/a"
-                  },
-                  "type":"object",
-                  "format":"n/a"
-               }
+                  }
+               }, --andy 格式寫錯,type和format應該在外面這層
+               "type":"object",
+               "format":"n/a"
             }
          ],
          "type":"array",
