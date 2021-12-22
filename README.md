@@ -81,3 +81,4 @@ POST
 | 最近一次獎金發放 | appSalbondRecent | Y | 取得某員工最近一次獎金發放資訊 | Daniel | 20211206 |
 | 體溫回報 | appBodyTemperature | Y | 提供使用者回報體溫資訊 | AndyHou | 20211202 |
 | GoogleMap | appGoogleMapKey | Y | 提供GoogleMapKey資訊 | AndyHou | 20211205 |
+| 量測體溫介面裝置資訊 | appTemperatureInterface | N | 提供量測體溫介面裝置資訊 |  |  |
