@@ -53,52 +53,48 @@ Here is a JSON representation of request.
          "name":"裝置資訊",
          "value":[
             {
-               "device":{  --Andy 裝置資訊的value多一層device
-                  "id":"device",
-                  "name":"介面資訊",
-                  "value":{
-                     "deviceId":{
-                        "id":"deviceId",
-                        "name":"介面代號",
-                        "value":"A",
-                        "type":"string",
-                        "format":"n/a"
-                     },
-                     "deviceName":{
-                        "id":"deviceName",
-                        "name":"介面名稱",
-                        "value":"額溫槍",
-                        "type":"string",
-                        "format":"n/a"
-                     }
+               "id":"device",  --Andy 裝置資訊的value多一層,將deviceId和deviceName移動至device的value
+               "name":"介面資訊",
+               "value":{
+                  "deviceId":{
+                     "id":"deviceId",
+                     "name":"介面代號",
+                     "value":"A",
+                     "type":"string",
+                     "format":"n/a"
                   },
-                  "type":"string",
-                  "format":"n/a"
-               }
+                  "deviceName":{
+                     "id":"deviceName",
+                     "name":"介面名稱",
+                     "value":"額溫槍",
+                     "type":"string",
+                     "format":"n/a"
+                  }
+               },
+               "type":"string",
+               "format":"n/a"
             },
             {
-               "device":{
-                  "id":"device",
-                  "name":"介面資訊",
-                  "value":{
-                     "deviceId":{
-                        "id":"deviceId",
-                        "name":"介面代號",
-                        "value":"B",
-                        "type":"string",
-                        "format":"n/a"
-                     },
-                     "deviceName":{
-                        "id":"deviceName",
-                        "name":"介面名稱",
-                        "value":"耳溫槍",
-                        "type":"string",
-                        "format":"n/a"
-                     }
+               "id":"device",
+               "name":"介面資訊",
+               "value":{
+                  "deviceId":{
+                     "id":"deviceId",
+                     "name":"介面代號",
+                     "value":"B",
+                     "type":"string",
+                     "format":"n/a"
                   },
-                  "type":"string",
-                  "format":"n/a"
-               }
+                  "deviceName":{
+                     "id":"deviceName",
+                     "name":"介面名稱",
+                     "value":"耳溫槍",
+                     "type":"string",
+                     "format":"n/a"
+                  }
+               },
+               "type":"string",
+               "format":"n/a"
             }
          ],
          "type":"array",
