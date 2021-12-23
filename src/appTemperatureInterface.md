@@ -49,37 +49,53 @@ Here is a JSON representation of request.
    ],
    "data":{
       "temperatureInterface":{
-         "id":"temperatureInterface",
+         "id":"temperatureInterface",裝置資訊的value多一層device
          "name":"裝置資訊",
          "value":[
             {
-               "deviceId":{
-                  "id":"deviceId",
-                  "name":"介面代號",
-                  "value":"A",
-                  "type":"string",
-                  "format":"n/a"
-               },
-               "deviceName":{
-                  "id":"deviceName",
-                  "name":"介面名稱",
-                  "value":"額溫槍",
+               "device":{  --Andy 
+                  "id":"device",
+                  "name":"介面資訊",
+                  "value":{
+                     "deviceId":{
+                        "id":"deviceId",
+                        "name":"介面代號",
+                        "value":"A",
+                        "type":"string",
+                        "format":"n/a"
+                     },
+                     "deviceName":{
+                        "id":"deviceName",
+                        "name":"介面名稱",
+                        "value":"額溫槍",
+                        "type":"string",
+                        "format":"n/a"
+                     }
+                  },
                   "type":"string",
                   "format":"n/a"
                }
             },
-	    {
-               "deviceId":{
-                  "id":"deviceId",
-                  "name":"介面代號",
-                  "value":"B",
-                  "type":"string",
-                  "format":"n/a"
-               },
-               "deviceName":{
-                  "id":"deviceName",
-                  "name":"介面名稱",
-                  "value":"耳溫槍",
+            {
+               "device":{
+                  "id":"device",
+                  "name":"介面資訊",
+                  "value":{
+                     "deviceId":{
+                        "id":"deviceId",
+                        "name":"介面代號",
+                        "value":"B",
+                        "type":"string",
+                        "format":"n/a"
+                     },
+                     "deviceName":{
+                        "id":"deviceName",
+                        "name":"介面名稱",
+                        "value":"耳溫槍",
+                        "type":"string",
+                        "format":"n/a"
+                     }
+                  },
                   "type":"string",
                   "format":"n/a"
                }
