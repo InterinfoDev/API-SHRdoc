@@ -49,11 +49,11 @@ Here is a JSON representation of request.
    ],
    "data":{
       "temperatureInterface":{
-         "id":"temperatureInterface",裝置資訊的value多一層device
+         "id":"temperatureInterface",
          "name":"裝置資訊",
          "value":[
             {
-               "device":{  --Andy 
+               "device":{  --Andy 裝置資訊的value多一層device
                   "id":"device",
                   "name":"介面資訊",
                   "value":{
