@@ -107,13 +107,6 @@ POST
                      "format":"base64",
                      "id":"picture"
                   },
-                  "article":{
-                     "name":"公告內文",
-                     "type":"string",
-                     "value":"xxxxxxxx",
-                     "format":"n/a",
-                     "id":"article"
-                  },
                   "seriesNo":{
                      "name":"公告序號",
                      "type":"string",
