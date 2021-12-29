@@ -114,12 +114,12 @@ POST
                      "format":"n/a",
                      "id":"article"
                   },
-                  "seriesNo":{
+                  "boardNo":{
                      "name":"公告序號",
                      "type":"string",
                      "value":"D2",
                      "format":"n/a",
-                     "id":"seriesNo"
+                     "id":"boardNo"
                   }
                },
                "format":"n/a",
