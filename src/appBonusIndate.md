@@ -1,4 +1,4 @@
-# appSIndate 
+# appSalbondIndate 
 取得員工指定年月獎金入帳日期資訊
 
 ### HTTP Request
