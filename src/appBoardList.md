@@ -19,27 +19,7 @@ POST
 | request | {boardYM:202111} | Object | 查詢條件
 
 ### JSON representation
-Case 1 . Here is a JSON representation of request. 
-```json
-{
-    "uid":"98599308101484732326",
-    "right":"51341911904173543336756162544864820",
-    "request":{
-        "boardYM":"202112"
-    }
-}
-```
-Case 2 . Here is a JSON representation of request. 
-```json
-{
-    "uid":"98599308101484732326",
-    "right":"51341911904173543336756162544864820",
-    "request":{
-        "boardYM":"202112"
-    }
-}
-```
-Case 3 . Here is a JSON representation of request. 
+
 ```json
 {
     "uid":"98599308101484732326",
