@@ -1,4 +1,4 @@
-# appEmployeeCalendarList
+# appBoardList
 取得公告清單資訊
 
 ### HTTP Request
