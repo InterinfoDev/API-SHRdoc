@@ -1,9 +1,9 @@
-# appBonusIndate 
+# appSIndate 
 取得員工指定年月獎金入帳日期資訊
 
 ### HTTP Request
 ```
-https://114.34.125.246:8090/servlet/HRNative/appBonusIndate
+https://114.34.125.246:8090/servlet/HRNative/appSalbondIndate
 ```
 
 ### HTTP Request Mehod
@@ -25,7 +25,8 @@ Here is a JSON representation of request.
 {
     "uid":"98599308101484732326",
     "right":"51341911904173543336756162544864820",
-    "request":{ "salbondYM":"202111"
+    "request":{ 
+        "salbondYM":"202111"
     }
 }
 ```
@@ -50,7 +51,7 @@ Here is a JSON representation of request.
       "回傳成功"
    ],
    "data":{
-      "bonusIndate":{
+      "salbondIndate":{
          "name":"獎金入帳日期資訊",
          "type":"array",
          "value":[
@@ -63,7 +64,7 @@ Here is a JSON representation of request.
             }
          ],
          "format":"n/a",
-         "id":"bonusIndate"
+         "id":"salbondIndate"
       },
       "properties":{
          "format":{
@@ -84,12 +85,12 @@ Here is a JSON representation of request.
       "查無資料"
    ],
    "data":{
-      "bonusIndate":{
+      "salbondIndate":{
          "name":"獎金入帳日期資訊",
          "type":"array",
          "value":[],
          "format":"n/a",
-         "id":"bonusIndate"
+         "id":"salbondIndate"
       },
       "properties":{
          "format":{
