@@ -66,12 +66,26 @@ POST
                "type":"array",
                "value":[
                   {
+                     "fileType":{
+                        "name":"檔案類型",
+                        "type":"string",
+                        "value":"",
+                        "format":"n/a",
+                        "id":"fileType"
+                     },
                      "fileUrl":{
                         "name":"檔案路徑",
                         "type":"string",
                         "value":"",
                         "format":"n/a",
                         "id":"fileUrl"
+                     },
+                     "fileName":{
+                        "name":"檔案名稱",
+                        "type":"string",
+                        "value":"",
+                        "format":"n/a",
+                        "id":"fileName"
                      }
                   }
                ],
@@ -102,7 +116,7 @@ POST
             "publishTime":{
                "name":"公告時間",
                "type":"string",
-               "value":"1405",
+               "value":"1404",
                "format":"HHmm",
                "id":"publishTime"
             },
@@ -116,7 +130,7 @@ POST
             "seriesNo":{
                "name":"公告序號",
                "type":"string",
-               "value":"D23",
+               "value":"D2",
                "format":"n/a",
                "id":"seriesNo"
             },
@@ -130,7 +144,7 @@ POST
             "publisherName":{
                "name":"公告人員名稱",
                "type":"string",
-               "value":"xxx",
+               "value":"系O管",
                "format":"n/a",
                "id":"publisherName"
             },
@@ -140,6 +154,13 @@ POST
                "value":"xxxxx",
                "format":"n/a",
                "id":"subject"
+            },
+            "effectiveDate":{
+               "name":"公告有效日期",
+               "type":"string",
+               "value":"20990630",
+               "format":"YYYYmmdd",
+               "id":"effectiveDate"
             }
          },
          "format":"n/a",
