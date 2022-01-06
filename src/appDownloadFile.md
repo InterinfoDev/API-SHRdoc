@@ -40,7 +40,7 @@ POST
 ### Request Properties
 | Case No | Key | Value | Type | Description | Required | Format |
 |:----------|:----------|:-------------|:-----|:------------|:------------|:------------|
-| 1 | fileKey | 202112 | String | 年月 | Y | n/a |
+| 1 | fileKey | 202112 | String | 檔案序號 | Y | n/a |
 
 ### HTTP Response when Successful
 成功將直接顯示檔案blob，請務必參考content type
