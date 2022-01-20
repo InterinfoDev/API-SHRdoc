@@ -32,6 +32,15 @@ Here is a JSON representation of request.
 | uid   | String | 加密後帳號 |
 | right | String | 加密後系統相關資料 |
 
+### fieldType
+| Type | Description |
+|:---------|:------------|
+| input | 文字輸入類型 |
+| select | 下拉選單類型(選項於) |
+| upload | 檔案上傳類型 |
+| dateYMD | 日期類型(年月日) |
+| dateYM | 日期類型(年月) |
+
 ### HTTP Response when Successful
 ```json
 {
@@ -96,6 +105,15 @@ Here is a JSON representation of request.
                      "value":true,
                      "type":"boolean",
                      "format":"n/a"
+                  },
+                  "option":{
+                     "id":"option",
+                     "name":"選單項目",
+                     "value":[
+                        
+                     ],
+                     "type":"array",
+                     "format":"n/a"
                   }
                },
                "type":"object",
@@ -146,6 +164,15 @@ Here is a JSON representation of request.
                      "value":true,
                      "type":"boolean",
                      "format":"n/a"
+                  },
+                  "option":{
+                     "id":"option",
+                     "name":"選單項目",
+                     "value":[
+                        
+                     ],
+                     "type":"array",
+                     "format":"n/a"
                   }
                },
                "type":"object",
@@ -195,6 +222,15 @@ Here is a JSON representation of request.
                      "name":"是否顯示",
                      "value":true,
                      "type":"boolean",
+                     "format":"n/a"
+                  },
+                  "option":{
+                     "id":"option",
+                     "name":"選單項目",
+                     "value":[
+                        
+                     ],
+                     "type":"array",
                      "format":"n/a"
                   },
                   "type":"object",
