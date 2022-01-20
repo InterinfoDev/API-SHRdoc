@@ -300,7 +300,7 @@ Here is a JSON representation of request.
                            }
                         }
                      ],
-                     "type":"object",
+                     "type":"array",
                      "format":"n/a"
                   }
                },
@@ -390,7 +390,7 @@ Here is a JSON representation of request.
                            }
                         }
                      ],
-                     "type":"object",
+                     "type":"array",
                      "format":"n/a"
                   }
                },
@@ -398,7 +398,7 @@ Here is a JSON representation of request.
                "format":"n/a"
             }
          ],
-         "type":"object",
+         "type":"array",
          "format":"n/a"
       }
    }
