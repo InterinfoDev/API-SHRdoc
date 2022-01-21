@@ -1,9 +1,9 @@
-# appQueryVacation
+# appVacationList
 一進到請假畫面取得該員工系統年月的請假資訊
 
 ### HTTP Request
 ```
-https://114.34.125.246:8090/servlet/HRNative/appQueryVacation
+https://114.34.125.246:8090/servlet/HRNative/appVacationList
 ```
 
 ### HTTP Request Mehod
