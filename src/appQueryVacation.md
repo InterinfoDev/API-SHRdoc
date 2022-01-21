@@ -1,5 +1,5 @@
 # appQueryVacation
-取得系統年月、員工請假資訊
+一進到請假畫面取得員工系統年月的請假資訊
 
 ### HTTP Request
 ```
