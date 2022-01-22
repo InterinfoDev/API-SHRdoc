@@ -15,7 +15,7 @@ POST
 | Key | Value | Type | Description |
 |:----------|:-------------|:-----|:------------|
 | uid | 98599308101484732326 | String | 需透過appLogin取得 |
-| request | {depNumber:[5], vacationYM:202108, empid:[admin], companyId:TW, hcode:15} | Object | 查詢條件(因為depNumber為單選，若使用者沒選擇不傳)
+| request | {depNumber:[5], vacationYM:202108, empid:[admin], companyId:TW, hcode:15} | Object | 查詢條件
 
 ### JSON representation
 Here is a JSON representation of request.
