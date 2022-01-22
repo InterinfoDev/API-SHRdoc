@@ -89,7 +89,7 @@ Here is a JSON representation of request.
                   "photo":{
                      "name":"員工相片",
                      "type":"string",
-                     "value":"系統管理員",
+                     "value":"/hrm4/photo/1638972418326_Shiba1.jpg",
                      "format":"base64",
                      "id":"photo"
                   },
