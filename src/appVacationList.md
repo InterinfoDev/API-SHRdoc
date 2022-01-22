@@ -125,13 +125,6 @@ Here is a JSON representation of request.
                "name":"請假資訊",
                "type":"object",
                "value":{
-                  "apprdate":{
-                     "name":"生效日期",
-                     "type":"string",
-                     "value":"20210806",
-                     "format":"YYYYmmdd",
-                     "id":"apprdate"
-                  },
                   "amt":{
                      "name":"總計",
                      "type":"decimal",
@@ -196,6 +189,13 @@ Here is a JSON representation of request.
                      "format":"YYYYmmdd",
                      "id":"edate"
                   },
+                  "approved":{
+                     "name":"已生效",
+                     "type":"boolean",
+                     "value":true,
+                     "format":"n/a",
+                     "id":"approved"
+                  },
                   "hkindd":{
                      "name":"子假別資訊",
                      "type":"object",
@@ -226,13 +226,6 @@ Here is a JSON representation of request.
                "name":"請假資訊",
                "type":"object",
                "value":{
-                  "apprdate":{
-                     "name":"生效日期",
-                     "type":"string",
-                     "value":"20210806",
-                     "format":"YYYYmmdd",
-                     "id":"apprdate"
-                  },
                   "amt":{
                      "name":"總計",
                      "type":"decimal",
@@ -296,6 +289,13 @@ Here is a JSON representation of request.
                      "value":"20210806",
                      "format":"YYYYmmdd",
                      "id":"edate"
+                  },
+                  "approved":{
+                     "name":"已生效",
+                     "type":"boolean",
+                     "value":true,
+                     "format":"n/a",
+                     "id":"approved"
                   },
                   "hkindd":{
                      "name":"子假別資訊",
