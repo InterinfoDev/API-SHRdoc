@@ -161,28 +161,42 @@ Here is a JSON representation of request.
 無資料則屬於正常範圍，正常來說可以沒有資料
 ```json
 {
-   "main":{
-      "name":"請假年月",
-      "type":"string",
-      "value":"202205",
-      "format":"YYYYmm",
-      "id":"vacationYM"
-   },
-   "vacationList":{
-      "name":"員工請假列表",
-      "type":"array",
-      "value":[],
-      "format":"n/a",
-      "id":"vacationList"
-   },
-   "properties":{
-      "format":{
-         "base64":"Base64編碼格式",
-         "count":"數量",
-         "n/a":"",
-         "YYYYmm":"西元年月"
-      }
-   }
+    "status": "success",
+    "message": [
+        "查無資料"
+    ],
+    "data": {
+        "main": {
+            "name": "請假年月資訊",
+            "type": "object",
+            "value": {
+                "vacationYM": {
+                    "name": "請假年月",
+                    "type": "string",
+                    "value": "202201",
+                    "format": "YYYYmm",
+                    "id": "vacationYM"
+                }
+            },
+            "format": "n/a",
+            "id": "main"
+        },
+        "vacationList": {
+            "name": "員工請假列表",
+            "type": "array",
+            "value": [],
+            "format": "n/a",
+            "id": "vacationList"
+        },
+        "properties": {
+            "format": {
+                "base64": "Base64編碼格式",
+                "count": "數量",
+                "n/a": "",
+                "YYYYmm": "西元年月"
+            }
+        }
+    }
 }
 ```
 
