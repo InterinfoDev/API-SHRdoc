@@ -125,48 +125,6 @@ Here is a JSON representation of request.
                "name":"請假資訊",
                "type":"object",
                "value":{
-                  "sdate":{
-                     "name":"起始日期",
-                     "type":"string",
-                     "value":"20210816",
-                     "format":"YYYYmmdd",
-                     "id":"sdate"
-                  },
-                  "hcname":{
-                     "name":"假別名稱",
-                     "type":"string",
-                     "value":"出差假",
-                     "format":"n/a",
-                     "id":"hcname"
-                  },
-                  "pno":{
-                     "name":"單據編號",
-                     "type":"string",
-                     "value":"K00202108060001",
-                     "format":"n/a",
-                     "id":"pno"
-                  },
-                  "edate":{
-                     "name":"結束日期",
-                     "type":"string",
-                     "value":"20210816",
-                     "format":"YYYYmmdd",
-                     "id":"edate"
-                  },
-                  "stime":{
-                     "name":"起始時間",
-                     "type":"string",
-                     "value":"0800",
-                     "format":"HHmm",
-                     "id":"stime"
-                  },
-                  "etime":{
-                     "name":"結束時間",
-                     "type":"string",
-                     "value":"0900",
-                     "format":"HHmm",
-                     "id":"etime"
-                  },
                   "apprdate":{
                      "name":"生效日期",
                      "type":"string",
@@ -180,6 +138,85 @@ Here is a JSON representation of request.
                      "value":"1.00",
                      "format":"hour",
                      "id":"amt"
+                  },
+                  "stime":{
+                     "name":"起始時間",
+                     "type":"string",
+                     "value":"0800",
+                     "format":"HHmm",
+                     "id":"stime"
+                  },
+                  "hkind":{
+                     "name":"假別資訊",
+                     "type":"object",
+                     "value":{
+                        "hcname":{
+                           "name":"假別名稱",
+                           "type":"string",
+                           "value":"出差假",
+                           "format":"n/a",
+                           "id":"hcname"
+                        },
+                        "hcode":{
+                           "name":"假別代碼",
+                           "type":"string",
+                           "value":"20",
+                           "format":"n/a",
+                           "id":"hcode"
+                        }
+                     },
+                     "format":"n/a",
+                     "id":"hkind"
+                  },
+                  "pno":{
+                     "name":"單據編號",
+                     "type":"string",
+                     "value":"K00202108060001",
+                     "format":"n/a",
+                     "id":"pno"
+                  },
+                  "sdate":{
+                     "name":"起始日期",
+                     "type":"string",
+                     "value":"20210816",
+                     "format":"YYYYmmdd",
+                     "id":"sdate"
+                  },
+                  "etime":{
+                     "name":"結束時間",
+                     "type":"string",
+                     "value":"0900",
+                     "format":"HHmm",
+                     "id":"etime"
+                  },
+                  "edate":{
+                     "name":"結束日期",
+                     "type":"string",
+                     "value":"20210816",
+                     "format":"YYYYmmdd",
+                     "id":"edate"
+                  },
+                  "hkindd":{
+                     "name":"子假別資訊",
+                     "type":"object",
+                     "value":{
+                        "hcoded":{
+                           "name":"子假別代碼",
+                           "type":"string",
+                           "value":"20",
+                           "format":"n/a",
+                           "id":"hcoded"
+                        },
+                        "hcdname":{
+                           "name":"子假別名稱",
+                           "type":"string",
+                           "value":"出差假",
+                           "format":"n/a",
+                           "id":"hcdname"
+                        }
+                     },
+                     "format":"n/a",
+                     "id":"hkindd"
                   }
                },
                "format":"n/a",
@@ -189,48 +226,6 @@ Here is a JSON representation of request.
                "name":"請假資訊",
                "type":"object",
                "value":{
-                  "sdate":{
-                     "name":"起始日期",
-                     "type":"string",
-                     "value":"20210806",
-                     "format":"YYYYmmdd",
-                     "id":"sdate"
-                  },
-                  "hcname":{
-                     "name":"假別名稱",
-                     "type":"string",
-                     "value":"事假中和",
-                     "format":"n/a",
-                     "id":"hcname"
-                  },
-                  "pno":{
-                     "name":"單據編號",
-                     "type":"string",
-                     "value":"W00202108060002",
-                     "format":"n/a",
-                     "id":"pno"
-                  },
-                  "edate":{
-                     "name":"結束日期",
-                     "type":"string",
-                     "value":"20210806",
-                     "format":"YYYYmmdd",
-                     "id":"edate"
-                  },
-                  "stime":{
-                     "name":"起始時間",
-                     "type":"string",
-                     "value":"0800",
-                     "format":"HHmm",
-                     "id":"stime"
-                  },
-                  "etime":{
-                     "name":"結束時間",
-                     "type":"string",
-                     "value":"0900",
-                     "format":"HHmm",
-                     "id":"etime"
-                  },
                   "apprdate":{
                      "name":"生效日期",
                      "type":"string",
@@ -244,6 +239,85 @@ Here is a JSON representation of request.
                      "value":"1.00",
                      "format":"hour",
                      "id":"amt"
+                  },
+                  "stime":{
+                     "name":"起始時間",
+                     "type":"string",
+                     "value":"0800",
+                     "format":"HHmm",
+                     "id":"stime"
+                  },
+                  "hkind":{
+                     "name":"假別資訊",
+                     "type":"object",
+                     "value":{
+                        "hcname":{
+                           "name":"假別名稱",
+                           "type":"string",
+                           "value":"事假中和",
+                           "format":"n/a",
+                           "id":"hcname"
+                        },
+                        "hcode":{
+                           "name":"假別代碼",
+                           "type":"string",
+                           "value":"01",
+                           "format":"n/a",
+                           "id":"hcode"
+                        }
+                     },
+                     "format":"n/a",
+                     "id":"hkind"
+                  },
+                  "pno":{
+                     "name":"單據編號",
+                     "type":"string",
+                     "value":"W00202108060002",
+                     "format":"n/a",
+                     "id":"pno"
+                  },
+                  "sdate":{
+                     "name":"起始日期",
+                     "type":"string",
+                     "value":"20210806",
+                     "format":"YYYYmmdd",
+                     "id":"sdate"
+                  },
+                  "etime":{
+                     "name":"結束時間",
+                     "type":"string",
+                     "value":"0900",
+                     "format":"HHmm",
+                     "id":"etime"
+                  },
+                  "edate":{
+                     "name":"結束日期",
+                     "type":"string",
+                     "value":"20210806",
+                     "format":"YYYYmmdd",
+                     "id":"edate"
+                  },
+                  "hkindd":{
+                     "name":"子假別資訊",
+                     "type":"object",
+                     "value":{
+                        "hcoded":{
+                           "name":"子假別代碼",
+                           "type":"string",
+                           "value":"01",
+                           "format":"n/a",
+                           "id":"hcoded"
+                        },
+                        "hcdname":{
+                           "name":"子假別名稱",
+                           "type":"string",
+                           "value":"事假中和",
+                           "format":"n/a",
+                           "id":"hcdname"
+                        }
+                     },
+                     "format":"n/a",
+                     "id":"hkindd"
                   }
                },
                "format":"n/a",
