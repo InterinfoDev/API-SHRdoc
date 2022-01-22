@@ -15,7 +15,7 @@ POST
 | Key | Value | Type | Description |
 |:----------|:-------------|:-----|:------------|
 | uid | 98599308101484732326 | String | 需透過appLogin取得 |
-| request | {depNumber:5, vacationYM:202108, empid:[admin], companyId:TW, hcode:15} | Object | 查詢條件(因為depNumber為單選，若使用者沒選擇不傳)
+| request | {depNumber:[5], vacationYM:202108, empid:[admin], companyId:TW, hcode:15} | Object | 查詢條件(因為depNumber為單選，若使用者沒選擇不傳)
 
 ### JSON representation
 Here is a JSON representation of request.
@@ -27,7 +27,7 @@ Here is a JSON representation of request.
         "vacationYM":"202108", 
         "companyId":"TW",
         "hcode":"15",
-        "depNumber":5, 
+        "depNumber":[5], 
         "empid":["admin"]
     }
 }
@@ -46,7 +46,7 @@ Here is a JSON representation of request.
 | vacationYM | 202108 | String | 查詢年月 | Y | AC(YYYYmm) |
 | companyId | TW | String | 公司代號 | N | n/a |
 | hcode | 15 | String | 假別代碼 | N | n/a |
-| depNumber | 5 | Integer | 部門代號 | N | n/a |
+| depNumber | [5] | Array(Integer) | 部門代號 | N | n/a |
 | empid | [admin] | Array(String) | 員工編號 | N | n/a |
 
 
