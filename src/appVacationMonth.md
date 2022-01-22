@@ -1,9 +1,9 @@
-# appVacationQuery
+# appVacationMonth
 查詢員工請假資訊
 
 ### HTTP Request
 ```
-https://114.34.125.246:8090/servlet/HRNative/appVacationQuery
+https://114.34.125.246:8090/servlet/HRNative/appVacationMonth
 ```
 
 ### HTTP Request Mehod
