@@ -15,7 +15,7 @@ POST
 | Key | Value | Type | Description |
 |:----------|:-------------|:-----|:------------|
 | uid | 98599308101484732326 | String | 需透過appLogin取得 |
-| request | {vacationYM:202108, empid:applytest001} | Object | 查詢條件(依據使用者所選擇要查看的員工及畫面上的年月取得)
+| request | {vacationYM:202201, empid:admin} | Object | 查詢條件(依據使用者所選擇要查看的員工及畫面上的年月取得)
 
 ### JSON representation
 Here is a JSON representation of request.
@@ -24,8 +24,8 @@ Here is a JSON representation of request.
     "uid":"98599308101484732326",
     "right":"51341911904173543336756162544864820",
     "request":{
-        "vacationYM":"202108", 
-        "empid":"applytest001"
+        "vacationYM":"202201", 
+        "empid":"admin"
     }
 }
 ```
@@ -40,8 +40,8 @@ Here is a JSON representation of request.
 ### Request Properties
 | Key | Value | Type | Description | Required | Format |
 |:----------|:-------------|:-----|:------------|:------------|:------------|
-| vacationYM | 202108 | String | 查詢年月 | Y | AC(YYYYmm) |
-| empid | applytest001 | String | 員工編號 | Y | n/a |
+| vacationYM | 202201 | String | 查詢年月 | Y | AC(YYYYmm) |
+| empid | admin | String | 員工編號 | Y | n/a |
 
 
 ### HTTP Response when Successful
@@ -59,7 +59,7 @@ Here is a JSON representation of request.
             "vacationYM":{
                "name":"請假年月",
                "type":"string",
-               "value":"202108",
+               "value":"202201",
                "format":"YYYYmm",
                "id":"vacationYM"
             }
@@ -74,7 +74,7 @@ Here is a JSON representation of request.
             "position":{
                "name":"職稱",
                "type":"string",
-               "value":"",
+               "value":"系統管理員",
                "format":"n/a",
                "id":"position"
             },
@@ -88,28 +88,28 @@ Here is a JSON representation of request.
             "empFullName":{
                "name":"員工中文姓名",
                "type":"string",
-               "value":"單O申",
+               "value":"系O管",
                "format":"n/a",
                "id":"empFullName"
             },
             "empid":{
                "name":"員工編號",
                "type":"string",
-               "value":"applytest001",
+               "value":"admin",
                "format":"n/a",
                "id":"empid"
             },
             "depFullName":{
                "name":"部門名稱",
                "type":"string",
-               "value":"",
+               "value":"L1線A班",
                "format":"n/a",
                "id":"depFullName"
             },
             "empFullEname":{
                "name":"員工英文姓名",
                "type":"string",
-               "value":"HOWAREU",
+               "value":"admin000",
                "format":"n/a",
                "id":"empFullEname"
             }
@@ -128,7 +128,7 @@ Here is a JSON representation of request.
                   "amt":{
                      "name":"總計",
                      "type":"decimal",
-                     "value":"1.00",
+                     "value":8.0,
                      "format":"hour",
                      "id":"amt"
                   },
@@ -146,14 +146,14 @@ Here is a JSON representation of request.
                         "hcname":{
                            "name":"假別名稱",
                            "type":"string",
-                           "value":"出差假",
+                           "value":"例假",
                            "format":"n/a",
                            "id":"hcname"
                         },
                         "hcode":{
                            "name":"假別代碼",
                            "type":"string",
-                           "value":"20",
+                           "value":"00",
                            "format":"n/a",
                            "id":"hcode"
                         }
@@ -164,35 +164,35 @@ Here is a JSON representation of request.
                   "pno":{
                      "name":"單據編號",
                      "type":"string",
-                     "value":"K00202108060001",
+                     "value":"W00202201220001",
                      "format":"n/a",
                      "id":"pno"
                   },
                   "sdate":{
                      "name":"起始日期",
                      "type":"string",
-                     "value":"20210816",
+                     "value":"20220121",
                      "format":"YYYYmmdd",
                      "id":"sdate"
                   },
                   "etime":{
                      "name":"結束時間",
                      "type":"string",
-                     "value":"0900",
+                     "value":"1700",
                      "format":"HHmm",
                      "id":"etime"
                   },
                   "edate":{
                      "name":"結束日期",
                      "type":"string",
-                     "value":"20210816",
+                     "value":"20220121",
                      "format":"YYYYmmdd",
                      "id":"edate"
                   },
                   "approved":{
                      "name":"已生效",
                      "type":"boolean",
-                     "value":true,
+                     "value":false,
                      "format":"n/a",
                      "id":"approved"
                   },
@@ -203,14 +203,14 @@ Here is a JSON representation of request.
                         "hcoded":{
                            "name":"子假別代碼",
                            "type":"string",
-                           "value":"20",
+                           "value":"00",
                            "format":"n/a",
                            "id":"hcoded"
                         },
                         "hcdname":{
                            "name":"子假別名稱",
                            "type":"string",
-                           "value":"出差假",
+                           "value":"例假",
                            "format":"n/a",
                            "id":"hcdname"
                         }
@@ -229,7 +229,7 @@ Here is a JSON representation of request.
                   "amt":{
                      "name":"總計",
                      "type":"decimal",
-                     "value":"1.00",
+                     "value":8.0,
                      "format":"hour",
                      "id":"amt"
                   },
@@ -247,14 +247,14 @@ Here is a JSON representation of request.
                         "hcname":{
                            "name":"假別名稱",
                            "type":"string",
-                           "value":"事假中和",
+                           "value":"例假",
                            "format":"n/a",
                            "id":"hcname"
                         },
                         "hcode":{
                            "name":"假別代碼",
                            "type":"string",
-                           "value":"01",
+                           "value":"00",
                            "format":"n/a",
                            "id":"hcode"
                         }
@@ -265,35 +265,35 @@ Here is a JSON representation of request.
                   "pno":{
                      "name":"單據編號",
                      "type":"string",
-                     "value":"W00202108060002",
+                     "value":"W00202201220002",
                      "format":"n/a",
                      "id":"pno"
                   },
                   "sdate":{
                      "name":"起始日期",
                      "type":"string",
-                     "value":"20210806",
+                     "value":"20220110",
                      "format":"YYYYmmdd",
                      "id":"sdate"
                   },
                   "etime":{
                      "name":"結束時間",
                      "type":"string",
-                     "value":"0900",
+                     "value":"1700",
                      "format":"HHmm",
                      "id":"etime"
                   },
                   "edate":{
                      "name":"結束日期",
                      "type":"string",
-                     "value":"20210806",
+                     "value":"20220110",
                      "format":"YYYYmmdd",
                      "id":"edate"
                   },
                   "approved":{
                      "name":"已生效",
                      "type":"boolean",
-                     "value":true,
+                     "value":false,
                      "format":"n/a",
                      "id":"approved"
                   },
@@ -304,14 +304,14 @@ Here is a JSON representation of request.
                         "hcoded":{
                            "name":"子假別代碼",
                            "type":"string",
-                           "value":"01",
+                           "value":"00",
                            "format":"n/a",
                            "id":"hcoded"
                         },
                         "hcdname":{
                            "name":"子假別名稱",
                            "type":"string",
-                           "value":"事假中和",
+                           "value":"例假",
                            "format":"n/a",
                            "id":"hcdname"
                         }
