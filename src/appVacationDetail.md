@@ -343,6 +343,13 @@ Here is a JSON representation of request.
                "format":"n/a",
                "id":"delayNote"
             },
+            "spectialDate":{
+               "name":"特殊日期",
+               "type":"string",
+               "value":"",
+               "format":"YYYYmmdd",
+               "id":"spectialDate"
+            },
             "userInfo":{
                "name":"人事基本資料",
                "type":"object",
