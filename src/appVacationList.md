@@ -110,7 +110,7 @@ Here is a JSON representation of request.
             "empFullEname":{
                "name":"員工英文姓名",
                "type":"string",
-               "value":"admin000",
+               "value":"EEadmin",
                "format":"n/a",
                "id":"empFullEname"
             }
@@ -132,6 +132,13 @@ Here is a JSON representation of request.
                      "value":8.0,
                      "format":"hour",
                      "id":"amt"
+                  },
+                  "empid":{
+                     "name":"員工編號",
+                     "type":"string",
+                     "value":"admin",
+                     "format":"n/a",
+                     "id":"empid"
                   },
                   "stime":{
                      "name":"起始時間",
@@ -233,6 +240,13 @@ Here is a JSON representation of request.
                      "value":8.0,
                      "format":"hour",
                      "id":"amt"
+                  },
+                  "empid":{
+                     "name":"員工編號",
+                     "type":"string",
+                     "value":"admin",
+                     "format":"n/a",
+                     "id":"empid"
                   },
                   "stime":{
                      "name":"起始時間",
