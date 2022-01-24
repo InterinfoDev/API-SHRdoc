@@ -97,7 +97,7 @@ Here is a JSON representation of request.
             "amt":{
                "name":"總計",
                "type":"decimal",
-               "value":"8.00",
+               "value":8.0,
                "format":"hour",
                "id":"amt"
             },
