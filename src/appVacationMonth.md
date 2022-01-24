@@ -65,7 +65,7 @@ Here is a JSON representation of request.
             "vacationYM":{
                "name":"請假年月",
                "type":"string",
-               "value":"202108",
+               "value":"202201",
                "format":"YYYYmm",
                "id":"vacationYM"
             }
@@ -81,13 +81,6 @@ Here is a JSON representation of request.
                "name":"員工請假資訊",
                "type":"object",
                "value":{
-                  "position":{
-                     "name":"職稱",
-                     "type":"string",
-                     "value":"系統管理員",
-                     "format":"n/a",
-                     "id":"position"
-                  },
                   "photo":{
                      "name":"員工相片",
                      "type":"string",
@@ -95,10 +88,31 @@ Here is a JSON representation of request.
                      "format":"base64",
                      "id":"photo"
                   },
+                  "empid":{
+                     "name":"員工編號",
+                     "type":"string",
+                     "value":"admin",
+                     "format":"n/a",
+                     "id":"empid"
+                  },
+                  "vacationYM":{
+                     "name":"請假年月",
+                     "type":"string",
+                     "value":"202201",
+                     "format":"YYYYmm",
+                     "id":"vacationYM"
+                  },
+                  "position":{
+                     "name":"職稱",
+                     "type":"string",
+                     "value":"系統管理員",
+                     "format":"n/a",
+                     "id":"position"
+                  },
                   "unapproved":{
                      "name":"簽核中",
                      "type":"integer",
-                     "value":1,
+                     "value":2,
                      "format":"count",
                      "id":"unapproved"
                   },
@@ -108,20 +122,6 @@ Here is a JSON representation of request.
                      "value":"系O管",
                      "format":"n/a",
                      "id":"empFullName"
-                  },
-                  "empid":{
-                     "name":"員工編號",
-                     "type":"string",
-                     "value":"admin",
-                     "format":"n/a",
-                     "id":"empid"
-                  },
-                  "approved":{
-                     "name":"已生效",
-                     "type":"integer",
-                     "value":0,
-                     "format":"count",
-                     "id":"approved"
                   },
                   "depFullName":{
                      "name":"部門名稱",
@@ -136,6 +136,13 @@ Here is a JSON representation of request.
                      "value":"admin000",
                      "format":"n/a",
                      "id":"empFullEname"
+                  },
+                  "approved":{
+                     "name":"已生效",
+                     "type":"integer",
+                     "value":0,
+                     "format":"count",
+                     "id":"approved"
                   }
                },
                "format":"n/a",
