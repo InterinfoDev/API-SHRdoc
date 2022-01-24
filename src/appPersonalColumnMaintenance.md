@@ -36,7 +36,8 @@ Here is a JSON representation of request.
 | Type | Description |
 |:---------|:------------|
 | input | 文字輸入類型 |
-| select | 下拉選單類型(選項於) |
+| select | 單選類型 |
+| alternative | 多選類型 |
 | upload | 檔案上傳類型 |
 | dateYMD | 日期類型(年月日) |
 | dateYM | 日期類型(年月) |
@@ -61,11 +62,11 @@ Here is a JSON representation of request.
          "name":"個人資料維護欄位",
          "value":[
             {
-               "id":"photo",
+               "id":"108617422147702250851",
                "name":"欄位資訊",
                "value":{
                   "fieldId":{
-                     "id":"fieldId",
+                     "id":"108617422147702250851",
                      "name":"欄位代號",
                      "value":"photo",
                      "type":"string",
@@ -88,8 +89,10 @@ Here is a JSON representation of request.
                   "fieldValue":{
                      "id":"fieldValue",
                      "name":"欄位資料",
-                     "value":"",
-                     "type":"string",
+                     "value":[
+                        ""
+                     ],
+                     "type":"array",
                      "format":"base64"
                   },
                   "editable":{
@@ -120,13 +123,13 @@ Here is a JSON representation of request.
                "format":"n/a"
             },
             {
-               "id":"empName",
+               "id":"108617422147704250851",
                "name":"欄位資訊",
                "value":{
                   "fieldId":{
                      "id":"fieldId",
                      "name":"欄位代號",
-                     "value":"empName",
+                     "value":"108617422147704250851",
                      "type":"string",
                      "format":"n/a"
                   },
@@ -147,8 +150,10 @@ Here is a JSON representation of request.
                   "fieldValue":{
                      "id":"fieldValue",
                      "name":"欄位資料",
-                     "value":"林奇杰",
-                     "type":"string",
+                     "value":[
+                        "林奇杰"
+                     ],
+                     "type":"array",
                      "format":"n/a"
                   },
                   "editable":{
@@ -179,13 +184,13 @@ Here is a JSON representation of request.
                "format":"n/a"
             },
             {
-               "id":"empEname",
+               "id":"108617422147704250423",
                "name":"欄位資訊",
                "value":{
                   "fieldId":{
                      "id":"fieldId",
                      "name":"欄位代號",
-                     "value":"empEname",
+                     "value":"108617422147704250423",
                      "type":"string",
                      "format":"n/a"
                   },
@@ -206,8 +211,10 @@ Here is a JSON representation of request.
                   "fieldValue":{
                      "id":"fieldValue",
                      "name":"欄位資料",
-                     "value":"Lucas",
-                     "type":"string",
+                     "value":[
+                        "Lucas"
+                     ],
+                     "type":"array",
                      "format":"n/a"
                   },
                   "editable":{
@@ -238,13 +245,13 @@ Here is a JSON representation of request.
                }
             },
             {
-               "id":"workPlace",
+               "id":"108617422147704250533",
                "name":"欄位資訊",
                "value":{
                   "fieldId":{
                      "id":"fieldId",
                      "name":"欄位代號",
-                     "value":"workPlace",
+                     "value":"108617422147704250533",
                      "type":"string",
                      "format":"n/a"
                   },
@@ -265,8 +272,10 @@ Here is a JSON representation of request.
                   "fieldValue":{
                      "id":"fieldValue",
                      "name":"欄位資料",
-                     "value":"A1",
-                     "type":"string",
+                     "value":[
+                        "A1"
+                     ],
+                     "type":"array",
                      "format":"n/a"
                   },
                   "editable":{
@@ -344,13 +353,13 @@ Here is a JSON representation of request.
                "format":"n/a"
             },
             {
-               "id":"empSex",
+               "id":"10861742214770423332",
                "name":"欄位資訊",
                "value":{
                   "fieldId":{
                      "id":"fieldId",
                      "name":"欄位代號",
-                     "value":"empSex",
+                     "value":"10861742214770423332",
                      "type":"string",
                      "format":"n/a"
                   },
@@ -371,8 +380,10 @@ Here is a JSON representation of request.
                   "fieldValue":{
                      "id":"fieldValue",
                      "name":"欄位資料",
-                     "value":"M",
-                     "type":"string",
+                     "value":[
+                        "M"
+                     ],
+                     "type":"array",
                      "format":"n/a"
                   },
                   "editable":{
