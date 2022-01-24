@@ -82,5 +82,6 @@ POST
 | 體溫回報 | appBodyTemperature | Y | 提供使用者回報體溫資訊 | AndyHou | 20211202 |
 | GoogleMap | appGoogleMapKey | Y | 提供GoogleMapKey資訊 | AndyHou | 20211205 |
 | 量測體溫介面裝置資訊 | appTemperatureInterface | N | 提供量測體溫介面裝置資訊 | AndyHou | 20211222 |
-| 取得個人資料維護欄位 | appPersonalColumnMaintenance | N | 取得維護欄位 | AndyHou | 20220124 |
+| 個人資料維護欄位 | appPersonalColumnMaintenance | N | 取得維護欄位 | AndyHou | 20220124 |
 | 個人資料維護異動 | appPersonalDataMaintenance | N | 異動個人資料 | AndyHou | 20220124 |
+| 下載檔案 | appDownloadFile | N | 取得下載檔案 | AndyHou | 20220106 |
