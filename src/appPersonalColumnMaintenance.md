@@ -90,7 +90,15 @@ Here is a JSON representation of request.
                      "id":"fieldValue",
                      "name":"欄位資料",
                      "value":[
-                        ""
+                        {
+                           "fieldData":{
+                              "id":"fieldData",
+                              "name":"欄位明細資料",
+                              "value":"",
+                              "type":"string",
+                              "format":"n/a"
+                           }
+                        }
                      ],
                      "type":"array",
                      "format":"base64"
@@ -151,7 +159,15 @@ Here is a JSON representation of request.
                      "id":"fieldValue",
                      "name":"欄位資料",
                      "value":[
-                        "林奇杰"
+                        {
+                           "fieldData":{
+                              "id":"fieldData",
+                              "name":"欄位明細資料",
+                              "value":"林奇杰",
+                              "type":"string",
+                              "format":"n/a"
+                           }
+                        }
                      ],
                      "type":"array",
                      "format":"n/a"
@@ -212,7 +228,15 @@ Here is a JSON representation of request.
                      "id":"fieldValue",
                      "name":"欄位資料",
                      "value":[
-                        "Lucas"
+                        {
+                           "fieldData":{
+                              "id":"fieldData",
+                              "name":"欄位明細資料",
+                              "value":"Lucas",
+                              "type":"string",
+                              "format":"n/a"
+                           }
+                        }
                      ],
                      "type":"array",
                      "format":"n/a"
@@ -273,7 +297,15 @@ Here is a JSON representation of request.
                      "id":"fieldValue",
                      "name":"欄位資料",
                      "value":[
-                        "A1"
+                        {
+                           "fieldData":{
+                              "id":"fieldData",
+                              "name":"欄位明細資料",
+                              "value":"A1",
+                              "type":"string",
+                              "format":"n/a"
+                           }
+                        }
                      ],
                      "type":"array",
                      "format":"n/a"
@@ -381,7 +413,15 @@ Here is a JSON representation of request.
                      "id":"fieldValue",
                      "name":"欄位資料",
                      "value":[
-                        "M"
+                        {
+                           "fieldData":{
+                              "id":"fieldData",
+                              "name":"欄位明細資料",
+                              "value":"M",
+                              "type":"string",
+                              "format":"n/a"
+                           }
+                        }
                      ],
                      "type":"array",
                      "format":"n/a"
