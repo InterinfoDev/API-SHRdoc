@@ -396,6 +396,13 @@ Here is a JSON representation of request.
                      "value":"L1線A班",
                      "format":"n/a",
                      "id":"depFullName"
+                  },
+                  "empFullEname":{
+                     "name":"員工英文姓名",
+                     "type":"string",
+                     "value":"EEadmin",
+                     "format":"n/a",
+                     "id":"empFullEname"
                   }
                },
                "format":"n/a",
