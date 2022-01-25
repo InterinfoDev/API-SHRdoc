@@ -113,19 +113,19 @@ Here is a JSON representation of request.
                "name":"假別資訊",
                "type":"object",
                "value":{
-                  "hcoded":{
-                     "name":"子假別代碼",
+                  "hcname":{
+                     "name":"假別名稱",
                      "type":"string",
-                     "value":"",
+                     "value":"休息",
                      "format":"n/a",
-                     "id":"hcoded"
+                     "id":"hcname"
                   },
-                  "hcdname":{
-                     "name":"子假別名稱",
+                  "hcode":{
+                     "name":"假別代碼",
                      "type":"string",
-                     "value":"",
+                     "value":"000",
                      "format":"n/a",
-                     "id":"hcdname"
+                     "id":"hcode"
                   }
                },
                "format":"n/a",
@@ -407,6 +407,28 @@ Here is a JSON representation of request.
                },
                "format":"n/a",
                "id":"userInfo"
+            },
+            "hkindd":{
+               "name":"子假別資訊",
+               "type":"object",
+               "value":{
+                  "hcoded":{
+                     "name":"子假別代碼",
+                     "type":"string",
+                     "value":"",
+                     "format":"n/a",
+                     "id":"hcoded"
+                  },
+                  "hcdname":{
+                     "name":"子假別名稱",
+                     "type":"string",
+                     "value":"",
+                     "format":"n/a",
+                     "id":"hcdname"
+                  }
+               },
+               "format":"n/a",
+               "id":"hkindd"
             }
          },
          "format":"n/a",
