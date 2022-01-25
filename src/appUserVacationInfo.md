@@ -41,8 +41,8 @@ Here is a JSON representation of request.
 ### Request Properties
 | Key | Value | Type | Description | Required | Format |
 |:----------|:-------------|:-----|:------------|:------------|:------------|
-| specialDate |  | String | 特殊日期 | Y | AC(YYYYmm) |
-| hcode | 00.TW2 | String | 假別代碼 | Y | n/a |
+| specialDate |  | String | 特殊日期 | N | AC(YYYYmm) |
+| hcode | 00.TW2 | String | 假別代碼 | N | n/a |
 
 
 ### HTTP Response when Successful
