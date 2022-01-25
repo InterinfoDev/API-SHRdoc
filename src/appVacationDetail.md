@@ -16,7 +16,7 @@ POST
 |:----------|:-------------|:-----|:------------|
 | uid | 98599308101484732326 | String | 需透過appLogin取得
 | right | 51341911904173543336756162544864820 | String | 需透過appLogin取得 |
-| request | {pno:W00202201220002, empid:admin} | Object | 查詢條件(依據使用者所選擇要查看的假單單號及畫面上的員工編號)
+| request | {pno:W00202201250001, empid:admin} | Object | 查詢條件(依據使用者所選擇要查看的假單單號及畫面上的員工編號)
 
 ### JSON representation
 Here is a JSON representation of request.
@@ -25,7 +25,7 @@ Here is a JSON representation of request.
     "uid":"98599308101484732326",
     "right":"51341911904173543336756162544864820",
     "request":{
-        "pno":"W00202201220002", 
+        "pno":"W00202201250001", 
         "empid":"admin"
     }
 }
@@ -41,7 +41,7 @@ Here is a JSON representation of request.
 ### Request Properties
 | Key | Value | Type | Description | Required | Format |
 |:----------|:-------------|:-----|:------------|:------------|:------------|
-| pno | W00202201220002 | String | 單據編號 | Y | n/a |
+| pno | W00202201250001 | String | 單據編號 | Y | n/a |
 | empid | admin | String | 員工編號 | Y | n/a |
 
 
@@ -134,14 +134,14 @@ Here is a JSON representation of request.
             "pno":{
                "name":"單據編號",
                "type":"string",
-               "value":"W00202201220002",
+               "value":"W00202201250001",
                "format":"n/a",
                "id":"pno"
             },
             "sdate":{
                "name":"起始日期",
                "type":"string",
-               "value":"20220110",
+               "value":"20220117",
                "format":"YYYYmmdd",
                "id":"sdate"
             },
@@ -153,21 +153,21 @@ Here is a JSON representation of request.
                      "fileType":{
                         "name":"檔案類型",
                         "type":"string",
-                        "value":"image/jpeg",
+                        "value":"",
                         "format":"n/a",
                         "id":"fileType"
                      },
                      "fileUrl":{
                         "name":"檔案路徑",
                         "type":"string",
-                        "value":"72498637980750425429812583614035645297149457657140363626415578506764301247466354505690116627679400426299248296458461040891284004650660028978358173201698777",
+                        "value":"8394768758650934487139215644085449220561352994877809057609795881391964303976063959390413861765306620980509412090431956792262100059547268421208875708309193001476077621211220788276621789810786481552460035435218638029708026615307257983",
                         "format":"n/a",
                         "id":"fileUrl"
                      },
                      "fileName":{
                         "name":"檔案名稱",
                         "type":"string",
-                        "value":"1642842531408_1642744537340.jpg",
+                        "value":"1643078742185_【台壽】(MP1100171)TPSYNC-特休資料拋轉外掛(SD)(1).docx",
                         "format":"n/a",
                         "id":"fileName"
                      }
@@ -176,21 +176,21 @@ Here is a JSON representation of request.
                      "fileType":{
                         "name":"檔案類型",
                         "type":"string",
-                        "value":"",
+                        "value":"image/jpeg",
                         "format":"n/a",
                         "id":"fileType"
                      },
                      "fileUrl":{
                         "name":"檔案路徑",
                         "type":"string",
-                        "value":"3930159040048485782004114640652097371092827795730003456959959128619975395723054763236762988928760942212925648375543304235061378948665724",
+                        "value":"213054348471705645522899686059682058334332468666904109085709401572564865917840459407644865526610519454919698294050221",
                         "format":"n/a",
                         "id":"fileUrl"
                      },
                      "fileName":{
                         "name":"檔案名稱",
                         "type":"string",
-                        "value":"1642842531417_vacation.docx",
+                        "value":"1643078742200_A.jpg",
                         "format":"n/a",
                         "id":"fileName"
                      }
@@ -206,14 +206,14 @@ Here is a JSON representation of request.
                      "fileUrl":{
                         "name":"檔案路徑",
                         "type":"string",
-                        "value":"455081326282139220778915637967543067724210186456599314554045992917598883462076419186626589459273365774822873368176118113862408303720495762268196706684004039221831937305879771044208052927040535075255623517325855738",
+                        "value":"455081326282139220778915637967543067724210186456599314554053797322699112004686013661897571284512146408289108883247131030352506479918432248519610045402377780797371013561698903045297101962589301299762891115085188159",
                         "format":"n/a",
                         "id":"fileUrl"
                      },
                      "fileName":{
                         "name":"檔案名稱",
                         "type":"string",
-                        "value":"1642842531420_1642650962408_任09歡迎新同事-1110120.pdf",
+                        "value":"1643078742200_1642650962408_任09歡迎新同事-1110120.pdf",
                         "format":"n/a",
                         "id":"fileName"
                      }
@@ -230,14 +230,14 @@ Here is a JSON representation of request.
                      "empFullName":{
                         "name":"員工中文姓名",
                         "type":"string",
-                        "value":"TOs",
+                        "value":"薪O條",
                         "format":"n/a",
                         "id":"empFullName"
                      },
                      "empid":{
                         "name":"員工編號",
                         "type":"string",
-                        "value":"10804025",
+                        "value":"11000021",
                         "format":"n/a",
                         "id":"empid"
                      }
@@ -304,7 +304,7 @@ Here is a JSON representation of request.
             "edate":{
                "name":"結束日期",
                "type":"string",
-               "value":"20220110",
+               "value":"20220117",
                "format":"YYYYmmdd",
                "id":"edate"
             },
@@ -333,14 +333,14 @@ Here is a JSON representation of request.
             "note":{
                "name":"備註",
                "type":"string",
-               "value":"20220122seconTest",
+               "value":"20220125KevinTestTest",
                "format":"n/a",
                "id":"note"
             },
             "delayNote":{
                "name":"逾期請假原因",
                "type":"string",
-               "value":"20220122seconTestLateLate",
+               "value":"20220125KevinTestTestLateLate",
                "format":"n/a",
                "id":"delayNote"
             },
