@@ -68,7 +68,7 @@ POST
 | 異動行事曆 | appEditEmployeeCalendar | Y | 取得員工個人行事曆特定事件詳細資料 | Kevin | 20211206 |
 | 員工權限 | appEmployeeCondition | Y | 取得某員工可視範圍員工資料 | AndyHou | 20211202 |
 | 員工照片 | appEmployeePhoto | Y | 取得特定員工照片資訊 | AndyHou | 20211202 |
-| 忘記密碼 | appForgotPwd | Y | 執行忘記密碼 | Kevin | 20211203 |
+| 忘記密碼 | appForgotPwd | N | 執行忘記密碼 | Kevin | 20211203 |
 | APP功能權限 | appFunctionRight | Y | 取得員工APP功能資訊 | Daniel | 20211207 |
 | 線上打卡 | appGpsPunchCardGPS | Y | 線上打卡 | AndyHou | 20211202 | 
 | 取得首頁 | appHomePage | Y | 取得首頁資訊 | AndyHou | 20211202 |
@@ -81,10 +81,10 @@ POST
 | 最近一次獎金發放 | appSalbondRecent | Y | 取得某員工最近一次獎金發放資訊 | Daniel | 20211206 |
 | 體溫回報 | appBodyTemperature | Y | 提供使用者回報體溫資訊 | AndyHou | 20211202 |
 | GoogleMap | appGoogleMapKey | Y | 提供GoogleMapKey資訊 | AndyHou | 20211205 |
-| 量測體溫介面裝置資訊 | appTemperatureInterface | Y | 提供量測體溫介面裝置資訊 | AndyHou | 20211222 |
-| 個人資料維護欄位 | appPersonalColumnMaintenance | Y | 取得維護欄位 | AndyHou | 20220124 |
-| 個人資料維護異動 | appPersonalDataMaintenance | Y | 異動個人資料 | AndyHou | 20220124 |
-| 下載檔案 | appDownloadFile | Y | 取得下載檔案 | AndyHou | 20220106 |
-| 請假單詳細資料 | appVacationDetail | Y | 取得指定請假單詳細資料 | Kevin | 20220122 |
-| 請假單列表 | appVacationList | Y | 取得請假列表資訊 | Kevin | 20220122 |
-| 請假單年月 | appVacationMonth | Y | 取得員工指定某年月請假資訊 | Kevin | 20220122 |
+| 量測體溫介面裝置資訊 | appTemperatureInterface | N | 提供量測體溫介面裝置資訊 | AndyHou | 20211222 |
+| 個人資料維護欄位 | appPersonalColumnMaintenance | N | 取得維護欄位 | AndyHou | 20220124 |
+| 個人資料維護異動 | appPersonalDataMaintenance | N | 異動個人資料 | AndyHou | 20220124 |
+| 下載檔案 | appDownloadFile | N | 取得下載檔案 | AndyHou | 20220106 |
+| 請假單詳細資料 | appVacationDetail | N | 取得指定請假單詳細資料 | Kevin | 20220122 |
+| 請假單列表 | appVacationList | N | 取得請假列表資訊 | Kevin | 20220122 |
+| 請假單年月 | appVacationMonth | N | 取得員工指定某年月請假資訊 | Kevin | 20220122 |
