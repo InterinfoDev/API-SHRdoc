@@ -50,443 +50,439 @@ Here is a JSON representation of request.
       "回傳成功"
    ],
    "data":{
-      "properties":{
-         "format":{
-            "YYYYmm":"西元年月",
-            "YYYYmmdd":"西元年月日",
-            "n/a":""
-         }
-      },
       "employee":{
-         "id":"employee",
          "name":"個人資料維護欄位",
+         "type":"array",
          "value":[
             {
-               "id":"108617422147702250851",
                "name":"欄位資訊",
+               "type":"object",
                "value":{
-                  "fieldId":{
-                     "id":"108617422147702250851",
-                     "name":"欄位代號",
-                     "value":"photo",
+                  "fieldType":{
+                     "name":"欄位類型",
                      "type":"string",
-                     "format":"n/a"
+                     "value":"input",
+                     "format":"n/a",
+                     "id":"fieldType"
+                  },
+                  "fieldKey":{
+                     "name":"欄位序號",
+                     "type":"string",
+                     "value":"102277580671345369035",
+                     "format":"n/a",
+                     "id":"fieldKey"
+                  },
+                  "visiable":{
+                     "name":"是否顯示",
+                     "type":"boolean",
+                     "value":true,
+                     "format":"n/a",
+                     "id":"visiable"
+                  },
+                  "fieldId":{
+                     "name":"欄位代號",
+                     "type":"string",
+                     "value":"depNumber",
+                     "format":"n/a",
+                     "id":"fieldId"
+                  },
+                  "editable":{
+                     "name":"開放編輯",
+                     "type":"boolean",
+                     "value":true,
+                     "format":"n/a",
+                     "id":"editable"
+                  },
+                  "option":{
+                     "name":"選單項目",
+                     "type":"array",
+                     "value":[
+                        
+                     ],
+                     "format":"n/a",
+                     "id":"option"
+                  },
+                  "fieldValue":{
+                     "name":"欄位資料",
+                     "type":"array",
+                     "value":[
+                        "5"
+                     ],
+                     "format":"n/a",
+                     "id":"fieldValue"
                   },
                   "fieldName":{
-                     "id":"fieldName",
                      "name":"欄位名稱",
-                     "value":"員工照片",
                      "type":"string",
-                     "format":"n/a"
-                  },
+                     "value":"單位名稱",
+                     "format":"n/a",
+                     "id":"fieldName"
+                  }
+               },
+               "format":"n/a",
+               "id":"depNumber"
+            },
+            {
+               "name":"欄位資訊",
+               "type":"object",
+               "value":{
                   "fieldType":{
-                     "id":"fieldType",
                      "name":"欄位類型",
+                     "type":"string",
+                     "value":"select",
+                     "format":"n/a",
+                     "id":"fieldType"
+                  },
+                  "fieldKey":{
+                     "name":"欄位序號",
+                     "type":"string",
+                     "value":"93688819624842418438",
+                     "format":"n/a",
+                     "id":"fieldKey"
+                  },
+                  "visiable":{
+                     "name":"是否顯示",
+                     "type":"boolean",
+                     "value":true,
+                     "format":"n/a",
+                     "id":"visiable"
+                  },
+                  "fieldId":{
+                     "name":"欄位代號",
+                     "type":"string",
+                     "value":"position",
+                     "format":"n/a",
+                     "id":"fieldId"
+                  },
+                  "editable":{
+                     "name":"開放編輯",
+                     "type":"boolean",
+                     "value":true,
+                     "format":"n/a",
+                     "id":"editable"
+                  },
+                  "option":{
+                     "name":"選單項目",
+                     "type":"array",
+                     "value":[
+                        {
+                           "optionId":{
+                              "name":"選單代號",
+                              "type":"string",
+                              "value":"1",
+                              "format":"n/a",
+                              "id":"optionId"
+                           },
+                           "optionValue":{
+                              "name":"選單名稱",
+                              "type":"string",
+                              "value":"約聘人員",
+                              "format":"n/a",
+                              "id":"optionValue"
+                           }
+                        },
+                        {
+                           "optionId":{
+                              "name":"選單代號",
+                              "type":"string",
+                              "value":"5001",
+                              "format":"n/a",
+                              "id":"optionId"
+                           },
+                           "optionValue":{
+                              "name":"選單名稱",
+                              "type":"string",
+                              "value":"系統管理員",
+                              "format":"n/a",
+                              "id":"optionValue"
+                           }
+                        }
+                     ],
+                     "format":"n/a",
+                     "id":"option"
+                  },
+                  "fieldValue":{
+                     "name":"欄位資料",
+                     "type":"array",
+                     "value":[
+                        "5001"
+                     ],
+                     "format":"n/a",
+                     "id":"fieldValue"
+                  },
+                  "fieldName":{
+                     "name":"欄位名稱",
+                     "type":"string",
+                     "value":"職稱",
+                     "format":"n/a",
+                     "id":"fieldName"
+                  }
+               },
+               "format":"n/a",
+               "id":"position"
+            },
+            {
+               "name":"欄位資訊",
+               "type":"object",
+               "value":{
+                  "fieldType":{
+                     "name":"欄位類型",
+                     "type":"string",
+                     "value":"dateYMD",
+                     "format":"n/a",
+                     "id":"fieldType"
+                  },
+                  "fieldKey":{
+                     "name":"欄位序號",
+                     "type":"string",
+                     "value":"1887060628679946711148997434246703780876",
+                     "format":"n/a",
+                     "id":"fieldKey"
+                  },
+                  "visiable":{
+                     "name":"是否顯示",
+                     "type":"boolean",
+                     "value":true,
+                     "format":"n/a",
+                     "id":"visiable"
+                  },
+                  "fieldId":{
+                     "name":"欄位代號",
+                     "type":"string",
+                     "value":"BIRTHDAY",
+                     "format":"n/a",
+                     "id":"fieldId"
+                  },
+                  "editable":{
+                     "name":"開放編輯",
+                     "type":"boolean",
+                     "value":true,
+                     "format":"n/a",
+                     "id":"editable"
+                  },
+                  "option":{
+                     "name":"選單項目",
+                     "type":"array",
+                     "value":[
+                        
+                     ],
+                     "format":"n/a",
+                     "id":"option"
+                  },
+                  "fieldValue":{
+                     "name":"欄位資料",
+                     "type":"array",
+                     "value":[
+                        "19890122"
+                     ],
+                     "format":"n/a",
+                     "id":"fieldValue"
+                  },
+                  "fieldName":{
+                     "name":"欄位名稱",
+                     "type":"string",
+                     "value":"出生日期",
+                     "format":"n/a",
+                     "id":"fieldName"
+                  }
+               },
+               "format":"n/a",
+               "id":"BIRTHDAY"
+            },
+            {
+               "name":"欄位資訊",
+               "type":"object",
+               "value":{
+                  "fieldType":{
+                     "name":"欄位類型",
+                     "type":"string",
                      "value":"upload",
+                     "format":"n/a",
+                     "id":"fieldType"
+                  },
+                  "fieldKey":{
+                     "name":"欄位序號",
                      "type":"string",
-                     "format":"n/a"
-                  },
-                  "fieldValue":{
-                     "id":"fieldValue",
-                     "name":"欄位資料",
-                     "value":[
-                        {
-                           "fieldData":{
-                              "id":"fieldData",
-                              "name":"欄位明細資料",
-                              "value":"",
-                              "type":"string",
-                              "format":"n/a"
-                           }
-                        }
-                     ],
-                     "type":"array",
-                     "format":"base64"
-                  },
-                  "editable":{
-                     "id":"editable",
-                     "name":"開放編輯",
-                     "value":true,
-                     "type":"boolean",
-                     "format":"n/a"
+                     "value":"107217122158555495385",
+                     "format":"n/a",
+                     "id":"fieldKey"
                   },
                   "visiable":{
-                     "id":"visiable",
                      "name":"是否顯示",
-                     "value":true,
                      "type":"boolean",
-                     "format":"n/a"
+                     "value":true,
+                     "format":"n/a",
+                     "id":"visiable"
+                  },
+                  "fieldId":{
+                     "name":"欄位代號",
+                     "type":"string",
+                     "value":"photo",
+                     "format":"n/a",
+                     "id":"fieldId"
+                  },
+                  "editable":{
+                     "name":"開放編輯",
+                     "type":"boolean",
+                     "value":true,
+                     "format":"n/a",
+                     "id":"editable"
                   },
                   "option":{
-                     "id":"option",
                      "name":"選單項目",
+                     "type":"array",
                      "value":[
                         
                      ],
+                     "format":"n/a",
+                     "id":"option"
+                  },
+                  "fieldValue":{
+                     "name":"欄位資料",
                      "type":"array",
-                     "format":"n/a"
+                     "value":[
+                        ""
+                     ],
+                     "format":"n/a",
+                     "id":"fieldValue"
+                  },
+                  "fieldName":{
+                     "name":"欄位名稱",
+                     "type":"string",
+                     "value":"照片",
+                     "format":"n/a",
+                     "id":"fieldName"
                   }
                },
+               "format":"n/a",
+               "id":"photo"
+            },
+            {
+               "name":"欄位資訊",
                "type":"object",
-               "format":"n/a"
-            },
-            {
-               "id":"108617422147704250851",
-               "name":"欄位資訊",
                "value":{
-                  "fieldId":{
-                     "id":"fieldId",
-                     "name":"欄位代號",
-                     "value":"108617422147704250851",
-                     "type":"string",
-                     "format":"n/a"
-                  },
-                  "fieldName":{
-                     "id":"fieldName",
-                     "name":"欄位名稱",
-                     "value":"員工中文姓名",
-                     "type":"string",
-                     "format":"n/a"
-                  },
                   "fieldType":{
-                     "id":"fieldType",
                      "name":"欄位類型",
-                     "value":"input",
                      "type":"string",
-                     "format":"n/a"
+                     "value":"alternative",
+                     "format":"n/a",
+                     "id":"fieldType"
                   },
-                  "fieldValue":{
-                     "id":"fieldValue",
-                     "name":"欄位資料",
-                     "value":[
-                        {
-                           "fieldData":{
-                              "id":"fieldData",
-                              "name":"欄位明細資料",
-                              "value":"林奇杰",
-                              "type":"string",
-                              "format":"n/a"
-                           }
-                        }
-                     ],
-                     "type":"array",
-                     "format":"n/a"
-                  },
-                  "editable":{
-                     "id":"editable",
-                     "name":"開放編輯",
-                     "value":false,
-                     "type":"boolean",
-                     "format":"n/a"
+                  "fieldKey":{
+                     "name":"欄位序號",
+                     "type":"string",
+                     "value":"109513126157858745861",
+                     "format":"n/a",
+                     "id":"fieldKey"
                   },
                   "visiable":{
-                     "id":"visiable",
                      "name":"是否顯示",
-                     "value":true,
                      "type":"boolean",
-                     "format":"n/a"
+                     "value":true,
+                     "format":"n/a",
+                     "id":"visiable"
                   },
-                  "option":{
-                     "id":"option",
-                     "name":"選單項目",
-                     "value":[
-                        
-                     ],
-                     "type":"array",
-                     "format":"n/a"
-                  }
-               },
-               "type":"object",
-               "format":"n/a"
-            },
-            {
-               "id":"108617422147704250423",
-               "name":"欄位資訊",
-               "value":{
                   "fieldId":{
-                     "id":"fieldId",
                      "name":"欄位代號",
-                     "value":"108617422147704250423",
                      "type":"string",
-                     "format":"n/a"
-                  },
-                  "fieldName":{
-                     "id":"fieldName",
-                     "name":"欄位名稱",
-                     "value":"員工英文姓名",
-                     "type":"string",
-                     "format":"n/a"
-                  },
-                  "fieldType":{
-                     "id":"fieldType",
-                     "name":"欄位類型",
-                     "value":"input",
-                     "type":"string",
-                     "format":"n/a"
-                  },
-                  "fieldValue":{
-                     "id":"fieldValue",
-                     "name":"欄位資料",
-                     "value":[
-                        {
-                           "fieldData":{
-                              "id":"fieldData",
-                              "name":"欄位明細資料",
-                              "value":"Lucas",
-                              "type":"string",
-                              "format":"n/a"
-                           }
-                        }
-                     ],
-                     "type":"array",
-                     "format":"n/a"
+                     "value":"vacationInformer",
+                     "format":"n/a",
+                     "id":"fieldId"
                   },
                   "editable":{
-                     "id":"editable",
                      "name":"開放編輯",
-                     "value":false,
                      "type":"boolean",
-                     "format":"n/a"
-                  },
-                  "visiable":{
-                     "id":"visiable",
-                     "name":"是否顯示",
                      "value":true,
-                     "type":"boolean",
-                     "format":"n/a"
+                     "format":"n/a",
+                     "id":"editable"
                   },
                   "option":{
-                     "id":"option",
                      "name":"選單項目",
-                     "value":[
-                        
-                     ],
                      "type":"array",
-                     "format":"n/a"
-                  },
-                  "type":"object",
-                  "format":"n/a"
-               }
-            },
-            {
-               "id":"108617422147704250533",
-               "name":"欄位資訊",
-               "value":{
-                  "fieldId":{
-                     "id":"fieldId",
-                     "name":"欄位代號",
-                     "value":"108617422147704250533",
-                     "type":"string",
-                     "format":"n/a"
-                  },
-                  "fieldName":{
-                     "id":"fieldName",
-                     "name":"欄位名稱",
-                     "value":"工作地點",
-                     "type":"string",
-                     "format":"n/a"
-                  },
-                  "fieldType":{
-                     "id":"fieldType",
-                     "name":"欄位類型",
-                     "value":"select",
-                     "type":"string",
-                     "format":"n/a"
-                  },
-                  "fieldValue":{
-                     "id":"fieldValue",
-                     "name":"欄位資料",
-                     "value":[
-                        {
-                           "fieldData":{
-                              "id":"fieldData",
-                              "name":"欄位明細資料",
-                              "value":"A1",
-                              "type":"string",
-                              "format":"n/a"
-                           }
-                        }
-                     ],
-                     "type":"array",
-                     "format":"n/a"
-                  },
-                  "editable":{
-                     "id":"editable",
-                     "name":"開放編輯",
-                     "value":false,
-                     "type":"boolean",
-                     "format":"n/a"
-                  },
-                  "visiable":{
-                     "id":"visiable",
-                     "name":"是否顯示",
-                     "value":true,
-                     "type":"boolean",
-                     "format":"n/a"
-                  },
-                  "option":{
-                     "id":"option",
-                     "name":"選單項目",
                      "value":[
                         {
                            "optionId":{
-                              "id":"optionId",
                               "name":"選單代號",
-                              "value":"A",
                               "type":"string",
-                              "format":"n/a"
+                              "value":"0001",
+                              "format":"n/a",
+                              "id":"optionId"
                            },
                            "optionValue":{
-                              "id":"optionValue",
                               "name":"選單名稱",
-                              "value":"台北",
                               "type":"string",
-                              "format":"n/a"
+                              "value":"TEST_0001",
+                              "format":"n/a",
+                              "id":"optionValue"
                            }
                         },
                         {
                            "optionId":{
-                              "id":"optionId",
                               "name":"選單代號",
-                              "value":"B",
                               "type":"string",
-                              "format":"n/a"
+                              "value":"0002",
+                              "format":"n/a",
+                              "id":"optionId"
                            },
                            "optionValue":{
-                              "id":"optionValue",
                               "name":"選單名稱",
-                              "value":"新竹",
                               "type":"string",
-                              "format":"n/a"
+                              "value":"TEST_0002",
+                              "format":"n/a",
+                              "id":"optionValue"
                            }
                         },
                         {
                            "optionId":{
-                              "id":"optionId",
                               "name":"選單代號",
-                              "value":"C",
                               "type":"string",
-                              "format":"n/a"
+                              "value":"0004",
+                              "format":"n/a",
+                              "id":"optionId"
                            },
                            "optionValue":{
-                              "id":"optionValue",
                               "name":"選單名稱",
-                              "value":"高雄",
                               "type":"string",
-                              "format":"n/a"
+                              "value":"TEST_0004",
+                              "format":"n/a",
+                              "id":"optionValue"
                            }
                         }
                      ],
-                     "type":"array",
-                     "format":"n/a"
-                  }
-               },
-               "type":"object",
-               "format":"n/a"
-            },
-            {
-               "id":"10861742214770423332",
-               "name":"欄位資訊",
-               "value":{
-                  "fieldId":{
-                     "id":"fieldId",
-                     "name":"欄位代號",
-                     "value":"10861742214770423332",
-                     "type":"string",
-                     "format":"n/a"
-                  },
-                  "fieldName":{
-                     "id":"fieldName",
-                     "name":"欄位名稱",
-                     "value":"性別",
-                     "type":"string",
-                     "format":"n/a"
-                  },
-                  "fieldType":{
-                     "id":"fieldType",
-                     "name":"欄位類型",
-                     "value":"select",
-                     "type":"string",
-                     "format":"n/a"
+                     "format":"n/a",
+                     "id":"option"
                   },
                   "fieldValue":{
-                     "id":"fieldValue",
                      "name":"欄位資料",
-                     "value":[
-                        {
-                           "fieldData":{
-                              "id":"fieldData",
-                              "name":"欄位明細資料",
-                              "value":"M",
-                              "type":"string",
-                              "format":"n/a"
-                           }
-                        }
-                     ],
                      "type":"array",
-                     "format":"n/a"
-                  },
-                  "editable":{
-                     "id":"editable",
-                     "name":"開放編輯",
-                     "value":false,
-                     "type":"boolean",
-                     "format":"n/a"
-                  },
-                  "visiable":{
-                     "id":"visiable",
-                     "name":"是否顯示",
-                     "value":true,
-                     "type":"boolean",
-                     "format":"n/a"
-                  },
-                  "option":{
-                     "id":"option",
-                     "name":"選單項目",
                      "value":[
-                        {
-                           "optionId":{
-                              "id":"optionId",
-                              "name":"選單代號",
-                              "value":"M",
-                              "type":"string",
-                              "format":"n/a"
-                           },
-                           "optionValue":{
-                              "id":"optionValue",
-                              "name":"選單名稱",
-                              "value":"男性",
-                              "type":"string",
-                              "format":"n/a"
-                           }
-                        },
-                        {
-                           "optionId":{
-                              "id":"optionId",
-                              "name":"選單代號",
-                              "value":"F",
-                              "type":"string",
-                              "format":"n/a"
-                           },
-                           "optionValue":{
-                              "id":"optionValue",
-                              "name":"選單名稱",
-                              "value":"女性",
-                              "type":"string",
-                              "format":"n/a"
-                           }
-                        }
+                        "0002",
+                        "0004"
                      ],
-                     "type":"array",
-                     "format":"n/a"
+                     "format":"n/a",
+                     "id":"fieldValue"
+                  },
+                  "fieldName":{
+                     "name":"欄位名稱",
+                     "type":"string",
+                     "value":"請假時通知人員",
+                     "format":"n/a",
+                     "id":"fieldName"
                   }
                },
-               "type":"object",
-               "format":"n/a"
+               "format":"n/a",
+               "id":"vacationInformer"
             }
          ],
-         "type":"array",
-         "format":"n/a"
+         "format":"n/a",
+         "id":"employee"
+      },
+      "properties":{
+         "format":{
+            "YYYYmmdd":"西元年月日",
+            "n/a":"",
+            "YYYYmm":"西元年月"
+         }
       }
    }
 }
