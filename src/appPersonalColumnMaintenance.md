@@ -275,7 +275,7 @@ Here is a JSON representation of request.
                      "value":[
                         "19890122"
                      ],
-                     "format":"n/a",
+                     "format":"YYYYmmdd",
                      "id":"fieldValue"
                   },
                   "fieldName":{
