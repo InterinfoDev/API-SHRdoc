@@ -67,6 +67,13 @@ Here is a JSON representation of request.
                "value":true,
                "format":"n/a",
                "id":"executeResult"
+            },
+            "executeMessage":{
+               "name":"異動訊息",
+               "type":"string",
+               "value":"異動成功",
+               "format":"n/a",
+               "id":"executeMessage"
             }
          },
          "format":"n/a",
