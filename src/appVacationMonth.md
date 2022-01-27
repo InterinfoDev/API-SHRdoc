@@ -16,7 +16,7 @@ POST
 |:----------|:-------------|:-----|:------------|
 | uid | 98599308101484732326 | String | 需透過appLogin取得
 | right | 51341911904173543336756162544864820 | String | 需透過appLogin取得 |
-| request | {depNumber:[5], vacationYM:202108, empid:[admin], companyId:TW, hcode:15} | Object | 查詢條件
+| request | {depNumber:[5], vacationYM:202108, empid:[admin], companyId:TW, hcode:00} | Object | 查詢條件
 
 ### JSON representation
 Here is a JSON representation of request.
@@ -27,7 +27,7 @@ Here is a JSON representation of request.
     "request":{
         "vacationYM":"202108", 
         "companyId":"TW",
-        "hcode":"15",
+        "hcode":"00",
         "depNumber":[5], 
         "empid":["admin"]
     }
@@ -46,7 +46,7 @@ Here is a JSON representation of request.
 |:----------|:-------------|:-----|:------------|:------------|:------------|
 | vacationYM | 202108 | String | 查詢年月 | Y | AC(YYYYmm) |
 | companyId | TW | String | 公司代號 | N | n/a |
-| hcode | 15 | String | 假別代碼 | N | n/a |
+| hcode | 00 | String | 假別代碼 | N | n/a |
 | depNumber | [5] | Array(Integer) | 部門代號 | N | n/a |
 | empid | [admin] | Array(String) | 員工編號 | N | n/a |
 
@@ -60,7 +60,7 @@ Here is a JSON representation of request.
    ],
    "data":{
       "main":{
-         "name":"請假年月資訊",
+         "name":"請假資訊",
          "type":"object",
          "value":{
             "vacationYM":{
@@ -69,6 +69,13 @@ Here is a JSON representation of request.
                "value":"202201",
                "format":"YYYYmm",
                "id":"vacationYM"
+            },
+            "hcode":{
+               "name":"假別代碼",
+               "type":"string",
+               "value":"00",
+               "format":"n/a",
+               "id":"hcode"
             }
          },
          "format":"n/a",
@@ -134,7 +141,7 @@ Here is a JSON representation of request.
                   "empFullEname":{
                      "name":"員工英文姓名",
                      "type":"string",
-                     "value":"admin000",
+                     "value":"test_Ename",
                      "format":"n/a",
                      "id":"empFullEname"
                   },
@@ -162,49 +169,6 @@ Here is a JSON representation of request.
          }
       }
    }
-}
-```
-
-### HTTP Response when No Data 
-無資料則屬於正常範圍，正常來說可以沒有資料
-```json
-{
-    "status": "success",
-    "message": [
-        "查無資料"
-    ],
-    "data": {
-        "main": {
-            "name": "請假年月資訊",
-            "type": "object",
-            "value": {
-                "vacationYM": {
-                    "name": "請假年月",
-                    "type": "string",
-                    "value": "202201",
-                    "format": "YYYYmm",
-                    "id": "vacationYM"
-                }
-            },
-            "format": "n/a",
-            "id": "main"
-        },
-        "vacationList": {
-            "name": "員工請假列表",
-            "type": "array",
-            "value": [],
-            "format": "n/a",
-            "id": "vacationList"
-        },
-        "properties": {
-            "format": {
-                "base64": "Base64編碼格式",
-                "count": "數量",
-                "n/a": "",
-                "YYYYmm": "西元年月"
-            }
-        }
-    }
 }
 ```
 
