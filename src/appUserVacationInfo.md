@@ -60,7 +60,7 @@ Here is a JSON representation of request.
             "empFullName":{
                "name":"員工中文姓名",
                "type":"string",
-               "value":"系O管",
+               "value":"管理者",
                "format":"n/a",
                "id":"empFullName"
             },
@@ -86,7 +86,7 @@ Here is a JSON representation of request.
       "showSpecialDate":{
          "name":"是否顯示特殊日期",
          "type":"boolean",
-         "value":true,
+         "value":false,
          "format":"n/a",
          "id":"showSpecialDate"
       },
@@ -99,14 +99,14 @@ Here is a JSON representation of request.
                "type":"array",
                "value":[
                   {
-                     "name":"總計",
+                     "name":"核休",
                      "type":"object",
                      "value":{
                         "content":{
                            "name":"內容",
                            "type":"string",
-                           "value":"0.00",
-                           "format":"day",
+                           "value":"120.00",
+                           "format":"hour",
                            "id":"content"
                         },
                         "title":{
@@ -118,7 +118,7 @@ Here is a JSON representation of request.
                         }
                      },
                      "format":"n/a",
-                     "id":"total"
+                     "id":"approve"
                   },
                   {
                      "name":"已休",
@@ -128,7 +128,7 @@ Here is a JSON representation of request.
                            "name":"內容",
                            "type":"string",
                            "value":"0.00",
-                           "format":"day",
+                           "format":"hour",
                            "id":"content"
                         },
                         "title":{
@@ -149,8 +149,8 @@ Here is a JSON representation of request.
                         "content":{
                            "name":"內容",
                            "type":"string",
-                           "value":"0.00",
-                           "format":"day",
+                           "value":"120.00",
+                           "format":"hour",
                            "id":"content"
                         },
                         "title":{
@@ -162,7 +162,7 @@ Here is a JSON representation of request.
                         }
                      },
                      "format":"n/a",
-                     "id":"unused"
+                     "id":"untaken"
                   },
                   {
                      "name":"備註",
@@ -172,7 +172,7 @@ Here is a JSON representation of request.
                            "name":"內容",
                            "type":"string",
                            "value":"20221231",
-                           "format":"",
+                           "format":"YYYYmmdd",
                            "id":"content"
                         },
                         "title":{
@@ -191,181 +191,11 @@ Here is a JSON representation of request.
                "id":"annualLeave"
             },
             {
-               "name":"去年保留特休資訊",
-               "type":"array",
-               "value":[
-                  {
-                     "name":"總計",
-                     "type":"object",
-                     "value":{
-                        "content":{
-                           "name":"內容",
-                           "type":"string",
-                           "value":"56.00",
-                           "format":"day",
-                           "id":"content"
-                        },
-                        "title":{
-                           "name":"標題",
-                           "type":"string",
-                           "value":"當年度特休",
-                           "format":"n/a",
-                           "id":"title"
-                        }
-                     },
-                     "format":"n/a",
-                     "id":"total"
-                  },
-                  {
-                     "name":"已休",
-                     "type":"object",
-                     "value":{
-                        "content":{
-                           "name":"內容",
-                           "type":"string",
-                           "value":"0.00",
-                           "format":"day",
-                           "id":"content"
-                        },
-                        "title":{
-                           "name":"標題",
-                           "type":"string",
-                           "value":"已休(含在途)",
-                           "format":"n/a",
-                           "id":"title"
-                        }
-                     },
-                     "format":"n/a",
-                     "id":"used"
-                  },
-                  {
-                     "name":"未休",
-                     "type":"object",
-                     "value":{
-                        "content":{
-                           "name":"內容",
-                           "type":"string",
-                           "value":"56.00",
-                           "format":"day",
-                           "id":"content"
-                        },
-                        "title":{
-                           "name":"標題",
-                           "type":"string",
-                           "value":"未休",
-                           "format":"n/a",
-                           "id":"title"
-                        }
-                     },
-                     "format":"n/a",
-                     "id":"unused"
-                  },
-                  {
-                     "name":"備註",
-                     "type":"object",
-                     "value":{
-                        "content":{
-                           "name":"內容",
-                           "type":"string",
-                           "value":"20221231",
-                           "format":"",
-                           "id":"content"
-                        },
-                        "title":{
-                           "name":"標題",
-                           "type":"string",
-                           "value":"去年度可保留期限",
-                           "format":"n/a",
-                           "id":"title"
-                        }
-                     },
-                     "format":"n/a",
-                     "id":"note"
-                  }
-               ],
-               "format":"n/a",
-               "id":"lastYearAnnualLeave"
-            },
-            {
-               "name":"彈休資訊",
-               "type":"array",
-               "value":[
-                  {
-                     "name":"總計",
-                     "type":"object",
-                     "value":{
-                        "content":{
-                           "name":"內容",
-                           "type":"string",
-                           "value":"0.00",
-                           "format":"day",
-                           "id":"content"
-                        },
-                        "title":{
-                           "name":"標題",
-                           "type":"string",
-                           "value":"當年度彈休",
-                           "format":"n/a",
-                           "id":"title"
-                        }
-                     },
-                     "format":"n/a",
-                     "id":"total"
-                  },
-                  {
-                     "name":"已休",
-                     "type":"object",
-                     "value":{
-                        "content":{
-                           "name":"內容",
-                           "type":"string",
-                           "value":"0.00",
-                           "format":"day",
-                           "id":"content"
-                        },
-                        "title":{
-                           "name":"標題",
-                           "type":"string",
-                           "value":"已休(含在途)",
-                           "format":"n/a",
-                           "id":"title"
-                        }
-                     },
-                     "format":"n/a",
-                     "id":"used"
-                  },
-                  {
-                     "name":"未休",
-                     "type":"object",
-                     "value":{
-                        "content":{
-                           "name":"內容",
-                           "type":"string",
-                           "value":"0.00",
-                           "format":"day",
-                           "id":"content"
-                        },
-                        "title":{
-                           "name":"標題",
-                           "type":"string",
-                           "value":"未休",
-                           "format":"n/a",
-                           "id":"title"
-                        }
-                     },
-                     "format":"n/a",
-                     "id":"unused"
-                  }
-               ],
-               "format":"n/a",
-               "id":"floatingLeave"
-            },
-            {
                "name":"加班補休資訊",
                "type":"array",
                "value":[
                   {
-                     "name":"總計",
+                     "name":"核休",
                      "type":"object",
                      "value":{
                         "content":{
@@ -384,7 +214,7 @@ Here is a JSON representation of request.
                         }
                      },
                      "format":"n/a",
-                     "id":"total"
+                     "id":"approve"
                   },
                   {
                      "name":"已休",
@@ -428,7 +258,7 @@ Here is a JSON representation of request.
                         }
                      },
                      "format":"n/a",
-                     "id":"unused"
+                     "id":"untaken"
                   },
                   {
                      "name":"當月預備轉結薪資時數",
@@ -455,80 +285,6 @@ Here is a JSON representation of request.
                ],
                "format":"n/a",
                "id":"floatingLeave"
-            },
-            {
-               "name":"其他假別使用資訊",
-               "type":"array",
-               "value":[
-                  {
-                     "name":"總計",
-                     "type":"object",
-                     "value":{
-                        "content":{
-                           "name":"內容",
-                           "type":"string",
-                           "value":"0.00",
-                           "format":"hour",
-                           "id":"content"
-                        },
-                        "title":{
-                           "name":"標題",
-                           "type":"string",
-                           "value":"當次例假-有事情",
-                           "format":"n/a",
-                           "id":"title"
-                        }
-                     },
-                     "format":"n/a",
-                     "id":"total"
-                  },
-                  {
-                     "name":"已休",
-                     "type":"object",
-                     "value":{
-                        "content":{
-                           "name":"內容",
-                           "type":"string",
-                           "value":"0.00",
-                           "format":"hour",
-                           "id":"content"
-                        },
-                        "title":{
-                           "name":"標題",
-                           "type":"string",
-                           "value":"已休(含在途)",
-                           "format":"n/a",
-                           "id":"title"
-                        }
-                     },
-                     "format":"n/a",
-                     "id":"used"
-                  },
-                  {
-                     "name":"未休",
-                     "type":"object",
-                     "value":{
-                        "content":{
-                           "name":"內容",
-                           "type":"string",
-                           "value":"0.00",
-                           "format":"hour",
-                           "id":"content"
-                        },
-                        "title":{
-                           "name":"標題",
-                           "type":"string",
-                           "value":"未休",
-                           "format":"n/a",
-                           "id":"title"
-                        }
-                     },
-                     "format":"n/a",
-                     "id":"unused"
-                  }
-               ],
-               "format":"n/a",
-               "id":"otherVacation"
             }
          ],
          "format":"n/a",
