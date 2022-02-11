@@ -16,7 +16,7 @@ POST
 |:----------|:-------------|:-----|:------------|
 | uid | 98599308101484732326 | String | 需透過appLogin取得
 | right | 51341911904173543336756162544864820 | String | 需透過appLogin取得 |
-| request | {hcode:00.TW2, specialDate:} | Object | 查詢條件(依據畫面上使用者所選取的假別去取得假別代碼跟特殊日期)
+| request | {hcode:, specialDate:} | Object | 查詢條件(依據畫面上使用者所選取的假別去取得假別代碼跟特殊日期)
 
 ### JSON representation
 Here is a JSON representation of request.
@@ -25,7 +25,7 @@ Here is a JSON representation of request.
     "uid":"98599308101484732326",
     "right":"51341911904173543336756162544864820",
     "request":{
-        "hcode":"00.TW2", 
+        "hcode":"", 
         "specialDate":""
     }
 }
@@ -42,255 +42,425 @@ Here is a JSON representation of request.
 | Key | Value | Type | Description | Required | Format |
 |:----------|:-------------|:-----|:------------|:------------|:------------|
 | specialDate |  | String | 特殊日期 | N | AC(YYYYmm) |
-| hcode | 00.TW2 | String | 假別代碼 | N | n/a |
+| hcode |  | String | 假別代碼 | N | n/a |
 
 
 ### HTTP Response when Successful
 ```json
 {
-   "status":"success",
-   "message":[
-      "回傳成功"
-   ],
-   "data":{
-      "userInfo":{
-         "name":"使用者資訊",
-         "type":"object",
-         "value":{
-            "empFullName":{
-               "name":"員工中文姓名",
-               "type":"string",
-               "value":"管理者",
-               "format":"n/a",
-               "id":"empFullName"
+    "status": "success",
+    "message": [
+        "回傳成功"
+    ],
+    "data": {
+        "userInfo": {
+            "name": "使用者資訊",
+            "type": "object",
+            "value": {
+                "empFullName": {
+                    "name": "員工中文姓名",
+                    "type": "string",
+                    "value": "系O管",
+                    "format": "n/a",
+                    "id": "empFullName"
+                },
+                "empid": {
+                    "name": "員工編號",
+                    "type": "string",
+                    "value": "admin",
+                    "format": "n/a",
+                    "id": "empid"
+                }
             },
-            "empid":{
-               "name":"員工編號",
-               "type":"string",
-               "value":"admin",
-               "format":"n/a",
-               "id":"empid"
+            "format": "n/a",
+            "id": "userInfo"
+        },
+        "properties": {
+            "format": {
+                "hour": "小時",
+                "YYYYmmdd": "西元年月日",
+                "day": "天",
+                "n/a": ""
             }
-         },
-         "format":"n/a",
-         "id":"userInfo"
-      },
-      "properties":{
-         "format":{
-            "hour":"小時",
-            "YYYYmmdd":"西元年月日",
-            "day":"天",
-            "n/a":""
-         }
-      },
-      "showSpecialDate":{
-         "name":"是否顯示特殊日期",
-         "type":"boolean",
-         "value":false,
-         "format":"n/a",
-         "id":"showSpecialDate"
-      },
-      "usedVacationInfo":{
-         "name":"假別使用資訊",
-         "type":"array",
-         "value":[
-            {
-               "name":"特休資訊",
-               "type":"array",
-               "value":[
-                  {
-                     "name":"核休",
-                     "type":"object",
-                     "value":{
-                        "content":{
-                           "name":"內容",
-                           "type":"string",
-                           "value":"120.00",
-                           "format":"hour",
-                           "id":"content"
+        },
+        "showSpecialDate": {
+            "name": "是否顯示特殊日期",
+            "type": "boolean",
+            "value": false,
+            "format": "n/a",
+            "id": "showSpecialDate"
+        },
+        "usedVacationInfo": {
+            "name": "假別使用資訊",
+            "type": "array",
+            "value": [
+                {
+                    "name": "特休資訊",
+                    "type": "array",
+                    "value": [
+                        {
+                            "name": "核休",
+                            "type": "object",
+                            "value": {
+                                "content": {
+                                    "name": "內容",
+                                    "type": "string",
+                                    "value": "0.00",
+                                    "format": "day",
+                                    "id": "content"
+                                },
+                                "title": {
+                                    "name": "標題",
+                                    "type": "string",
+                                    "value": "當年度特休",
+                                    "format": "n/a",
+                                    "id": "title"
+                                }
+                            },
+                            "format": "n/a",
+                            "id": "approve"
                         },
-                        "title":{
-                           "name":"標題",
-                           "type":"string",
-                           "value":"當年度特休",
-                           "format":"n/a",
-                           "id":"title"
-                        }
-                     },
-                     "format":"n/a",
-                     "id":"approve"
-                  },
-                  {
-                     "name":"已休",
-                     "type":"object",
-                     "value":{
-                        "content":{
-                           "name":"內容",
-                           "type":"string",
-                           "value":"0.00",
-                           "format":"hour",
-                           "id":"content"
+                        {
+                            "name": "已休",
+                            "type": "object",
+                            "value": {
+                                "content": {
+                                    "name": "內容",
+                                    "type": "string",
+                                    "value": "0.00",
+                                    "format": "day",
+                                    "id": "content"
+                                },
+                                "title": {
+                                    "name": "標題",
+                                    "type": "string",
+                                    "value": "已休(含在途)",
+                                    "format": "n/a",
+                                    "id": "title"
+                                }
+                            },
+                            "format": "n/a",
+                            "id": "used"
                         },
-                        "title":{
-                           "name":"標題",
-                           "type":"string",
-                           "value":"已休(含在途)",
-                           "format":"n/a",
-                           "id":"title"
-                        }
-                     },
-                     "format":"n/a",
-                     "id":"used"
-                  },
-                  {
-                     "name":"未休",
-                     "type":"object",
-                     "value":{
-                        "content":{
-                           "name":"內容",
-                           "type":"string",
-                           "value":"120.00",
-                           "format":"hour",
-                           "id":"content"
+                        {
+                            "name": "未休",
+                            "type": "object",
+                            "value": {
+                                "content": {
+                                    "name": "內容",
+                                    "type": "string",
+                                    "value": "0.00",
+                                    "format": "day",
+                                    "id": "content"
+                                },
+                                "title": {
+                                    "name": "標題",
+                                    "type": "string",
+                                    "value": "未休",
+                                    "format": "n/a",
+                                    "id": "title"
+                                }
+                            },
+                            "format": "n/a",
+                            "id": "untaken"
                         },
-                        "title":{
-                           "name":"標題",
-                           "type":"string",
-                           "value":"未休",
-                           "format":"n/a",
-                           "id":"title"
+                        {
+                            "name": "備註",
+                            "type": "object",
+                            "value": {
+                                "content": {
+                                    "name": "內容",
+                                    "type": "string",
+                                    "value": "20221231",
+                                    "format": "YYYYmmdd",
+                                    "id": "content"
+                                },
+                                "title": {
+                                    "name": "標題",
+                                    "type": "string",
+                                    "value": "當年度可保留期限",
+                                    "format": "n/a",
+                                    "id": "title"
+                                }
+                            },
+                            "format": "n/a",
+                            "id": "note"
                         }
-                     },
-                     "format":"n/a",
-                     "id":"untaken"
-                  },
-                  {
-                     "name":"備註",
-                     "type":"object",
-                     "value":{
-                        "content":{
-                           "name":"內容",
-                           "type":"string",
-                           "value":"20221231",
-                           "format":"YYYYmmdd",
-                           "id":"content"
+                    ],
+                    "format": "n/a",
+                    "id": "annualLeave"
+                },
+                {
+                    "name": "去年保留特休資訊",
+                    "type": "array",
+                    "value": [
+                        {
+                            "name": "核休",
+                            "type": "object",
+                            "value": {
+                                "content": {
+                                    "name": "內容",
+                                    "type": "string",
+                                    "value": "56.00",
+                                    "format": "day",
+                                    "id": "content"
+                                },
+                                "title": {
+                                    "name": "標題",
+                                    "type": "string",
+                                    "value": "當年度特休",
+                                    "format": "n/a",
+                                    "id": "title"
+                                }
+                            },
+                            "format": "n/a",
+                            "id": "approve"
                         },
-                        "title":{
-                           "name":"標題",
-                           "type":"string",
-                           "value":"當年度可保留期限",
-                           "format":"n/a",
-                           "id":"title"
-                        }
-                     },
-                     "format":"n/a",
-                     "id":"note"
-                  }
-               ],
-               "format":"n/a",
-               "id":"annualLeave"
-            },
-            {
-               "name":"加班補休資訊",
-               "type":"array",
-               "value":[
-                  {
-                     "name":"核休",
-                     "type":"object",
-                     "value":{
-                        "content":{
-                           "name":"內容",
-                           "type":"string",
-                           "value":"0.00",
-                           "format":"hour",
-                           "id":"content"
+                        {
+                            "name": "已休",
+                            "type": "object",
+                            "value": {
+                                "content": {
+                                    "name": "內容",
+                                    "type": "string",
+                                    "value": "0.00",
+                                    "format": "day",
+                                    "id": "content"
+                                },
+                                "title": {
+                                    "name": "標題",
+                                    "type": "string",
+                                    "value": "已休(含在途)",
+                                    "format": "n/a",
+                                    "id": "title"
+                                }
+                            },
+                            "format": "n/a",
+                            "id": "used"
                         },
-                        "title":{
-                           "name":"標題",
-                           "type":"string",
-                           "value":"當月加班補休",
-                           "format":"n/a",
-                           "id":"title"
-                        }
-                     },
-                     "format":"n/a",
-                     "id":"approve"
-                  },
-                  {
-                     "name":"已休",
-                     "type":"object",
-                     "value":{
-                        "content":{
-                           "name":"內容",
-                           "type":"string",
-                           "value":"0.00",
-                           "format":"hour",
-                           "id":"content"
+                        {
+                            "name": "未休",
+                            "type": "object",
+                            "value": {
+                                "content": {
+                                    "name": "內容",
+                                    "type": "string",
+                                    "value": "56.00",
+                                    "format": "day",
+                                    "id": "content"
+                                },
+                                "title": {
+                                    "name": "標題",
+                                    "type": "string",
+                                    "value": "未休",
+                                    "format": "n/a",
+                                    "id": "title"
+                                }
+                            },
+                            "format": "n/a",
+                            "id": "untaken"
                         },
-                        "title":{
-                           "name":"標題",
-                           "type":"string",
-                           "value":"已休(含在途)",
-                           "format":"n/a",
-                           "id":"title"
+                        {
+                            "name": "備註",
+                            "type": "object",
+                            "value": {
+                                "content": {
+                                    "name": "內容",
+                                    "type": "string",
+                                    "value": "20221231",
+                                    "format": "YYYYmmdd",
+                                    "id": "content"
+                                },
+                                "title": {
+                                    "name": "標題",
+                                    "type": "string",
+                                    "value": "去年度可保留期限",
+                                    "format": "n/a",
+                                    "id": "title"
+                                }
+                            },
+                            "format": "n/a",
+                            "id": "note"
                         }
-                     },
-                     "format":"n/a",
-                     "id":"used"
-                  },
-                  {
-                     "name":"未休",
-                     "type":"object",
-                     "value":{
-                        "content":{
-                           "name":"內容",
-                           "type":"string",
-                           "value":"0.00",
-                           "format":"hour",
-                           "id":"content"
+                    ],
+                    "format": "n/a",
+                    "id": "lastYearAnnualLeave"
+                },
+                {
+                    "name": "彈休資訊",
+                    "type": "array",
+                    "value": [
+                        {
+                            "name": "核休",
+                            "type": "object",
+                            "value": {
+                                "content": {
+                                    "name": "內容",
+                                    "type": "string",
+                                    "value": "0.00",
+                                    "format": "day",
+                                    "id": "content"
+                                },
+                                "title": {
+                                    "name": "標題",
+                                    "type": "string",
+                                    "value": "當年度彈休",
+                                    "format": "n/a",
+                                    "id": "title"
+                                }
+                            },
+                            "format": "n/a",
+                            "id": "approve"
                         },
-                        "title":{
-                           "name":"標題",
-                           "type":"string",
-                           "value":"累計未休",
-                           "format":"n/a",
-                           "id":"title"
-                        }
-                     },
-                     "format":"n/a",
-                     "id":"untaken"
-                  },
-                  {
-                     "name":"當月預備轉結薪資時數",
-                     "type":"object",
-                     "value":{
-                        "content":{
-                           "name":"內容",
-                           "type":"string",
-                           "value":"0.00",
-                           "format":"小時",
-                           "id":"content"
+                        {
+                            "name": "已休",
+                            "type": "object",
+                            "value": {
+                                "content": {
+                                    "name": "內容",
+                                    "type": "string",
+                                    "value": "0.00",
+                                    "format": "day",
+                                    "id": "content"
+                                },
+                                "title": {
+                                    "name": "標題",
+                                    "type": "string",
+                                    "value": "已休(含在途)",
+                                    "format": "n/a",
+                                    "id": "title"
+                                }
+                            },
+                            "format": "n/a",
+                            "id": "used"
                         },
-                        "title":{
-                           "name":"標題",
-                           "type":"string",
-                           "value":"當月預備轉結薪資時數",
-                           "format":"n/a",
-                           "id":"title"
+                        {
+                            "name": "未休",
+                            "type": "object",
+                            "value": {
+                                "content": {
+                                    "name": "內容",
+                                    "type": "string",
+                                    "value": "0.00",
+                                    "format": "day",
+                                    "id": "content"
+                                },
+                                "title": {
+                                    "name": "標題",
+                                    "type": "string",
+                                    "value": "未休",
+                                    "format": "n/a",
+                                    "id": "title"
+                                }
+                            },
+                            "format": "n/a",
+                            "id": "untaken"
                         }
-                     },
-                     "format":"n/a",
-                     "id":"transToMoney"
-                  }
-               ],
-               "format":"n/a",
-               "id":"floatingLeave"
-            }
-         ],
-         "format":"n/a",
-         "id":"usedVacationInfo"
-      }
-   }
+                    ],
+                    "format": "n/a",
+                    "id": "floatingLeave"
+                },
+                {
+                    "name": "加班補休資訊",
+                    "type": "array",
+                    "value": [
+                        {
+                            "name": "核休",
+                            "type": "object",
+                            "value": {
+                                "content": {
+                                    "name": "內容",
+                                    "type": "string",
+                                    "value": "0.00",
+                                    "format": "hour",
+                                    "id": "content"
+                                },
+                                "title": {
+                                    "name": "標題",
+                                    "type": "string",
+                                    "value": "當月加班補休",
+                                    "format": "n/a",
+                                    "id": "title"
+                                }
+                            },
+                            "format": "n/a",
+                            "id": "approve"
+                        },
+                        {
+                            "name": "已休",
+                            "type": "object",
+                            "value": {
+                                "content": {
+                                    "name": "內容",
+                                    "type": "string",
+                                    "value": "0.00",
+                                    "format": "hour",
+                                    "id": "content"
+                                },
+                                "title": {
+                                    "name": "標題",
+                                    "type": "string",
+                                    "value": "已休(含在途)",
+                                    "format": "n/a",
+                                    "id": "title"
+                                }
+                            },
+                            "format": "n/a",
+                            "id": "used"
+                        },
+                        {
+                            "name": "未休",
+                            "type": "object",
+                            "value": {
+                                "content": {
+                                    "name": "內容",
+                                    "type": "string",
+                                    "value": "0.00",
+                                    "format": "hour",
+                                    "id": "content"
+                                },
+                                "title": {
+                                    "name": "標題",
+                                    "type": "string",
+                                    "value": "累計未休",
+                                    "format": "n/a",
+                                    "id": "title"
+                                }
+                            },
+                            "format": "n/a",
+                            "id": "untaken"
+                        },
+                        {
+                            "name": "當月預備轉結薪資時數",
+                            "type": "object",
+                            "value": {
+                                "content": {
+                                    "name": "內容",
+                                    "type": "string",
+                                    "value": "0.00",
+                                    "format": "小時",
+                                    "id": "content"
+                                },
+                                "title": {
+                                    "name": "標題",
+                                    "type": "string",
+                                    "value": "當月預備轉結薪資時數",
+                                    "format": "n/a",
+                                    "id": "title"
+                                }
+                            },
+                            "format": "n/a",
+                            "id": "transToMoney"
+                        }
+                    ],
+                    "format": "n/a",
+                    "id": "floatingLeave"
+                }
+            ],
+            "format": "n/a",
+            "id": "usedVacationInfo"
+        }
+    }
 }
 ```
 
