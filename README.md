@@ -88,4 +88,4 @@ POST
 | 請假單詳細資料 | appVacationDetail | N | 取得指定請假單詳細資料 | Kevin | 20220122 |
 | 請假單列表 | appVacationList | N | 取得請假列表資訊 | Kevin | 20220122 |
 | 請假單年月 | appVacationMonth | N | 取得員工指定某年月請假資訊 | Kevin | 20220122 |
-| 待處理單據 | appFlowTodoList | Y | 取得員工指定某年月請假資訊 | Lucas | 20220215 |
+| 待簽核單據 | appFlowTodoList | Y | 取得員工指定某年月請假資訊 | Lucas | 20220215 |
