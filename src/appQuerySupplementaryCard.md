@@ -57,7 +57,7 @@ Case 2 . Here is a JSON representation of request.
 |:----------|:----------|:-------------|:-----|:------------|:------------|:------------|
 |   | empid | admin | String | 員工編號 | N | n/a | 查詢員工編號 |
 |   | depNumber | [5] | Array(Integer) | 部門代號 | N | n/a |
-|   | state | false | boolean | 是否生效 | N | 已生效:true,未生效:false,全部:不放此欄位|
+|   | state | false | boolean | 是否生效 | N | 已生效:true、未生效:false、全部:不放此欄位|
 | 1 | cardStartDate | 20210601 | String | 查詢日期(起) | Y | AC(YYYYmmdd) |
 |   | cardEndDate | 20220315 | String | 查詢日期(迄) | Y | AC(YYYYmmdd) |
 | 2 | cardYM | 202106 | String | 查詢年月 | Y | AC(YYYYmm) |
@@ -274,106 +274,6 @@ Case 2 . Here is a JSON representation of request.
                      "name":"已生效",
                      "type":"boolean",
                      "value":true,
-                     "format":"n/a",
-                     "id":"approved"
-                  }
-               },
-               "format":"n/a",
-               "id":"supplementaryCardDetail"
-            },
-            {
-               "name":"補卡明細",
-               "type":"object",
-               "value":{
-                  "addDate":{
-                     "name":"申請日期",
-                     "type":"string",
-                     "value":"20220315",
-                     "format":"YYYYmmdd",
-                     "id":"addDate"
-                  },
-                  "file":{
-                     "name":"附件檔案",
-                     "type":"string",
-                     "value":{
-                        "fileType":{
-                           "name":"檔案類型",
-                           "type":"string",
-                           "value":"",
-                           "format":"n/a",
-                           "id":"fileType"
-                        },
-                        "fileUrl":{
-                           "name":"檔案路徑",
-                           "type":"string",
-                           "value":"",
-                           "format":"n/a",
-                           "id":"fileUrl"
-                        },
-                        "fileName":{
-                           "name":"檔案名稱",
-                           "type":"string",
-                           "value":"",
-                           "format":"n/a",
-                           "id":"fileName"
-                        }
-                     },
-                     "format":"n/a",
-                     "id":"file"
-                  },
-                  "empid":{
-                     "name":"員工編號",
-                     "type":"string",
-                     "value":"admin",
-                     "format":"n/a",
-                     "id":"empid"
-                  },
-                  "reason":{
-                     "name":"補登原因",
-                     "type":"string",
-                     "value":"未帶門禁卡",
-                     "format":"n/a",
-                     "id":"reason"
-                  },
-                  "cardDate":{
-                     "name":"補卡日期",
-                     "type":"string",
-                     "value":"20220302",
-                     "format":"YYYYmmdd",
-                     "id":"cardDate"
-                  },
-                  "cardTime":{
-                     "name":"補卡時間",
-                     "type":"string",
-                     "value":"0800",
-                     "format":"HHmm",
-                     "id":"cardTime"
-                  },
-                  "note":{
-                     "name":"備註",
-                     "type":"string",
-                     "value":"未帶門禁卡",
-                     "format":"n/a",
-                     "id":"note"
-                  },
-                  "empFullName":{
-                     "name":"員工中文姓名",
-                     "type":"string",
-                     "value":"系O管",
-                     "format":"n/a",
-                     "id":"empFullName"
-                  },
-                  "depCode":{
-                     "name":"部門明碼",
-                     "type":"string",
-                     "value":"14121",
-                     "format":"n/a",
-                     "id":"depCode"
-                  },
-                  "approved":{
-                     "name":"已生效",
-                     "type":"boolean",
-                     "value":false,
                      "format":"n/a",
                      "id":"approved"
                   }
