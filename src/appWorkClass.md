@@ -47,54 +47,61 @@ Here is a JSON representation of request.
 ### HTTP Response when Successful
 ```json
 {
-   "status":"success",
-   "message":[
-      "回傳成功"
-   ],
-   "data":{
-      "properties":{
-         "format":{
-            "HHmm":"時間時分"
-         }
-      },
-      "class":{
-         "name":"班別資訊",
-         "type":{
-            "workOff":{
-               "name":"下班時間",
-               "type":"1700",
-               "format":"object",
-               "id":"workOff"
-            },
-            "workOn":{
-               "name":"上班時間",
-               "type":"0800",
-               "format":"object",
-               "id":"workOn"
-            },
-            "workClassName":{
-               "name":"班別名稱",
-               "type":"通用中和0800",
-               "format":"object",
-               "id":"workClassName"
-            },
-            "workDate":{
-               "name":"班別日期",
-               "type":"20220214",
-               "format":"object",
-               "id":"workDate"
-            },
-            "workClass":{
-               "name":"班別代號",
-               "type":"00",
-               "format":"object",
-               "id":"workClass"
+    "status": "success",
+    "message": [
+        "回傳成功"
+    ],
+    "data": {
+        "properties": {
+            "format": {
+                "HHmm": "時間時分",
+                "YYYYmmdd": "西元年月日"
             }
-         },
-         "format":"object",
-         "id":"class"
-      }
-   }
+        },
+        "class": {
+            "name": "班別資訊",
+            "type": "object",
+            "value": {
+                "workOff": {
+                    "name": "下班時間",
+                    "type": "object",
+                    "value": "1700",
+                    "format": "HHmm",
+                    "id": "workOff"
+                },
+                "workOn": {
+                    "name": "上班時間",
+                    "type": "object",
+                    "value": "0800",
+                    "format": "HHmm",
+                    "id": "workOn"
+                },
+                "workClassName": {
+                    "name": "班別名稱",
+                    "type": "object",
+                    "value": "通用中和0800",
+                    "format": "n/a",
+                    "id": "workClassName"
+                },
+                "workDate": {
+                    "name": "班別日期",
+                    "type": "object",
+                    "value": "20220214",
+                    "format": "n/a",
+                    "id": "workDate"
+                },
+                "workClass": {
+                    "name": "班別代號",
+                    "type": "object",
+                    "value": "00",
+                    "format": "n/a",
+                    "id": "workClass"
+                }
+            },
+            "format": "n/a",
+            "id": "class"
+        }
+    }
 }
 ```
 
