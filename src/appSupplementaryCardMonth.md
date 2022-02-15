@@ -48,92 +48,99 @@ POST
 ### HTTP Response when Successful
 ```json
 {
-   "status":"success",
-   "message":[
-      "回傳成功"
-   ],
-   "data":{
-      "main":{
-         "name":"請假資訊",
-         "type":"object",
-         "value":{
-            "cardYM":{
-               "name":"補卡年月",
-               "type":"string",
-               "value":"202106",
-               "format":"YYYYmm",
-               "id":"cardYM"
+    "status": "success",
+    "message": [
+        "回傳成功"
+    ],
+    "data": {
+        "main": {
+            "name": "請假資訊",
+            "type": "object",
+            "value": {
+                "cardYM": {
+                    "name": "補卡年月",
+                    "type": "string",
+                    "value": "202106",
+                    "format": "YYYYmm",
+                    "id": "cardYM"
+                }
+            },
+            "format": "n/a",
+            "id": "main"
+        },
+        "cardList": {
+            "name": "員工補卡列表",
+            "type": "array",
+            "value": [
+                {
+                    "name": "員工補卡資訊",
+                    "type": "object",
+                    "value": {
+                        "position": {
+                            "name": "職稱",
+                            "type": "string",
+                            "value": "短期契約",
+                            "format": "n/a",
+                            "id": "position"
+                        },
+                        "photo": {
+                            "name": "員工相片",
+                            "type": "string",
+                            "value": "",
+                            "format": "base64",
+                            "id": "photo"
+                        },
+                        "unapproved": {
+                            "name": "簽核中",
+                            "type": "integer",
+                            "value": 2,
+                            "format": "count",
+                            "id": "unapproved"
+                        },
+                        "empFullName": {
+                            "name": "員工中文姓名",
+                            "type": "string",
+                            "value": "系O管",
+                            "format": "n/a",
+                            "id": "empFullName"
+                        },
+                        "empid": {
+                            "name": "員工編號",
+                            "type": "string",
+                            "value": "admin",
+                            "format": "n/a",
+                            "id": "empid"
+                        },
+                        "approved": {
+                            "name": "已生效",
+                            "type": "integer",
+                            "value": 0,
+                            "format": "count",
+                            "id": "approved"
+                        },
+                        "depFullName": {
+                            "name": "部門名稱",
+                            "type": "string",
+                            "value": "L1線A班",
+                            "format": "n/a",
+                            "id": "depFullName"
+                        }
+                    },
+                    "format": "n/a",
+                    "id": "card"
+                }
+            ],
+            "format": "count",
+            "id": "cardList"
+        },
+        "properties": {
+            "format": {
+                "count": "數量",
+                "n/a": "",
+                "YYYYmm": "西元年月"
             }
-         },
-         "format":"n/a",
-         "id":"main"
-      },
-      "cardList":{
-         "name":"員工補卡列表",
-         "type":"array",
-         "value":[
-            {
-               "name":"員工補卡資訊",
-               "type":"object",
-               "value":{
-                  "position":{
-                     "name":"職稱",
-                     "type":"string",
-                     "value":"短期契約",
-                     "format":"n/a",
-                     "id":"position"
-                  },
-                  "unapproved":{
-                     "name":"簽核中",
-                     "type":"integer",
-                     "value":2,
-                     "format":"count",
-                     "id":"unapproved"
-                  },
-                  "empFullName":{
-                     "name":"員工中文姓名",
-                     "type":"string",
-                     "value":"系O管",
-                     "format":"n/a",
-                     "id":"empFullName"
-                  },
-                  "empid":{
-                     "name":"員工編號",
-                     "type":"string",
-                     "value":"admin",
-                     "format":"n/a",
-                     "id":"empid"
-                  },
-                  "approved":{
-                     "name":"已生效",
-                     "type":"integer",
-                     "value":0,
-                     "format":"count",
-                     "id":"approved"
-                  },
-                  "depFullName":{
-                     "name":"部門名稱",
-                     "type":"string",
-                     "value":"L1線A班",
-                     "format":"n/a",
-                     "id":"depFullName"
-                  }
-               },
-               "format":"n/a",
-               "id":"card"
-            }
-         ],
-         "format":"count",
-         "id":"cardList"
-      },
-      "properties":{
-         "format":{
-            "count":"數量",
-            "n/a":"",
-            "YYYYmm":"西元年月"
-         }
-      }
-   }
+        }
+    }
 }
 ```
 
