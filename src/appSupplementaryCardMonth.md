@@ -142,26 +142,43 @@ POST
 無資料則屬於正常範圍，正常來說可以沒有資料
 ```json
 {
-    "status": "success",
-    "message": [
-        "回傳成功"
-    ],
-    "data": {
-        "supplementaryCard": {
-            "name": "補卡資訊",
-            "type": "array",
-            "value": [],
-            "format": "n/a",
-            "id": "supplementaryCard"
-        },
-        "properties": {
-            "format": {
-                "HHmm": "時間時分",
-                "YYYYmmdd": "西元年月日",
-                "n/a": ""
+   "status":"success",
+   "message":[
+      "回傳成功"
+   ],
+   "data":{
+      "main":{
+         "name":"請假資訊",
+         "type":"object",
+         "value":{
+            "cardYM":{
+               "name":"補卡年月",
+               "type":"string",
+               "value":"202106",
+               "format":"YYYYmm",
+               "id":"cardYM"
             }
-        }
-    }
+         },
+         "format":"n/a",
+         "id":"main"
+      },
+      "cardList":{
+         "name":"員工補卡列表",
+         "type":"array",
+         "value":[
+            
+         ],
+         "format":"count",
+         "id":"cardList"
+      },
+      "properties":{
+         "format":{
+            "count":"數量",
+            "n/a":"",
+            "YYYYmm":"西元年月"
+         }
+      }
+   }
 }
 ```
 
