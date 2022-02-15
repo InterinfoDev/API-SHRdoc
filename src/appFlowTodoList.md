@@ -92,15 +92,21 @@ Here is a JSON representation of request.
 ```
 
 ### HTTP Response when No Data 
-無資料則屬於資料異常，不太可能沒有下拉選項
 ```json
 {
-    "status": "fail",
-    "code": 500,
+    "status": "success",
     "message": [
         "查無資料"
     ],
-    "data": {}
+    "data": {
+        "HRFlowList": {
+            "name": "待簽核單據",
+            "type": "array",
+            "value": [],
+            "format": "n/a",
+            "id": "HRFlowList"
+        }
+    }
 }
 ```
 
