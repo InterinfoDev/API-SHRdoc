@@ -39,12 +39,12 @@ POST
 | request | Object | 要求本文 |
 
 ### Request Properties
-| Case No | Key | Value | Type | Description | Required | Format |
-|:----------|:----------|:-------------|:-----|:------------|:------------|:------------|
-|   | empid | admin | String | 員工編號 | N | n/a | 查詢員工編號 |
-|   | depNumber | [5] | Array(Integer) | 部門代號 | N | n/a |
-|   | state | false | boolean | 是否生效 | N | 已生效:true、未生效:false、全部:不放此欄位|
-|   | cardYM | 202106 | String | 查詢年月 | Y | AC(YYYYmm) |
+ Key | Value | Type | Description | Required | Format |
+|:----------|:-------------|:-----|:------------|:------------|:------------|
+| empid | admin | String | 員工編號 | N | n/a | 查詢員工編號 |
+| depNumber | [5] | Array(Integer) | 部門代號 | N | n/a |
+| state | false | boolean | 是否生效 | N | 已生效:true、未生效:false、全部:不放此欄位|
+| cardYM | 202106 | String | 查詢年月 | Y | AC(YYYYmm) |
 
 ### HTTP Response when Successful
 ```json
