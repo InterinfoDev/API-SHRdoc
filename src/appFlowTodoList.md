@@ -83,7 +83,7 @@ Here is a JSON representation of request.
       },
       "properties":{
          "format":{
-            "count":"張",
+            "count":"次數",
             "n/a":""
          }
       }
