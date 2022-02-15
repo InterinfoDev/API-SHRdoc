@@ -143,7 +143,7 @@ POST
                      "type":"string",
                      "value":"20210600000000000002",
                      "format":"n/a",
-                     "id":"pno"
+                     "id":"supplementaryCardKey"
                   },
                   "reason":{
                      "name":"補登原因",
