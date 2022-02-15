@@ -16,7 +16,7 @@ POST
 |:----------|:-------------|:-----|:------------|
 | uid | 98599308101484732326 | String | 需透過appLogin取得
 | right | 51341911904173543336756162544864820 | String | 需透過appLogin取得 |
-| request | {cardYM:202111, empid:admin , depNumber:[], state:false} | Object | 查詢條件
+| request | {cardYM:202111, empid:admin , depNumber:[]} | Object | 查詢條件
 
 ### JSON representation
 ```json
@@ -43,7 +43,6 @@ POST
 |:----------|:-------------|:-----|:------------|:------------|:------------|
 | empid | admin | String | 員工編號 | N | n/a | 查詢員工編號 |
 | depNumber | [5] | Array(Integer) | 部門代號 | N | n/a |
-| state | false | boolean | 是否生效 | N | 已生效:true、未生效:false、全部:不放此欄位|
 | cardYM | 202106 | String | 查詢年月 | Y | AC(YYYYmm) |
 
 ### HTTP Response when Successful
