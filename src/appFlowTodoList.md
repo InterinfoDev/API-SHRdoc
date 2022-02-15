@@ -99,12 +99,12 @@ Here is a JSON representation of request.
         "查無資料"
     ],
     "data": {
-        "HRFlowList": {
+        "HRFlowTodoList": {
             "name": "待簽核單據",
             "type": "array",
             "value": [],
             "format": "n/a",
-            "id": "HRFlowList"
+            "id": "HRFlowTodoList"
         }
     }
 }
