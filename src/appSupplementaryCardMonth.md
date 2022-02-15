@@ -19,20 +19,6 @@ POST
 | request | {cardYM:202111, empid:admin , depNumber:[], state:false} | Object | 查詢條件
 
 ### JSON representation
-Case 1 . Here is a JSON representation of request. 
-```json
-{
-    "uid":"98599308101484732326",
-    "right":"51341911904173543336756162544864820",
-    "request":{
-        "cardStartDate":"20210603",
-        "cardEndDate":"20220302",
-        "empid":"",
-        "depNumber":[]
-    }
-}
-```
-Case 2 . Here is a JSON representation of request. 
 ```json
 {
     "uid":"98599308101484732326",
