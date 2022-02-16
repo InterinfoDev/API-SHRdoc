@@ -59,20 +59,26 @@ Here is a JSON representation of request.
                "type":"object",
                "value":[
                   {
-                     "flowCount":{
-                        "id":"flowCount",
-                        "name":"節點數量",
-                        "value":1,
-                        "type":"integer",
-                        "format":"count"
+                     "name":"節點資訊",
+                     "type":"object",
+                     "value":{
+                        "flowCount":{
+                           "name":"節點數量",
+                           "type":"integer",
+                           "value":1,
+                           "format":"count",
+                           "id":"flowCount"
+                        },
+                        "flowState":{
+                           "name":"節點名稱",
+                           "type":"string",
+                           "value":"申請人",
+                           "format":"n/a",
+                           "id":"flowState"
+                        }
                      },
-                     "flowState":{
-                        "id":"flowState",
-                        "name":"節點名稱",
-                        "value":"申請人",
-                        "type":"string",
-                        "format":"n/a"
-                     }
+                     "format":"n/a",
+                     "id":"flow"
                   }
                ],
                "format":"n/a"
