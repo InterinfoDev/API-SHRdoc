@@ -36,11 +36,6 @@ Here is a JSON representation of request.
 | right | String | 加密後系統相關資料 |
 | request | Object | 要求本文 |
 
-### Request Properties
-| Key | Value | Type | Description | Required | Format |
-|:----------|:-------------|:-----|:------------|:------------|:------------|
-
-
 ### HTTP Response when Successful
 ```json
 {
@@ -56,7 +51,7 @@ Here is a JSON representation of request.
             {
                "id":"CA3",
                "name":"CA3.個人資料維護覆核",
-               "type":"object",
+               "type":"array",
                "value":[
                   {
                      "name":"節點資訊",
