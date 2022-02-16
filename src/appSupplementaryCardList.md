@@ -138,7 +138,7 @@ POST
                      "format":"n/a",
                      "id":"empid"
                   },
-                  "pno":{
+                  "supplementaryCardKey":{
                      "name":"單據編號",
                      "type":"string",
                      "value":"20210600000000000002",
