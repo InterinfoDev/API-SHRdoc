@@ -146,6 +146,13 @@ Here is a JSON representation of request.
                     "format": "n/a",
                     "id": "empFullName"
                 },
+                "empFullEname": {
+                    "name": "員工英文姓名",
+                    "type": "string",
+                    "value": "test_Ename",
+                    "format": "n/a",
+                    "id": "empFullEname"
+                },
                 "depCode": {
                     "name": "部門明碼",
                     "type": "string",
