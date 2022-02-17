@@ -73,8 +73,8 @@ Here is a JSON representation of request.
                   },
                   "valueOfVaction":{
                      "name":"假期數量",
-                     "type":"string",
-                     "value":"0.00",
+                     "type":"decimal",
+                     "value":0.0,
                      "format":"hour",
                      "id":"valueOfVaction"
                   }
@@ -102,8 +102,8 @@ Here is a JSON representation of request.
                   },
                   "valueOfVaction":{
                      "name":"假期數量",
-                     "type":"string",
-                     "value":"0.00",
+                     "type":"decimal",
+                     "value":0.0,
                      "format":"hour",
                      "id":"valueOfVaction"
                   }
@@ -131,8 +131,8 @@ Here is a JSON representation of request.
                   },
                   "valueOfVaction":{
                      "name":"假期數量",
-                     "type":"string",
-                     "value":"0.00",
+                     "type":"decimal",
+                     "value":0.0,
                      "format":"hour",
                      "id":"valueOfVaction"
                   }
@@ -196,8 +196,8 @@ Here is a JSON representation of request.
                                        },
                                        "valueOfVaction":{
                                           "name":"假期數量",
-                                          "type":"string",
-                                          "value":"45.00",
+                                          "type":"decimal",
+                                          "value":45.0,
                                           "format":"hour",
                                           "id":"valueOfVaction"
                                        }
@@ -225,8 +225,8 @@ Here is a JSON representation of request.
                                        },
                                        "valueOfVaction":{
                                           "name":"假期數量",
-                                          "type":"string",
-                                          "value":"0.00",
+                                          "type":"decimal",
+                                          "value":0.0,
                                           "format":"hour",
                                           "id":"valueOfVaction"
                                        }
@@ -254,8 +254,8 @@ Here is a JSON representation of request.
                                        },
                                        "valueOfVaction":{
                                           "name":"假期數量",
-                                          "type":"string",
-                                          "value":"45.00",
+                                          "type":"decimal",
+                                          "value":45.0,
                                           "format":"hour",
                                           "id":"valueOfVaction"
                                        }
@@ -316,7 +316,7 @@ Here is a JSON representation of request.
                                           "name":"假期數量",
                                           "type":"string",
                                           "value":"無上限",
-                                          "format":"hour",
+                                          "format":"n/a",
                                           "id":"valueOfVaction"
                                        }
                                     },
@@ -343,8 +343,8 @@ Here is a JSON representation of request.
                                        },
                                        "valueOfVaction":{
                                           "name":"假期數量",
-                                          "type":"string",
-                                          "value":"8.00",
+                                          "type":"decimal",
+                                          "value":8.0,
                                           "format":"hour",
                                           "id":"valueOfVaction"
                                        }
@@ -374,7 +374,7 @@ Here is a JSON representation of request.
                                           "name":"假期數量",
                                           "type":"string",
                                           "value":"無上限",
-                                          "format":"hour",
+                                          "format":"n/a",
                                           "id":"valueOfVaction"
                                        }
                                     },
@@ -389,6 +389,124 @@ Here is a JSON representation of request.
                               "name":"假別代號",
                               "type":"string",
                               "value":"000",
+                              "format":"n/a",
+                              "id":"vacationCode"
+                           },
+                           "specDate":{
+                              "name":"是否需填寫特別日期",
+                              "type":"boolean",
+                              "value":false,
+                              "format":"n/a",
+                              "id":"specDate"
+                           }
+                        },
+                        {
+                           "vacationName":{
+                              "name":"假別名稱",
+                              "type":"string",
+                              "value":"產假-懷孕未滿兩個月流產",
+                              "format":"n/a",
+                              "id":"vacationName"
+                           },
+                           "vactionDetail":{
+                              "name":"假別資訊",
+                              "type":"array",
+                              "value":[
+                                 {
+                                    "name":"當年度產假-懷孕未滿兩個月流產",
+                                    "type":"object",
+                                    "value":{
+                                       "describe":{
+                                          "name":"描述標題",
+                                          "type":"string",
+                                          "value":"當年度產假-懷孕未滿兩個月流產",
+                                          "format":"n/a",
+                                          "id":"describe"
+                                       },
+                                       "noteOfVaction":{
+                                          "name":"備註",
+                                          "type":"string",
+                                          "value":"",
+                                          "format":"n/a",
+                                          "id":"noteOfVaction"
+                                       },
+                                       "valueOfVaction":{
+                                          "name":"假期數量",
+                                          "type":"decimal",
+                                          "value":5.0,
+                                          "format":"day",
+                                          "id":"valueOfVaction"
+                                       }
+                                    },
+                                    "format":"n/a",
+                                    "id":"current"
+                                 },
+                                 {
+                                    "name":"當年度產假-懷孕未滿兩個月流產已休(含在途)",
+                                    "type":"object",
+                                    "value":{
+                                       "describe":{
+                                          "name":"描述標題",
+                                          "type":"string",
+                                          "value":"當年度產假-懷孕未滿兩個月流產已休(含在途)",
+                                          "format":"n/a",
+                                          "id":"describe"
+                                       },
+                                       "noteOfVaction":{
+                                          "name":"備註",
+                                          "type":"string",
+                                          "value":"",
+                                          "format":"n/a",
+                                          "id":"noteOfVaction"
+                                       },
+                                       "valueOfVaction":{
+                                          "name":"假期數量",
+                                          "type":"decimal",
+                                          "value":0.0,
+                                          "format":"day",
+                                          "id":"valueOfVaction"
+                                       }
+                                    },
+                                    "format":"n/a",
+                                    "id":"used"
+                                 },
+                                 {
+                                    "name":"當年度產假-懷孕未滿兩個月流產未休",
+                                    "type":"object",
+                                    "value":{
+                                       "describe":{
+                                          "name":"描述標題",
+                                          "type":"string",
+                                          "value":"當年度產假-懷孕未滿兩個月流產未休",
+                                          "format":"n/a",
+                                          "id":"describe"
+                                       },
+                                       "noteOfVaction":{
+                                          "name":"備註",
+                                          "type":"string",
+                                          "value":"",
+                                          "format":"n/a",
+                                          "id":"noteOfVaction"
+                                       },
+                                       "valueOfVaction":{
+                                          "name":"假期數量",
+                                          "type":"decimal",
+                                          "value":5.0,
+                                          "format":"day",
+                                          "id":"valueOfVaction"
+                                       }
+                                    },
+                                    "format":"n/a",
+                                    "id":"free"
+                                 }
+                              ],
+                              "format":"n/a",
+                              "id":"vactionDetail"
+                           },
+                           "vacationCode":{
+                              "name":"假別代號",
+                              "type":"string",
+                              "value":"08-TW.01",
                               "format":"n/a",
                               "id":"vacationCode"
                            },
@@ -432,8 +550,8 @@ Here is a JSON representation of request.
                                        },
                                        "valueOfVaction":{
                                           "name":"假期數量",
-                                          "type":"string",
-                                          "value":"5.00",
+                                          "type":"decimal",
+                                          "value":5.0,
                                           "format":"hour",
                                           "id":"valueOfVaction"
                                        }
@@ -461,8 +579,8 @@ Here is a JSON representation of request.
                                        },
                                        "valueOfVaction":{
                                           "name":"假期數量",
-                                          "type":"string",
-                                          "value":"0.00",
+                                          "type":"decimal",
+                                          "value":0.0,
                                           "format":"hour",
                                           "id":"valueOfVaction"
                                        }
@@ -490,8 +608,8 @@ Here is a JSON representation of request.
                                        },
                                        "valueOfVaction":{
                                           "name":"假期數量",
-                                          "type":"string",
-                                          "value":"5.00",
+                                          "type":"decimal",
+                                          "value":5.0,
                                           "format":"hour",
                                           "id":"valueOfVaction"
                                        }
@@ -600,8 +718,8 @@ Here is a JSON representation of request.
                   },
                   "valueOfVaction":{
                      "name":"假期數量",
-                     "type":"string",
-                     "value":"0.00",
+                     "type":"decimal",
+                     "value":0.0,
                      "format":"day",
                      "id":"valueOfVaction"
                   }
@@ -629,8 +747,8 @@ Here is a JSON representation of request.
                   },
                   "valueOfVaction":{
                      "name":"假期數量",
-                     "type":"string",
-                     "value":"0.00",
+                     "type":"decimal",
+                     "value":0.0,
                      "format":"day",
                      "id":"valueOfVaction"
                   }
@@ -658,8 +776,8 @@ Here is a JSON representation of request.
                   },
                   "valueOfVaction":{
                      "name":"假期數量",
-                     "type":"string",
-                     "value":"0.00",
+                     "type":"decimal",
+                     "value":0.0,
                      "format":"day",
                      "id":"valueOfVaction"
                   }
@@ -687,8 +805,8 @@ Here is a JSON representation of request.
                   },
                   "valueOfVaction":{
                      "name":"假期數量",
-                     "type":"string",
-                     "value":"56.00",
+                     "type":"decimal",
+                     "value":56.0,
                      "format":"day",
                      "id":"valueOfVaction"
                   }
@@ -716,8 +834,8 @@ Here is a JSON representation of request.
                   },
                   "valueOfVaction":{
                      "name":"假期數量",
-                     "type":"string",
-                     "value":"0.00",
+                     "type":"decimal",
+                     "value":0.0,
                      "format":"day",
                      "id":"valueOfVaction"
                   }
@@ -745,8 +863,8 @@ Here is a JSON representation of request.
                   },
                   "valueOfVaction":{
                      "name":"假期數量",
-                     "type":"string",
-                     "value":"56.00",
+                     "type":"decimal",
+                     "value":56.0,
                      "format":"day",
                      "id":"valueOfVaction"
                   }
