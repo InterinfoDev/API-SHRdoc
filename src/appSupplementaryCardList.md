@@ -237,6 +237,13 @@ POST
                      "format":"HHmm",
                      "id":"cardTime"
                   },
+                  "cardType": {
+                    "name": "進出別",
+                    "type": "string",
+                    "value": "進卡",
+                    "format": "n/a",
+                    "id": "cardType"
+                  },
                   "empFullName":{
                      "name":"員工中文姓名",
                      "type":"string",
