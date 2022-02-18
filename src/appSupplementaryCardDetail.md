@@ -132,6 +132,13 @@ Here is a JSON representation of request.
                     "format": "HHmm",
                     "id": "cardTime"
                 },
+                "cardType": {
+                    "name": "進出別",
+                    "type": "string",
+                    "value": "進卡",
+                    "format": "n/a",
+                    "id": "cardType"
+                },
                 "note": {
                     "name": "備註",
                     "type": "string",
