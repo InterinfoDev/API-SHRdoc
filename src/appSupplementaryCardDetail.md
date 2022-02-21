@@ -45,133 +45,142 @@ Here is a JSON representation of request.
 ### HTTP Response when Successful
 ```json
 {
-    "status": "success",
-    "message": [
-        "回傳成功"
-    ],
-    "data": {
-        "properties": {
-            "format": {
-                "HHmm": "時間時分",
-                "YYYYmmdd": "西元年月日",
-                "n/a": ""
-            }
-        },
-        "supplementaryCardDetail": {
-            "name": "補卡詳細資訊",
-            "type": "object",
-            "value": {
-                "addDate": {
-                    "name": "申請日期",
-                    "type": "string",
-                    "value": "20210629",
-                    "format": "YYYYmmdd",
-                    "id": "addDate"
-                },
-                "file": {
-                    "name": "附件檔案",
-                    "type": "string",
-                    "value": {
-                        "fileType": {
-                            "name": "檔案類型",
-                            "type": "string",
-                            "value": "",
-                            "format": "n/a",
-                            "id": "fileType"
-                        },
-                        "fileUrl": {
-                            "name": "檔案路徑",
-                            "type": "string",
-                            "value": "",
-                            "format": "n/a",
-                            "id": "fileUrl"
-                        },
-                        "fileName": {
-                            "name": "檔案名稱",
-                            "type": "string",
-                            "value": "",
-                            "format": "n/a",
-                            "id": "fileName"
-                        }
-                    },
-                    "format": "n/a",
-                    "id": "file"
-                },
-                "empid": {
-                    "name": "員工編號",
-                    "type": "string",
-                    "value": "admin",
-                    "format": "n/a",
-                    "id": "empid"
-                },
-                "approvalStatus": {
-                    "name": "簽核狀態",
-                    "type": "string",
-                    "value": "未生效",
-                    "format": "n/a",
-                    "id": "approvalStatus"
-                },
-                "reason": {
-                    "name": "補登原因",
-                    "type": "string",
-                    "value": "忘刷卡",
-                    "format": "n/a",
-                    "id": "reason"
-                },
-                "cardDate": {
-                    "name": "補卡日期",
-                    "type": "string",
-                    "value": "20210601",
-                    "format": "YYYYmmdd",
-                    "id": "cardDate"
-                },
-                "cardTime": {
-                    "name": "補卡時間",
-                    "type": "string",
-                    "value": "0600",
-                    "format": "HHmm",
-                    "id": "cardTime"
-                },
-                "cardType": {
-                    "name": "進出別",
-                    "type": "string",
-                    "value": "進卡",
-                    "format": "n/a",
-                    "id": "cardType"
-                },
-                "note": {
-                    "name": "備註",
-                    "type": "string",
-                    "value": "忘刷卡",
-                    "format": "n/a",
-                    "id": "note"
-                },
-                "empFullName": {
-                    "name": "員工中文姓名",
-                    "type": "string",
-                    "value": "系O管",
-                    "format": "n/a",
-                    "id": "empFullName"
-                },
-                "empFullEname": {
-                    "name": "員工英文姓名",
-                    "type": "string",
-                    "value": "test_Ename",
-                    "format": "n/a",
-                    "id": "empFullEname"
-                },
-                "depCode": {
-                    "name": "部門明碼",
-                    "type": "string",
-                    "value": "14121",
-                    "format": "n/a",
-                    "id": "depCode"
-                }
+   "status":"success",
+   "message":[
+      "回傳成功"
+   ],
+   "data":{
+      "properties":{
+         "format":{
+            "HHmm":"時間時分",
+            "YYYYmmdd":"西元年月日",
+            "n/a":""
+         }
+      },
+      "supplementaryCardDetail":{
+         "name":"補卡詳細資訊",
+         "type":"object",
+         "value":{
+            "cardType":{
+               "name":"進出別",
+               "type":"string",
+               "value":"其他",
+               "format":"n/a",
+               "id":"cardType"
             },
-            "format": "n/a",
-            "id": "supplementaryCardDetail"
-        }
-    }
+            "addDate":{
+               "name":"申請日期",
+               "type":"string",
+               "value":"20210629",
+               "format":"YYYYmmdd",
+               "id":"addDate"
+            },
+            "empid":{
+               "name":"員工編號",
+               "type":"string",
+               "value":"admin",
+               "format":"n/a",
+               "id":"empid"
+            },
+            "approvalStatus":{
+               "name":"簽核狀態",
+               "type":"string",
+               "value":"未生效",
+               "format":"n/a",
+               "id":"approvalStatus"
+            },
+            "uploadFiles":{
+               "name":"附件資訊",
+               "type":"array",
+               "value":[
+                  {
+                     "fileType":{
+                        "name":"檔案類型",
+                        "type":"string",
+                        "value":"",
+                        "format":"n/a",
+                        "id":"fileType"
+                     },
+                     "fileUrl":{
+                        "name":"檔案路徑",
+                        "type":"string",
+                        "value":"8394768758650934487139215644085449220561352994877809057609795881391964303976063959390413861765306620980509412090431956792262100059547268421208875708309193001476077621211220788276621789810786481552460035435218638029708026615307257983",
+                        "format":"n/a",
+                        "id":"fileUrl"
+                     },
+                     "fileName":{
+                        "name":"檔案名稱",
+                        "type":"string",
+                        "value":"1643078742185_【台壽】(MP1100171)TPSYNC-特休資料拋轉外掛(SD)(1).docx",
+                        "format":"n/a",
+                        "id":"fileName"
+                     }
+                  }
+               ],
+               "format":"n/a",
+               "id":"uploadFiles"
+            },
+            "reason":{
+               "name":"補登原因",
+               "type":"string",
+               "value":"忘刷卡",
+               "format":"n/a",
+               "id":"reason"
+            },
+            "cardDate":{
+               "name":"補卡日期",
+               "type":"string",
+               "value":"20210601",
+               "format":"YYYYmmdd",
+               "id":"cardDate"
+            },
+            "cardTime":{
+               "name":"補卡時間",
+               "type":"string",
+               "value":"0600",
+               "format":"HHmm",
+               "id":"cardTime"
+            },
+            "note":{
+               "name":"備註",
+               "type":"string",
+               "value":"忘刷卡",
+               "format":"n/a",
+               "id":"note"
+            },
+            "empFullName":{
+               "name":"員工中文姓名",
+               "type":"string",
+               "value":"系O管",
+               "format":"n/a",
+               "id":"empFullName"
+            },
+            "depFullName":{
+               "name":"部門名稱",
+               "type":"string",
+               "value":"L1線A班",
+               "format":"n/a",
+               "id":"depFullName"
+            },
+            "empFullEname":{
+               "name":"員工英文姓名",
+               "type":"string",
+               "value":"test_Ename",
+               "format":"n/a",
+               "id":"empFullEname"
+            },
+            "depCode":{
+               "name":"部門代號",
+               "type":"string",
+               "value":"14121",
+               "format":"n/a",
+               "id":"depCode"
+            }
+         },
+         "format":"n/a",
+         "id":"supplementaryCardDetail"
+      }
+   }
 }
 ```
 
