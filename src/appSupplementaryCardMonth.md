@@ -16,7 +16,7 @@ POST
 |:----------|:-------------|:-----|:------------|
 | uid | 98599308101484732326 | String | 需透過appLogin取得
 | right | 51341911904173543336756162544864820 | String | 需透過appLogin取得 |
-| request | {cardYM:202111, empid:admin , companyId:97090920 , depNumber:[]} | Object | 查詢條件
+| request | {cardYM:202111, empid:['admin'] , companyId:'97090920' , depNumber:[]} | Object | 查詢條件
 
 ### JSON representation
 ```json
@@ -26,7 +26,7 @@ POST
     "request":{
         "cardYM":"2021906",
         "companyId":"97090920"
-        "empid":"",
+        "empid":["admin"],
         "depNumber":[]
     }
 }
@@ -42,7 +42,7 @@ POST
 ### Request Properties
  Key | Value | Type | Description | Required | Format |
 |:----------|:-------------|:-----|:------------|:------------|:------------|
-| empid | admin | String | 員工編號 | N | n/a | 查詢員工編號 |
+| empid | [admin] | Array(String) | 員工編號 | N | n/a | 查詢員工編號 |
 | depNumber | [5] | Array(Integer) | 部門代號 | N | n/a |
 | companyId | 97090920 | String | 公司別 | N | n/a |
 | cardYM | 202106 | String | 查詢年月 | Y | AC(YYYYmm) |
