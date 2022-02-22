@@ -25,14 +25,11 @@ Here is a JSON representation of request.
     "uid":"98599308101484732326",
     "right":"51341911904173543336756162544864820",
     "request":{
-        "punchDate":"20211126",
-        "punchTime":"1706",
         "gps":
           {
             "latitude":21.23444, --lucas改名
             "longitude":345.32344 --lucas改名
           },
-        "ip":"117.24.10.125"
     }
 }
 ```
@@ -47,12 +44,10 @@ Here is a JSON representation of request.
 ### Request Properties
 | Key | Value | Type | Description | Required | Format |
 |:----------|:-------------|:-----|:------------|:------------|:------------|
-| punchDate | 20211130 | String | 打卡日期 | Y | AC(YYYYmmdd) |
-| punchTime | 1801 | String | 打卡時間 | Y | TIME(HHmm) |
 | gps |  | Object | GPS資訊 | Y | n/a |
 | latitude | 21.23444 | Decimal | 緯度 | Y | GPS Location Data |
 | longitude | 345.32344 | Decimal | 經度 | Y | GPS Location Data |
-| ip | 117.24.10.125 | String | IP位置 | Y | IP Address(xx.xx.xx.xx) |
+| ip | 117.24.10.125 | String | IP位置 | N | IP Address(xx.xx.xx.xx) |
 
 ### HTTP Response when Successful
 ```json
