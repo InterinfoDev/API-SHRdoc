@@ -33,8 +33,7 @@ Here is a JSON representation of request.
       "note":"忘記帶卡",
       "file":{
          "fileName":"test.jpg",
-         "fileData":"base64",
-         "cardDate":"20220217"
+         "fileData":"base64"
       }
    }
 }
@@ -57,6 +56,8 @@ Here is a JSON representation of request.
 | reasonCode | 001 | String | 補卡原因代碼 | Y | n/a | 根據原因設定檔的代碼 |
 | note | 忘記帶卡 | String | 備註 | Y | n/a | 補卡原因 |
 | file |  | String | 附件檔案 | Y | base64 | 補卡附件 |
+| fileName | test.jpg | String | 附件檔案 | Y | base64 | 補卡附件 |
+| fileData |  | String | 附件檔案 | Y | base64 | 補卡附件 |
 
 ### HTTP Response when Successful
 ```json
