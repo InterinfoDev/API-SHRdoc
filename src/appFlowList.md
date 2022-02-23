@@ -25,8 +25,8 @@ Here is a JSON representation of request.
     "uid":"98599308101484732326",
     "right":"51341911904173543336756162544864820",
     "request":{
-        "functionName":"CA4.行政服務單簽核",
-        "flowState":"簽核群組第1階",
+        "functionName":"CB2.3.假單銷假簽核",
+        "flowState":"簽核群組一",
     }
 }
 ```
