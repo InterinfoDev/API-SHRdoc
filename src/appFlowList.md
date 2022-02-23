@@ -41,8 +41,8 @@ Here is a JSON representation of request.
 ### Request Properties
 | Key | Value | Type | Description | Required | Format |
 |:----------|:-------------|:-----|:------------|:------------|:------------|
-| functionName | CA4.行政服務單簽核 | String | 簽核單據名稱 | Y | n/a |
-| flowState | 簽核群組第1階 | String | 簽核節點名稱 | Y | n/a |
+| functionName | CB2.3.假單銷假簽核 | String | 簽核單據名稱 | Y | n/a |
+| flowState | 簽核群組一 | String | 簽核節點名稱 | Y | n/a |
 
 
 ### HTTP Response when Successful
@@ -54,12 +54,12 @@ Here is a JSON representation of request.
    ],
    "data":{
       "HRFlowList":{
-         "id":"HRFlowList",
-         "name":"CA4.行政服務單簽核-待簽核列表",
+         "name":"CB2.3.假單銷假簽核-待簽核列表",
+         "type":"array",
          "value":[
             {
-               "id":"0",
                "name":"No.1",
+               "type":"object",
                "value":{
                   "fields":{
                      "name":"欄位資訊",
@@ -67,98 +67,162 @@ Here is a JSON representation of request.
                      "value":[
                         {
                            "fieldValue":{
-                              "id":"fieldValue",
                               "name":"欄位資料",
+                              "type":"string",
                               "value":"14121 L1線A班",
-                              "type":"string",
-                              "format":"n/a"
+                              "format":"n/a",
+                              "id":"fieldValue"
                            },
                            "fieldName":{
-                              "id":"fieldName",
                               "name":"欄位名稱",
+                              "type":"string",
                               "value":"單位",
-                              "type":"string",
-                              "format":"n/a"
+                              "format":"n/a",
+                              "id":"fieldName"
                            }
                         },
                         {
                            "fieldValue":{
-                              "id":"fieldValue",
                               "name":"欄位資料",
+                              "type":"string",
                               "value":"admin",
-                              "type":"string",
-                              "format":"n/a"
+                              "format":"n/a",
+                              "id":"fieldValue"
                            },
                            "fieldName":{
-                              "id":"fieldName",
                               "name":"欄位名稱",
+                              "type":"string",
                               "value":"員工編號",
-                              "type":"string",
-                              "format":"n/a"
+                              "format":"n/a",
+                              "id":"fieldName"
                            }
                         },
                         {
                            "fieldValue":{
-                              "id":"fieldValue",
                               "name":"欄位資料",
+                              "type":"string",
                               "value":"系O管",
-                              "type":"string",
-                              "format":"n/a"
+                              "format":"n/a",
+                              "id":"fieldValue"
                            },
                            "fieldName":{
-                              "id":"fieldName",
                               "name":"欄位名稱",
+                              "type":"string",
                               "value":"員工姓名",
-                              "type":"string",
-                              "format":"n/a"
+                              "format":"n/a",
+                              "id":"fieldName"
                            }
                         },
                         {
                            "fieldValue":{
-                              "id":"fieldValue",
                               "name":"欄位資料",
-                              "value":"20200520",
                               "type":"string",
-                              "format":"n/a"
+                              "value":"年假(特休)",
+                              "format":"n/a",
+                              "id":"fieldValue"
                            },
                            "fieldName":{
-                              "id":"fieldName",
                               "name":"欄位名稱",
-                              "value":"需求日期",
                               "type":"string",
-                              "format":"n/a"
+                              "value":"假別名稱",
+                              "format":"n/a",
+                              "id":"fieldName"
                            }
                         },
                         {
                            "fieldValue":{
-                              "id":"fieldValue",
                               "name":"欄位資料",
-                              "value":"20200515",
                               "type":"string",
-                              "format":"n/a"
+                              "value":"20190220",
+                              "format":"n/a",
+                              "id":"fieldValue"
                            },
                            "fieldName":{
-                              "id":"fieldName",
                               "name":"欄位名稱",
+                              "type":"string",
+                              "value":"起始日期",
+                              "format":"n/a",
+                              "id":"fieldName"
+                           }
+                        },
+                        {
+                           "fieldValue":{
+                              "name":"欄位資料",
+                              "type":"string",
+                              "value":"0800",
+                              "format":"n/a",
+                              "id":"fieldValue"
+                           },
+                           "fieldName":{
+                              "name":"欄位名稱",
+                              "type":"string",
+                              "value":"起始時間",
+                              "format":"n/a",
+                              "id":"fieldName"
+                           }
+                        },
+                        {
+                           "fieldValue":{
+                              "name":"欄位資料",
+                              "type":"string",
+                              "value":"20190220",
+                              "format":"n/a",
+                              "id":"fieldValue"
+                           },
+                           "fieldName":{
+                              "name":"欄位名稱",
+                              "type":"string",
+                              "value":"結束日期",
+                              "format":"n/a",
+                              "id":"fieldName"
+                           }
+                        },
+                        {
+                           "fieldValue":{
+                              "name":"欄位資料",
+                              "type":"string",
+                              "value":"1700",
+                              "format":"n/a",
+                              "id":"fieldValue"
+                           },
+                           "fieldName":{
+                              "name":"欄位名稱",
+                              "type":"string",
+                              "value":"結束時間",
+                              "format":"n/a",
+                              "id":"fieldName"
+                           }
+                        },
+                        {
+                           "fieldValue":{
+                              "name":"欄位資料",
+                              "type":"string",
+                              "value":"20200423",
+                              "format":"n/a",
+                              "id":"fieldValue"
+                           },
+                           "fieldName":{
+                              "name":"欄位名稱",
+                              "type":"string",
                               "value":"申請日期",
-                              "type":"string",
-                              "format":"n/a"
+                              "format":"n/a",
+                              "id":"fieldName"
                            }
                         },
                         {
                            "fieldValue":{
-                              "id":"fieldValue",
                               "name":"欄位資料",
-                              "value":"102500",
                               "type":"string",
-                              "format":"n/a"
+                              "value":"112241",
+                              "format":"n/a",
+                              "id":"fieldValue"
                            },
                            "fieldName":{
-                              "id":"fieldName",
                               "name":"欄位名稱",
-                              "value":"申請時間",
                               "type":"string",
-                              "format":"n/a"
+                              "value":"申請時間",
+                              "format":"n/a",
+                              "id":"fieldName"
                            }
                         }
                      ],
@@ -171,31 +235,261 @@ Here is a JSON representation of request.
                      "value":[
                         {
                            "uniqueValue":{
-                              "id":"uniqueValue",
                               "name":"鍵值資料",
-                              "value":"002020051300002",
                               "type":"string",
-                              "format":"n/a"
+                              "value":"C00202004230001",
+                              "format":"n/a",
+                              "id":"uniqueValue"
                            },
                            "uniqueField":{
-                              "id":"uniqueField",
                               "name":"鍵值名稱",
-                              "value":"PNO",
                               "type":"string",
-                              "format":"n/a"
+                              "value":"PNO",
+                              "format":"n/a",
+                              "id":"uniqueField"
                            }
                         }
                      ],
                      "format":"n/a",
                      "id":"keys"
+                  },
+                  "signFlow":{
+                     "name":"簽核資訊",
+                     "type":"object",
+                     "value":{
+                        "approveUrl":{
+                           "name":"簽核網址",
+                           "type":"string",
+                           "value":"/servlet/jform?file=hrm8w.pkg&init_func=CB2.3.假單銷假簽核&locale=TW&uid=admin&pwd=EM.SESSION.625050713326173689567111486755456853073785099120026810228946943651047575073214&em_flowkey=C00202004230001",
+                           "format":"hyperlink",
+                           "id":"approveUrl"
+                        }
+                     },
+                     "format":"n/a",
+                     "id":"signFlow"
                   }
                },
+               "format":"n/a",
+               "id":"0"
+            },
+            {
+               "name":"No.2",
                "type":"object",
-               "format":"n/a"
+               "value":{
+                  "fields":{
+                     "name":"欄位資訊",
+                     "type":"array",
+                     "value":[
+                        {
+                           "fieldValue":{
+                              "name":"欄位資料",
+                              "type":"string",
+                              "value":"14121 L1線A班",
+                              "format":"n/a",
+                              "id":"fieldValue"
+                           },
+                           "fieldName":{
+                              "name":"欄位名稱",
+                              "type":"string",
+                              "value":"單位",
+                              "format":"n/a",
+                              "id":"fieldName"
+                           }
+                        },
+                        {
+                           "fieldValue":{
+                              "name":"欄位資料",
+                              "type":"string",
+                              "value":"admin",
+                              "format":"n/a",
+                              "id":"fieldValue"
+                           },
+                           "fieldName":{
+                              "name":"欄位名稱",
+                              "type":"string",
+                              "value":"員工編號",
+                              "format":"n/a",
+                              "id":"fieldName"
+                           }
+                        },
+                        {
+                           "fieldValue":{
+                              "name":"欄位資料",
+                              "type":"string",
+                              "value":"系O管",
+                              "format":"n/a",
+                              "id":"fieldValue"
+                           },
+                           "fieldName":{
+                              "name":"欄位名稱",
+                              "type":"string",
+                              "value":"員工姓名",
+                              "format":"n/a",
+                              "id":"fieldName"
+                           }
+                        },
+                        {
+                           "fieldValue":{
+                              "name":"欄位資料",
+                              "type":"string",
+                              "value":"年假(特休)",
+                              "format":"n/a",
+                              "id":"fieldValue"
+                           },
+                           "fieldName":{
+                              "name":"欄位名稱",
+                              "type":"string",
+                              "value":"假別名稱",
+                              "format":"n/a",
+                              "id":"fieldName"
+                           }
+                        },
+                        {
+                           "fieldValue":{
+                              "name":"欄位資料",
+                              "type":"string",
+                              "value":"20191218",
+                              "format":"n/a",
+                              "id":"fieldValue"
+                           },
+                           "fieldName":{
+                              "name":"欄位名稱",
+                              "type":"string",
+                              "value":"起始日期",
+                              "format":"n/a",
+                              "id":"fieldName"
+                           }
+                        },
+                        {
+                           "fieldValue":{
+                              "name":"欄位資料",
+                              "type":"string",
+                              "value":"0800",
+                              "format":"n/a",
+                              "id":"fieldValue"
+                           },
+                           "fieldName":{
+                              "name":"欄位名稱",
+                              "type":"string",
+                              "value":"起始時間",
+                              "format":"n/a",
+                              "id":"fieldName"
+                           }
+                        },
+                        {
+                           "fieldValue":{
+                              "name":"欄位資料",
+                              "type":"string",
+                              "value":"20191218",
+                              "format":"n/a",
+                              "id":"fieldValue"
+                           },
+                           "fieldName":{
+                              "name":"欄位名稱",
+                              "type":"string",
+                              "value":"結束日期",
+                              "format":"n/a",
+                              "id":"fieldName"
+                           }
+                        },
+                        {
+                           "fieldValue":{
+                              "name":"欄位資料",
+                              "type":"string",
+                              "value":"1700",
+                              "format":"n/a",
+                              "id":"fieldValue"
+                           },
+                           "fieldName":{
+                              "name":"欄位名稱",
+                              "type":"string",
+                              "value":"結束時間",
+                              "format":"n/a",
+                              "id":"fieldName"
+                           }
+                        },
+                        {
+                           "fieldValue":{
+                              "name":"欄位資料",
+                              "type":"string",
+                              "value":"20200713",
+                              "format":"n/a",
+                              "id":"fieldValue"
+                           },
+                           "fieldName":{
+                              "name":"欄位名稱",
+                              "type":"string",
+                              "value":"申請日期",
+                              "format":"n/a",
+                              "id":"fieldName"
+                           }
+                        },
+                        {
+                           "fieldValue":{
+                              "name":"欄位資料",
+                              "type":"string",
+                              "value":"174452",
+                              "format":"n/a",
+                              "id":"fieldValue"
+                           },
+                           "fieldName":{
+                              "name":"欄位名稱",
+                              "type":"string",
+                              "value":"申請時間",
+                              "format":"n/a",
+                              "id":"fieldName"
+                           }
+                        }
+                     ],
+                     "format":"n/a",
+                     "id":"fields"
+                  },
+                  "keys":{
+                     "name":"欄位鍵值",
+                     "type":"array",
+                     "value":[
+                        {
+                           "uniqueValue":{
+                              "name":"鍵值資料",
+                              "type":"string",
+                              "value":"C00202007130001",
+                              "format":"n/a",
+                              "id":"uniqueValue"
+                           },
+                           "uniqueField":{
+                              "name":"鍵值名稱",
+                              "type":"string",
+                              "value":"PNO",
+                              "format":"n/a",
+                              "id":"uniqueField"
+                           }
+                        }
+                     ],
+                     "format":"n/a",
+                     "id":"keys"
+                  },
+                  "signFlow":{
+                     "name":"簽核資訊",
+                     "type":"object",
+                     "value":{
+                        "approveUrl":{
+                           "name":"簽核網址",
+                           "type":"string",
+                           "value":"/servlet/jform?file=hrm8w.pkg&init_func=CB2.3.假單銷假簽核&locale=TW&uid=admin&pwd=EM.SESSION.625050713326173689567111486755456853073785099120026810228946943651047575073214&em_flowkey=C00202007130001",
+                           "format":"hyperlink",
+                           "id":"approveUrl"
+                        }
+                     },
+                     "format":"n/a",
+                     "id":"signFlow"
+                  }
+               },
+               "format":"n/a",
+               "id":"1"
             }
          ],
-         "type":"array",
-         "format":"n/a"
+         "format":"n/a",
+         "id":"HRFlowList"
       },
       "properties":{
          "format":{
@@ -215,7 +509,7 @@ Here is a JSON representation of request.
     ],
     "data": {
         "HRFlowList": {
-            "name": "CA4.行政服務單簽核-待簽核列表",
+            "name": "CB2.3.假單銷假簽核-待簽核列表",
             "type": "array",
             "value": [],
             "format": "n/a",
