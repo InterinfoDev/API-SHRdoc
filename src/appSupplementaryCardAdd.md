@@ -31,7 +31,11 @@ Here is a JSON representation of request.
       "cardTime":"1857",
       "reasonCode":"001",
       "note":"忘記帶卡",
-      "file":""
+      "file":{
+         "fileName":"test.jpg",
+         "fileData":"base64",
+         "cardDate":"20220217"
+      }
    }
 }
 ```
