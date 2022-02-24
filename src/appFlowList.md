@@ -25,8 +25,8 @@ Here is a JSON representation of request.
     "uid":"98599308101484732326",
     "right":"51341911904173543336756162544864820",
     "request":{
-        "functionName":"CB2.3.假單銷假簽核",
-        "flowState":"簽核群組一",
+        "functionName":"CB2.3.%E5%81%87%E5%96%AE%E9%8A%B7%E5%81%87%E7%B0%BD%E6%A0%B8",
+        "flowState":"%E7%B0%BD%E6%A0%B8%E7%BE%A4%E7%B5%84%E4%B8%80",
     }
 }
 ```
@@ -41,8 +41,8 @@ Here is a JSON representation of request.
 ### Request Properties
 | Key | Value | Type | Description | Required | Format |
 |:----------|:-------------|:-----|:------------|:------------|:------------|
-| functionName | CB2.3.假單銷假簽核 | String | 簽核單據名稱 | Y | n/a |
-| flowState | 簽核群組一 | String | 簽核節點名稱 | Y | n/a |
+| functionName | CB2.3.%E5%81%87%E5%96%AE%E9%8A%B7%E5%81%87%E7%B0%BD%E6%A0%B8 | String | 簽核單據名稱 | Y | n/a |
+| flowState | %E7%B0%BD%E6%A0%B8%E7%BE%A4%E7%B5%84%E4%B8%80 | String | 簽核節點名稱 | Y | n/a |
 
 
 ### HTTP Response when Successful
