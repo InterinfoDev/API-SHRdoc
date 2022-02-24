@@ -134,7 +134,7 @@ Here is a JSON representation of request.
                               "name":"欄位資料",
                               "type":"string",
                               "value":"20190220",
-                              "format":"n/a",
+                              "format":"YYYYmmdd",
                               "id":"fieldValue"
                            },
                            "fieldName":{
@@ -150,7 +150,7 @@ Here is a JSON representation of request.
                               "name":"欄位資料",
                               "type":"string",
                               "value":"0800",
-                              "format":"n/a",
+                              "format":"HHmm",
                               "id":"fieldValue"
                            },
                            "fieldName":{
@@ -166,7 +166,7 @@ Here is a JSON representation of request.
                               "name":"欄位資料",
                               "type":"string",
                               "value":"20190220",
-                              "format":"n/a",
+                              "format":"YYYYmmdd",
                               "id":"fieldValue"
                            },
                            "fieldName":{
@@ -182,7 +182,7 @@ Here is a JSON representation of request.
                               "name":"欄位資料",
                               "type":"string",
                               "value":"1700",
-                              "format":"n/a",
+                              "format":"HHmm",
                               "id":"fieldValue"
                            },
                            "fieldName":{
@@ -198,7 +198,7 @@ Here is a JSON representation of request.
                               "name":"欄位資料",
                               "type":"string",
                               "value":"20200423",
-                              "format":"n/a",
+                              "format":"YYYYmmdd",
                               "id":"fieldValue"
                            },
                            "fieldName":{
@@ -260,7 +260,7 @@ Here is a JSON representation of request.
                         "approveUrl":{
                            "name":"簽核網址",
                            "type":"string",
-                           "value":"/servlet/jform?file=hrm8w.pkg&init_func=CB2.3.假單銷假簽核&locale=TW&uid=admin&pwd=EM.SESSION.625050713326173689567111486755456853073785099120026810228946943651047575073214&em_flowkey=C00202004230001",
+                           "value":"/servlet/jform?file=hrm8w.pkg&init_func=CB2.3.假單銷假簽核&locale=TW&uid=admin&pwd=EM.SESSION.625050713326173689566621555233540388552899386855855581532746229823482474451258&em_flowkey=C00202004230001",
                            "format":"hyperlink",
                            "id":"approveUrl"
                         }
@@ -349,7 +349,7 @@ Here is a JSON representation of request.
                               "name":"欄位資料",
                               "type":"string",
                               "value":"20191218",
-                              "format":"n/a",
+                              "format":"YYYYmmdd",
                               "id":"fieldValue"
                            },
                            "fieldName":{
@@ -365,7 +365,7 @@ Here is a JSON representation of request.
                               "name":"欄位資料",
                               "type":"string",
                               "value":"0800",
-                              "format":"n/a",
+                              "format":"HHmm",
                               "id":"fieldValue"
                            },
                            "fieldName":{
@@ -381,7 +381,7 @@ Here is a JSON representation of request.
                               "name":"欄位資料",
                               "type":"string",
                               "value":"20191218",
-                              "format":"n/a",
+                              "format":"YYYYmmdd",
                               "id":"fieldValue"
                            },
                            "fieldName":{
@@ -397,7 +397,7 @@ Here is a JSON representation of request.
                               "name":"欄位資料",
                               "type":"string",
                               "value":"1700",
-                              "format":"n/a",
+                              "format":"HHmm",
                               "id":"fieldValue"
                            },
                            "fieldName":{
@@ -413,7 +413,7 @@ Here is a JSON representation of request.
                               "name":"欄位資料",
                               "type":"string",
                               "value":"20200713",
-                              "format":"n/a",
+                              "format":"YYYYmmdd",
                               "id":"fieldValue"
                            },
                            "fieldName":{
@@ -475,7 +475,7 @@ Here is a JSON representation of request.
                         "approveUrl":{
                            "name":"簽核網址",
                            "type":"string",
-                           "value":"/servlet/jform?file=hrm8w.pkg&init_func=CB2.3.假單銷假簽核&locale=TW&uid=admin&pwd=EM.SESSION.625050713326173689567111486755456853073785099120026810228946943651047575073214&em_flowkey=C00202007130001",
+                           "value":"/servlet/jform?file=hrm8w.pkg&init_func=CB2.3.假單銷假簽核&locale=TW&uid=admin&pwd=EM.SESSION.625050713326173689566621555233540388552899386855855581532746229823482474451258&em_flowkey=C00202007130001",
                            "format":"hyperlink",
                            "id":"approveUrl"
                         }
