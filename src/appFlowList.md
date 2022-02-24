@@ -214,7 +214,7 @@ Here is a JSON representation of request.
                               "name":"欄位資料",
                               "type":"string",
                               "value":"112241",
-                              "format":"n/a",
+                              "format":"HHmmss",
                               "id":"fieldValue"
                            },
                            "fieldName":{
@@ -429,7 +429,7 @@ Here is a JSON representation of request.
                               "name":"欄位資料",
                               "type":"string",
                               "value":"174452",
-                              "format":"n/a",
+                              "format":"HHmmss",
                               "id":"fieldValue"
                            },
                            "fieldName":{
@@ -493,7 +493,11 @@ Here is a JSON representation of request.
       },
       "properties":{
          "format":{
-            "n/a":""
+            "HHmm":"時間時分",
+            "YYYYmmdd":"西元年月日",
+            "n/a":"",
+            "HHmmss":"時間時分秒",
+            "hyperlink":"超連結"
          }
       }
    }
