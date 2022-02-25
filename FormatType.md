@@ -1,7 +1,6 @@
 # FormatType
 單位格式對照表
 
-### Request body
 | Key | Value |
 |:----------|:-------------|
 | YYYYmmdd | 西元年月日 |
