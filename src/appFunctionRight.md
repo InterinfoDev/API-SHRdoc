@@ -55,6 +55,13 @@ Here is a JSON representation of request.
                "id":"1",
                "name":"功能資料",
                "value":{
+                  "functionKey":{
+                     "name":"功能編號",
+                     "type":"string",
+                     "value":"3e27729c-9847-4e4d-8167-d1badb377f64",
+                     "format":"n/a",
+                     "id":"functionKey"
+                  },
                   "functionName":{
                      "id":"functionName",
                      "name":"功能名稱",
