@@ -16,7 +16,7 @@ POST
 |:----------|:-------------|:-----|:------------|
 | uid | 98599308101484732326 | String | 需透過appLogin取得
 | right | 51341911904173543336756162544864820 | String | 需透過appLogin取得 |
-| request | {functionName:xxx,flowState:xxx} | Object | 查詢條件
+| request | {key:xxx} | Object | 查詢條件
 
 ### JSON representation
 Here is a JSON representation of request.
@@ -25,8 +25,7 @@ Here is a JSON representation of request.
     "uid":"98599308101484732326",
     "right":"51341911904173543336756162544864820",
     "request":{
-        "functionName":"CB2.3.%E5%81%87%E5%96%AE%E9%8A%B7%E5%81%87%E7%B0%BD%E6%A0%B8",
-        "flowState":"%E7%B0%BD%E6%A0%B8%E7%BE%A4%E7%B5%84%E4%B8%80",
+        "key":"640130555211610131235169414143042796600194383642310910304424435998404931445693"
     }
 }
 ```
@@ -41,8 +40,7 @@ Here is a JSON representation of request.
 ### Request Properties
 | Key | Value | Type | Description | Required | Format |
 |:----------|:-------------|:-----|:------------|:------------|:------------|
-| functionName | CB2.3.%E5%81%87%E5%96%AE%E9%8A%B7%E5%81%87%E7%B0%BD%E6%A0%B8 | String | 簽核單據名稱 | Y | n/a |
-| flowState | %E7%B0%BD%E6%A0%B8%E7%BE%A4%E7%B5%84%E4%B8%80 | String | 簽核節點名稱 | Y | n/a |
+| key | 640130555211610131235169414143042796600194383642310910304424435998404931445693 | String | 鍵值 | Y | n/a |
 
 
 ### HTTP Response when Successful
@@ -54,7 +52,7 @@ Here is a JSON representation of request.
    ],
    "data":{
       "HRFlowList":{
-         "name":"CB2.3.假單銷假簽核-待簽核列表",
+         "name":"CA3. My Profile-待簽核列表",
          "type":"array",
          "value":[
             {
@@ -69,6 +67,22 @@ Here is a JSON representation of request.
                            "fieldValue":{
                               "name":"欄位資料",
                               "type":"string",
+                              "value":"72英特內全名(中和)",
+                              "format":"n/a",
+                              "id":"fieldValue"
+                           },
+                           "fieldName":{
+                              "name":"欄位名稱",
+                              "type":"string",
+                              "value":"單據編號",
+                              "format":"n/a",
+                              "id":"fieldName"
+                           }
+                        },
+                        {
+                           "fieldValue":{
+                              "name":"欄位資料",
+                              "type":"string",
                               "value":"14121 L1線A班",
                               "format":"n/a",
                               "id":"fieldValue"
@@ -76,7 +90,7 @@ Here is a JSON representation of request.
                            "fieldName":{
                               "name":"欄位名稱",
                               "type":"string",
-                              "value":"單位",
+                              "value":"公司別",
                               "format":"n/a",
                               "id":"fieldName"
                            }
@@ -92,7 +106,7 @@ Here is a JSON representation of request.
                            "fieldName":{
                               "name":"欄位名稱",
                               "type":"string",
-                              "value":"員工編號",
+                              "value":"單位",
                               "format":"n/a",
                               "id":"fieldName"
                            }
@@ -108,6 +122,22 @@ Here is a JSON representation of request.
                            "fieldName":{
                               "name":"欄位名稱",
                               "type":"string",
+                              "value":"員工編號",
+                              "format":"n/a",
+                              "id":"fieldName"
+                           }
+                        },
+                        {
+                           "fieldValue":{
+                              "name":"欄位資料",
+                              "type":"string",
+                              "value":"20220126",
+                              "format":"n/a",
+                              "id":"fieldValue"
+                           },
+                           "fieldName":{
+                              "name":"欄位名稱",
+                              "type":"string",
                               "value":"員工姓名",
                               "format":"n/a",
                               "id":"fieldName"
@@ -117,87 +147,7 @@ Here is a JSON representation of request.
                            "fieldValue":{
                               "name":"欄位資料",
                               "type":"string",
-                              "value":"年假(特休)",
-                              "format":"n/a",
-                              "id":"fieldValue"
-                           },
-                           "fieldName":{
-                              "name":"欄位名稱",
-                              "type":"string",
-                              "value":"假別名稱",
-                              "format":"n/a",
-                              "id":"fieldName"
-                           }
-                        },
-                        {
-                           "fieldValue":{
-                              "name":"欄位資料",
-                              "type":"string",
-                              "value":"20190220",
-                              "format":"YYYYmmdd",
-                              "id":"fieldValue"
-                           },
-                           "fieldName":{
-                              "name":"欄位名稱",
-                              "type":"string",
-                              "value":"起始日期",
-                              "format":"n/a",
-                              "id":"fieldName"
-                           }
-                        },
-                        {
-                           "fieldValue":{
-                              "name":"欄位資料",
-                              "type":"string",
-                              "value":"0800",
-                              "format":"HHmm",
-                              "id":"fieldValue"
-                           },
-                           "fieldName":{
-                              "name":"欄位名稱",
-                              "type":"string",
-                              "value":"起始時間",
-                              "format":"n/a",
-                              "id":"fieldName"
-                           }
-                        },
-                        {
-                           "fieldValue":{
-                              "name":"欄位資料",
-                              "type":"string",
-                              "value":"20190220",
-                              "format":"YYYYmmdd",
-                              "id":"fieldValue"
-                           },
-                           "fieldName":{
-                              "name":"欄位名稱",
-                              "type":"string",
-                              "value":"結束日期",
-                              "format":"n/a",
-                              "id":"fieldName"
-                           }
-                        },
-                        {
-                           "fieldValue":{
-                              "name":"欄位資料",
-                              "type":"string",
-                              "value":"1700",
-                              "format":"HHmm",
-                              "id":"fieldValue"
-                           },
-                           "fieldName":{
-                              "name":"欄位名稱",
-                              "type":"string",
-                              "value":"結束時間",
-                              "format":"n/a",
-                              "id":"fieldName"
-                           }
-                        },
-                        {
-                           "fieldValue":{
-                              "name":"欄位資料",
-                              "type":"string",
-                              "value":"20200423",
+                              "value":"185832",
                               "format":"YYYYmmdd",
                               "id":"fieldValue"
                            },
@@ -213,7 +163,7 @@ Here is a JSON representation of request.
                            "fieldValue":{
                               "name":"欄位資料",
                               "type":"string",
-                              "value":"112241",
+                              "value":"002022012600001",
                               "format":"HHmmss",
                               "id":"fieldValue"
                            },
@@ -237,14 +187,30 @@ Here is a JSON representation of request.
                            "uniqueValue":{
                               "name":"鍵值資料",
                               "type":"string",
-                              "value":"C00202004230001",
+                              "value":"002022012600001",
                               "format":"n/a",
                               "id":"uniqueValue"
                            },
                            "uniqueField":{
                               "name":"鍵值名稱",
                               "type":"string",
-                              "value":"PNO",
+                              "value":"PNO_PROV",
+                              "format":"n/a",
+                              "id":"uniqueField"
+                           }
+                        },
+                        {
+                           "uniqueValue":{
+                              "name":"鍵值資料",
+                              "type":"string",
+                              "value":"admin",
+                              "format":"n/a",
+                              "id":"uniqueValue"
+                           },
+                           "uniqueField":{
+                              "name":"鍵值名稱",
+                              "type":"string",
+                              "value":"EMPID",
                               "format":"n/a",
                               "id":"uniqueField"
                            }
@@ -260,7 +226,7 @@ Here is a JSON representation of request.
                         "approveUrl":{
                            "name":"簽核網址",
                            "type":"string",
-                           "value":"/servlet/jform?file=hrm8w.pkg&init_func=CB2.3.假單銷假簽核&locale=TW&uid=admin&pwd=EM.SESSION.625050713326173689566621555233540388552899386855855581532746229823482474451258&em_flowkey=C00202004230001",
+                           "value":"http://114.34.125.246:8090/servlet/jform?file=hrm8w.pkg&init_func=CA3.個人資料維護覆核&locale=TW&uid=admin&pwd=EM.SESSION.625050713326173689566150008254964663313715735618087650126089349876075207877230&em_flowkey=002022012600001,admin",
                            "format":"hyperlink",
                            "id":"approveUrl"
                         }
@@ -271,221 +237,6 @@ Here is a JSON representation of request.
                },
                "format":"n/a",
                "id":"0"
-            },
-            {
-               "name":"No.2",
-               "type":"object",
-               "value":{
-                  "fields":{
-                     "name":"欄位資訊",
-                     "type":"array",
-                     "value":[
-                        {
-                           "fieldValue":{
-                              "name":"欄位資料",
-                              "type":"string",
-                              "value":"14121 L1線A班",
-                              "format":"n/a",
-                              "id":"fieldValue"
-                           },
-                           "fieldName":{
-                              "name":"欄位名稱",
-                              "type":"string",
-                              "value":"單位",
-                              "format":"n/a",
-                              "id":"fieldName"
-                           }
-                        },
-                        {
-                           "fieldValue":{
-                              "name":"欄位資料",
-                              "type":"string",
-                              "value":"admin",
-                              "format":"n/a",
-                              "id":"fieldValue"
-                           },
-                           "fieldName":{
-                              "name":"欄位名稱",
-                              "type":"string",
-                              "value":"員工編號",
-                              "format":"n/a",
-                              "id":"fieldName"
-                           }
-                        },
-                        {
-                           "fieldValue":{
-                              "name":"欄位資料",
-                              "type":"string",
-                              "value":"系O管",
-                              "format":"n/a",
-                              "id":"fieldValue"
-                           },
-                           "fieldName":{
-                              "name":"欄位名稱",
-                              "type":"string",
-                              "value":"員工姓名",
-                              "format":"n/a",
-                              "id":"fieldName"
-                           }
-                        },
-                        {
-                           "fieldValue":{
-                              "name":"欄位資料",
-                              "type":"string",
-                              "value":"年假(特休)",
-                              "format":"n/a",
-                              "id":"fieldValue"
-                           },
-                           "fieldName":{
-                              "name":"欄位名稱",
-                              "type":"string",
-                              "value":"假別名稱",
-                              "format":"n/a",
-                              "id":"fieldName"
-                           }
-                        },
-                        {
-                           "fieldValue":{
-                              "name":"欄位資料",
-                              "type":"string",
-                              "value":"20191218",
-                              "format":"YYYYmmdd",
-                              "id":"fieldValue"
-                           },
-                           "fieldName":{
-                              "name":"欄位名稱",
-                              "type":"string",
-                              "value":"起始日期",
-                              "format":"n/a",
-                              "id":"fieldName"
-                           }
-                        },
-                        {
-                           "fieldValue":{
-                              "name":"欄位資料",
-                              "type":"string",
-                              "value":"0800",
-                              "format":"HHmm",
-                              "id":"fieldValue"
-                           },
-                           "fieldName":{
-                              "name":"欄位名稱",
-                              "type":"string",
-                              "value":"起始時間",
-                              "format":"n/a",
-                              "id":"fieldName"
-                           }
-                        },
-                        {
-                           "fieldValue":{
-                              "name":"欄位資料",
-                              "type":"string",
-                              "value":"20191218",
-                              "format":"YYYYmmdd",
-                              "id":"fieldValue"
-                           },
-                           "fieldName":{
-                              "name":"欄位名稱",
-                              "type":"string",
-                              "value":"結束日期",
-                              "format":"n/a",
-                              "id":"fieldName"
-                           }
-                        },
-                        {
-                           "fieldValue":{
-                              "name":"欄位資料",
-                              "type":"string",
-                              "value":"1700",
-                              "format":"HHmm",
-                              "id":"fieldValue"
-                           },
-                           "fieldName":{
-                              "name":"欄位名稱",
-                              "type":"string",
-                              "value":"結束時間",
-                              "format":"n/a",
-                              "id":"fieldName"
-                           }
-                        },
-                        {
-                           "fieldValue":{
-                              "name":"欄位資料",
-                              "type":"string",
-                              "value":"20200713",
-                              "format":"YYYYmmdd",
-                              "id":"fieldValue"
-                           },
-                           "fieldName":{
-                              "name":"欄位名稱",
-                              "type":"string",
-                              "value":"申請日期",
-                              "format":"n/a",
-                              "id":"fieldName"
-                           }
-                        },
-                        {
-                           "fieldValue":{
-                              "name":"欄位資料",
-                              "type":"string",
-                              "value":"174452",
-                              "format":"HHmmss",
-                              "id":"fieldValue"
-                           },
-                           "fieldName":{
-                              "name":"欄位名稱",
-                              "type":"string",
-                              "value":"申請時間",
-                              "format":"n/a",
-                              "id":"fieldName"
-                           }
-                        }
-                     ],
-                     "format":"n/a",
-                     "id":"fields"
-                  },
-                  "keys":{
-                     "name":"欄位鍵值",
-                     "type":"array",
-                     "value":[
-                        {
-                           "uniqueValue":{
-                              "name":"鍵值資料",
-                              "type":"string",
-                              "value":"C00202007130001",
-                              "format":"n/a",
-                              "id":"uniqueValue"
-                           },
-                           "uniqueField":{
-                              "name":"鍵值名稱",
-                              "type":"string",
-                              "value":"PNO",
-                              "format":"n/a",
-                              "id":"uniqueField"
-                           }
-                        }
-                     ],
-                     "format":"n/a",
-                     "id":"keys"
-                  },
-                  "signFlow":{
-                     "name":"簽核資訊",
-                     "type":"object",
-                     "value":{
-                        "approveUrl":{
-                           "name":"簽核網址",
-                           "type":"string",
-                           "value":"/servlet/jform?file=hrm8w.pkg&init_func=CB2.3.假單銷假簽核&locale=TW&uid=admin&pwd=EM.SESSION.625050713326173689566621555233540388552899386855855581532746229823482474451258&em_flowkey=C00202007130001",
-                           "format":"hyperlink",
-                           "id":"approveUrl"
-                        }
-                     },
-                     "format":"n/a",
-                     "id":"signFlow"
-                  }
-               },
-               "format":"n/a",
-               "id":"1"
             }
          ],
          "format":"n/a",
@@ -493,7 +244,6 @@ Here is a JSON representation of request.
       },
       "properties":{
          "format":{
-            "HHmm":"時間時分",
             "YYYYmmdd":"西元年月日",
             "n/a":"",
             "HHmmss":"時間時分秒",
