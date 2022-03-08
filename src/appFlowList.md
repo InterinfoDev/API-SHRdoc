@@ -16,7 +16,7 @@ POST
 |:----------|:-------------|:-----|:------------|
 | uid | 98599308101484732326 | String | 需透過appLogin取得
 | right | 51341911904173543336756162544864820 | String | 需透過appLogin取得 |
-| request | {key:xxx, locale:xxx} | Object | 查詢條件
+| request | {key:xxx} | Object | 查詢條件
 
 ### JSON representation
 Here is a JSON representation of request.
@@ -25,8 +25,7 @@ Here is a JSON representation of request.
     "uid":"98599308101484732326",
     "right":"51341911904173543336756162544864820",
     "request":{
-        "key":"640130555211610131235169414143042796600194383642310910304424435998404931445693",
-        "locale":"TW"
+        "key":"640130555211610131235169414143042796600194383642310910304424435998404931445693"
     }
 }
 ```
@@ -42,7 +41,7 @@ Here is a JSON representation of request.
 | Key | Value | Type | Description | Required | Format |
 |:----------|:-------------|:-----|:------------|:------------|:------------|
 | key | 640130555211610131235169414143042796600194383642310910304424435998404931445693 | String | 鍵值 | Y | n/a |
-| locale | TW | String | 語系 | N | n/a |
+
 
 ### HTTP Response when Successful
 ```json
