@@ -16,7 +16,7 @@ POST
 |:----------|:-------------|:-----|:------------|
 | uid | 98599308101484732326 | String | 需透過appLogin取得
 | right | 51341911904173543336756162544864820 | String | 需透過appLogin取得 |
-| request | {key:xxx} | Object | 查詢條件
+| request | {key:xxx, locale:xxx} | Object | 查詢條件
 
 ### JSON representation
 Here is a JSON representation of request.
@@ -25,7 +25,8 @@ Here is a JSON representation of request.
     "uid":"98599308101484732326",
     "right":"51341911904173543336756162544864820",
     "request":{
-        "key":"640130555211610131235169414143042796600194383642310910304424435998404931445693"
+        "key":"640130555211610131235169414143042796600194383642310910304424435998404931445693",
+        "locale":"TW"
     }
 }
 ```
@@ -41,7 +42,7 @@ Here is a JSON representation of request.
 | Key | Value | Type | Description | Required | Format |
 |:----------|:-------------|:-----|:------------|:------------|:------------|
 | key | 640130555211610131235169414143042796600194383642310910304424435998404931445693 | String | 鍵值 | Y | n/a |
-
+| locale | TW | String | 語系 | N | n/a |
 
 ### HTTP Response when Successful
 ```json
@@ -52,7 +53,7 @@ Here is a JSON representation of request.
    ],
    "data":{
       "HRFlowList":{
-         "name":"CA3. My Profile-待簽核列表",
+         "name":"CA3.個人資料維護覆核-待簽核列表",
          "type":"array",
          "value":[
             {
@@ -226,7 +227,7 @@ Here is a JSON representation of request.
                         "approveUrl":{
                            "name":"簽核網址",
                            "type":"string",
-                           "value":"http://114.34.125.246:8090/servlet/jform?file=hrm8w.pkg&init_func=CA3.個人資料維護覆核&locale=TW&uid=admin&pwd=EM.SESSION.625050713326173689566150008254964663313715735618087650126089349876075207877230&em_flowkey=002022012600001,admin",
+                           "value":"http://114.34.125.246:8090/servlet/jform?filehrm8w.pkg&init_func=CA3.個人資料維護覆核&locale=TW&uid=admin&pwd=EM.SESSION.625050713326173689563333447869743679693603263748422987098284522968469995712450&em_flowkey=002022012600001,admin",
                            "format":"hyperlink",
                            "id":"approveUrl"
                         }
