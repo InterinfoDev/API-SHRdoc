@@ -44,12 +44,17 @@ Here is a JSON representation of request.
       "回傳成功"
    ],
    "data":{
+      "properties":{
+         "format":{
+            "count":"數量",
+            "n/a":""
+         }
+      },
       "HRFlowTodoList":{
-         "id":"HRFlowTodoList",
          "name":"待簽核單據",
+         "type":"array",
          "value":[
             {
-               "id":"CA3",
                "name":"CA3.個人資料維護覆核",
                "type":"array",
                "value":[
@@ -70,23 +75,25 @@ Here is a JSON representation of request.
                            "value":"申請人",
                            "format":"n/a",
                            "id":"flowState"
+                        },
+                        "flowKey":{
+                           "name":"節點鍵值",
+                           "type":"string",
+                           "value":"640130555211610131235169414143042796600194383642310910304424435998404931445693",
+                           "format":"n/a",
+                           "id":"flowKey"
                         }
                      },
                      "format":"n/a",
                      "id":"flow"
                   }
                ],
-               "format":"n/a"
+               "format":"n/a",
+               "id":"CA3.個人資料維護覆核"
             }
          ],
-         "type":"array",
-         "format":"n/a"
-      },
-      "properties":{
-         "format":{
-            "count":"次數",
-            "n/a":""
-         }
+         "format":"n/a",
+         "id":"HRFlowTodoList"
       }
    }
 }
