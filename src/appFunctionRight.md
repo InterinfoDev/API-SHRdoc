@@ -76,6 +76,13 @@ Here is a JSON representation of request.
                      "type":"string",
                      "format":"n/a"
                   },
+                  "functionDisplayName":{
+                     "name":"顯示功能名稱",
+                     "type":"string",
+                     "value":"員工請假",
+                     "format":"n/a",
+                     "id":"functionDisplayName"
+                  },
                   "permission":{
                      "id":"permission",
                      "name":"是否有權限",
