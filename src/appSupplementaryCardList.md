@@ -241,13 +241,6 @@ POST
                "format":"n/a",
                "id":"position"
             },
-            "photo":{
-               "name":"員工相片",
-               "type":"string",
-               "value":"",
-               "format":"base64",
-               "id":"photo"
-            },
             "empFullName":{
                "name":"員工中文姓名",
                "type":"string",
