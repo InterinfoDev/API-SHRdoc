@@ -89,13 +89,6 @@ Here is a JSON representation of request.
                "name":"員工請假資訊",
                "type":"object",
                "value":{
-                  "photo":{
-                     "name":"員工相片",
-                     "type":"string",
-                     "value":"",
-                     "format":"base64",
-                     "id":"photo"
-                  },
                   "empid":{
                      "name":"員工編號",
                      "type":"string",
