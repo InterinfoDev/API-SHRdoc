@@ -87,13 +87,6 @@ Here is a JSON representation of request.
          "id":"employee", --lucas 改名
          "name":"員工資訊", --lucas 改名
          "value":{
-            "photo":{
-               "id":"photo",
-               "name":"員工照片",
-               "value":"dataurl",
-               "type":"base64",
-               "format":"n/a"
-            },
             "empFullName":{ --lucas 改名
                "id":"empFullName", --lucas 改名
                "name":"員工中文姓名",
