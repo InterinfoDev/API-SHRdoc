@@ -85,13 +85,6 @@ POST
                             "format": "n/a",
                             "id": "position"
                         },
-                        "photo": {
-                            "name": "員工相片",
-                            "type": "string",
-                            "value": "",
-                            "format": "base64",
-                            "id": "photo"
-                        },
                         "unapproved": {
                             "name": "簽核中",
                             "type": "integer",
