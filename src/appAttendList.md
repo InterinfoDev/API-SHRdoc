@@ -127,14 +127,7 @@ Here is a JSON representation of request.
                      "value":5,
                      "type":"integer",
                      "format":"count"
-                  },
-		  "photo":{
-		     "id":"photo",
-		     "name":"員工照片",
-		     "value":"base64",--lucas
-		     "type":"string",
-		     "format":"base64"
-		  }
+                  }
                },
                "type":"object",
                "format":"n/a"
