@@ -94,13 +94,6 @@ Here is a JSON representation of request.
                "value":"CTO",
                "type":"string",
                "format":"n/a"
-            },
-            "photo":{
-               "id":"photo",
-               "name":"員工照片",
-               "value":"",
-               "type":"string",
-               "format":"base64"
             }
          },
          "type":"object",
