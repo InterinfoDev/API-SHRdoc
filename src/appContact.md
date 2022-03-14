@@ -116,13 +116,6 @@ Here is a JSON representation of request.
                            "type":"string",
                            "format":"n/a"
                         },
-                        "photo":{
-                           "id":"photo",
-                           "name":"員工照片",
-                           "value":"",
-                           "type":"string",
-                           "format":"base64"
-                        },
                         "email":{
                            "id":"email",
                            "name":"電子郵件",
