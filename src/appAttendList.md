@@ -140,7 +140,6 @@ Here is a JSON representation of request.
          "format":{
             "YYYYmm":"西元年月",
             "count":"數量",
-	    "base64":"Base64資料庫格式",
             "n/a":""
          }
       }
