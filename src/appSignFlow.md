@@ -74,26 +74,26 @@ Here is a JSON representation of request.
             "HHmmss":"時間時分秒"
          }
       },
-      "approveTime":{
+      "signTime":{
          "name":"簽核時間",
          "type":"string",
          "value":"093712",
          "format":"HHmmss",
-         "id":"approveTime"
+         "id":"signTime"
       },
-      "approver":{
+      "signer":{
          "name":"簽核人員",
          "type":"string",
          "value":"admin",
          "format":"n/a",
-         "id":"approver"
+         "id":"signer"
       },
-      "approveDate":{
+      "signDate":{
          "name":"簽核日期",
          "type":"string",
          "value":"20220315",
          "format":"YYYYmmdd",
-         "id":"approveDate"
+         "id":"signDate"
       }
    }
 }
