@@ -196,7 +196,6 @@ Here is a JSON representation of request.
       "properties":{
          "format":{
             "phone":"電話號碼，可撥打",
-            "base64":"Base64資料庫格式",
             "email":"電子郵件",
             "n/a":""
          }
@@ -224,7 +223,6 @@ Here is a JSON representation of request.
       "properties":{
          "format":{
             "phone":"電話號碼，可撥打",
-            "base64":"Base64資料庫格式",
             "email":"電子郵件",
             "n/a":""
          }
