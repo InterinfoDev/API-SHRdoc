@@ -155,7 +155,6 @@ Here is a JSON representation of request.
       },
       "properties":{
          "format":{
-            "base64":"Base64編碼格式",
             "count":"數量",
             "n/a":"",
             "YYYYmm":"西元年月"
