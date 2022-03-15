@@ -341,7 +341,6 @@ Here is a JSON representation of request.
          "format":{
             "HHmm":"時間時分",
             "hour":"小時",
-            "base64":"Base64編碼格式",
             "YYYYmmdd":"西元年月日",
             "day":"天",
             "n/a":"",
