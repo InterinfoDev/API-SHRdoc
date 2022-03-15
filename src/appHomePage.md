@@ -296,7 +296,6 @@ Board 或 Attend 無資料，但Board無資料則隱藏該區塊，但整體來�
          "format":{ --lucas 拿掉YYYYmm
             "YYYYmmdd":"西元年月日",
             "HHmm":"時間時分",
-	    "base64":"Base64資料庫格式",
             "n/a":""
          }
       }
