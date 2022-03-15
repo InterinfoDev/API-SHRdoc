@@ -16,7 +16,7 @@ POST
 |:----------|:-------------|:-----|:------------|
 | uid | 98599308101484732326 | String | 需透過appLogin取得
 | right | 51341911904173543336756162544864820 | String | 需透過appLogin取得 |
-| request | {key:xxx, buttonKey:xxx, memo:xxx, uniqueKey[[uniqueField:xxx, uniqueValue:xxx]]} | Object | key,buttonKey,uniqueKey都由appFlowList取得
+| request | {key:xxx, buttonKey:xxx, memo:xxx, uniqueKey:[[uniqueField:xxx, uniqueValue:xxx]]} | Object | key,buttonKey,uniqueKey都由appFlowList取得
 
 ### JSON representation
 Here is a JSON representation of request.
