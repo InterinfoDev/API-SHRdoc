@@ -56,7 +56,7 @@ Here is a JSON representation of request.
          "type":"array",
          "value":[
             {
-               "name":"No.7",
+               "name":"No.3",
                "type":"object",
                "value":{
                   "fields":{
@@ -179,7 +179,7 @@ Here is a JSON representation of request.
                            "fieldValue":{
                               "name":"欄位資料",
                               "type":"string",
-                              "value":"140237",
+                              "value":"111841",
                               "format":"HHmmss",
                               "id":"fieldValue"
                            },
@@ -226,7 +226,7 @@ Here is a JSON representation of request.
                         "approveUrl":{
                            "name":"簽核網址",
                            "type":"string",
-                           "value":"http://114.34.125.246:8090/servlet/jform?file=hrm8w.pkg&init_func=CA7.人事異動單簽核&locale=TW&uid=admin&pwd=EM.SESSION.625050713326173689565838476638934946028537126760096636498797544874984713625611&em_flowkey=W00201908210001",
+                           "value":"http://114.34.125.246:8090/servlet/jform?file=hrm8w.pkg&init_func=CA7.人事異動單簽核&locale=TW&uid=admin&pwd=EM.SESSION.625050713326173689561883338983611075168252964282546234791554823454101230868652&em_flowkey=W00201908210001",
                            "format":"hyperlink",
                            "id":"approveUrl"
                         }
@@ -236,190 +236,7 @@ Here is a JSON representation of request.
                   }
                },
                "format":"n/a",
-               "id":"6"
-            },
-            {
-               "name":"No.8",
-               "type":"object",
-               "value":{
-                  "fields":{
-                     "name":"欄位資訊",
-                     "type":"array",
-                     "value":[
-                        {
-                           "fieldValue":{
-                              "name":"欄位資料",
-                              "type":"string",
-                              "value":"W00202108260001",
-                              "format":"n/a",
-                              "id":"fieldValue"
-                           },
-                           "fieldName":{
-                              "name":"欄位名稱",
-                              "type":"string",
-                              "value":"單據編號",
-                              "format":"n/a",
-                              "id":"fieldName"
-                           }
-                        },
-                        {
-                           "fieldValue":{
-                              "name":"欄位資料",
-                              "type":"string",
-                              "value":"110000311",
-                              "format":"n/a",
-                              "id":"fieldValue"
-                           },
-                           "fieldName":{
-                              "name":"欄位名稱",
-                              "type":"string",
-                              "value":"員工編號",
-                              "format":"n/a",
-                              "id":"fieldName"
-                           }
-                        },
-                        {
-                           "fieldValue":{
-                              "name":"欄位資料",
-                              "type":"string",
-                              "value":"解O庭",
-                              "format":"n/a",
-                              "id":"fieldValue"
-                           },
-                           "fieldName":{
-                              "name":"欄位名稱",
-                              "type":"string",
-                              "value":"員工姓名",
-                              "format":"n/a",
-                              "id":"fieldName"
-                           }
-                        },
-                        {
-                           "fieldValue":{
-                              "name":"欄位資料",
-                              "type":"string",
-                              "value":"留職停薪",
-                              "format":"n/a",
-                              "id":"fieldValue"
-                           },
-                           "fieldName":{
-                              "name":"欄位名稱",
-                              "type":"string",
-                              "value":"異動項目",
-                              "format":"n/a",
-                              "id":"fieldName"
-                           }
-                        },
-                        {
-                           "fieldValue":{
-                              "name":"欄位資料",
-                              "type":"string",
-                              "value":"TEST",
-                              "format":"n/a",
-                              "id":"fieldValue"
-                           },
-                           "fieldName":{
-                              "name":"欄位名稱",
-                              "type":"string",
-                              "value":"申請說明",
-                              "format":"n/a",
-                              "id":"fieldName"
-                           }
-                        },
-                        {
-                           "fieldValue":{
-                              "name":"欄位資料",
-                              "type":"string",
-                              "value":"20210901",
-                              "format":"YYYYmmdd",
-                              "id":"fieldValue"
-                           },
-                           "fieldName":{
-                              "name":"欄位名稱",
-                              "type":"string",
-                              "value":"生效日期",
-                              "format":"n/a",
-                              "id":"fieldName"
-                           }
-                        },
-                        {
-                           "fieldValue":{
-                              "name":"欄位資料",
-                              "type":"string",
-                              "value":"20210826",
-                              "format":"YYYYmmdd",
-                              "id":"fieldValue"
-                           },
-                           "fieldName":{
-                              "name":"欄位名稱",
-                              "type":"string",
-                              "value":"申請日期",
-                              "format":"n/a",
-                              "id":"fieldName"
-                           }
-                        },
-                        {
-                           "fieldValue":{
-                              "name":"欄位資料",
-                              "type":"string",
-                              "value":"140249",
-                              "format":"HHmmss",
-                              "id":"fieldValue"
-                           },
-                           "fieldName":{
-                              "name":"欄位名稱",
-                              "type":"string",
-                              "value":"申請時間",
-                              "format":"n/a",
-                              "id":"fieldName"
-                           }
-                        }
-                     ],
-                     "format":"n/a",
-                     "id":"fields"
-                  },
-                  "keys":{
-                     "name":"欄位鍵值",
-                     "type":"array",
-                     "value":[
-                        {
-                           "uniqueValue":{
-                              "name":"鍵值資料",
-                              "type":"string",
-                              "value":"W00202108260001",
-                              "format":"n/a",
-                              "id":"uniqueValue"
-                           },
-                           "uniqueField":{
-                              "name":"鍵值名稱",
-                              "type":"string",
-                              "value":"102466946499809093666",
-                              "format":"n/a",
-                              "id":"uniqueField"
-                           }
-                        }
-                     ],
-                     "format":"n/a",
-                     "id":"keys"
-                  },
-                  "signFlow":{
-                     "name":"簽核資訊",
-                     "type":"object",
-                     "value":{
-                        "approveUrl":{
-                           "name":"簽核網址",
-                           "type":"string",
-                           "value":"http://114.34.125.246:8090/servlet/jform?file=hrm8w.pkg&init_func=CA7.人事異動單簽核&locale=TW&uid=admin&pwd=EM.SESSION.625050713326173689565838476638934946028537126760096636498797544874984713625611&em_flowkey=W00202108260001",
-                           "format":"hyperlink",
-                           "id":"approveUrl"
-                        }
-                     },
-                     "format":"n/a",
-                     "id":"signFlow"
-                  }
-               },
-               "format":"n/a",
-               "id":"7"
+               "id":"2"
             }
          ],
          "format":"n/a",
@@ -428,30 +245,8 @@ Here is a JSON representation of request.
       "HRFlowButton":{
          "name":"簽核按鈕",
          "type":"array",
-         "value":[
-            {
-               "name":"核准",
-               "type":"object",
-               "value":{
-                  "buttonName":{
-                     "name":"按鈕名稱",
-                     "type":"string",
-                     "value":"核准",
-                     "format":"n/a",
-                     "id":"buttonName"
-                  },
-                  "buttonKey":{
-                     "name":"按鈕代碼",
-                     "type":"string",
-                     "value":"核准",
-                     "format":"n/a",
-                     "id":"buttonKey"
-                  }
-               },
-               "format":"n/a",
-               "id":"approve"
-            },
-            {
+         "value":{
+            "reject":{
                "name":"退簽",
                "type":"object",
                "value":{
@@ -468,12 +263,48 @@ Here is a JSON representation of request.
                      "value":"[退簽]",
                      "format":"n/a",
                      "id":"buttonKey"
+                  },
+                  "buttonType":{
+                     "name":"按鈕類型",
+                     "type":"string",
+                     "value":"reject",
+                     "format":"n/a",
+                     "id":"buttonType"
                   }
                },
                "format":"n/a",
                "id":"reject"
+            },
+            "approve":{
+               "name":"核准",
+               "type":"object",
+               "value":{
+                  "buttonName":{
+                     "name":"按鈕名稱",
+                     "type":"string",
+                     "value":"核准",
+                     "format":"n/a",
+                     "id":"buttonName"
+                  },
+                  "buttonKey":{
+                     "name":"按鈕代碼",
+                     "type":"string",
+                     "value":"核准",
+                     "format":"n/a",
+                     "id":"buttonKey"
+                  },
+                  "buttonType":{
+                     "name":"按鈕類型",
+                     "type":"string",
+                     "value":"approve",
+                     "format":"n/a",
+                     "id":"buttonType"
+                  }
+               },
+               "format":"n/a",
+               "id":"approve"
             }
-         ],
+         },
          "format":"n/a",
          "id":"HRFlowButton"
       },
