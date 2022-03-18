@@ -16,29 +16,33 @@ POST
 {
    "status":"success",
    "message":[
-      "登出成功"
+      "回傳成功"
    ],
    "data":{
       "logout":{
-         "logoutTime":{
-            "name":"登出時間",
-            "type":"string",
-            "value":"1404",
-            "format":"HHmm",
-            "id":"logoutTime"
+         "name":"登出記錄異動",
+         "type":"object",
+         "value":{
+            "logoutTime":{
+               "name":"登出時間",
+               "type":"string",
+               "value":"1843",
+               "format":"HHmm",
+               "id":"logoutTime"
+            },
+            "logoutDate":{
+               "name":"登出日期",
+               "type":"string",
+               "value":"20220318",
+               "format":"YYYYmmdd",
+               "id":"logoutDate"
+            }
          },
-         "logoutDate":{
-            "name":"登出日期",
-            "type":"string",
-            "value":"20220318",
-            "format":"YYYYmmdd",
-            "id":"logoutDate"
-         }
+         "format":"n/a",
+         "id":"logout"
       },
       "properties":{
          "format":{
-            "HHmm":"時間時分",
-            "YYYYmmdd":"西元年月日",
             "n/a":""
          }
       }
