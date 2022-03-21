@@ -11,6 +11,37 @@ https://114.34.125.246:8090/servlet/HRNative/appLogout
 POST
 ```
 
+### Request body
+| Key | Value | Type | Description |
+|:----------|:-------------|:-----|:------------|
+| uid | 98599308101484732326 | String | 需透過appLogin取得
+| right | 51341911904173543336756162544864820 | String | 需透過appLogin取得 |
+| request | {deviecId:TEST_DEVICE_ID} | Object | 異動條件
+
+### JSON representation
+Here is a JSON representation of request.
+```json
+{
+   "uid":"98599308101484732326",
+   "right":"51341911904173543336756162544864820",
+   "request":{
+      "deviecId":"TEST_DEVICE_ID",
+   }
+}
+```
+
+### Properties
+| Property | Type | Description |
+|:---------|:-----|:------------|
+| uid   | String | 加密後帳號 |
+| right | String | 加密後系統相關資料 |
+| request | Object | 要求本文 |
+
+### Request Properties
+| Key | Value | Type | Description | Required | Format | Note |
+|:----------|:-------------|:-----|:------------|:------------|:------------|:------------|
+| deviecId | TEST_DEVICE_ID | 裝置識別碼 | 欄位代號 | Y | n/a |  |
+
 ### HTTP Response when Successful
 ```json
 {
