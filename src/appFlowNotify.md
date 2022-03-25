@@ -52,7 +52,7 @@ Here is a JSON representation of request.
       },
       "flowNotify":{
          "name":"待簽核單據",
-         "type":"array",
+         "type":"object",
          "value":{
             "notifyConut":{
                "name":"待簽核單據",
