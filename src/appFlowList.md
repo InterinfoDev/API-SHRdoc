@@ -56,7 +56,7 @@ Here is a JSON representation of request.
          "type":"array",
          "value":[
             {
-               "name":"No.3",
+               "name":"No.4",
                "type":"object",
                "value":{
                   "fields":{
@@ -226,7 +226,7 @@ Here is a JSON representation of request.
                         "approveUrl":{
                            "name":"簽核網址",
                            "type":"string",
-                           "value":"http://114.34.125.246:8090/servlet/jform?file=hrm8w.pkg&init_func=CA7.人事異動單簽核&locale=TW&uid=admin&pwd=EM.SESSION.625050713326173689561883338983611075168252964282546234791554823454101230868652&em_flowkey=W00201908210001",
+                           "value":"http://114.34.125.246:8090/servlet/jform?file=hrm8w.pkg&init_func=CA7.人事異動單簽核&locale=TW&uid=admin&pwd=EM.SESSION.625050713326173689562490441831943248094599718872274406774617189206105869712493&em_flowkey=W00201908210001",
                            "format":"hyperlink",
                            "id":"approveUrl"
                         }
@@ -236,7 +236,7 @@ Here is a JSON representation of request.
                   }
                },
                "format":"n/a",
-               "id":"2"
+               "id":"3"
             }
          ],
          "format":"n/a",
@@ -244,7 +244,7 @@ Here is a JSON representation of request.
       },
       "HRFlowButton":{
          "name":"簽核按鈕",
-         "type":"array",
+         "type":"object",
          "value":{
             "reject":{
                "name":"退簽",
@@ -264,12 +264,12 @@ Here is a JSON representation of request.
                      "format":"n/a",
                      "id":"buttonKey"
                   },
-                  "buttonType":{
-                     "name":"按鈕類型",
-                     "type":"string",
-                     "value":"reject",
+                  "visible":{
+                     "name":"是否顯示",
+                     "type":"boolean",
+                     "value":true,
                      "format":"n/a",
-                     "id":"buttonType"
+                     "id":"visible"
                   }
                },
                "format":"n/a",
@@ -293,12 +293,12 @@ Here is a JSON representation of request.
                      "format":"n/a",
                      "id":"buttonKey"
                   },
-                  "buttonType":{
-                     "name":"按鈕類型",
-                     "type":"string",
-                     "value":"approve",
+                  "visible":{
+                     "name":"是否顯示",
+                     "type":"boolean",
+                     "value":true,
                      "format":"n/a",
-                     "id":"buttonType"
+                     "id":"visible"
                   }
                },
                "format":"n/a",
