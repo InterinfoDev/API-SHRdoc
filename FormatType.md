@@ -18,4 +18,5 @@
 | day | 天 |
 | hour | 小時 |
 | ticket | 張 |
+| meter | 公尺 |
 | n/a |  |
