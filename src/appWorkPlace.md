@@ -44,8 +44,8 @@ Here is a JSON representation of request.
       "workPlace":{
          "radius":{
             "name":"打卡半徑",
-            "type":"string",
-            "value":"7",
+            "type":"decimal",
+            "value":7.0,
             "format":"meter",
             "id":"radius"
          },
