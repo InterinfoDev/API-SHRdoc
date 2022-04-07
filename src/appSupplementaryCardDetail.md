@@ -50,6 +50,21 @@ Here is a JSON representation of request.
       "回傳成功"
    ],
    "data":{
+      "HRFlow":{
+         "name":"簽核資訊",
+         "type":"object",
+         "value":{
+            "flowHis":{
+               "name":"流程紀錄",
+               "type":"string",
+               "value":"3799391871311144335627777514617065132983803072298167159419265428929297071709253604564753867957635073218731940934947702912904196297242807",
+               "format":"n/a",
+               "id":"flowHis"
+            }
+         },
+         "format":"n/a",
+         "id":"HRFlow"
+      },
       "properties":{
          "format":{
             "HHmm":"時間時分",
@@ -93,29 +108,7 @@ Here is a JSON representation of request.
                "name":"附件資訊",
                "type":"array",
                "value":[
-                  {
-                     "fileType":{
-                        "name":"檔案類型",
-                        "type":"string",
-                        "value":"",
-                        "format":"n/a",
-                        "id":"fileType"
-                     },
-                     "fileUrl":{
-                        "name":"檔案路徑",
-                        "type":"string",
-                        "value":"8394768758650934487139215644085449220561352994877809057609795881391964303976063959390413861765306620980509412090431956792262100059547268421208875708309193001476077621211220788276621789810786481552460035435218638029708026615307257983",
-                        "format":"n/a",
-                        "id":"fileUrl"
-                     },
-                     "fileName":{
-                        "name":"檔案名稱",
-                        "type":"string",
-                        "value":"1643078742185_【台壽】(MP1100171)TPSYNC-特休資料拋轉外掛(SD)(1).docx",
-                        "format":"n/a",
-                        "id":"fileName"
-                     }
-                  }
+                  
                ],
                "format":"n/a",
                "id":"uploadFiles"
