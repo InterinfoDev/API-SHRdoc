@@ -79,7 +79,7 @@ Here is a JSON representation of request.
             "YYYYmm":"西元年月"
          }
       },
-      "overplan":{
+      "overplanList":{
          "name":"員工預定加班列表",
          "type":"array",
          "value":[
@@ -149,7 +149,7 @@ Here is a JSON representation of request.
             }
          ],
          "format":"n/a",
-         "id":"overplan"
+         "id":"overplanList"
       }
    }
 }
@@ -186,14 +186,14 @@ Here is a JSON representation of request.
             "YYYYmm":"西元年月"
          }
       },
-      "overplan":{
+      "overplanList":{
          "name":"員工預定加班列表",
          "type":"array",
          "value":[
             
          ],
          "format":"n/a",
-         "id":"overplan"
+         "id":"overplanList"
       }
    }
 }
