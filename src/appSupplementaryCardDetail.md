@@ -50,27 +50,27 @@ Here is a JSON representation of request.
       "回傳成功"
    ],
    "data":{
-      "HRFlow":{
-         "name":"簽核資訊",
-         "type":"object",
-         "value":{
-            "flowHis":{
-               "name":"流程紀錄",
-               "type":"string",
-               "value":"3799391871311144335627777514617065132983803072298167159419265428929297071709253604564753867957635073218731940934947702912904196297242807",
-               "format":"n/a",
-               "id":"flowHis"
-            }
-         },
-         "format":"n/a",
-         "id":"HRFlow"
-      },
       "properties":{
          "format":{
             "HHmm":"時間時分",
             "YYYYmmdd":"西元年月日",
             "n/a":""
          }
+      },
+      "flowHistory":{
+         "name":"流程紀錄",
+         "type":"object",
+         "value":{
+            "historyKey":{
+               "name":"流程鍵值",
+               "type":"string",
+               "value":"3799391871311144335627777514617065132983803072298167159419265428929297071709253604564753867957635073218731940934947702912904196297242807",
+               "format":"n/a",
+               "id":"historyKey"
+            }
+         },
+         "format":"n/a",
+         "id":"flowHistory"
       },
       "supplementaryCardDetail":{
          "name":"補卡詳細資訊",
