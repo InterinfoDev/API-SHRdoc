@@ -51,7 +51,7 @@ Here is a JSON representation of request.
       "回傳成功"
    ],
    "data":{
-      "HRFlowList":{
+      "flowList":{
          "name":"CA7.人事異動單簽核-待簽核列表",
          "type":"array",
          "value":[
@@ -240,9 +240,9 @@ Here is a JSON representation of request.
             }
          ],
          "format":"n/a",
-         "id":"HRFlowList"
+         "id":"flowList"
       },
-      "HRFlowButton":{
+      "flowButton":{
          "name":"簽核按鈕",
          "type":"object",
          "value":{
@@ -306,7 +306,7 @@ Here is a JSON representation of request.
             }
          },
          "format":"n/a",
-         "id":"HRFlowButton"
+         "id":"flowButton"
       },
       "properties":{
          "format":{
@@ -323,19 +323,11 @@ Here is a JSON representation of request.
 ### HTTP Response when No Data 
 ```json
 {
-    "status": "success",
+    "status": "fail",
     "message": [
         "查無資料"
     ],
-    "data": {
-        "HRFlowList": {
-            "name": "CA7.人事異動單簽核-待簽核列表",
-            "type": "array",
-            "value": [],
-            "format": "n/a",
-            "id": "HRFlowList"
-        }
-    }
+    "data": {}
 }
 ```
 
