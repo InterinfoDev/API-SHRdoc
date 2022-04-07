@@ -53,6 +53,21 @@ Here is a JSON representation of request.
       "回傳成功"
    ],
    "data":{
+      "HRFlow":{
+         "name":"簽核資訊",
+         "type":"object",
+         "value":{
+            "flowHis":{
+               "name":"流程紀錄",
+               "type":"string",
+               "value":"225721252929321375615416977232747178356918537416530009027085451609431956050312520400829159686808175296041432946124037",
+               "format":"n/a",
+               "id":"flowHis"
+            }
+         },
+         "format":"n/a",
+         "id":"HRFlow"
+      },
       "properties":{
          "format":{
             "HHmm":"時間時分",
@@ -69,7 +84,7 @@ Here is a JSON representation of request.
             "apprdate":{
                "name":"生效日期",
                "type":"string",
-               "value":"",
+               "value":"20220117",
                "format":"YYYYmmdd",
                "id":"apprdate"
             },
@@ -160,14 +175,14 @@ Here is a JSON representation of request.
                      "fileUrl":{
                         "name":"檔案路徑",
                         "type":"string",
-                        "value":"8394768758650934487139215644085449220561352994877809057609795881391964303976063959390413861765306620980509412090431956792262100059547268421208875708309193001476077621211220788276621789810786481552460035435218638029708026615307257983",
+                        "value":"97922998003575924465",
                         "format":"n/a",
                         "id":"fileUrl"
                      },
                      "fileName":{
                         "name":"檔案名稱",
                         "type":"string",
-                        "value":"1643078742185_【台壽】(MP1100171)TPSYNC-特休資料拋轉外掛(SD)(1).docx",
+                        "value":"",
                         "format":"n/a",
                         "id":"fileName"
                      }
@@ -176,21 +191,21 @@ Here is a JSON representation of request.
                      "fileType":{
                         "name":"檔案類型",
                         "type":"string",
-                        "value":"image/jpeg",
+                        "value":"",
                         "format":"n/a",
                         "id":"fileType"
                      },
                      "fileUrl":{
                         "name":"檔案路徑",
                         "type":"string",
-                        "value":"213054348471705645522899686059682058334332468666904109085709401572564865917840459407644865526610519454919698294050221",
+                        "value":"97922998003575924465",
                         "format":"n/a",
                         "id":"fileUrl"
                      },
                      "fileName":{
                         "name":"檔案名稱",
                         "type":"string",
-                        "value":"1643078742200_A.jpg",
+                        "value":"",
                         "format":"n/a",
                         "id":"fileName"
                      }
@@ -199,21 +214,21 @@ Here is a JSON representation of request.
                      "fileType":{
                         "name":"檔案類型",
                         "type":"string",
-                        "value":"application/pdf",
+                        "value":"",
                         "format":"n/a",
                         "id":"fileType"
                      },
                      "fileUrl":{
                         "name":"檔案路徑",
                         "type":"string",
-                        "value":"455081326282139220778915637967543067724210186456599314554053797322699112004686013661897571284512146408289108883247131030352506479918432248519610045402377780797371013561698903045297101962589301299762891115085188159",
+                        "value":"97922998003575924465",
                         "format":"n/a",
                         "id":"fileUrl"
                      },
                      "fileName":{
                         "name":"檔案名稱",
                         "type":"string",
-                        "value":"1643078742200_1642650962408_任09歡迎新同事-1110120.pdf",
+                        "value":"",
                         "format":"n/a",
                         "id":"fileName"
                      }
@@ -337,21 +352,7 @@ Here is a JSON representation of request.
                "format":"n/a",
                "id":"note"
             },
-            "delayNote":{
-               "name":"逾期請假原因",
-               "type":"string",
-               "value":"20220125KevinTestTestLateLate",
-               "format":"n/a",
-               "id":"delayNote"
-            },
-            "spectialDate":{
-               "name":"特殊日期",
-               "type":"string",
-               "value":"",
-               "format":"YYYYmmdd",
-               "id":"spectialDate"
-            },
-            "userInfo":{
+            "employee":{
                "name":"人事基本資料",
                "type":"object",
                "value":{
@@ -400,13 +401,27 @@ Here is a JSON representation of request.
                   "empFullEname":{
                      "name":"員工英文姓名",
                      "type":"string",
-                     "value":"EEadmin",
+                     "value":"test_Ename",
                      "format":"n/a",
                      "id":"empFullEname"
                   }
                },
                "format":"n/a",
-               "id":"userInfo"
+               "id":"employee"
+            },
+            "delayNote":{
+               "name":"逾期請假原因",
+               "type":"string",
+               "value":"20220125KevinTestTestLateLate",
+               "format":"n/a",
+               "id":"delayNote"
+            },
+            "spectialDate":{
+               "name":"特殊日期",
+               "type":"string",
+               "value":"",
+               "format":"YYYYmmdd",
+               "id":"spectialDate"
             },
             "hkindd":{
                "name":"子假別資訊",
