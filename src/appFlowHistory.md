@@ -107,22 +107,9 @@ Here is a JSON representation of request.
                   "agent":{
                      "name":"代理人員",
                      "type":"array",
-                     "value":{
-                        "empFullName":{
-                           "name":"員工中文姓名",
-                           "type":"string",
-                           "value":"",
-                           "format":"n/a",
-                           "id":"empFullName"
-                        },
-                        "empid":{
-                           "name":"員工編號",
-                           "type":"string",
-                           "value":"",
-                           "format":"n/a",
-                           "id":"empid"
-                        }
-                     },
+                     "value":[
+                        
+                     ],
                      "format":"n/a",
                      "id":"agent"
                   },
@@ -203,22 +190,9 @@ Here is a JSON representation of request.
                   "agent":{
                      "name":"代理人員",
                      "type":"array",
-                     "value":{
-                        "empFullName":{
-                           "name":"員工中文姓名",
-                           "type":"string",
-                           "value":"",
-                           "format":"n/a",
-                           "id":"empFullName"
-                        },
-                        "empid":{
-                           "name":"員工編號",
-                           "type":"string",
-                           "value":"",
-                           "format":"n/a",
-                           "id":"empid"
-                        }
-                     },
+                     "value":[
+                        
+                     ],
                      "format":"n/a",
                      "id":"agent"
                   },
@@ -299,22 +273,9 @@ Here is a JSON representation of request.
                   "agent":{
                      "name":"代理人員",
                      "type":"array",
-                     "value":{
-                        "empFullName":{
-                           "name":"員工中文姓名",
-                           "type":"string",
-                           "value":"",
-                           "format":"n/a",
-                           "id":"empFullName"
-                        },
-                        "empid":{
-                           "name":"員工編號",
-                           "type":"string",
-                           "value":"",
-                           "format":"n/a",
-                           "id":"empid"
-                        }
-                     },
+                     "value":[
+                        
+                     ],
                      "format":"n/a",
                      "id":"agent"
                   },
