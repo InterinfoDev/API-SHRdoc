@@ -53,21 +53,6 @@ Here is a JSON representation of request.
       "回傳成功"
    ],
    "data":{
-      "HRFlow":{
-         "name":"簽核資訊",
-         "type":"object",
-         "value":{
-            "flowHis":{
-               "name":"流程紀錄",
-               "type":"string",
-               "value":"225721252929321375615416977232747178356918537416530009027085451609431956050312520400829159686808175296041432946124037",
-               "format":"n/a",
-               "id":"flowHis"
-            }
-         },
-         "format":"n/a",
-         "id":"HRFlow"
-      },
       "properties":{
          "format":{
             "HHmm":"時間時分",
@@ -76,6 +61,21 @@ Here is a JSON representation of request.
             "day":"天",
             "n/a":""
          }
+      },
+      "flowHistory":{
+         "name":"流程紀錄",
+         "type":"object",
+         "value":{
+            "historyKey":{
+               "name":"流程鍵值",
+               "type":"string",
+               "value":"225721252929321375615416977232747178356918537416530009027085451609431956050312520400829159686808175296041432946124037",
+               "format":"n/a",
+               "id":"historyKey"
+            }
+         },
+         "format":"n/a",
+         "id":"flowHistory"
       },
       "vacationDetail":{
          "name":"假單詳細資訊",
