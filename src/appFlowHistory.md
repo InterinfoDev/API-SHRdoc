@@ -66,13 +66,6 @@ Here is a JSON representation of request.
                "name":"簽核節點資訊",
                "type":"object",
                "value":{
-                  "isApprove":{
-                     "name":"是否核准",
-                     "type":"boolean",
-                     "value":true,
-                     "format":"n/a",
-                     "id":"isApprove"
-                  },
                   "memo":{
                      "name":"簽核意見",
                      "type":"string",
@@ -133,12 +126,19 @@ Here is a JSON representation of request.
                      "format":"n/a",
                      "id":"agent"
                   },
-                  "approved":{
+                  "approveYN":{
+                     "name":"是否核准",
+                     "type":"boolean",
+                     "value":true,
+                     "format":"n/a",
+                     "id":"approveYN"
+                  },
+                  "finishYN":{
                      "name":"是否完成簽核",
                      "type":"boolean",
                      "value":true,
                      "format":"n/a",
-                     "id":"approved"
+                     "id":"finishYN"
                   },
                   "approveDate":{
                      "name":"簽核日期",
@@ -162,13 +162,6 @@ Here is a JSON representation of request.
                "name":"簽核節點資訊",
                "type":"object",
                "value":{
-                  "isApprove":{
-                     "name":"是否核准",
-                     "type":"boolean",
-                     "value":true,
-                     "format":"n/a",
-                     "id":"isApprove"
-                  },
                   "memo":{
                      "name":"簽核意見",
                      "type":"string",
@@ -229,12 +222,19 @@ Here is a JSON representation of request.
                      "format":"n/a",
                      "id":"agent"
                   },
-                  "approved":{
+                  "approveYN":{
+                     "name":"是否核准",
+                     "type":"boolean",
+                     "value":true,
+                     "format":"n/a",
+                     "id":"approveYN"
+                  },
+                  "finishYN":{
                      "name":"是否完成簽核",
                      "type":"boolean",
                      "value":true,
                      "format":"n/a",
-                     "id":"approved"
+                     "id":"finishYN"
                   },
                   "approveDate":{
                      "name":"簽核日期",
@@ -258,13 +258,6 @@ Here is a JSON representation of request.
                "name":"簽核節點資訊",
                "type":"object",
                "value":{
-                  "isApprove":{
-                     "name":"是否核准",
-                     "type":"boolean",
-                     "value":false,
-                     "format":"n/a",
-                     "id":"isApprove"
-                  },
                   "memo":{
                      "name":"簽核意見",
                      "type":"string",
@@ -325,12 +318,19 @@ Here is a JSON representation of request.
                      "format":"n/a",
                      "id":"agent"
                   },
-                  "approved":{
+                  "approveYN":{
+                     "name":"是否核准",
+                     "type":"boolean",
+                     "value":false,
+                     "format":"n/a",
+                     "id":"approveYN"
+                  },
+                  "finishYN":{
                      "name":"是否完成簽核",
                      "type":"boolean",
                      "value":false,
                      "format":"n/a",
-                     "id":"approved"
+                     "id":"finishYN"
                   },
                   "approveDate":{
                      "name":"簽核日期",
