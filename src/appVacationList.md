@@ -70,7 +70,7 @@ Here is a JSON representation of request.
          "format":"n/a",
          "id":"main"
       },
-      "userInfo":{
+      "employee":{
          "name":"員工基本資料",
          "type":"object",
          "value":{
@@ -105,13 +105,13 @@ Here is a JSON representation of request.
             "empFullEname":{
                "name":"員工英文姓名",
                "type":"string",
-               "value":"EEadmin",
+               "value":"test_Ename",
                "format":"n/a",
                "id":"empFullEname"
             }
          },
          "format":"n/a",
-         "id":"userInfo"
+         "id":"employee"
       },
       "vacationList":{
          "name":"個人請假列表",
@@ -149,7 +149,7 @@ Here is a JSON representation of request.
                         "hcname":{
                            "name":"假別名稱",
                            "type":"string",
-                           "value":"例假",
+                           "value":"",
                            "format":"n/a",
                            "id":"hcname"
                         },
@@ -195,7 +195,7 @@ Here is a JSON representation of request.
                   "approved":{
                      "name":"已生效",
                      "type":"boolean",
-                     "value":false,
+                     "value":true,
                      "format":"n/a",
                      "id":"approved"
                   },
@@ -213,7 +213,7 @@ Here is a JSON representation of request.
                         "hcdname":{
                            "name":"子假別名稱",
                            "type":"string",
-                           "value":"例假",
+                           "value":"",
                            "format":"n/a",
                            "id":"hcdname"
                         }
@@ -223,7 +223,7 @@ Here is a JSON representation of request.
                   }
                },
                "format":"n/a",
-               "id":"vacationInfo"
+               "id":"vacation"
             },
             {
                "name":"請假資訊",
@@ -257,7 +257,7 @@ Here is a JSON representation of request.
                         "hcname":{
                            "name":"假別名稱",
                            "type":"string",
-                           "value":"例假",
+                           "value":"",
                            "format":"n/a",
                            "id":"hcname"
                         },
@@ -321,7 +321,7 @@ Here is a JSON representation of request.
                         "hcdname":{
                            "name":"子假別名稱",
                            "type":"string",
-                           "value":"例假",
+                           "value":"",
                            "format":"n/a",
                            "id":"hcdname"
                         }
@@ -331,7 +331,7 @@ Here is a JSON representation of request.
                   }
                },
                "format":"n/a",
-               "id":"vacationInfo"
+               "id":"vacation"
             }
          ],
          "format":"n/a",
