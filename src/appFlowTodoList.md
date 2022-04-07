@@ -50,7 +50,7 @@ Here is a JSON representation of request.
             "n/a":""
          }
       },
-      "HRFlowTodoList":{
+      "flowTodoList":{
          "name":"待簽核單據",
          "type":"array",
          "value":[
@@ -93,7 +93,7 @@ Here is a JSON representation of request.
             }
          ],
          "format":"n/a",
-         "id":"HRFlowTodoList"
+         "id":"flowTodoList"
       }
    }
 }
@@ -107,12 +107,12 @@ Here is a JSON representation of request.
         "查無資料"
     ],
     "data": {
-        "HRFlowTodoList": {
+        "flowTodoList": {
             "name": "待簽核單據",
             "type": "array",
             "value": [],
             "format": "n/a",
-            "id": "HRFlowTodoList"
+            "id": "flowTodoList"
         }
     }
 }
