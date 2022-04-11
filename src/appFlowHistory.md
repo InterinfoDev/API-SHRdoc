@@ -76,89 +76,6 @@ Here is a JSON representation of request.
                   "approveTime":{
                      "name":"簽核時間",
                      "type":"string",
-                     "value":"110400",
-                     "format":"HHmmss",
-                     "id":"approveTime"
-                  },
-                  "approver":{
-                     "name":"簽核人員",
-                     "type":"array",
-                     "value":[
-                        {
-                           "empFullName":{
-                              "name":"員工中文姓名",
-                              "type":"string",
-                              "value":"系O管",
-                              "format":"n/a",
-                              "id":"empFullName"
-                           },
-                           "empid":{
-                              "name":"員工編號",
-                              "type":"string",
-                              "value":"admin",
-                              "format":"n/a",
-                              "id":"empid"
-                           }
-                        }
-                     ],
-                     "format":"n/a",
-                     "id":"approver"
-                  },
-                  "agent":{
-                     "name":"代理人員",
-                     "type":"array",
-                     "value":[
-                        
-                     ],
-                     "format":"n/a",
-                     "id":"agent"
-                  },
-                  "approveYN":{
-                     "name":"是否核准",
-                     "type":"boolean",
-                     "value":true,
-                     "format":"n/a",
-                     "id":"approveYN"
-                  },
-                  "finishYN":{
-                     "name":"是否完成簽核",
-                     "type":"boolean",
-                     "value":true,
-                     "format":"n/a",
-                     "id":"finishYN"
-                  },
-                  "approveDate":{
-                     "name":"簽核日期",
-                     "type":"string",
-                     "value":"20210806",
-                     "format":"YYYYmmdd",
-                     "id":"approveDate"
-                  },
-                  "level":{
-                     "name":"流程關卡",
-                     "type":"string",
-                     "value":"待處理",
-                     "format":"n/a",
-                     "id":"level"
-                  }
-               },
-               "format":"n/a",
-               "id":"flowLevel"
-            },
-            {
-               "name":"簽核節點資訊",
-               "type":"object",
-               "value":{
-                  "memo":{
-                     "name":"簽核意見",
-                     "type":"string",
-                     "value":"",
-                     "format":"n/a",
-                     "id":"memo"
-                  },
-                  "approveTime":{
-                     "name":"簽核時間",
-                     "type":"string",
                      "value":"110401",
                      "format":"HHmmss",
                      "id":"approveTime"
@@ -204,9 +121,9 @@ Here is a JSON representation of request.
                      "id":"approveYN"
                   },
                   "finishYN":{
-                     "name":"是否完成簽核",
+                     "name":"是否歸檔",
                      "type":"boolean",
-                     "value":true,
+                     "value":false,
                      "format":"n/a",
                      "id":"finishYN"
                   },
@@ -220,7 +137,7 @@ Here is a JSON representation of request.
                   "level":{
                      "name":"流程關卡",
                      "type":"string",
-                     "value":"代理人",
+                     "value":"待處理",
                      "format":"n/a",
                      "id":"level"
                   }
@@ -287,7 +204,7 @@ Here is a JSON representation of request.
                      "id":"approveYN"
                   },
                   "finishYN":{
-                     "name":"是否完成簽核",
+                     "name":"是否歸檔",
                      "type":"boolean",
                      "value":false,
                      "format":"n/a",
