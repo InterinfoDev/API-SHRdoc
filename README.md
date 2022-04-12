@@ -85,8 +85,13 @@ POST
 | 個人資料維護欄位 | appPersonalColumnMaintenance | N | 取得維護欄位 | AndyHou | 20220124 |
 | 個人資料維護異動 | appPersonalDataMaintenance | N | 異動個人資料 | AndyHou | 20220124 |
 | 下載檔案 | appDownloadFile | N | 取得下載檔案 | AndyHou | 20220106 |
-| 請假單詳細資料 | appVacationDetail | N | 取得指定請假單詳細資料 | Kevin | 20220122 |
-| 請假單列表 | appVacationList | N | 取得請假列表資訊 | Kevin | 20220122 |
-| 請假單年月 | appVacationMonth | N | 取得員工指定某年月請假資訊 | Kevin | 20220122 |
+| 請假單詳細資料 | appVacationDetail | Y | 取得指定請假單詳細資料 | Kevin | 20220122 |
+| 請假單列表 | appVacationList | Y | 取得請假列表資訊 | Kevin | 20220122 |
+| 請假單年月 | appVacationMonth | Y | 取得員工指定某年月請假資訊 | Kevin | 20220122 |
 | 待簽核單據 | appFlowTodoList | Y | 取得員工待簽核單據列表 | Lucas | 20220215 |
 | 簽核詳細列表 | appFlowList | Y | 取得待簽核功能的詳細資料 | Lucas | 20220215 |
+| 流程簽核 | appSignFlow | Y | 簽核畫面按鈕程式 | Kevin | 0220321 |
+| 預定加班單詳細資料 | appOverplanDetail | Y | 取得指定預定加班單詳細資料 | Kevin | 20220412 |
+| 預定加班單列表 | appOverplanList | Y | 取得預定加班單列表資訊 | Kevin | 20220412 |
+| 預定加班單年月 | appOverplanMonth | Y | 取得員工指定某年月預定加班資訊 | Kevin | 20220412 |
+| 流程紀錄 | appFlowHistory | Y | 取得該筆單據流程紀錄 | Kevin | 20220412 |
