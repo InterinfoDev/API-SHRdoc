@@ -90,7 +90,8 @@ POST
 | 請假單年月 | appVacationMonth | Y | 取得員工指定某年月請假資訊 | Kevin | 20220122 |
 | 待簽核單據 | appFlowTodoList | Y | 取得員工待簽核單據列表 | Lucas | 20220215 |
 | 簽核詳細列表 | appFlowList | Y | 取得待簽核功能的詳細資料 | Lucas | 20220215 |
-| 流程簽核 | appSignFlow | Y | 簽核畫面按鈕程式 | Kevin | 0220321 |
+| 請假畫面資訊 | appVacationApply | Y | 取得請假畫面資訊 | Kevin | 20220221 |
+| 流程簽核 | appSignFlow | Y | 簽核畫面按鈕程式 | Kevin | 20220321 |
 | 預定加班單詳細資料 | appOverplanDetail | Y | 取得指定預定加班單詳細資料 | Kevin | 20220412 |
 | 預定加班單列表 | appOverplanList | Y | 取得預定加班單列表資訊 | Kevin | 20220412 |
 | 預定加班單年月 | appOverplanMonth | Y | 取得員工指定某年月預定加班資訊 | Kevin | 20220412 |
