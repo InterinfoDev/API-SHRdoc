@@ -88,7 +88,7 @@ Here is a JSON representation of request.
                "format":"YYYYmmdd",
                "id":"apprdate"
             },
-            "jobDeputyInfo":{
+            "jobDeputy":{
                "name":"職務代理人資訊",
                "type":"object",
                "value":{
@@ -108,7 +108,7 @@ Here is a JSON representation of request.
                   }
                },
                "format":"n/a",
-               "id":"jobDeputyInfo"
+               "id":"jobDeputy"
             },
             "amt":{
                "name":"總計",
