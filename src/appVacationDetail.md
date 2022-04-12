@@ -237,7 +237,7 @@ Here is a JSON representation of request.
                "format":"n/a",
                "id":"uploadFiles"
             },
-            "approveDeputyInfo":{
+            "approveDeputy":{
                "name":"簽核代理人資訊",
                "type":"array",
                "value":[
@@ -307,7 +307,7 @@ Here is a JSON representation of request.
                   }
                ],
                "format":"n/a",
-               "id":"approveDeputyInfo"
+               "id":"approveDeputy"
             },
             "etime":{
                "name":"結束時間",
@@ -323,7 +323,7 @@ Here is a JSON representation of request.
                "format":"YYYYmmdd",
                "id":"edate"
             },
-            "applicantInfo":{
+            "applicant":{
                "name":"申請人資訊",
                "type":"object",
                "value":{
@@ -343,7 +343,7 @@ Here is a JSON representation of request.
                   }
                },
                "format":"n/a",
-               "id":"applicantInfo"
+               "id":"applicant"
             },
             "note":{
                "name":"備註",
