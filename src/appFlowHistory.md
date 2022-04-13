@@ -73,15 +73,7 @@ Here is a JSON representation of request.
                      "format":"n/a",
                      "id":"level"
                   },
-                  "agent":{
-                     "name":"代理人員",
-                     "type":"array",
-                     "value":[
-                        
-                     ],
-                     "format":"n/a",
-                     "id":"agent"
-                  },
+                  --kevin 拿掉agent
                   "approver":{
                      "name":"簽核人員",
                      "type":"array",
@@ -141,15 +133,7 @@ Here is a JSON representation of request.
                      "format":"HHmmss",
                      "id":"approveTime"
                   },
-                  "assign":{
-                     "name":"指定簽核人員",
-                     "type":"array",
-                     "value":[
-                        
-                     ],
-                     "format":"n/a",
-                     "id":"assign"
-                  }
+                   --kevin 拿掉assign
                },
                "format":"n/a",
                "id":"flowLevel"
@@ -165,15 +149,7 @@ Here is a JSON representation of request.
                      "format":"n/a",
                      "id":"level"
                   },
-                  "agent":{
-                     "name":"代理人員",
-                     "type":"array",
-                     "value":[
-                        
-                     ],
-                     "format":"n/a",
-                     "id":"agent"
-                  },
+                  --kevin 拿掉agent
                   "approver":{
                      "name":"簽核人員",
                      "type":"array",
@@ -233,15 +209,7 @@ Here is a JSON representation of request.
                      "format":"HHmmss",
                      "id":"approveTime"
                   },
-                  "assign":{
-                     "name":"指定簽核人員",
-                     "type":"array",
-                     "value":[
-                        
-                     ],
-                     "format":"n/a",
-                     "id":"assign"
-                  }
+                  --kevin 拿掉assign
                },
                "format":"n/a",
                "id":"flowLevel"
@@ -257,15 +225,7 @@ Here is a JSON representation of request.
                      "format":"n/a",
                      "id":"level"
                   },
-                  "agent":{
-                     "name":"代理人員",
-                     "type":"array",
-                     "value":[
-                        
-                     ],
-                     "format":"n/a",
-                     "id":"agent"
-                  },
+                  --kevin 拿掉agent
                   "approver":{
                      "name":"簽核人員",
                      "type":"array",
@@ -325,15 +285,7 @@ Here is a JSON representation of request.
                      "format":"HHmmss",
                      "id":"approveTime"
                   },
-                  "assign":{
-                     "name":"指定簽核人員",
-                     "type":"array",
-                     "value":[
-                        
-                     ],
-                     "format":"n/a",
-                     "id":"assign"
-                  }
+                  --kevin 拿掉assign
                },
                "format":"n/a",
                "id":"flowLevel"
@@ -349,15 +301,7 @@ Here is a JSON representation of request.
                      "format":"n/a",
                      "id":"level"
                   },
-                  "agent":{
-                     "name":"代理人員",
-                     "type":"array",
-                     "value":[
-                        
-                     ],
-                     "format":"n/a",
-                     "id":"agent"
-                  },
+                  --kevin 拿掉agent
                   "approver":{
                      "name":"簽核人員",
                      "type":"array",
@@ -417,15 +361,7 @@ Here is a JSON representation of request.
                      "format":"HHmmss",
                      "id":"approveTime"
                   },
-                  "assign":{
-                     "name":"指定簽核人員",
-                     "type":"array",
-                     "value":[
-                        
-                     ],
-                     "format":"n/a",
-                     "id":"assign"
-                  }
+                  --kevin 拿掉assign
                },
                "format":"n/a",
                "id":"flowLevel"
@@ -441,15 +377,7 @@ Here is a JSON representation of request.
                      "format":"n/a",
                      "id":"level"
                   },
-                  "agent":{
-                     "name":"代理人員",
-                     "type":"array",
-                     "value":[
-                        
-                     ],
-                     "format":"n/a",
-                     "id":"agent"
-                  },
+                  --kevin 拿掉agent
                   "approver":{
                      "name":"簽核人員",
                      "type":"array",
@@ -509,15 +437,7 @@ Here is a JSON representation of request.
                      "format":"HHmmss",
                      "id":"approveTime"
                   },
-                  "assign":{
-                     "name":"指定簽核人員",
-                     "type":"array",
-                     "value":[
-                        
-                     ],
-                     "format":"n/a",
-                     "id":"assign"
-                  }
+                  --kevin 拿掉assign
                },
                "format":"n/a",
                "id":"flowLevel"
@@ -533,15 +453,7 @@ Here is a JSON representation of request.
                      "format":"n/a",
                      "id":"level"
                   },
-                  "agent":{
-                     "name":"代理人員",
-                     "type":"array",
-                     "value":[
-                        
-                     ],
-                     "format":"n/a",
-                     "id":"agent"
-                  },
+                  --kevin 拿掉agent
                   "approver":{
                      "name":"簽核人員",
                      "type":"array",
@@ -601,15 +513,7 @@ Here is a JSON representation of request.
                      "format":"HHmmss",
                      "id":"approveTime"
                   },
-                  "assign":{
-                     "name":"指定簽核人員",
-                     "type":"array",
-                     "value":[
-                        
-                     ],
-                     "format":"n/a",
-                     "id":"assign"
-                  }
+                  --kevin 拿掉assign
                },
                "format":"n/a",
                "id":"flowLevel"
