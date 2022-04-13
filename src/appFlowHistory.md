@@ -66,19 +66,21 @@ Here is a JSON representation of request.
                "name":"簽核節點資訊",
                "type":"object",
                "value":{
-                  "memo":{
-                     "name":"簽核意見",
+                  "level":{
+                     "name":"流程關卡",
                      "type":"string",
-                     "value":"",
+                     "value":"待處理",
                      "format":"n/a",
-                     "id":"memo"
+                     "id":"level"
                   },
-                  "approveTime":{
-                     "name":"簽核時間",
-                     "type":"string",
-                     "value":"110401",
-                     "format":"HHmmss",
-                     "id":"approveTime"
+                  "agent":{
+                     "name":"代理人員",
+                     "type":"array",
+                     "value":[
+                        
+                     ],
+                     "format":"n/a",
+                     "id":"agent"
                   },
                   "approver":{
                      "name":"簽核人員",
@@ -104,14 +106,19 @@ Here is a JSON representation of request.
                      "format":"n/a",
                      "id":"approver"
                   },
-                  "agent":{
-                     "name":"代理人員",
-                     "type":"array",
-                     "value":[
-                        
-                     ],
+                  "finishYN":{
+                     "name":"是否歸檔",
+                     "type":"boolean",
+                     "value":false,
                      "format":"n/a",
-                     "id":"agent"
+                     "id":"finishYN"
+                  },
+                  "memo":{
+                     "name":"簽核意見",
+                     "type":"string",
+                     "value":"",
+                     "format":"n/a",
+                     "id":"memo"
                   },
                   "approveYN":{
                      "name":"是否核准",
@@ -120,13 +127,6 @@ Here is a JSON representation of request.
                      "format":"n/a",
                      "id":"approveYN"
                   },
-                  "finishYN":{
-                     "name":"是否歸檔",
-                     "type":"boolean",
-                     "value":false,
-                     "format":"n/a",
-                     "id":"finishYN"
-                  },
                   "approveDate":{
                      "name":"簽核日期",
                      "type":"string",
@@ -134,12 +134,21 @@ Here is a JSON representation of request.
                      "format":"YYYYmmdd",
                      "id":"approveDate"
                   },
-                  "level":{
-                     "name":"流程關卡",
+                  "approveTime":{
+                     "name":"簽核時間",
                      "type":"string",
-                     "value":"待處理",
+                     "value":"110401",
+                     "format":"HHmmss",
+                     "id":"approveTime"
+                  },
+                  "assign":{
+                     "name":"指定簽核人員",
+                     "type":"array",
+                     "value":[
+                        
+                     ],
                      "format":"n/a",
-                     "id":"level"
+                     "id":"assign"
                   }
                },
                "format":"n/a",
@@ -149,43 +158,12 @@ Here is a JSON representation of request.
                "name":"簽核節點資訊",
                "type":"object",
                "value":{
-                  "memo":{
-                     "name":"簽核意見",
+                  "level":{
+                     "name":"流程關卡",
                      "type":"string",
-                     "value":"",
+                     "value":"代理人",
                      "format":"n/a",
-                     "id":"memo"
-                  },
-                  "approveTime":{
-                     "name":"簽核時間",
-                     "type":"string",
-                     "value":"",
-                     "format":"HHmmss",
-                     "id":"approveTime"
-                  },
-                  "approver":{
-                     "name":"簽核人員",
-                     "type":"array",
-                     "value":[
-                        {
-                           "empFullName":{
-                              "name":"員工中文姓名",
-                              "type":"string",
-                              "value":"岑O祐",
-                              "format":"n/a",
-                              "id":"empFullName"
-                           },
-                           "empid":{
-                              "name":"員工編號",
-                              "type":"string",
-                              "value":"1783",
-                              "format":"n/a",
-                              "id":"empid"
-                           }
-                        }
-                     ],
-                     "format":"n/a",
-                     "id":"approver"
+                     "id":"level"
                   },
                   "agent":{
                      "name":"代理人員",
@@ -196,12 +174,29 @@ Here is a JSON representation of request.
                      "format":"n/a",
                      "id":"agent"
                   },
-                  "approveYN":{
-                     "name":"是否核准",
-                     "type":"boolean",
-                     "value":false,
+                  "approver":{
+                     "name":"簽核人員",
+                     "type":"array",
+                     "value":[
+                        {
+                           "empFullName":{
+                              "name":"員工中文姓名",
+                              "type":"string",
+                              "value":"卓O伶",
+                              "format":"n/a",
+                              "id":"empFullName"
+                           },
+                           "empid":{
+                              "name":"員工編號",
+                              "type":"string",
+                              "value":"0310",
+                              "format":"n/a",
+                              "id":"empid"
+                           }
+                        }
+                     ],
                      "format":"n/a",
-                     "id":"approveYN"
+                     "id":"approver"
                   },
                   "finishYN":{
                      "name":"是否歸檔",
@@ -210,6 +205,388 @@ Here is a JSON representation of request.
                      "format":"n/a",
                      "id":"finishYN"
                   },
+                  "memo":{
+                     "name":"簽核意見",
+                     "type":"string",
+                     "value":"AAAAAA",
+                     "format":"n/a",
+                     "id":"memo"
+                  },
+                  "approveYN":{
+                     "name":"是否核准",
+                     "type":"boolean",
+                     "value":true,
+                     "format":"n/a",
+                     "id":"approveYN"
+                  },
+                  "approveDate":{
+                     "name":"簽核日期",
+                     "type":"string",
+                     "value":"20220412",
+                     "format":"YYYYmmdd",
+                     "id":"approveDate"
+                  },
+                  "approveTime":{
+                     "name":"簽核時間",
+                     "type":"string",
+                     "value":"181000",
+                     "format":"HHmmss",
+                     "id":"approveTime"
+                  },
+                  "assign":{
+                     "name":"指定簽核人員",
+                     "type":"array",
+                     "value":[
+                        
+                     ],
+                     "format":"n/a",
+                     "id":"assign"
+                  }
+               },
+               "format":"n/a",
+               "id":"flowLevel"
+            },
+            {
+               "name":"簽核節點資訊",
+               "type":"object",
+               "value":{
+                  "level":{
+                     "name":"流程關卡",
+                     "type":"string",
+                     "value":"簽核群組一",
+                     "format":"n/a",
+                     "id":"level"
+                  },
+                  "agent":{
+                     "name":"代理人員",
+                     "type":"array",
+                     "value":[
+                        
+                     ],
+                     "format":"n/a",
+                     "id":"agent"
+                  },
+                  "approver":{
+                     "name":"簽核人員",
+                     "type":"array",
+                     "value":[
+                        {
+                           "empFullName":{
+                              "name":"員工中文姓名",
+                              "type":"string",
+                              "value":"",
+                              "format":"n/a",
+                              "id":"empFullName"
+                           },
+                           "empid":{
+                              "name":"員工編號",
+                              "type":"string",
+                              "value":"--",
+                              "format":"n/a",
+                              "id":"empid"
+                           }
+                        }
+                     ],
+                     "format":"n/a",
+                     "id":"approver"
+                  },
+                  "finishYN":{
+                     "name":"是否歸檔",
+                     "type":"boolean",
+                     "value":false,
+                     "format":"n/a",
+                     "id":"finishYN"
+                  },
+                  "memo":{
+                     "name":"簽核意見",
+                     "type":"string",
+                     "value":"AUTO",
+                     "format":"n/a",
+                     "id":"memo"
+                  },
+                  "approveYN":{
+                     "name":"是否核准",
+                     "type":"boolean",
+                     "value":true,
+                     "format":"n/a",
+                     "id":"approveYN"
+                  },
+                  "approveDate":{
+                     "name":"簽核日期",
+                     "type":"string",
+                     "value":"20220412",
+                     "format":"YYYYmmdd",
+                     "id":"approveDate"
+                  },
+                  "approveTime":{
+                     "name":"簽核時間",
+                     "type":"string",
+                     "value":"181002",
+                     "format":"HHmmss",
+                     "id":"approveTime"
+                  },
+                  "assign":{
+                     "name":"指定簽核人員",
+                     "type":"array",
+                     "value":[
+                        
+                     ],
+                     "format":"n/a",
+                     "id":"assign"
+                  }
+               },
+               "format":"n/a",
+               "id":"flowLevel"
+            },
+            {
+               "name":"簽核節點資訊",
+               "type":"object",
+               "value":{
+                  "level":{
+                     "name":"流程關卡",
+                     "type":"string",
+                     "value":"簽核群組二",
+                     "format":"n/a",
+                     "id":"level"
+                  },
+                  "agent":{
+                     "name":"代理人員",
+                     "type":"array",
+                     "value":[
+                        
+                     ],
+                     "format":"n/a",
+                     "id":"agent"
+                  },
+                  "approver":{
+                     "name":"簽核人員",
+                     "type":"array",
+                     "value":[
+                        {
+                           "empFullName":{
+                              "name":"員工中文姓名",
+                              "type":"string",
+                              "value":"",
+                              "format":"n/a",
+                              "id":"empFullName"
+                           },
+                           "empid":{
+                              "name":"員工編號",
+                              "type":"string",
+                              "value":"--",
+                              "format":"n/a",
+                              "id":"empid"
+                           }
+                        }
+                     ],
+                     "format":"n/a",
+                     "id":"approver"
+                  },
+                  "finishYN":{
+                     "name":"是否歸檔",
+                     "type":"boolean",
+                     "value":false,
+                     "format":"n/a",
+                     "id":"finishYN"
+                  },
+                  "memo":{
+                     "name":"簽核意見",
+                     "type":"string",
+                     "value":"AUTO",
+                     "format":"n/a",
+                     "id":"memo"
+                  },
+                  "approveYN":{
+                     "name":"是否核准",
+                     "type":"boolean",
+                     "value":true,
+                     "format":"n/a",
+                     "id":"approveYN"
+                  },
+                  "approveDate":{
+                     "name":"簽核日期",
+                     "type":"string",
+                     "value":"20220412",
+                     "format":"YYYYmmdd",
+                     "id":"approveDate"
+                  },
+                  "approveTime":{
+                     "name":"簽核時間",
+                     "type":"string",
+                     "value":"181003",
+                     "format":"HHmmss",
+                     "id":"approveTime"
+                  },
+                  "assign":{
+                     "name":"指定簽核人員",
+                     "type":"array",
+                     "value":[
+                        
+                     ],
+                     "format":"n/a",
+                     "id":"assign"
+                  }
+               },
+               "format":"n/a",
+               "id":"flowLevel"
+            },
+            {
+               "name":"簽核節點資訊",
+               "type":"object",
+               "value":{
+                  "level":{
+                     "name":"流程關卡",
+                     "type":"string",
+                     "value":"簽核群組三",
+                     "format":"n/a",
+                     "id":"level"
+                  },
+                  "agent":{
+                     "name":"代理人員",
+                     "type":"array",
+                     "value":[
+                        
+                     ],
+                     "format":"n/a",
+                     "id":"agent"
+                  },
+                  "approver":{
+                     "name":"簽核人員",
+                     "type":"array",
+                     "value":[
+                        {
+                           "empFullName":{
+                              "name":"員工中文姓名",
+                              "type":"string",
+                              "value":"",
+                              "format":"n/a",
+                              "id":"empFullName"
+                           },
+                           "empid":{
+                              "name":"員工編號",
+                              "type":"string",
+                              "value":"--",
+                              "format":"n/a",
+                              "id":"empid"
+                           }
+                        }
+                     ],
+                     "format":"n/a",
+                     "id":"approver"
+                  },
+                  "finishYN":{
+                     "name":"是否歸檔",
+                     "type":"boolean",
+                     "value":false,
+                     "format":"n/a",
+                     "id":"finishYN"
+                  },
+                  "memo":{
+                     "name":"簽核意見",
+                     "type":"string",
+                     "value":"AUTO",
+                     "format":"n/a",
+                     "id":"memo"
+                  },
+                  "approveYN":{
+                     "name":"是否核准",
+                     "type":"boolean",
+                     "value":true,
+                     "format":"n/a",
+                     "id":"approveYN"
+                  },
+                  "approveDate":{
+                     "name":"簽核日期",
+                     "type":"string",
+                     "value":"20220412",
+                     "format":"YYYYmmdd",
+                     "id":"approveDate"
+                  },
+                  "approveTime":{
+                     "name":"簽核時間",
+                     "type":"string",
+                     "value":"181004",
+                     "format":"HHmmss",
+                     "id":"approveTime"
+                  },
+                  "assign":{
+                     "name":"指定簽核人員",
+                     "type":"array",
+                     "value":[
+                        
+                     ],
+                     "format":"n/a",
+                     "id":"assign"
+                  }
+               },
+               "format":"n/a",
+               "id":"flowLevel"
+            },
+            {
+               "name":"簽核節點資訊",
+               "type":"object",
+               "value":{
+                  "level":{
+                     "name":"流程關卡",
+                     "type":"string",
+                     "value":"主管簽核",
+                     "format":"n/a",
+                     "id":"level"
+                  },
+                  "agent":{
+                     "name":"代理人員",
+                     "type":"array",
+                     "value":[
+                        
+                     ],
+                     "format":"n/a",
+                     "id":"agent"
+                  },
+                  "approver":{
+                     "name":"簽核人員",
+                     "type":"array",
+                     "value":[
+                        {
+                           "empFullName":{
+                              "name":"員工中文姓名",
+                              "type":"string",
+                              "value":"系O管",
+                              "format":"n/a",
+                              "id":"empFullName"
+                           },
+                           "empid":{
+                              "name":"員工編號",
+                              "type":"string",
+                              "value":"admin",
+                              "format":"n/a",
+                              "id":"empid"
+                           }
+                        }
+                     ],
+                     "format":"n/a",
+                     "id":"approver"
+                  },
+                  "finishYN":{
+                     "name":"是否歸檔",
+                     "type":"boolean",
+                     "value":false,
+                     "format":"n/a",
+                     "id":"finishYN"
+                  },
+                  "memo":{
+                     "name":"簽核意見",
+                     "type":"string",
+                     "value":"",
+                     "format":"n/a",
+                     "id":"memo"
+                  },
+                  "approveYN":{
+                     "name":"是否核准",
+                     "type":"boolean",
+                     "value":false,
+                     "format":"n/a",
+                     "id":"approveYN"
+                  },
                   "approveDate":{
                      "name":"簽核日期",
                      "type":"string",
@@ -217,12 +594,21 @@ Here is a JSON representation of request.
                      "format":"YYYYmmdd",
                      "id":"approveDate"
                   },
-                  "level":{
-                     "name":"流程關卡",
+                  "approveTime":{
+                     "name":"簽核時間",
                      "type":"string",
-                     "value":"代理人",
+                     "value":"",
+                     "format":"HHmmss",
+                     "id":"approveTime"
+                  },
+                  "assign":{
+                     "name":"指定簽核人員",
+                     "type":"array",
+                     "value":[
+                        
+                     ],
                      "format":"n/a",
-                     "id":"level"
+                     "id":"assign"
                   }
                },
                "format":"n/a",
