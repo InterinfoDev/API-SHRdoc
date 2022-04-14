@@ -1,4 +1,4 @@
-# appVacationApply
+# appOverplanApply
 新增預定加班單畫面所需要的資訊
 
 ### HTTP Request
@@ -46,99 +46,99 @@ Here is a JSON representation of request.
 ### HTTP Response when Successful
 ```json
 {
-    "status": "success",
-    "message": [
-        "回傳成功"
-    ],
-    "data": {
-        "properties": {
-            "format": {
-                "hour": "小時",
-                "n/a": ""
-            }
-        },
-        "overtime": {
-            "name": "當月加班資訊",
-            "type": "object",
-            "value": {
-                "overAmt": {
-                    "name": "加班總時數",
-                    "type": "object",
-                    "value": {
-                        "describe": {
-                            "name": "描述標題",
-                            "type": "string",
-                            "value": "當月已申請加班總時數",
-                            "format": "n/a",
-                            "id": "describe"
-                        },
-                        "value": {
-                            "name": "總時數",
-                            "type": "decimal",
-                            "value": 0.0,
-                            "format": "hour",
-                            "id": "value"
-                        }
-                    },
-                    "format": "n/a",
-                    "id": "overAmt"
-                },
-                "overRestHour": {
-                    "name": "加班補休時數",
-                    "type": "object",
-                    "value": {
-                        "describe": {
-                            "name": "描述標題",
-                            "type": "string",
-                            "value": "當月已申請加班補休時數",
-                            "format": "n/a",
-                            "id": "describe"
-                        },
-                        "value": {
-                            "name": "補休時數",
-                            "type": "decimal",
-                            "value": 0.0,
-                            "format": "hour",
-                            "id": "value"
-                        }
-                    },
-                    "format": "n/a",
-                    "id": "overRestHour"
-                },
-                "overPayHour": {
-                    "name": "加班給薪時數",
-                    "type": "object",
-                    "value": {
-                        "describe": {
-                            "name": "描述標題",
-                            "type": "string",
-                            "value": "當月已申請加班給薪時數",
-                            "format": "n/a",
-                            "id": "describe"
-                        },
-                        "value": {
-                            "name": "給薪時數",
-                            "type": "decimal",
-                            "value": 0.0,
-                            "format": "hour",
-                            "id": "value"
-                        }
-                    },
-                    "format": "n/a",
-                    "id": "overPayHour"
-                }
+   "status":"success",
+   "message":[
+      "回傳成功"
+   ],
+   "data":{
+      "properties":{
+         "format":{
+            "hour":"小時",
+            "n/a":""
+         }
+      },
+      "overtime":{
+         "name":"當月加班資訊",
+         "type":"array",
+         "value":[
+            {
+               "name":"加班總時數",
+               "type":"object",
+               "value":{
+                  "describe":{
+                     "name":"描述標題",
+                     "type":"string",
+                     "value":"當月已申請加班總時數",
+                     "format":"n/a",
+                     "id":"describe"
+                  },
+                  "value":{
+                     "name":"總時數",
+                     "type":"decimal",
+                     "value":0.0,
+                     "format":"hour",
+                     "id":"value"
+                  }
+               },
+               "format":"n/a",
+               "id":"overAmt"
             },
-            "format": "n/a",
-            "id": "overtime"
-        },
-        "note": {
-            "name": "備註",
-            "type": "object",
-            "value": "備註：預定加班單申請完30天內須申請實際加班單，若逾期，則視同放棄。",
-            "format": "n/a",
-            "id": "note"
-        }
-    }
+            {
+               "name":"加班給薪時數",
+               "type":"object",
+               "value":{
+                  "describe":{
+                     "name":"描述標題",
+                     "type":"string",
+                     "value":"當月已申請加班給薪時數",
+                     "format":"n/a",
+                     "id":"describe"
+                  },
+                  "value":{
+                     "name":"給薪時數",
+                     "type":"decimal",
+                     "value":0.0,
+                     "format":"hour",
+                     "id":"value"
+                  }
+               },
+               "format":"n/a",
+               "id":"overPayHour"
+            },
+            {
+               "name":"加班補休時數",
+               "type":"object",
+               "value":{
+                  "describe":{
+                     "name":"描述標題",
+                     "type":"string",
+                     "value":"當月已申請加班補休時數",
+                     "format":"n/a",
+                     "id":"describe"
+                  },
+                  "value":{
+                     "name":"補休時數",
+                     "type":"decimal",
+                     "value":0.0,
+                     "format":"hour",
+                     "id":"value"
+                  }
+               },
+               "format":"n/a",
+               "id":"overRestHour"
+            }
+         ],
+         "format":"n/a",
+         "id":"overtime"
+      },
+      "note":{
+         "name":"備註",
+         "type":"object",
+         "value":"備註：預定加班單申請完30天內須申請實際加班單，若逾期，則視同放棄。",
+         "format":"n/a",
+         "id":"note"
+      }
+   }
 }
 ```
 
