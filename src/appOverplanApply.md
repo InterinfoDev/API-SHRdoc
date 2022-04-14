@@ -65,6 +65,13 @@ Here is a JSON representation of request.
                "name":"加班總時數",
                "type":"object",
                "value":{
+                  "note":{--kevin 新增備註
+                     "name":"備註",
+                     "type":"string",
+                     "value":"",
+                     "format":"n/a",
+                     "id":"note"
+                  },
                   "describe":{
                      "name":"描述標題",
                      "type":"string",
@@ -87,6 +94,13 @@ Here is a JSON representation of request.
                "name":"加班給薪時數",
                "type":"object",
                "value":{
+                  "note":{--kevin 新增備註
+                     "name":"備註",
+                     "type":"string",
+                     "value":"",
+                     "format":"n/a",
+                     "id":"note"
+                  },
                   "describe":{
                      "name":"描述標題",
                      "type":"string",
@@ -109,6 +123,13 @@ Here is a JSON representation of request.
                "name":"加班補休時數",
                "type":"object",
                "value":{
+                  "note":{--kevin 新增備註
+                     "name":"備註",
+                     "type":"string",
+                     "value":"",
+                     "format":"n/a",
+                     "id":"note"
+                  },
                   "describe":{
                      "name":"描述標題",
                      "type":"string",
