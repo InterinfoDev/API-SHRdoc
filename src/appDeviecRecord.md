@@ -1,9 +1,9 @@
-# appExecPushSetting
-通知設定
+# appDeviceRecord
+紀錄裝置識別碼
 
 ### HTTP Request
 ```
-https://114.34.125.246:8090/servlet/HRNative/appExecPushSetting
+https://114.34.125.246:8090/servlet/HRNative/appDeviceRecord
 ```
 
 ### HTTP Request Mehod
@@ -16,7 +16,7 @@ POST
 |:----------|:-------------|:-----|:------------|
 | uid | 98599308101484732326 | String | 需透過appLogin取得
 | right | 51341911904173543336756162544864820 | String | 需透過appLogin取得 |
-| request | {'notifyFlag':true} | Object | 異動條件
+| request | {token:085A1C92-5A50-47AD-8853-CE3330F28D74,deviceId:TEST_DEVICE_ID,deviceName:xxx的iphone,deviceType:ios,series:iPhone13,version:15.4} | Object | 異動條件
 
 ### JSON representation
 Here is a JSON representation of request.
@@ -25,7 +25,12 @@ Here is a JSON representation of request.
    "uid":"98599308101484732326",
    "right":"51341911904173543336756162544864820",
    "request":{
-      "notifyFlag":"true"
+      "token":"085A1C92-5A50-47AD-8853-CE3330F28D74",
+      "deviceId":"TEST_DEVICE_ID",
+      "deviceName":"XXX的iphone",
+      "deviceType":"ios",
+      "series":"iPhone13",
+      "version":"15.4"
    }
 }
 ```
@@ -40,15 +45,19 @@ Here is a JSON representation of request.
 ### Request Properties
 | Key | Value | Type | Description | Required | Format | Note |
 |:----------|:-------------|:-----|:------------|:------------|:------------|:------------|
-| notifyFlag | true | boolean | 通知設定 | true | n/a |  |
-
+| token | 085A1C92-5A50-47AD-8853-CE3330F28D74 | 識別碼| 修改欄位 | Y | n/a | |
+| deviceId | TEST_DEVICE_ID | 裝置識別碼 | 欄位代號 | Y | n/a |  |
+| deviceName | xxx的iphone | String | 裝置名稱 | N | n/a |  |
+| deviceType | iOS | String | 裝置類別 | N | n/a |  |
+| series | iPhone13 | String | 裝置系列 | N | n/a |  |
+| version | 15.4 | String | 裝置版本號 | N | n/a |  |
 
 ### HTTP Response when Successful
 ```json
 {
    "status":"success",
    "message":[
-      "異動成功"
+      "回傳成功"
    ],
    "data":{
       "properties":{
@@ -56,8 +65,8 @@ Here is a JSON representation of request.
             "n/a":""
          }
       },
-      "setting":{
-         "name":"設定異動",
+      "deviceRecord":{
+         "name":"識別碼裝置異動",
          "type":"object",
          "value":{
             "executeMessage":{
@@ -76,7 +85,7 @@ Here is a JSON representation of request.
             }
          },
          "format":"n/a",
-         "id":"setting"
+         "id":"deviceRecord"
       }
    }
 }
