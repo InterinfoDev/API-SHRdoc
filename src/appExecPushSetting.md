@@ -1,0 +1,107 @@
+# appExecPushSetting
+通知設定
+
+### HTTP Request
+```
+https://114.34.125.246:8090/servlet/HRNative/appExecPushSetting
+```
+
+### HTTP Request Mehod
+```
+POST
+```
+
+### Request body
+| Key | Value | Type | Description |
+|:----------|:-------------|:-----|:------------|
+| uid | 98599308101484732326 | String | 需透過appLogin取得
+| right | 51341911904173543336756162544864820 | String | 需透過appLogin取得 |
+| request | {'notifyFlag':true} | Object | 異動條件
+
+### JSON representation
+Here is a JSON representation of request.
+```json
+{
+   "uid":"98599308101484732326",
+   "right":"51341911904173543336756162544864820",
+   "request":{
+      "notifyFlag":"true"
+   }
+}
+```
+
+### Properties
+| Property | Type | Description |
+|:---------|:-----|:------------|
+| uid   | String | 加密後帳號 |
+| right | String | 加密後系統相關資料 |
+| request | Object | 要求本文 |
+
+### Request Properties
+| Key | Value | Type | Description | Required | Format | Note |
+|:----------|:-------------|:-----|:------------|:------------|:------------|:------------|
+| notifyFlag | true | boolean | 通知設定 | true | n/a |  |
+
+
+### HTTP Response when Successful
+```json
+{
+   "status":"success",
+   "message":[
+      "異動成功"
+   ],
+   "data":{
+      "properties":{
+         "format":{
+            "n/a":""
+         }
+      },
+      "setting":{
+         "name":"設定異動",
+         "type":"object",
+         "value":{
+            "executeMessage":{
+               "name":"異動訊息",
+               "type":"string",
+               "value":"異動成功",
+               "format":"n/a",
+               "id":"executeMessage"
+            },
+            "executeResult":{
+               "name":"異動結果",
+               "type":"boolean",
+               "value":true,
+               "format":"n/a",
+               "id":"executeResult"
+            }
+         },
+         "format":"n/a",
+         "id":"setting"
+      }
+   }
+}
+```
+
+### HTTP Response when Failed
+```json
+{
+    "status": "fail",
+    "code": 500,
+    "message": [
+        "XXX"
+    ],
+    "data": {}
+}
+```
+
+### HTTP Response when Exception
+```json
+{
+    "status": "fail",
+    "code": 406,
+    "message": [
+        "XXX"
+    ],
+    "data": {}
+}
+```
