@@ -28,11 +28,6 @@ json
 | right | String | 加密後系統相關資料 |
 | request | Object | 要求本文 |
 
-### Request Properties
-| Key | Value | Type | Description | Required | Format | Note |
-|:----------|:-------------|:-----|:------------|:------------|:------------|:------------|
-
-
 ### HTTP Response when Successful
 json
 {
