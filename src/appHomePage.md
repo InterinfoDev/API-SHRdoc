@@ -250,6 +250,62 @@ Here is a JSON representation of request.
          "type":"array",
          "format":"n/a"
       },
+      "flowList":{
+               "name":"未結案清單",
+               "type":"array",
+               "value":[
+                  {
+                     "name":"簽核資訊",
+                     "type":"object",
+                     "value":{
+                        "flowCount":{
+                           "name":"未結案數量",
+                           "type":"integer",
+                           "value":6,
+                           "format":"count",
+                           "id":"flowCount"
+                        },
+                        "flowName":{
+                           "name":"功能名稱",
+                           "type":"string",
+                           "value":"CB2.1.請假單簽核",
+                           "format":"n/a",
+                           "id":"flowName"
+                        }
+                     },
+                     "format":"n/a",
+                     "id":"flowList"
+                  },
+                  {
+                     "name":"簽核資訊",
+                     "type":"object",
+                     "value":{
+                        "flowCount":{
+                           "name":"未結案數量",
+                           "type":"integer",
+                           "value":6,
+                           "format":"count",
+                           "id":"flowCount"
+                        },
+                        "flowName":{
+                           "name":"功能名稱",
+                           "type":"string",
+                           "value":"CB3.2.加班單簽核",
+                           "format":"n/a",
+                           "id":"flowName"
+                        }
+                     },
+                     "format":"n/a",
+                     "id":"flowList"
+                  }
+               ],
+               "format":"n/a",
+               "id":"flow"
+            }
+         },
+         "format":"n/a",
+         "id":"flow"
+      },
       "properties":{
          "format":{ --lucas 拿掉YYYYmm
             "YYYYmmdd":"西元年月日",
