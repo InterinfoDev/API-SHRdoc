@@ -39,7 +39,7 @@ Here is a JSON representation of request.
 | right | String | 加密後系統相關資料 |
 | specialDate | 20220425 | String | 特殊日期 | N | AC(YYYYmmdd) |
 | empid | admin | String | 員工編號 | Y | n/a |
-| vacationCode | admin | String | 價別代碼 | Y | n/a |
+| vacationCode | 06.061 | String | 價別代碼 | Y | n/a |
 
 ### fieldType
 | Type | Description |
