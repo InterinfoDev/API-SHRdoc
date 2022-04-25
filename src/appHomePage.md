@@ -271,6 +271,13 @@ Here is a JSON representation of request.
                   "value":"CB2.1.請假單簽核",
                   "format":"n/a",
                   "id":"flowName"
+               },
+	       "flowKey": {
+                 "name": "功能代號",
+                 "type": "string",
+                 "value": "1947251011399614749069666923187937442048",
+                 "format": "n/a",
+                 "id": "flowKey"
                }
             },
             "format":"n/a",
@@ -293,6 +300,13 @@ Here is a JSON representation of request.
                   "value":"CB3.2.加班單簽核",
                   "format":"n/a",
                   "id":"flowName"
+               },
+	       "flowKey": {
+                 "name": "功能代號",
+                 "type": "string",
+                 "value": "194725101139961474906966692123048",
+                 "format": "n/a",
+                 "id": "flowKey"
                }
             },
             "format":"n/a",
