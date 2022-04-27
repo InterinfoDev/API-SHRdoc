@@ -1,5 +1,5 @@
 # appNotificationDetail
-取得通知詳細資料
+取得推播詳細資料
 
 ### HTTP Request
 ```
@@ -71,7 +71,7 @@ Here is a JSON representation of request.
                "id":"read"
             },
             "notificationKey":{
-               "name":"通知編號",
+               "name":"推播編號",
                "type":"string",
                "value":"83568E9F-56B7-41C7-956C-395ACE99FAC1",
                "format":"n/a",
