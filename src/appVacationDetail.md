@@ -122,7 +122,7 @@ Here is a JSON representation of request.
                "type":"decimal",
                "value":8.0,
                "format":"hour",
-               "id":"total"
+               "id":"total"             --kevin 改名total
             },
             "vacationStartTime":{        --kevin 改名vacationStartTime
                "name":"起始時間",
@@ -423,12 +423,12 @@ Here is a JSON representation of request.
                "format":"n/a",
                "id":"employee"
             },
-            "delayReason":{ --kevin 改名delayReason
+            "delayReason":{             --kevin 改名delayReason
                "name":"逾期請假原因",
                "type":"string",
                "value":"20220125KevinTestTestLateLate",
                "format":"n/a",
-               "id":"delayReason"   --kevin 改名delayReason
+               "id":"delayReason"       --kevin 改名delayReason
             },
             "spectialDate":{
                "name":"特殊日期",
