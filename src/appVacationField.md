@@ -232,42 +232,6 @@ Here is a JSON representation of request.
                "format":"n/a",
                "id":"jobAgent"
             },
-            "holidayYN":{
-               "name":"是否包含假日",
-               "type":"object",
-               "value":{
-                  "editable":{
-                     "name":"開放編輯",
-                     "type":"boolean",
-                     "value":false,
-                     "format":"n/a",
-                     "id":"editable"
-                  },
-                  "option":{
-                     "name":"選項",
-                     "type":"string",
-                     "value":"",
-                     "format":"n/a",
-                     "id":"option"
-                  },
-                  "note":{
-                     "name":"欄位備註",
-                     "type":"string",
-                     "value":"",
-                     "format":"n/a",
-                     "id":"note"
-                  },
-                  "value":{
-                     "name":"欄位值",
-                     "type":"boolean",
-                     "value":true,
-                     "format":"n/a",
-                     "id":"value"
-                  }
-               },
-               "format":"n/a",
-               "id":"holidayYN"
-            },
             "vacationStartTime":{
                "name":"起始時間",
                "type":"object",
@@ -443,6 +407,35 @@ Here is a JSON representation of request.
                },
                "format":"n/a",
                "id":"fourthFile"
+            },
+            "isHoliday":{
+               "name":"是否包含假日",
+               "type":"object",
+               "value":{
+                  "editable":{
+                     "name":"開放編輯",
+                     "type":"boolean",
+                     "value":false,
+                     "format":"n/a",
+                     "id":"editable"
+                  },
+                  "option":{
+                     "name":"選項",
+                     "type":"string",
+                     "value":"",
+                     "format":"n/a",
+                     "id":"option"
+                  },
+                  "value":{
+                     "name":"欄位值",
+                     "type":"boolean",
+                     "value":true,
+                     "format":"n/a",
+                     "id":"value"
+                  }
+               },
+               "format":"n/a",
+               "id":"isHoliday"
             },
             "planeTicket":{
                "name":"機票",
