@@ -81,14 +81,21 @@ Here is a JSON representation of request.
          "name":"假單詳細資訊",
          "type":"object",
          "value":{
-            "apprdate":{
+            "validDate":{           --kevin 改名validDate
                "name":"生效日期",
                "type":"string",
                "value":"20220117",
                "format":"YYYYmmdd",
-               "id":"apprdate"
+               "id":"validDate"     --kevin 改名validDate
             },
-            "jobDeputy":{
+            "isHoliday":{           --kevin 新增欄位isHoliday
+               "name":"是否包含假日",
+               "type":"boolean",
+               "value":false,
+               "format":"n/a",
+               "id":"isHoliday"
+            },
+            "jobAgent":{               --kevin 改名jobAgent
                "name":"職務代理人資訊",
                "type":"object",
                "value":{
@@ -108,43 +115,43 @@ Here is a JSON representation of request.
                   }
                },
                "format":"n/a",
-               "id":"jobDeputy"
+               "id":"jobAgent"          --kevin 改名jobAgent
             },
-            "amt":{
+            "total":{                   --kevin 改名total
                "name":"總計",
                "type":"decimal",
                "value":8.0,
                "format":"hour",
-               "id":"amt"
+               "id":"total"
             },
-            "stime":{
+            "vacationStartTime":{        --kevin 改名vacationStartTime
                "name":"起始時間",
                "type":"string",
                "value":"0800",
                "format":"HHmm",
-               "id":"stime"
+               "id":"vacationStartTime"  --kevin 改名vacationStartTime
             },
-            "hkind":{
+            "vacation":{                --kevin 改名vacation
                "name":"假別資訊",
                "type":"object",
                "value":{
-                  "hcname":{
+                  "vacationName":{          --kevin 改名vacationName
                      "name":"假別名稱",
                      "type":"string",
                      "value":"休息",
                      "format":"n/a",
-                     "id":"hcname"
+                     "id":"vacationName"    --kevin 改名vacationName
                   },
-                  "hcode":{
+                  "vacationCode":{          --kevin 改名vacationCode
                      "name":"假別代碼",
                      "type":"string",
                      "value":"000",
                      "format":"n/a",
-                     "id":"hcode"
+                     "id":"vacationCode"    --kevin 改名vacationCode
                   }
                },
                "format":"n/a",
-               "id":"hkind"
+               "id":"vacation"               --kevin 改名vacation
             },
             "pno":{
                "name":"單據編號",
@@ -153,12 +160,12 @@ Here is a JSON representation of request.
                "format":"n/a",
                "id":"pno"
             },
-            "sdate":{
+            "vacationStartDate":{           --kevin 改名vacationStartDate
                "name":"起始日期",
                "type":"string",
                "value":"20220117",
                "format":"YYYYmmdd",
-               "id":"sdate"
+               "id":"vacationStartDate"     --kevin 改名vacationStartDate
             },
             "uploadFiles":{
                "name":"附件資訊",
@@ -237,7 +244,14 @@ Here is a JSON representation of request.
                "format":"n/a",
                "id":"uploadFiles"
             },
-            "approveDeputy":{
+            "planeTicket":{         --kevin新增欄位planeTicket
+               "name":"機票",
+               "type":"integer",
+               "value":0,
+               "format":"ticket",
+               "id":"planeTicket"   
+            },
+            "flowAgent":{           --kevin改名flowAgent
                "name":"簽核代理人資訊",
                "type":"array",
                "value":[
@@ -307,21 +321,21 @@ Here is a JSON representation of request.
                   }
                ],
                "format":"n/a",
-               "id":"approveDeputy"
+               "id":"flowAgent"         --kevin 改名flowAgent
             },
-            "etime":{
+             "vacationEndTime":{         --kevin 改名vacationEndTime
                "name":"結束時間",
                "type":"string",
                "value":"1700",
                "format":"HHmm",
-               "id":"etime"
+               "id":"vacationEndTime"    --kevin 改名vacationEndTime
             },
-            "edate":{
+            "vacationEndDate":{          --kevin 改名vacationEndDate
                "name":"結束日期",
                "type":"string",
                "value":"20220117",
                "format":"YYYYmmdd",
-               "id":"edate"
+               "id":"vacationEndDate"     --kevin 改名vacationEndDate
             },
             "applicant":{
                "name":"申請人資訊",
@@ -345,12 +359,12 @@ Here is a JSON representation of request.
                "format":"n/a",
                "id":"applicant"
             },
-            "note":{
-               "name":"備註",
+            "reason":{                          --kevin 改名reason
+               "name":"請假原因",                --kevin 改名請假原因
                "type":"string",
                "value":"20220125KevinTestTest",
                "format":"n/a",
-               "id":"note"
+               "id":"reason"                    --kevin 改名reason
             },
             "employee":{
                "name":"人事基本資料",
@@ -409,12 +423,12 @@ Here is a JSON representation of request.
                "format":"n/a",
                "id":"employee"
             },
-            "delayNote":{
+            "delayReason":{ --kevin 改名delayReason
                "name":"逾期請假原因",
                "type":"string",
                "value":"20220125KevinTestTestLateLate",
                "format":"n/a",
-               "id":"delayNote"
+               "id":"delayReason"   --kevin 改名delayReason
             },
             "spectialDate":{
                "name":"特殊日期",
@@ -423,27 +437,27 @@ Here is a JSON representation of request.
                "format":"YYYYmmdd",
                "id":"spectialDate"
             },
-            "hkindd":{
+            "subVacation":{                 --kevin 改名subVacation
                "name":"子假別資訊",
                "type":"object",
                "value":{
-                  "hcoded":{
+                  "subVacationCode":{       --kevin 改名subVacationCode
                      "name":"子假別代碼",
                      "type":"string",
                      "value":"",
                      "format":"n/a",
-                     "id":"hcoded"
+                     "id":"subVacationCode" --kevin 改名subVacationCode
                   },
-                  "hcdname":{
+                  "subVacationName":{       --kevin 改名subVacationName
                      "name":"子假別名稱",
                      "type":"string",
                      "value":"",
                      "format":"n/a",
-                     "id":"hcdname"
+                     "id":"subVacationName" --kevin 改名subVacationName
                   }
                },
                "format":"n/a",
-               "id":"hkindd"
+               "id":"subVacation"           --kevin 改名subVacation
             }
          },
          "format":"n/a",
