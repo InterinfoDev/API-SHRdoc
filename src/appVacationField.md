@@ -18,7 +18,7 @@ POST
 | right | 51341911904173543336756162544864820 | String | 需透過appLogin取得 |
 | request | {specialDate:XXX, empid:admin, vacationCode:XXX} | Object | 查詢條件(依據申請畫面取得)
 
-### JSON representation Case 1
+### JSON representation
 Here is a JSON representation of request.
 ```json
 {
@@ -32,11 +32,17 @@ Here is a JSON representation of request.
 }
 ```
 
+
 ### Properties
 | Property | Type | Description |
 |:---------|:-----|:------------|
 | uid   | String | 加密後帳號 |
 | right | String | 加密後系統相關資料 |
+| request | Object | 要求本文 |
+
+### Request Properties
+| Key | Value | Type | Description | Required | Format |
+|:----------|:-------------|:-----|:------------|:------------|:------------|
 | specialDate | 20220425 | String | 特殊日期 | N | AC(YYYYmmdd) |
 | empid | admin | String | 員工編號 | Y | n/a |
 | vacationCode | 06.061 | String | 假別代碼 | Y | n/a |
