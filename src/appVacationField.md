@@ -390,13 +390,6 @@ Here is a JSON representation of request.
                      "format":"n/a",
                      "id":"option"
                   },
-                  "note":{
-                     "name":"欄位備註",
-                     "type":"string",
-                     "value":"",
-                     "format":"n/a",
-                     "id":"note"
-                  },
                   "value":{
                      "name":"欄位值",
                      "type":"string",
@@ -546,13 +539,6 @@ Here is a JSON representation of request.
                      "format":"n/a",
                      "id":"option"
                   },
-                  "note":{
-                     "name":"欄位備註",
-                     "type":"string",
-                     "value":"",
-                     "format":"n/a",
-                     "id":"note"
-                  },
                   "value":{
                      "name":"欄位值",
                      "type":"string",
@@ -674,13 +660,6 @@ Here is a JSON representation of request.
                      "value":"",
                      "format":"n/a",
                      "id":"option"
-                  },
-                  "note":{
-                     "name":"欄位備註",
-                     "type":"string",
-                     "value":"",
-                     "format":"n/a",
-                     "id":"note"
                   },
                   "value":{
                      "name":"欄位值",
@@ -887,13 +866,6 @@ Here is a JSON representation of request.
                      "format":"n/a",
                      "id":"option"
                   },
-                  "note":{
-                     "name":"欄位備註",
-                     "type":"string",
-                     "value":"",
-                     "format":"n/a",
-                     "id":"note"
-                  },
                   "value":{
                      "name":"欄位值",
                      "type":"string",
@@ -922,13 +894,6 @@ Here is a JSON representation of request.
                      "value":"",
                      "format":"n/a",
                      "id":"option"
-                  },
-                  "note":{
-                     "name":"欄位備註",
-                     "type":"string",
-                     "value":"",
-                     "format":"n/a",
-                     "id":"note"
                   },
                   "value":{
                      "name":"欄位值",
