@@ -59,6 +59,13 @@ Here is a JSON representation of request.
       "回傳成功"
    ],
    "data":{
+      "vacationNote":{
+         "name":"請假單備註",
+         "type":"string",
+         "value":"產假：生產日期，可休截止日2022/04/25",
+         "format":"n/a",
+         "id":"vacationNote"
+      },
       "employee":{
          "name":"申請者基本資料",
          "type":"object",
@@ -80,7 +87,7 @@ Here is a JSON representation of request.
             "vacationName":{
                "name":"假別名稱",
                "type":"string",
-               "value":"喪假",
+               "value":"產假",
                "format":"n/a",
                "id":"vacationName"
             },
@@ -94,7 +101,7 @@ Here is a JSON representation of request.
             "vacationCode":{
                "name":"假別代碼",
                "type":"string",
-               "value":"06.061",
+               "value":"08-TW.01",
                "format":"n/a",
                "id":"vacationCode"
             },
@@ -140,99 +147,141 @@ Here is a JSON representation of request.
       },
       "vacationField":{
          "name":"請假單欄位資訊",
-         "type":"array",
-         "value":[
-            {
-               "name":"前置假",
+         "type":"object",
+         "value":{
+            "jobAgent":{
+               "name":"職務代理人",
                "type":"object",
                "value":{
-                  "fieldType":{
-                     "name":"欄位類型",
-                     "type":"string",
-                     "value":"input",
-                     "format":"n/a",
-                     "id":"fieldType"
-                  },
-                  "fieldId":{
-                     "name":"欄位代號",
-                     "type":"string",
-                     "value":"preVacationCode",
-                     "format":"n/a",
-                     "id":"fieldId"
-                  },
-                  "visiable":{
-                     "name":"是否顯示",
-                     "type":"boolean",
-                     "value":false,
-                     "format":"n/a",
-                     "id":"visiable"
-                  },
                   "editable":{
                      "name":"開放編輯",
                      "type":"boolean",
-                     "value":false,
+                     "value":true,
                      "format":"n/a",
                      "id":"editable"
                   },
                   "option":{
-                     "name":"選單項目",
+                     "name":"選項",
                      "type":"array",
                      "value":[
-                        
+                        {
+                           "optionId":{
+                              "name":"選項代號",
+                              "type":"string",
+                              "value":"10900015",
+                              "format":"n/a",
+                              "id":"value"
+                           },
+                           "optionValue":{
+                              "name":"選項名稱",
+                              "type":"string",
+                              "value":"2O3",
+                              "format":"n/a",
+                              "id":"value"
+                           }
+                        },
+                        {
+                           "optionId":{
+                              "name":"選項代號",
+                              "type":"string",
+                              "value":"11000021",
+                              "format":"n/a",
+                              "id":"value"
+                           },
+                           "optionValue":{
+                              "name":"選項名稱",
+                              "type":"string",
+                              "value":"薪O條",
+                              "format":"n/a",
+                              "id":"value"
+                           }
+                        },
+                        {
+                           "optionId":{
+                              "name":"選項代號",
+                              "type":"string",
+                              "value":"2014020002",
+                              "format":"n/a",
+                              "id":"value"
+                           },
+                           "optionValue":{
+                              "name":"選項名稱",
+                              "type":"string",
+                              "value":"王O牛",
+                              "format":"n/a",
+                              "id":"value"
+                           }
+                        }
                      ],
                      "format":"n/a",
                      "id":"option"
                   },
-                  "note":{
-                     "name":"欄位備註",
-                     "type":"string",
-                     "value":"",
+                  "value":{
+                     "name":"欄位值",
+                     "type":"object",
+                     "value":{
+                        "empFullName":{
+                           "name":"員工中文姓名",
+                           "type":"string",
+                           "value":"系O管",
+                           "format":"n/a",
+                           "id":"empFullName"
+                        },
+                        "empid":{
+                           "name":"員工編號",
+                           "type":"string",
+                           "value":"admin",
+                           "format":"n/a",
+                           "id":"empid"
+                        }
+                     },
                      "format":"n/a",
-                     "id":"note"
-                  },
-                  "fieldValue":{
-                     "name":"欄位資料",
-                     "type":"string",
-                     "value":"",
-                     "format":"n/a",
-                     "id":"fieldValue"
-                  },
-                  "fieldName":{
-                     "name":"欄位名稱",
-                     "type":"string",
-                     "value":"前置假",
-                     "format":"n/a",
-                     "id":"fieldName"
+                     "id":"value"
                   }
                },
                "format":"n/a",
-               "id":"preVacationCode"
+               "id":"jobAgent"
             },
-            {
-               "name":"特別日期",
+            "holidayYN":{
+               "name":"是否包含假日",
                "type":"object",
                "value":{
-                  "fieldType":{
-                     "name":"欄位類型",
-                     "type":"string",
-                     "value":"dateYMD",
+                  "editable":{
+                     "name":"開放編輯",
+                     "type":"boolean",
+                     "value":false,
                      "format":"n/a",
-                     "id":"fieldType"
+                     "id":"editable"
                   },
-                  "fieldId":{
-                     "name":"欄位代號",
+                  "option":{
+                     "name":"選項",
                      "type":"string",
-                     "value":"specDate",
+                     "value":"",
                      "format":"n/a",
-                     "id":"fieldId"
+                     "id":"option"
                   },
-                  "visiable":{
-                     "name":"是否顯示",
+                  "note":{
+                     "name":"欄位備註",
+                     "type":"string",
+                     "value":"",
+                     "format":"n/a",
+                     "id":"note"
+                  },
+                  "value":{
+                     "name":"欄位值",
                      "type":"boolean",
                      "value":true,
                      "format":"n/a",
-                     "id":"visiable"
-                  },
+                     "id":"value"
+                  }
+               },
+               "format":"n/a",
+               "id":"holidayYN"
+            },
+            "vacationStartTime":{
+               "name":"起始時間",
+               "type":"object",
+               "value":{
                   "editable":{
                      "name":"開放編輯",
                      "type":"boolean",
@@ -241,7 +290,7 @@ Here is a JSON representation of request.
                      "id":"editable"
                   },
                   "option":{
-                     "name":"選單項目",
+                     "name":"選項",
                      "type":"array",
                      "value":[
                         
@@ -249,56 +298,567 @@ Here is a JSON representation of request.
                      "format":"n/a",
                      "id":"option"
                   },
+                  "value":{
+                     "name":"欄位值",
+                     "type":"string",
+                     "value":"0830",
+                     "format":"HHmm",
+                     "id":"value"
+                  }
+               },
+               "format":"n/a",
+               "id":"vacationStartTime"
+            },
+            "vacationEndDate":{
+               "name":"結束日期",
+               "type":"object",
+               "value":{
+                  "editable":{
+                     "name":"開放編輯",
+                     "type":"boolean",
+                     "value":true,
+                     "format":"n/a",
+                     "id":"editable"
+                  },
+                  "option":{
+                     "name":"選項",
+                     "type":"array",
+                     "value":[
+                        
+                     ],
+                     "format":"n/a",
+                     "id":"option"
+                  },
+                  "value":{
+                     "name":"欄位值",
+                     "type":"string",
+                     "value":"20220427",
+                     "format":"YYYYmmdd",
+                     "id":"value"
+                  }
+               },
+               "format":"n/a",
+               "id":"vacationEndDate"
+            },
+            "flowAgentOne":{
+               "name":"代理人一",
+               "type":"object",
+               "value":{
+                  "editable":{
+                     "name":"開放編輯",
+                     "type":"boolean",
+                     "value":false,
+                     "format":"n/a",
+                     "id":"editable"
+                  },
+                  "option":{
+                     "name":"選項",
+                     "type":"array",
+                     "value":[
+                        {
+                           "optionId":{
+                              "name":"選項代號",
+                              "type":"string",
+                              "value":"10900015",
+                              "format":"n/a",
+                              "id":"value"
+                           },
+                           "optionValue":{
+                              "name":"選項名稱",
+                              "type":"string",
+                              "value":"2O3",
+                              "format":"n/a",
+                              "id":"value"
+                           }
+                        },
+                        {
+                           "optionId":{
+                              "name":"選項代號",
+                              "type":"string",
+                              "value":"11000021",
+                              "format":"n/a",
+                              "id":"value"
+                           },
+                           "optionValue":{
+                              "name":"選項名稱",
+                              "type":"string",
+                              "value":"薪O條",
+                              "format":"n/a",
+                              "id":"value"
+                           }
+                        },
+                        {
+                           "optionId":{
+                              "name":"選項代號",
+                              "type":"string",
+                              "value":"2014020002",
+                              "format":"n/a",
+                              "id":"value"
+                           },
+                           "optionValue":{
+                              "name":"選項名稱",
+                              "type":"string",
+                              "value":"王O牛",
+                              "format":"n/a",
+                              "id":"value"
+                           }
+                        }
+                     ],
+                     "format":"n/a",
+                     "id":"option"
+                  },
+                  "value":{
+                     "name":"欄位值",
+                     "type":"string",
+                     "value":"",
+                     "format":"n/a",
+                     "id":"value"
+                  }
+               },
+               "format":"n/a",
+               "id":"flowAgentOne"
+            },
+            "fourthFile":{
+               "name":"附件四",
+               "type":"object",
+               "value":{
+                  "editable":{
+                     "name":"開放編輯",
+                     "type":"boolean",
+                     "value":true,
+                     "format":"n/a",
+                     "id":"editable"
+                  },
+                  "option":{
+                     "name":"選項",
+                     "type":"string",
+                     "value":"",
+                     "format":"n/a",
+                     "id":"option"
+                  },
                   "note":{
                      "name":"欄位備註",
                      "type":"string",
-                     "value":"喪假：往生日期",
+                     "value":"",
                      "format":"n/a",
                      "id":"note"
                   },
-                  "fieldValue":{
-                     "name":"欄位資料",
+                  "value":{
+                     "name":"欄位值",
+                     "type":"string",
+                     "value":"",
+                     "format":"n/a",
+                     "id":"value"
+                  }
+               },
+               "format":"n/a",
+               "id":"fourthFile"
+            },
+            "planeTicket":{
+               "name":"機票",
+               "type":"object",
+               "value":{
+                  "editable":{
+                     "name":"開放編輯",
+                     "type":"boolean",
+                     "value":false,
+                     "format":"n/a",
+                     "id":"editable"
+                  },
+                  "option":{
+                     "name":"選項",
+                     "type":"string",
+                     "value":"",
+                     "format":"n/a",
+                     "id":"option"
+                  },
+                  "value":{
+                     "name":"欄位值",
+                     "type":"integer",
+                     "value":0,
+                     "format":"ticket",
+                     "id":"value"
+                  }
+               },
+               "format":"n/a",
+               "id":"planeTicket"
+            },
+            "vacationEndTime":{
+               "name":"結束時間",
+               "type":"object",
+               "value":{
+                  "editable":{
+                     "name":"開放編輯",
+                     "type":"boolean",
+                     "value":true,
+                     "format":"n/a",
+                     "id":"editable"
+                  },
+                  "option":{
+                     "name":"選項",
+                     "type":"array",
+                     "value":[
+                        
+                     ],
+                     "format":"n/a",
+                     "id":"option"
+                  },
+                  "value":{
+                     "name":"欄位值",
+                     "type":"string",
+                     "value":"1730",
+                     "format":"HHmm",
+                     "id":"value"
+                  }
+               },
+               "format":"n/a",
+               "id":"vacationEndTime"
+            },
+            "vacationStartDate":{
+               "name":"起始日期",
+               "type":"object",
+               "value":{
+                  "editable":{
+                     "name":"開放編輯",
+                     "type":"boolean",
+                     "value":true,
+                     "format":"n/a",
+                     "id":"editable"
+                  },
+                  "option":{
+                     "name":"選項",
+                     "type":"array",
+                     "value":[
+                        
+                     ],
+                     "format":"n/a",
+                     "id":"option"
+                  },
+                  "value":{
+                     "name":"欄位值",
+                     "type":"string",
+                     "value":"20220427",
+                     "format":"YYYYmmdd",
+                     "id":"value"
+                  }
+               },
+               "format":"n/a",
+               "id":"vacationStartDate"
+            },
+            "secondFile":{
+               "name":"附件二",
+               "type":"object",
+               "value":{
+                  "editable":{
+                     "name":"開放編輯",
+                     "type":"boolean",
+                     "value":true,
+                     "format":"n/a",
+                     "id":"editable"
+                  },
+                  "option":{
+                     "name":"選項",
+                     "type":"string",
+                     "value":"",
+                     "format":"n/a",
+                     "id":"option"
+                  },
+                  "note":{
+                     "name":"欄位備註",
+                     "type":"string",
+                     "value":"",
+                     "format":"n/a",
+                     "id":"note"
+                  },
+                  "value":{
+                     "name":"欄位值",
+                     "type":"string",
+                     "value":"",
+                     "format":"n/a",
+                     "id":"value"
+                  }
+               },
+               "format":"n/a",
+               "id":"secondFile"
+            },
+            "flowAgent":{
+               "name":"簽核代理人",
+               "type":"object",
+               "value":{
+                  "editable":{
+                     "name":"開放編輯",
+                     "type":"boolean",
+                     "value":true,
+                     "format":"n/a",
+                     "id":"editable"
+                  },
+                  "option":{
+                     "name":"選項",
+                     "type":"array",
+                     "value":[
+                        {
+                           "optionId":{
+                              "name":"選項代號",
+                              "type":"string",
+                              "value":"10900015",
+                              "format":"n/a",
+                              "id":"value"
+                           },
+                           "optionValue":{
+                              "name":"選項名稱",
+                              "type":"string",
+                              "value":"2O3",
+                              "format":"n/a",
+                              "id":"value"
+                           }
+                        },
+                        {
+                           "optionId":{
+                              "name":"選項代號",
+                              "type":"string",
+                              "value":"11000021",
+                              "format":"n/a",
+                              "id":"value"
+                           },
+                           "optionValue":{
+                              "name":"選項名稱",
+                              "type":"string",
+                              "value":"薪O條",
+                              "format":"n/a",
+                              "id":"value"
+                           }
+                        },
+                        {
+                           "optionId":{
+                              "name":"選項代號",
+                              "type":"string",
+                              "value":"2014020002",
+                              "format":"n/a",
+                              "id":"value"
+                           },
+                           "optionValue":{
+                              "name":"選項名稱",
+                              "type":"string",
+                              "value":"王O牛",
+                              "format":"n/a",
+                              "id":"value"
+                           }
+                        }
+                     ],
+                     "format":"n/a",
+                     "id":"option"
+                  },
+                  "value":{
+                     "name":"欄位值",
+                     "type":"object",
+                     "value":{
+                        "empFullName":{
+                           "name":"員工中文姓名",
+                           "type":"string",
+                           "value":"TOs",
+                           "format":"n/a",
+                           "id":"empFullName"
+                        },
+                        "empid":{
+                           "name":"員工編號",
+                           "type":"string",
+                           "value":"10804025",
+                           "format":"n/a",
+                           "id":"empid"
+                        }
+                     },
+                     "format":"n/a",
+                     "id":"value"
+                  }
+               },
+               "format":"n/a",
+               "id":"flowAgent"
+            },
+            "thirdFile":{
+               "name":"附件三",
+               "type":"object",
+               "value":{
+                  "editable":{
+                     "name":"開放編輯",
+                     "type":"boolean",
+                     "value":true,
+                     "format":"n/a",
+                     "id":"editable"
+                  },
+                  "option":{
+                     "name":"選項",
+                     "type":"string",
+                     "value":"",
+                     "format":"n/a",
+                     "id":"option"
+                  },
+                  "note":{
+                     "name":"欄位備註",
+                     "type":"string",
+                     "value":"",
+                     "format":"n/a",
+                     "id":"note"
+                  },
+                  "value":{
+                     "name":"欄位值",
+                     "type":"string",
+                     "value":"",
+                     "format":"n/a",
+                     "id":"value"
+                  }
+               },
+               "format":"n/a",
+               "id":"thirdFile"
+            },
+            "flowAgentTwo":{
+               "name":"代理人二",
+               "type":"object",
+               "value":{
+                  "editable":{
+                     "name":"開放編輯",
+                     "type":"boolean",
+                     "value":false,
+                     "format":"n/a",
+                     "id":"editable"
+                  },
+                  "option":{
+                     "name":"選項",
+                     "type":"array",
+                     "value":[
+                        {
+                           "optionId":{
+                              "name":"選項代號",
+                              "type":"string",
+                              "value":"10900015",
+                              "format":"n/a",
+                              "id":"value"
+                           },
+                           "optionValue":{
+                              "name":"選項名稱",
+                              "type":"string",
+                              "value":"2O3",
+                              "format":"n/a",
+                              "id":"value"
+                           }
+                        },
+                        {
+                           "optionId":{
+                              "name":"選項代號",
+                              "type":"string",
+                              "value":"11000021",
+                              "format":"n/a",
+                              "id":"value"
+                           },
+                           "optionValue":{
+                              "name":"選項名稱",
+                              "type":"string",
+                              "value":"薪O條",
+                              "format":"n/a",
+                              "id":"value"
+                           }
+                        },
+                        {
+                           "optionId":{
+                              "name":"選項代號",
+                              "type":"string",
+                              "value":"2014020002",
+                              "format":"n/a",
+                              "id":"value"
+                           },
+                           "optionValue":{
+                              "name":"選項名稱",
+                              "type":"string",
+                              "value":"王O牛",
+                              "format":"n/a",
+                              "id":"value"
+                           }
+                        }
+                     ],
+                     "format":"n/a",
+                     "id":"option"
+                  },
+                  "value":{
+                     "name":"欄位值",
+                     "type":"string",
+                     "value":"",
+                     "format":"n/a",
+                     "id":"value"
+                  }
+               },
+               "format":"n/a",
+               "id":"flowAgentTwo"
+            },
+            "reason":{
+               "name":"請假原因",
+               "type":"object",
+               "value":{
+                  "editable":{
+                     "name":"開放編輯",
+                     "type":"boolean",
+                     "value":true,
+                     "format":"n/a",
+                     "id":"editable"
+                  },
+                  "option":{
+                     "name":"選項",
+                     "type":"array",
+                     "value":[
+                        
+                     ],
+                     "format":"n/a",
+                     "id":"option"
+                  },
+                  "value":{
+                     "name":"欄位值",
+                     "type":"string",
+                     "value":"",
+                     "format":"n/a",
+                     "id":"value"
+                  }
+               },
+               "format":"n/a",
+               "id":"reason"
+            },
+            "spectialDate":{
+               "name":"特殊日期",
+               "type":"object",
+               "value":{
+                  "editable":{
+                     "name":"開放編輯",
+                     "type":"boolean",
+                     "value":true,
+                     "format":"n/a",
+                     "id":"editable"
+                  },
+                  "option":{
+                     "name":"選項",
+                     "type":"string",
+                     "value":"",
+                     "format":"n/a",
+                     "id":"option"
+                  },
+                  "note":{
+                     "name":"欄位備註",
+                     "type":"string",
+                     "value":"",
+                     "format":"n/a",
+                     "id":"note"
+                  },
+                  "value":{
+                     "name":"欄位值",
                      "type":"string",
                      "value":"20220425",
                      "format":"YYYYmmdd",
-                     "id":"fieldValue"
-                  },
-                  "fieldName":{
-                     "name":"欄位名稱",
-                     "type":"string",
-                     "value":"特別日期",
-                     "format":"n/a",
-                     "id":"fieldName"
+                     "id":"value"
                   }
                },
                "format":"n/a",
-               "id":"specDate"
+               "id":"spectialDate"
             },
-            {
-               "name":"延遲請假原因",
+            "delayReason":{
+               "name":"逾時請假原因",
                "type":"object",
                "value":{
-                  "fieldType":{
-                     "name":"欄位類型",
-                     "type":"string",
-                     "value":"input",
-                     "format":"n/a",
-                     "id":"fieldType"
-                  },
-                  "fieldId":{
-                     "name":"欄位代號",
-                     "type":"string",
-                     "value":"delayNote",
-                     "format":"n/a",
-                     "id":"fieldId"
-                  },
-                  "visiable":{
-                     "name":"是否顯示",
-                     "type":"boolean",
-                     "value":false,
-                     "format":"n/a",
-                     "id":"visiable"
-                  },
                   "editable":{
                      "name":"開放編輯",
                      "type":"boolean",
@@ -307,11 +867,40 @@ Here is a JSON representation of request.
                      "id":"editable"
                   },
                   "option":{
-                     "name":"選單項目",
+                     "name":"選項",
                      "type":"array",
                      "value":[
                         
                      ],
+                     "format":"n/a",
+                     "id":"option"
+                  },
+                  "value":{
+                     "name":"欄位值",
+                     "type":"string",
+                     "value":"",
+                     "format":"n/a",
+                     "id":"value"
+                  }
+               },
+               "format":"n/a",
+               "id":"delayReason"
+            },
+            "fifthFile":{
+               "name":"附件五",
+               "type":"object",
+               "value":{
+                  "editable":{
+                     "name":"開放編輯",
+                     "type":"boolean",
+                     "value":true,
+                     "format":"n/a",
+                     "id":"editable"
+                  },
+                  "option":{
+                     "name":"選項",
+                     "type":"string",
+                     "value":"",
                      "format":"n/a",
                      "id":"option"
                   },
@@ -322,25 +911,132 @@ Here is a JSON representation of request.
                      "format":"n/a",
                      "id":"note"
                   },
-                  "fieldValue":{
-                     "name":"欄位資料",
+                  "value":{
+                     "name":"欄位值",
                      "type":"string",
                      "value":"",
                      "format":"n/a",
-                     "id":"fieldValue"
-                  },
-                  "fieldName":{
-                     "name":"欄位名稱",
-                     "type":"string",
-                     "value":"延遲請假原因",
-                     "format":"n/a",
-                     "id":"fieldName"
+                     "id":"value"
                   }
                },
                "format":"n/a",
-               "id":"delayNote"
+               "id":"fifthFile"
+            },
+            "firstFile":{
+               "name":"附件一",
+               "type":"object",
+               "value":{
+                  "editable":{
+                     "name":"開放編輯",
+                     "type":"boolean",
+                     "value":true,
+                     "format":"n/a",
+                     "id":"editable"
+                  },
+                  "option":{
+                     "name":"選項",
+                     "type":"string",
+                     "value":"",
+                     "format":"n/a",
+                     "id":"option"
+                  },
+                  "note":{
+                     "name":"欄位備註",
+                     "type":"string",
+                     "value":"",
+                     "format":"n/a",
+                     "id":"note"
+                  },
+                  "value":{
+                     "name":"欄位值",
+                     "type":"string",
+                     "value":"",
+                     "format":"n/a",
+                     "id":"value"
+                  }
+               },
+               "format":"n/a",
+               "id":"firstFile"
+            },
+            "flowAgentThree":{
+               "name":"代理人三",
+               "type":"object",
+               "value":{
+                  "editable":{
+                     "name":"開放編輯",
+                     "type":"boolean",
+                     "value":false,
+                     "format":"n/a",
+                     "id":"editable"
+                  },
+                  "option":{
+                     "name":"選項",
+                     "type":"array",
+                     "value":[
+                        {
+                           "optionId":{
+                              "name":"選項代號",
+                              "type":"string",
+                              "value":"10900015",
+                              "format":"n/a",
+                              "id":"value"
+                           },
+                           "optionValue":{
+                              "name":"選項名稱",
+                              "type":"string",
+                              "value":"2O3",
+                              "format":"n/a",
+                              "id":"value"
+                           }
+                        },
+                        {
+                           "optionId":{
+                              "name":"選項代號",
+                              "type":"string",
+                              "value":"11000021",
+                              "format":"n/a",
+                              "id":"value"
+                           },
+                           "optionValue":{
+                              "name":"選項名稱",
+                              "type":"string",
+                              "value":"薪O條",
+                              "format":"n/a",
+                              "id":"value"
+                           }
+                        },
+                        {
+                           "optionId":{
+                              "name":"選項代號",
+                              "type":"string",
+                              "value":"2014020002",
+                              "format":"n/a",
+                              "id":"value"
+                           },
+                           "optionValue":{
+                              "name":"選項名稱",
+                              "type":"string",
+                              "value":"王O牛",
+                              "format":"n/a",
+                              "id":"value"
+                           }
+                        }
+                     ],
+                     "format":"n/a",
+                     "id":"option"
+                  },
+                  "value":{
+                     "name":"欄位值",
+                     "type":"string",
+                     "value":"",
+                     "format":"n/a",
+                     "id":"value"
+                  }
+               },
+               "format":"n/a",
+               "id":"flowAgentThree"
             }
-         ],
+         },
          "format":"n/a",
          "id":"vacationField"
       }
