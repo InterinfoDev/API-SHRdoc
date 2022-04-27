@@ -41,16 +41,6 @@ Here is a JSON representation of request.
 | empid | admin | String | 員工編號 | Y | n/a |
 | vacationCode | 06.061 | String | 價別代碼 | Y | n/a |
 
-### fieldType
-| Type | Description |
-|:---------|:------------|
-| input | 文字輸入類型 |
-| select | 單選類型 |
-| switch | 開關類型 |
-| upload | 檔案上傳類型 |
-| dateYMD | 日期類型(年月日) |
-| dateYM | 日期類型(年月) |
-
 ### HTTP Response when Successful
 ```json
 {
