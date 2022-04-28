@@ -114,6 +114,13 @@ POST
                      "value":"測試標頭",
                      "format":"n/a",
                      "id":"title"
+                  },
+                  "passTime": {
+                     "name": "經過時間",
+                     "type": "string",
+                     "value": "1天前",
+                     "format": "n/a",
+                     "id": "passTime"
                   }
                },
                "format":"n/a",
