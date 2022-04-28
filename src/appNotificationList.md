@@ -40,8 +40,8 @@ POST
 ### Request Properties
  Key | Value | Type | Description | Required | Format |
 |:----------|:-------------|:-----|:------------|:------------|:------------|
-| announcementKey | 5497D73A-8178-49E5-9073-CDAA25889B20 | String | 查詢最後一筆通知ID | N | n/a |  |
-| announcementCount | 10 | Integer | 查詢資料筆數 | N | n/a | 預設筆數10 |
+| notificationKey | 5497D73A-8178-49E5-9073-CDAA25889B20 | String | 推播最後一筆通知ID | N | n/a |  |
+| notificationCount | 10 | Integer | 查詢資料筆數 | N | n/a | 預設筆數10 |
 
 ### HTTP Response when Successful
 ```json
