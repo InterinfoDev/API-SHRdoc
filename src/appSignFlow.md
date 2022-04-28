@@ -59,13 +59,6 @@ Here is a JSON representation of request.
       "您已成功退簽1筆單據"
    ],
    "data":{
-      "signCount":{
-         "name":"簽核筆數",
-         "type":"integer",
-         "value":1,
-         "format":"count",
-         "id":"signCount"
-      },
       "properties":{
          "format":{
             "YYYYmmdd":"西元年月日",
@@ -74,26 +67,41 @@ Here is a JSON representation of request.
             "HHmmss":"時間時分秒"
          }
       },
-      "signTime":{
-         "name":"簽核時間",
-         "type":"string",
-         "value":"093712",
-         "format":"HHmmss",
-         "id":"signTime"
-      },
-      "signer":{
-         "name":"簽核人員",
-         "type":"string",
-         "value":"admin",
+      "signFlow":{                  --kevin 多增加signFlow這層，並把簽核相關資訊包進這層
+         "name":"簽核資訊",
+         "type":"object",
+         "value":{
+            "signCount":{
+               "name":"簽核筆數",
+               "type":"integer",
+               "value":1,
+               "format":"count",
+               "id":"signCount"
+            },
+            "signTime":{
+               "name":"簽核時間",
+               "type":"string",
+               "value":"153524",
+               "format":"HHmmss",
+               "id":"signTime"
+            },
+            "signer":{
+               "name":"簽核人員",
+               "type":"string",
+               "value":"admin",
+               "format":"n/a",
+               "id":"signer"
+            },
+            "signDate":{
+               "name":"簽核日期",
+               "type":"string",
+               "value":"20220428",
+               "format":"YYYYmmdd",
+               "id":"signDate"
+            }
+         },
          "format":"n/a",
-         "id":"signer"
-      },
-      "signDate":{
-         "name":"簽核日期",
-         "type":"string",
-         "value":"20220315",
-         "format":"YYYYmmdd",
-         "id":"signDate"
+         "id":"signFlow"
       }
    }
 }
