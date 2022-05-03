@@ -69,8 +69,8 @@ Here is a JSON representation of request.
 | delayReason |  | String | 逾時請假說明 | N | n/a |
 | jobAgent | 10900015 | String | 職務代理人 | N | n/a | 
 | specialDate |  | String | 特殊日期 | N | YYYYmmdd |
-| isHoliday | false | boolean | 備註 | N | n/a |
-| planeTicket | 0 | integer | 備註 | N | ticket |
+| isHoliday | false | boolean | 是否包含假日 | N | n/a |
+| planeTicket | 0 | integer | 機票 | N | ticket |
 | flowAgent | 10900015 | String | 簽核代理人 | N | n/a | 
 | flowAgentOne | 10900015 | String | 代理人一 | N | n/a | 
 | flowAgentTow | 10900015 | String | 代理人二 | N | n/a | 
