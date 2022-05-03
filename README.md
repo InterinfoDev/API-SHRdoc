@@ -114,3 +114,5 @@ POST
 | 補卡原因清單 | appQueryReason | N | 取得補卡原因清單 | AndyHou | 20220425 |
 | 公司法規條文 | appRecognitionTerms | N | 取得使用者公司法規條文 | AndyHou | 20220425 |
 | 獎金入帳日期 | appSalbondIndate | N | 取得員工指定年月獎金入帳日期 | AndyHou | 20220425 |
+| 員工請假 | appVacationAdd | Y | 員工請假 | Kevin | 20220503 |
+| 請假畫面欄位檢核 | appVacationVerifyField | Y | 請假畫面欄位檢核 | Kevin | 20220503 |
