@@ -42,7 +42,7 @@ Here is a JSON representation of request.
       "flowAgentOne":"10900015",
       "flowAgentTwo":"10900015",
       "flowAgentThree":"10900015",
-      "file":[{
+      "file":[{   --kevin 檔案改成陣列
         "fileName":"kevin.jpg",
         "fileData":"base64"
       }]
