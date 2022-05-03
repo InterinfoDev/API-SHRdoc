@@ -63,8 +63,8 @@ Here is a JSON representation of request.
 | vacationCode | 000 | String | 假別代碼 | Y | n/a |
 | vacationStartDate | 20220429 | String | 起始日期 | Y | YYYYmmdd |
 | vacationEndDate | 20220429 | String | 結束日期 | Y | YYYYmmdd |
-| vacationStartTime | 20220429 | String | 起始時間 | Y | HHmm |
-| vacationEndTime | 20220429 | String | 結束時間 | Y | HHmm |
+| vacationStartTime | 0830 | String | 起始時間 | Y | HHmm |
+| vacationEndTime | 1700 | String | 結束時間 | Y | HHmm |
 | reason | kevin中文測試 | String | 請假說明 | Y | n/a |
 | delayReason |  | String | 逾時請假說明 | N | n/a |
 | jobAgent | 10900015 | String | 職務代理人 | N | n/a | 
