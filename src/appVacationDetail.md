@@ -96,7 +96,7 @@ Here is a JSON representation of request.
                "id":"isHoliday"
             },
             "jobAgent":{               --kevin 改名jobAgent
-               "name":"職務代理人資訊",
+               "name":"職務代理人",
                "type":"object",
                "value":{
                   "empFullName":{
@@ -131,27 +131,12 @@ Here is a JSON representation of request.
                "format":"HHmm",
                "id":"vacationStartTime"  --kevin 改名vacationStartTime
             },
-            "vacation":{                --kevin 改名vacation
-               "name":"假別資訊",
-               "type":"object",
-               "value":{
-                  "vacationName":{          --kevin 改名vacationName
-                     "name":"假別名稱",
-                     "type":"string",
-                     "value":"休息",
-                     "format":"n/a",
-                     "id":"vacationName"    --kevin 改名vacationName
-                  },
-                  "vacationCode":{          --kevin 改名vacationCode
-                     "name":"假別代碼",
-                     "type":"string",
-                     "value":"000",
-                     "format":"n/a",
-                     "id":"vacationCode"    --kevin 改名vacationCode
-                  }
-               },
+            "vacationName":{          --kevin 改名vacationName
+               "name":"假別名稱",
+               "type":"string",
+               "value":"休息",
                "format":"n/a",
-               "id":"vacation"               --kevin 改名vacation
+               "id":"vacationName"    --kevin 改名vacationName
             },
             "pno":{
                "name":"單據編號",
@@ -252,7 +237,7 @@ Here is a JSON representation of request.
                "id":"planeTicket"   
             },
             "flowAgent":{           --kevin改名flowAgent
-               "name":"簽核代理人資訊",
+               "name":"簽核代理人",
                "type":"array",
                "value":[
                   {
@@ -337,28 +322,6 @@ Here is a JSON representation of request.
                "format":"YYYYmmdd",
                "id":"vacationEndDate"     --kevin 改名vacationEndDate
             },
-            "applicant":{
-               "name":"申請人資訊",
-               "type":"object",
-               "value":{
-                  "empFullName":{
-                     "name":"員工中文姓名",
-                     "type":"string",
-                     "value":"系O管",
-                     "format":"n/a",
-                     "id":"empFullName"
-                  },
-                  "empid":{
-                     "name":"員工編號",
-                     "type":"string",
-                     "value":"admin",
-                     "format":"n/a",
-                     "id":"empid"
-                  }
-               },
-               "format":"n/a",
-               "id":"applicant"
-            },
             "reason":{                          --kevin 改名reason
                "name":"請假原因",                --kevin 改名請假原因
                "type":"string",
@@ -366,63 +329,41 @@ Here is a JSON representation of request.
                "format":"n/a",
                "id":"reason"                    --kevin 改名reason
             },
-            "employee":{
-               "name":"人事基本資料",
-               "type":"object",
-               "value":{
-                  "depCode":{
-                     "name":"部門代號",
-                     "type":"string",
-                     "value":"14121",
-                     "format":"n/a",
-                     "id":"depCode"
-                  },
-                  "companyId":{
-                     "name":"公司代號",
-                     "type":"string",
-                     "value":"TW",
-                     "format":"n/a",
-                     "id":"companyId"
-                  },
-                  "companyFullName":{
-                     "name":"公司全名",
-                     "type":"string",
-                     "value":"72英特內全名(中和)",
-                     "format":"n/a",
-                     "id":"companyFullName"
-                  },
-                  "empFullName":{
-                     "name":"員工中文姓名",
-                     "type":"string",
-                     "value":"系O管",
-                     "format":"n/a",
-                     "id":"empFullName"
-                  },
-                  "empid":{
-                     "name":"員工編號",
-                     "type":"string",
-                     "value":"admin",
-                     "format":"n/a",
-                     "id":"empid"
-                  },
-                  "depFullName":{
-                     "name":"部門名稱",
-                     "type":"string",
-                     "value":"L1線A班",
-                     "format":"n/a",
-                     "id":"depFullName"
-                  },
-                  "empFullEname":{
-                     "name":"員工英文姓名",
-                     "type":"string",
-                     "value":"test_Ename",
-                     "format":"n/a",
-                     "id":"empFullEname"
-                  }
-               },
+            "companyFullName":{
+               "name":"公司全名",
+               "type":"string",
+               "value":"72英特內全名(中和)",
                "format":"n/a",
-               "id":"employee"
+               "id":"companyFullName"
             },
+            "empFullName":{
+               "name":"員工中文姓名",
+               "type":"string",
+               "value":"系O管",
+               "format":"n/a",
+               "id":"empFullName"
+            },
+            "empid":{
+               "name":"員工編號",
+               "type":"string",
+               "value":"admin",
+               "format":"n/a",
+               "id":"empid"
+            },
+            "depFullName":{
+               "name":"部門名稱",
+               "type":"string",
+               "value":"L1線A班",
+               "format":"n/a",
+               "id":"depFullName"
+            },
+            "empFullEname":{
+               "name":"員工英文姓名",
+               "type":"string",
+               "value":"test_Ename",
+               "format":"n/a",
+               "id":"empFullEname"
+            }
             "delayReason":{             --kevin 改名delayReason
                "name":"逾期請假原因",
                "type":"string",
@@ -437,28 +378,6 @@ Here is a JSON representation of request.
                "format":"YYYYmmdd",
                "id":"spectialDate"
             },
-            "subVacation":{                 --kevin 改名subVacation
-               "name":"子假別資訊",
-               "type":"object",
-               "value":{
-                  "subVacationCode":{       --kevin 改名subVacationCode
-                     "name":"子假別代碼",
-                     "type":"string",
-                     "value":"",
-                     "format":"n/a",
-                     "id":"subVacationCode" --kevin 改名subVacationCode
-                  },
-                  "subVacationName":{       --kevin 改名subVacationName
-                     "name":"子假別名稱",
-                     "type":"string",
-                     "value":"",
-                     "format":"n/a",
-                     "id":"subVacationName" --kevin 改名subVacationName
-                  }
-               },
-               "format":"n/a",
-               "id":"subVacation"           --kevin 改名subVacation
-            }
          },
          "format":"n/a",
          "id":"vacationDetail"
