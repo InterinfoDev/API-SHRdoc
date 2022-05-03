@@ -787,7 +787,7 @@ Here is a JSON representation of request.
                "format":"n/a",
                "id":"reason"
             },
-            "spectialDate":{
+            "specialDate":{ --kevin 改為specialDate
                "name":"特殊日期",
                "type":"object",
                "value":{
@@ -821,7 +821,7 @@ Here is a JSON representation of request.
                   }
                },
                "format":"n/a",
-               "id":"spectialDate"
+               "id":"specialDate"  --kevin 改為specialDate
             },
             "delayReason":{
                "name":"逾時請假原因",
