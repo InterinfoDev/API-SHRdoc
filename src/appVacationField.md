@@ -378,8 +378,8 @@ Here is a JSON representation of request.
                "format":"n/a",
                "id":"flowAgentOne"
             },
-            "fourthFile":{
-               "name":"附件四",
+            "uploadFile":{  --kevin 檔案欄位改成一個uploadFile
+               "name":"附件上傳",
                "type":"object",
                "value":{
                   "editable":{
@@ -405,7 +405,7 @@ Here is a JSON representation of request.
                   }
                },
                "format":"n/a",
-               "id":"fourthFile"
+               "id":"uploadFile"    --kevin 檔案欄位改成一個uploadFile
             },
             "isHoliday":{
                "name":"是否包含假日",
@@ -527,35 +527,6 @@ Here is a JSON representation of request.
                "format":"n/a",
                "id":"vacationStartDate"
             },
-            "secondFile":{
-               "name":"附件二",
-               "type":"object",
-               "value":{
-                  "editable":{
-                     "name":"開放編輯",
-                     "type":"boolean",
-                     "value":true,
-                     "format":"n/a",
-                     "id":"editable"
-                  },
-                  "option":{
-                     "name":"選項",
-                     "type":"string",
-                     "value":"",
-                     "format":"n/a",
-                     "id":"option"
-                  },
-                  "value":{
-                     "name":"欄位值",
-                     "type":"string",
-                     "value":"",
-                     "format":"n/a",
-                     "id":"value"
-                  }
-               },
-               "format":"n/a",
-               "id":"secondFile"
-            },
             "flowAgent":{
                "name":"簽核代理人",
                "type":"object",
@@ -648,35 +619,6 @@ Here is a JSON representation of request.
                },
                "format":"n/a",
                "id":"flowAgent"
-            },
-            "thirdFile":{
-               "name":"附件三",
-               "type":"object",
-               "value":{
-                  "editable":{
-                     "name":"開放編輯",
-                     "type":"boolean",
-                     "value":true,
-                     "format":"n/a",
-                     "id":"editable"
-                  },
-                  "option":{
-                     "name":"選項",
-                     "type":"string",
-                     "value":"",
-                     "format":"n/a",
-                     "id":"option"
-                  },
-                  "value":{
-                     "name":"欄位值",
-                     "type":"string",
-                     "value":"",
-                     "format":"n/a",
-                     "id":"value"
-                  }
-               },
-               "format":"n/a",
-               "id":"thirdFile"
             },
             "flowAgentTwo":{
                "name":"代理人二",
@@ -853,64 +795,6 @@ Here is a JSON representation of request.
                },
                "format":"n/a",
                "id":"delayReason"
-            },
-            "fifthFile":{
-               "name":"附件五",
-               "type":"object",
-               "value":{
-                  "editable":{
-                     "name":"開放編輯",
-                     "type":"boolean",
-                     "value":true,
-                     "format":"n/a",
-                     "id":"editable"
-                  },
-                  "option":{
-                     "name":"選項",
-                     "type":"string",
-                     "value":"",
-                     "format":"n/a",
-                     "id":"option"
-                  },
-                  "value":{
-                     "name":"欄位值",
-                     "type":"string",
-                     "value":"",
-                     "format":"n/a",
-                     "id":"value"
-                  }
-               },
-               "format":"n/a",
-               "id":"fifthFile"
-            },
-            "firstFile":{
-               "name":"附件一",
-               "type":"object",
-               "value":{
-                  "editable":{
-                     "name":"開放編輯",
-                     "type":"boolean",
-                     "value":true,
-                     "format":"n/a",
-                     "id":"editable"
-                  },
-                  "option":{
-                     "name":"選項",
-                     "type":"string",
-                     "value":"",
-                     "format":"n/a",
-                     "id":"option"
-                  },
-                  "value":{
-                     "name":"欄位值",
-                     "type":"string",
-                     "value":"",
-                     "format":"n/a",
-                     "id":"value"
-                  }
-               },
-               "format":"n/a",
-               "id":"firstFile"
             },
             "flowAgentThree":{
                "name":"代理人三",
