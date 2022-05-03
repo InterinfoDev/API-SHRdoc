@@ -77,12 +77,12 @@ Here is a JSON representation of request.
                "format":"n/a",
                "id":"notificationKey"
             },
-            "FunctionName":{
+            "functionName":{
                "name":"功能名稱",
                "type":"string",
                "value":"測試功能",
                "format":"n/a",
-               "id":"FunctionName"
+               "id":"functionName"
             },
             "notificationType":{
                "name":"推播種類",
