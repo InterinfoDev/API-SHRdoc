@@ -16,7 +16,7 @@ POST
 |:----------|:-------------|:-----|:------------|
 | uid | 98599308101484732326 | String | 需透過appLogin取得
 | right | 51341911904173543336756162544864820 | String | 需透過appLogin取得 |
-| request | {'fieldName':'vacationStartDate', 'empid':'admin', 'vacationCode':'000', 'vacationStartDate':'20220429', 'vacationEndDate':'20220429', 'vacationStartTime':'0830', 'vacationEndTime':'1700', 'reason':'kevin中文測試', 'delayReason':'', 'jobAgent':'10900015', 'specialDate':'', 'isHoliday':false, 'planeTicket':0, 'flowAgent':'10900015', 'flowAgentOne':'10900015', 'flowAgentTwo':'10900015', 'flowAgentThree':'10900015', 'firstFile':'', 'secondFile':'', 'thirdFile':'', 'fourthFile':'', 'fifthFile':''} | Object | 異動條件
+| request | {'fieldName':'vacationStartDate', 'empid':'admin', 'vacationCode':'000', 'vacationStartDate':'20220429', 'vacationEndDate':'20220429', 'vacationStartTime':'0830', 'vacationEndTime':'1700', 'reason':'kevin中文測試', 'delayReason':'', 'jobAgent':'10900015', 'specialDate':'', 'isHoliday':false, 'planeTicket':0, 'flowAgent':'10900015', 'flowAgentOne':'10900015', 'flowAgentTwo':'10900015', 'flowAgentThree':'10900015', 'file':[{'fileName':'kevin.jpg','fileData':'base64'}]} | Object | 異動條件
 
 ### JSON representation Case 1
 Here is a JSON representation of request.
@@ -42,11 +42,10 @@ Here is a JSON representation of request.
       "flowAgentOne":"10900015",
       "flowAgentTwo":"10900015",
       "flowAgentThree":"10900015",
-      "firstFile":"",
-      "secondFile":"",
-      "thirdFile":"",
-      "fourthFile":"",
-      "fifthFile":"",
+      "file":[{
+        "fileName":"kevin.jpg",
+        "fileData":"base64"
+      }]
    }
 }
 ```
@@ -78,11 +77,9 @@ Here is a JSON representation of request.
 | flowAgentOne | 10900015 | String | 代理人一 | N | n/a | 
 | flowAgentTow | 10900015 | String | 代理人二 | N | n/a | 
 | flowAgentThree | 10900015 | String | 代理人三 | N | n/a | 
-| firstFile |  | String | 附件一 | N | n/a |
-| secondFile |  | String | 附件二 | N | n/a |
-| thirdFile |  | String | 附件三 | N | n/a |
-| fourthFile |  | String | 附件四 | N | n/a |
-| fifthFile |  | String | 附件五 | N | n/a |
+| file |  | String | 附件檔案 |  | n/a |
+| fileName | test.jpg | String | 附件檔案 | N | n/a |
+| fileData |  | String | 附件檔案 | N | base64 |
 
 ### HTTP Response when Successful
 ```json
