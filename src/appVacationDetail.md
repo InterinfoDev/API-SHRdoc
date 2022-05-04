@@ -371,7 +371,7 @@ Here is a JSON representation of request.
                "format":"n/a",
                "id":"delayReason"       --kevin 改名delayReason
             },
-            "spectialDate":{
+            "specialDate":{
                "name":"特殊日期",
                "type":"string",
                "value":"",
