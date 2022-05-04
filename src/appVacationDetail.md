@@ -369,7 +369,7 @@ Here is a JSON representation of request.
                "type":"string",
                "value":"",
                "format":"YYYYmmdd",
-               "id":"spectialDate"
+               "id":"specialDate"
             },
          },
          "format":"n/a",
