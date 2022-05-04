@@ -81,13 +81,6 @@ Here is a JSON representation of request.
          "name":"假單詳細資訊",
          "type":"object",
          "value":{
-            "validDate":{           --kevin 改名validDate
-               "name":"生效日期",
-               "type":"string",
-               "value":"20220117",
-               "format":"YYYYmmdd",
-               "id":"validDate"     --kevin 改名validDate
-            },
             "isHoliday":{           --kevin 新增欄位isHoliday
                "name":"是否包含假日",
                "type":"boolean",
