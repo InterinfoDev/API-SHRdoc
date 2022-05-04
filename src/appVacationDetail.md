@@ -110,12 +110,12 @@ Here is a JSON representation of request.
                "format":"n/a",
                "id":"jobAgent"          --kevin 改名jobAgent
             },
-            "total":{                   --kevin 改名total
+            "totalAmt":{                   --kevin 改名totalAmt
                "name":"總計",
                "type":"decimal",
                "value":8.0,
                "format":"hour",
-               "id":"total"             --kevin 改名total
+               "id":"totalAmt"             --kevin 改名totalAmt
             },
             "vacationStartTime":{        --kevin 改名vacationStartTime
                "name":"起始時間",
@@ -364,12 +364,12 @@ Here is a JSON representation of request.
                "format":"n/a",
                "id":"delayReason"       --kevin 改名delayReason
             },
-            "specialDate":{
+            "specialDate":{ --kevin 改名specialDate
                "name":"特殊日期",
                "type":"string",
                "value":"",
                "format":"YYYYmmdd",
-               "id":"spectialDate"
+               "id":"specialDate"   --kevin 改名specialDate
             },
          },
          "format":"n/a",
