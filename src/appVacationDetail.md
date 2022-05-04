@@ -364,12 +364,12 @@ Here is a JSON representation of request.
                "format":"n/a",
                "id":"delayReason"       --kevin 改名delayReason
             },
-            "specialDate":{ --kevin 改名specialDate
+            "specialDate":{
                "name":"特殊日期",
                "type":"string",
                "value":"",
                "format":"YYYYmmdd",
-               "id":"specialDate"   --kevin 改名specialDate
+               "id":"spectialDate"
             },
          },
          "format":"n/a",
