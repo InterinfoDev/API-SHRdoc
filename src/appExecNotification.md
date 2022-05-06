@@ -1,9 +1,9 @@
-# appExecPushSetting
-通知設定
+# appExecNotification
+更新推播資訊已讀
 
 ### HTTP Request
 ```
-https://114.34.125.246:8090/servlet/HRNative/appExecPushSetting
+https://114.34.125.246:8090/servlet/HRNative/appExecNotification
 ```
 
 ### HTTP Request Mehod
@@ -16,7 +16,7 @@ POST
 |:----------|:-------------|:-----|:------------|
 | uid | 98599308101484732326 | String | 需透過appLogin取得
 | right | 51341911904173543336756162544864820 | String | 需透過appLogin取得 |
-| request | {'notifyFlag':true} | Object | 異動條件
+| request | {'notificationKey':6C94CBC2-1682-4C35-9454-5D6A8B1DD620} | Object | 異動條件
 
 ### JSON representation
 Here is a JSON representation of request.
@@ -25,7 +25,7 @@ Here is a JSON representation of request.
    "uid":"98599308101484732326",
    "right":"51341911904173543336756162544864820",
    "request":{
-      "notifyFlag":"true"
+      "notificationKey":"6C94CBC2-1682-4C35-9454-5D6A8B1DD620"
    }
 }
 ```
@@ -40,7 +40,7 @@ Here is a JSON representation of request.
 ### Request Properties
 | Key | Value | Type | Description | Required | Format | Note |
 |:----------|:-------------|:-----|:------------|:------------|:------------|:------------|
-| notifyFlag | true | boolean | 通知設定 | true | n/a |  |
+| notificationKey | true | boolean | 推播資訊ID | true | n/a |  |
 
 
 ### HTTP Response when Successful
@@ -48,16 +48,11 @@ Here is a JSON representation of request.
 {
    "status":"success",
    "message":[
-      "異動成功"
+      "回傳成功"
    ],
    "data":{
-      "properties":{
-         "format":{
-            "n/a":""
-         }
-      },
-      "setting":{
-         "name":"設定異動",
+      "notification":{
+         "name":"更新通知",
          "type":"object",
          "value":{
             "executeMessage":{
@@ -76,7 +71,7 @@ Here is a JSON representation of request.
             }
          },
          "format":"n/a",
-         "id":"setting"
+         "id":"notification"
       }
    }
 }
