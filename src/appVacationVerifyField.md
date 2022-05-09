@@ -63,10 +63,10 @@ Here is a JSON representation of request.
 | fieldName | vacationStartDate | String | 欄位名稱 | Y | n/a |
 | empid | admin | String | 員工編號 | N | n/a |
 | vacationCode | 000 | String | 假別代碼 | N | n/a |
-| startDate | 20220503 | String | 起始日期 | N | YYYYmmdd |  --kevin 改成startDate
-| endDate | 20220503 | String | 結束日期 | N | YYYYmmdd |    --kevin 改成endDate
-| startTime | 0830 | String | 起始時間 | N | HHmm |          --kevin 改成startTime
-| endTime | 1730 | String | 結束時間 | N | HHmm |            --kevin 改成endTime
+| startDate | 20220503 | String | 起始日期 | N | YYYYmmdd |
+| endDate | 20220503 | String | 結束日期 | N | YYYYmmdd |    
+| startTime | 0830 | String | 起始時間 | N | HHmm |  
+| endTime | 1730 | String | 結束時間 | N | HHmm |         
 | reason | kevin中文測試 | String | 請假說明 | N | n/a |
 | delayReason |  | String | 逾時請假說明 | N | n/a |
 | jobAgent | 10900015 | String | 職務代理人 | N | n/a | 
@@ -74,9 +74,9 @@ Here is a JSON representation of request.
 | isHoliday | false | boolean | 是否包含假日 | N | n/a |
 | planeTicket | 0 | integer | 機票 | N | ticket |
 | flowAgent | 10900015 | String | 簽核代理人 | N | n/a | 
-| flowAgent1 | 10900015 | String | 代理人一 | N | n/a |      --kevin 改成flowAgent1
-| flowAgent2 | 10900015 | String | 代理人二 | N | n/a |      --kevin 改成flowAgent2
-| flowAgent3 | 10900015 | String | 代理人三 | N | n/a |      --kevin 改成flowAgent3
+| flowAgent1 | 10900015 | String | 代理人一 | N | n/a | 
+| flowAgent2 | 10900015 | String | 代理人二 | N | n/a | 
+| flowAgent3 | 10900015 | String | 代理人三 | N | n/a | 
 | file |  | String | 附件檔案 |  | n/a |
 | fileName | test.jpg | String | 附件檔案 | N | n/a |
 | fileData |  | String | 附件檔案 | N | base64 |
