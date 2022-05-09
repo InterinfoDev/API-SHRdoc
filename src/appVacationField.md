@@ -779,7 +779,7 @@ Here is a JSON representation of request.
          "id":"vacationTip"
       }
    }
-}```
+}
 
 ### HTTP Response when No Data
 無資料則屬於 Code 500 錯誤，正常來說一般使用者一定會有資料
