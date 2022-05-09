@@ -133,7 +133,7 @@ Here is a JSON representation of request.
                   "fieldId":{
                      "name":"欄位代號",
                      "type":"string",
-                     "value":"pno",
+                     "value":"companyFullName",
                      "format":"n/a",
                      "id":"fieldId"
                   },
@@ -141,7 +141,7 @@ Here is a JSON representation of request.
                      "name":"欄位資料",
                      "type":"array",
                      "value":[
-                        "W00202201250001"
+                        "72英特內全名(中和)"
                      ],
                      "format":"n/a",
                      "id":"fieldValue"
@@ -149,7 +149,7 @@ Here is a JSON representation of request.
                   "fieldName":{
                      "name":"欄位名稱",
                      "type":"string",
-                     "value":"單據編號",
+                     "value":"公司全名",
                      "format":"n/a",
                      "id":"fieldName"
                   }
@@ -171,7 +171,7 @@ Here is a JSON representation of request.
                   "fieldId":{
                      "name":"欄位代號",
                      "type":"string",
-                     "value":"pno",
+                     "value":"empFullName",
                      "format":"n/a",
                      "id":"fieldId"
                   },
@@ -179,7 +179,7 @@ Here is a JSON representation of request.
                      "name":"欄位資料",
                      "type":"array",
                      "value":[
-                        "W00202201250001"
+                        "系統管理員"
                      ],
                      "format":"n/a",
                      "id":"fieldValue"
@@ -187,7 +187,7 @@ Here is a JSON representation of request.
                   "fieldName":{
                      "name":"欄位名稱",
                      "type":"string",
-                     "value":"單據編號",
+                     "value":"員工中文姓名",
                      "format":"n/a",
                      "id":"fieldName"
                   }
@@ -209,7 +209,7 @@ Here is a JSON representation of request.
                   "fieldId":{
                      "name":"欄位代號",
                      "type":"string",
-                     "value":"pno",
+                     "value":"empFullEname",
                      "format":"n/a",
                      "id":"fieldId"
                   },
@@ -217,7 +217,7 @@ Here is a JSON representation of request.
                      "name":"欄位資料",
                      "type":"array",
                      "value":[
-                        "W00202201250001"
+                        "Administrator"
                      ],
                      "format":"n/a",
                      "id":"fieldValue"
@@ -225,7 +225,7 @@ Here is a JSON representation of request.
                   "fieldName":{
                      "name":"欄位名稱",
                      "type":"string",
-                     "value":"單據編號",
+                     "value":"員工英文姓名",
                      "format":"n/a",
                      "id":"fieldName"
                   }
@@ -247,7 +247,7 @@ Here is a JSON representation of request.
                   "fieldId":{
                      "name":"欄位代號",
                      "type":"string",
-                     "value":"pno",
+                     "value":"depFullName",
                      "format":"n/a",
                      "id":"fieldId"
                   },
@@ -255,7 +255,7 @@ Here is a JSON representation of request.
                      "name":"欄位資料",
                      "type":"array",
                      "value":[
-                        "W00202201250001"
+                        "L1線B班"
                      ],
                      "format":"n/a",
                      "id":"fieldValue"
@@ -263,7 +263,7 @@ Here is a JSON representation of request.
                   "fieldName":{
                      "name":"欄位名稱",
                      "type":"string",
-                     "value":"單據編號",
+                     "value":"部門名稱",
                      "format":"n/a",
                      "id":"fieldName"
                   }
@@ -285,7 +285,7 @@ Here is a JSON representation of request.
                   "fieldId":{
                      "name":"欄位代號",
                      "type":"string",
-                     "value":"pno",
+                     "value":"vacationName",
                      "format":"n/a",
                      "id":"fieldId"
                   },
@@ -293,7 +293,7 @@ Here is a JSON representation of request.
                      "name":"欄位資料",
                      "type":"array",
                      "value":[
-                        "W00202201250001"
+                        "休息"
                      ],
                      "format":"n/a",
                      "id":"fieldValue"
@@ -301,7 +301,7 @@ Here is a JSON representation of request.
                   "fieldName":{
                      "name":"欄位名稱",
                      "type":"string",
-                     "value":"單據編號",
+                     "value":"假別名稱",
                      "format":"n/a",
                      "id":"fieldName"
                   }
@@ -323,7 +323,7 @@ Here is a JSON representation of request.
                   "fieldId":{
                      "name":"欄位代號",
                      "type":"string",
-                     "value":"pno",
+                     "value":"vacationStartTime",
                      "format":"n/a",
                      "id":"fieldId"
                   },
@@ -331,7 +331,7 @@ Here is a JSON representation of request.
                      "name":"欄位資料",
                      "type":"array",
                      "value":[
-                        "W00202201250001"
+                        "2022/01/17 0800"
                      ],
                      "format":"n/a",
                      "id":"fieldValue"
@@ -339,7 +339,7 @@ Here is a JSON representation of request.
                   "fieldName":{
                      "name":"欄位名稱",
                      "type":"string",
-                     "value":"單據編號",
+                     "value":"起始時間",
                      "format":"n/a",
                      "id":"fieldName"
                   }
@@ -361,7 +361,7 @@ Here is a JSON representation of request.
                   "fieldId":{
                      "name":"欄位代號",
                      "type":"string",
-                     "value":"pno",
+                     "value":"vacationEndTime",
                      "format":"n/a",
                      "id":"fieldId"
                   },
@@ -369,7 +369,7 @@ Here is a JSON representation of request.
                      "name":"欄位資料",
                      "type":"array",
                      "value":[
-                        "W00202201250001"
+                        "2022/01/17 17:00"
                      ],
                      "format":"n/a",
                      "id":"fieldValue"
@@ -377,7 +377,7 @@ Here is a JSON representation of request.
                   "fieldName":{
                      "name":"欄位名稱",
                      "type":"string",
-                     "value":"單據編號",
+                     "value":"結束時間",
                      "format":"n/a",
                      "id":"fieldName"
                   }
@@ -399,7 +399,7 @@ Here is a JSON representation of request.
                   "fieldId":{
                      "name":"欄位代號",
                      "type":"string",
-                     "value":"pno",
+                     "value":"specialDate",
                      "format":"n/a",
                      "id":"fieldId"
                   },
@@ -407,15 +407,15 @@ Here is a JSON representation of request.
                      "name":"欄位資料",
                      "type":"array",
                      "value":[
-                        "W00202201250001"
+                        ""
                      ],
-                     "format":"n/a",
+                     "format":"YYYYmmdd",
                      "id":"fieldValue"
                   },
                   "fieldName":{
                      "name":"欄位名稱",
                      "type":"string",
-                     "value":"單據編號",
+                     "value":"特殊日期",
                      "format":"n/a",
                      "id":"fieldName"
                   }
@@ -437,7 +437,7 @@ Here is a JSON representation of request.
                   "fieldId":{
                      "name":"欄位代號",
                      "type":"string",
-                     "value":"pno",
+                     "value":"totalAmt",
                      "format":"n/a",
                      "id":"fieldId"
                   },
@@ -445,7 +445,7 @@ Here is a JSON representation of request.
                      "name":"欄位資料",
                      "type":"array",
                      "value":[
-                        "W00202201250001"
+                        "8.00 小時"
                      ],
                      "format":"n/a",
                      "id":"fieldValue"
@@ -453,7 +453,7 @@ Here is a JSON representation of request.
                   "fieldName":{
                      "name":"欄位名稱",
                      "type":"string",
-                     "value":"單據編號",
+                     "value":"請假時數",
                      "format":"n/a",
                      "id":"fieldName"
                   }
@@ -475,7 +475,7 @@ Here is a JSON representation of request.
                   "fieldId":{
                      "name":"欄位代號",
                      "type":"string",
-                     "value":"pno",
+                     "value":"reason",
                      "format":"n/a",
                      "id":"fieldId"
                   },
@@ -483,7 +483,7 @@ Here is a JSON representation of request.
                      "name":"欄位資料",
                      "type":"array",
                      "value":[
-                        "W00202201250001"
+                        "20220125KevinTestTest"
                      ],
                      "format":"n/a",
                      "id":"fieldValue"
@@ -491,7 +491,7 @@ Here is a JSON representation of request.
                   "fieldName":{
                      "name":"欄位名稱",
                      "type":"string",
-                     "value":"單據編號",
+                     "value":"請假原因",
                      "format":"n/a",
                      "id":"fieldName"
                   }
@@ -513,7 +513,7 @@ Here is a JSON representation of request.
                   "fieldId":{
                      "name":"欄位代號",
                      "type":"string",
-                     "value":"pno",
+                     "value":"delayReason",
                      "format":"n/a",
                      "id":"fieldId"
                   },
@@ -521,7 +521,7 @@ Here is a JSON representation of request.
                      "name":"欄位資料",
                      "type":"array",
                      "value":[
-                        "W00202201250001"
+                        "20220125KevinTestTestLateLate"
                      ],
                      "format":"n/a",
                      "id":"fieldValue"
@@ -529,7 +529,45 @@ Here is a JSON representation of request.
                   "fieldName":{
                      "name":"欄位名稱",
                      "type":"string",
-                     "value":"單據編號",
+                     "value":"逾期請假原因",
+                     "format":"n/a",
+                     "id":"fieldName"
+                  }
+               },
+               "format":"n/a",
+               "id":"field"
+            },
+            {
+               "name":"欄位資訊",
+               "type":"object",
+               "value":{
+                  "fieldType":{
+                     "name":"欄位類型",
+                     "type":"string",
+                     "value":"switch",
+                     "format":"n/a",
+                     "id":"fieldType"
+                  },
+                  "fieldId":{
+                     "name":"欄位代號",
+                     "type":"string",
+                     "value":"isHoliday",
+                     "format":"n/a",
+                     "id":"fieldId"
+                  },
+                  "fieldValue":{
+                     "name":"欄位資料",
+                     "type":"array",
+                     "value":[
+                        "false"
+                     ],
+                     "format":"n/a",
+                     "id":"fieldValue"
+                  },
+                  "fieldName":{
+                     "name":"欄位名稱",
+                     "type":"string",
+                     "value":"是否包含假日",
                      "format":"n/a",
                      "id":"fieldName"
                   }
@@ -551,7 +589,7 @@ Here is a JSON representation of request.
                   "fieldId":{
                      "name":"欄位代號",
                      "type":"string",
-                     "value":"pno",
+                     "value":"planeTicket",
                      "format":"n/a",
                      "id":"fieldId"
                   },
@@ -559,15 +597,15 @@ Here is a JSON representation of request.
                      "name":"欄位資料",
                      "type":"array",
                      "value":[
-                        "W00202201250001"
+                        "0"
                      ],
-                     "format":"n/a",
+                     "format":"ticket",
                      "id":"fieldValue"
                   },
                   "fieldName":{
                      "name":"欄位名稱",
                      "type":"string",
-                     "value":"單據編號",
+                     "value":"機票",
                      "format":"n/a",
                      "id":"fieldName"
                   }
@@ -589,7 +627,7 @@ Here is a JSON representation of request.
                   "fieldId":{
                      "name":"欄位代號",
                      "type":"string",
-                     "value":"pno",
+                     "value":"jobAgent",
                      "format":"n/a",
                      "id":"fieldId"
                   },
@@ -597,7 +635,7 @@ Here is a JSON representation of request.
                      "name":"欄位資料",
                      "type":"array",
                      "value":[
-                        "W00202201250001"
+                        "11000021 薪O條"
                      ],
                      "format":"n/a",
                      "id":"fieldValue"
@@ -605,7 +643,7 @@ Here is a JSON representation of request.
                   "fieldName":{
                      "name":"欄位名稱",
                      "type":"string",
-                     "value":"單據編號",
+                     "value":"職務代理人",
                      "format":"n/a",
                      "id":"fieldName"
                   }
@@ -627,7 +665,7 @@ Here is a JSON representation of request.
                   "fieldId":{
                      "name":"欄位代號",
                      "type":"string",
-                     "value":"pno",
+                     "value":"flowAgent",
                      "format":"n/a",
                      "id":"fieldId"
                   },
@@ -635,7 +673,10 @@ Here is a JSON representation of request.
                      "name":"欄位資料",
                      "type":"array",
                      "value":[
-                        "W00202201250001"
+                        "11000021 薪O條",
+                        "11000021 薪O條",
+                        "11000021 薪O條",
+                        "11000021 薪O條"
                      ],
                      "format":"n/a",
                      "id":"fieldValue"
@@ -643,7 +684,7 @@ Here is a JSON representation of request.
                   "fieldName":{
                      "name":"欄位名稱",
                      "type":"string",
-                     "value":"單據編號",
+                     "value":"簽核代理人",
                      "format":"n/a",
                      "id":"fieldName"
                   }
@@ -658,14 +699,14 @@ Here is a JSON representation of request.
                   "fieldType":{
                      "name":"欄位類型",
                      "type":"string",
-                     "value":"text",
+                     "value":"file",
                      "format":"n/a",
                      "id":"fieldType"
                   },
                   "fieldId":{
                      "name":"欄位代號",
                      "type":"string",
-                     "value":"pno",
+                     "value":"uploadFiles",
                      "format":"n/a",
                      "id":"fieldId"
                   },
@@ -673,7 +714,9 @@ Here is a JSON representation of request.
                      "name":"欄位資料",
                      "type":"array",
                      "value":[
-                        "W00202201250001"
+                        "162275913101318756727406736352784780247122357102882780068370317261209583236247473727852263283904173780691689670976804155264606675727575773117262486944256797288589761619658036853963544573871610487539849391223418153840114860664567762603492876422658756315",
+                        "213054348471705645522899686059682058334332468666904109085709401572564865917840459407644865526610519454919698294050221",
+                        "455081326282139220778915637967543067724210186456599314554053797322699112004686013661897571284512146408289108883247131030352506479918432248519610045402377780797371013561698903045297101962589301299762891115085188159"
                      ],
                      "format":"n/a",
                      "id":"fieldValue"
@@ -681,45 +724,7 @@ Here is a JSON representation of request.
                   "fieldName":{
                      "name":"欄位名稱",
                      "type":"string",
-                     "value":"單據編號",
-                     "format":"n/a",
-                     "id":"fieldName"
-                  }
-               },
-               "format":"n/a",
-               "id":"field"
-            },
-            {
-               "name":"欄位資訊",
-               "type":"object",
-               "value":{
-                  "fieldType":{
-                     "name":"欄位類型",
-                     "type":"string",
-                     "value":"text",
-                     "format":"n/a",
-                     "id":"fieldType"
-                  },
-                  "fieldId":{
-                     "name":"欄位代號",
-                     "type":"string",
-                     "value":"pno",
-                     "format":"n/a",
-                     "id":"fieldId"
-                  },
-                  "fieldValue":{
-                     "name":"欄位資料",
-                     "type":"array",
-                     "value":[
-                        "W00202201250001"
-                     ],
-                     "format":"n/a",
-                     "id":"fieldValue"
-                  },
-                  "fieldName":{
-                     "name":"欄位名稱",
-                     "type":"string",
-                     "value":"單據編號",
+                     "value":"附件資訊",
                      "format":"n/a",
                      "id":"fieldName"
                   }
