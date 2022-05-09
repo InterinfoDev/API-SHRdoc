@@ -16,7 +16,7 @@ POST
 |:----------|:-------------|:-----|:------------|
 | uid | 98599308101484732326 | String | 需透過appLogin取得
 | right | 51341911904173543336756162544864820 | String | 需透過appLogin取得 |
-| request | {'fieldName':'vacationStartDate', 'empid':'admin', 'vacationCode':'000', 'vacationStartDate':'20220429', 'vacationEndDate':'20220429', 'vacationStartTime':'0830', 'vacationEndTime':'1700', 'reason':'kevin中文測試', 'delayReason':'', 'jobAgent':'10900015', 'specialDate':'', 'isHoliday':false, 'planeTicket':0, 'flowAgent':'10900015', 'flowAgentOne':'10900015', 'flowAgentTwo':'10900015', 'flowAgentThree':'10900015', 'file':[{'fileName':'kevin.jpg','fileData':'base64'}]} | Object | 異動條件
+| request | {'fieldName':'startDate', 'empid':'admin', 'vacationCode':'000', 'startDate':'20220429', 'endDate':'20220429', 'startTime':'0830', 'endTime':'1700', 'reason':'kevin中文測試', 'delayReason':'', 'jobAgent':'10900015', 'specialDate':'', 'isHoliday':false, 'planeTicket':0, 'flowAgent':'10900015', 'flowAgent1':'10900015', 'flowAgent2':'10900015', 'flowAgent3':'10900015', 'file':[{'fileName':'kevin.jpg','fileData':'base64'}]} | Object | 異動條件
 
 ### JSON representation Case 1
 Here is a JSON representation of request.
@@ -28,10 +28,10 @@ Here is a JSON representation of request.
       "fieldName":"vacationStartDate",
       "empid":"admin", 
       "vacationCode":"000",
-      "vacationStartDate":"20220429", 
-      "vacationEndDate":"20220429",
-      "vacationStartTime":"0830", 
-      "vacationEndTime":"1700",
+      "startDate":"20220429",    --kevin 改成startDate
+      "endDate":"20220429",      --kevin 改成endDate
+      "startTime":"0830",        --kevin 改成startTime
+      "endTime":"1700",          --kevin 改成endTime
       "reason":"kevin中文測試",
       "delayReason":"",
       "jobAgent":"10900015",
@@ -39,9 +39,9 @@ Here is a JSON representation of request.
       "isHoliday":false,
       "planeTicket":0,
       "flowAgent":"10900015",
-      "flowAgentOne":"10900015",
-      "flowAgentTwo":"10900015",
-      "flowAgentThree":"10900015",
+      "flowAgent1":"10900015",    --kevin 改成flowAgent1
+      "flowAgent2":"10900015",    --kevin 改成flowAgent2
+      "flowAgent3":"10900015",    --kevin 改成flowAgent3
       "file":[{   --kevin 檔案改成陣列
         "fileName":"kevin.jpg",
         "fileData":"base64"
@@ -63,10 +63,10 @@ Here is a JSON representation of request.
 | fieldName | vacationStartDate | String | 欄位名稱 | Y | n/a |
 | empid | admin | String | 員工編號 | N | n/a |
 | vacationCode | 000 | String | 假別代碼 | N | n/a |
-| vacationStartDate | 20220503 | String | 起始日期 | N | YYYYmmdd |
-| vacationEndDate | 20220503 | String | 結束日期 | N | YYYYmmdd |
-| vacationStartTime | 0830 | String | 起始時間 | N | HHmm |
-| vacationEndTime | 1730 | String | 結束時間 | N | HHmm |
+| startDate | 20220503 | String | 起始日期 | N | YYYYmmdd |  --kevin 改成startDate
+| endDate | 20220503 | String | 結束日期 | N | YYYYmmdd |    --kevin 改成endDate
+| startTime | 0830 | String | 起始時間 | N | HHmm |          --kevin 改成startTime
+| endTime | 1730 | String | 結束時間 | N | HHmm |            --kevin 改成endTime
 | reason | kevin中文測試 | String | 請假說明 | N | n/a |
 | delayReason |  | String | 逾時請假說明 | N | n/a |
 | jobAgent | 10900015 | String | 職務代理人 | N | n/a | 
@@ -74,9 +74,9 @@ Here is a JSON representation of request.
 | isHoliday | false | boolean | 是否包含假日 | N | n/a |
 | planeTicket | 0 | integer | 機票 | N | ticket |
 | flowAgent | 10900015 | String | 簽核代理人 | N | n/a | 
-| flowAgentOne | 10900015 | String | 代理人一 | N | n/a | 
-| flowAgentTow | 10900015 | String | 代理人二 | N | n/a | 
-| flowAgentThree | 10900015 | String | 代理人三 | N | n/a | 
+| flowAgent1 | 10900015 | String | 代理人一 | N | n/a |      --kevin 改成flowAgent1
+| flowAgent2 | 10900015 | String | 代理人二 | N | n/a |      --kevin 改成flowAgent2
+| flowAgent3 | 10900015 | String | 代理人三 | N | n/a |      --kevin 改成flowAgent3
 | file |  | String | 附件檔案 |  | n/a |
 | fileName | test.jpg | String | 附件檔案 | N | n/a |
 | fileData |  | String | 附件檔案 | N | base64 |
