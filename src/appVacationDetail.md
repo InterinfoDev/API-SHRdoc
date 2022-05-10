@@ -41,9 +41,9 @@ Here is a JSON representation of request.
 ### fieldType
 | Type | Description | Data source  |
 |:---------|:------------|:------------|
-| text | 文字顯示類型 |   fieldValue |
+| text | 文字顯示類型 | fieldValue |
 | file | 附件下載顯示類型 | switch |
-| switch | 開關類型 |   fiels |
+| switch | 開關類型 | fiels |
 
 
 ### Request Properties
