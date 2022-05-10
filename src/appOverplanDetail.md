@@ -329,7 +329,7 @@ Here is a JSON representation of request.
                   "fieldId":{
                      "name":"欄位代號",
                      "type":"string",
-                     "value":"vacationStartTime",
+                     "value":"overplanStartTime",       --richard 改名 overplanStartTime
                      "format":"n/a",
                      "id":"fieldId"
                   },
@@ -367,7 +367,7 @@ Here is a JSON representation of request.
                   "fieldId":{
                      "name":"欄位代號",
                      "type":"string",
-                     "value":"vacationEndTime",
+                     "value":"overplanEndTime",          --richard 改名 overplanEndTime
                      "format":"n/a",
                      "id":"fieldId"
                   },
@@ -515,7 +515,7 @@ Here is a JSON representation of request.
                   "fieldId":{
                      "name":"欄位代號",
                      "type":"string",
-                     "value":"oldEatUnit",
+                     "value":"oldEatHour",          --richard  改名 oldEatHour
                      "format":"n/a",
                      "id":"fieldId"
                   },
@@ -553,7 +553,7 @@ Here is a JSON representation of request.
                   "fieldId":{
                      "name":"欄位代號",
                      "type":"string",
-                     "value":"newEatUnit",
+                     "value":"newEatHour",           --richard  改名 newEatHour
                      "format":"n/a",
                      "id":"fieldId"
                   },
