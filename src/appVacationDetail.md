@@ -39,9 +39,9 @@ Here is a JSON representation of request.
 | request | Object | 要求本文 |
 
 ### fieldType
-| Type | Description | Data source  |
+| Type | Description | key |
 |:---------|:------------|:------------|
-| text | 文字顯示類型 | fieldValue |
+| text | 文字顯示類型  | fieldValue |
 | file | 附件下載顯示類型 | files |
 | switch | 開關類型 | switch |
 
