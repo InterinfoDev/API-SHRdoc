@@ -46,6 +46,9 @@ Here is a JSON representation of request.
 
 
 ### HTTP Response when Successful
+當 fieldType=text    時 資料來源抓fieldValue
+當 fieldType=switch  時 資料來源抓switch
+當 fieldType=file    時 資料來源抓fiels
 ```json
 {
    "status":"success",
@@ -555,14 +558,12 @@ Here is a JSON representation of request.
                      "format":"n/a",
                      "id":"fieldId"
                   },
-                  "fieldValue":{
-                     "name":"欄位資料",
-                     "type":"array",
-                     "value":[
-                        "false"
-                     ],
+                  "switch":{
+                     "name":"開關",
+                     "type":"boolean",
+                     "value":false,
                      "format":"n/a",
-                     "id":"fieldValue"
+                     "id":"switch"
                   },
                   "fieldName":{
                      "name":"欄位名稱",
@@ -710,16 +711,82 @@ Here is a JSON representation of request.
                      "format":"n/a",
                      "id":"fieldId"
                   },
-                  "fieldValue":{
-                     "name":"欄位資料",
+                  "files":{
+                     "name":"附件資訊",
                      "type":"array",
                      "value":[
-                        "162275913101318756727406736352784780247122357102882780068370317261209583236247473727852263283904173780691689670976804155264606675727575773117262486944256797288589761619658036853963544573871610487539849391223418153840114860664567762603492876422658756315",
-                        "213054348471705645522899686059682058334332468666904109085709401572564865917840459407644865526610519454919698294050221",
-                        "455081326282139220778915637967543067724210186456599314554053797322699112004686013661897571284512146408289108883247131030352506479918432248519610045402377780797371013561698903045297101962589301299762891115085188159"
+                        {
+                           "fileType":{
+                              "name":"檔案類型",
+                              "type":"string",
+                              "value":"",
+                              "format":"n/a",
+                              "id":"fileType"
+                           },
+                           "fileUrl":{
+                              "name":"檔案路徑",
+                              "type":"string",
+                              "value":"162275913101318756727406736352784780247122357102882780068370317261209583236247473727852263283904173780691689670976804155264606675727575773117262486944256797288589761619658036853963544573871610487539849391223418153840114860664567762603492876422658756315",
+                              "format":"n/a",
+                              "id":"fileUrl"
+                           },
+                           "fileName":{
+                              "name":"檔案名稱",
+                              "type":"string",
+                              "value":"1643078742185_【台壽】(MP1100171)TPSYNC-特休資料拋轉外掛(SD)(1).docx",
+                              "format":"n/a",
+                              "id":"fileName"
+                           }
+                        },
+                        {
+                           "fileType":{
+                              "name":"檔案類型",
+                              "type":"string",
+                              "value":"image/jpeg",
+                              "format":"n/a",
+                              "id":"fileType"
+                           },
+                           "fileUrl":{
+                              "name":"檔案路徑",
+                              "type":"string",
+                              "value":"213054348471705645522899686059682058334332468666904109085709401572564865917840459407644865526610519454919698294050221",
+                              "format":"n/a",
+                              "id":"fileUrl"
+                           },
+                           "fileName":{
+                              "name":"檔案名稱",
+                              "type":"string",
+                              "value":"1643078742200_A.jpg",
+                              "format":"n/a",
+                              "id":"fileName"
+                           }
+                        },
+                        {
+                           "fileType":{
+                              "name":"檔案類型",
+                              "type":"string",
+                              "value":"application/pdf",
+                              "format":"n/a",
+                              "id":"fileType"
+                           },
+                           "fileUrl":{
+                              "name":"檔案路徑",
+                              "type":"string",
+                              "value":"455081326282139220778915637967543067724210186456599314554053797322699112004686013661897571284512146408289108883247131030352506479918432248519610045402377780797371013561698903045297101962589301299762891115085188159",
+                              "format":"n/a",
+                              "id":"fileUrl"
+                           },
+                           "fileName":{
+                              "name":"檔案名稱",
+                              "type":"string",
+                              "value":"1643078742200_1642650962408_任09歡迎新同事-1110120.pdf",
+                              "format":"n/a",
+                              "id":"fileName"
+                           }
+                        }
                      ],
                      "format":"n/a",
-                     "id":"fieldValue"
+                     "id":"files"
                   },
                   "fieldName":{
                      "name":"欄位名稱",
