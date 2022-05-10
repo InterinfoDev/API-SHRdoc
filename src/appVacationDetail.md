@@ -331,7 +331,7 @@ Here is a JSON representation of request.
                      "name":"欄位資料",
                      "type":"array",
                      "value":[
-                        "2022/01/17 0800"
+                        "2022/01/17 08:00"
                      ],
                      "format":"n/a",
                      "id":"fieldValue"
