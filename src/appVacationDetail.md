@@ -32,7 +32,7 @@ Here is a JSON representation of request.
 ```
 
 ### Properties
-| Property | Type | Description |
+| Property | Type | Description | 
 |:---------|:-----|:------------|
 | uid   | String | 加密後帳號 |
 | right | String | 加密後系統相關資料 |
