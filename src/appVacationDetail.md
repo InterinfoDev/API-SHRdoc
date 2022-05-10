@@ -38,6 +38,14 @@ Here is a JSON representation of request.
 | right | String | 加密後系統相關資料 |
 | request | Object | 要求本文 |
 
+### fieldType
+| Type | Description | Data source  |
+|:---------|:------------|:------------|
+| text | 文字顯示類型 |   fieldValue |
+| file | 附件下載顯示類型 | switch |
+| switch | 開關類型 |   fiels |
+
+
 ### Request Properties
 | Key | Value | Type | Description | Required | Format |
 |:----------|:-------------|:-----|:------------|:------------|:------------|
@@ -46,9 +54,6 @@ Here is a JSON representation of request.
 
 
 ### HTTP Response when Successful
-當 fieldType=text    時 資料來源抓fieldValue
-當 fieldType=switch  時 資料來源抓switch
-當 fieldType=file    時 資料來源抓fiels
 ```json
 {
    "status":"success",
