@@ -113,28 +113,28 @@ Here is a JSON representation of request.
                            "type":"boolean",
                            "value":true,
                            "format":"n/a",
-                           "id":"vacationStartDate"
+                           "id":"startDate"   --kevin改名startDate
                         },
                         {
                            "name":"結束日期",
                            "type":"boolean",
                            "value":true,
                            "format":"n/a",
-                           "id":"vacationEndDate"
+                           "id":"endDate"  --kevin改名endDate
                         },
                         {
                            "name":"起始時間",
                            "type":"boolean",
                            "value":true,
                            "format":"n/a",
-                           "id":"vacationStartTime"
+                           "id":"startTime"   --kevin改名startTime
                         },
                         {
                            "name":"結束時間",
                            "type":"boolean",
                            "value":true,
                            "format":"n/a",
-                           "id":"vacationEndTime"
+                           "id":"endTime"  --kevin改名endTime
                         },
                         {
                            "name":"逾時請假原因",
@@ -156,28 +156,28 @@ Here is a JSON representation of request.
                            "type":"string",
                            "value":"20220503",
                            "format":"YYYYmmdd",
-                           "id":"vacationStartDate"
+                           "id":"startDate"   --kevin改名startDate
                         },
                         {
                            "name":"結束日期",
                            "type":"string",
                            "value":"20220503",
                            "format":"YYYYmmdd",
-                           "id":"vacationEndDate"
+                           "id":"endDate"  --kevin改名endDate
                         },
                         {
                            "name":"起始時間",
                            "type":"string",
                            "value":"0830",
                            "format":"HHmm",
-                           "id":"vacationStartTime"
+                           "id":"startTime"   --kevin改名startTime
                         },
                         {
                            "name":"結束時間",
                            "type":"string",
                            "value":"1730",
                            "format":"HHmm",
-                           "id":"vacationEndTime"
+                           "id":"endTime"  --kevin改名endTime
                         }
                      ],
                      "format":"n/a",
@@ -192,28 +192,28 @@ Here is a JSON representation of request.
                            "type":"boolean",
                            "value":true,
                            "format":"n/a",
-                           "id":"vacationStartDate"
+                           "id":"startDate"   --kevin改名startDate
                         },
                         {
                            "name":"結束日期",
                            "type":"boolean",
                            "value":true,
                            "format":"n/a",
-                           "id":"vacationEndDate"
+                           "id":"endDate"  --kevin改名endDate
                         },
                         {
                            "name":"起始時間",
                            "type":"boolean",
                            "value":true,
                            "format":"n/a",
-                           "id":"vacationStartTime"
+                           "id":"startTime"   --kevin改名startTime
                         },
                         {
                            "name":"結束時間",
                            "type":"boolean",
                            "value":true,
                            "format":"n/a",
-                           "id":"vacationEndTime"
+                           "id":"endTime"  --kevin改名endTime
                         },
                         {
                            "name":"逾時請假原因",
