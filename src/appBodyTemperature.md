@@ -47,7 +47,7 @@ Here is a JSON representation of request.
 | measureDate | 20211202 | String | 測量日期 | Y | AC(YYYYmmdd) |
 | measureTime | 0830 | String | 測量時間 | Y | TIME(HHmm) |
 | bodyTemperature | 36.5 | Decimal | 測量溫度 | Y | Degrees |
-| measureInterface | A | String | 測量介面 | Y | A額溫槍,B耳溫搶,C體溫計,D紅外線熱像儀 |
+| measureInterface | A | String | 測量介面 | Y | A額溫槍,B耳溫搶,C體溫計,D紅外線熱像儀,E手部感應測溫儀 |
 | measureUnit | C | String | 測量單位 | Y | F 華氏 C 攝氏 |
 
 
