@@ -44,11 +44,11 @@ Here is a JSON representation of request.
 ### Request Properties
 | Key | Value | Type | Description | Required | Format |
 |:----------|:-------------|:-----|:------------|:------------|:------------|
-| cpnyid | 202201 | String | 公司別 | N | n/a |
+| cpnyid | TW | String | 公司別 | N | n/a |
 | empid | admin | String | 員工編號 | N | n/a |
-| func_name | 00 | String | 代理功能 | N | n/a |
-| dept_no | admin | String | 部門 | N | n/a |
-| agent | 00 | String | 簽核代理人 | N | n/a |
+| func_name |  | String | 代理功能 | N | n/a |
+| dept_no |  | int | 部門 | N | n/a |
+| agent |  | String | 簽核代理人 | N | n/a |
 
 
 ### HTTP Response when Successful
