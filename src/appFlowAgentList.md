@@ -41,413 +41,797 @@ Here is a JSON representation of request.
 ### HTTP Response when Successful
 ```json
 {
-    "status": "success",
-    "message": [
-        "回傳成功"
-    ],
-    "data": {
-        "flowAgentList": {
-            "name": "簽核代理人列表",
-            "type": "array",
-            "value": [
-                {
-                    "name": "簽核代理人資訊",
-                    "type": "object",
-                    "value": {
-                        "function": {
-                            "name": "代理功能",
-                            "type": "string",
-                            "value": "C.126.個人工作目標修改簽核",
-                            "format": "n/a",
-                            "id": "function"
-                        },
-                        "endTime": {
-                            "name": "代理結束時間",
-                            "type": "string",
-                            "value": "",
-                            "format": "n/a",
-                            "id": "endTime"
-                        },
-                        "key": {
-                            "name": "資料索引值",
-                            "type": "string",
-                            "value": "12487659774168172618768299574942949518028740856953495932069812901468259930334017116152477345615391",
-                            "format": "n/a",
-                            "id": "key"
-                        },
-                        "agent": {
-                            "name": "代理人",
-                            "type": "string",
-                            "value": "1355",
-                            "format": "n/a",
-                            "id": "agent"
-                        },
-                        "empFullName": {
-                            "name": "員工中文姓名",
-                            "type": "string",
-                            "value": "鞏O倫",
-                            "format": "n/a",
-                            "id": "empFullName"
-                        },
-                        "empid": {
-                            "name": "員工編號",
-                            "type": "string",
-                            "value": "0091",
-                            "format": "n/a",
-                            "id": "empid"
-                        },
-                        "starTime": {
-                            "name": "代理起始時間",
-                            "type": "string",
-                            "value": "",
-                            "format": "n/a",
-                            "id": "starTime"
-                        },
-                        "agentName": {
-                            "name": "簽核代理人姓名",
-                            "type": "string",
-                            "value": "廣O佑廣O佑廣O佑廣O佑",
-                            "format": "n/a",
-                            "id": "agentName"
-                        }
-                    },
-                    "format": "n/a",
-                    "id": "flowAgent"
-                },
-                {
-                    "name": "簽核代理人資訊",
-                    "type": "object",
-                    "value": {
-                        "function": {
-                            "name": "代理功能",
-                            "type": "string",
-                            "value": "C.221.績效考核表簽核",
-                            "format": "n/a",
-                            "id": "function"
-                        },
-                        "endTime": {
-                            "name": "代理結束時間",
-                            "type": "string",
-                            "value": "",
-                            "format": "n/a",
-                            "id": "endTime"
-                        },
-                        "key": {
-                            "name": "資料索引值",
-                            "type": "string",
-                            "value": "676957392820648821866873594550406547788033845224824634457511768246772113272956",
-                            "format": "n/a",
-                            "id": "key"
-                        },
-                        "agent": {
-                            "name": "代理人",
-                            "type": "string",
-                            "value": "1355",
-                            "format": "n/a",
-                            "id": "agent"
-                        },
-                        "empFullName": {
-                            "name": "員工中文姓名",
-                            "type": "string",
-                            "value": "鞏O倫",
-                            "format": "n/a",
-                            "id": "empFullName"
-                        },
-                        "empid": {
-                            "name": "員工編號",
-                            "type": "string",
-                            "value": "0091",
-                            "format": "n/a",
-                            "id": "empid"
-                        },
-                        "starTime": {
-                            "name": "代理起始時間",
-                            "type": "string",
-                            "value": "",
-                            "format": "n/a",
-                            "id": "starTime"
-                        },
-                        "agentName": {
-                            "name": "簽核代理人姓名",
-                            "type": "string",
-                            "value": "廣O佑廣O佑廣O佑廣O佑",
-                            "format": "n/a",
-                            "id": "agentName"
-                        }
-                    },
-                    "format": "n/a",
-                    "id": "flowAgent"
-                },
-                {
-                    "name": "簽核代理人資訊",
-                    "type": "object",
-                    "value": {
-                        "function": {
-                            "name": "代理功能",
-                            "type": "string",
-                            "value": "CB2.1.請假單簽核",
-                            "format": "n/a",
-                            "id": "function"
-                        },
-                        "endTime": {
-                            "name": "代理結束時間",
-                            "type": "string",
-                            "value": "",
-                            "format": "n/a",
-                            "id": "endTime"
-                        },
-                        "key": {
-                            "name": "資料索引值",
-                            "type": "string",
-                            "value": "676957392820648821864061521739683258360670551866432903124883108368712720808379",
-                            "format": "n/a",
-                            "id": "key"
-                        },
-                        "agent": {
-                            "name": "代理人",
-                            "type": "string",
-                            "value": "1355",
-                            "format": "n/a",
-                            "id": "agent"
-                        },
-                        "empFullName": {
-                            "name": "員工中文姓名",
-                            "type": "string",
-                            "value": "鞏O倫",
-                            "format": "n/a",
-                            "id": "empFullName"
-                        },
-                        "empid": {
-                            "name": "員工編號",
-                            "type": "string",
-                            "value": "0091",
-                            "format": "n/a",
-                            "id": "empid"
-                        },
-                        "starTime": {
-                            "name": "代理起始時間",
-                            "type": "string",
-                            "value": "",
-                            "format": "n/a",
-                            "id": "starTime"
-                        },
-                        "agentName": {
-                            "name": "簽核代理人姓名",
-                            "type": "string",
-                            "value": "廣O佑廣O佑廣O佑廣O佑",
-                            "format": "n/a",
-                            "id": "agentName"
-                        }
-                    },
-                    "format": "n/a",
-                    "id": "flowAgent"
-                },
-                {
-                    "name": "簽核代理人資訊",
-                    "type": "object",
-                    "value": {
-                        "function": {
-                            "name": "代理功能",
-                            "type": "string",
-                            "value": "CB2.1.請假單簽核",
-                            "format": "n/a",
-                            "id": "function"
-                        },
-                        "endTime": {
-                            "name": "代理結束時間",
-                            "type": "string",
-                            "value": "2021/11/15 17:00",
-                            "format": "n/a",
-                            "id": "endTime"
-                        },
-                        "key": {
-                            "name": "資料索引值",
-                            "type": "string",
-                            "value": "71498905997051669694753916033137341108492672005024160321966725331425988946949725447985873788481599525941015944043333500432156022369644099311372573508609826",
-                            "format": "n/a",
-                            "id": "key"
-                        },
-                        "agent": {
-                            "name": "代理人",
-                            "type": "string",
-                            "value": "10600009",
-                            "format": "n/a",
-                            "id": "agent"
-                        },
-                        "empFullName": {
-                            "name": "員工中文姓名",
-                            "type": "string",
-                            "value": "仇O淇",
-                            "format": "n/a",
-                            "id": "empFullName"
-                        },
-                        "empid": {
-                            "name": "員工編號",
-                            "type": "string",
-                            "value": "0179",
-                            "format": "n/a",
-                            "id": "empid"
-                        },
-                        "starTime": {
-                            "name": "代理起始時間",
-                            "type": "string",
-                            "value": "2021/11/15 08:00",
-                            "format": "n/a",
-                            "id": "starTime"
-                        },
-                        "agentName": {
-                            "name": "簽核代理人姓名",
-                            "type": "string",
-                            "value": "tOs",
-                            "format": "n/a",
-                            "id": "agentName"
-                        }
-                    },
-                    "format": "n/a",
-                    "id": "flowAgent"
-                },
-                {
-                    "name": "簽核代理人資訊",
-                    "type": "object",
-                    "value": {
-                        "function": {
-                            "name": "代理功能",
-                            "type": "string",
-                            "value": "CB3.1.預定加班單簽核",
-                            "format": "n/a",
-                            "id": "function"
-                        },
-                        "endTime": {
-                            "name": "代理結束時間",
-                            "type": "string",
-                            "value": "2021/11/15 17:00",
-                            "format": "n/a",
-                            "id": "endTime"
-                        },
-                        "key": {
-                            "name": "資料索引值",
-                            "type": "string",
-                            "value": "1318922020477829207708895623245226786531961598600155888092460583400417610830859686463248350654580523202444694870817122770689412621515639398604557069248679713693666346271799572",
-                            "format": "n/a",
-                            "id": "key"
-                        },
-                        "agent": {
-                            "name": "代理人",
-                            "type": "string",
-                            "value": "10600009",
-                            "format": "n/a",
-                            "id": "agent"
-                        },
-                        "empFullName": {
-                            "name": "員工中文姓名",
-                            "type": "string",
-                            "value": "仇O淇",
-                            "format": "n/a",
-                            "id": "empFullName"
-                        },
-                        "empid": {
-                            "name": "員工編號",
-                            "type": "string",
-                            "value": "0179",
-                            "format": "n/a",
-                            "id": "empid"
-                        },
-                        "starTime": {
-                            "name": "代理起始時間",
-                            "type": "string",
-                            "value": "2021/11/15 08:00",
-                            "format": "n/a",
-                            "id": "starTime"
-                        },
-                        "agentName": {
-                            "name": "簽核代理人姓名",
-                            "type": "string",
-                            "value": "tOs",
-                            "format": "n/a",
-                            "id": "agentName"
-                        }
-                    },
-                    "format": "n/a",
-                    "id": "flowAgent"
-                },
-                {
-                    "name": "簽核代理人資訊",
-                    "type": "object",
-                    "value": {
-                        "function": {
-                            "name": "代理功能",
-                            "type": "string",
-                            "value": "C7.補刷卡簽核",
-                            "format": "n/a",
-                            "id": "function"
-                        },
-                        "endTime": {
-                            "name": "代理結束時間",
-                            "type": "string",
-                            "value": "2021/08/16 09:00",
-                            "format": "n/a",
-                            "id": "endTime"
-                        },
-                        "key": {
-                            "name": "資料索引值",
-                            "type": "string",
-                            "value": "1294143037927171846250089652033520070204300974014762329594157127711705907151744731551158571970519968584468106957973952459179741229495042765223515949543391484075044390781699291",
-                            "format": "n/a",
-                            "id": "key"
-                        },
-                        "agent": {
-                            "name": "代理人",
-                            "type": "string",
-                            "value": "10600009",
-                            "format": "n/a",
-                            "id": "agent"
-                        },
-                        "empFullName": {
-                            "name": "員工中文姓名",
-                            "type": "string",
-                            "value": "單O申",
-                            "format": "n/a",
-                            "id": "empFullName"
-                        },
-                        "empid": {
-                            "name": "員工編號",
-                            "type": "string",
-                            "value": "applytest001",
-                            "format": "n/a",
-                            "id": "empid"
-                        },
-                        "starTime": {
-                            "name": "代理起始時間",
-                            "type": "string",
-                            "value": "2021/08/16 08:00",
-                            "format": "n/a",
-                            "id": "starTime"
-                        },
-                        "agentName": {
-                            "name": "簽核代理人姓名",
-                            "type": "string",
-                            "value": "tOs",
-                            "format": "n/a",
-                            "id": "agentName"
-                        }
-                    },
-                    "format": "n/a",
-                    "id": "flowAgent"
-                }
-            ],
-            "format": "n/a",
-            "id": "flowAgentList"
-        },
-        "properties": {
-            "format": {
-                "HHmm": "時間時分",
-                "hour": "小時",
-                "YYYYmmdd": "西元年月日",
-                "day": "天",
-                "n/a": ""
+   "status":"success",
+   "message":[
+      "回傳成功"
+   ],
+   "data":{
+      "flowAgentList":{
+         "name":"簽核代理人列表",
+         "type":"array",
+         "value":[
+            {
+               "name":"簽核代理人資訊",
+               "type":"object",
+               "value":{
+                  "endTime":{
+                     "name":"代理結束時間",
+                     "type":"string",
+                     "value":"",
+                     "format":"n/a",
+                     "id":"endTime"
+                  },
+                  "flowAgentKey":{
+                     "name":"單據代號",
+                     "type":"string",
+                     "value":"12487659774168172618768299574942949518028740856953495932069812901468259930334017116152477345615391",
+                     "format":"n/a",
+                     "id":"flowAgentKey"
+                  },
+                  "agentFullName":{
+                     "name":"簽核代理人中文姓名",
+                     "type":"string",
+                     "value":"廣O佑廣O佑廣O佑廣O佑",
+                     "format":"n/a",
+                     "id":"agentName"
+                  },
+                  "startTime":{
+                     "name":"代理起始時間",
+                     "type":"string",
+                     "value":"",
+                     "format":"n/a",
+                     "id":"startTime"
+                  },
+                  "agent":{
+                     "name":"代理人編號",
+                     "type":"string",
+                     "value":"1355",
+                     "format":"n/a",
+                     "id":"agent"
+                  },
+                  "empFullName":{
+                     "name":"員工中文姓名",
+                     "type":"string",
+                     "value":"鞏O倫",
+                     "format":"n/a",
+                     "id":"empFullName"
+                  },
+                  "empid":{
+                     "name":"員工編號",
+                     "type":"string",
+                     "value":"0091",
+                     "format":"n/a",
+                     "id":"empid"
+                  },
+                  "functionName":{
+                     "name":"功能名稱",
+                     "type":"string",
+                     "value":"C.126.個人工作目標修改簽核",
+                     "format":"n/a",
+                     "id":"functionName"
+                  }
+               },
+               "format":"n/a",
+               "id":"flowAgent"
+            },
+            {
+               "name":"簽核代理人資訊",
+               "type":"object",
+               "value":{
+                  "endTime":{
+                     "name":"代理結束時間",
+                     "type":"string",
+                     "value":"2021/11/15 17:00",
+                     "format":"n/a",
+                     "id":"endTime"
+                  },
+                  "flowAgentKey":{
+                     "name":"單據代號",
+                     "type":"string",
+                     "value":"71498905997051669694753916033137341108505075924766945447652039364880426212347406450967655243994883794391654440961094314520395869653721171648577039209701193",
+                     "format":"n/a",
+                     "id":"flowAgentKey"
+                  },
+                  "agentFullName":{
+                     "name":"簽核代理人中文姓名",
+                     "type":"string",
+                     "value":"tOs",
+                     "format":"n/a",
+                     "id":"agentName"
+                  },
+                  "startTime":{
+                     "name":"代理起始時間",
+                     "type":"string",
+                     "value":"2021/11/15 08:00",
+                     "format":"n/a",
+                     "id":"startTime"
+                  },
+                  "agent":{
+                     "name":"代理人編號",
+                     "type":"string",
+                     "value":"10600009",
+                     "format":"n/a",
+                     "id":"agent"
+                  },
+                  "empFullName":{
+                     "name":"員工中文姓名",
+                     "type":"string",
+                     "value":"仇O淇",
+                     "format":"n/a",
+                     "id":"empFullName"
+                  },
+                  "empid":{
+                     "name":"員工編號",
+                     "type":"string",
+                     "value":"0179",
+                     "format":"n/a",
+                     "id":"empid"
+                  },
+                  "functionName":{
+                     "name":"功能名稱",
+                     "type":"string",
+                     "value":"CB3.7.補刷卡簽核",
+                     "format":"n/a",
+                     "id":"functionName"
+                  }
+               },
+               "format":"n/a",
+               "id":"flowAgent"
+            },
+            {
+               "name":"簽核代理人資訊",
+               "type":"object",
+               "value":{
+                  "endTime":{
+                     "name":"代理結束時間",
+                     "type":"string",
+                     "value":"",
+                     "format":"n/a",
+                     "id":"endTime"
+                  },
+                  "flowAgentKey":{
+                     "name":"單據代號",
+                     "type":"string",
+                     "value":"11498706894666953203503442099556046592344473861952029391917616202106305005696316174729712727554267",
+                     "format":"n/a",
+                     "id":"flowAgentKey"
+                  },
+                  "agentFullName":{
+                     "name":"簽核代理人中文姓名",
+                     "type":"string",
+                     "value":"tOs",
+                     "format":"n/a",
+                     "id":"agentName"
+                  },
+                  "startTime":{
+                     "name":"代理起始時間",
+                     "type":"string",
+                     "value":"",
+                     "format":"n/a",
+                     "id":"startTime"
+                  },
+                  "agent":{
+                     "name":"代理人編號",
+                     "type":"string",
+                     "value":"10600009",
+                     "format":"n/a",
+                     "id":"agent"
+                  },
+                  "empFullName":{
+                     "name":"員工中文姓名",
+                     "type":"string",
+                     "value":"系統管理員",
+                     "format":"n/a",
+                     "id":"empFullName"
+                  },
+                  "empid":{
+                     "name":"員工編號",
+                     "type":"string",
+                     "value":"admin",
+                     "format":"n/a",
+                     "id":"empid"
+                  },
+                  "functionName":{
+                     "name":"功能名稱",
+                     "type":"string",
+                     "value":"C.221.績效考核表簽核",
+                     "format":"n/a",
+                     "id":"functionName"
+                  }
+               },
+               "format":"n/a",
+               "id":"flowAgent"
+            },
+            {
+               "name":"簽核代理人資訊",
+               "type":"object",
+               "value":{
+                  "endTime":{
+                     "name":"代理結束時間",
+                     "type":"string",
+                     "value":"",
+                     "format":"n/a",
+                     "id":"endTime"
+                  },
+                  "flowAgentKey":{
+                     "name":"單據代號",
+                     "type":"string",
+                     "value":"11498706894666953203503442099556046592345294631751789760173818039945049163209701547676904589523273",
+                     "format":"n/a",
+                     "id":"flowAgentKey"
+                  },
+                  "agentFullName":{
+                     "name":"簽核代理人中文姓名",
+                     "type":"string",
+                     "value":"tOs",
+                     "format":"n/a",
+                     "id":"agentName"
+                  },
+                  "startTime":{
+                     "name":"代理起始時間",
+                     "type":"string",
+                     "value":"",
+                     "format":"n/a",
+                     "id":"startTime"
+                  },
+                  "agent":{
+                     "name":"代理人編號",
+                     "type":"string",
+                     "value":"10600009",
+                     "format":"n/a",
+                     "id":"agent"
+                  },
+                  "empFullName":{
+                     "name":"員工中文姓名",
+                     "type":"string",
+                     "value":"系統管理員",
+                     "format":"n/a",
+                     "id":"empFullName"
+                  },
+                  "empid":{
+                     "name":"員工編號",
+                     "type":"string",
+                     "value":"admin",
+                     "format":"n/a",
+                     "id":"empid"
+                  },
+                  "functionName":{
+                     "name":"功能名稱",
+                     "type":"string",
+                     "value":"C.225.新進人員考核簽核",
+                     "format":"n/a",
+                     "id":"functionName"
+                  }
+               },
+               "format":"n/a",
+               "id":"flowAgent"
+            },
+            {
+               "name":"簽核代理人資訊",
+               "type":"object",
+               "value":{
+                  "endTime":{
+                     "name":"代理結束時間",
+                     "type":"string",
+                     "value":"2022/01/21 17:00",
+                     "format":"n/a",
+                     "id":"endTime"
+                  },
+                  "flowAgentKey":{
+                     "name":"單據代號",
+                     "type":"string",
+                     "value":"79802168545305804662122192063181535423057389609029306998205781946554083146191353044458348470016153042009360299558149184985147988165727454181096445840060681",
+                     "format":"n/a",
+                     "id":"flowAgentKey"
+                  },
+                  "agentFullName":{
+                     "name":"簽核代理人中文姓名",
+                     "type":"string",
+                     "value":"薪O條",
+                     "format":"n/a",
+                     "id":"agentName"
+                  },
+                  "startTime":{
+                     "name":"代理起始時間",
+                     "type":"string",
+                     "value":"2022/01/21 08:00",
+                     "format":"n/a",
+                     "id":"startTime"
+                  },
+                  "agent":{
+                     "name":"代理人編號",
+                     "type":"string",
+                     "value":"11000021",
+                     "format":"n/a",
+                     "id":"agent"
+                  },
+                  "empFullName":{
+                     "name":"員工中文姓名",
+                     "type":"string",
+                     "value":"系統管理員",
+                     "format":"n/a",
+                     "id":"empFullName"
+                  },
+                  "empid":{
+                     "name":"員工編號",
+                     "type":"string",
+                     "value":"admin",
+                     "format":"n/a",
+                     "id":"empid"
+                  },
+                  "functionName":{
+                     "name":"功能名稱",
+                     "type":"string",
+                     "value":"CB2.1.請假單簽核",
+                     "format":"n/a",
+                     "id":"functionName"
+                  }
+               },
+               "format":"n/a",
+               "id":"flowAgent"
+            },
+            {
+               "name":"簽核代理人資訊",
+               "type":"object",
+               "value":{
+                  "endTime":{
+                     "name":"代理結束時間",
+                     "type":"string",
+                     "value":"2022/01/21 17:00",
+                     "format":"n/a",
+                     "id":"endTime"
+                  },
+                  "flowAgentKey":{
+                     "name":"單據代號",
+                     "type":"string",
+                     "value":"72178553003216722966064032892868658706246965331916556225952172861055196403043172358184906986591777739688554361953015490960031011614283674010426170350193522",
+                     "format":"n/a",
+                     "id":"flowAgentKey"
+                  },
+                  "agentFullName":{
+                     "name":"簽核代理人中文姓名",
+                     "type":"string",
+                     "value":"TOs",
+                     "format":"n/a",
+                     "id":"agentName"
+                  },
+                  "startTime":{
+                     "name":"代理起始時間",
+                     "type":"string",
+                     "value":"2022/01/21 08:00",
+                     "format":"n/a",
+                     "id":"startTime"
+                  },
+                  "agent":{
+                     "name":"代理人編號",
+                     "type":"string",
+                     "value":"10804025",
+                     "format":"n/a",
+                     "id":"agent"
+                  },
+                  "empFullName":{
+                     "name":"員工中文姓名",
+                     "type":"string",
+                     "value":"系統管理員",
+                     "format":"n/a",
+                     "id":"empFullName"
+                  },
+                  "empid":{
+                     "name":"員工編號",
+                     "type":"string",
+                     "value":"admin",
+                     "format":"n/a",
+                     "id":"empid"
+                  },
+                  "functionName":{
+                     "name":"功能名稱",
+                     "type":"string",
+                     "value":"CB2.11.出差單簽核",
+                     "format":"n/a",
+                     "id":"functionName"
+                  }
+               },
+               "format":"n/a",
+               "id":"flowAgent"
+            },
+            {
+               "name":"簽核代理人資訊",
+               "type":"object",
+               "value":{
+                  "endTime":{
+                     "name":"代理結束時間",
+                     "type":"string",
+                     "value":"2022/01/21 17:00",
+                     "format":"n/a",
+                     "id":"endTime"
+                  },
+                  "flowAgentKey":{
+                     "name":"單據代號",
+                     "type":"string",
+                     "value":"79802168545305804662122192063181535423066448260477790487524818990661657574459834881459673533542229090959535319911126474768519081951709554515365199683058426",
+                     "format":"n/a",
+                     "id":"flowAgentKey"
+                  },
+                  "agentFullName":{
+                     "name":"簽核代理人中文姓名",
+                     "type":"string",
+                     "value":"薪O條",
+                     "format":"n/a",
+                     "id":"agentName"
+                  },
+                  "startTime":{
+                     "name":"代理起始時間",
+                     "type":"string",
+                     "value":"2022/01/21 08:00",
+                     "format":"n/a",
+                     "id":"startTime"
+                  },
+                  "agent":{
+                     "name":"代理人編號",
+                     "type":"string",
+                     "value":"11000021",
+                     "format":"n/a",
+                     "id":"agent"
+                  },
+                  "empFullName":{
+                     "name":"員工中文姓名",
+                     "type":"string",
+                     "value":"系統管理員",
+                     "format":"n/a",
+                     "id":"empFullName"
+                  },
+                  "empid":{
+                     "name":"員工編號",
+                     "type":"string",
+                     "value":"admin",
+                     "format":"n/a",
+                     "id":"empid"
+                  },
+                  "functionName":{
+                     "name":"功能名稱",
+                     "type":"string",
+                     "value":"CB2.11.出差單簽核",
+                     "format":"n/a",
+                     "id":"functionName"
+                  }
+               },
+               "format":"n/a",
+               "id":"flowAgent"
+            },
+            {
+               "name":"簽核代理人資訊",
+               "type":"object",
+               "value":{
+                  "endTime":{
+                     "name":"代理結束時間",
+                     "type":"string",
+                     "value":"2022/01/21 17:00",
+                     "format":"n/a",
+                     "id":"endTime"
+                  },
+                  "flowAgentKey":{
+                     "name":"單據代號",
+                     "type":"string",
+                     "value":"79802168545305804662122192063181535423066448260477790487524818990661657574459834881459673533542229090959535319911126474768519081951709554515365199683058426",
+                     "format":"n/a",
+                     "id":"flowAgentKey"
+                  },
+                  "agentFullName":{
+                     "name":"簽核代理人中文姓名",
+                     "type":"string",
+                     "value":"薪O條",
+                     "format":"n/a",
+                     "id":"agentName"
+                  },
+                  "startTime":{
+                     "name":"代理起始時間",
+                     "type":"string",
+                     "value":"2022/01/21 08:00",
+                     "format":"n/a",
+                     "id":"startTime"
+                  },
+                  "agent":{
+                     "name":"代理人編號",
+                     "type":"string",
+                     "value":"11000021",
+                     "format":"n/a",
+                     "id":"agent"
+                  },
+                  "empFullName":{
+                     "name":"員工中文姓名",
+                     "type":"string",
+                     "value":"系統管理員",
+                     "format":"n/a",
+                     "id":"empFullName"
+                  },
+                  "empid":{
+                     "name":"員工編號",
+                     "type":"string",
+                     "value":"admin",
+                     "format":"n/a",
+                     "id":"empid"
+                  },
+                  "functionName":{
+                     "name":"功能名稱",
+                     "type":"string",
+                     "value":"CB2.11.出差單簽核",
+                     "format":"n/a",
+                     "id":"functionName"
+                  }
+               },
+               "format":"n/a",
+               "id":"flowAgent"
+            },
+            {
+               "name":"簽核代理人資訊",
+               "type":"object",
+               "value":{
+                  "endTime":{
+                     "name":"代理結束時間",
+                     "type":"string",
+                     "value":"2022/01/21 17:00",
+                     "format":"n/a",
+                     "id":"endTime"
+                  },
+                  "flowAgentKey":{
+                     "name":"單據代號",
+                     "type":"string",
+                     "value":"79802168545305804662122192063181535423066448260477790487524818990661657574459834881459673533542229090959535319911126474768519081951709554515365199683058426",
+                     "format":"n/a",
+                     "id":"flowAgentKey"
+                  },
+                  "agentFullName":{
+                     "name":"簽核代理人中文姓名",
+                     "type":"string",
+                     "value":"薪O條",
+                     "format":"n/a",
+                     "id":"agentName"
+                  },
+                  "startTime":{
+                     "name":"代理起始時間",
+                     "type":"string",
+                     "value":"2022/01/21 08:00",
+                     "format":"n/a",
+                     "id":"startTime"
+                  },
+                  "agent":{
+                     "name":"代理人編號",
+                     "type":"string",
+                     "value":"11000021",
+                     "format":"n/a",
+                     "id":"agent"
+                  },
+                  "empFullName":{
+                     "name":"員工中文姓名",
+                     "type":"string",
+                     "value":"系統管理員",
+                     "format":"n/a",
+                     "id":"empFullName"
+                  },
+                  "empid":{
+                     "name":"員工編號",
+                     "type":"string",
+                     "value":"admin",
+                     "format":"n/a",
+                     "id":"empid"
+                  },
+                  "functionName":{
+                     "name":"功能名稱",
+                     "type":"string",
+                     "value":"CB2.11.出差單簽核",
+                     "format":"n/a",
+                     "id":"functionName"
+                  }
+               },
+               "format":"n/a",
+               "id":"flowAgent"
+            },
+            {
+               "name":"簽核代理人資訊",
+               "type":"object",
+               "value":{
+                  "endTime":{
+                     "name":"代理結束時間",
+                     "type":"string",
+                     "value":"2022/01/21 17:00",
+                     "format":"n/a",
+                     "id":"endTime"
+                  },
+                  "flowAgentKey":{
+                     "name":"單據代號",
+                     "type":"string",
+                     "value":"1472090179682290641775124416955450765455768882873828221552838116144983647186856478187062267444015529789677223756478076387123054841357669310395178977258486235024030510180440796",
+                     "format":"n/a",
+                     "id":"flowAgentKey"
+                  },
+                  "agentFullName":{
+                     "name":"簽核代理人中文姓名",
+                     "type":"string",
+                     "value":"薪O條",
+                     "format":"n/a",
+                     "id":"agentName"
+                  },
+                  "startTime":{
+                     "name":"代理起始時間",
+                     "type":"string",
+                     "value":"2022/01/21 08:00",
+                     "format":"n/a",
+                     "id":"startTime"
+                  },
+                  "agent":{
+                     "name":"代理人編號",
+                     "type":"string",
+                     "value":"11000021",
+                     "format":"n/a",
+                     "id":"agent"
+                  },
+                  "empFullName":{
+                     "name":"員工中文姓名",
+                     "type":"string",
+                     "value":"系統管理員",
+                     "format":"n/a",
+                     "id":"empFullName"
+                  },
+                  "empid":{
+                     "name":"員工編號",
+                     "type":"string",
+                     "value":"admin",
+                     "format":"n/a",
+                     "id":"empid"
+                  },
+                  "functionName":{
+                     "name":"功能名稱",
+                     "type":"string",
+                     "value":"CB3.1.預定加班單簽核",
+                     "format":"n/a",
+                     "id":"functionName"
+                  }
+               },
+               "format":"n/a",
+               "id":"flowAgent"
+            },
+            {
+               "name":"簽核代理人資訊",
+               "type":"object",
+               "value":{
+                  "endTime":{
+                     "name":"代理結束時間",
+                     "type":"string",
+                     "value":"2022/01/21 17:00",
+                     "format":"n/a",
+                     "id":"endTime"
+                  },
+                  "flowAgentKey":{
+                     "name":"單據代號",
+                     "type":"string",
+                     "value":"1472090179682290641775124416955450765455768882873828221552838116144983647186856478187062267444015529789677223756478076387123054841357669310395178977258486235024030510180440796",
+                     "format":"n/a",
+                     "id":"flowAgentKey"
+                  },
+                  "agentFullName":{
+                     "name":"簽核代理人中文姓名",
+                     "type":"string",
+                     "value":"薪O條",
+                     "format":"n/a",
+                     "id":"agentName"
+                  },
+                  "startTime":{
+                     "name":"代理起始時間",
+                     "type":"string",
+                     "value":"2022/01/21 08:00",
+                     "format":"n/a",
+                     "id":"startTime"
+                  },
+                  "agent":{
+                     "name":"代理人編號",
+                     "type":"string",
+                     "value":"11000021",
+                     "format":"n/a",
+                     "id":"agent"
+                  },
+                  "empFullName":{
+                     "name":"員工中文姓名",
+                     "type":"string",
+                     "value":"系統管理員",
+                     "format":"n/a",
+                     "id":"empFullName"
+                  },
+                  "empid":{
+                     "name":"員工編號",
+                     "type":"string",
+                     "value":"admin",
+                     "format":"n/a",
+                     "id":"empid"
+                  },
+                  "functionName":{
+                     "name":"功能名稱",
+                     "type":"string",
+                     "value":"CB3.1.預定加班單簽核",
+                     "format":"n/a",
+                     "id":"functionName"
+                  }
+               },
+               "format":"n/a",
+               "id":"flowAgent"
+            },
+            {
+               "name":"簽核代理人資訊",
+               "type":"object",
+               "value":{
+                  "endTime":{
+                     "name":"代理結束時間",
+                     "type":"string",
+                     "value":"2021/08/16 09:00",
+                     "format":"n/a",
+                     "id":"endTime"
+                  },
+                  "flowAgentKey":{
+                     "name":"單據代號",
+                     "type":"string",
+                     "value":"1294143037927171846250089652033520070204300974014762329594157127711705907151744731551158571970519968584468106957973952459179741229495042765223515949543391484075044390781699291",
+                     "format":"n/a",
+                     "id":"flowAgentKey"
+                  },
+                  "agentFullName":{
+                     "name":"簽核代理人中文姓名",
+                     "type":"string",
+                     "value":"tOs",
+                     "format":"n/a",
+                     "id":"agentName"
+                  },
+                  "startTime":{
+                     "name":"代理起始時間",
+                     "type":"string",
+                     "value":"2021/08/16 08:00",
+                     "format":"n/a",
+                     "id":"startTime"
+                  },
+                  "agent":{
+                     "name":"代理人編號",
+                     "type":"string",
+                     "value":"10600009",
+                     "format":"n/a",
+                     "id":"agent"
+                  },
+                  "empFullName":{
+                     "name":"員工中文姓名",
+                     "type":"string",
+                     "value":"單O申",
+                     "format":"n/a",
+                     "id":"empFullName"
+                  },
+                  "empid":{
+                     "name":"員工編號",
+                     "type":"string",
+                     "value":"applytest001",
+                     "format":"n/a",
+                     "id":"empid"
+                  },
+                  "functionName":{
+                     "name":"功能名稱",
+                     "type":"string",
+                     "value":"C7.補刷卡簽核",
+                     "format":"n/a",
+                     "id":"functionName"
+                  }
+               },
+               "format":"n/a",
+               "id":"flowAgent"
             }
-        }
-    }
+         ],
+         "format":"n/a",
+         "id":"flowAgentList"
+      },
+      "properties":{
+         "format":{
+            "HHmm":"時間時分",
+            "hour":"小時",
+            "YYYYmmdd":"西元年月日",
+            "day":"天",
+            "n/a":""
+         }
+      }
+   }
 }
 ```
 
