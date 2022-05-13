@@ -47,7 +47,7 @@ Here is a JSON representation of request.
 | cpnyid | 202201 | String | 公司別 | Y | n/a |
 | empid | admin | String | 員工編號 | Y | n/a |
 | func_name | 00 | String | 代理功能 | Y | n/a |
-| dept_no | admin | String | 部門 | Y | n/a |
+| dept_no | admin | int | 部門 | Y | n/a |
 | agent | 00 | String | 簽核代理人 | Y | n/a |
 
 
