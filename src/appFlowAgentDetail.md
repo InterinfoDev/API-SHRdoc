@@ -52,508 +52,470 @@ Here is a JSON representation of request.
 ### HTTP Response when Successful
 ```json
 {
-    "status": "success",
-    "message": [
-        "回傳成功"
-    ],
-    "data": {
-        "deleteFlowAgent": {
-            "name": "刪除簽核代理人",
-            "type": "object",
-            "value": {
-                "deleteKey": {
-                    "name": "刪除鍵值",
-                    "type": "string",
-                    "value": "4326084225293747024556419988109226030786170329214256400024434116838672769187526122578773346158145806659984556753490868565199631711318172",
-                    "format": "n/a",
-                    "id": "deleteKey"
-                }
-            },
-            "format": "n/a",
-            "id": "deleteFlowAgent"
-        },
-        "employee": {
-            "name": "員工資料",
-            "type": "object",
-            "value": [
-                {
-                    "name": "欄位資訊",
-                    "type": "object",
-                    "value": {
-                        "fieldType": {
-                            "name": "欄位類型",
-                            "type": "string",
-                            "value": "text",
-                            "format": "n/a",
-                            "id": "fieldType"
-                        },
-                        "fieldId": {
-                            "name": "欄位代號",
-                            "type": "string",
-                            "value": "empid",
-                            "format": "n/a",
-                            "id": "fieldId"
-                        },
-                        "fieldValue": {
-                            "name": "欄位資料",
-                            "type": "array",
-                            "value": [
-                                "admin"
-                            ],
-                            "format": "n/a",
-                            "id": "fieldValue"
-                        },
-                        "fieldName": {
-                            "name": "欄位名稱",
-                            "type": "string",
-                            "value": "員工編號",
-                            "format": "n/a",
-                            "id": "fieldName"
-                        }
-                    },
-                    "format": "n/a",
-                    "id": "field"
-                },
-                {
-                    "name": "欄位資訊",
-                    "type": "object",
-                    "value": {
-                        "fieldType": {
-                            "name": "欄位類型",
-                            "type": "string",
-                            "value": "text",
-                            "format": "n/a",
-                            "id": "fieldType"
-                        },
-                        "fieldId": {
-                            "name": "欄位代號",
-                            "type": "string",
-                            "value": "empFullName",
-                            "format": "n/a",
-                            "id": "fieldId"
-                        },
-                        "fieldValue": {
-                            "name": "欄位資料",
-                            "type": "array",
-                            "value": [
-                                "系統管理員"
-                            ],
-                            "format": "n/a",
-                            "id": "fieldValue"
-                        },
-                        "fieldName": {
-                            "name": "欄位名稱",
-                            "type": "string",
-                            "value": "員工姓名",
-                            "format": "n/a",
-                            "id": "fieldName"
-                        }
-                    },
-                    "format": "n/a",
-                    "id": "field"
-                },
-                {
-                    "name": "欄位資訊",
-                    "type": "object",
-                    "value": {
-                        "fieldType": {
-                            "name": "欄位類型",
-                            "type": "string",
-                            "value": "text",
-                            "format": "n/a",
-                            "id": "fieldType"
-                        },
-                        "fieldId": {
-                            "name": "欄位代號",
-                            "type": "string",
-                            "value": "function",
-                            "format": "n/a",
-                            "id": "fieldId"
-                        },
-                        "fieldValue": {
-                            "name": "欄位資料",
-                            "type": "array",
-                            "value": [
-                                "C.126.個人工作目標修改簽核"
-                            ],
-                            "format": "n/a",
-                            "id": "fieldValue"
-                        },
-                        "fieldName": {
-                            "name": "欄位名稱",
-                            "type": "string",
-                            "value": "代理功能",
-                            "format": "n/a",
-                            "id": "fieldName"
-                        }
-                    },
-                    "format": "n/a",
-                    "id": "field"
-                },
-                {
-                    "name": "欄位資訊",
-                    "type": "object",
-                    "value": {
-                        "fieldType": {
-                            "name": "欄位類型",
-                            "type": "string",
-                            "value": "text",
-                            "format": "n/a",
-                            "id": "fieldType"
-                        },
-                        "fieldId": {
-                            "name": "欄位代號",
-                            "type": "string",
-                            "value": "possie",
-                            "format": "n/a",
-                            "id": "fieldId"
-                        },
-                        "fieldValue": {
-                            "name": "欄位資料",
-                            "type": "array",
-                            "value": [
-                                "系統管理員"
-                            ],
-                            "format": "n/a",
-                            "id": "fieldValue"
-                        },
-                        "fieldName": {
-                            "name": "欄位名稱",
-                            "type": "string",
-                            "value": "職稱",
-                            "format": "n/a",
-                            "id": "fieldName"
-                        }
-                    },
-                    "format": "n/a",
-                    "id": "field"
-                },
-                {
-                    "name": "欄位資訊",
-                    "type": "object",
-                    "value": {
-                        "fieldType": {
-                            "name": "欄位類型",
-                            "type": "string",
-                            "value": "text",
-                            "format": "n/a",
-                            "id": "fieldType"
-                        },
-                        "fieldId": {
-                            "name": "欄位代號",
-                            "type": "string",
-                            "value": "depName",
-                            "format": "n/a",
-                            "id": "fieldId"
-                        },
-                        "fieldValue": {
-                            "name": "欄位資料",
-                            "type": "array",
-                            "value": [
-                                "L1線B班"
-                            ],
-                            "format": "n/a",
-                            "id": "fieldValue"
-                        },
-                        "fieldName": {
-                            "name": "欄位名稱",
-                            "type": "string",
-                            "value": "單位",
-                            "format": "n/a",
-                            "id": "fieldName"
-                        }
-                    },
-                    "format": "n/a",
-                    "id": "field"
-                },
-                {
-                    "name": "欄位資訊",
-                    "type": "object",
-                    "value": {
-                        "fieldType": {
-                            "name": "欄位類型",
-                            "type": "string",
-                            "value": "text",
-                            "format": "n/a",
-                            "id": "fieldType"
-                        },
-                        "fieldId": {
-                            "name": "欄位代號",
-                            "type": "string",
-                            "value": "depNo",
-                            "format": "n/a",
-                            "id": "fieldId"
-                        },
-                        "fieldValue": {
-                            "name": "欄位資料",
-                            "type": "array",
-                            "value": [
-                                "89"
-                            ],
-                            "format": "n/a",
-                            "id": "fieldValue"
-                        },
-                        "fieldName": {
-                            "name": "欄位名稱",
-                            "type": "string",
-                            "value": "單位",
-                            "format": "n/a",
-                            "id": "fieldName"
-                        }
-                    },
-                    "format": "n/a",
-                    "id": "field"
-                }
-            ],
-            "format": "n/a",
-            "id": "employee"
-        },
-        "properties": {
-            "format": {
-                "HHmm": "時間時分",
-                "hour": "小時",
-                "YYYYmmdd": "西元年月日",
-                "day": "天",
-                "n/a": ""
+   "status":"success",
+   "message":[
+      "回傳成功"
+   ],
+   "data":{
+      "deleteFlowAgent":{
+         "name":"刪除簽核代理人",
+         "type":"object",
+         "value":{
+            "flowAgentKey":{
+               "name":"單據代號",
+               "type":"string",
+               "value":"4326084225293747024556419988109226030786170329214256400024434116838672769187526122578773346158145806659984556753490868565199631711318172",
+               "format":"n/a",
+               "id":"flowAgentKey"
             }
-        },
-        "flowAgentDetail": {
-            "name": "簽核代理人詳細資訊",
-            "type": "object",
-            "value": [
-                {
-                    "name": "欄位資訊",
-                    "type": "object",
-                    "value": {
-                        "fieldType": {
-                            "name": "欄位類型",
-                            "type": "string",
-                            "value": "text",
-                            "format": "n/a",
-                            "id": "fieldType"
-                        },
-                        "fieldId": {
-                            "name": "欄位代號",
-                            "type": "string",
-                            "value": "agent",
-                            "format": "n/a",
-                            "id": "fieldId"
-                        },
-                        "fieldValue": {
-                            "name": "欄位資料",
-                            "type": "array",
-                            "value": [
-                                "110000311"
-                            ],
-                            "format": "n/a",
-                            "id": "fieldValue"
-                        },
-                        "fieldName": {
-                            "name": "欄位名稱",
-                            "type": "string",
-                            "value": "簽核代理人",
-                            "format": "n/a",
-                            "id": "fieldName"
-                        }
-                    },
-                    "format": "n/a",
-                    "id": "field"
-                },
-                {
-                    "name": "欄位資訊",
-                    "type": "object",
-                    "value": {
-                        "fieldType": {
-                            "name": "欄位類型",
-                            "type": "string",
-                            "value": "text",
-                            "format": "n/a",
-                            "id": "fieldType"
-                        },
-                        "fieldId": {
-                            "name": "欄位代號",
-                            "type": "string",
-                            "value": "agentName",
-                            "format": "n/a",
-                            "id": "fieldId"
-                        },
-                        "fieldValue": {
-                            "name": "欄位資料",
-                            "type": "array",
-                            "value": [
-                                "解O庭"
-                            ],
-                            "format": "n/a",
-                            "id": "fieldValue"
-                        },
-                        "fieldName": {
-                            "name": "欄位名稱",
-                            "type": "string",
-                            "value": "簽核代理人名稱",
-                            "format": "n/a",
-                            "id": "fieldName"
-                        }
-                    },
-                    "format": "n/a",
-                    "id": "field"
-                },
-                {
-                    "name": "欄位資訊",
-                    "type": "object",
-                    "value": {
-                        "fieldType": {
-                            "name": "欄位類型",
-                            "type": "string",
-                            "value": "text",
-                            "format": "n/a",
-                            "id": "fieldType"
-                        },
-                        "fieldId": {
-                            "name": "欄位代號",
-                            "type": "string",
-                            "value": "agentPossie",
-                            "format": "n/a",
-                            "id": "fieldId"
-                        },
-                        "fieldValue": {
-                            "name": "欄位資料",
-                            "type": "array",
-                            "value": [
-                                "系統管理員"
-                            ],
-                            "format": "n/a",
-                            "id": "fieldValue"
-                        },
-                        "fieldName": {
-                            "name": "欄位名稱",
-                            "type": "string",
-                            "value": "職稱",
-                            "format": "n/a",
-                            "id": "fieldName"
-                        }
-                    },
-                    "format": "n/a",
-                    "id": "field"
-                },
-                {
-                    "name": "欄位資訊",
-                    "type": "object",
-                    "value": {
-                        "fieldType": {
-                            "name": "欄位類型",
-                            "type": "string",
-                            "value": "text",
-                            "format": "n/a",
-                            "id": "fieldType"
-                        },
-                        "fieldId": {
-                            "name": "欄位代號",
-                            "type": "string",
-                            "value": "agentDepName",
-                            "format": "n/a",
-                            "id": "fieldId"
-                        },
-                        "fieldValue": {
-                            "name": "欄位資料",
-                            "type": "array",
-                            "value": [
-                                ""
-                            ],
-                            "format": "n/a",
-                            "id": "fieldValue"
-                        },
-                        "fieldName": {
-                            "name": "欄位名稱",
-                            "type": "string",
-                            "value": "單位名稱",
-                            "format": "n/a",
-                            "id": "fieldName"
-                        }
-                    },
-                    "format": "n/a",
-                    "id": "field"
-                },
-                {
-                    "name": "欄位資訊",
-                    "type": "object",
-                    "value": {
-                        "fieldType": {
-                            "name": "欄位類型",
-                            "type": "string",
-                            "value": "text",
-                            "format": "n/a",
-                            "id": "fieldType"
-                        },
-                        "fieldId": {
-                            "name": "欄位代號",
-                            "type": "string",
-                            "value": "startTime",
-                            "format": "n/a",
-                            "id": "fieldId"
-                        },
-                        "fieldValue": {
-                            "name": "欄位資料",
-                            "type": "array",
-                            "value": [
-                                "2021/09/01 00:00"
-                            ],
-                            "format": "n/a",
-                            "id": "fieldValue"
-                        },
-                        "fieldName": {
-                            "name": "欄位名稱",
-                            "type": "string",
-                            "value": "代理起始時間",
-                            "format": "n/a",
-                            "id": "fieldName"
-                        }
-                    },
-                    "format": "n/a",
-                    "id": "field"
-                },
-                {
-                    "name": "欄位資訊",
-                    "type": "object",
-                    "value": {
-                        "fieldType": {
-                            "name": "欄位類型",
-                            "type": "string",
-                            "value": "text",
-                            "format": "n/a",
-                            "id": "fieldType"
-                        },
-                        "fieldId": {
-                            "name": "欄位代號",
-                            "type": "string",
-                            "value": "endTime",
-                            "format": "n/a",
-                            "id": "fieldId"
-                        },
-                        "fieldValue": {
-                            "name": "欄位資料",
-                            "type": "array",
-                            "value": [
-                                "2021/09/01 23:59"
-                            ],
-                            "format": "n/a",
-                            "id": "fieldValue"
-                        },
-                        "fieldName": {
-                            "name": "欄位名稱",
-                            "type": "string",
-                            "value": "代理結束時間",
-                            "format": "n/a",
-                            "id": "fieldName"
-                        }
-                    },
-                    "format": "n/a",
-                    "id": "field"
-                }
-            ],
-            "format": "n/a",
-            "id": "flowAgentDetail"
-        }
-    }
+         },
+         "format":"n/a",
+         "id":"deleteFlowAgent"
+      },
+      "employee":{
+         "name":"員工資料",
+         "type":"object",
+         "value":[
+            {
+               "name":"欄位資訊",
+               "type":"object",
+               "value":{
+                  "fieldType":{
+                     "name":"欄位類型",
+                     "type":"string",
+                     "value":"text",
+                     "format":"n/a",
+                     "id":"fieldType"
+                  },
+                  "fieldId":{
+                     "name":"欄位代號",
+                     "type":"string",
+                     "value":"empid",
+                     "format":"n/a",
+                     "id":"fieldId"
+                  },
+                  "fieldValue":{
+                     "name":"欄位資料",
+                     "type":"array",
+                     "value":[
+                        "admin"
+                     ],
+                     "format":"n/a",
+                     "id":"fieldValue"
+                  },
+                  "fieldName":{
+                     "name":"欄位名稱",
+                     "type":"string",
+                     "value":"員工編號",
+                     "format":"n/a",
+                     "id":"fieldName"
+                  }
+               },
+               "format":"n/a",
+               "id":"field"
+            },
+            {
+               "name":"欄位資訊",
+               "type":"object",
+               "value":{
+                  "fieldType":{
+                     "name":"欄位類型",
+                     "type":"string",
+                     "value":"text",
+                     "format":"n/a",
+                     "id":"fieldType"
+                  },
+                  "fieldId":{
+                     "name":"欄位代號",
+                     "type":"string",
+                     "value":"empFullName",
+                     "format":"n/a",
+                     "id":"fieldId"
+                  },
+                  "fieldValue":{
+                     "name":"欄位資料",
+                     "type":"array",
+                     "value":[
+                        "系統管理員"
+                     ],
+                     "format":"n/a",
+                     "id":"fieldValue"
+                  },
+                  "fieldName":{
+                     "name":"欄位名稱",
+                     "type":"string",
+                     "value":"員工中文姓名",
+                     "format":"n/a",
+                     "id":"fieldName"
+                  }
+               },
+               "format":"n/a",
+               "id":"field"
+            },
+            {
+               "name":"欄位資訊",
+               "type":"object",
+               "value":{
+                  "fieldType":{
+                     "name":"欄位類型",
+                     "type":"string",
+                     "value":"text",
+                     "format":"n/a",
+                     "id":"fieldType"
+                  },
+                  "fieldId":{
+                     "name":"欄位代號",
+                     "type":"string",
+                     "value":"functionName",
+                     "format":"n/a",
+                     "id":"fieldId"
+                  },
+                  "fieldValue":{
+                     "name":"欄位資料",
+                     "type":"array",
+                     "value":[
+                        "C.126.個人工作目標修改簽核"
+                     ],
+                     "format":"n/a",
+                     "id":"fieldValue"
+                  },
+                  "fieldName":{
+                     "name":"欄位名稱",
+                     "type":"string",
+                     "value":"功能名稱",
+                     "format":"n/a",
+                     "id":"fieldName"
+                  }
+               },
+               "format":"n/a",
+               "id":"field"
+            },
+            {
+               "name":"欄位資訊",
+               "type":"object",
+               "value":{
+                  "fieldType":{
+                     "name":"欄位類型",
+                     "type":"string",
+                     "value":"text",
+                     "format":"n/a",
+                     "id":"fieldType"
+                  },
+                  "fieldId":{
+                     "name":"欄位代號",
+                     "type":"string",
+                     "value":"empPosition",
+                     "format":"n/a",
+                     "id":"fieldId"
+                  },
+                  "fieldValue":{
+                     "name":"欄位資料",
+                     "type":"array",
+                     "value":[
+                        "系統管理員"
+                     ],
+                     "format":"n/a",
+                     "id":"fieldValue"
+                  },
+                  "fieldName":{
+                     "name":"欄位名稱",
+                     "type":"string",
+                     "value":"職稱",
+                     "format":"n/a",
+                     "id":"fieldName"
+                  }
+               },
+               "format":"n/a",
+               "id":"field"
+            },
+            {
+               "name":"欄位資訊",
+               "type":"object",
+               "value":{
+                  "fieldType":{
+                     "name":"欄位類型",
+                     "type":"string",
+                     "value":"text",
+                     "format":"n/a",
+                     "id":"fieldType"
+                  },
+                  "fieldId":{
+                     "name":"欄位代號",
+                     "type":"string",
+                     "value":"depFullName",
+                     "format":"n/a",
+                     "id":"fieldId"
+                  },
+                  "fieldValue":{
+                     "name":"欄位資料",
+                     "type":"array",
+                     "value":[
+                        "L1線B班"
+                     ],
+                     "format":"n/a",
+                     "id":"fieldValue"
+                  },
+                  "fieldName":{
+                     "name":"欄位名稱",
+                     "type":"string",
+                     "value":"部門名稱",
+                     "format":"n/a",
+                     "id":"fieldName"
+                  }
+               },
+               "format":"n/a",
+               "id":"field"
+            }
+         ],
+         "format":"n/a",
+         "id":"employee"
+      },
+      "properties":{
+         "format":{
+            "HHmm":"時間時分",
+            "hour":"小時",
+            "YYYYmmdd":"西元年月日",
+            "day":"天",
+            "n/a":""
+         }
+      },
+      "flowAgentDetail":{
+         "name":"簽核代理人詳細資訊",
+         "type":"object",
+         "value":[
+            {
+               "name":"欄位資訊",
+               "type":"object",
+               "value":{
+                  "fieldType":{
+                     "name":"欄位類型",
+                     "type":"string",
+                     "value":"text",
+                     "format":"n/a",
+                     "id":"fieldType"
+                  },
+                  "fieldId":{
+                     "name":"欄位代號",
+                     "type":"string",
+                     "value":"agent",
+                     "format":"n/a",
+                     "id":"fieldId"
+                  },
+                  "fieldValue":{
+                     "name":"欄位資料",
+                     "type":"array",
+                     "value":[
+                        "110000311"
+                     ],
+                     "format":"n/a",
+                     "id":"fieldValue"
+                  },
+                  "fieldName":{
+                     "name":"欄位名稱",
+                     "type":"string",
+                     "value":"簽核代理人編號",
+                     "format":"n/a",
+                     "id":"fieldName"
+                  }
+               },
+               "format":"n/a",
+               "id":"field"
+            },
+            {
+               "name":"欄位資訊",
+               "type":"object",
+               "value":{
+                  "fieldType":{
+                     "name":"欄位類型",
+                     "type":"string",
+                     "value":"text",
+                     "format":"n/a",
+                     "id":"fieldType"
+                  },
+                  "fieldId":{
+                     "name":"欄位代號",
+                     "type":"string",
+                     "value":"agentFullName",
+                     "format":"n/a",
+                     "id":"fieldId"
+                  },
+                  "fieldValue":{
+                     "name":"欄位資料",
+                     "type":"array",
+                     "value":[
+                        "解O庭"
+                     ],
+                     "format":"n/a",
+                     "id":"fieldValue"
+                  },
+                  "fieldName":{
+                     "name":"欄位名稱",
+                     "type":"string",
+                     "value":"簽核代理人中文姓名",
+                     "format":"n/a",
+                     "id":"fieldName"
+                  }
+               },
+               "format":"n/a",
+               "id":"field"
+            },
+            {
+               "name":"欄位資訊",
+               "type":"object",
+               "value":{
+                  "fieldType":{
+                     "name":"欄位類型",
+                     "type":"string",
+                     "value":"text",
+                     "format":"n/a",
+                     "id":"fieldType"
+                  },
+                  "fieldId":{
+                     "name":"欄位代號",
+                     "type":"string",
+                     "value":"agentPosition",
+                     "format":"n/a",
+                     "id":"fieldId"
+                  },
+                  "fieldValue":{
+                     "name":"欄位資料",
+                     "type":"array",
+                     "value":[
+                        "系統管理員"
+                     ],
+                     "format":"n/a",
+                     "id":"fieldValue"
+                  },
+                  "fieldName":{
+                     "name":"欄位名稱",
+                     "type":"string",
+                     "value":"代理人職稱",
+                     "format":"n/a",
+                     "id":"fieldName"
+                  }
+               },
+               "format":"n/a",
+               "id":"field"
+            },
+            {
+               "name":"欄位資訊",
+               "type":"object",
+               "value":{
+                  "fieldType":{
+                     "name":"欄位類型",
+                     "type":"string",
+                     "value":"text",
+                     "format":"n/a",
+                     "id":"fieldType"
+                  },
+                  "fieldId":{
+                     "name":"欄位代號",
+                     "type":"string",
+                     "value":"agentDepFullName",
+                     "format":"n/a",
+                     "id":"fieldId"
+                  },
+                  "fieldValue":{
+                     "name":"欄位資料",
+                     "type":"array",
+                     "value":[
+                        ""
+                     ],
+                     "format":"n/a",
+                     "id":"fieldValue"
+                  },
+                  "fieldName":{
+                     "name":"欄位名稱",
+                     "type":"string",
+                     "value":"代理人單位名稱",
+                     "format":"n/a",
+                     "id":"fieldName"
+                  }
+               },
+               "format":"n/a",
+               "id":"field"
+            },
+            {
+               "name":"欄位資訊",
+               "type":"object",
+               "value":{
+                  "fieldType":{
+                     "name":"欄位類型",
+                     "type":"string",
+                     "value":"text",
+                     "format":"n/a",
+                     "id":"fieldType"
+                  },
+                  "fieldId":{
+                     "name":"欄位代號",
+                     "type":"string",
+                     "value":"startTime",
+                     "format":"n/a",
+                     "id":"fieldId"
+                  },
+                  "fieldValue":{
+                     "name":"欄位資料",
+                     "type":"array",
+                     "value":[
+                        "2021/09/01 00:00"
+                     ],
+                     "format":"n/a",
+                     "id":"fieldValue"
+                  },
+                  "fieldName":{
+                     "name":"欄位名稱",
+                     "type":"string",
+                     "value":"代理起始時間",
+                     "format":"n/a",
+                     "id":"fieldName"
+                  }
+               },
+               "format":"n/a",
+               "id":"field"
+            },
+            {
+               "name":"欄位資訊",
+               "type":"object",
+               "value":{
+                  "fieldType":{
+                     "name":"欄位類型",
+                     "type":"string",
+                     "value":"text",
+                     "format":"n/a",
+                     "id":"fieldType"
+                  },
+                  "fieldId":{
+                     "name":"欄位代號",
+                     "type":"string",
+                     "value":"endTime",
+                     "format":"n/a",
+                     "id":"fieldId"
+                  },
+                  "fieldValue":{
+                     "name":"欄位資料",
+                     "type":"array",
+                     "value":[
+                        "2021/09/01 23:59"
+                     ],
+                     "format":"n/a",
+                     "id":"fieldValue"
+                  },
+                  "fieldName":{
+                     "name":"欄位名稱",
+                     "type":"string",
+                     "value":"代理結束時間",
+                     "format":"n/a",
+                     "id":"fieldName"
+                  }
+               },
+               "format":"n/a",
+               "id":"field"
+            }
+         ],
+         "format":"n/a",
+         "id":"flowAgentDetail"
+      }
+   }
 }
 ```
 
