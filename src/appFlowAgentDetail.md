@@ -204,7 +204,7 @@ Here is a JSON representation of request.
                   "fieldId":{
                      "name":"欄位代號",
                      "type":"string",
-                     "value":"depno",
+                     "value":"depCode",    --richard 欄位更改
                      "format":"n/a",
                      "id":"fieldId"
                   },
@@ -212,7 +212,7 @@ Here is a JSON representation of request.
                      "name":"欄位資料",
                      "type":"array",
                      "value":[
-                        "89"
+                        "14122"
                      ],
                      "format":"n/a",
                      "id":"fieldValue"
@@ -220,14 +220,11 @@ Here is a JSON representation of request.
                   "fieldName":{
                      "name":"欄位名稱",
                      "type":"string",
-                     "value":"單位",
+                     "value":"部門代號",
                      "format":"n/a",
                      "id":"fieldName"
                   }
                },
-               "format":"n/a",
-               "id":"field"
-            },
             {
                "name":"欄位資訊",
                "type":"object",
