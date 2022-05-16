@@ -57,23 +57,17 @@ Here is a JSON representation of request.
       "回傳成功"
    ],
    "data":{
-      "deleteFlowAgent":{
-         "name":"刪除簽核代理人",
-         "type":"object",
-         "value":{
-            "flowAgentKey":{
-               "name":"單據代號",
-               "type":"string",
-               "value":"4326084225293747024556419988109226030786170329214256400024434116838672769187526122578773346158145806659984556753490868565199631711318172",
-               "format":"n/a",
-               "id":"flowAgentKey"
-            }
-         },
-         "format":"n/a",
-         "id":"deleteFlowAgent"
+      "properties":{
+         "format":{
+            "HHmm":"時間時分",
+            "hour":"小時",
+            "YYYYmmdd":"西元年月日",
+            "day":"天",
+            "n/a":""
+         }
       },
-      "employee":{
-         "name":"員工資料",
+      "flowAgentDetail":{
+         "name":"簽核代理人詳細資訊",
          "type":"object",
          "value":[
             {
@@ -98,7 +92,7 @@ Here is a JSON representation of request.
                      "name":"欄位資料",
                      "type":"array",
                      "value":[
-                        "admin"
+                        "0091"
                      ],
                      "format":"n/a",
                      "id":"fieldValue"
@@ -136,7 +130,7 @@ Here is a JSON representation of request.
                      "name":"欄位資料",
                      "type":"array",
                      "value":[
-                        "系統管理員"
+                        "鞏O倫"
                      ],
                      "format":"n/a",
                      "id":"fieldValue"
@@ -204,7 +198,7 @@ Here is a JSON representation of request.
                   "fieldId":{
                      "name":"欄位代號",
                      "type":"string",
-                     "value":"depCode",    --richard 欄位更改
+                     "value":"depCode",
                      "format":"n/a",
                      "id":"fieldId"
                   },
@@ -212,7 +206,7 @@ Here is a JSON representation of request.
                      "name":"欄位資料",
                      "type":"array",
                      "value":[
-                        "14122"
+                        "12000"
                      ],
                      "format":"n/a",
                      "id":"fieldValue"
@@ -225,6 +219,9 @@ Here is a JSON representation of request.
                      "id":"fieldName"
                   }
                },
+               "format":"n/a",
+               "id":"field"
+            },
             {
                "name":"欄位資訊",
                "type":"object",
@@ -247,7 +244,7 @@ Here is a JSON representation of request.
                      "name":"欄位資料",
                      "type":"array",
                      "value":[
-                        "系統管理員"
+                        ""
                      ],
                      "format":"n/a",
                      "id":"fieldValue"
@@ -285,7 +282,7 @@ Here is a JSON representation of request.
                      "name":"欄位資料",
                      "type":"array",
                      "value":[
-                        "L1線B班"
+                        "英特內(上海)"
                      ],
                      "format":"n/a",
                      "id":"fieldValue"
@@ -300,24 +297,7 @@ Here is a JSON representation of request.
                },
                "format":"n/a",
                "id":"field"
-            }
-         ],
-         "format":"n/a",
-         "id":"employee"
-      },
-      "properties":{
-         "format":{
-            "HHmm":"時間時分",
-            "hour":"小時",
-            "YYYYmmdd":"西元年月日",
-            "day":"天",
-            "n/a":""
-         }
-      },
-      "flowAgentDetail":{
-         "name":"簽核代理人詳細資訊",
-         "type":"object",
-         "value":[
+            },
             {
                "name":"欄位資訊",
                "type":"object",
@@ -340,7 +320,7 @@ Here is a JSON representation of request.
                      "name":"欄位資料",
                      "type":"array",
                      "value":[
-                        "110000311"
+                        "1355"
                      ],
                      "format":"n/a",
                      "id":"fieldValue"
@@ -378,7 +358,7 @@ Here is a JSON representation of request.
                      "name":"欄位資料",
                      "type":"array",
                      "value":[
-                        "解O庭"
+                        "廣O佑廣O佑廣O佑廣O佑"
                      ],
                      "format":"n/a",
                      "id":"fieldValue"
@@ -416,7 +396,7 @@ Here is a JSON representation of request.
                      "name":"欄位資料",
                      "type":"array",
                      "value":[
-                        "系統管理員"
+                        "課長(一)"
                      ],
                      "format":"n/a",
                      "id":"fieldValue"
@@ -454,7 +434,7 @@ Here is a JSON representation of request.
                      "name":"欄位資料",
                      "type":"array",
                      "value":[
-                        ""
+                        "总务课"
                      ],
                      "format":"n/a",
                      "id":"fieldValue"
@@ -492,7 +472,7 @@ Here is a JSON representation of request.
                      "name":"欄位資料",
                      "type":"array",
                      "value":[
-                        "2021/09/01 00:00"
+                        ""
                      ],
                      "format":"n/a",
                      "id":"fieldValue"
@@ -530,7 +510,7 @@ Here is a JSON representation of request.
                      "name":"欄位資料",
                      "type":"array",
                      "value":[
-                        "2021/09/01 23:59"
+                        ""
                      ],
                      "format":"n/a",
                      "id":"fieldValue"
@@ -539,6 +519,44 @@ Here is a JSON representation of request.
                      "name":"欄位名稱",
                      "type":"string",
                      "value":"代理結束時間",
+                     "format":"n/a",
+                     "id":"fieldName"
+                  }
+               },
+               "format":"n/a",
+               "id":"field"
+            },
+            {
+               "name":"欄位資訊",
+               "type":"object",
+               "value":{
+                  "fieldType":{
+                     "name":"欄位類型",
+                     "type":"string",
+                     "value":"text",
+                     "format":"n/a",
+                     "id":"fieldType"
+                  },
+                  "fieldId":{
+                     "name":"欄位代號",
+                     "type":"string",
+                     "value":"flowAgentKey",
+                     "format":"n/a",
+                     "id":"fieldId"
+                  },
+                  "fieldValue":{
+                     "name":"欄位資料",
+                     "type":"array",
+                     "value":[
+                        "12487659774168172618768299574942949518028740856953495932069812901468259930334017116152477345615391"
+                     ],
+                     "format":"n/a",
+                     "id":"fieldValue"
+                  },
+                  "fieldName":{
+                     "name":"欄位名稱",
+                     "type":"string",
+                     "value":"單據編號",
                      "format":"n/a",
                      "id":"fieldName"
                   }
