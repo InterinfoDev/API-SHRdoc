@@ -44,57 +44,57 @@ Here is a JSON representation of request.
       "回傳成功"
    ],
    "data":{
-      "reasonOption":{
-         "name":"補卡原因選項",
+      "functionOption":{
+         "name":"代理功能選項",
          "type":"array",
          "value":[
             {
-               "name":"補卡原因資訊",
+               "name":"代理功能資訊",
                "type":"object",
                "value":{
-                  "reasonName":{
-                     "name":"補卡原因內容",
+                  "functionName":{
+                     "name":"代理功能內容",
                      "type":"string",
-                     "value":"忘刷卡",
+                     "value":"C.126.個人工作目標修改簽核",
                      "format":"n/a",
-                     "id":"reasonName"
+                     "id":"functionName"
                   },
-                  "reasonCode":{
-                     "name":"補卡原因代碼",
+                  "functionCode":{
+                     "name":"代理功能代碼",
                      "type":"string",
-                     "value":"001",
+                     "value":"590535521097405056829363076749951101069612102461523530525384772277901512134546",
                      "format":"n/a",
-                     "id":"reasonCode"
+                     "id":"functionCode"
                   }
                },
                "format":"n/a",
-               "id":"reason"
+               "id":"function"
             },
             {
-               "name":"補卡原因資訊",
+               "name":"代理功能資訊",
                "type":"object",
                "value":{
-                  "reasonName":{
-                     "name":"補卡原因內容",
+                  "functionName":{
+                     "name":"代理功能內容",
                      "type":"string",
-                     "value":"忘記帶卡",
+                     "value":"C.221.績效考核表簽核",
                      "format":"n/a",
-                     "id":"reasonName"
+                     "id":"functionName"
                   },
-                  "reasonCode":{
-                     "name":"補卡原因代碼",
+                  "functionCode":{
+                     "name":"代理功能代碼",
                      "type":"string",
-                     "value":"002",
+                     "value":"32819584023378686730886652136667731359480025202980105526370",
                      "format":"n/a",
-                     "id":"reasonCode"
+                     "id":"functionCode"
                   }
                },
                "format":"n/a",
-               "id":"reason"
+               "id":"function"
             }
          ],
          "format":"n/a",
-         "id":"reasonOption"
+         "id":"functionOption"
       },
       "properties":{
          "format":{
