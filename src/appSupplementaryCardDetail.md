@@ -533,43 +533,65 @@ Here is a JSON representation of request.
                "id":"field"
             },
             {
-               "name":"欄位資訊",
-               "type":"object",
-               "value":{
-                  "fieldType":{
-                     "name":"欄位類型",
-                     "type":"string",
-                     "value":"file",
-                     "format":"n/a",
-                     "id":"fieldType"
-                  },
-                  "fieldId":{
-                     "name":"欄位代號",
-                     "type":"string",
-                     "value":"uploadFiles",
-                     "format":"n/a",
-                     "id":"fieldId"
-                  },
-                  "files":{
-                     "name":"附件資訊",
-                     "type":"array",
-                     "value":[
-                        
-                     ],
-                     "format":"n/a",
-                     "id":"files"
-                  },
-                  "fieldName":{
-                     "name":"欄位名稱",
-                     "type":"string",
-                     "value":"附件資訊",
-                     "format":"n/a",
-                     "id":"fieldName"
-                  }
-               },
-               "format":"n/a",
-               "id":"field"
-            }
+                "name": "欄位資訊",
+                "type": "object",
+                "value": {
+                    "fieldType": {
+                        "name": "欄位類型",
+                        "type": "string",
+                        "value": "file",
+                        "format": "n/a",
+                        "id": "fieldType"
+                    },
+                    "fieldId": {
+                        "name": "欄位代號",
+                        "type": "string",
+                        "value": "uploadFiles",
+                        "format": "n/a",
+                        "id": "fieldId"
+                    },
+                    "files": {
+                        "name": "附件資訊",
+                        "type": "array",
+                        "value": [
+                            {
+                                "fileType": {
+                                    "name": "檔案類型",
+                                    "type": "string",
+                                    "value": "image/jpeg",
+                                    "format": "n/a",
+                                    "id": "fileType"
+                                },
+                                "fileUrl": {
+                                    "name": "檔案路徑",
+                                    "type": "string",
+                                    "value": "72498637980750425429295356143326706787584885528416948278334572143182089604433418700793583203058856941247560633788884871878908572476551182063374002250063452",
+                                    "format": "n/a",
+                                    "id": "fileUrl"
+                                },
+                                "fileName": {
+                                    "name": "檔案名稱",
+                                    "type": "string",
+                                    "value": "1652778534169_1652056356494.jpg",
+                                    "format": "n/a",
+                                    "id": "fileName"
+                                }
+                            }
+                        ],
+                        "format": "n/a",
+                        "id": "files"
+                    },
+                    "fieldName": {
+                        "name": "欄位名稱",
+                        "type": "string",
+                        "value": "附件",
+                        "format": "n/a",
+                        "id": "fieldName"
+                    }
+                },
+                "format": "n/a",
+                "id": "field"
+            },
          ],
          "format":"n/a",
          "id":"supplementaryCardDetail"
