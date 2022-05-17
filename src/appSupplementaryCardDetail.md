@@ -16,7 +16,7 @@ POST
 |:----------|:-------------|:-----|:------------|
 | uid | 98599308101484732326 | String | 需透過appLogin取得
 | right | 51341911904173543336756162544864820 | String | 需透過appLogin取得 |
-| request | {supplementaryCardKey:20210600000000000002} | Object | 查詢條件(依據使用者所選擇要查看的假單單號及畫面上的員工編號)
+| request | {supplementaryCardKey:20220500000000000011} | Object | 查詢條件(依據使用者所選擇要查看的假單單號及畫面上的員工編號)
 
 ### JSON representation
 Here is a JSON representation of request.
@@ -64,7 +64,7 @@ Here is a JSON representation of request.
             "historyKey":{
                "name":"流程鍵值",
                "type":"string",
-               "value":"3799391871311144335627777514617065132983803072298167159419265428929297071709253604564753867957635073218731940934947702912904196297242807",
+               "value":"3799391871311144335627777514617065132983803072298167159419265428929297071709252689358137216215203618251169221021129175015336474379165484",
                "format":"n/a",
                "id":"historyKey"
             }
@@ -144,45 +144,7 @@ Here is a JSON representation of request.
                   "fieldName":{
                      "name":"欄位名稱",
                      "type":"string",
-                     "value":"員工中文姓名",
-                     "format":"n/a",
-                     "id":"fieldName"
-                  }
-               },
-               "format":"n/a",
-               "id":"field"
-            },
-            {
-               "name":"欄位資訊",
-               "type":"object",
-               "value":{
-                  "fieldType":{
-                     "name":"欄位類型",
-                     "type":"string",
-                     "value":"text",
-                     "format":"n/a",
-                     "id":"fieldType"
-                  },
-                  "fieldId":{
-                     "name":"欄位代號",
-                     "type":"string",
-                     "value":"empFullEname",
-                     "format":"n/a",
-                     "id":"fieldId"
-                  },
-                  "fieldValue":{
-                     "name":"欄位資料",
-                     "type":"array",
-                     "value":[
-                        "Administrator"
-                     ],
-                     "format":"n/a",
-                     "id":"fieldValue"
-                  },
-                  "fieldName":{
-                     "name":"欄位名稱",
-                     "type":"string",
-                     "value":"員工英文姓名",
+                     "value":"員工姓名",
                      "format":"n/a",
                      "id":"fieldName"
                   }
@@ -280,82 +242,6 @@ Here is a JSON representation of request.
                   "fieldId":{
                      "name":"欄位代號",
                      "type":"string",
-                     "value":"cardDate",
-                     "format":"n/a",
-                     "id":"fieldId"
-                  },
-                  "fieldValue":{
-                     "name":"欄位資料",
-                     "type":"array",
-                     "value":[
-                        "20210601"
-                     ],
-                     "format":"YYYYmmdd",
-                     "id":"fieldValue"
-                  },
-                  "fieldName":{
-                     "name":"欄位名稱",
-                     "type":"string",
-                     "value":"補卡日期",
-                     "format":"n/a",
-                     "id":"fieldName"
-                  }
-               },
-               "format":"n/a",
-               "id":"field"
-            },
-            {
-               "name":"欄位資訊",
-               "type":"object",
-               "value":{
-                  "fieldType":{
-                     "name":"欄位類型",
-                     "type":"string",
-                     "value":"text",
-                     "format":"n/a",
-                     "id":"fieldType"
-                  },
-                  "fieldId":{
-                     "name":"欄位代號",
-                     "type":"string",
-                     "value":"cardTime",
-                     "format":"n/a",
-                     "id":"fieldId"
-                  },
-                  "fieldValue":{
-                     "name":"欄位資料",
-                     "type":"array",
-                     "value":[
-                        "0600"
-                     ],
-                     "format":"HHmm",
-                     "id":"fieldValue"
-                  },
-                  "fieldName":{
-                     "name":"欄位名稱",
-                     "type":"string",
-                     "value":"補卡時間",
-                     "format":"n/a",
-                     "id":"fieldName"
-                  }
-               },
-               "format":"n/a",
-               "id":"field"
-            },
-            {
-               "name":"欄位資訊",
-               "type":"object",
-               "value":{
-                  "fieldType":{
-                     "name":"欄位類型",
-                     "type":"string",
-                     "value":"text",
-                     "format":"n/a",
-                     "id":"fieldType"
-                  },
-                  "fieldId":{
-                     "name":"欄位代號",
-                     "type":"string",
                      "value":"cardType",
                      "format":"n/a",
                      "id":"fieldId"
@@ -364,7 +250,7 @@ Here is a JSON representation of request.
                      "name":"欄位資料",
                      "type":"array",
                      "value":[
-                        "其他"
+                        "進卡"
                      ],
                      "format":"n/a",
                      "id":"fieldValue"
@@ -394,6 +280,82 @@ Here is a JSON representation of request.
                   "fieldId":{
                      "name":"欄位代號",
                      "type":"string",
+                     "value":"cardDate",
+                     "format":"n/a",
+                     "id":"fieldId"
+                  },
+                  "fieldValue":{
+                     "name":"欄位資料",
+                     "type":"array",
+                     "value":[
+                        "20220516"
+                     ],
+                     "format":"YYYYmmdd",
+                     "id":"fieldValue"
+                  },
+                  "fieldName":{
+                     "name":"欄位名稱",
+                     "type":"string",
+                     "value":"日期",
+                     "format":"n/a",
+                     "id":"fieldName"
+                  }
+               },
+               "format":"n/a",
+               "id":"field"
+            },
+            {
+               "name":"欄位資訊",
+               "type":"object",
+               "value":{
+                  "fieldType":{
+                     "name":"欄位類型",
+                     "type":"string",
+                     "value":"text",
+                     "format":"n/a",
+                     "id":"fieldType"
+                  },
+                  "fieldId":{
+                     "name":"欄位代號",
+                     "type":"string",
+                     "value":"cardTime",
+                     "format":"n/a",
+                     "id":"fieldId"
+                  },
+                  "fieldValue":{
+                     "name":"欄位資料",
+                     "type":"array",
+                     "value":[
+                        "0830"
+                     ],
+                     "format":"HHmm",
+                     "id":"fieldValue"
+                  },
+                  "fieldName":{
+                     "name":"欄位名稱",
+                     "type":"string",
+                     "value":"時間",
+                     "format":"n/a",
+                     "id":"fieldName"
+                  }
+               },
+               "format":"n/a",
+               "id":"field"
+            },
+            {
+               "name":"欄位資訊",
+               "type":"object",
+               "value":{
+                  "fieldType":{
+                     "name":"欄位類型",
+                     "type":"string",
+                     "value":"text",
+                     "format":"n/a",
+                     "id":"fieldType"
+                  },
+                  "fieldId":{
+                     "name":"欄位代號",
+                     "type":"string",
                      "value":"addDate",
                      "format":"n/a",
                      "id":"fieldId"
@@ -402,7 +364,7 @@ Here is a JSON representation of request.
                      "name":"欄位資料",
                      "type":"array",
                      "value":[
-                        "20210629"
+                        "20220517"
                      ],
                      "format":"YYYYmmdd",
                      "id":"fieldValue"
@@ -478,7 +440,7 @@ Here is a JSON representation of request.
                      "name":"欄位資料",
                      "type":"array",
                      "value":[
-                        "test"
+                        "ANDY 測試"
                      ],
                      "format":"n/a",
                      "id":"fieldValue"
@@ -487,6 +449,66 @@ Here is a JSON representation of request.
                      "name":"欄位名稱",
                      "type":"string",
                      "value":"備註",
+                     "format":"n/a",
+                     "id":"fieldName"
+                  }
+               },
+               "format":"n/a",
+               "id":"field"
+            },
+            {
+               "name":"欄位資訊",
+               "type":"object",
+               "value":{
+                  "fieldType":{
+                     "name":"欄位類型",
+                     "type":"string",
+                     "value":"file",
+                     "format":"n/a",
+                     "id":"fieldType"
+                  },
+                  "fieldId":{
+                     "name":"欄位代號",
+                     "type":"string",
+                     "value":"uploadFiles",
+                     "format":"n/a",
+                     "id":"fieldId"
+                  },
+                  "files":{
+                     "name":"附件資訊",
+                     "type":"array",
+                     "value":[
+                        {
+                           "fileType":{
+                              "name":"檔案類型",
+                              "type":"string",
+                              "value":"image/jpeg",
+                              "format":"n/a",
+                              "id":"fileType"
+                           },
+                           "fileUrl":{
+                              "name":"檔案路徑",
+                              "type":"string",
+                              "value":"72498637980750425429295356143326706787584885528416948278334572143182089604433418700793583203058856941247560633788884871878908572476551182063374002250063452",
+                              "format":"n/a",
+                              "id":"fileUrl"
+                           },
+                           "fileName":{
+                              "name":"檔案名稱",
+                              "type":"string",
+                              "value":"1652778534169_1652056356494.jpg",
+                              "format":"n/a",
+                              "id":"fileName"
+                           }
+                        }
+                     ],
+                     "format":"n/a",
+                     "id":"files"
+                  },
+                  "fieldName":{
+                     "name":"欄位名稱",
+                     "type":"string",
+                     "value":"附件",
                      "format":"n/a",
                      "id":"fieldName"
                   }
@@ -531,67 +553,7 @@ Here is a JSON representation of request.
                },
                "format":"n/a",
                "id":"field"
-            },
-            {
-                "name": "欄位資訊",
-                "type": "object",
-                "value": {
-                    "fieldType": {
-                        "name": "欄位類型",
-                        "type": "string",
-                        "value": "file",
-                        "format": "n/a",
-                        "id": "fieldType"
-                    },
-                    "fieldId": {
-                        "name": "欄位代號",
-                        "type": "string",
-                        "value": "uploadFiles",
-                        "format": "n/a",
-                        "id": "fieldId"
-                    },
-                    "files": {
-                        "name": "附件資訊",
-                        "type": "array",
-                        "value": [
-                            {
-                                "fileType": {
-                                    "name": "檔案類型",
-                                    "type": "string",
-                                    "value": "image/jpeg",
-                                    "format": "n/a",
-                                    "id": "fileType"
-                                },
-                                "fileUrl": {
-                                    "name": "檔案路徑",
-                                    "type": "string",
-                                    "value": "72498637980750425429295356143326706787584885528416948278334572143182089604433418700793583203058856941247560633788884871878908572476551182063374002250063452",
-                                    "format": "n/a",
-                                    "id": "fileUrl"
-                                },
-                                "fileName": {
-                                    "name": "檔案名稱",
-                                    "type": "string",
-                                    "value": "1652778534169_1652056356494.jpg",
-                                    "format": "n/a",
-                                    "id": "fileName"
-                                }
-                            }
-                        ],
-                        "format": "n/a",
-                        "id": "files"
-                    },
-                    "fieldName": {
-                        "name": "欄位名稱",
-                        "type": "string",
-                        "value": "附件",
-                        "format": "n/a",
-                        "id": "fieldName"
-                    }
-                },
-                "format": "n/a",
-                "id": "field"
-            },
+            }
          ],
          "format":"n/a",
          "id":"supplementaryCardDetail"
