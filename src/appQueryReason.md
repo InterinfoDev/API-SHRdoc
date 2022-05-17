@@ -44,57 +44,57 @@ Here is a JSON representation of request.
       "回傳成功"
    ],
    "data":{
-      "functionOption":{
-         "name":"代理功能選項",
+      "reasonOption":{
+         "name":"補卡原因選項",
          "type":"array",
          "value":[
             {
-               "name":"代理功能資訊",
+               "name":"補卡原因資訊",
                "type":"object",
                "value":{
-                  "functionName":{
-                     "name":"代理功能內容",
+                  "reasonName":{
+                     "name":"補卡原因內容",
                      "type":"string",
-                     "value":"C.126.個人工作目標修改簽核",
+                     "value":"忘刷卡",
                      "format":"n/a",
-                     "id":"functionName"
+                     "id":"reasonName"
                   },
-                  "functionCode":{
-                     "name":"代理功能代碼",
+                  "reasonCode":{
+                     "name":"補卡原因代碼",
                      "type":"string",
-                     "value":"590535521097405056829363076749951101069612102461523530525384772277901512134546",
+                     "value":"001",
                      "format":"n/a",
-                     "id":"functionCode"
+                     "id":"reasonCode"
                   }
                },
                "format":"n/a",
-               "id":"function"
+               "id":"reason"
             },
             {
-               "name":"代理功能資訊",
+               "name":"補卡原因資訊",
                "type":"object",
                "value":{
-                  "functionName":{
-                     "name":"代理功能內容",
+                  "reasonName":{
+                     "name":"補卡原因內容",
                      "type":"string",
-                     "value":"C.221.績效考核表簽核",
+                     "value":"忘記帶卡",
                      "format":"n/a",
-                     "id":"functionName"
+                     "id":"reasonName"
                   },
-                  "functionCode":{
-                     "name":"代理功能代碼",
+                  "reasonCode":{
+                     "name":"補卡原因代碼",
                      "type":"string",
-                     "value":"32819584023378686730886652136667731359480025202980105526370",
+                     "value":"002",
                      "format":"n/a",
-                     "id":"functionCode"
+                     "id":"reasonCode"
                   }
                },
                "format":"n/a",
-               "id":"function"
+               "id":"reason"
             }
          ],
          "format":"n/a",
-         "id":"functionOption"
+         "id":"reasonOption"
       },
       "properties":{
          "format":{
