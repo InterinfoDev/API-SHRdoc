@@ -95,14 +95,14 @@ Here is a JSON representation of request.
 ### Request Properties
 | Key | Value | Type | Description | Required | Format | Note |
 |:----------|:-------------|:-----|:------------|:------------|:------------|:------------|
-| empid | admin | String | 被代理人 | N | n/a |  |
-| agent | 0169 | String | 代理人 | N | n/a |  |
+| empid | admin | String | 被代理人 | Y | n/a |  |
+| agent | 0169 | String | 代理人 | Y | n/a |  |
 | functionCode | xxxxxx | String | 功能名稱 | N | n/a |  |
-| dateType | A | boolean | 全天 | Y | n/a | 空白:永遠代理,A:指定特定日期,B:指定日期區間,C:指定特定日期時間區間 |
-| startDate | 20220519 | String | 代理起始日期 | Y | DATE(YYYYmmdd) | 起始日期 |
-| endDate | 20220520 | String | 代理結束日期 | Y | DATE(YYYYmmdd) | 結束日期 |
-| startTime | 1230 | String | 代理起始時間 | Y | TIME(HHmm) | 起始時間 |
-| endTime | 1800 | String | 代理結束時間 | Y | TIME(HHmm) | 結束時間 |
+| dateType | A | boolean | 全天 | N | n/a | 空白:永遠代理,A:指定特定日期,B:指定日期區間,C:指定特定日期時間區間 |
+| startDate | 20220519 | String | 代理起始日期 | N | DATE(YYYYmmdd) | 起始日期 |
+| endDate | 20220520 | String | 代理結束日期 | N | DATE(YYYYmmdd) | 結束日期 |
+| startTime | 1230 | String | 代理起始時間 | N | TIME(HHmm) | 起始時間 |
+| endTime | 1800 | String | 代理結束時間 | N | TIME(HHmm) | 結束時間 |
 
 ### HTTP Response when Successful
 ```json
