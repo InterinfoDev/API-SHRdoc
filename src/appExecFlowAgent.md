@@ -18,69 +18,69 @@ POST
 | right | 51341911904173543336756162544864820 | String | 需透過appLogin取得 |
 | request | {empid:admin,agent:0169,functionCode:590535521097405056829363076749951101069612102461523530525384772277901512134546,dateType:C,startDate:20220519,endDate:20220520,startTime:1230,endTime:1800} | Object | 查詢條件
 
-### JSON representation Case 1 - 永遠代理 (dateType = '')
+### JSON representation Case 1 - 永遠代理 (dateType = 空白)
 Here is a JSON representation of request.
 ```json
 {
     "uid":"98599308101484732326",
     "right":"51341911904173543336756162544864820",
     "request":{
-        'empid':'admin',
-        'agent':'0169',
-        'functionCode':'590535521097405056829363076749951101069612102461523530525384772277901512134546',
-        'dateType':''
+        "empid":"admin",
+        "agent":"0169",
+        "functionCode":"590535521097405056829363076749951101069612102461523530525384772277901512134546",
+        "dateType":""
     }
 }
 ```
 
-### JSON representation Case 2 - 指定特定日期 (dateType = 'A')
+### JSON representation Case 2 - 指定特定日期 (dateType = A)
 Here is a JSON representation of request.
 ```json
 {
     "uid":"98599308101484732326",
     "right":"51341911904173543336756162544864820",
     "request":{
-        'empid':'admin',
-        'agent':'0169',
-        'functionCode':'590535521097405056829363076749951101069612102461523530525384772277901512134546',
-        'dateType':'A',
-        'startDate':'20220519'
+        "empid":"admin",
+        "agent":"0169",
+        "functionCode":"590535521097405056829363076749951101069612102461523530525384772277901512134546",
+        "dateType":"A",
+        "startDate":"20220519"
     }
 }
 ```
 
-### JSON representation Case 3 - 指定日期區間 (dateType = 'B')
+### JSON representation Case 3 - 指定日期區間 (dateType = B)
 Here is a JSON representation of request.
 ```json
 {
     "uid":"98599308101484732326",
     "right":"51341911904173543336756162544864820",
     "request":{
-        'empid':'admin',
-        'agent':'0169',
-        'functionCode':'590535521097405056829363076749951101069612102461523530525384772277901512134546',
-        'dateType':'A',
-        'startDate':'20220519',
-        'endDate':'20220520'
+        "empid":"admin",
+        "agent":"0169",
+        "functionCode":"590535521097405056829363076749951101069612102461523530525384772277901512134546",
+        "dateType":"B",
+        "startDate":"20220519",
+        "endDate":"20220520"
     }
 }
 ```
 
-### JSON representation Case 4 - 指定特定日期時間區間 (dateType = 'C')
+### JSON representation Case 4 - 指定特定日期時間區間 (dateType = C)
 Here is a JSON representation of request.
 ```json
 {
     "uid":"98599308101484732326",
     "right":"51341911904173543336756162544864820",
     "request":{
-        'empid':'admin',
-        'agent':'0169',
-        'functionCode':'590535521097405056829363076749951101069612102461523530525384772277901512134546',
-        'dateType':'C',
-        'startDate':'20220519',
-        'endDate':'20220520',
-        'startTime':'1230',
-        'endTime':'1800'
+        "empid":"admin",
+        "agent":"0169",
+        "functionCode":"590535521097405056829363076749951101069612102461523530525384772277901512134546",
+        "dateType":"C",
+        "startDate":"20220519",
+        "endDate":"20220520",
+        "startTime":"1230",
+        "endTime":"1800"
     }
 }
 ```
