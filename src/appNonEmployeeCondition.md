@@ -44,6 +44,11 @@ Here is a JSON representation of request.
 | companyId | 97090920 | String | 公司代號 | N | n/a |
 | depNumber | [1] | Array(Integer) | 部門代號 | N | n/a |
 
+### Use Function
+| FunctionName | Request |
+|:---------|:-----|
+| 簽核代理人 | {'companyId':'' , 'depNumber':[]} |
+
 ### HTTP Response when Successful
 ```json
 {
