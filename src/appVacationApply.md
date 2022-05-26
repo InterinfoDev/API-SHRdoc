@@ -40,7 +40,7 @@ Here is a JSON representation of request.
 ### Request Properties
 | Key | Value | Type | Description | Required | Format |
 |:----------|:-------------|:-----|:------------|:------------|:------------|
-| empid | admin | string | 員工編號 | Y | n/a | --kevin 增加empid
+| empid | admin | string | 員工編號 | Y | n/a |
 
 ### HTTP Response when Successful
 ```json
