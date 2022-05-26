@@ -16,7 +16,7 @@ POST
 |:----------|:-------------|:-----|:------------|
 | uid | 98599308101484732326 | String | 需透過appLogin取得
 | right | 51341911904173543336756162544864820 | String | 需透過appLogin取得 |
-| request | {} | Object | 查詢條件
+| request | {empid:xxx} | Object | 查詢條件
 
 ### JSON representation
 Here is a JSON representation of request.
@@ -25,6 +25,7 @@ Here is a JSON representation of request.
     "uid":"98599308101484732326",
     "right":"51341911904173543336756162544864820",
     "request":{
+        "empid":"admin"
     }
 }
 ```
@@ -39,7 +40,7 @@ Here is a JSON representation of request.
 ### Request Properties
 | Key | Value | Type | Description | Required | Format |
 |:----------|:-------------|:-----|:------------|:------------|:------------|
-
+| empid | admin | string | 員工編號 | Y | n/a
 
 ### HTTP Response when Successful
 ```json
@@ -650,46 +651,8 @@ Here is a JSON representation of request.
                },
                "format":"n/a",
                "id":"applyHolidayCode"
-            },
-            "applyEmpid":{
-               "name":"員工編號",
-               "type":"object",
-               "value":{
-                  "option":{
-                     "name":"欄位選單項目",
-                     "type":"array",
-                     "value":[
-                        {
-                           "empFullName":{
-                              "name":"員工中文姓名",
-                              "type":"string",
-                              "value":"系O管",
-                              "format":"n/a",
-                              "id":"empFullName"
-                           },
-                           "empid":{
-                              "name":"員工編號",
-                              "type":"string",
-                              "value":"admin",
-                              "format":"n/a",
-                              "id":"empid"
-                           }
-                        }
-                     ],
-                     "format":"n/a",
-                     "id":"option"
-                  },
-                  "fieldValue":{
-                     "name":"欄位值",
-                     "type":"string",
-                     "value":"admin",
-                     "format":"n/a",
-                     "id":"fieldValue"
-                  }
-               },
-               "format":"n/a",
-               "id":"applyEmpid"
             }
+            --kevin 移除applyEmpid，改用HandleUser
          },
          "format":"n/a",
          "id":"applyForm"
