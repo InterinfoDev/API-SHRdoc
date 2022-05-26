@@ -25,7 +25,7 @@ Here is a JSON representation of request.
     "uid":"98599308101484732326",
     "right":"51341911904173543336756162544864820",
     "request":{
-        "empid":"admin"
+        "empid":"admin" --kevin 增加empid
     }
 }
 ```
@@ -40,7 +40,7 @@ Here is a JSON representation of request.
 ### Request Properties
 | Key | Value | Type | Description | Required | Format |
 |:----------|:-------------|:-----|:------------|:------------|:------------|
-| empid | admin | string | 員工編號 | Y | n/a
+| empid | admin | string | 員工編號 | Y | n/a | --kevin 增加empid
 
 ### HTTP Response when Successful
 ```json
