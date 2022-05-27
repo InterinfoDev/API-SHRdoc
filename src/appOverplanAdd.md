@@ -99,7 +99,7 @@ Here is a JSON representation of request.
             }
          },
          "format":"n/a",
-         "id":"addVacation"
+         "id":"addOverplan"
       },
       "properties":{
          "format":{
