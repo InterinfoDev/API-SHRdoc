@@ -59,10 +59,10 @@ Here is a JSON representation of request.
 | endTime | 2300 | String | 結束時間 | N | HHmm |         
 | reason | 20220524kevinOverplanTest | String | 請假說明 | N | n/a |
 | payType | A | String | 給付方式 | N | n/a |
-| totalPayHour | 0.0 | Decimal | 總計給薪時數 | N | n/a | 
-| totalRestHour | 0.0 | Decimal | 總計補休時數 | N | YYYYmmdd |
-| specifyHour | 0.0 | Decimal | 指定用餐時間 | N | n/a |
-| oldEatHour | 0.0 | Decimal | 原用餐時間 | N | ticket |
+| totalPayHour | 0.0 | Decimal | 總計給薪時數 | N | hour | 
+| totalRestHour | 0.0 | Decimal | 總計補休時數 | N | hour |
+| specifyHour | 0.0 | Decimal | 指定用餐時間 | N | hour |
+| oldEatHour | 0.0 | Decimal | 原用餐時間 | N | hour |
 | isEat | false | boolean | 是否用餐 | N | n/a | 
 | beforeWork | false | boolean | 跨日往前加班 | N | n/a | 
 
