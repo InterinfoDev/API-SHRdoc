@@ -68,6 +68,7 @@ Here is a JSON representation of request.
 
 ### Using Field
 | fieldName | Description |
+|:---------|:-----|
 | startTime | 起始時間 |
 | startTime | 結束時間 |
 | payType | 給付方式 |
