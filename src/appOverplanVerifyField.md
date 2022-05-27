@@ -70,7 +70,7 @@ Here is a JSON representation of request.
 | FieldName | Description |
 |:---------|:-----|
 | startTime | 起始時間 |
-| startTime | 結束時間 |
+| endTime | 結束時間 |
 | payType | 給付方式 |
 | isEat | 是否用餐 |
 
