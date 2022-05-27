@@ -16,7 +16,7 @@ POST
 |:----------|:-------------|:-----|:------------|
 | uid | 98599308101484732326 | String | 需透過appLogin取得
 | right | 51341911904173543336756162544864820 | String | 需透過appLogin取得 |
-| request | {{'empid':'admin', 'startDate':'20220527', 'startTime':'1900', 'endTime':'2200', 'reason':'xxx', 'payType':'A', 'totalPayHour':0.0, 'totalRestHour':0.0, 'specifyHour':0.0, 'oldEatHour':0.0, 'isEat':false, 'beforeWork':false, 'file':[{'fileName':'kevin.jpg','fileData':'base64'}]} | Object | 異動條件
+| request | {{'empid':'admin', 'startDate':'20220527', 'startTime':'1900', 'endTime':'2200', 'reason':'xxx', 'payType':'A', 'totalPayHour':0.0, 'totalRestHour':0.0, 'specifyHour':0.0, 'oldEatHour':0.0, 'isEat':false, 'beforeWork':false, 'file':[{'fileName':'kevin.jpg','fileData':'base64'}]} | Object | 畫面上所有欄位資料
 
 ### JSON representation Case 1
 Here is a JSON representation of request.
