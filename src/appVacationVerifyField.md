@@ -81,6 +81,11 @@ Here is a JSON representation of request.
 | fileName | test.jpg | String | 附件檔案 | N | n/a |
 | fileData |  | String | 附件檔案 | N | base64 |
 
+### Using Field
+| FieldName | Description |
+|:---------|:-----|
+| startDate | 起始日期 |
+
 ### HTTP Response when Successful
 ```json
 {
@@ -93,13 +98,7 @@ Here is a JSON representation of request.
          "name":"檢核結果",
          "type":"object",
          "value":{
-            "tipMessage":{
-               "name":"檢核訊息",
-               "type":"string",
-               "value":"",
-               "format":"n/a",
-               "id":"tipMessage"
-            },
+         --kevin 移除tipMessage
             "actions":{
                "name":"異動欄位",
                "type":"object",
