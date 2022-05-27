@@ -67,7 +67,7 @@ Here is a JSON representation of request.
 | beforeWork | false | boolean | 跨日往前加班 | N | n/a | 
 
 ### Using Field
-| fieldName | Description |
+| FieldName | Description |
 |:---------|:-----|
 | startTime | 起始時間 |
 | startTime | 結束時間 |
