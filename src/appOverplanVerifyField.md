@@ -1,4 +1,4 @@
-# appVacationVerifyField
+# appOverplanVerifyField
 預定加班單畫面欄位檢核
 
 ### HTTP Request
@@ -65,6 +65,13 @@ Here is a JSON representation of request.
 | oldEatHour | 0.0 | Decimal | 原用餐時間 | N | hour |
 | isEat | false | boolean | 是否用餐 | N | n/a | 
 | beforeWork | false | boolean | 跨日往前加班 | N | n/a | 
+
+### Using Field
+| fieldName | Description |
+| startTime | 起始時間 |
+| startTime | 結束時間 |
+| payType | 給付方式 |
+| isEat | 是否用餐 |
 
 ### HTTP Response when Successful
 ```json
