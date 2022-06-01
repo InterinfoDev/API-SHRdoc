@@ -16,7 +16,7 @@ POST
 |:----------|:-------------|:-----|:------------|
 | uid | 98599308101484732326 | String | 需透過appLogin取得
 | right | 51341911904173543336756162544864820 | String | 需透過appLogin取得 |
-| request | {overplanDate:xxx, empid:xxx} | Object | 查詢條件
+| request | {startDate:xxx, empid:xxx} | Object | 查詢條件
 
 ### JSON representation
 Here is a JSON representation of request.
@@ -25,7 +25,7 @@ Here is a JSON representation of request.
     "uid":"98599308101484732326",
     "right":"51341911904173543336756162544864820",
     "request":{
-        "overplanDate":"20220413",
+        "startDate":"20220413", --kevin 改叫startDate
         "empid":"admin" --kevin 增加empid
     }
 }
@@ -41,7 +41,7 @@ Here is a JSON representation of request.
 ### Request Properties
 | Key | Value | Type | Description | Required | Format |
 |:----------|:-------------|:-----|:------------|:------------|:------------|
-| overplanDate | 20220413 | String | 預定加班日期 | Y | n/a |
+| startDate | 20220413 | String | 預定加班日期 | Y | n/a |
 | empid | admin | String | 員工編號 | Y | n/a |
 
 ### HTTP Response when Successful
