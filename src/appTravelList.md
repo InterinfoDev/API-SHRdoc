@@ -113,7 +113,6 @@ Here is a JSON representation of request.
       "properties":{
          "format":{
             "HHmm":"時間時分",
-            "base64":"Base64編碼格式",
             "YYYYmmdd":"西元年月日",
             "n/a":""
          }
