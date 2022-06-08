@@ -130,14 +130,7 @@ Here is a JSON representation of request.
                      "value":"L1線A班",
                      "format":"n/a",
                      "id":"depFullName"
-                  },
-                  "empFullEname":{
-                     "name":"員工英文姓名",
-                     "type":"string",
-                     "value":"test_Ename",
-                     "format":"n/a",
-                     "id":"empFullEname"
-                  },
+                  },    --kevin 移除empFullEname
                   "approved":{
                      "name":"已生效",
                      "type":"integer",
