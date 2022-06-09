@@ -43,7 +43,7 @@ Here is a JSON representation of request.
 ### Request Properties
 | Key | Value | Type | Description | Required | Format |
 |:----------|:-------------|:-----|:------------|:------------|:------------|
-| vacationYM | 202203 | String | 查詢年月 | Y | AC(YYYYmm) |
+| travelYM | 202203 | String | 查詢年月 | Y | AC(YYYYmm) |
 | companyId | TW | String | 公司代號 | N | n/a |
 | depNumber | [5] | Array(Integer) | 部門代號 | N | n/a |
 | empid | [admin] | Array(String) | 員工編號 | N | n/a |
