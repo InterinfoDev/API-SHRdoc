@@ -1116,11 +1116,11 @@ Here is a JSON representation of request.
       },
       "scheduleList":{
          "name":"行程清單資訊",
-         "type":"object",
+         "type":"array",
          "value":[
             {
                "name":"行程詳細資訊",
-               "type":"object",
+               "type":"array",
                "value":[
                   {
                      "name":"欄位資訊",
@@ -1222,7 +1222,7 @@ Here is a JSON representation of request.
                            "value":[
                               "1.0"
                            ],
-                           "format":"n/a",
+                           "format":"day",
                            "id":"fieldValue"
                         },
                         "fieldName":{
