@@ -70,12 +70,12 @@ Here is a JSON representation of request.
                "format":"YYYYmm",
                "id":"vacationYM"
             },
-            "hcode":{
+            "vacationCode":{   --kevin 改名vacationCode
                "name":"假別代碼",
                "type":"string",
                "value":"00",
                "format":"n/a",
-               "id":"hcode"
+               "id":"vacationCode"  --kevin 改名vacationCode
             }
          },
          "format":"n/a",
@@ -140,7 +140,7 @@ Here is a JSON representation of request.
                   }
                },
                "format":"n/a",
-               "id":"vacationInfo"
+               "id":"vacation"  --Kevin 改名vacation
             }
          ],
          "format":"n/a",
