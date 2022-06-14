@@ -16,7 +16,7 @@ POST
 |:----------|:-------------|:-----|:------------|
 | uid | 98599308101484732326 | String | 需透過appLogin取得
 | right | 51341911904173543336756162544864820 | String | 需透過appLogin取得 |
-| request | {vacationYM:202201, empid:admin, hcode:00} | Object | 查詢條件(依據使用者所選擇要查看的員工及畫面上的年月取得)
+| request | {vacationYM:202201, empid:admin, vacationCode:00} | Object | 查詢條件(依據使用者所選擇要查看的員工及畫面上的年月取得)
 
 ### JSON representation
 Here is a JSON representation of request.
@@ -25,7 +25,7 @@ Here is a JSON representation of request.
     "uid":"98599308101484732326",
     "right":"51341911904173543336756162544864820",
     "request":{
-        "hcode":"00", 
+        "vacationCode":"00",    --kevin 改名vacationCode
         "vacationYM":"202201", 
         "empid":"admin"
     }
@@ -44,7 +44,7 @@ Here is a JSON representation of request.
 |:----------|:-------------|:-----|:------------|:------------|:------------|
 | vacationYM | 202201 | String | 查詢年月 | Y | AC(YYYYmm) |
 | empid | admin | String | 員工編號 | Y | n/a |
-| hcode | 00 | String | 假別代碼 | N | n/a |
+| vacationCode | 00 | String | 假別代碼 | N | n/a |
 
 
 ### HTTP Response when Successful
@@ -101,14 +101,8 @@ Here is a JSON representation of request.
                "value":"L1線A班",
                "format":"n/a",
                "id":"depFullName"
-            },
-            "empFullEname":{
-               "name":"員工英文姓名",
-               "type":"string",
-               "value":"test_Ename",
-               "format":"n/a",
-               "id":"empFullEname"
             }
+            --kevin 移除empFullEname
          },
          "format":"n/a",
          "id":"employee"
@@ -135,35 +129,21 @@ Here is a JSON representation of request.
                      "format":"n/a",
                      "id":"empid"
                   },
-                  "stime":{
+                  "startTime":{ --kevin 改名startTime
                      "name":"起始時間",
                      "type":"string",
                      "value":"0800",
                      "format":"HHmm",
-                     "id":"stime"
+                     "id":"startTime"   --kevin 改名startTime
                   },
-                  "hkind":{
-                     "name":"假別資訊",
-                     "type":"object",
-                     "value":{
-                        "hcname":{
-                           "name":"假別名稱",
-                           "type":"string",
-                           "value":"",
-                           "format":"n/a",
-                           "id":"hcname"
-                        },
-                        "hcode":{
-                           "name":"假別代碼",
-                           "type":"string",
-                           "value":"00",
-                           "format":"n/a",
-                           "id":"hcode"
-                        }
-                     },
-                     "format":"n/a",
-                     "id":"hkind"
+                  "vacationName": { --kevin 新增vacationName
+                      "name": "假別名稱",
+                      "type": "string",
+                      "value": "",
+                      "format": "n/a",
+                      "id": "vacationName"
                   },
+                  --kevin 移除hkind
                   "pno":{
                      "name":"單據編號",
                      "type":"string",
@@ -171,26 +151,26 @@ Here is a JSON representation of request.
                      "format":"n/a",
                      "id":"pno"
                   },
-                  "sdate":{
+                  "startDate":{ --kevin 改名startDate
                      "name":"起始日期",
                      "type":"string",
                      "value":"20220121",
                      "format":"YYYYmmdd",
-                     "id":"sdate"
+                     "id":"startDate"   --kevin 改名startDate
                   },
-                  "etime":{
+                  "endTime":{   --kevin 改名endTime
                      "name":"結束時間",
                      "type":"string",
                      "value":"1700",
                      "format":"HHmm",
-                     "id":"etime"
+                     "id":"endTime"   --kevin 改名endTime
                   },
-                  "edate":{
+                  "endDate":{ --kevin 改名endDate
                      "name":"結束日期",
                      "type":"string",
                      "value":"20220121",
                      "format":"YYYYmmdd",
-                     "id":"edate"
+                     "id":"endDate"   --kevin 改名endDate
                   },
                   "approved":{
                      "name":"已生效",
@@ -198,137 +178,8 @@ Here is a JSON representation of request.
                      "value":true,
                      "format":"n/a",
                      "id":"approved"
-                  },
-                  "hkindd":{
-                     "name":"子假別資訊",
-                     "type":"object",
-                     "value":{
-                        "hcoded":{
-                           "name":"子假別代碼",
-                           "type":"string",
-                           "value":"00",
-                           "format":"n/a",
-                           "id":"hcoded"
-                        },
-                        "hcdname":{
-                           "name":"子假別名稱",
-                           "type":"string",
-                           "value":"",
-                           "format":"n/a",
-                           "id":"hcdname"
-                        }
-                     },
-                     "format":"n/a",
-                     "id":"hkindd"
                   }
-               },
-               "format":"n/a",
-               "id":"vacation"
-            },
-            {
-               "name":"請假資訊",
-               "type":"object",
-               "value":{
-                  "amt":{
-                     "name":"總計",
-                     "type":"decimal",
-                     "value":8.0,
-                     "format":"hour",
-                     "id":"amt"
-                  },
-                  "empid":{
-                     "name":"員工編號",
-                     "type":"string",
-                     "value":"admin",
-                     "format":"n/a",
-                     "id":"empid"
-                  },
-                  "stime":{
-                     "name":"起始時間",
-                     "type":"string",
-                     "value":"0800",
-                     "format":"HHmm",
-                     "id":"stime"
-                  },
-                  "hkind":{
-                     "name":"假別資訊",
-                     "type":"object",
-                     "value":{
-                        "hcname":{
-                           "name":"假別名稱",
-                           "type":"string",
-                           "value":"",
-                           "format":"n/a",
-                           "id":"hcname"
-                        },
-                        "hcode":{
-                           "name":"假別代碼",
-                           "type":"string",
-                           "value":"00",
-                           "format":"n/a",
-                           "id":"hcode"
-                        }
-                     },
-                     "format":"n/a",
-                     "id":"hkind"
-                  },
-                  "pno":{
-                     "name":"單據編號",
-                     "type":"string",
-                     "value":"W00202201220002",
-                     "format":"n/a",
-                     "id":"pno"
-                  },
-                  "sdate":{
-                     "name":"起始日期",
-                     "type":"string",
-                     "value":"20220110",
-                     "format":"YYYYmmdd",
-                     "id":"sdate"
-                  },
-                  "etime":{
-                     "name":"結束時間",
-                     "type":"string",
-                     "value":"1700",
-                     "format":"HHmm",
-                     "id":"etime"
-                  },
-                  "edate":{
-                     "name":"結束日期",
-                     "type":"string",
-                     "value":"20220110",
-                     "format":"YYYYmmdd",
-                     "id":"edate"
-                  },
-                  "approved":{
-                     "name":"已生效",
-                     "type":"boolean",
-                     "value":false,
-                     "format":"n/a",
-                     "id":"approved"
-                  },
-                  "hkindd":{
-                     "name":"子假別資訊",
-                     "type":"object",
-                     "value":{
-                        "hcoded":{
-                           "name":"子假別代碼",
-                           "type":"string",
-                           "value":"00",
-                           "format":"n/a",
-                           "id":"hcoded"
-                        },
-                        "hcdname":{
-                           "name":"子假別名稱",
-                           "type":"string",
-                           "value":"",
-                           "format":"n/a",
-                           "id":"hcdname"
-                        }
-                     },
-                     "format":"n/a",
-                     "id":"hkindd"
-                  }
+                  --kevin 移除hkindd
                },
                "format":"n/a",
                "id":"vacation"
