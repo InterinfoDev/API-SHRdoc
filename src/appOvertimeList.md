@@ -118,19 +118,19 @@ Here is a JSON representation of request.
                      "format":"hour",
                      "id":"amt"
                   },
-                  "startTime":{              
+                  "startTime":{            --richard 欄位修改  startTime
                      "name":"起始時間",
                      "type":"string",
                      "value":"0800",
                      "format":"HHmm",
-                     "id":"startTime"  
+                     "id":"startTime"       --richard 欄位修改  startTime
                   },
-                  "startDate":{              
+                  "startDate":{              --richard 欄位修改  startDate
                      "name":"起始日期",
                      "type":"string",
                      "value":"20220108",
                      "format":"YYYYmmdd",
-                     "id":"startDate"         
+                     "id":"startDate"         --richard 欄位修改  startDate
                   },
                   "empid":{
                      "name":"員工編號",
@@ -153,12 +153,12 @@ Here is a JSON representation of request.
                      "format":"n/a",
                      "id":"payTypeName"
                   },
-                  "endTime":{           
+                  "endTime":{               --richard 欄位修改  endTime
                      "name":"結束時間",
                      "type":"string",
                      "value":"1700",
                      "format":"HHmm",
-                     "id":"endTime"      
+                     "id":"endTime"         --richard 欄位修改  endTime
                   },
                   "overplanPno":{
                      "name":"預定加班單號",
