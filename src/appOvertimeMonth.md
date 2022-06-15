@@ -57,15 +57,8 @@ Here is a JSON representation of request.
       "回傳成功"
    ],
    "data":{
-      "properties":{
-         "format":{
-            "count":"數量",
-            "n/a":"",
-            "YYYYmm":"西元年月"
-         }
-      },
-      "overtime":{
-         "name":"員工預定加班列表",
+      "overtimeList":{
+         "name":"員工實際加班列表",
          "type":"array",
          "value":[
             {
@@ -134,7 +127,14 @@ Here is a JSON representation of request.
             }
          ],
          "format":"n/a",
-         "id":"overtime"
+         "id":"overtimeList"
+      },
+      "properties":{
+         "format":{
+            "count":"數量",
+            "n/a":"",
+            "YYYYmm":"西元年月"
+         }
       }
    }
 }
