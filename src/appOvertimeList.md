@@ -118,19 +118,19 @@ Here is a JSON representation of request.
                      "format":"hour",
                      "id":"amt"
                   },
-                  "stime":{              --  richard 欄位改名 stime
+                  "startTime":{              
                      "name":"起始時間",
                      "type":"string",
                      "value":"0800",
                      "format":"HHmm",
-                     "id":"stime"         --  richard 欄位改名 stime
+                     "id":"startTime"  
                   },
-                  "sdate":{               --  richard 欄位改名 sdate
+                  "startDate":{              
                      "name":"起始日期",
                      "type":"string",
                      "value":"20220108",
                      "format":"YYYYmmdd",
-                     "id":"sdate"          --  richard 欄位改名 sdate
+                     "id":"startDate"         
                   },
                   "empid":{
                      "name":"員工編號",
@@ -153,12 +153,12 @@ Here is a JSON representation of request.
                      "format":"n/a",
                      "id":"payTypeName"
                   },
-                  "etime":{             --  richard 欄位改名 etime
+                  "endTime":{           
                      "name":"結束時間",
                      "type":"string",
                      "value":"1700",
                      "format":"HHmm",
-                     "id":"etime"       --  richard 欄位改名 etime
+                     "id":"endTime"      
                   },
                   "overplanPno":{
                      "name":"預定加班單號",
@@ -189,19 +189,19 @@ Here is a JSON representation of request.
                      "format":"hour",
                      "id":"amt"
                   },
-                  "stime":{
+                  "startTime":{
                      "name":"起始時間",
                      "type":"string",
                      "value":"0800",
                      "format":"HHmm",
-                     "id":"stime"
+                     "id":"startTime"
                   },
-                  "sdate":{
+                  "startDate":{
                      "name":"起始日期",
                      "type":"string",
                      "value":"20220101",
                      "format":"YYYYmmdd",
-                     "id":"sdate"
+                     "id":"startDate"
                   },
                   "empid":{
                      "name":"員工編號",
@@ -224,12 +224,12 @@ Here is a JSON representation of request.
                      "format":"n/a",
                      "id":"payTypeName"
                   },
-                  "etime":{
+                  "endTime":{
                      "name":"結束時間",
                      "type":"string",
                      "value":"1600",
                      "format":"HHmm",
-                     "id":"etime"
+                     "id":"endTime"
                   },
                   "overplanPno":{
                      "name":"預定加班單號",
@@ -260,19 +260,19 @@ Here is a JSON representation of request.
                      "format":"hour",
                      "id":"amt"
                   },
-                  "stime":{
+                  "startTime":{
                      "name":"起始時間",
                      "type":"string",
                      "value":"1700",
                      "format":"HHmm",
-                     "id":"stime"
+                     "id":"startTime"
                   },
-                  "sdate":{
+                  "startDate":{
                      "name":"起始日期",
                      "type":"string",
                      "value":"20220105",
                      "format":"YYYYmmdd",
-                     "id":"sdate"
+                     "id":"startDate"
                   },
                   "empid":{
                      "name":"員工編號",
@@ -295,7 +295,7 @@ Here is a JSON representation of request.
                      "format":"n/a",
                      "id":"payTypeName"
                   },
-                  "etime":{
+                  "endTime":{
                      "name":"結束時間",
                      "type":"string",
                      "value":"2100",
