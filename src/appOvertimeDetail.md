@@ -95,7 +95,7 @@ Here is a JSON representation of request.
                   "fieldName":{
                      "name":"欄位名稱",
                      "type":"string",
-                     "value":"單據編號",
+                     "value":"實際加班單號",
                      "format":"n/a",
                      "id":"fieldName"
                   }
@@ -133,7 +133,7 @@ Here is a JSON representation of request.
                   "fieldName":{
                      "name":"欄位名稱",
                      "type":"string",
-                     "value":"實際加班單號",
+                     "value":"預定加班單號",
                      "format":"n/a",
                      "id":"fieldName"
                   }
@@ -911,7 +911,7 @@ Here is a JSON representation of request.
                   "fieldName":{
                      "name":"欄位名稱",
                      "type":"string",
-                     "value":"附件資訊",
+                     "value":"附件",
                      "format":"n/a",
                      "id":"fieldName"
                   }
