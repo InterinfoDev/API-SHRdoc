@@ -98,13 +98,6 @@ Here is a JSON representation of request.
                "value":"L1線B班",
                "format":"n/a",
                "id":"depFullName"
-            },
-            "empFullEname":{
-               "name":"員工英文姓名",
-               "type":"string",
-               "value":"Administrator",
-               "format":"n/a",
-               "id":"empFullEname"
             }
          },
          "format":"n/a",
@@ -125,19 +118,26 @@ Here is a JSON representation of request.
                      "format":"hour",
                      "id":"amt"
                   },
+                  "startTime":{
+                     "name":"起始時間",
+                     "type":"string",
+                     "value":"0800",
+                     "format":"HHmm",
+                     "id":"startTime"
+                  },
+                  "startDate":{
+                     "name":"起始日期",
+                     "type":"string",
+                     "value":"20220108",
+                     "format":"YYYYmmdd",
+                     "id":"startDate"
+                  },
                   "empid":{
                      "name":"員工編號",
                      "type":"string",
                      "value":"admin",
                      "format":"n/a",
                      "id":"empid"
-                  },
-                  "stime":{
-                     "name":"起始時間",
-                     "type":"string",
-                     "value":"0800",
-                     "format":"HHmm",
-                     "id":"stime"
                   },
                   "pno":{
                      "name":"單據編號",
@@ -146,19 +146,19 @@ Here is a JSON representation of request.
                      "format":"n/a",
                      "id":"pno"
                   },
-                  "sdate":{
-                     "name":"起始日期",
+                  "payTypeName":{
+                     "name":"給付方式名稱",
                      "type":"string",
-                     "value":"20220108",
-                     "format":"YYYYmmdd",
-                     "id":"sdate"
+                     "value":"給薪",
+                     "format":"n/a",
+                     "id":"payTypeName"
                   },
-                  "etime":{
+                  "endTime":{
                      "name":"結束時間",
                      "type":"string",
                      "value":"1700",
                      "format":"HHmm",
-                     "id":"etime"
+                     "id":"endTime"
                   },
                   "overplanPno":{
                      "name":"預定加班單號",
@@ -173,28 +173,6 @@ Here is a JSON representation of request.
                      "value":true,
                      "format":"n/a",
                      "id":"approved"
-                  },
-                  "payType":{
-                     "name":"給付方式資訊",
-                     "type":"object",
-                     "value":{
-                        "value":{
-                           "name":"給付方式名稱",
-                           "type":"string",
-                           "value":"給薪",
-                           "format":"n/a",
-                           "id":"value"
-                        },
-                        "id":{
-                           "name":"給付方式代碼",
-                           "type":"string",
-                           "value":"B",
-                           "format":"n/a",
-                           "id":"id"
-                        }
-                     },
-                     "format":"n/a",
-                     "id":"payType"
                   }
                },
                "format":"n/a",
@@ -211,19 +189,26 @@ Here is a JSON representation of request.
                      "format":"hour",
                      "id":"amt"
                   },
+                  "startTime":{
+                     "name":"起始時間",
+                     "type":"string",
+                     "value":"0800",
+                     "format":"HHmm",
+                     "id":"startTime"
+                  },
+                  "startDate":{
+                     "name":"起始日期",
+                     "type":"string",
+                     "value":"20220101",
+                     "format":"YYYYmmdd",
+                     "id":"startDate"
+                  },
                   "empid":{
                      "name":"員工編號",
                      "type":"string",
                      "value":"admin",
                      "format":"n/a",
                      "id":"empid"
-                  },
-                  "stime":{
-                     "name":"起始時間",
-                     "type":"string",
-                     "value":"0800",
-                     "format":"HHmm",
-                     "id":"stime"
                   },
                   "pno":{
                      "name":"單據編號",
@@ -232,19 +217,19 @@ Here is a JSON representation of request.
                      "format":"n/a",
                      "id":"pno"
                   },
-                  "sdate":{
-                     "name":"起始日期",
+                  "payTypeName":{
+                     "name":"給付方式名稱",
                      "type":"string",
-                     "value":"20220101",
-                     "format":"YYYYmmdd",
-                     "id":"sdate"
+                     "value":"給薪",
+                     "format":"n/a",
+                     "id":"payTypeName"
                   },
-                  "etime":{
+                  "endTime":{
                      "name":"結束時間",
                      "type":"string",
                      "value":"1600",
                      "format":"HHmm",
-                     "id":"etime"
+                     "id":"endTime"
                   },
                   "overplanPno":{
                      "name":"預定加班單號",
@@ -259,28 +244,6 @@ Here is a JSON representation of request.
                      "value":true,
                      "format":"n/a",
                      "id":"approved"
-                  },
-                  "payType":{
-                     "name":"給付方式資訊",
-                     "type":"object",
-                     "value":{
-                        "value":{
-                           "name":"給付方式名稱",
-                           "type":"string",
-                           "value":"給薪",
-                           "format":"n/a",
-                           "id":"value"
-                        },
-                        "id":{
-                           "name":"給付方式代碼",
-                           "type":"string",
-                           "value":"B",
-                           "format":"n/a",
-                           "id":"id"
-                        }
-                     },
-                     "format":"n/a",
-                     "id":"payType"
                   }
                },
                "format":"n/a",
@@ -297,19 +260,26 @@ Here is a JSON representation of request.
                      "format":"hour",
                      "id":"amt"
                   },
+                  "startTime":{
+                     "name":"起始時間",
+                     "type":"string",
+                     "value":"1700",
+                     "format":"HHmm",
+                     "id":"startTime"
+                  },
+                  "startDate":{
+                     "name":"起始日期",
+                     "type":"string",
+                     "value":"20220105",
+                     "format":"YYYYmmdd",
+                     "id":"startDate"
+                  },
                   "empid":{
                      "name":"員工編號",
                      "type":"string",
                      "value":"admin",
                      "format":"n/a",
                      "id":"empid"
-                  },
-                  "stime":{
-                     "name":"起始時間",
-                     "type":"string",
-                     "value":"1700",
-                     "format":"HHmm",
-                     "id":"stime"
                   },
                   "pno":{
                      "name":"單據編號",
@@ -318,19 +288,19 @@ Here is a JSON representation of request.
                      "format":"n/a",
                      "id":"pno"
                   },
-                  "sdate":{
-                     "name":"起始日期",
+                  "payTypeName":{
+                     "name":"給付方式名稱",
                      "type":"string",
-                     "value":"20220105",
-                     "format":"YYYYmmdd",
-                     "id":"sdate"
+                     "value":"給薪",
+                     "format":"n/a",
+                     "id":"payTypeName"
                   },
-                  "etime":{
+                  "endTime":{
                      "name":"結束時間",
                      "type":"string",
                      "value":"2100",
                      "format":"HHmm",
-                     "id":"etime"
+                     "id":"endTime"
                   },
                   "overplanPno":{
                      "name":"預定加班單號",
@@ -345,28 +315,6 @@ Here is a JSON representation of request.
                      "value":true,
                      "format":"n/a",
                      "id":"approved"
-                  },
-                  "payType":{
-                     "name":"給付方式資訊",
-                     "type":"object",
-                     "value":{
-                        "value":{
-                           "name":"給付方式名稱",
-                           "type":"string",
-                           "value":"給薪",
-                           "format":"n/a",
-                           "id":"value"
-                        },
-                        "id":{
-                           "name":"給付方式代碼",
-                           "type":"string",
-                           "value":"B",
-                           "format":"n/a",
-                           "id":"id"
-                        }
-                     },
-                     "format":"n/a",
-                     "id":"payType"
                   }
                },
                "format":"n/a",
