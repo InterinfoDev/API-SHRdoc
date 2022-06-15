@@ -62,7 +62,7 @@ Here is a JSON representation of request.
    ],
    "data":{
       "overtimeDetail":{
-         "name":"預定加班單詳細資訊",
+         "name":"實際加班單詳細資訊",
          "type":"object",
          "value":[
             {
@@ -133,7 +133,7 @@ Here is a JSON representation of request.
                   "fieldName":{
                      "name":"欄位名稱",
                      "type":"string",
-                     "value":"預定加班單號",
+                     "value":"實際加班單號",
                      "format":"n/a",
                      "id":"fieldName"
                   }
@@ -248,6 +248,44 @@ Here is a JSON representation of request.
                      "name":"欄位名稱",
                      "type":"string",
                      "value":"員工中文姓名",
+                     "format":"n/a",
+                     "id":"fieldName"
+                  }
+               },
+               "format":"n/a",
+               "id":"field"
+            },
+            {
+               "name":"欄位資訊",
+               "type":"object",
+               "value":{
+                  "fieldType":{
+                     "name":"欄位類型",
+                     "type":"string",
+                     "value":"text",
+                     "format":"n/a",
+                     "id":"fieldType"
+                  },
+                  "fieldId":{
+                     "name":"欄位代號",
+                     "type":"string",
+                     "value":"empFullName",
+                     "format":"n/a",
+                     "id":"fieldId"
+                  },
+                  "fieldValue":{
+                     "name":"欄位資料",
+                     "type":"array",
+                     "value":[
+                        "Administrator"
+                     ],
+                     "format":"n/a",
+                     "id":"fieldValue"
+                  },
+                  "fieldName":{
+                     "name":"欄位名稱",
+                     "type":"string",
+                     "value":"員工英文姓名",
                      "format":"n/a",
                      "id":"fieldName"
                   }
@@ -497,7 +535,7 @@ Here is a JSON representation of request.
                   "fieldId":{
                      "name":"欄位代號",
                      "type":"string",
-                     "value":"eatYN",
+                     "value":"isEat",
                      "format":"n/a",
                      "id":"fieldId"
                   },
@@ -761,7 +799,7 @@ Here is a JSON representation of request.
                   "fieldId":{
                      "name":"欄位代號",
                      "type":"string",
-                     "value":"note",
+                     "value":"beforeWork",
                      "format":"n/a",
                      "id":"fieldId"
                   },
@@ -775,7 +813,7 @@ Here is a JSON representation of request.
                   "fieldName":{
                      "name":"欄位名稱",
                      "type":"string",
-                     "value":"實際加班內容",
+                     "value":"跨日往前加班",
                      "format":"n/a",
                      "id":"fieldName"
                   }
@@ -797,7 +835,7 @@ Here is a JSON representation of request.
                   "fieldId":{
                      "name":"欄位代號",
                      "type":"string",
-                     "value":"applicantEmpFullName",
+                     "value":"applicantName",
                      "format":"n/a",
                      "id":"fieldId"
                   },
@@ -843,7 +881,29 @@ Here is a JSON representation of request.
                      "name":"附件資訊",
                      "type":"array",
                      "value":[
-                        
+                        {
+                           "fileType":{
+                              "name":"檔案類型",
+                              "type":"string",
+                              "value":"",
+                              "format":"n/a",
+                              "id":"fileType"
+                           },
+                           "fileUrl":{
+                              "name":"檔案路徑",
+                              "type":"string",
+                              "value":"97922998003575924465",
+                              "format":"n/a",
+                              "id":"fileUrl"
+                           },
+                           "fileName":{
+                              "name":"檔案名稱",
+                              "type":"string",
+                              "value":"",
+                              "format":"n/a",
+                              "id":"fileName"
+                           }
+                        }
                      ],
                      "format":"n/a",
                      "id":"files"
@@ -851,7 +911,7 @@ Here is a JSON representation of request.
                   "fieldName":{
                      "name":"欄位名稱",
                      "type":"string",
-                     "value":"附件",
+                     "value":"附件資訊",
                      "format":"n/a",
                      "id":"fieldName"
                   }
