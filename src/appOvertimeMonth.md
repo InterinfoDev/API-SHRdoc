@@ -140,33 +140,6 @@ Here is a JSON representation of request.
 }
 ```
 
-### HTTP Response when No Data
-無資料則屬於正常範圍，正常來說可以沒有資料
-```json
-{
-    "status": "success",
-    "message": [
-        "查無資料"
-    ],
-    "data": {
-        "properties": {
-            "format": {
-                "count": "數量",
-                "n/a": "",
-                "YYYYmm": "西元年月"
-            }
-        },
-        "overtime": {
-            "name": "員工預定加班列表",
-            "type": "array",
-            "value": [],
-            "format": "n/a",
-            "id": "overtime"
-        }
-    }
-}
-```
-
 ### HTTP Response when Failed
 ```json
 {
