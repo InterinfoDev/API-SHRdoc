@@ -25,7 +25,7 @@ Here is a JSON representation of request.
     "uid":"98599308101484732326",
     "right":"51341911904173543336756162544864820",
     "request":{
-        "overplanYM":"202104", 
+        "overtimeYM":"202104", 
         "companyId":"TW",
         "depNumber":[89], 
         "empid":["admin"]
