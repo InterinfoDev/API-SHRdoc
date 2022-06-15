@@ -140,7 +140,7 @@ Here is a JSON representation of request.
                      "id":"empid"
                   },
                   "pno":{
-                     "name":"單據編號",
+                     "name":"實際加班單號",
                      "type":"string",
                      "value":"H002022031100001",
                      "format":"n/a",
@@ -211,7 +211,7 @@ Here is a JSON representation of request.
                      "id":"empid"
                   },
                   "pno":{
-                     "name":"單據編號",
+                     "name":"實際加班單號",
                      "type":"string",
                      "value":"H002022031100002",
                      "format":"n/a",
@@ -282,7 +282,7 @@ Here is a JSON representation of request.
                      "id":"empid"
                   },
                   "pno":{
-                     "name":"單據編號",
+                     "name":"實際加班單號",
                      "type":"string",
                      "value":"H002022031100003",
                      "format":"n/a",
