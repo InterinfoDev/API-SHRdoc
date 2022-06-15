@@ -41,7 +41,7 @@ Here is a JSON representation of request.
 ### Request Properties
 | Key | Value | Type | Description | Required | Format |
 |:----------|:-------------|:-----|:------------|:------------|:------------|
-| overplanYM | 202201 | String | 查詢年月 | Y | AC(YYYYmm) |
+| overtimeYM | 202201 | String | 查詢年月 | Y | AC(YYYYmm) |
 | empid | admin | String | 員工編號 | Y | n/a |
 
 ### HTTP Response when Successful
