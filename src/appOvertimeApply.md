@@ -194,19 +194,21 @@ Here is a JSON representation of request.
                      "name":"選項",
                      "type":"array",
                      "value":[
-                        {   --kevin 補上資料
-                           "name":"選項代號",
-                           "type":"string",
-                           "value":"W002022060100001",
-                           "format":"n/a",
-                           "id":"optionId"
-                        },
-                        {
-                           "name":"選項名稱",
-                           "type":"string",
-                           "value":"W002022060100001-admin-20220601",
-                           "format":"n/a",
-                           "id":"optionValue"
+                        {   --kevin 新增測試資料
+                           "optionId":{
+                              "name":"選項代號",
+                              "type":"string",
+                              "value":"A",
+                              "format":"n/a",
+                              "id":"optionId"
+                           },
+                           "optionValue":{
+                              "name":"選項名稱",
+                              "type":"string",
+                              "value":"補休",
+                              "format":"n/a",
+                              "id":"optionValue"
+                           }
                         }
                      ],
                      "format":"n/a",
