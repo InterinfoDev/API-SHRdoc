@@ -1085,6 +1085,44 @@ Here is a JSON representation of request.
                },
                "format":"n/a",
                "id":"field"
+            },
+            {
+               "name":"欄位資訊",
+               "type":"object",
+               "value":{
+                  "fieldType":{
+                     "name":"欄位類型",
+                     "type":"string",
+                     "value":"file",
+                     "format":"n/a",
+                     "id":"fieldType"
+                  },
+                  "fieldId":{
+                     "name":"欄位代號",
+                     "type":"string",
+                     "value":"uploadFiles",
+                     "format":"n/a",
+                     "id":"fieldId"
+                  },
+                  "files":{
+                     "name":"附件資訊",
+                     "type":"array",
+                     "value":[
+                        
+                     ],
+                     "format":"n/a",
+                     "id":"files"
+                  },
+                  "fieldName":{
+                     "name":"欄位名稱",
+                     "type":"string",
+                     "value":"出差文件",
+                     "format":"n/a",
+                     "id":"fieldName"
+                  }
+               },
+               "format":"n/a",
+               "id":"field"
             }
          ],
          "format":"n/a",
@@ -1113,6 +1151,52 @@ Here is a JSON representation of request.
          },
          "format":"n/a",
          "id":"flowHistory"
+      },
+      "schedule":{
+         "name":"出差詳細資訊",
+         "type":"object",
+         "value":[
+            {
+               "name":"欄位資訊",
+               "type":"object",
+               "value":{
+                  "fieldType":{
+                     "name":"欄位類型",
+                     "type":"string",
+                     "value":"file",
+                     "format":"n/a",
+                     "id":"fieldType"
+                  },
+                  "fieldId":{
+                     "name":"欄位代號",
+                     "type":"string",
+                     "value":"uploadFiles",
+                     "format":"n/a",
+                     "id":"fieldId"
+                  },
+                  "files":{
+                     "name":"附件資訊",
+                     "type":"array",
+                     "value":[
+                        
+                     ],
+                     "format":"n/a",
+                     "id":"files"
+                  },
+                  "fieldName":{
+                     "name":"欄位名稱",
+                     "type":"string",
+                     "value":"行程文件",
+                     "format":"n/a",
+                     "id":"fieldName"
+                  }
+               },
+               "format":"n/a",
+               "id":"field"
+            }
+         ],
+         "format":"n/a",
+         "id":"travelDetail"
       },
       "scheduleList":{
          "name":"行程清單資訊",
