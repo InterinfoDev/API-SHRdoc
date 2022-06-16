@@ -446,6 +446,21 @@ Here is a JSON representation of request.
          },
          "format":"n/a",
          "id":"diningForm"
+      },
+       "overplanTip":{  --kevin 補上備註
+         "name":"預定加班單備註",
+         "type":"array",
+         "value":[
+            {
+               "name":"備註事項",
+               "type":"string",
+               "value":"kevinNoteTest",
+               "format":"n/a",
+               "id":"note"
+            }
+         ],
+         "format":"n/a",
+         "id":"overplanTip"
       }
    }
 }
