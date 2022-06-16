@@ -167,6 +167,13 @@ Here is a JSON representation of request.
                      "format":"n/a",
                      "id":"overplanPno"
                   },
+                  "overtimeType": {         --richard 新增欄位 overtimeType
+                    "name": "加班種類",
+                    "type": "string",
+                    "value": "一般加班",
+                    "format": "n/a",
+                    "id": "overtimeType"
+                  },
                   "approved":{
                      "name":"已生效",
                      "type":"boolean",
