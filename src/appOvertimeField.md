@@ -109,7 +109,7 @@ Here is a JSON representation of request.
                   "fieldValue":{
                      "name":"欄位預設值",
                      "type":"string",
-                     "value":"1700",
+                     "value":"1730",
                      "format":"HHmm",
                      "id":"fieldValue"
                   }
@@ -153,7 +153,7 @@ Here is a JSON representation of request.
                   "fieldValue":{
                      "name":"欄位預設值",
                      "type":"boolean",
-                     "value":true,
+                     "value":false,
                      "format":"n/a",
                      "id":"fieldValue"
                   }
@@ -173,14 +173,14 @@ Here is a JSON representation of request.
                            "optionId":{
                               "name":"選項代號",
                               "type":"string",
-                              "value":"01",
+                              "value":"A",
                               "format":"n/a",
                               "id":"optionId"
                            },
                            "optionValue":{
                               "name":"選項名稱",
                               "type":"string",
-                              "value":"通用班(8-17)",
+                              "value":"營業店鋪",
                               "format":"n/a",
                               "id":"optionValue"
                            }
@@ -189,142 +189,14 @@ Here is a JSON representation of request.
                            "optionId":{
                               "name":"選項代號",
                               "type":"string",
-                              "value":"04",
+                              "value":"D",
                               "format":"n/a",
                               "id":"optionId"
                            },
                            "optionValue":{
                               "name":"選項名稱",
                               "type":"string",
-                              "value":"夜班",
-                              "format":"n/a",
-                              "id":"optionValue"
-                           }
-                        },
-                        {
-                           "optionId":{
-                              "name":"選項代號",
-                              "type":"string",
-                              "value":"99",
-                              "format":"n/a",
-                              "id":"optionId"
-                           },
-                           "optionValue":{
-                              "name":"選項名稱",
-                              "type":"string",
-                              "value":"8.5-18.5",
-                              "format":"n/a",
-                              "id":"optionValue"
-                           }
-                        },
-                        {
-                           "optionId":{
-                              "name":"選項代號",
-                              "type":"string",
-                              "value":"S02",
-                              "format":"n/a",
-                              "id":"optionId"
-                           },
-                           "optionValue":{
-                              "name":"選項名稱",
-                              "type":"string",
-                              "value":"中和輪班1500(8)",
-                              "format":"n/a",
-                              "id":"optionValue"
-                           }
-                        },
-                        {
-                           "optionId":{
-                              "name":"選項代號",
-                              "type":"string",
-                              "value":"S03",
-                              "format":"n/a",
-                              "id":"optionId"
-                           },
-                           "optionValue":{
-                              "name":"選項名稱",
-                              "type":"string",
-                              "value":"中和輪班2400(8)",
-                              "format":"n/a",
-                              "id":"optionValue"
-                           }
-                        },
-                        {
-                           "optionId":{
-                              "name":"選項代號",
-                              "type":"string",
-                              "value":"S05",
-                              "format":"n/a",
-                              "id":"optionId"
-                           },
-                           "optionValue":{
-                              "name":"選項名稱",
-                              "type":"string",
-                              "value":"中和輪班2000(12)",
-                              "format":"n/a",
-                              "id":"optionValue"
-                           }
-                        },
-                        {
-                           "optionId":{
-                              "name":"選項代號",
-                              "type":"string",
-                              "value":"S99",
-                              "format":"n/a",
-                              "id":"optionId"
-                           },
-                           "optionValue":{
-                              "name":"選項名稱",
-                              "type":"string",
-                              "value":"中和月結輪班",
-                              "format":"n/a",
-                              "id":"optionValue"
-                           }
-                        },
-                        {
-                           "optionId":{
-                              "name":"選項代號",
-                              "type":"string",
-                              "value":"TG03",
-                              "format":"n/a",
-                              "id":"optionId"
-                           },
-                           "optionValue":{
-                              "name":"選項名稱",
-                              "type":"string",
-                              "value":"TG大夜班",
-                              "format":"n/a",
-                              "id":"optionValue"
-                           }
-                        },
-                        {
-                           "optionId":{
-                              "name":"選項代號",
-                              "type":"string",
-                              "value":"TG05",
-                              "format":"n/a",
-                              "id":"optionId"
-                           },
-                           "optionValue":{
-                              "name":"選項名稱",
-                              "type":"string",
-                              "value":"TG保安中班",
-                              "format":"n/a",
-                              "id":"optionValue"
-                           }
-                        },
-                        {
-                           "optionId":{
-                              "name":"選項代號",
-                              "type":"string",
-                              "value":"TG06",
-                              "format":"n/a",
-                              "id":"optionId"
-                           },
-                           "optionValue":{
-                              "name":"選項名稱",
-                              "type":"string",
-                              "value":"TG保安晚班",
+                              "value":"總公司班",
                               "format":"n/a",
                               "id":"optionValue"
                            }
@@ -336,7 +208,7 @@ Here is a JSON representation of request.
                   "fieldEditable":{
                      "name":"開放編輯",
                      "type":"boolean",
-                     "value":true,
+                     "value":false,
                      "format":"n/a",
                      "id":"fieldEditable"
                   },
@@ -354,7 +226,7 @@ Here is a JSON representation of request.
             "overtimeDepartment":{
                "name":"加班部門",
                "type":"object",
-               "value":{
+               "value":{    --這邊的option請使用appDeptCondition
                   "fieldEditable":{
                      "name":"開放編輯",
                      "type":"boolean",
@@ -365,7 +237,7 @@ Here is a JSON representation of request.
                   "fieldValue":{
                      "name":"欄位預設值",
                      "type":"string",
-                     "value":"5",
+                     "value":"1",
                      "format":"n/a",
                      "id":"fieldValue"
                   }
@@ -506,6 +378,22 @@ Here is a JSON representation of request.
                               "name":"選項名稱",
                               "type":"string",
                               "value":"特殊加班",
+                              "format":"n/a",
+                              "id":"optionValue"
+                           }
+                        },
+                        {
+                           "optionId":{
+                              "name":"選項代號",
+                              "type":"string",
+                              "value":"C",
+                              "format":"n/a",
+                              "id":"optionId"
+                           },
+                           "optionValue":{
+                              "name":"選項名稱",
+                              "type":"string",
+                              "value":"加班測試",
                               "format":"n/a",
                               "id":"optionValue"
                            }
@@ -658,6 +546,70 @@ Here is a JSON representation of request.
          "format":"n/a",
          "id":"payForm"
       },
+      "overtimeInfo":{
+         "name":"實際加班單顯示欄位資訊",
+         "type":"object",
+         "value":{
+            "appliedHour":{
+               "name":"當月已累積加班時數(不含本次)",
+               "type":"decimal",
+               "value":5.0,
+               "format":"hour",
+               "id":"appliedHour"
+            },
+            "companyFullName":{
+               "name":"公司全名",
+               "type":"string",
+               "value":"三澧企業股份有限公司",
+               "format":"n/a",
+               "id":"companyFullName"
+            },
+            "empFullName":{
+               "name":"員工中文姓名",
+               "type":"string",
+               "value":"管理者",
+               "format":"n/a",
+               "id":"empFullName"
+            },
+            "empid":{
+               "name":"員工編號",
+               "type":"string",
+               "value":"admin",
+               "format":"n/a",
+               "id":"empid"
+            },
+            "overDate":{
+               "name":"加班日期",
+               "type":"string",
+               "value":"20220616",
+               "format":"YYYYmmdd",
+               "id":"overDate"
+            },
+            "depFullName":{
+               "name":"部門名稱",
+               "type":"string",
+               "value":"台北總公司",
+               "format":"n/a",
+               "id":"depFullName"
+            },
+            "empFullEname":{
+               "name":"員工英文姓名",
+               "type":"string",
+               "value":"",
+               "format":"n/a",
+               "id":"empFullEname"
+            },
+            "overplanPno":{
+               "name":"預定加班單號",
+               "type":"string",
+               "value":"",
+               "format":"n/a",
+               "id":"overplanPno"
+            }
+         },
+         "format":"n/a",
+         "id":"overtimeInfo"
+      },
       "diningForm":{
          "name":"用餐欄位資訊",
          "type":"object",
@@ -713,14 +665,14 @@ Here is a JSON representation of request.
                   "fieldEditable":{
                      "name":"開放編輯",
                      "type":"boolean",
-                     "value":true,
+                     "value":false,
                      "format":"n/a",
                      "id":"fieldEditable"
                   },
                   "fieldValue":{
                      "name":"欄位預設值",
                      "type":"boolean",
-                     "value":false,
+                     "value":true,
                      "format":"n/a",
                      "id":"fieldValue"
                   }
@@ -739,7 +691,7 @@ Here is a JSON representation of request.
             {
                "name":"備註事項",
                "type":"string",
-               "value":"請注意：加班『30天』內要提出申請",
+               "value":"kevinNoteTest",
                "format":"n/a",
                "id":"note"
             }
