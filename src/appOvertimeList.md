@@ -167,13 +167,6 @@ Here is a JSON representation of request.
                      "format": "YYYYmmdd",
                      "id": "endDate"        --richard 新增欄位 endDate
                   },
-                  "overplanPno":{
-                     "name":"預定加班單號",
-                     "type":"string",
-                     "value":"",
-                     "format":"n/a",
-                     "id":"overplanPno"
-                  },
                   "overtimeType": {         --richard 新增欄位 overtimeType
                     "name": "加班種類",
                     "type": "string",
