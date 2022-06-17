@@ -429,7 +429,7 @@ Here is a JSON representation of request.
                   "fieldId":{
                      "name":"欄位代號",
                      "type":"string",
-                     "value":"empFullName",
+                     "value":"empFullEname",
                      "format":"n/a",
                      "id":"fieldId"
                   },
