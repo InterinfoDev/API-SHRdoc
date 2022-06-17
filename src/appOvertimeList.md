@@ -132,13 +132,6 @@ Here is a JSON representation of request.
                      "format":"YYYYmmdd",
                      "id":"startDate"         --richard 欄位修改  startDate
                   },
-                  "empid":{
-                     "name":"員工編號",
-                     "type":"string",
-                     "value":"admin",
-                     "format":"n/a",
-                     "id":"empid"
-                  },
                   "pno":{
                      "name":"實際加班單號",
                      "type":"string",
@@ -210,13 +203,6 @@ Here is a JSON representation of request.
                      "format":"YYYYmmdd",
                      "id":"startDate"
                   },
-                  "empid":{
-                     "name":"員工編號",
-                     "type":"string",
-                     "value":"admin",
-                     "format":"n/a",
-                     "id":"empid"
-                  },
                   "pno":{
                      "name":"實際加班單號",
                      "type":"string",
@@ -237,6 +223,13 @@ Here is a JSON representation of request.
                      "value":"1600",
                      "format":"HHmm",
                      "id":"endTime"
+                  },
+                  "endDate": {              --richard 新增欄位 endDate
+                     "name": "結束日期",
+                     "type": "string",
+                     "value": "20220108",
+                     "format": "YYYYmmdd",
+                     "id": "endDate"        --richard 新增欄位 endDate
                   },
                   "overplanPno":{
                      "name":"預定加班單號",
@@ -308,6 +301,13 @@ Here is a JSON representation of request.
                      "value":"2100",
                      "format":"HHmm",
                      "id":"endTime"
+                  },
+                  "endDate": {              --richard 新增欄位 endDate
+                     "name": "結束日期",
+                     "type": "string",
+                     "value": "20220108",
+                     "format": "YYYYmmdd",
+                     "id": "endDate"        --richard 新增欄位 endDate
                   },
                   "overplanPno":{
                      "name":"預定加班單號",
