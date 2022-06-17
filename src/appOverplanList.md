@@ -89,12 +89,12 @@ Here is a JSON representation of request.
                      "format":"n/a",
                      "id":"empid"
                   },
-                  "stime":{
+                  "startTime":{             --richard 欄位改名 startTime
                      "name":"起始時間",
                      "type":"string",
                      "value":"1900",
                      "format":"HHmm",
-                     "id":"stime"
+                     "id":"startTime"       --richard 欄位改名 startTime
                   },
                   "pno":{
                      "name":"單據編號",
@@ -103,26 +103,26 @@ Here is a JSON representation of request.
                      "format":"n/a",
                      "id":"pno"
                   },
-                  "sdate":{
+                  "startDate":{             --richard 欄位改名 startDate
                      "name":"起始日期",
                      "type":"string",
                      "value":"20220119",
                      "format":"YYYYmmdd",
-                     "id":"sdate"
+                     "id":"startDate"       --richard 欄位改名 startDate
                   },
-                  "etime":{
+                  "endTime":{               --richard 欄位改名 endTime
                      "name":"結束時間",
                      "type":"string",
                      "value":"2300",
                      "format":"HHmm",
-                     "id":"etime"
+                     "id":"endTime"          --richard 欄位改名 endTime
                   },
-                  "edate":{
+                  "endDate":{                --richard 欄位改名 endDate
                      "name":"結束日期",
                      "type":"string",
                      "value":"20220119",
                      "format":"YYYYmmdd",
-                     "id":"edate"
+                     "id":"endDate"           --richard 欄位改名 endDate
                   },
                   "approved":{
                      "name":"已生效",
