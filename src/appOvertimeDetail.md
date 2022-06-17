@@ -993,7 +993,7 @@ Here is a JSON representation of request.
                   "fieldId":{
                      "name":"欄位代號",
                      "type":"string",
-                     "value":"misEatAmt",
+                     "value":"misAmt",
                      "format":"n/a",
                      "id":"fieldId"
                   },
@@ -1293,7 +1293,7 @@ Here is a JSON representation of request.
             "n/a":""
          }
       },
-      "weekdayRateDetail":{
+      "dailyRateDetail":{
          "name":"平日加班倍率詳細資訊",
          "type":"object",
          "value":[
@@ -1311,7 +1311,7 @@ Here is a JSON representation of request.
                   "fieldId":{
                      "name":"欄位代號",
                      "type":"string",
-                     "value":"weekdayRate1",
+                     "value":"dailyRate1",
                      "format":"n/a",
                      "id":"fieldId"
                   },
@@ -1349,7 +1349,7 @@ Here is a JSON representation of request.
                   "fieldId":{
                      "name":"欄位代號",
                      "type":"string",
-                     "value":"weekdayRate2",
+                     "value":"dailyRate2",
                      "format":"n/a",
                      "id":"fieldId"
                   },
@@ -1387,7 +1387,7 @@ Here is a JSON representation of request.
                   "fieldId":{
                      "name":"欄位代號",
                      "type":"string",
-                     "value":"weekdayRate3",
+                     "value":"dailyRate3",
                      "format":"n/a",
                      "id":"fieldId"
                   },
@@ -1425,7 +1425,7 @@ Here is a JSON representation of request.
                   "fieldId":{
                      "name":"欄位代號",
                      "type":"string",
-                     "value":"weekdayRate4",
+                     "value":"dailyRate4",
                      "format":"n/a",
                      "id":"fieldId"
                   },
@@ -1451,7 +1451,7 @@ Here is a JSON representation of request.
             }
          ],
          "format":"n/a",
-         "id":"weekdayRateDetail"
+         "id":"dailyRateDetail"
       }
    }
 }
