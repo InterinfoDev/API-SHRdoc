@@ -1265,7 +1265,29 @@ Here is a JSON representation of request.
                      "name":"附件資訊",
                      "type":"array",
                      "value":[
-                        
+                        {
+                           "fileType":{
+                              "name":"檔案類型",
+                              "type":"string",
+                              "value":"",
+                              "format":"n/a",
+                              "id":"fileType"
+                           },
+                           "fileUrl":{
+                              "name":"檔案路徑",
+                              "type":"string",
+                              "value":"97922998003575924465",
+                              "format":"n/a",
+                              "id":"fileUrl"
+                           },
+                           "fileName":{
+                              "name":"檔案名稱",
+                              "type":"string",
+                              "value":"",
+                              "format":"n/a",
+                              "id":"fileName"
+                           }
+                        }
                      ],
                      "format":"n/a",
                      "id":"files"
