@@ -750,7 +750,7 @@ Here is a JSON representation of request.
                   "fieldValue":{
                      "name":"欄位預設值",
                      "type":"integer",
-                     "value":"0",
+                     "value":0,
                      "format":"currency",
                      "id":"fieldValue"
                   }
