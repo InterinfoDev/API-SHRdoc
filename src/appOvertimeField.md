@@ -236,7 +236,7 @@ Here is a JSON representation of request.
                "id":"beforeWork"
             },
             "earlyLeave":{
-               "name":"申請提早退勤(即指加班時數=實際出勤時數)",
+               "name":"申請提早退勤(加班時數=實際出勤時數)",  --kevin 改為"申請提早退勤(加班時數=實際出勤時數)"
                "type":"object",
                "value":{
                   "fieldEditable":{
