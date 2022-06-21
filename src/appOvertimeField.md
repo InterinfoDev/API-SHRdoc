@@ -55,6 +55,102 @@ Here is a JSON representation of request.
       "回傳成功"
    ],
    "data":{
+      "holidayRateDetail":{ --kevin 新增假日加班倍率資訊，這區塊固定不能編輯，欄位標題請抓fieldName
+         "name":"假日加班倍率資訊",
+         "type":"array",
+         "value":[
+            {
+               "name":"假日第一段時數",
+               "type":"object",
+               "value":{
+                  "fieldValue":{
+                     "name":"欄位預設值",
+                     "type":"decimal",
+                     "value":0.0,
+                     "format":"hour",
+                     "id":"fieldValue"
+                  },
+                  "fieldName":{
+                     "name":"欄位名稱",
+                     "type":"string",
+                     "value":"1.00000",
+                     "format":"n/a",
+                     "id":"fieldName"
+                  }
+               },
+               "format":"n/a",
+               "id":"holidayRate1"
+            },
+            {
+               "name":"假日第二段時數",
+               "type":"object",
+               "value":{
+                  "fieldValue":{
+                     "name":"欄位預設值",
+                     "type":"decimal",
+                     "value":0.0,
+                     "format":"hour",
+                     "id":"fieldValue"
+                  },
+                  "fieldName":{
+                     "name":"欄位名稱",
+                     "type":"string",
+                     "value":"1.33340",
+                     "format":"n/a",
+                     "id":"fieldName"
+                  }
+               },
+               "format":"n/a",
+               "id":"holidayRate2"
+            },
+            {
+               "name":"假日第三段時數",
+               "type":"object",
+               "value":{
+                  "fieldValue":{
+                     "name":"欄位預設值",
+                     "type":"decimal",
+                     "value":0.0,
+                     "format":"hour",
+                     "id":"fieldValue"
+                  },
+                  "fieldName":{
+                     "name":"欄位名稱",
+                     "type":"string",
+                     "value":"1.66670",
+                     "format":"n/a",
+                     "id":"fieldName"
+                  }
+               },
+               "format":"n/a",
+               "id":"holidayRate3"
+            },
+            {
+               "name":"假日第四段時數",
+               "type":"object",
+               "value":{
+                  "fieldValue":{
+                     "name":"欄位預設值",
+                     "type":"decimal",
+                     "value":0.0,
+                     "format":"hour",
+                     "id":"fieldValue"
+                  },
+                  "fieldName":{
+                     "name":"欄位名稱",
+                     "type":"string",
+                     "value":"1.6667",
+                     "format":"n/a",
+                     "id":"fieldName"
+                  }
+               },
+               "format":"n/a",
+               "id":"holidayRate4"
+            }
+         ],
+         "format":"n/a",
+         "id":"holidayRateDetail"
+      },
       "punchCard":{
          "name":"刷卡資訊",
          "type":"object",
@@ -140,7 +236,7 @@ Here is a JSON representation of request.
                "id":"beforeWork"
             },
             "earlyLeave":{
-               "name":"申請提早退勤(加班時數=實際出勤時數)",
+               "name":"申請提早退勤(即指加班時數=實際出勤時數)",
                "type":"object",
                "value":{
                   "fieldEditable":{
@@ -227,46 +323,6 @@ Here is a JSON representation of request.
                "name":"加班部門",
                "type":"object",
                "value":{
-                  "option":{    --kevin 增加option
-                     "name":"選項",
-                     "type":"array",
-                     "value":[
-                        {
-                           "optionId":{
-                              "name":"選項代號",
-                              "type":"string",
-                              "value":"1",
-                              "format":"n/a",
-                              "id":"optionId"
-                           },
-                           "optionValue":{
-                              "name":"選項名稱",
-                              "type":"string",
-                              "value":"台北總公司",
-                              "format":"n/a",
-                              "id":"optionValue"
-                           }
-                        },
-                        {
-                           "optionId":{
-                              "name":"選項代號",
-                              "type":"string",
-                              "value":"2",
-                              "format":"n/a",
-                              "id":"optionId"
-                           },
-                           "optionValue":{
-                              "name":"選項名稱",
-                              "type":"string",
-                              "value":"董事長室",
-                              "format":"n/a",
-                              "id":"optionValue"
-                           }
-                        }
-                     ],
-                     "format":"n/a",
-                     "id":"option"
-                  },
                   "fieldEditable":{
                      "name":"開放編輯",
                      "type":"boolean",
@@ -352,35 +408,29 @@ Here is a JSON representation of request.
                "id":"naturalDisaster"
             },
             "uploadFile":{
-               "name":"附件上傳",
-               "type":"object",
-               "value":{
-                  "fieldEditable":{
-                     "name":"開放編輯",
-                     "type":"boolean",
-                     "value":true,
-                     "format":"n/a",
-                     "id":"fieldEditable"
-                  },
-                  "fieldValue":{
-                     "name":"欄位預設值",
-                     "type":"array",
-                     "value":[
-                        
-                     ],
-                     "format":"n/a",
-                     "id":"fieldValue"
-                  },
-                  "uploadLimit":{
-                     "name":"檔案上傳數量限制",
-                     "type":"integer",
-                     "value":1,
-                     "format":"count",
-                     "id":"uploadLimit"
-                  }
+               "fieldEditable":{
+                  "name":"開放編輯",
+                  "type":"boolean",
+                  "value":true,
+                  "format":"n/a",
+                  "id":"fieldEditable"
                },
-               "format":"n/a",
-               "id":"uploadFile"
+               "fieldValue":{
+                  "name":"欄位預設值",
+                  "type":"array",
+                  "value":[
+                     
+                  ],
+                  "format":"n/a",
+                  "id":"fieldValue"
+               },
+               "uploadLimit":{
+                  "name":"檔案上傳數量限制",
+                  "type":"integer",
+                  "value":1,
+                  "format":"count",
+                  "id":"uploadLimit"
+               }
             },
             "overtimeType":{
                "name":"加班類別",
@@ -469,6 +519,7 @@ Here is a JSON representation of request.
             "HHmm":"時間時分",
             "hour":"小時",
             "YYYYmmdd":"西元年月日",
+            "count":"數量",
             "n/a":""
          }
       },
@@ -586,69 +637,101 @@ Here is a JSON representation of request.
          "format":"n/a",
          "id":"payForm"
       },
-      "overtimeInfo":{  --kevin 補上overtimeInfo
-         "name":"實際加班單顯示欄位資訊",
-         "type":"object",
-         "value":{
-            "appliedHour":{
-               "name":"當月已累積加班時數(不含本次)",
-               "type":"decimal",
-               "value":5.0,
-               "format":"hour",
-               "id":"appliedHour"
-            },
-            "companyFullName":{
-               "name":"公司全名",
-               "type":"string",
-               "value":"三澧企業股份有限公司",
+      "dailyRateDetail":{   --kevin 新增平日加班倍率資訊，這區塊固定不能編輯，欄位標題請抓fieldName
+         "name":"平日加班倍率資訊",
+         "type":"array",
+         "value":[
+            {
+               "name":"平日第一段倍率時數",
+               "type":"object",
+               "value":{
+                  "fieldValue":{
+                     "name":"欄位預設值",
+                     "type":"decimal",
+                     "value":0.0,
+                     "format":"hour",
+                     "id":"fieldValue"
+                  },
+                  "fieldName":{
+                     "name":"欄位名稱",
+                     "type":"string",
+                     "value":"1.00000",
+                     "format":"n/a",
+                     "id":"fieldName"
+                  }
+               },
                "format":"n/a",
-               "id":"companyFullName"
+               "id":"dailyRate1"
             },
-            "empFullName":{
-               "name":"員工中文姓名",
-               "type":"string",
-               "value":"管理者",
+            {
+               "name":"平日第二段倍率時數",
+               "type":"object",
+               "value":{
+                  "fieldValue":{
+                     "name":"欄位預設值",
+                     "type":"decimal",
+                     "value":0.0,
+                     "format":"hour",
+                     "id":"fieldValue"
+                  },
+                  "fieldName":{
+                     "name":"欄位名稱",
+                     "type":"string",
+                     "value":"1.33340",
+                     "format":"n/a",
+                     "id":"fieldName"
+                  }
+               },
                "format":"n/a",
-               "id":"empFullName"
+               "id":"dailyRate2"
             },
-            "empid":{
-               "name":"員工編號",
-               "type":"string",
-               "value":"admin",
+            {
+               "name":"平日第三段倍率時數",
+               "type":"object",
+               "value":{
+                  "fieldValue":{
+                     "name":"欄位預設值",
+                     "type":"decimal",
+                     "value":0.0,
+                     "format":"hour",
+                     "id":"fieldValue"
+                  },
+                  "fieldName":{
+                     "name":"欄位名稱",
+                     "type":"string",
+                     "value":"1.66670",
+                     "format":"n/a",
+                     "id":"fieldName"
+                  }
+               },
                "format":"n/a",
-               "id":"empid"
+               "id":"dailyRate3"
             },
-            "overDate":{
-               "name":"加班日期",
-               "type":"string",
-               "value":"20220616",
-               "format":"YYYYmmdd",
-               "id":"overDate"
-            },
-            "depFullName":{
-               "name":"部門名稱",
-               "type":"string",
-               "value":"台北總公司",
+            {
+               "name":"平日第四段倍率時數",
+               "type":"object",
+               "value":{
+                  "fieldValue":{
+                     "name":"欄位預設值",
+                     "type":"decimal",
+                     "value":1.6667,
+                     "format":"hour",
+                     "id":"fieldValue"
+                  },
+                  "fieldName":{
+                     "name":"欄位名稱",
+                     "type":"string",
+                     "value":"1.6667",
+                     "format":"n/a",
+                     "id":"fieldName"
+                  }
+               },
                "format":"n/a",
-               "id":"depFullName"
-            },
-            "empFullEname":{
-               "name":"員工英文姓名",
-               "type":"string",
-               "value":"",
-               "format":"n/a",
-               "id":"empFullEname"
-            },
-            "overplanPno":{
-               "name":"預定加班單號",
-               "type":"string",
-               "value":"",
-               "format":"n/a",
-               "id":"overplanPno"
+               "id":"dailyRate4"
             }
-         },
+         ],
          "format":"n/a",
-         "id":"overtimeInfo"
+         "id":"dailyRateDetail"
       },
       "diningForm":{
          "name":"用餐欄位資訊",
@@ -676,6 +759,28 @@ Here is a JSON representation of request.
                "format":"n/a",
                "id":"specifyHour"
             },
+            "eatCount":{    --kevin 新增新用餐次數
+               "name":"新用餐次數",
+               "type":"object",
+               "value":{
+                  "fieldEditable":{
+                     "name":"開放編輯",
+                     "type":"boolean",
+                     "value":false,
+                     "format":"n/a",
+                     "id":"fieldEditable"
+                  },
+                  "fieldValue":{
+                     "name":"欄位預設值",
+                     "type":"integer",
+                     "value":0,
+                     "format":"count",
+                     "id":"fieldValue"
+                  }
+               },
+               "format":"n/a",
+               "id":"eatCount"
+            },
             "oldEatHour":{
                "name":"原用餐時間",
                "type":"object",
@@ -697,6 +802,28 @@ Here is a JSON representation of request.
                },
                "format":"n/a",
                "id":"oldEatHour"
+            },
+            "oldEatCount":{ --kevin 新增原用餐次數
+               "name":"原用餐次數",
+               "type":"object",
+               "value":{
+                  "fieldEditable":{
+                     "name":"開放編輯",
+                     "type":"boolean",
+                     "value":false,
+                     "format":"n/a",
+                     "id":"fieldEditable"
+                  },
+                  "fieldValue":{
+                     "name":"欄位預設值",
+                     "type":"integer",
+                     "value":0,
+                     "format":"count",
+                     "id":"fieldValue"
+                  }
+               },
+               "format":"n/a",
+               "id":"oldEatCount"
             },
             "isEat":{
                "name":"是否用餐",
@@ -731,7 +858,7 @@ Here is a JSON representation of request.
             {
                "name":"備註事項",
                "type":"string",
-               "value":"kevinNoteTest",
+               "value":"平日加班",
                "format":"n/a",
                "id":"note"
             }
