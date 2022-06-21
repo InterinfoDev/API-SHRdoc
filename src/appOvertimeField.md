@@ -517,6 +517,7 @@ Here is a JSON representation of request.
       "properties":{
          "format":{
             "HHmm":"時間時分",
+            "currency":"元",
             "hour":"小時",
             "YYYYmmdd":"西元年月日",
             "count":"數量",
@@ -846,6 +847,28 @@ Here is a JSON representation of request.
                },
                "format":"n/a",
                "id":"isEat"
+            },
+            "misAmt":{  --kevin 新增誤餐費
+               "name":"誤餐費",
+               "type":"object",
+               "value":{
+                  "fieldEditable":{
+                     "name":"開放編輯",
+                     "type":"boolean",
+                     "value":false,
+                     "format":"n/a",
+                     "id":"fieldEditable"
+                  },
+                  "fieldValue":{
+                     "name":"欄位預設值",
+                     "type":"integer",
+                     "value":0,
+                     "format":"currency",
+                     "id":"fieldValue"
+                  }
+               },
+               "format":"n/a",
+               "id":"misAmt"
             }
          },
          "format":"n/a",
