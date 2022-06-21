@@ -55,6 +55,70 @@ Here is a JSON representation of request.
       "回傳成功"
    ],
    "data":{
+      "overtimeInfo":{
+         "name":"實際加班單顯示欄位資訊",
+         "type":"object",
+         "value":{
+            "appliedHour":{
+               "name":"當月已累積加班時數(不含本次)",
+               "type":"decimal",
+               "value":5.0,
+               "format":"hour",
+               "id":"appliedHour"
+            },
+            "companyFullName":{
+               "name":"公司全名",
+               "type":"string",
+               "value":"三澧企業股份有限公司",
+               "format":"n/a",
+               "id":"companyFullName"
+            },
+            "empFullName":{
+               "name":"員工中文姓名",
+               "type":"string",
+               "value":"管理者",
+               "format":"n/a",
+               "id":"empFullName"
+            },
+            "empid":{
+               "name":"員工編號",
+               "type":"string",
+               "value":"admin",
+               "format":"n/a",
+               "id":"empid"
+            },
+            "overDate":{
+               "name":"加班日期",
+               "type":"string",
+               "value":"20220621",
+               "format":"YYYYmmdd",
+               "id":"overDate"
+            },
+            "depFullName":{
+               "name":"部門名稱",
+               "type":"string",
+               "value":"台北總公司",
+               "format":"n/a",
+               "id":"depFullName"
+            },
+            "empFullEname":{
+               "name":"員工英文姓名",
+               "type":"string",
+               "value":"",
+               "format":"n/a",
+               "id":"empFullEname"
+            },
+            "overplanPno":{
+               "name":"預定加班單號",
+               "type":"string",
+               "value":"",
+               "format":"n/a",
+               "id":"overplanPno"
+            }
+         },
+         "format":"n/a",
+         "id":"overtimeInfo"
+      },
       "holidayRateDetail":{ --kevin 新增假日加班倍率資訊，這區塊固定不能編輯，欄位標題請抓fieldName
          "name":"假日加班倍率資訊",
          "type":"array",
