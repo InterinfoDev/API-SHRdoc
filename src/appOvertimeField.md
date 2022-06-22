@@ -390,34 +390,10 @@ Here is a JSON representation of request.
                "format":"n/a",
                "id":"allowanceClass"
             },
-            "overtimeDepartment":{
+            "overtimeDepartment":{  --這邊的選項請抓appDeptCondition
                "name":"加班部門",
                "type":"object",
                "value":{
-                  "option":{    --kevin 補上選項
-                     "name":"選項",
-                     "type":"array",
-                     "value":[
-                        {
-                           "optionId":{
-                              "name":"選項代號",
-                              "type":"string",
-                              "value":"1",
-                              "format":"n/a",
-                              "id":"optionId"
-                           },
-                           "optionValue":{
-                              "name":"選項名稱",
-                              "type":"string",
-                              "value":"台北總公司",
-                              "format":"n/a",
-                              "id":"optionValue"
-                           }
-                        }
-                     ],
-                     "format":"n/a",
-                     "id":"option"
-                  },
                   "fieldEditable":{
                      "name":"開放編輯",
                      "type":"boolean",
@@ -431,6 +407,13 @@ Here is a JSON representation of request.
                      "value":"1",
                      "format":"n/a",
                      "id":"fieldValue"
+                  },
+                  "fieldDisplay":{  --kevin 增加fieldDisplay
+                     "name":"欄位顯示資料",
+                     "type":"string",
+                     "value":"台北總公司",
+                     "format":"n/a",
+                     "id":"fieldDisplay"
                   }
                },
                "format":"n/a",
