@@ -66,6 +66,13 @@ Here is a JSON representation of request.
                "format":"hour",
                "id":"appliedHour"
             },
+            "companyId":{  --kevin 多給companyId
+               "name": "公司代號",
+               "type": "string",
+               "value": "1",
+               "format": "n/a",
+               "id": "companyId"
+            },
             "companyFullName":{
                "name":"公司全名",
                "type":"string",
