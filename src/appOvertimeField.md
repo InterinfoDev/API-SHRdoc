@@ -108,6 +108,13 @@ Here is a JSON representation of request.
                "format":"n/a",
                "id":"empFullEname"
             },
+            "depCode":{ --kevin 補上depCode
+               "name":"部門代號",
+               "type":"string",
+               "value":"1",
+               "format":"n/a",
+               "id":"depCode"
+            },
             "overplanPno":{
                "name":"預定加班單號",
                "type":"string",
