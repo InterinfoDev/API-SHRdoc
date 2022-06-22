@@ -100,6 +100,13 @@ Here is a JSON representation of request.
                      "type":"string",
                      "format":"n/a"
                   },
+                  "companyId": {        --richard 新增欄位 companyId
+                     "name": "公司代號",
+                     "type": "string",
+                     "value": "TW",
+                     "format": "n/a",
+                     "id": "companyId"  --richard 新增欄位 companyId
+                  },
                   "empid":{
                      "id":"empid",
                      "name":"員工編號",
