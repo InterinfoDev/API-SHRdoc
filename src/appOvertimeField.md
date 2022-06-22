@@ -471,30 +471,36 @@ Here is a JSON representation of request.
                "format":"n/a",
                "id":"naturalDisaster"
             },
-            "uploadFile":{
-               "fieldEditable":{
-                  "name":"開放編輯",
-                  "type":"boolean",
-                  "value":true,
-                  "format":"n/a",
-                  "id":"fieldEditable"
+            "uploadFile":{  --kevin 修改uploadFile結構
+               "name":"附件上傳",
+               "type":"object",
+               "value":{
+                  "fieldEditable":{
+                     "name":"開放編輯",
+                     "type":"boolean",
+                     "value":true,
+                     "format":"n/a",
+                     "id":"fieldEditable"
+                  },
+                  "fieldValue":{
+                     "name":"欄位預設值",
+                     "type":"array",
+                     "value":[
+                        
+                     ],
+                     "format":"n/a",
+                     "id":"fieldValue"
+                  },
+                  "uploadLimit":{
+                     "name":"檔案上傳數量限制",
+                     "type":"integer",
+                     "value":1,
+                     "format":"count",
+                     "id":"uploadLimit"
+                  }
                },
-               "fieldValue":{
-                  "name":"欄位預設值",
-                  "type":"array",
-                  "value":[
-                     
-                  ],
-                  "format":"n/a",
-                  "id":"fieldValue"
-               },
-               "uploadLimit":{
-                  "name":"檔案上傳數量限制",
-                  "type":"integer",
-                  "value":1,
-                  "format":"count",
-                  "id":"uploadLimit"
-               }
+               "format":"n/a",
+               "id":"uploadFile"
             },
             "overtimeType":{
                "name":"加班類別",
