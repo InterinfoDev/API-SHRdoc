@@ -3,7 +3,7 @@
 
 ### HTTP Request
 ```
-https://114.34.125.246:8090/servlet/HRNative/appVacationDetail
+https://114.34.125.246:8090/servlet/HRNative/appOvertimeDetail
 ```
 
 ### HTTP Request Mehod
@@ -220,6 +220,21 @@ Here is a JSON representation of request.
          ],
          "format":"n/a",
          "id":"holidayRateDetail"
+      },
+      "flowHistory": {
+            "name": "流程紀錄",
+            "type": "object",
+            "value": {
+                "historyKey": {
+                    "name": "流程鍵值",
+                    "type": "string",
+                    "value": "4018143326273716525552090972897090755341893430474685977954583012953934710584411029083038347111586025145545203390274432940930977559895422",
+                    "format": "n/a",
+                    "id": "historyKey"
+                }
+            },
+            "format": "n/a",
+            "id": "flowHistory"
       },
       "overtimeDetail":{
          "name":"實際加班單詳細資訊",
