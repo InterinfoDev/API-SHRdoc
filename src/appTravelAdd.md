@@ -103,6 +103,7 @@ Here is a JSON representation of request.
 | schedule | 行程內容 | String | 行程規劃 | N | n/a |
 | point | 處理客戶問題(XXX) | String | 訪談重點及預期效果 | N | n/a |
 | assist | 行動硬碟*1 | String | 協助他部門辦理事項 | N | n/a |
+| authorize | 測試序號 | String | 希望授權事項及幅度 | N | n/a |
 | preCost | 300.0 | Decimal | 預支旅費 | Y | n/a |
 | scheduleList | startDate:起始日期,endDate:結束日期,startTime:起始時間,endTime:結束時間 | Object | 預定行程 | N | n/a |
 | travelFile | fileName:測試檔案.jpg,fileData:base64 | Object | 出差附件 | N | n/a |
