@@ -444,44 +444,6 @@ Here is a JSON representation of request.
                   "fieldId":{
                      "name":"欄位代號",
                      "type":"string",
-                     "value":"possieName",
-                     "format":"n/a",
-                     "id":"fieldId"
-                  },
-                  "fieldValue":{
-                     "name":"欄位資料",
-                     "type":"array",
-                     "value":[
-                        "系統管理員"
-                     ],
-                     "format":"n/a",
-                     "id":"fieldValue"
-                  },
-                  "fieldName":{
-                     "name":"欄位名稱",
-                     "type":"string",
-                     "value":"職稱",
-                     "format":"n/a",
-                     "id":"fieldName"
-                  }
-               },
-               "format":"n/a",
-               "id":"field"
-            },
-            {
-               "name":"欄位資訊",
-               "type":"object",
-               "value":{
-                  "fieldType":{
-                     "name":"欄位類型",
-                     "type":"string",
-                     "value":"text",
-                     "format":"n/a",
-                     "id":"fieldType"
-                  },
-                  "fieldId":{
-                     "name":"欄位代號",
-                     "type":"string",
                      "value":"depFullName",
                      "format":"n/a",
                      "id":"fieldId"
@@ -970,44 +932,6 @@ Here is a JSON representation of request.
                   "fieldId":{
                      "name":"欄位代號",
                      "type":"string",
-                     "value":"misAmt",
-                     "format":"n/a",
-                     "id":"fieldId"
-                  },
-                  "fieldValue":{
-                     "name":"欄位資料",
-                     "type":"array",
-                     "value":[
-                        "0"
-                     ],
-                     "format":"currency",
-                     "id":"fieldValue"
-                  },
-                  "fieldName":{
-                     "name":"欄位名稱",
-                     "type":"string",
-                     "value":"誤餐費金額",
-                     "format":"n/a",
-                     "id":"fieldName"
-                  }
-               },
-               "format":"n/a",
-               "id":"field"
-            },
-            {
-               "name":"欄位資訊",
-               "type":"object",
-               "value":{
-                  "fieldType":{
-                     "name":"欄位類型",
-                     "type":"string",
-                     "value":"text",
-                     "format":"n/a",
-                     "id":"fieldType"
-                  },
-                  "fieldId":{
-                     "name":"欄位代號",
-                     "type":"string",
                      "value":"totalPaidAmt",
                      "format":"n/a",
                      "id":"fieldId"
@@ -1175,44 +1099,6 @@ Here is a JSON representation of request.
                      "name":"欄位名稱",
                      "type":"string",
                      "value":"跨日往前加班",
-                     "format":"n/a",
-                     "id":"fieldName"
-                  }
-               },
-               "format":"n/a",
-               "id":"field"
-            },
-            {
-               "name":"欄位資訊",
-               "type":"object",
-               "value":{
-                  "fieldType":{
-                     "name":"欄位類型",
-                     "type":"string",
-                     "value":"text",
-                     "format":"n/a",
-                     "id":"fieldType"
-                  },
-                  "fieldId":{
-                     "name":"欄位代號",
-                     "type":"string",
-                     "value":"applicantName",
-                     "format":"n/a",
-                     "id":"fieldId"
-                  },
-                  "fieldValue":{
-                     "name":"欄位資料",
-                     "type":"array",
-                     "value":[
-                        "系統管理員"
-                     ],
-                     "format":"n/a",
-                     "id":"fieldValue"
-                  },
-                  "fieldName":{
-                     "name":"欄位名稱",
-                     "type":"string",
-                     "value":"申請人中文姓名",
                      "format":"n/a",
                      "id":"fieldName"
                   }
