@@ -62,7 +62,7 @@ Here is a JSON representation of request.
    ],
    "data":{
       "holidayRateDetail":{
-         "name":"假日加班倍率",
+         "name":"假日加班倍率時數",
          "type":"object",
          "value":[
             {
@@ -270,7 +270,7 @@ Here is a JSON representation of request.
                   "fieldName":{
                      "name":"欄位名稱",
                      "type":"string",
-                     "value":"實際加班單號",
+                     "value":"單據編號",
                      "format":"n/a",
                      "id":"fieldName"
                   }
@@ -346,45 +346,7 @@ Here is a JSON representation of request.
                   "fieldName":{
                      "name":"欄位名稱",
                      "type":"string",
-                     "value":"公司全名",
-                     "format":"n/a",
-                     "id":"fieldName"
-                  }
-               },
-               "format":"n/a",
-               "id":"field"
-            },
-            {
-               "name":"欄位資訊",
-               "type":"object",
-               "value":{
-                  "fieldType":{
-                     "name":"欄位類型",
-                     "type":"string",
-                     "value":"text",
-                     "format":"n/a",
-                     "id":"fieldType"
-                  },
-                  "fieldId":{
-                     "name":"欄位代號",
-                     "type":"string",
-                     "value":"empid",
-                     "format":"n/a",
-                     "id":"fieldId"
-                  },
-                  "fieldValue":{
-                     "name":"欄位資料",
-                     "type":"array",
-                     "value":[
-                        "admin"
-                     ],
-                     "format":"n/a",
-                     "id":"fieldValue"
-                  },
-                  "fieldName":{
-                     "name":"欄位名稱",
-                     "type":"string",
-                     "value":"員工編號",
+                     "value":"公司別",
                      "format":"n/a",
                      "id":"fieldName"
                   }
@@ -422,7 +384,7 @@ Here is a JSON representation of request.
                   "fieldName":{
                      "name":"欄位名稱",
                      "type":"string",
-                     "value":"員工中文姓名",
+                     "value":"員工姓名",
                      "format":"n/a",
                      "id":"fieldName"
                   }
@@ -460,7 +422,7 @@ Here is a JSON representation of request.
                   "fieldName":{
                      "name":"欄位名稱",
                      "type":"string",
-                     "value":"員工英文姓名",
+                     "value":"員工英文名字",
                      "format":"n/a",
                      "id":"fieldName"
                   }
@@ -536,7 +498,7 @@ Here is a JSON representation of request.
                   "fieldName":{
                      "name":"欄位名稱",
                      "type":"string",
-                     "value":"現職部門名稱",
+                     "value":"現職部門",
                      "format":"n/a",
                      "id":"fieldName"
                   }
@@ -566,7 +528,7 @@ Here is a JSON representation of request.
                      "name":"欄位資料",
                      "type":"array",
                      "value":[
-                        "14122"
+                        "L1線B班"
                      ],
                      "format":"n/a",
                      "id":"fieldValue"
@@ -574,7 +536,7 @@ Here is a JSON representation of request.
                   "fieldName":{
                      "name":"欄位名稱",
                      "type":"string",
-                     "value":"加班部門名稱",
+                     "value":"加班部門",
                      "format":"n/a",
                      "id":"fieldName"
                   }
@@ -612,7 +574,7 @@ Here is a JSON representation of request.
                   "fieldName":{
                      "name":"欄位名稱",
                      "type":"string",
-                     "value":"加班類別",
+                     "value":"加班種類",
                      "format":"n/a",
                      "id":"fieldName"
                   }
@@ -802,7 +764,7 @@ Here is a JSON representation of request.
                   "fieldName":{
                      "name":"欄位名稱",
                      "type":"string",
-                     "value":"總計",
+                     "value":"總計時數",
                      "format":"n/a",
                      "id":"fieldName"
                   }
@@ -874,7 +836,7 @@ Here is a JSON representation of request.
                   "fieldName":{
                      "name":"欄位名稱",
                      "type":"string",
-                     "value":"申請提早退勤",
+                     "value":"申請提早退勤(加班時數=實際出勤時數)",
                      "format":"n/a",
                      "id":"fieldName"
                   }
@@ -1176,7 +1138,7 @@ Here is a JSON representation of request.
                   "fieldName":{
                      "name":"欄位名稱",
                      "type":"string",
-                     "value":"實際加班內容",
+                     "value":"詳細資料",
                      "format":"n/a",
                      "id":"fieldName"
                   }
@@ -1309,7 +1271,7 @@ Here is a JSON representation of request.
          }
       },
       "dailyRateDetail":{
-         "name":"平日加班倍率詳細資訊",
+         "name":"平日加班倍率時數",
          "type":"object",
          "value":[
             {
