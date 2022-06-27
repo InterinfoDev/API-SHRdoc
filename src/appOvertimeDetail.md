@@ -95,7 +95,7 @@ Here is a JSON representation of request.
                   "fieldName":{
                      "name":"欄位名稱",
                      "type":"string",
-                     "value":"1.00000",
+                     "value":"1.00",
                      "format":"n/a",
                      "id":"fieldName"
                   }
@@ -125,7 +125,7 @@ Here is a JSON representation of request.
                      "name":"欄位資料",
                      "type":"array",
                      "value":[
-                        "0.000000"
+                        "0.00"
                      ],
                      "format":"hour",
                      "id":"fieldValue"
@@ -133,7 +133,7 @@ Here is a JSON representation of request.
                   "fieldName":{
                      "name":"欄位名稱",
                      "type":"string",
-                     "value":"1.34000",
+                     "value":"1.34",
                      "format":"n/a",
                      "id":"fieldName"
                   }
@@ -171,7 +171,7 @@ Here is a JSON representation of request.
                   "fieldName":{
                      "name":"欄位名稱",
                      "type":"string",
-                     "value":"1.34000",
+                     "value":"1.34",
                      "format":"n/a",
                      "id":"fieldName"
                   }
@@ -209,7 +209,7 @@ Here is a JSON representation of request.
                   "fieldName":{
                      "name":"欄位名稱",
                      "type":"string",
-                     "value":"1.6700",
+                     "value":"1.67",
                      "format":"n/a",
                      "id":"fieldName"
                   }
@@ -1190,7 +1190,7 @@ Here is a JSON representation of request.
                   "fieldName":{
                      "name":"欄位名稱",
                      "type":"string",
-                     "value":"0.00000",
+                     "value":"0.00",
                      "format":"n/a",
                      "id":"fieldName"
                   }
@@ -1228,7 +1228,7 @@ Here is a JSON representation of request.
                   "fieldName":{
                      "name":"欄位名稱",
                      "type":"string",
-                     "value":"1.34000",
+                     "value":"1.34",
                      "format":"n/a",
                      "id":"fieldName"
                   }
