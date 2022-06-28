@@ -30,7 +30,8 @@ Here is a JSON representation of request.
       "startDate":"20220527",
       "startTime":"1900",    
       "endTime":"2200",      
-      "reason":"20220524kevinOverplanTest",   
+      "reason":"20220524kevinOverplanTest",
+      "overplanPno":'W002022062700011',
       "overtimeType":"A",
       "overtimeDepartment":"9",
       "payType":"A",          
@@ -63,6 +64,7 @@ Here is a JSON representation of request.
 | endTime | 2300 | String | 結束時間 | N | HHmm |         
 | reason | 20220524kevinOverplanTest | String | 加班內容 | N | n/a |
 | payType | A | String | 給付方式 | N | n/a |
+| overplanPno | W002022062700011 | String | 預定加班單號 | N | n/a |
 | overtimeDepartment | 9 | String | 加班部門 | N | n/a |
 | overtimeType | A | String | 加班類別 | N | n/a |
 | totalPayHour | 0.0 | Decimal | 總計給薪時數 | N | hour | 
