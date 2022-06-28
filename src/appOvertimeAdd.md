@@ -110,8 +110,8 @@ Here is a JSON representation of request.
             "n/a":""
          }
       },
-      "addVacation":{
-         "name":"新增請假單",
+      "addOvertime":{
+         "name":"新增實際加班單",
          "type":"object",
          "value":{
             "executeMessage":{
@@ -130,7 +130,7 @@ Here is a JSON representation of request.
             }
          },
          "format":"n/a",
-         "id":"addVacation"
+         "id":"addOvertime"
       }
    }
 }
