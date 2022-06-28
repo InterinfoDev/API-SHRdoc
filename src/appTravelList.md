@@ -1,4 +1,4 @@
-# appVacationList
+# appTravelList
 查詢單一員工該年月區間的出差資訊
 
 ### HTTP Request
