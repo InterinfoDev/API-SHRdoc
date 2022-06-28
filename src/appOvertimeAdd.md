@@ -39,7 +39,6 @@ Here is a JSON representation of request.
       "totalRestHour":0.0,
       "specifyHour":0.0,
       "oldEatHour":0.0,
-      "eatCount":0,
       "isEat":true,
       "earlyLeave":false,
       "naturalDisaster":false,
