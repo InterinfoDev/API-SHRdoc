@@ -148,7 +148,7 @@ Here is a JSON representation of request.
                   "unapproved":{
                      "name":"簽核中",
                      "type":"integer",
-                     "value":0,
+                     "value":0, 
                      "format":"count",
                      "id":"unapproved"
                   },
