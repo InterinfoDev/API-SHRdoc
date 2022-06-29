@@ -55,7 +55,7 @@ Here is a JSON representation of request.
    ],
    "data":{
       "beaconPunchCard":{
-         "name":"Becon打卡結果",
+         "name":"Beacon打卡結果",
          "type":"object",
          "value":{
             "punchDate":{
@@ -119,7 +119,7 @@ Here is a JSON representation of request.
    ],
    "data":{
       "beaconPunchCard":{
-         "name":"Becon打卡結果",
+         "name":"Beacon打卡結果",
          "type":"object",
          "value":{
             "punchDate":{
