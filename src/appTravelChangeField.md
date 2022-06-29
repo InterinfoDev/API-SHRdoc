@@ -50,7 +50,7 @@ Here is a JSON representation of request.
       "回傳成功"
    ],
    "data":{
-      "travelFrom":{
+      "travelForm":{
          "name":"出差異動單顯示欄位資訊",
          "type":"object",
          "value":{
@@ -98,7 +98,7 @@ Here is a JSON representation of request.
             }
          },
          "format":"n/a",
-         "id":"travelFrom"
+         "id":"travelForm"
       },
       "properties":{
          "format":{
@@ -193,7 +193,7 @@ Here is a JSON representation of request.
          "format":"n/a",
          "id":"travelChangeInfo"
       },
-      "travelChangeFrom":{
+      "travelChangeForm":{
          "name":"出差基本欄位資訊",
          "type":"object",
          "value":{
@@ -375,7 +375,7 @@ Here is a JSON representation of request.
             }
          },
          "format":"n/a",
-         "id":"travelChangeFrom"
+         "id":"travelChangeForm"
       }
    }
 }
