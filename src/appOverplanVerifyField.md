@@ -94,7 +94,13 @@ Here is a JSON representation of request.
                      "name":"設定欄位可否編輯",
                      "type":"array",
                      "value":[
-                        
+                        {  --kevin 補上資料
+                           "name":"原用餐時間",
+                           "type":"boolean",
+                           "value":false,
+                           "format":"N/A",
+                           "id":"oldEatHour"
+                        }
                      ],
                      "format":"n/a",
                      "id":"setEditable"
@@ -118,7 +124,13 @@ Here is a JSON representation of request.
                      "name":"設定欄位是否顯示",
                      "type":"array",
                      "value":[
-                        
+                        {  --kevin 補上資料
+                           "name":"原用餐時間",
+                           "type":"boolean",
+                           "value":false,
+                           "format":"N/A",
+                           "id":"oldEatHour"
+                        }
                      ],
                      "format":"n/a",
                      "id":"setVisible"
