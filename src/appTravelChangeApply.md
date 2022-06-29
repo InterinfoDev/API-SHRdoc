@@ -65,14 +65,14 @@ Here is a JSON representation of request.
                            "optionId":{
                               "name":"選項代號",
                               "type":"string",
-                              "value":"K00202206290001-0222(解O庭)-20220629",
+                              "value":"K00202206290001",
                               "format":"n/a",
                               "id":"optionId"
                            },
                            "optionValue":{
                               "name":"選項名稱",
                               "type":"string",
-                              "value":"K00202206290001",
+                              "value":"K00202206290001-0222(解O庭)-20220629",
                               "format":"n/a",
                               "id":"optionValue"
                            }
@@ -81,14 +81,14 @@ Here is a JSON representation of request.
                            "optionId":{
                               "name":"選項代號",
                               "type":"string",
-                              "value":"K00202206070002-0442(詹O郁)-20220609",
+                              "value":"K00202206070002",
                               "format":"n/a",
                               "id":"optionId"
                            },
                            "optionValue":{
                               "name":"選項名稱",
                               "type":"string",
-                              "value":"K00202206070002",
+                              "value":"K00202206070002-0442(詹O郁)-20220609",
                               "format":"n/a",
                               "id":"optionValue"
                            }
