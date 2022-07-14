@@ -170,12 +170,12 @@ Here is a JSON representation of request.
               "format": "n/a",
               "id": "depFullName"
             },
-            "dayofweek": {
-              "name": "異常日期星期",
+            "dayOfWeek": {
+              "name": "異常日期星期", --richard 此欄位資料顯示於errorDate後方
               "type": "integer",
               "value": 1,
               "format": "dayofweek",
-              "id": "dayofweek"
+              "id": "dayOfWeek"
             },
             "errorDate": {
               "name": "異常日期",
