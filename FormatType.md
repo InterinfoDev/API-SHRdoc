@@ -20,4 +20,5 @@
 | hour | 小時 |
 | ticket | 張 |
 | meter | 公尺 |
+|dayofweek| 星期 |
 | n/a |  |
