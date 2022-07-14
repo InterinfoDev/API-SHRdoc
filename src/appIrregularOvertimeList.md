@@ -16,7 +16,7 @@ POST
 |:----------|:-------------|:-----|:------------|
 | uid | 98599308101484732326 | String | 需透過appLogin取得
 | right | 51341911904173543336756162544864820 | String | 需透過appLogin取得 |
-| request | {empid:admin,cpnyid:TW,yymm:202207,skind:A,before:30,after:30,uncard:30} | Object | 查詢條件(depNumber/empid至少選一輸入)
+| request | {empid:admin,cpnyid:TW,yymm:202207,skind:A,before:30,after:30,uncard:30} | Object |
 
 ### JSON representation Case 1
 Here is a JSON representation of request.
@@ -48,7 +48,7 @@ Here is a JSON representation of request.
 |:----------|:-------------|:-----|:------------|:------------|:------------|
 | empid | admin | String | 員工編號 | Y | n/a |
 | cpnyid | TW | String | 公司代號 | Y | n/a |
-| yymm | 202207 | Array(Integer) | 查詢年月 | Y | AC(YYYYmm) |
+| yymm | 202207 | String | 查詢年月 | Y | AC(YYYYmm) |
 | skind | A | String | 顯示種類 | Y | n/a |
 | before | 30 | Integer | 提前多久刷卡視為異常 | Y | n/a |
 | after | 30 | Integer | 延後多久刷卡視為異常 | Y | n/a |
@@ -276,12 +276,12 @@ Here is a JSON representation of request.
               "format": "n/a",
               "id": "depFullName"
             },
-            "dayofweek": {
+            "dayOfWeek": {
               "name": "異常日期星期",
               "type": "integer",
               "value": 2,
               "format": "dayofweek",
-              "id": "dayofweek"
+              "id": "dayOfWeek"
             },
             "errorDate": {
               "name": "異常日期",
@@ -333,12 +333,12 @@ Here is a JSON representation of request.
               "format": "n/a",
               "id": "class"
             },
-            "notApprovedAddOvertime": {
+            "unApproved": {
               "name": "未簽核加班單",
               "type": "string",
               "value": "",
               "format": "n/a",
-              "id": "noSignoffAddovertime"
+              "id": "unApproved"
             },
             "classEndTime": {
               "name": "班別時間(迄)",
