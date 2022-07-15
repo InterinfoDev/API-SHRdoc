@@ -91,7 +91,7 @@ Here is a JSON representation of request.
 | fileName | test.jpg | String | 附件檔案 | N | n/a |
 | fileData |  | String | 附件檔案 | N | base64 |
 | confirmDialog |  | String | 提示視窗 |  | n/a |
-| confirmKey | xxx | String | 提示訊息KEY值，若有提示視窗，confirmKey一定要給 | Y | n/a |
+| confirmKey | xxx | String | 提示訊息KEY值，後端會提供，若有提示視窗，confirmKey一定要給 | Y | n/a |
 | value | xxx | String | 文字輸入或是下拉選項值，如果單純文字提醒value就放空白 | N | n/a |
 
 ### confirmType
@@ -102,9 +102,10 @@ Here is a JSON representation of request.
 | text | 有文字輸入框 |
 
 ### Note
-||
+| 備註 |
 |:----------|
-| 呼叫完取得responce後，先判斷"isContinue"決定程式是否繼續執行，若"是"則代表有提示視窗，顯示提示視窗相關資訊，若"否"的話就看執行結果是否成功去顯示相對應資訊 |
+| 呼叫完取得responce後，先判斷"isContinue"決定程式是否繼續執行，若"是"則代表有提示視窗，顯示提示視窗相關資訊，若"否"的話就看執行結果是否成功去顯示相對應資訊。
+當有提示視窗而使用者選擇buttonKey="N"的按鈕則程式中斷，選擇buttonKey="Y"的按鈕則需紀錄每次提示的KEY值並將下拉選項的值或文字輸入的內容回傳給後端，若單純為文字提醒，value放空白即可 |
 
 ### HTTP Response when Successful
 ```json
