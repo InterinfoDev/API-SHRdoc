@@ -102,6 +102,7 @@ Here is a JSON representation of request.
 | text | 有文字輸入框 |
 
 ### Note
+||
 |:----------|
 | 呼叫完取得responce後，先判斷"isContinue"決定程式是否繼續執行，若"是"則代表有提示視窗，顯示提示視窗相關資訊，若"否"的話就看執行結果是否成功去顯示相對應資訊 |
 
