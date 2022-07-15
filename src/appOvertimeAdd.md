@@ -16,7 +16,7 @@ POST
 |:----------|:-------------|:-----|:------------|
 | uid | 98599308101484732326 | String | 需透過appLogin取得
 | right | 51341911904173543336756162544864820 | String | 需透過appLogin取得 |
-| request | {{'empid':'9912011', 'overplanPno':'', 'startDate':'20220711', 'startTime':'2100', 'endTime':'2300', 'reason':'kevin中文實際加班單測試', 'payType':'B', 'overtimeDepartment':'9', 'allowanceClass':'', 'overtimeType':'A', 'totalPayHour':2.0, 'totalRestHour':0.0, 'specifyHour':0.0, 'oldEatHour':0.0, 'isEat':true, 'beforeWork':false, 'naturalDisaster':false, 'earlyLeave':false, 'misAmt':0, 'eatCount':0, 'oldEatCount':0, 'file':[{'fileName':'kevin.jpg','fileData':'xxx'}} | Object | 異動條件
+| request | {'empid':'9912011', 'overplanPno':'', 'startDate':'20220711', 'startTime':'2100', 'endTime':'2300', 'reason':'kevin中文實際加班單測試', 'payType':'B', 'overtimeDepartment':'9', 'allowanceClass':'', 'overtimeType':'A', 'totalPayHour':2.0, 'totalRestHour':0.0, 'specifyHour':0.0, 'oldEatHour':0.0, 'isEat':true, 'beforeWork':false, 'naturalDisaster':false, 'earlyLeave':false, 'misAmt':0, 'eatCount':0, 'oldEatCount':0, 'file':[{'fileName':'kevin.jpg','fileData':'xxx'}], 'confirmDialog':[{'confirmKey':'value'}]} | Object | 異動條件
 
 ### JSON representation Case 1
 Here is a JSON representation of request.
@@ -49,6 +49,9 @@ Here is a JSON representation of request.
       "file":[{
         "fileName":"kevin.jpg",
         "fileData":"base64"
+      }],
+      "confirmDialog":[{
+         "confirmKey":"value"
       }]
    }
 }
@@ -87,14 +90,20 @@ Here is a JSON representation of request.
 | file |  | String | 附件檔案 |  | n/a |
 | fileName | test.jpg | String | 附件檔案 | N | n/a |
 | fileData |  | String | 附件檔案 | N | base64 |
+| confirmDialog |  | String | 提示視窗 |  | n/a |
+| confirmKey | xxx | String | 提示訊息KEY值，若有提示視窗，confirmKey一定要給 | Y | n/a |
+| value | xxx | String | 文字輸入或是下拉選項值，如果單純文字提醒value就放空白 | N | n/a |
 
-### Using Field
-| FieldName | Description |
-|:---------|:-----|
-| startTime | 起始時間 |
-| endTime | 結束時間 |
-| payType | 給付方式 |
-| isEat | 是否用餐 |
+### confirmType
+| Category | Description |
+|:----------|:------------|
+| message | 單純提示訊息 |
+| option | 有下拉選項 |
+| text | 有文字輸入框 |
+
+### Note
+|:----------|
+| 呼叫完取得responce後，先判斷"isContinue"決定程式是否繼續執行，若"是"則代表有提示視窗，顯示提示視窗相關資訊，若"否"的話就看執行結果是否成功去顯示相對應資訊 |
 
 ### HTTP Response when Successful
 ```json
@@ -126,6 +135,139 @@ Here is a JSON representation of request.
                "value":true,
                "format":"n/a",
                "id":"executeResult"
+            },
+            "confirmDialog":{ --kevin 新增提示視窗
+               "name":"確認視窗",
+               "type":"object",
+               "value":{
+                  "confirmKey":{
+                     "name":"確認視窗鍵值",
+                     "type":"string",
+                     "value":"OVERLIMIT",
+                     "format":"n/a",
+                     "id":"confirmKey"
+                  },
+                  "confirmType":{
+                     "name":"確認視窗種類",
+                     "type":"string",
+                     "value":"message",
+                     "format":"n/a",
+                     "id":"confirmType"
+                  },
+                  "confirmButton":{
+                     "name":"確認視窗按鈕",
+                     "type":"object",
+                     "value":{
+                        "confirm":{
+                           "name":"確認",
+                           "type":"object",
+                           "value":{
+                              "buttonKey":{
+                                 "name":"按鈕代碼",
+                                 "type":"string",
+                                 "value":"Y",
+                                 "format":"n/a",
+                                 "id":"buttonId"
+                              },
+                              "buttonName":{
+                                 "name":"按鈕名稱",
+                                 "type":"string",
+                                 "value":"是",
+                                 "format":"n/a",
+                                 "id":"buttonName"
+                              },
+                              "buttonVisible":{
+                                 "name":"是否顯示",
+                                 "type":"boolean",
+                                 "value":true,
+                                 "format":"n/a",
+                                 "id":"visible"
+                              }
+                           },
+                           "format":"n/a",
+                           "id":"confirm"
+                        },
+                        "cancel":{
+                           "name":"取消",
+                           "type":"object",
+                           "value":{
+                              "buttonKey":{
+                                 "name":"按鈕代碼",
+                                 "type":"string",
+                                 "value":"N",
+                                 "format":"n/a",
+                                 "id":"buttonId"
+                              },
+                              "buttonName":{
+                                 "name":"按鈕名稱",
+                                 "type":"string",
+                                 "value":"否",
+                                 "format":"n/a",
+                                 "id":"buttonName"
+                              },
+                              "buttonVisible":{
+                                 "name":"是否顯示",
+                                 "type":"boolean",
+                                 "value":true,
+                                 "format":"n/a",
+                                 "id":"visible"
+                              }
+                           },
+                           "format":"n/a",
+                           "id":"cancel"
+                        }
+                     },
+                     "format":"n/a",
+                     "id":"confirmButton"
+                  },
+                  "confirmTitle":{
+                     "name":"確認視窗標題",
+                     "type":"string",
+                     "value":"警告",
+                     "format":"n/a",
+                     "id":"confirmTitle"
+                  },
+                  "confirmOption":{
+                     "name":"確認視窗選項",
+                     "type":"array",
+                     "value":[
+                        {   --測試資料
+                           "optionId":{
+                              "name":"選項代號",
+                              "type":"string",
+                              "value":"A",
+                              "format":"n/a",
+                              "id":"optionId"
+                           },
+                           "optionValue":{
+                              "name":"選項名稱",
+                              "type":"string",
+                              "value":"補休",
+                              "format":"n/a",
+                              "id":"optionValue"
+                           }
+                        }
+                     ],
+                     "format":"n/a",
+                     "id":"confirmOption"
+                  },
+                  "confirmContent":{   --kevin 新增判斷程式是否繼續執行
+                     "name":"確認視窗訊息",
+                     "type":"string",
+                     "value":"從連續排上班至總計天已超過天，是否繼續執行?",
+                     "format":"n/a",
+                     "id":"confirmContent"
+                  }
+               },
+               "format":"n/a",
+               "id":"confirmDialog"
+            },
+            "isContinue":{
+               "name":"程式是否繼續執行",
+               "type":"boolean",
+               "value":true,
+               "format":"n/a",
+               "id":"isContinue"
             }
          },
          "format":"n/a",
