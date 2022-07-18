@@ -147,12 +147,12 @@ Here is a JSON representation of request.
                                     "format": "n/a",
                                     "id": "simpleDayOfWeekColor"
                                 },
-                                "class": {
+                                "workClassName": {                     --richard 修改欄位名稱
                                     "name": "班別",
                                     "type": "string",
                                     "value": "0常日班8h：0830-1730",
                                     "format": "n/a",
-                                    "id": "class"
+                                    "id": "workClassName"              --richard 修改欄位名稱
                                 },
                                 "unApproved": {
                                     "name": "未簽核加班單",
@@ -189,12 +189,12 @@ Here is a JSON representation of request.
                                     "format": "dayofweek",
                                     "id": "simpleDayOfWeek"
                                 },
-                                "classStarTime": {
+                                "classStartTime": {         --richard 修改欄位名稱 classStartTime
                                     "name": "班別時間(起)",
                                     "type": "string",
                                     "value": "0830",
                                     "format": "HHmm",
-                                    "id": "classStarTime"
+                                    "id": "classStartTime"   --richard 修改欄位名稱 classStartTime
                                 },
                                 "empFullName": {
                                     "name": "員工姓名",
