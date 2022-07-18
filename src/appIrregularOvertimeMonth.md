@@ -32,7 +32,7 @@ Here is a JSON representation of request.
         "before":30,
         "after":30,
         "uncard":30,
-        "depNumber":["1"]
+        "depNumber":[1]
     }
 }
 ```
@@ -54,7 +54,7 @@ Here is a JSON representation of request.
 | before | 30 | Integer | 提前多久刷卡視為異常 | Y | n/a |
 | after | 30 | Integer | 延後多久刷卡視為異常 | Y | n/a |
 | uncard | 30 | Integer | 刷卡時間超過多久未報加班視為異常 | Y | n/a |
-| depNumber | [1] | Array(String) | 部門代號 | N | n/a |
+| depNumber | [1] | Array(Integer) | 部門代號 | N | n/a |
 
 ### HTTP Response when Successful
 ```json
