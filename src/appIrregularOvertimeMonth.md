@@ -68,12 +68,12 @@ Here is a JSON representation of request.
             "name": "加班異常資訊",
             "type": "object",
             "value": {
-                "irragularYM": {
+                "irragularYM": {            --richard 修改名稱irragularYM
                     "name": "加班異常年月",
                     "type": "string",
                     "value": "202207",
                     "format": "YYYYmm",
-                    "id": "irragularYM"
+                    "id": "irragularYM"     --richard 修改名稱irragularYM
                 }
             },
             "format": "n/a",
