@@ -27,7 +27,7 @@ Here is a JSON representation of request.
     "request":{
         "empid":["admin"], 
         "cpnyid":"TW",
-        "yymm":"202207",
+        "irragularYM":"202207",
         "skind":"A",
         "before":30,
         "after":30,
@@ -49,7 +49,7 @@ Here is a JSON representation of request.
 |:----------|:-------------|:-----|:------------|:------------|:------------|
 | empid | admin | Array(String) | 員工編號 | N | n/a |
 | cpnyid | TW | String | 公司代號 | Y | n/a |
-| yymm | 202207 | String | 查詢年月 | Y | AC(YYYYmm) |
+| irragularYM | 202207 | String | 查詢年月 | Y | AC(YYYYmm) |
 | skind | A | String | 顯示種類 | Y | n/a |
 | before | 30 | Integer | 提前多久刷卡視為異常 | Y | n/a |
 | after | 30 | Integer | 延後多久刷卡視為異常 | Y | n/a |
