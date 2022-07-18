@@ -27,7 +27,7 @@ Here is a JSON representation of request.
     "right":"51341911904173543336756162544864820",
     "request":{
         "empid":["admin"],
-        "cpnyid":"TW",
+        "companyId":"TW",
         "irragularYM":"202207",
         "skind":"A",
         "before":30,
