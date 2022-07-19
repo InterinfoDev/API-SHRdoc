@@ -525,7 +525,7 @@ Here is a JSON representation of request.
          }
       },
       "responseList": {                 --richard 新增欄位 responseList
-            "name": "異常回應下拉清單",
+            "name": "異常回報下拉清單",
             "type": "object",
             "value": [
                 {
