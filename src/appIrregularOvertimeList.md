@@ -524,34 +524,82 @@ Here is a JSON representation of request.
             "dayofweek":"星期"
          }
       },
-      "responseList":{            -- richard 新增 responseList
-         "name":"異常回應下拉清單",
-         "type":"object",
-         "value":{
-            "responseName":{         -- richard 新增欄位 responseName
-               "name":"異常原因",
-               "type":"string",
-               "value":"測試",
-               "format":"n/a",
-               "id":"responseName"   -- richard 新增欄位 responseName
-            },
-            "responseCode":{         -- richard 新增欄位 responseCode
-               "name":"異常代碼",
-               "type":"string",
-               "value":"A03",
-               "format":"n/a",
-               "id":"responseCode"   -- richard 新增欄位 responseCode
-            },
-            "responseReason":{       -- richard 新增欄位 responseReason
-               "name":"備註",
-               "type":"string",
-               "value":"",
-               "format":"n/a",
-               "id":"responseReason" -- richard 新增欄位 responseReason
-            }
-         },
-         "format":"n/a",
-         "id":"responseList"        -- richard 新增 responseList
+      "responseList": {                 --richard 新增欄位 responseList
+            "name": "異常回應下拉清單",
+            "type": "object",
+            "value": [
+                {
+                    "responseName": {            --richard 新增 responseName
+                        "name": "異常原因",
+                        "type": "string",
+                        "value": "測試",
+                        "format": "n/a",
+                        "id": "responseName"    --richard 新增欄位 responseName
+                    },
+                    "responseCode": {           --richard 新增欄位 responseCode
+                        "name": "異常代碼",
+                        "type": "string",
+                        "value": "A03",
+                        "format": "n/a",
+                        "id": "responseCode"     --richard 新增欄位 responseCode
+                    },
+                    "responseReason": {          --richard 新增欄位 responseReason
+                        "name": "備註",
+                        "type": "string",
+                        "value": "",
+                        "format": "n/a",
+                        "id": "responseReason"  --richard 新增欄位 responseReason
+                    }
+                },
+                {
+                    "responseName": {           
+                        "name": "異常原因",
+                        "type": "string",
+                        "value": "測試",
+                        "format": "n/a",
+                        "id": "responseName"
+                    },
+                    "responseCode": {
+                        "name": "異常代碼",
+                        "type": "string",
+                        "value": "A03",
+                        "format": "n/a",
+                        "id": "responseCode"
+                    },
+                    "responseReason": {
+                        "name": "備註",
+                        "type": "string",
+                        "value": "",
+                        "format": "n/a",
+                        "id": "responseReason"
+                    }
+                },
+                {
+                    "responseName": {
+                        "name": "異常原因",
+                        "type": "string",
+                        "value": "測試",
+                        "format": "n/a",
+                        "id": "responseName"
+                    },
+                    "responseCode": {
+                        "name": "異常代碼",
+                        "type": "string",
+                        "value": "A03",
+                        "format": "n/a",
+                        "id": "responseCode"
+                    },
+                    "responseReason": {
+                        "name": "備註",
+                        "type": "string",
+                        "value": "",
+                        "format": "n/a",
+                        "id": "responseReason"
+                    }
+                }
+            ],
+        "format": "n/a",
+        "id": "responseList"        --richard 新增欄位 responseList
       },
       "editableButton":{
          "name":"可使用功能按鈕資訊",
