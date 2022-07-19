@@ -61,1592 +61,445 @@ Here is a JSON representation of request.
 ### HTTP Response when Successful
 ```json
 {
-    "status": "success",
-    "message": [
-        "回傳成功"
-    ],
-    "data": {
-        "main": {
-            "name": "加班異常資訊",
-            "type": "object",
-            "value": {
-                "irragularYM": {            --  richard 修改名稱 irragularYM
-                    "name": "加班異常年月",
-                    "type": "string",
-                    "value": "202207",
-                    "format": "irragularYM",
-                    "id": "irragularYM"     --  richard 修改名稱 irragularYM
-                }
-            },
-            "format": "n/a",
-            "id": "main"
-        },
-        "appIrregularOvertimeList": {
-            "name": "員工加班異常列表",
-            "type": "array",
-            "value": [
-                {
-                    "name": "員工加班異常資訊",
-                    "type": "object",
-                    "value": {
-                        "detailInfor": {
-                            "name": "展開資料",
-                            "type": "object",
-                            "value": {
-                                "inCard": {
-                                    "name": "進卡",
-                                    "type": "string",
-                                    "value": "0830",
-                                    "format": "HHmm",
-                                    "id": "inCard"
-                                },
-                                "errorRespone": {
-                                    "name": "異常回應",
-                                    "type": "string",
-                                    "value": "",
-                                    "format": "n/a",
-                                    "id": "errorRespone"
-                                },
-                                "overtimeState": {
-                                    "name": "加班情況",
-                                    "type": "string",
-                                    "value": "",
-                                    "format": "n/a",
-                                    "id": "overtimeState"
-                                },
-                                "classColor": {
-                                    "name": "班別顏色",
-                                    "type": "string",
-                                    "value": "black",
-                                    "format": "n/a",
-                                    "id": "classColor"
-                                },
-                                "outCard": {
-                                    "name": "出卡",
-                                    "type": "string",
-                                    "value": "",
-                                    "format": "HHmm",
-                                    "id": "outCard"
-                                },
-                                "empid": {
-                                    "name": "員工編號",
-                                    "type": "string",
-                                    "value": "admin",
-                                    "format": "n/a",
-                                    "id": "empid"
-                                },
-                                "errorDate": {
-                                    "name": "異常日期",
-                                    "type": "string",
-                                    "value": "20220701",
-                                    "format": "YYYYmmdd",
-                                    "id": "errorDate"
-                                },
-                                "simpleDayOfWeekColor": {
-                                    "name": "異常日期顏色",
-                                    "type": "string",
-                                    "value": "black",
-                                    "format": "n/a",
-                                    "id": "simpleDayOfWeekColor"
-                                },
-                                "workClassName": {                     --richard 修改欄位名稱
-                                    "name": "班別",
-                                    "type": "string",
-                                    "value": "0常日班8h：0830-1730",
-                                    "format": "n/a",
-                                    "id": "workClassName"              --richard 修改欄位名稱
-                                },
-                                "unApproved": {
-                                    "name": "未簽核加班單",
-                                    "type": "string",
-                                    "value": "",
-                                    "format": "n/a",
-                                    "id": "unApproved"
-                                },
-                                "dayOfWeekColor": {
-                                    "name": "異常日期顏色",
-                                    "type": "string",
-                                    "value": "black",
-                                    "format": "n/a",
-                                    "id": "dayOfWeekColor"
-                                },
-                                "dayOfWeek": {
-                                    "name": "異常日期星期",
-                                    "type": "integer",
-                                    "value": 5,
-                                    "format": "dayofweek",
-                                    "id": "dayOfWeek"
-                                },
-                                "errorReason": {
-                                    "name": "異常說明",
-                                    "type": "string",
-                                    "value": "",
-                                    "format": "n/a",
-                                    "id": "errorReason"
-                                },
-                                "simpleDayOfWeek": {
-                                    "name": "異常日期星期",
-                                    "type": "integer",
-                                    "value": 5,
-                                    "format": "dayofweek",
-                                    "id": "simpleDayOfWeek"
-                                },
-                                "classStartTime": {         --richard 修改欄位名稱 classStartTime
-                                    "name": "班別時間(起)",
-                                    "type": "string",
-                                    "value": "0830",
-                                    "format": "HHmm",
-                                    "id": "classStartTime"   --richard 修改欄位名稱 classStartTime
-                                },
-                                "empFullName": {
-                                    "name": "員工姓名",
-                                    "type": "string",
-                                    "value": "管理者",
-                                    "format": "n/a",
-                                    "id": "empFullName"
-                                },
-                                "depFullName": {
-                                    "name": "部門名稱",
-                                    "type": "string",
-                                    "value": "A 中保集團",
-                                    "format": "n/a",
-                                    "id": "depFullName"
-                                },
-                                "classEndTime": {
-                                    "name": "班別時間(迄)",
-                                    "type": "string",
-                                    "value": "1730",
-                                    "format": "HHmm",
-                                    "id": "classEndTime"
-                                }
-                            },
-                            "format": "n/a",
-                            "id": "detailInfor"
-                        },
-                        "simpleInfor": {
-                            "name": "簡易資料",
-                            "type": "object",
-                            "value": {
-                                "simpleErrorDate": {
-                                    "name": "異常日期",
-                                    "type": "string",
-                                    "value": "20220701",
-                                    "format": "YYYYmmdd",
-                                    "id": "simpleErrorDate"
-                                },
-                                "simpleErrorReason": {
-                                    "name": "異常說明",
-                                    "type": "string",
-                                    "value": "",
-                                    "format": "n/a",
-                                    "id": "simpleErrorReason"
-                                },
-                                "simpleInCard": {
-                                    "name": "進卡",
-                                    "type": "string",
-                                    "value": "0830",
-                                    "format": "HHmm",
-                                    "id": "simpleInCard"
-                                },
-                                "simpleOutCard": {
-                                    "name": "出卡",
-                                    "type": "string",
-                                    "value": "",
-                                    "format": "HHmm",
-                                    "id": "simpleOutCard"
-                                }
-                            },
-                            "format": "n/a",
-                            "id": "simpleInfor"
-                        }
-                    },
-                    "format": "n/a",
-                    "id": "IrregularOvertimeInformation"
-                },
-                {
-                    "name": "員工加班異常資訊",
-                    "type": "object",
-                    "value": {
-                        "detailInfor": {
-                            "name": "展開資料",
-                            "type": "object",
-                            "value": {
-                                "inCard": {
-                                    "name": "進卡",
-                                    "type": "string",
-                                    "value": "",
-                                    "format": "HHmm",
-                                    "id": "inCard"
-                                },
-                                "errorRespone": {
-                                    "name": "異常回應",
-                                    "type": "string",
-                                    "value": "",
-                                    "format": "n/a",
-                                    "id": "errorRespone"
-                                },
-                                "overtimeState": {
-                                    "name": "加班情況",
-                                    "type": "string",
-                                    "value": "",
-                                    "format": "n/a",
-                                    "id": "overtimeState"
-                                },
-                                "classColor": {
-                                    "name": "班別顏色",
-                                    "type": "string",
-                                    "value": "red",
-                                    "format": "n/a",
-                                    "id": "classColor"
-                                },
-                                "outCard": {
-                                    "name": "出卡",
-                                    "type": "string",
-                                    "value": "",
-                                    "format": "HHmm",
-                                    "id": "outCard"
-                                },
-                                "empid": {
-                                    "name": "員工編號",
-                                    "type": "string",
-                                    "value": "admin",
-                                    "format": "n/a",
-                                    "id": "empid"
-                                },
-                                "errorDate": {
-                                    "name": "異常日期",
-                                    "type": "string",
-                                    "value": "20220702",
-                                    "format": "YYYYmmdd",
-                                    "id": "errorDate"
-                                },
-                                "simpleDayOfWeekColor": {
-                                    "name": "異常日期顏色",
-                                    "type": "string",
-                                    "value": "green",
-                                    "format": "n/a",
-                                    "id": "simpleDayOfWeekColor"
-                                },
-                                "class": {
-                                    "name": "班別",
-                                    "type": "string",
-                                    "value": "休息日",
-                                    "format": "n/a",
-                                    "id": "class"
-                                },
-                                "unApproved": {
-                                    "name": "未簽核加班單",
-                                    "type": "string",
-                                    "value": "",
-                                    "format": "n/a",
-                                    "id": "unApproved"
-                                },
-                                "dayOfWeekColor": {
-                                    "name": "異常日期顏色",
-                                    "type": "string",
-                                    "value": "green",
-                                    "format": "n/a",
-                                    "id": "dayOfWeekColor"
-                                },
-                                "dayOfWeek": {
-                                    "name": "異常日期星期",
-                                    "type": "integer",
-                                    "value": 6,
-                                    "format": "dayofweek",
-                                    "id": "dayOfWeek"
-                                },
-                                "errorReason": {
-                                    "name": "異常說明",
-                                    "type": "string",
-                                    "value": "",
-                                    "format": "n/a",
-                                    "id": "errorReason"
-                                },
-                                "simpleDayOfWeek": {
-                                    "name": "異常日期星期",
-                                    "type": "integer",
-                                    "value": 6,
-                                    "format": "dayofweek",
-                                    "id": "simpleDayOfWeek"
-                                },
-                                "classStarTime": {
-                                    "name": "班別時間(起)",
-                                    "type": "string",
-                                    "value": "",
-                                    "format": "HHmm",
-                                    "id": "classStarTime"
-                                },
-                                "empFullName": {
-                                    "name": "員工姓名",
-                                    "type": "string",
-                                    "value": "管理者",
-                                    "format": "n/a",
-                                    "id": "empFullName"
-                                },
-                                "depFullName": {
-                                    "name": "部門名稱",
-                                    "type": "string",
-                                    "value": "A 中保集團",
-                                    "format": "n/a",
-                                    "id": "depFullName"
-                                },
-                                "classEndTime": {
-                                    "name": "班別時間(迄)",
-                                    "type": "string",
-                                    "value": "",
-                                    "format": "HHmm",
-                                    "id": "classEndTime"
-                                }
-                            },
-                            "format": "n/a",
-                            "id": "detailInfor"
-                        },
-                        "simpleInfor": {
-                            "name": "簡易資料",
-                            "type": "object",
-                            "value": {
-                                "simpleErrorDate": {
-                                    "name": "異常日期",
-                                    "type": "string",
-                                    "value": "20220702",
-                                    "format": "YYYYmmdd",
-                                    "id": "simpleErrorDate"
-                                },
-                                "simpleErrorReason": {
-                                    "name": "異常說明",
-                                    "type": "string",
-                                    "value": "",
-                                    "format": "n/a",
-                                    "id": "simpleErrorReason"
-                                },
-                                "simpleInCard": {
-                                    "name": "進卡",
-                                    "type": "string",
-                                    "value": "",
-                                    "format": "HHmm",
-                                    "id": "simpleInCard"
-                                },
-                                "simpleOutCard": {
-                                    "name": "出卡",
-                                    "type": "string",
-                                    "value": "",
-                                    "format": "HHmm",
-                                    "id": "simpleOutCard"
-                                }
-                            },
-                            "format": "n/a",
-                            "id": "simpleInfor"
-                        }
-                    },
-                    "format": "n/a",
-                    "id": "IrregularOvertimeInformation"
-                },
-                {
-                    "name": "員工加班異常資訊",
-                    "type": "object",
-                    "value": {
-                        "detailInfor": {
-                            "name": "展開資料",
-                            "type": "object",
-                            "value": {
-                                "inCard": {
-                                    "name": "進卡",
-                                    "type": "string",
-                                    "value": "",
-                                    "format": "HHmm",
-                                    "id": "inCard"
-                                },
-                                "errorRespone": {
-                                    "name": "異常回應",
-                                    "type": "string",
-                                    "value": "",
-                                    "format": "n/a",
-                                    "id": "errorRespone"
-                                },
-                                "overtimeState": {
-                                    "name": "加班情況",
-                                    "type": "string",
-                                    "value": "",
-                                    "format": "n/a",
-                                    "id": "overtimeState"
-                                },
-                                "classColor": {
-                                    "name": "班別顏色",
-                                    "type": "string",
-                                    "value": "red",
-                                    "format": "n/a",
-                                    "id": "classColor"
-                                },
-                                "outCard": {
-                                    "name": "出卡",
-                                    "type": "string",
-                                    "value": "",
-                                    "format": "HHmm",
-                                    "id": "outCard"
-                                },
-                                "empid": {
-                                    "name": "員工編號",
-                                    "type": "string",
-                                    "value": "admin",
-                                    "format": "n/a",
-                                    "id": "empid"
-                                },
-                                "errorDate": {
-                                    "name": "異常日期",
-                                    "type": "string",
-                                    "value": "20220703",
-                                    "format": "YYYYmmdd",
-                                    "id": "errorDate"
-                                },
-                                "simpleDayOfWeekColor": {
-                                    "name": "異常日期顏色",
-                                    "type": "string",
-                                    "value": "red",
-                                    "format": "n/a",
-                                    "id": "simpleDayOfWeekColor"
-                                },
-                                "class": {
-                                    "name": "班別",
-                                    "type": "string",
-                                    "value": "例假日",
-                                    "format": "n/a",
-                                    "id": "class"
-                                },
-                                "unApproved": {
-                                    "name": "未簽核加班單",
-                                    "type": "string",
-                                    "value": "",
-                                    "format": "n/a",
-                                    "id": "unApproved"
-                                },
-                                "dayOfWeekColor": {
-                                    "name": "異常日期顏色",
-                                    "type": "string",
-                                    "value": "red",
-                                    "format": "n/a",
-                                    "id": "dayOfWeekColor"
-                                },
-                                "dayOfWeek": {
-                                    "name": "異常日期星期",
-                                    "type": "integer",
-                                    "value": 0,
-                                    "format": "dayofweek",
-                                    "id": "dayOfWeek"
-                                },
-                                "errorReason": {
-                                    "name": "異常說明",
-                                    "type": "string",
-                                    "value": "",
-                                    "format": "n/a",
-                                    "id": "errorReason"
-                                },
-                                "simpleDayOfWeek": {
-                                    "name": "異常日期星期",
-                                    "type": "integer",
-                                    "value": 0,
-                                    "format": "dayofweek",
-                                    "id": "simpleDayOfWeek"
-                                },
-                                "classStarTime": {
-                                    "name": "班別時間(起)",
-                                    "type": "string",
-                                    "value": "",
-                                    "format": "HHmm",
-                                    "id": "classStarTime"
-                                },
-                                "empFullName": {
-                                    "name": "員工姓名",
-                                    "type": "string",
-                                    "value": "管理者",
-                                    "format": "n/a",
-                                    "id": "empFullName"
-                                },
-                                "depFullName": {
-                                    "name": "部門名稱",
-                                    "type": "string",
-                                    "value": "A 中保集團",
-                                    "format": "n/a",
-                                    "id": "depFullName"
-                                },
-                                "classEndTime": {
-                                    "name": "班別時間(迄)",
-                                    "type": "string",
-                                    "value": "",
-                                    "format": "HHmm",
-                                    "id": "classEndTime"
-                                }
-                            },
-                            "format": "n/a",
-                            "id": "detailInfor"
-                        },
-                        "simpleInfor": {
-                            "name": "簡易資料",
-                            "type": "object",
-                            "value": {
-                                "simpleErrorDate": {
-                                    "name": "異常日期",
-                                    "type": "string",
-                                    "value": "20220703",
-                                    "format": "YYYYmmdd",
-                                    "id": "simpleErrorDate"
-                                },
-                                "simpleErrorReason": {
-                                    "name": "異常說明",
-                                    "type": "string",
-                                    "value": "",
-                                    "format": "n/a",
-                                    "id": "simpleErrorReason"
-                                },
-                                "simpleInCard": {
-                                    "name": "進卡",
-                                    "type": "string",
-                                    "value": "",
-                                    "format": "HHmm",
-                                    "id": "simpleInCard"
-                                },
-                                "simpleOutCard": {
-                                    "name": "出卡",
-                                    "type": "string",
-                                    "value": "",
-                                    "format": "HHmm",
-                                    "id": "simpleOutCard"
-                                }
-                            },
-                            "format": "n/a",
-                            "id": "simpleInfor"
-                        }
-                    },
-                    "format": "n/a",
-                    "id": "IrregularOvertimeInformation"
-                },
-                {
-                    "name": "員工加班異常資訊",
-                    "type": "object",
-                    "value": {
-                        "detailInfor": {
-                            "name": "展開資料",
-                            "type": "object",
-                            "value": {
-                                "inCard": {
-                                    "name": "進卡",
-                                    "type": "string",
-                                    "value": "",
-                                    "format": "HHmm",
-                                    "id": "inCard"
-                                },
-                                "errorRespone": {
-                                    "name": "異常回應",
-                                    "type": "string",
-                                    "value": "",
-                                    "format": "n/a",
-                                    "id": "errorRespone"
-                                },
-                                "overtimeState": {
-                                    "name": "加班情況",
-                                    "type": "string",
-                                    "value": "",
-                                    "format": "n/a",
-                                    "id": "overtimeState"
-                                },
-                                "classColor": {
-                                    "name": "班別顏色",
-                                    "type": "string",
-                                    "value": "black",
-                                    "format": "n/a",
-                                    "id": "classColor"
-                                },
-                                "outCard": {
-                                    "name": "出卡",
-                                    "type": "string",
-                                    "value": "",
-                                    "format": "HHmm",
-                                    "id": "outCard"
-                                },
-                                "empid": {
-                                    "name": "員工編號",
-                                    "type": "string",
-                                    "value": "admin",
-                                    "format": "n/a",
-                                    "id": "empid"
-                                },
-                                "errorDate": {
-                                    "name": "異常日期",
-                                    "type": "string",
-                                    "value": "20220708",
-                                    "format": "YYYYmmdd",
-                                    "id": "errorDate"
-                                },
-                                "simpleDayOfWeekColor": {
-                                    "name": "異常日期顏色",
-                                    "type": "string",
-                                    "value": "black",
-                                    "format": "n/a",
-                                    "id": "simpleDayOfWeekColor"
-                                },
-                                "class": {
-                                    "name": "班別",
-                                    "type": "string",
-                                    "value": "0常日班8h：0830-1730",
-                                    "format": "n/a",
-                                    "id": "class"
-                                },
-                                "unApproved": {
-                                    "name": "未簽核加班單",
-                                    "type": "string",
-                                    "value": "",
-                                    "format": "n/a",
-                                    "id": "unApproved"
-                                },
-                                "dayOfWeekColor": {
-                                    "name": "異常日期顏色",
-                                    "type": "string",
-                                    "value": "black",
-                                    "format": "n/a",
-                                    "id": "dayOfWeekColor"
-                                },
-                                "dayOfWeek": {
-                                    "name": "異常日期星期",
-                                    "type": "integer",
-                                    "value": 5,
-                                    "format": "dayofweek",
-                                    "id": "dayOfWeek"
-                                },
-                                "errorReason": {
-                                    "name": "異常說明",
-                                    "type": "string",
-                                    "value": "",
-                                    "format": "n/a",
-                                    "id": "errorReason"
-                                },
-                                "simpleDayOfWeek": {
-                                    "name": "異常日期星期",
-                                    "type": "integer",
-                                    "value": 5,
-                                    "format": "dayofweek",
-                                    "id": "simpleDayOfWeek"
-                                },
-                                "classStarTime": {
-                                    "name": "班別時間(起)",
-                                    "type": "string",
-                                    "value": "0830",
-                                    "format": "HHmm",
-                                    "id": "classStarTime"
-                                },
-                                "empFullName": {
-                                    "name": "員工姓名",
-                                    "type": "string",
-                                    "value": "管理者",
-                                    "format": "n/a",
-                                    "id": "empFullName"
-                                },
-                                "depFullName": {
-                                    "name": "部門名稱",
-                                    "type": "string",
-                                    "value": "A 中保集團",
-                                    "format": "n/a",
-                                    "id": "depFullName"
-                                },
-                                "classEndTime": {
-                                    "name": "班別時間(迄)",
-                                    "type": "string",
-                                    "value": "1730",
-                                    "format": "HHmm",
-                                    "id": "classEndTime"
-                                }
-                            },
-                            "format": "n/a",
-                            "id": "detailInfor"
-                        },
-                        "simpleInfor": {
-                            "name": "簡易資料",
-                            "type": "object",
-                            "value": {
-                                "simpleErrorDate": {
-                                    "name": "異常日期",
-                                    "type": "string",
-                                    "value": "20220708",
-                                    "format": "YYYYmmdd",
-                                    "id": "simpleErrorDate"
-                                },
-                                "simpleErrorReason": {
-                                    "name": "異常說明",
-                                    "type": "string",
-                                    "value": "",
-                                    "format": "n/a",
-                                    "id": "simpleErrorReason"
-                                },
-                                "simpleInCard": {
-                                    "name": "進卡",
-                                    "type": "string",
-                                    "value": "",
-                                    "format": "HHmm",
-                                    "id": "simpleInCard"
-                                },
-                                "simpleOutCard": {
-                                    "name": "出卡",
-                                    "type": "string",
-                                    "value": "",
-                                    "format": "HHmm",
-                                    "id": "simpleOutCard"
-                                }
-                            },
-                            "format": "n/a",
-                            "id": "simpleInfor"
-                        }
-                    },
-                    "format": "n/a",
-                    "id": "IrregularOvertimeInformation"
-                },
-                {
-                    "name": "員工加班異常資訊",
-                    "type": "object",
-                    "value": {
-                        "detailInfor": {
-                            "name": "展開資料",
-                            "type": "object",
-                            "value": {
-                                "inCard": {
-                                    "name": "進卡",
-                                    "type": "string",
-                                    "value": "",
-                                    "format": "HHmm",
-                                    "id": "inCard"
-                                },
-                                "errorRespone": {
-                                    "name": "異常回應",
-                                    "type": "string",
-                                    "value": "",
-                                    "format": "n/a",
-                                    "id": "errorRespone"
-                                },
-                                "overtimeState": {
-                                    "name": "加班情況",
-                                    "type": "string",
-                                    "value": "",
-                                    "format": "n/a",
-                                    "id": "overtimeState"
-                                },
-                                "classColor": {
-                                    "name": "班別顏色",
-                                    "type": "string",
-                                    "value": "black",
-                                    "format": "n/a",
-                                    "id": "classColor"
-                                },
-                                "outCard": {
-                                    "name": "出卡",
-                                    "type": "string",
-                                    "value": "",
-                                    "format": "HHmm",
-                                    "id": "outCard"
-                                },
-                                "empid": {
-                                    "name": "員工編號",
-                                    "type": "string",
-                                    "value": "admin",
-                                    "format": "n/a",
-                                    "id": "empid"
-                                },
-                                "errorDate": {
-                                    "name": "異常日期",
-                                    "type": "string",
-                                    "value": "20220712",
-                                    "format": "YYYYmmdd",
-                                    "id": "errorDate"
-                                },
-                                "simpleDayOfWeekColor": {
-                                    "name": "異常日期顏色",
-                                    "type": "string",
-                                    "value": "black",
-                                    "format": "n/a",
-                                    "id": "simpleDayOfWeekColor"
-                                },
-                                "class": {
-                                    "name": "班別",
-                                    "type": "string",
-                                    "value": "0常日班8h：0830-1730",
-                                    "format": "n/a",
-                                    "id": "class"
-                                },
-                                "unApproved": {
-                                    "name": "未簽核加班單",
-                                    "type": "string",
-                                    "value": "",
-                                    "format": "n/a",
-                                    "id": "unApproved"
-                                },
-                                "dayOfWeekColor": {
-                                    "name": "異常日期顏色",
-                                    "type": "string",
-                                    "value": "black",
-                                    "format": "n/a",
-                                    "id": "dayOfWeekColor"
-                                },
-                                "dayOfWeek": {
-                                    "name": "異常日期星期",
-                                    "type": "integer",
-                                    "value": 2,
-                                    "format": "dayofweek",
-                                    "id": "dayOfWeek"
-                                },
-                                "errorReason": {
-                                    "name": "異常說明",
-                                    "type": "string",
-                                    "value": "",
-                                    "format": "n/a",
-                                    "id": "errorReason"
-                                },
-                                "simpleDayOfWeek": {
-                                    "name": "異常日期星期",
-                                    "type": "integer",
-                                    "value": 2,
-                                    "format": "dayofweek",
-                                    "id": "simpleDayOfWeek"
-                                },
-                                "classStarTime": {
-                                    "name": "班別時間(起)",
-                                    "type": "string",
-                                    "value": "0830",
-                                    "format": "HHmm",
-                                    "id": "classStarTime"
-                                },
-                                "empFullName": {
-                                    "name": "員工姓名",
-                                    "type": "string",
-                                    "value": "管理者",
-                                    "format": "n/a",
-                                    "id": "empFullName"
-                                },
-                                "depFullName": {
-                                    "name": "部門名稱",
-                                    "type": "string",
-                                    "value": "A 中保集團",
-                                    "format": "n/a",
-                                    "id": "depFullName"
-                                },
-                                "classEndTime": {
-                                    "name": "班別時間(迄)",
-                                    "type": "string",
-                                    "value": "1730",
-                                    "format": "HHmm",
-                                    "id": "classEndTime"
-                                }
-                            },
-                            "format": "n/a",
-                            "id": "detailInfor"
-                        },
-                        "simpleInfor": {
-                            "name": "簡易資料",
-                            "type": "object",
-                            "value": {
-                                "simpleErrorDate": {
-                                    "name": "異常日期",
-                                    "type": "string",
-                                    "value": "20220712",
-                                    "format": "YYYYmmdd",
-                                    "id": "simpleErrorDate"
-                                },
-                                "simpleErrorReason": {
-                                    "name": "異常說明",
-                                    "type": "string",
-                                    "value": "",
-                                    "format": "n/a",
-                                    "id": "simpleErrorReason"
-                                },
-                                "simpleInCard": {
-                                    "name": "進卡",
-                                    "type": "string",
-                                    "value": "",
-                                    "format": "HHmm",
-                                    "id": "simpleInCard"
-                                },
-                                "simpleOutCard": {
-                                    "name": "出卡",
-                                    "type": "string",
-                                    "value": "",
-                                    "format": "HHmm",
-                                    "id": "simpleOutCard"
-                                }
-                            },
-                            "format": "n/a",
-                            "id": "simpleInfor"
-                        }
-                    },
-                    "format": "n/a",
-                    "id": "IrregularOvertimeInformation"
-                },
-                {
-                    "name": "員工加班異常資訊",
-                    "type": "object",
-                    "value": {
-                        "detailInfor": {
-                            "name": "展開資料",
-                            "type": "object",
-                            "value": {
-                                "inCard": {
-                                    "name": "進卡",
-                                    "type": "string",
-                                    "value": "",
-                                    "format": "HHmm",
-                                    "id": "inCard"
-                                },
-                                "errorRespone": {
-                                    "name": "異常回應",
-                                    "type": "string",
-                                    "value": "",
-                                    "format": "n/a",
-                                    "id": "errorRespone"
-                                },
-                                "overtimeState": {
-                                    "name": "加班情況",
-                                    "type": "string",
-                                    "value": "",
-                                    "format": "n/a",
-                                    "id": "overtimeState"
-                                },
-                                "classColor": {
-                                    "name": "班別顏色",
-                                    "type": "string",
-                                    "value": "black",
-                                    "format": "n/a",
-                                    "id": "classColor"
-                                },
-                                "outCard": {
-                                    "name": "出卡",
-                                    "type": "string",
-                                    "value": "",
-                                    "format": "HHmm",
-                                    "id": "outCard"
-                                },
-                                "empid": {
-                                    "name": "員工編號",
-                                    "type": "string",
-                                    "value": "admin",
-                                    "format": "n/a",
-                                    "id": "empid"
-                                },
-                                "errorDate": {
-                                    "name": "異常日期",
-                                    "type": "string",
-                                    "value": "20220713",
-                                    "format": "YYYYmmdd",
-                                    "id": "errorDate"
-                                },
-                                "simpleDayOfWeekColor": {
-                                    "name": "異常日期顏色",
-                                    "type": "string",
-                                    "value": "black",
-                                    "format": "n/a",
-                                    "id": "simpleDayOfWeekColor"
-                                },
-                                "class": {
-                                    "name": "班別",
-                                    "type": "string",
-                                    "value": "0常日班8h：0830-1730",
-                                    "format": "n/a",
-                                    "id": "class"
-                                },
-                                "unApproved": {
-                                    "name": "未簽核加班單",
-                                    "type": "string",
-                                    "value": "",
-                                    "format": "n/a",
-                                    "id": "unApproved"
-                                },
-                                "dayOfWeekColor": {
-                                    "name": "異常日期顏色",
-                                    "type": "string",
-                                    "value": "black",
-                                    "format": "n/a",
-                                    "id": "dayOfWeekColor"
-                                },
-                                "dayOfWeek": {
-                                    "name": "異常日期星期",
-                                    "type": "integer",
-                                    "value": 3,
-                                    "format": "dayofweek",
-                                    "id": "dayOfWeek"
-                                },
-                                "errorReason": {
-                                    "name": "異常說明",
-                                    "type": "string",
-                                    "value": "",
-                                    "format": "n/a",
-                                    "id": "errorReason"
-                                },
-                                "simpleDayOfWeek": {
-                                    "name": "異常日期星期",
-                                    "type": "integer",
-                                    "value": 3,
-                                    "format": "dayofweek",
-                                    "id": "simpleDayOfWeek"
-                                },
-                                "classStarTime": {
-                                    "name": "班別時間(起)",
-                                    "type": "string",
-                                    "value": "0830",
-                                    "format": "HHmm",
-                                    "id": "classStarTime"
-                                },
-                                "empFullName": {
-                                    "name": "員工姓名",
-                                    "type": "string",
-                                    "value": "管理者",
-                                    "format": "n/a",
-                                    "id": "empFullName"
-                                },
-                                "depFullName": {
-                                    "name": "部門名稱",
-                                    "type": "string",
-                                    "value": "A 中保集團",
-                                    "format": "n/a",
-                                    "id": "depFullName"
-                                },
-                                "classEndTime": {
-                                    "name": "班別時間(迄)",
-                                    "type": "string",
-                                    "value": "1730",
-                                    "format": "HHmm",
-                                    "id": "classEndTime"
-                                }
-                            },
-                            "format": "n/a",
-                            "id": "detailInfor"
-                        },
-                        "simpleInfor": {
-                            "name": "簡易資料",
-                            "type": "object",
-                            "value": {
-                                "simpleErrorDate": {
-                                    "name": "異常日期",
-                                    "type": "string",
-                                    "value": "20220713",
-                                    "format": "YYYYmmdd",
-                                    "id": "simpleErrorDate"
-                                },
-                                "simpleErrorReason": {
-                                    "name": "異常說明",
-                                    "type": "string",
-                                    "value": "",
-                                    "format": "n/a",
-                                    "id": "simpleErrorReason"
-                                },
-                                "simpleInCard": {
-                                    "name": "進卡",
-                                    "type": "string",
-                                    "value": "",
-                                    "format": "HHmm",
-                                    "id": "simpleInCard"
-                                },
-                                "simpleOutCard": {
-                                    "name": "出卡",
-                                    "type": "string",
-                                    "value": "",
-                                    "format": "HHmm",
-                                    "id": "simpleOutCard"
-                                }
-                            },
-                            "format": "n/a",
-                            "id": "simpleInfor"
-                        }
-                    },
-                    "format": "n/a",
-                    "id": "IrregularOvertimeInformation"
-                },
-                {
-                    "name": "員工加班異常資訊",
-                    "type": "object",
-                    "value": {
-                        "detailInfor": {
-                            "name": "展開資料",
-                            "type": "object",
-                            "value": {
-                                "inCard": {
-                                    "name": "進卡",
-                                    "type": "string",
-                                    "value": "",
-                                    "format": "HHmm",
-                                    "id": "inCard"
-                                },
-                                "errorRespone": {
-                                    "name": "異常回應",
-                                    "type": "string",
-                                    "value": "",
-                                    "format": "n/a",
-                                    "id": "errorRespone"
-                                },
-                                "overtimeState": {
-                                    "name": "加班情況",
-                                    "type": "string",
-                                    "value": "",
-                                    "format": "n/a",
-                                    "id": "overtimeState"
-                                },
-                                "classColor": {
-                                    "name": "班別顏色",
-                                    "type": "string",
-                                    "value": "black",
-                                    "format": "n/a",
-                                    "id": "classColor"
-                                },
-                                "outCard": {
-                                    "name": "出卡",
-                                    "type": "string",
-                                    "value": "",
-                                    "format": "HHmm",
-                                    "id": "outCard"
-                                },
-                                "empid": {
-                                    "name": "員工編號",
-                                    "type": "string",
-                                    "value": "admin",
-                                    "format": "n/a",
-                                    "id": "empid"
-                                },
-                                "errorDate": {
-                                    "name": "異常日期",
-                                    "type": "string",
-                                    "value": "20220714",
-                                    "format": "YYYYmmdd",
-                                    "id": "errorDate"
-                                },
-                                "simpleDayOfWeekColor": {
-                                    "name": "異常日期顏色",
-                                    "type": "string",
-                                    "value": "black",
-                                    "format": "n/a",
-                                    "id": "simpleDayOfWeekColor"
-                                },
-                                "class": {
-                                    "name": "班別",
-                                    "type": "string",
-                                    "value": "0常日班8h：0830-1730",
-                                    "format": "n/a",
-                                    "id": "class"
-                                },
-                                "unApproved": {
-                                    "name": "未簽核加班單",
-                                    "type": "string",
-                                    "value": "",
-                                    "format": "n/a",
-                                    "id": "unApproved"
-                                },
-                                "dayOfWeekColor": {
-                                    "name": "異常日期顏色",
-                                    "type": "string",
-                                    "value": "black",
-                                    "format": "n/a",
-                                    "id": "dayOfWeekColor"
-                                },
-                                "dayOfWeek": {
-                                    "name": "異常日期星期",
-                                    "type": "integer",
-                                    "value": 4,
-                                    "format": "dayofweek",
-                                    "id": "dayOfWeek"
-                                },
-                                "errorReason": {
-                                    "name": "異常說明",
-                                    "type": "string",
-                                    "value": "",
-                                    "format": "n/a",
-                                    "id": "errorReason"
-                                },
-                                "simpleDayOfWeek": {
-                                    "name": "異常日期星期",
-                                    "type": "integer",
-                                    "value": 4,
-                                    "format": "dayofweek",
-                                    "id": "simpleDayOfWeek"
-                                },
-                                "classStarTime": {
-                                    "name": "班別時間(起)",
-                                    "type": "string",
-                                    "value": "0830",
-                                    "format": "HHmm",
-                                    "id": "classStarTime"
-                                },
-                                "empFullName": {
-                                    "name": "員工姓名",
-                                    "type": "string",
-                                    "value": "管理者",
-                                    "format": "n/a",
-                                    "id": "empFullName"
-                                },
-                                "depFullName": {
-                                    "name": "部門名稱",
-                                    "type": "string",
-                                    "value": "A 中保集團",
-                                    "format": "n/a",
-                                    "id": "depFullName"
-                                },
-                                "classEndTime": {
-                                    "name": "班別時間(迄)",
-                                    "type": "string",
-                                    "value": "1730",
-                                    "format": "HHmm",
-                                    "id": "classEndTime"
-                                }
-                            },
-                            "format": "n/a",
-                            "id": "detailInfor"
-                        },
-                        "simpleInfor": {
-                            "name": "簡易資料",
-                            "type": "object",
-                            "value": {
-                                "simpleErrorDate": {
-                                    "name": "異常日期",
-                                    "type": "string",
-                                    "value": "20220714",
-                                    "format": "YYYYmmdd",
-                                    "id": "simpleErrorDate"
-                                },
-                                "simpleErrorReason": {
-                                    "name": "異常說明",
-                                    "type": "string",
-                                    "value": "",
-                                    "format": "n/a",
-                                    "id": "simpleErrorReason"
-                                },
-                                "simpleInCard": {
-                                    "name": "進卡",
-                                    "type": "string",
-                                    "value": "",
-                                    "format": "HHmm",
-                                    "id": "simpleInCard"
-                                },
-                                "simpleOutCard": {
-                                    "name": "出卡",
-                                    "type": "string",
-                                    "value": "",
-                                    "format": "HHmm",
-                                    "id": "simpleOutCard"
-                                }
-                            },
-                            "format": "n/a",
-                            "id": "simpleInfor"
-                        }
-                    },
-                    "format": "n/a",
-                    "id": "IrregularOvertimeInformation"
-                },
-                {
-                    "name": "員工加班異常資訊",
-                    "type": "object",
-                    "value": {
-                        "detailInfor": {
-                            "name": "展開資料",
-                            "type": "object",
-                            "value": {
-                                "inCard": {
-                                    "name": "進卡",
-                                    "type": "string",
-                                    "value": "",
-                                    "format": "HHmm",
-                                    "id": "inCard"
-                                },
-                                "errorRespone": {
-                                    "name": "異常回應",
-                                    "type": "string",
-                                    "value": "",
-                                    "format": "n/a",
-                                    "id": "errorRespone"
-                                },
-                                "overtimeState": {
-                                    "name": "加班情況",
-                                    "type": "string",
-                                    "value": "",
-                                    "format": "n/a",
-                                    "id": "overtimeState"
-                                },
-                                "classColor": {
-                                    "name": "班別顏色",
-                                    "type": "string",
-                                    "value": "red",
-                                    "format": "n/a",
-                                    "id": "classColor"
-                                },
-                                "outCard": {
-                                    "name": "出卡",
-                                    "type": "string",
-                                    "value": "",
-                                    "format": "HHmm",
-                                    "id": "outCard"
-                                },
-                                "empid": {
-                                    "name": "員工編號",
-                                    "type": "string",
-                                    "value": "admin",
-                                    "format": "n/a",
-                                    "id": "empid"
-                                },
-                                "errorDate": {
-                                    "name": "異常日期",
-                                    "type": "string",
-                                    "value": "20220731",
-                                    "format": "YYYYmmdd",
-                                    "id": "errorDate"
-                                },
-                                "simpleDayOfWeekColor": {
-                                    "name": "異常日期顏色",
-                                    "type": "string",
-                                    "value": "red",
-                                    "format": "n/a",
-                                    "id": "simpleDayOfWeekColor"
-                                },
-                                "class": {
-                                    "name": "班別",
-                                    "type": "string",
-                                    "value": "例假日",
-                                    "format": "n/a",
-                                    "id": "class"
-                                },
-                                "unApproved": {
-                                    "name": "未簽核加班單",
-                                    "type": "string",
-                                    "value": "",
-                                    "format": "n/a",
-                                    "id": "unApproved"
-                                },
-                                "dayOfWeekColor": {
-                                    "name": "異常日期顏色",
-                                    "type": "string",
-                                    "value": "red",
-                                    "format": "n/a",
-                                    "id": "dayOfWeekColor"
-                                },
-                                "dayOfWeek": {
-                                    "name": "異常日期星期",
-                                    "type": "integer",
-                                    "value": 0,
-                                    "format": "dayofweek",
-                                    "id": "dayOfWeek"
-                                },
-                                "errorReason": {
-                                    "name": "異常說明",
-                                    "type": "string",
-                                    "value": "",
-                                    "format": "n/a",
-                                    "id": "errorReason"
-                                },
-                                "simpleDayOfWeek": {
-                                    "name": "異常日期星期",
-                                    "type": "integer",
-                                    "value": 0,
-                                    "format": "dayofweek",
-                                    "id": "simpleDayOfWeek"
-                                },
-                                "classStarTime": {
-                                    "name": "班別時間(起)",
-                                    "type": "string",
-                                    "value": "",
-                                    "format": "HHmm",
-                                    "id": "classStarTime"
-                                },
-                                "empFullName": {
-                                    "name": "員工姓名",
-                                    "type": "string",
-                                    "value": "管理者",
-                                    "format": "n/a",
-                                    "id": "empFullName"
-                                },
-                                "depFullName": {
-                                    "name": "部門名稱",
-                                    "type": "string",
-                                    "value": "A 中保集團",
-                                    "format": "n/a",
-                                    "id": "depFullName"
-                                },
-                                "classEndTime": {
-                                    "name": "班別時間(迄)",
-                                    "type": "string",
-                                    "value": "",
-                                    "format": "HHmm",
-                                    "id": "classEndTime"
-                                }
-                            },
-                            "format": "n/a",
-                            "id": "detailInfor"
-                        },
-                        "simpleInfor": {
-                            "name": "簡易資料",
-                            "type": "object",
-                            "value": {
-                                "simpleErrorDate": {
-                                    "name": "異常日期",
-                                    "type": "string",
-                                    "value": "20220731",
-                                    "format": "YYYYmmdd",
-                                    "id": "simpleErrorDate"
-                                },
-                                "simpleErrorReason": {
-                                    "name": "異常說明",
-                                    "type": "string",
-                                    "value": "",
-                                    "format": "n/a",
-                                    "id": "simpleErrorReason"
-                                },
-                                "simpleInCard": {
-                                    "name": "進卡",
-                                    "type": "string",
-                                    "value": "",
-                                    "format": "HHmm",
-                                    "id": "simpleInCard"
-                                },
-                                "simpleOutCard": {
-                                    "name": "出卡",
-                                    "type": "string",
-                                    "value": "",
-                                    "format": "HHmm",
-                                    "id": "simpleOutCard"
-                                }
-                            },
-                            "format": "n/a",
-                            "id": "simpleInfor"
-                        }
-                    },
-                    "format": "n/a",
-                    "id": "IrregularOvertimeInformation"
-                }
-            ],
-            "format": "n/a",
-            "id": "appIrregularOvertimeList"
-        },
-        "employee": {
-            "name": "員工基本資料",
-            "type": "object",
-            "value": {
-                "empFullName": {
-                    "name": "員工中文姓名",
-                    "type": "string",
-                    "value": "管理者",
-                    "format": "n/a",
-                    "id": "empFullName"
-                },
-                "empid": {
-                    "name": "員工編號",
-                    "type": "string",
-                    "value": "admin",
-                    "format": "n/a",
-                    "id": "empid"
-                },
-                "empFullEname": {
-                    "name": "員工英文姓名",
-                    "type": "string",
-                    "value": "",
-                    "format": "n/a",
-                    "id": "empFullEname"
-                }
-            },
-            "format": "n/a",
-            "id": "employee"
-        },
-        "properties": {
-            "format": {
-                "HHmm": "時間時分",
-                "YYYYmmdd": "西元年月日",
-                "n/a": "",
-                "dayofweek": "星期"
+   "status":"success",
+   "message":[
+      "回傳成功"
+   ],
+   "data":{
+      "main":{
+         "name":"加班異常資訊",
+         "type":"object",
+         "value":{
+            "irragularYM":{
+               "name":"加班異常年月",
+               "type":"string",
+               "value":"202207",
+               "format":"YYYYmm",
+               "id":"irragularYM"
             }
-        },
-        "editableButton": {
-            "name": "可使用功能按鈕資訊",
-            "type": "object",
-            "value": {
-                "buttonList": {
-                    "name": "按鈕清單",
-                    "type": "object",
-                    "value": [
-                        {
-                            "buttonName": {
-                                "name": "按鈕名稱",
-                                "type": "string",
-                                "value": "通知員工本人",
-                                "format": "n/a",
-                                "id": "buttonName"
-                            },
-                            "buttonId": {
-                                "name": "按鈕ID",
-                                "type": "string",
-                                "value": "sentMailToEmployee",
-                                "format": "n/a",
-                                "id": "buttonId"
-                            }
+         },
+         "format":"n/a",
+         "id":"main"
+      },
+      "appIrregularOvertimeList":{
+         "name":"員工加班異常列表",
+         "type":"array",
+         "value":[
+            {
+               "name":"員工加班異常資訊",
+               "type":"object",
+               "value":{
+                  "detailInfor":{
+                     "name":"展開資料",
+                     "type":"object",
+                     "value":{
+                        "workClassName":{
+                           "name":"班別",
+                           "type":"string",
+                           "value":"早班(8-17)",
+                           "format":"n/a",
+                           "id":"workClassName"
                         },
-                        {
-                            "buttonName": {
-                                "name": "按鈕名稱",
-                                "type": "string",
-                                "value": "通知第一層主管",
-                                "format": "n/a",
-                                "id": "buttonName"
-                            },
-                            "buttonId": {
-                                "name": "按鈕ID",
-                                "type": "string",
-                                "value": "sentMailToSupervisor",
-                                "format": "n/a",
-                                "id": "buttonId"
-                            }
+                        "overtimeState":{
+                           "name":"加班情況",
+                           "type":"string",
+                           "value":"",
+                           "format":"n/a",
+                           "id":"overtimeState"
                         },
-                        {
-                            "buttonName": {
-                                "name": "按鈕名稱",
-                                "type": "string",
-                                "value": "查閱加班異常寄發名單",
-                                "format": "n/a",
-                                "id": "buttonName"
-                            },
-                            "buttonId": {
-                                "name": "按鈕ID",
-                                "type": "string",
-                                "value": "selectIrregularList",
-                                "format": "n/a",
-                                "id": "buttonId"
-                            }
+                        "inCard":{
+                           "name":"進卡",
+                           "type":"string",
+                           "value":"0800",
+                           "format":"HHmm",
+                           "id":"inCard"
                         },
-                        {
-                            "buttonName": {
-                                "name": "按鈕名稱",
-                                "type": "string",
-                                "value": "下載員工異常名單",
-                                "format": "n/a",
-                                "id": "buttonName"
-                            },
-                            "buttonId": {
-                                "name": "按鈕ID",
-                                "type": "string",
-                                "value": "downLoadIrregularList",
-                                "format": "n/a",
-                                "id": "buttonId"
-                            }
+                        "empid":{
+                           "name":"員工編號",
+                           "type":"string",
+                           "value":"admin",
+                           "format":"n/a",
+                           "id":"empid"
                         },
-                        {
-                            "buttonName": {
-                                "name": "按鈕名稱",
-                                "type": "string",
-                                "value": "異常回報",
-                                "format": "n/a",
-                                "id": "buttonName"
-                            },
-                            "buttonId": {
-                                "name": "按鈕ID",
-                                "type": "string",
-                                "value": "responeIrregular",
-                                "format": "n/a",
-                                "id": "buttonId"
-                            }
+                        "dayOfWeek":{
+                           "name":"異常日期星期",
+                           "type":"integer",
+                           "value":5,
+                           "format":"n/a",
+                           "id":"dayOfWeek"
+                        },
+                        "errorReason":{
+                           "name":"異常說明",
+                           "type":"string",
+                           "value":"刷卡時間 0800 1838,異常原因,刷卡時間往後%1分鐘,未報加班",
+                           "format":"n/a",
+                           "id":"errorReason"
+                        },
+                        "classStartTime":{
+                           "name":"班別時間(起)",
+                           "type":"string",
+                           "value":"0800",
+                           "format":"HHmm",
+                           "id":"classStartTime"
+                        },
+                        "unApproved":{
+                           "name":"未簽核加班單",
+                           "type":"string",
+                           "value":"",
+                           "format":"n/a",
+                           "id":"unApproved"
+                        },
+                        "classEndTime":{
+                           "name":"班別時間(迄)",
+                           "type":"string",
+                           "value":"1700",
+                           "format":"HHmm",
+                           "id":"classEndTime"
+                        },
+                        "dayOfWeekColor":{
+                           "name":"異常日期顏色",
+                           "type":"string",
+                           "value":"black",
+                           "format":"n/a",
+                           "id":"dayOfWeekColor"
+                        },
+                        "errorRespone":{
+                           "name":"異常回應",
+                           "type":"string",
+                           "value":"",
+                           "format":"n/a",
+                           "id":"errorRespone"
+                        },
+                        "outCard":{
+                           "name":"出卡",
+                           "type":"string",
+                           "value":"1838",
+                           "format":"HHmm",
+                           "id":"outCard"
+                        },
+                        "classColor":{
+                           "name":"班別顏色",
+                           "type":"string",
+                           "value":"black",
+                           "format":"n/a",
+                           "id":"classColor"
+                        },
+                        "empFullName":{
+                           "name":"員工姓名",
+                           "type":"string",
+                           "value":"系統管理員",
+                           "format":"n/a",
+                           "id":"empFullName"
+                        },
+                        "depFullName":{
+                           "name":"部門名稱",
+                           "type":"string",
+                           "value":"99999 英特內股份有限公司",
+                           "format":"n/a",
+                           "id":"depFullName"
+                        },
+                        "errorDate":{
+                           "name":"異常日期",
+                           "type":"string",
+                           "value":"20220701",
+                           "format":"YYYYmmdd",
+                           "id":"errorDate"
                         }
-                    ],
-                    "format": "n/a",
-                    "id": "buttonList"
-                }
+                     },
+                     "format":"n/a",
+                     "id":"detailInfor"
+                  },
+                  "simpleInfor":{
+                     "name":"簡易資料",
+                     "type":"object",
+                     "value":{
+                        "simpleDayOfWeekColor":{
+                           "name":"異常日期顏色",
+                           "type":"string",
+                           "value":"black",
+                           "format":"n/a",
+                           "id":"simpleDayOfWeekColor"
+                        },
+                        "simpleErrorDate":{
+                           "name":"異常日期",
+                           "type":"string",
+                           "value":"20220701",
+                           "format":"YYYYmmdd",
+                           "id":"simpleErrorDate"
+                        },
+                        "simpleErrorReason":{
+                           "name":"異常說明",
+                           "type":"string",
+                           "value":"刷卡時間 0800 1838,異常原因,刷卡時間往後%1分鐘,未報加班",
+                           "format":"n/a",
+                           "id":"simpleErrorReason"
+                        },
+                        "simpleInCard":{
+                           "name":"進卡",
+                           "type":"string",
+                           "value":"0800",
+                           "format":"HHmm",
+                           "id":"simpleInCard"
+                        },
+                        "simpleDayOfWeek":{
+                           "name":"異常日期星期",
+                           "type":"integer",
+                           "value":5,
+                           "format":"dayofweek",
+                           "id":"simpleDayOfWeek"
+                        },
+                        "simpleOutCard":{
+                           "name":"出卡",
+                           "type":"string",
+                           "value":"1838",
+                           "format":"HHmm",
+                           "id":"simpleOutCard"
+                        }
+                     },
+                     "format":"n/a",
+                     "id":"simpleInfor"
+                  }
+               },
+               "format":"n/a",
+               "id":"IrregularOvertimeInformation"
             },
-            "format": "n/a",
-            "id": "editableButton"
-        }
-    }
+            {
+               "name":"員工加班異常資訊",
+               "type":"object",
+               "value":{
+                  "detailInfor":{
+                     "name":"展開資料",
+                     "type":"object",
+                     "value":{
+                        "workClassName":{
+                           "name":"班別",
+                           "type":"string",
+                           "value":"例假日",
+                           "format":"n/a",
+                           "id":"workClassName"
+                        },
+                        "overtimeState":{
+                           "name":"加班情況",
+                           "type":"string",
+                           "value":"",
+                           "format":"n/a",
+                           "id":"overtimeState"
+                        },
+                        "inCard":{
+                           "name":"進卡",
+                           "type":"string",
+                           "value":"",
+                           "format":"HHmm",
+                           "id":"inCard"
+                        },
+                        "empid":{
+                           "name":"員工編號",
+                           "type":"string",
+                           "value":"admin",
+                           "format":"n/a",
+                           "id":"empid"
+                        },
+                        "dayOfWeek":{
+                           "name":"異常日期星期",
+                           "type":"integer",
+                           "value":0,
+                           "format":"n/a",
+                           "id":"dayOfWeek"
+                        },
+                        "errorReason":{
+                           "name":"異常說明",
+                           "type":"string",
+                           "value":"",
+                           "format":"n/a",
+                           "id":"errorReason"
+                        },
+                        "classStartTime":{
+                           "name":"班別時間(起)",
+                           "type":"string",
+                           "value":"",
+                           "format":"HHmm",
+                           "id":"classStartTime"
+                        },
+                        "unApproved":{
+                           "name":"未簽核加班單",
+                           "type":"string",
+                           "value":"",
+                           "format":"n/a",
+                           "id":"unApproved"
+                        },
+                        "classEndTime":{
+                           "name":"班別時間(迄)",
+                           "type":"string",
+                           "value":"",
+                           "format":"HHmm",
+                           "id":"classEndTime"
+                        },
+                        "dayOfWeekColor":{
+                           "name":"異常日期顏色",
+                           "type":"string",
+                           "value":"red",
+                           "format":"n/a",
+                           "id":"dayOfWeekColor"
+                        },
+                        "errorRespone":{
+                           "name":"異常回應",
+                           "type":"string",
+                           "value":"",
+                           "format":"n/a",
+                           "id":"errorRespone"
+                        },
+                        "outCard":{
+                           "name":"出卡",
+                           "type":"string",
+                           "value":"",
+                           "format":"HHmm",
+                           "id":"outCard"
+                        },
+                        "classColor":{
+                           "name":"班別顏色",
+                           "type":"string",
+                           "value":"red",
+                           "format":"n/a",
+                           "id":"classColor"
+                        },
+                        "empFullName":{
+                           "name":"員工姓名",
+                           "type":"string",
+                           "value":"系統管理員",
+                           "format":"n/a",
+                           "id":"empFullName"
+                        },
+                        "depFullName":{
+                           "name":"部門名稱",
+                           "type":"string",
+                           "value":"99999 英特內股份有限公司",
+                           "format":"n/a",
+                           "id":"depFullName"
+                        },
+                        "errorDate":{
+                           "name":"異常日期",
+                           "type":"string",
+                           "value":"20220731",
+                           "format":"YYYYmmdd",
+                           "id":"errorDate"
+                        }
+                     },
+                     "format":"n/a",
+                     "id":"detailInfor"
+                  },
+                  "simpleInfor":{
+                     "name":"簡易資料",
+                     "type":"object",
+                     "value":{
+                        "simpleDayOfWeekColor":{
+                           "name":"異常日期顏色",
+                           "type":"string",
+                           "value":"red",
+                           "format":"n/a",
+                           "id":"simpleDayOfWeekColor"
+                        },
+                        "simpleErrorDate":{
+                           "name":"異常日期",
+                           "type":"string",
+                           "value":"20220731",
+                           "format":"YYYYmmdd",
+                           "id":"simpleErrorDate"
+                        },
+                        "simpleErrorReason":{
+                           "name":"異常說明",
+                           "type":"string",
+                           "value":"",
+                           "format":"n/a",
+                           "id":"simpleErrorReason"
+                        },
+                        "simpleInCard":{
+                           "name":"進卡",
+                           "type":"string",
+                           "value":"",
+                           "format":"HHmm",
+                           "id":"simpleInCard"
+                        },
+                        "simpleDayOfWeek":{
+                           "name":"異常日期星期",
+                           "type":"integer",
+                           "value":0,
+                           "format":"dayofweek",
+                           "id":"simpleDayOfWeek"
+                        },
+                        "simpleOutCard":{
+                           "name":"出卡",
+                           "type":"string",
+                           "value":"",
+                           "format":"HHmm",
+                           "id":"simpleOutCard"
+                        }
+                     },
+                     "format":"n/a",
+                     "id":"simpleInfor"
+                  }
+               },
+               "format":"n/a",
+               "id":"IrregularOvertimeInformation"
+            }
+         ],
+         "format":"n/a",
+         "id":"appIrregularOvertimeList"
+      },
+      "employee":{
+         "name":"員工基本資料",
+         "type":"object",
+         "value":{
+            "empFullName":{
+               "name":"員工中文姓名",
+               "type":"string",
+               "value":"系統管理員",
+               "format":"n/a",
+               "id":"empFullName"
+            },
+            "empid":{
+               "name":"員工編號",
+               "type":"string",
+               "value":"admin",
+               "format":"n/a",
+               "id":"empid"
+            },
+            "empFullEname":{
+               "name":"員工英文姓名",
+               "type":"string",
+               "value":"Administrator",
+               "format":"n/a",
+               "id":"empFullEname"
+            }
+         },
+         "format":"n/a",
+         "id":"employee"
+      },
+      "properties":{
+         "format":{
+            "HHmm":"時間時分",
+            "YYYYmmdd":"西元年月日",
+            "n/a":"",
+            "dayofweek":"星期"
+         }
+      },
+      "editableButton":{
+         "name":"可使用功能按鈕資訊",
+         "type":"object",
+         "value":{
+            "buttonList":{
+               "name":"按鈕清單",
+               "type":"object",
+               "value":[
+                  
+               ],
+               "format":"n/a",
+               "id":"buttonList"
+            }
+         },
+         "format":"n/a",
+         "id":"editableButton"
+      }
+   }
 }
 ```
 
