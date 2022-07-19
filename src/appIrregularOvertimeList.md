@@ -2,6 +2,8 @@
 取得加班異常列表資訊
 
 (回傳值 星期都會以數字格式 ex:0(星期日、1(星期一)...))
+(班別 顏色種類有: black、red)
+(異常日期 顏色種類有: black、green、red)
 ### HTTP Request
 ```
 https://114.34.125.246:8090/servlet/HRNative/appIrregularOvertimeList
