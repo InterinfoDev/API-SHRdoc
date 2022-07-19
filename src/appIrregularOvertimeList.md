@@ -17,7 +17,7 @@ POST
 |:----------|:-------------|:-----|:------------|
 | uid | 98599308101484732326 | String | 需透過appLogin取得
 | right | 51341911904173543336756162544864820 | String | 需透過appLogin取得 |
-| request | {empid:admin,cpnyid:TW,yymm:202207,skind:A,before:30,after:30,uncard:30} | Object |
+| request | {empid:admin,cpnyid:TW,irragularYM:202207,skind:A,before:30,after:30,uncard:30} | Object |
 
 ### JSON representation Case 1
 Here is a JSON representation of request.
