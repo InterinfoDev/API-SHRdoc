@@ -70,33 +70,33 @@ Here is a JSON representation of request.
          "name":"加班異常資訊",
          "type":"object",
          "value":{
-            "beforeMins":{
+            "beforeMins":{                  --richard 新增欄位  beforeMins
                "name":"提前多久刷卡視為異常",
                "type":"integer",
                "value":30,
                "format":"min",
-               "id":"beforeMins"
+               "id":"beforeMins"             --richard 新增欄位 beforeMins
             },
-            "outMins":{
+            "outMins":{                     --richard 新增欄位  outMins
                "name":"刷卡時間超過多久未報加班視為異常",
                "type":"integer",
                "value":30,
                "format":"min",
-               "id":"outMins"
+               "id":"outMins"                --richard 新增欄位  outMins
             },
-            "afterMins":{
+            "afterMins":{                    --richard 新增欄位  afterMins
                "name":"延後多久刷卡視為異常",
                "type":"integer",
                "value":30,
                "format":"min",
-               "id":"afterMins"
+               "id":"afterMins"               --richard 新增欄位  afterMins
             },
-            "showType":{
+            "showType":{                      --richard 新增欄位  showType
                "name":"顯示種類",
                "type":"string",
                "value":"B",
                "format":"n/a",
-               "id":"showType"
+               "id":"showType"                  --richard 新增欄位  showType
             },
             "irragularYM":{
                "name":"加班異常年月",
@@ -523,6 +523,35 @@ Here is a JSON representation of request.
             "n/a":"",
             "dayofweek":"星期"
          }
+      },
+      "responseList":{            -- richard 新增 responseList
+         "name":"異常回應下拉清單",
+         "type":"object",
+         "value":{
+            "responseName":{         -- richard 新增欄位 responseName
+               "name":"異常原因",
+               "type":"string",
+               "value":"測試",
+               "format":"n/a",
+               "id":"responseName"   -- richard 新增欄位 responseName
+            },
+            "responseCode":{         -- richard 新增欄位 responseCode
+               "name":"異常代碼",
+               "type":"string",
+               "value":"A03",
+               "format":"n/a",
+               "id":"responseCode"   -- richard 新增欄位 responseCode
+            },
+            "responseReason":{       -- richard 新增欄位 responseReason
+               "name":"備註",
+               "type":"string",
+               "value":"",
+               "format":"n/a",
+               "id":"responseReason" -- richard 新增欄位 responseReason
+            }
+         },
+         "format":"n/a",
+         "id":"responseList"        -- richard 新增 responseList
       },
       "editableButton":{
          "name":"可使用功能按鈕資訊",
