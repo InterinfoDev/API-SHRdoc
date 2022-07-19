@@ -70,6 +70,34 @@ Here is a JSON representation of request.
          "name":"加班異常資訊",
          "type":"object",
          "value":{
+            "beforeMins":{
+               "name":"提前多久刷卡視為異常",
+               "type":"integer",
+               "value":30,
+               "format":"min",
+               "id":"beforeMins"
+            },
+            "outMins":{
+               "name":"刷卡時間超過多久未報加班視為異常",
+               "type":"integer",
+               "value":30,
+               "format":"min",
+               "id":"outMins"
+            },
+            "afterMins":{
+               "name":"延後多久刷卡視為異常",
+               "type":"integer",
+               "value":30,
+               "format":"min",
+               "id":"afterMins"
+            },
+            "showType":{
+               "name":"顯示種類",
+               "type":"string",
+               "value":"B",
+               "format":"n/a",
+               "id":"showType"
+            },
             "irragularYM":{
                "name":"加班異常年月",
                "type":"string",
@@ -194,7 +222,7 @@ Here is a JSON representation of request.
                         "depFullName":{
                            "name":"部門名稱",
                            "type":"string",
-                           "value":"99999 英特內股份有限公司",
+                           "value":"英特內股份有限公司",
                            "format":"n/a",
                            "id":"depFullName"
                         },
@@ -204,6 +232,13 @@ Here is a JSON representation of request.
                            "value":"20220701",
                            "format":"YYYYmmdd",
                            "id":"errorDate"
+                        },
+                        "depCode":{
+                           "name":"部門代號",
+                           "type":"string",
+                           "value":"99999",
+                           "format":"n/a",
+                           "id":"depCode"
                         }
                      },
                      "format":"n/a",
@@ -372,7 +407,7 @@ Here is a JSON representation of request.
                         "depFullName":{
                            "name":"部門名稱",
                            "type":"string",
-                           "value":"99999 英特內股份有限公司",
+                           "value":"英特內股份有限公司",
                            "format":"n/a",
                            "id":"depFullName"
                         },
@@ -382,6 +417,13 @@ Here is a JSON representation of request.
                            "value":"20220731",
                            "format":"YYYYmmdd",
                            "id":"errorDate"
+                        },
+                        "depCode":{
+                           "name":"部門代號",
+                           "type":"string",
+                           "value":"99999",
+                           "format":"n/a",
+                           "id":"depCode"
                         }
                      },
                      "format":"n/a",
