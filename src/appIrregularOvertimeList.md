@@ -49,7 +49,7 @@ Here is a JSON representation of request.
 ### Request Properties
 | Key | Value | Type | Description | Required | Format |
 |:----------|:-------------|:-----|:------------|:------------|:------------|
-| empid | admin | String | 員工編號 | Y | n/a |
+| empid | admin | Vector(String) | 員工編號 | Y | n/a |
 | cpnyid | TW | String | 公司代號 | Y | n/a |
 | irragularYM | 202207 | String | 查詢年月 | Y | AC(YYYYmm) |
 | skind | A | String | 顯示種類 | Y | n/a |
