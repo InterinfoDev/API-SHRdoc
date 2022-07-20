@@ -532,14 +532,14 @@ Here is a JSON representation of request.
                     "responseName": {            --richard 新增 responseName
                         "name": "異常原因",
                         "type": "string",
-                        "value": "測試",
+                        "value": "測試4",
                         "format": "n/a",
                         "id": "responseName"    --richard 新增欄位 responseName
                     },
                     "responseCode": {           --richard 新增欄位 responseCode
                         "name": "異常代碼",
                         "type": "string",
-                        "value": "A03",
+                        "value": "A04",
                         "format": "n/a",
                         "id": "responseCode"     --richard 新增欄位 responseCode
                     },
@@ -555,7 +555,7 @@ Here is a JSON representation of request.
                     "responseName": {           
                         "name": "異常原因",
                         "type": "string",
-                        "value": "測試",
+                        "value": "測試3",
                         "format": "n/a",
                         "id": "responseName"
                     },
@@ -578,14 +578,14 @@ Here is a JSON representation of request.
                     "responseName": {
                         "name": "異常原因",
                         "type": "string",
-                        "value": "測試",
+                        "value": "測試1",
                         "format": "n/a",
                         "id": "responseName"
                     },
                     "responseCode": {
                         "name": "異常代碼",
                         "type": "string",
-                        "value": "A03",
+                        "value": "A01",
                         "format": "n/a",
                         "id": "responseCode"
                     },
@@ -609,7 +609,86 @@ Here is a JSON representation of request.
                "name":"按鈕清單",
                "type":"object",
                "value":[
-                  
+                  {
+                    "buttonName": {
+                        "name": "按鈕名稱",
+                        "type": "string",
+                        "value": "通知員工本人",
+                        "format": "n/a",
+                        "id": "buttonName"
+                    },
+                    "buttonId": {
+                        "name": "按鈕ID",
+                        "type": "string",
+                        "value": "sentMailToEmployee",
+                        "format": "n/a",
+                        "id": "buttonId"
+                    }
+                },
+                {
+                    "buttonName": {
+                        "name": "按鈕名稱",
+                        "type": "string",
+                        "value": "通知第一層主管",
+                        "format": "n/a",
+                        "id": "buttonName"
+                    },
+                    "buttonId": {
+                        "name": "按鈕ID",
+                        "type": "string",
+                        "value": "sentMailToSupervisor",
+                        "format": "n/a",
+                        "id": "buttonId"
+                    }
+                },
+                {
+                    "buttonName": {
+                        "name": "按鈕名稱",
+                        "type": "string",
+                        "value": "查閱加班異常寄發名單",
+                        "format": "n/a",
+                        "id": "buttonName"
+                    },
+                    "buttonId": {
+                        "name": "按鈕ID",
+                        "type": "string",
+                        "value": "selectIrregularList",
+                        "format": "n/a",
+                        "id": "buttonId"
+                    }
+                },
+                {
+                    "buttonName": {
+                        "name": "按鈕名稱",
+                        "type": "string",
+                        "value": "下載員工異常名單",
+                        "format": "n/a",
+                        "id": "buttonName"
+                    },
+                    "buttonId": {
+                        "name": "按鈕ID",
+                        "type": "string",
+                        "value": "downLoadIrregularList",
+                        "format": "n/a",
+                        "id": "buttonId"
+                    }
+                },
+                {
+                    "buttonName": {
+                        "name": "按鈕名稱",
+                        "type": "string",
+                        "value": "異常回報",
+                        "format": "n/a",
+                        "id": "buttonName"
+                    },
+                    "buttonId": {
+                        "name": "按鈕ID",
+                        "type": "string",
+                        "value": "responeIrregular",
+                        "format": "n/a",
+                        "id": "buttonId"
+                    }
+                }
                ],
                "format":"n/a",
                "id":"buttonList"
