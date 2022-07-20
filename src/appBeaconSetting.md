@@ -49,53 +49,85 @@ Here is a JSON representation of request.
       "回傳成功"
    ],
    "data":{
-      "viewType":{
-         "name":"顯示種類",
-         "type":"object",
-         "value":{
-            "option":{
-               "name":"選項",
-               "type":"array",
-               "value":[
-                  {
-                     "optionId":{
-                        "name":"選項代號",
-                        "type":"string",
-                        "value":"A",
-                        "format":"n/a",
-                        "id":"optionId"
-                     },
-                     "optionValue":{
-                        "name":"選項名稱",
-                        "type":"string",
-                        "value":"顯示所有異常",
-                        "format":"n/a",
-                        "id":"optionValue"
-                     }
+      "beacon":{
+         "name":"beacon",
+         "type":"array",
+         "value":[
+            {
+               "name":"beacon資訊",
+               "type":"object",
+               "value":{
+                  "beaconMajor":{
+                     "name":"主要",
+                     "type":"string",
+                     "value":"1",
+                     "format":"n/a",
+                     "id":"beaconMajor"
                   },
-                  {
-                     "optionId":{
-                        "name":"選項代號",
-                        "type":"string",
-                        "value":"B",
-                        "format":"n/a",
-                        "id":"optionId"
-                     },
-                     "optionValue":{
-                        "name":"選項名稱",
-                        "type":"string",
-                        "value":"顯示每一天的紀錄",
-                        "format":"n/a",
-                        "id":"optionValue"
-                     }
+                  "beaconName":{
+                     "name":"beacon名稱",
+                     "type":"string",
+                     "value":"beacon test",
+                     "format":"n/a",
+                     "id":"beaconName"
+                  },
+                  "beaconMinor":{
+                     "name":"次要",
+                     "type":"string",
+                     "value":"21356",
+                     "format":"n/a",
+                     "id":"beaconMinor"
+                  },
+                  "beaconUuid":{
+                     "name":"beacon代碼",
+                     "type":"string",
+                     "value":"B5B182C7-EAB1-4988-AA99-B5C1517008D7",
+                     "format":"n/a",
+                     "id":"beaconUuid"
                   }
-               ],
+               },
                "format":"n/a",
-               "id":"option"
+               "id":"beaconInfo"
+            },
+            {
+               "name":"beacon資訊",
+               "type":"object",
+               "value":{
+                  "beaconMajor":{
+                     "name":"主要",
+                     "type":"string",
+                     "value":"1",
+                     "format":"n/a",
+                     "id":"beaconMajor"
+                  },
+                  "beaconName":{
+                     "name":"beacon名稱",
+                     "type":"string",
+                     "value":"beacon 測試",
+                     "format":"n/a",
+                     "id":"beaconName"
+                  },
+                  "beaconMinor":{
+                     "name":"次要",
+                     "type":"string",
+                     "value":"21356",
+                     "format":"n/a",
+                     "id":"beaconMinor"
+                  },
+                  "beaconUuid":{
+                     "name":"beacon代碼",
+                     "type":"string",
+                     "value":"A1A182C7-EAB1-4988-AA99-B5C1517006E1",
+                     "format":"n/a",
+                     "id":"beaconUuid"
+                  }
+               },
+               "format":"n/a",
+               "id":"beaconInfo"
             }
-         },
+         ],
          "format":"n/a",
-         "id":"viewType"
+         "id":"beacon"
       },
       "properties":{
          "format":{
