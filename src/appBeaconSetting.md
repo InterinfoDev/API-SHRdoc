@@ -59,8 +59,8 @@ Here is a JSON representation of request.
                "value":{
                   "beaconMajor":{
                      "name":"主要",
-                     "type":"string",
-                     "value":"1",
+                     "type":"integer",   --kevin改成integer
+                     "value":1,
                      "format":"n/a",
                      "id":"beaconMajor"
                   },
@@ -73,8 +73,8 @@ Here is a JSON representation of request.
                   },
                   "beaconMinor":{
                      "name":"次要",
-                     "type":"string",
-                     "value":"21356",
+                     "type":"integer",  --kevin改成integer
+                     "value":21356,
                      "format":"n/a",
                      "id":"beaconMinor"
                   },
@@ -95,8 +95,8 @@ Here is a JSON representation of request.
                "value":{
                   "beaconMajor":{
                      "name":"主要",
-                     "type":"string",
-                     "value":"1",
+                     "type":"integer",   --kevin改成integer
+                     "value":1,
                      "format":"n/a",
                      "id":"beaconMajor"
                   },
@@ -109,8 +109,8 @@ Here is a JSON representation of request.
                   },
                   "beaconMinor":{
                      "name":"次要",
-                     "type":"string",
-                     "value":"21356",
+                     "type":"integer",    --kevin改成integer
+                     "value":21356,
                      "format":"n/a",
                      "id":"beaconMinor"
                   },
