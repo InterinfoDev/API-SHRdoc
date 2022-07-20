@@ -239,6 +239,13 @@ Here is a JSON representation of request.
                            "value":"99999",
                            "format":"n/a",
                            "id":"depCode"
+                        },
+                        "editable": {              --richard 新增欄位 editable
+                            "name": "可異動資料",
+                            "type": "boolean",
+                            "value": false,
+                            "format": "n/a",
+                            "id": "editable"       --richard 新增欄位 editable
                         }
                      },
                      "format":"n/a",
