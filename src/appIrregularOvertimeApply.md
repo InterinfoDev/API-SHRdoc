@@ -41,7 +41,7 @@ Here is a JSON representation of request.
         "查詢成功"
     ],
     "data": {
-        "applyForm": {
+        "queryCondition": {
             "name": "查詢預帶資料",
             "type": "object",
             "value": {
@@ -82,7 +82,7 @@ Here is a JSON representation of request.
                 }
             },
             "format": "n/a",
-            "id": "applyForm"
+            "id": "queryCondition"
         },
         "properties": {
             "format": {
