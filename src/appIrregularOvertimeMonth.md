@@ -48,7 +48,7 @@ Here is a JSON representation of request.
 | Key | Value | Type | Description | Required | Format |
 |:----------|:-------------|:-----|:------------|:------------|:------------|
 | empid | admin | Array(String) | 員工編號 | N | n/a |
-| cpnyid | TW | String | 公司代號 | Y | n/a |
+| companyId | TW | String | 公司代號 | Y | n/a |
 | irragularYM | 202207 | String | 查詢年月 | Y | AC(YYYYmm) |
 | skind | A | String | 顯示種類 | Y | n/a |
 | before | 30 | Integer | 提前多久刷卡視為異常 | Y | n/a |
