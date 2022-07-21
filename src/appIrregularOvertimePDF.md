@@ -16,7 +16,7 @@ POST
 |:----------|:-------------|:-----|:------------|
 | uid | 98599308101484732326 | String | 需透過appLogin取得
 | right | 51341911904173543336756162544864820 | String | 需透過appLogin取得 |
-| request | {"empid":"admin","irragularYM":"202207","viewType":"A","before":30,"after":30,"uncard":30} | Object | 查詢條件
+| request | {"empid":"admin","irragularYM":"202207","viewType":"A","beforeMins":30,"afterMins":30,"outMins":30} | Object | 查詢條件
 
 ### JSON representation
 
@@ -28,9 +28,9 @@ POST
       "empid":"admin",
       "irragularYM":"202207",
       "viewType":"A",
-      "before":30,
-      "after":30,
-      "uncard":30
+      "beforeMins":30,
+      "afterMins":30,
+      "outMins":30
    }
 }
 ```
@@ -48,9 +48,9 @@ POST
 | empid | admin | String | 員工編號 | N | n/a |
 | irragularYM | 202207 | String | 查詢年月 | N | n/a |
 | viewType | A | String | 顯示種類 | Y | n/a |
-| before | 30 | Integer | 提前多久刷卡視為異常 | Y | n/a |
-| after | 30 | Integer | 延後多久刷卡視為異常 | Y | n/a |
-| uncard | 30 | Integer | 刷卡時間超過多久未報加班視為異常 | Y | n/a |
+| beforeMins | 30 | Integer | 提前多久刷卡視為異常 | Y | n/a |
+| afterMins | 30 | Integer | 延後多久刷卡視為異常 | Y | n/a |
+| outMins | 30 | Integer | 刷卡時間超過多久未報加班視為異常 | Y | n/a |
 
 ### HTTP Response when Successful
 成功將直接顯示檔案blob，請務必參考content type
