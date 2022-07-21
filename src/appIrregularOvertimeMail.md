@@ -52,9 +52,9 @@ Here is a JSON representation of request.
 | companyId | TW | String | 公司代號 | Y | n/a |
 | irragularYM | 202207 | String | 查詢年月 | Y | AC(YYYYmm) |
 | viewType | A | String | 顯示種類 | Y | n/a |
-| before | 30 | Integer | 提前多久刷卡視為異常 | Y | n/a |
-| after | 30 | Integer | 延後多久刷卡視為異常 | Y | n/a |
-| uncard | 30 | Integer | 刷卡時間超過多久未報加班視為異常 | Y | n/a |
+| beforeMins | 30 | Integer | 提前多久刷卡視為異常 | Y | n/a |
+| afterMins | 30 | Integer | 延後多久刷卡視為異常 | Y | n/a |
+| outMins | 30 | Integer | 刷卡時間超過多久未報加班視為異常 | Y | n/a |
 | buttonKey | sentMailToEmployee | String | 進信給自己或主管 | Y | n/a |
 | errorDate | 20220701 | String | 當筆資料的key值(日期) | Y | AC(YYYYmmdd) |
 
