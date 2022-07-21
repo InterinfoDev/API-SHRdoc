@@ -59,12 +59,12 @@ Here is a JSON representation of request.
                     "format": "n/a",
                     "id": "viewTypeName"
                 },
-                "viewTypeCode": {
+                "viewType": {
                     "name": "顯示種類代號",
                     "type": "string",
                     "value": "A",
                     "format": "n/a",
-                    "id": "viewTypeCode"
+                    "id": "viewType"
                 },
                 "outMins": {
                     "name": "刷卡時間超過多久未報加班視為異常",
