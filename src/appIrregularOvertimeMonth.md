@@ -28,10 +28,10 @@ Here is a JSON representation of request.
         "empid":["admin"], 
         "companyId":"TW",
         "irragularYM":"202207",
-        "skind":"A",
-        "before":30,
-        "after":30,
-        "uncard":30,
+        "viewType":"A",
+        "beforeMins":30,
+        "afterMins":30,
+        "outMins":30,
         "depNumber":[1]
     }
 }
@@ -50,10 +50,10 @@ Here is a JSON representation of request.
 | empid | admin | Array(String) | 員工編號 | N | n/a |
 | companyId | TW | String | 公司代號 | Y | n/a |
 | irragularYM | 202207 | String | 查詢年月 | Y | AC(YYYYmm) |
-| skind | A | String | 顯示種類 | Y | n/a |
-| before | 30 | Integer | 提前多久刷卡視為異常 | Y | n/a |
-| after | 30 | Integer | 延後多久刷卡視為異常 | Y | n/a |
-| uncard | 30 | Integer | 刷卡時間超過多久未報加班視為異常 | Y | n/a |
+| viewType | A | String | 顯示種類 | Y | n/a |
+| beforeMins | 30 | Integer | 提前多久刷卡視為異常 | Y | n/a |
+| afterMins | 30 | Integer | 延後多久刷卡視為異常 | Y | n/a |
+| outMins | 30 | Integer | 刷卡時間超過多久未報加班視為異常 | Y | n/a |
 | depNumber | [1] | Array(Integer) | 部門代號 | N | n/a |
 
 ### HTTP Response when Successful
