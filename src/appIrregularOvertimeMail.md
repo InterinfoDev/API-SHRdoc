@@ -72,8 +72,8 @@ Here is a JSON representation of request.
             "n/a":""
          }
       },
-      "MessageInfor":{
-         "name":"寄信資訊",
+      "messageInfor":{             --richard 修改欄位名稱 messageInfor
+         "name":"寄信資訊", 
          "type":"object",
          "value":{
             "sendResult":{
@@ -92,7 +92,7 @@ Here is a JSON representation of request.
             }
          },
          "format":"n/a",
-         "id":"MessageInfor"
+         "id":"messageInfor"     --richard 修改欄位名稱 messageInfor
       }
    }
 }
