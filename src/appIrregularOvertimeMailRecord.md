@@ -16,7 +16,7 @@ POST
 |:----------|:-------------|:-----|:------------|
 | uid | 98599308101484732326 | String | 需透過appLogin取得
 | right | 51341911904173543336756162544864820 | String | 需透過appLogin取得 |
-| request | {irragularYM:202207, empid:admin} | Object | 查詢條件
+| request | {irregularYM:202207, empid:admin} | Object | 查詢條件
 
 ### JSON representation Case 1
 Here is a JSON representation of request.
@@ -25,7 +25,7 @@ Here is a JSON representation of request.
     "uid":"98599308101484732326",
     "right":"51341911904173543336756162544864820",
     "request":{
-        "irragularYM":"202104", 
+        "irregularYM":"202104",     -- richard 修改request key值 irregularYM
         "empid":"admin"
     }
 }
@@ -41,7 +41,7 @@ Here is a JSON representation of request.
 ### Request Properties
 | Key | Value | Type | Description | Required | Format |
 |:----------|:-------------|:-----|:------------|:------------|:------------|
-| irragularYM | 202104 | String | 查詢年月 | Y | AC(YYYYmm) |
+| irregularYM | 202104 | String | 查詢年月 | Y | AC(YYYYmm) |  
 | empid | admin | String | 員工編號 | N | n/a |
 
 ### HTTP Response when Successful
