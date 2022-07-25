@@ -16,7 +16,7 @@ POST
 |:----------|:-------------|:-----|:------------|
 | uid | 98599308101484732326 | String | 需透過appLogin取得
 | right | 51341911904173543336756162544864820 | String | 需透過appLogin取得 |
-| request | {code:A01,errorData:[{companyId:TW,empid:admin,irragularDate:20220615}]} | Object | 異動條件
+| request | {code:A01,errorData:[{companyId:TW,empid:admin,irregularDate:20220615}]} | Object | 異動條件
 
 ### JSON representation
 Here is a JSON representation of request.
@@ -30,7 +30,7 @@ Here is a JSON representation of request.
          {
             "companyId":"TW",
             "empid":"admin",
-            "irragularDate":"20220615"
+            "irregularDate":"20220615"    --修改request key 名稱 irregularDate
          }
       ]
    }
@@ -51,7 +51,7 @@ Here is a JSON representation of request.
 | errorData |  | Vector | 放key值 | n/a | n/a |  |
 | companyId | TW | String | 公司別 | n/a | n/a |  |
 | empid | admin | String | 員工編號 | n/a | n/a |  |
-| irragularDate | 20220615 | String | 日期 | YYYYmmdd | n/a |  |
+| irregularDate | 20220615 | String | 日期 | YYYYmmdd | n/a |  |
 
 
 
