@@ -19,7 +19,7 @@ POST
 |:----------|:-------------|:-----|:------------|
 | uid | 98599308101484732326 | String | 需透過appLogin取得
 | right | 51341911904173543336756162544864820 | String | 需透過appLogin取得 |
-| request | {empid:admin,companyId:TW,irragularYM:202207,viewType:A,beforeMins:30,afterMins:30,outMins:30} | Object |
+| request | {empid:admin,companyId:TW,irregularYM:202207,viewType:A,beforeMins:30,afterMins:30,outMins:30} | Object |
 
 ### JSON representation Case 1
 Here is a JSON representation of request.
@@ -30,7 +30,7 @@ Here is a JSON representation of request.
     "request":{
         "empid":["admin"],
         "companyId":"TW",
-        "irragularYM":"202207",
+        "irregularYM":"202207",     -- richard 修改request key值 irregularYM
         "viewType":"A",
         "beforeMins":30,
         "afterMins":30,
@@ -51,7 +51,7 @@ Here is a JSON representation of request.
 |:----------|:-------------|:-----|:------------|:------------|:------------|
 | empid | admin | Vector(String) | 員工編號 | Y | n/a |
 | companyId | TW | String | 公司代號 | Y | n/a |
-| irragularYM | 202207 | String | 查詢年月 | Y | AC(YYYYmm) |
+| irregularYM | 202207 | String | 查詢年月 | Y | AC(YYYYmm) |
 | viewType | A | String | 顯示種類 | Y | n/a |
 | beforeMins | 30 | Integer | 提前多久刷卡視為異常 | Y | n/a |
 | afterMins | 30 | Integer | 延後多久刷卡視為異常 | Y | n/a |
@@ -98,12 +98,12 @@ Here is a JSON representation of request.
                "format":"n/a",
                "id":"showType"                  --richard 新增欄位  showType
             },
-            "irragularYM":{
+            "irregularYM":{
                "name":"加班異常年月",
                "type":"string",
                "value":"202207",
                "format":"YYYYmm",
-               "id":"irragularYM"
+               "id":"irregularYM"
             }
          },
          "format":"n/a",
