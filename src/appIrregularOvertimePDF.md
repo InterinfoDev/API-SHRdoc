@@ -16,7 +16,7 @@ POST
 |:----------|:-------------|:-----|:------------|
 | uid | 98599308101484732326 | String | 需透過appLogin取得
 | right | 51341911904173543336756162544864820 | String | 需透過appLogin取得 |
-| request | {"empid":"admin","irragularYM":"202207","viewType":"A","beforeMins":30,"afterMins":30,"outMins":30} | Object | 查詢條件
+| request | {"empid":"admin","irregularYM":"202207","viewType":"A","beforeMins":30,"afterMins":30,"outMins":30} | Object | 查詢條件
 
 ### JSON representation
 
@@ -26,7 +26,7 @@ POST
    "right":"51341911904173543336756162544864820",
    "request":{
       "empid":"admin",
-      "irragularYM":"202207",
+      "irregularYM":"202207",          -- 修改request key值 irregularYM
       "viewType":"A",
       "beforeMins":30,
       "afterMins":30,
@@ -46,7 +46,7 @@ POST
 | Key | Value | Type | Description | Required | Format |
 |:----------|:-------------|:-----|:------------|:------------|:------------|
 | empid | admin | String | 員工編號 | N | n/a |
-| irragularYM | 202207 | String | 查詢年月 | N | n/a |
+| irregularYM | 202207 | String | 查詢年月 | N | n/a |
 | viewType | A | String | 顯示種類 | Y | n/a |
 | beforeMins | 30 | Integer | 提前多久刷卡視為異常 | Y | n/a |
 | afterMins | 30 | Integer | 延後多久刷卡視為異常 | Y | n/a |
