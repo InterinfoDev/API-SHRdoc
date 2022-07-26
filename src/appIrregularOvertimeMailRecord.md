@@ -54,7 +54,7 @@ Here is a JSON representation of request.
    "data":{
       "properties":{
          "format":{
-            "HHmm":"時間時分",
+            "HHmmss":"時間時分秒",
             "YYYYmmdd":"西元年月日",
             "n/a":"",
             "dayofweek":"星期"
@@ -106,8 +106,8 @@ Here is a JSON representation of request.
                   "sendTime":{
                      "name":"寄發時間",
                      "type":"string",
-                     "value":"0922",
-                     "format":"HHmm",
+                     "value":"092222",
+                     "format":"HHmmss",
                      "id":"sendTime"
                   },
                   "errorDate":{
@@ -178,7 +178,7 @@ Here is a JSON representation of request.
                      "name":"寄發時間",
                      "type":"string",
                      "value":"0923",
-                     "format":"HHmm",
+                     "format":"HHmmss",
                      "id":"sendTime"
                   },
                   "errorDate":{
