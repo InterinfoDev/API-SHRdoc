@@ -85,7 +85,7 @@ Here is a JSON representation of request.
                   "sendChief":{
                      "name":"寄發員工主管",
                      "type":"string",       --richard 修改欄位形態 string
-                     "value":"N",
+                     "value":"否",
                      "format":"n/a",
                      "id":"sendChief"
                   },
@@ -120,7 +120,7 @@ Here is a JSON representation of request.
                   "sendPersonnel":{
                      "name":"寄發員工本人",
                      "type":"string",          --richard 修改欄位形態 string
-                     "value":"Y",
+                     "value":"是",
                      "format":"n/a",
                      "id":"sendPersonnel"
                   },
@@ -156,7 +156,7 @@ Here is a JSON representation of request.
                   "sendChief":{
                      "name":"寄發員工主管",
                      "type":"string",
-                     "value":"N",
+                     "value":"否",
                      "format":"n/a",
                      "id":"sendChief"
                   },
@@ -191,7 +191,7 @@ Here is a JSON representation of request.
                   "sendPersonnel":{
                      "name":"寄發員工本人",
                      "type":"sTRING",
-                     "value":"N",
+                     "value":"是",
                      "format":"n/a",
                      "id":"sendPersonnel"
                   },
