@@ -91,7 +91,7 @@ Here is a JSON representation of request.
                   },
                   "sendDate":{
                      "name":"寄發日期",
-                     "type":"boolean",
+                     "type":"string",
                      "value":"20220708",
                      "format":"YYYYmmdd",
                      "id":"sendDate"
