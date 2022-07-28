@@ -169,7 +169,14 @@ Here is a JSON representation of request.
                      "value":"遲到1分鐘",
                      "type":"string",
                      "format":"n/a"
-                  }
+                  },
+		  "isNextDay": {
+		     "name": "是否跨日為出卡",
+		     "type": "boolean",
+		     "value": false,
+		     "id": "isAbnormal",
+		     "format": "n/a"
+		  }
                },
                "type":"object",
                "format":"n/a"
