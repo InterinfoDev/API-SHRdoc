@@ -836,15 +836,31 @@ Here is a JSON representation of request.
 ```
 
 ### HTTP Response when No Data 
-無資料則屬於 Code 500 錯誤，因為前面查詢都有資料了
+無資料則屬於正常範圍，正常來說可以沒有資料
 ```json
 {
-    "status": "fail",
-    "code": 500,
-    "message": [
-        "查無資料"
-    ],
-    "data": {}
+   "status":"success",
+   "message":[
+      "查無資料"
+   ],
+   "data":{
+      "flowAgentList":{
+         "name":"簽核代理人列表",
+         "type":"array",
+         "value":[],
+         "format":"n/a",
+         "id":"flowAgentList"
+      },
+      "properties":{
+         "format":{
+            "HHmm":"時間時分",
+            "hour":"小時",
+            "YYYYmmdd":"西元年月日",
+            "day":"天",
+            "n/a":""
+         }
+      }
+   }
 }
 ```
 
