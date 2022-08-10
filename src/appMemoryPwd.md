@@ -14,8 +14,6 @@ POST
 ### Request body
 | Key | Value | Type | Description |
 |:----------|:-------------|:-----|:------------|
-| uid | 98599308101484732326 | String | 需透過appLogin取得
-| right | 51341911904173543336756162544864820 | String | 需透過appLogin取得 |
 | request | {pwd:HcASuOGdIfNXmI0v,uid:admin} | Object | 查詢條件
 
 
@@ -23,8 +21,6 @@ POST
 Here is a JSON representation of request.
 ```json
 {
-    "uid":"98599308101484732326",
-    "right":"51341911904173543336756162544864820",
     "request":{ 
         'pwd':'HcASuOGdIfNXmI0v','uid':'admin'
     }
