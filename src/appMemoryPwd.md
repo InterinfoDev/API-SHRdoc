@@ -14,7 +14,7 @@ POST
 ### Request body
 | Key | Value | Type | Description |
 |:----------|:-------------|:-----|:------------|
-| request | {pwd:HcASuOGdIfNXmI0v,uid:admin} | Object | 查詢條件
+| request | {uid:admin,pwd:HcASuOGdIfNXmI0v} | Object | 查詢條件
 
 
 ### JSON representation
@@ -22,8 +22,8 @@ Here is a JSON representation of request.
 ```json
 {
    "request":{
-      "pwd":"HcASuOGdIfNXmI0v",
-      "uid":"admin"
+      "uid":"admin",
+      "pwd":"HcASuOGdIfNXmI0v"
    }
 }
 ```
