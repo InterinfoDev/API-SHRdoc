@@ -14,7 +14,7 @@ POST
 ### Request body
 | Key | Value | Type | Description |
 |:----------|:-------------|:-----|:------------|
-| request | {uid:admin,pwd:HcASuOGdIfNXmI0v} | Object | 查詢條件
+| request | {uid:admin,pwd:admin} | Object | 查詢條件
 
 
 ### JSON representation
@@ -23,7 +23,7 @@ Here is a JSON representation of request.
 {
    "request":{
       "uid":"admin",
-      "pwd":"HcASuOGdIfNXmI0v"
+      "pwd":"admin"
    }
 }
 ```
@@ -36,7 +36,7 @@ Here is a JSON representation of request.
 ### Request Properties
 | Key | Value | Type | Description | Required | Format |
 |:----------|:-------------|:-----|:------------|:------------|:------------|
-| pwd  | HcASuOGdIfNXmI0v | String | 登入密碼 | Y | n/a |
+| pwd  | admin | String | 登入密碼 | Y | n/a |
 | uid  | admin | String | 使用者 | Y | n/a |
 ### HTTP Response when Passowrd correct
 ```json
