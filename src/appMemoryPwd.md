@@ -21,9 +21,10 @@ POST
 Here is a JSON representation of request.
 ```json
 {
-    "request":{ 
-        'pwd':'HcASuOGdIfNXmI0v','uid':'admin'
-    }
+   "request":{
+      "pwd":"HcASuOGdIfNXmI0v",
+      "uid":"admin"
+   }
 }
 ```
 
