@@ -155,13 +155,6 @@ Here is a JSON representation of request.
                                     "format": "n/a",
                                     "id": "file"
                                 },
-                                "roomId": {
-                                    "name": "聊天室鍵值",
-                                    "type": "string",
-                                    "value": "123456789",
-                                    "format": "n/a",
-                                    "id": "roomId"
-                                },
                                 "sender": {
                                     "name": "發送人員",
                                     "type": "string",
