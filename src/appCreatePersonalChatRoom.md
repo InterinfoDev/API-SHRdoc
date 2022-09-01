@@ -75,7 +75,7 @@ Here is a JSON representation of request.
             "type": "object",
             "value": {
                 "roomType": {
-                    "name": "聊天室鍵值",
+                    "name": "聊天室類型",
                     "type": "string",
                     "value": "個人聊天室",
                     "format": "n/a",
@@ -197,7 +197,7 @@ Here is a JSON representation of request.
                                     "format": "YYYYmmdd",
                                     "id": "sendDate"
                                 },
-                                "isLoginId": {
+                                "isLoginId": {  --由此判斷訊息是顯示在左邊還是右邊
                                     "name": "是否為登入者",
                                     "type": "boolean",
                                     "value": true,
