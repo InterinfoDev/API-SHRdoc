@@ -16,7 +16,7 @@ POST
 |:----------|:-------------|:-----|:------------|
 | uid | 98599308101484732326 | String | 需透過appLogin取得
 | right | 51341911904173543336756162544864820 | String | 需透過appLogin取得 |
-| request | {'employeeId':'10002047'} | Object | 查詢條件
+| request | {'empid':'10002047'} | Object | 查詢條件
 
 ### JSON representation
 Here is a JSON representation of request.
@@ -25,7 +25,7 @@ Here is a JSON representation of request.
     "uid":"98599308101484732326",
     "right":"51341911904173543336756162544864820",
     "request":{
-        "employeeId":"10002047"
+        "empid":"10002047"
     }
 }
 ```
@@ -50,7 +50,7 @@ Here is a JSON representation of request.
 ### Request Properties
 | Key | Value | Type | Description | Required | Format |
 |:----------|:-------------|:-----|:------------|:------------|:------------|
-| employeeId | 10002047 | String | 員工編號 | Y | n/a |
+| empid | 10002047 | String | 員工編號 | Y | n/a |
 
 
 
