@@ -29,16 +29,6 @@ Here is a JSON representation of request.
     }
 }
 ```
-### textType
-| key | Description |
-|:---------|:------------|
-| text | 一般文字 |
-| img | 圖片 |
-| hyperlink | 超連結 |
-| file | 檔案 |
-| sysText | 系統訊息 |
-
-
 ### Properties
 | Property | Type | Description |
 |:---------|:-----|:------------|
