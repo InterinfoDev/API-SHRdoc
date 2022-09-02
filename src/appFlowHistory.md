@@ -528,7 +528,7 @@ Here is a JSON representation of request.
 
 ### HTTP Response when No Data 
 ```json
-{
+{   --kevin 修改查無資料格式，查無資料屬於正常
    "status":"success",
    "message":[
       "回傳成功"
@@ -556,7 +556,7 @@ Here is a JSON representation of request.
 
 ### HTTP Response when Failed
 ```json
-{   --kevin 修改查無資料格式，查無資料屬於正常
+{
     "status": "fail",
     "code": 500,
     "message": [
