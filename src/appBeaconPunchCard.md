@@ -16,7 +16,7 @@ POST
 |:----------|:-------------|:-----|:------------|
 | uid | 98599308101484732326 | String | 需透過appLogin取得
 | right | 51341911904173543336756162544864820 | String | 需透過appLogin取得 |
-| request | {"beaconId":"B5B182C7-EAB1-4988-AA99"} | Object | 打卡資訊
+| request | {"beaconId":"B5B182C7-EAB1-4988-AA99", "major":1, "minor":1} | Object | 打卡資訊
 
 ### JSON representation
 Here is a JSON representation of request.
@@ -25,10 +25,9 @@ Here is a JSON representation of request.
     "uid":"98599308101484732326",
     "right":"51341911904173543336756162544864820",
     "request":{
-        "beaconId":
-          {
-            "B5B182C7-EAB1-4988-AA99"
-          },
+        "beaconId":"B5B182C7-EAB1-4988-AA99",
+        "major":1,  --kevin 新增major
+        "minor":1    --kevin 新增minor
     }
 }
 ```
@@ -43,8 +42,9 @@ Here is a JSON representation of request.
 ### Request Properties
 | Key | Value | Type | Description | Required | Format |
 |:----------|:-------------|:-----|:------------|:------------|:------------|
-
 | beaconId | B5B182C7-EAB1-4988-AA99 | String | ID名稱 | Y | N/A |
+| major | 1 | Integer | major | Y | N/A |
+| minor | 1 | Integer | minor  | Y | N/A |
 
 ### HTTP Response when Successful
 ```json
