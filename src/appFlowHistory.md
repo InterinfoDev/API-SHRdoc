@@ -529,18 +529,34 @@ Here is a JSON representation of request.
 ### HTTP Response when No Data 
 ```json
 {
-    "status": "fail",
-    "code": 500,
-    "message": [
-        "查無資料"
-    ],
-    "data": {}
+   "status":"success",
+   "message":[
+      "回傳成功"
+   ],
+   "data":{
+      "properties":{
+         "format":{
+            "YYYYmmdd":"西元年月日",
+            "n/a":"",
+            "HHmmss":"時間時分秒"
+         }
+      },
+      "flowHistory":{
+         "name":"流程紀錄",
+         "type":"array",
+         "value":[
+            
+         ],
+         "format":"n/a",
+         "id":"flowHistory"
+      }
+   }
 }
 ```
 
 ### HTTP Response when Failed
 ```json
-{
+{   --kevin 修改查無資料格式，查無資料屬於正常
     "status": "fail",
     "code": 500,
     "message": [
