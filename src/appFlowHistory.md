@@ -531,7 +531,7 @@ Here is a JSON representation of request.
 {   --kevin 修改查無資料格式，查無資料屬於正常
    "status":"success",
    "message":[
-      "回傳成功"
+      "無流程紀錄"
    ],
    "data":{
       "properties":{
