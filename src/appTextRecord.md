@@ -26,7 +26,7 @@ Here is a JSON representation of request.
     "right":"51341911904173543336756162544864820",
     "request":{
         "roomId":"123456789",
-        "unReadTextCount":0
+        "haveUnReadText":0      --  richard 名稱修改 haveUnReadText
     }
 }
 ```
