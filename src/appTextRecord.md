@@ -87,7 +87,7 @@ Here is a JSON representation of request.
                               "fileUrl":{
                                  "name":"檔案路徑",
                                  "type":"string",
-                                 "value":".\\babylon\\files\\B2.1.請假單\\1662536227465_圖片1.png",
+                                 "value":"9764036988743946075692865908",
                                  "format":"n/a",
                                  "id":"fileUrl"
                               },
