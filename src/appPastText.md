@@ -44,6 +44,14 @@ Here is a JSON representation of request.
 | roomId | 123456789 | String | 員工編號 | Y | n/a |
 | textId | xxx | String | 取得最後一筆訊息的KEY | Y | n/a |
 
+### TextType
+| textType | Description |
+|:---------|:------------|
+| text | 一般訊息 |
+| sysText | 系統訊息 |
+| img | 圖片 |
+| file | 檔案 |
+
 
 ### HTTP Response when Successful
 ```json
