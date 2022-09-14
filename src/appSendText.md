@@ -60,7 +60,6 @@ Here is a JSON representation of request.
 | sysText | 系統訊息 |
 | img | 圖片 |
 | file | 檔案 |
-| location | 位置 |
 
 ### HTTP Response when Successful
 ```json
