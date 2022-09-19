@@ -77,12 +77,12 @@ Here is a JSON representation of request.
                "format":"n/a",
                "id":"roomType"
             },
-            "groupName":{
-               "name":"群組名稱",
+            "roomName":{    --kevin新增roomName
+               "name":"聊天室名稱",
                "type":"string",
                "value":"xxx",
                "format":"n/a",
-               "id":"groupName"
+               "id":"roomName"
             },
             "roomMember":{
                "name":"聊天室成員",
