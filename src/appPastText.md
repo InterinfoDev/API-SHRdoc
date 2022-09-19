@@ -131,6 +131,13 @@ Here is a JSON representation of request.
                            "format":"n/a",
                            "id":"isRead"
                         },
+                        "isFirst":{    --kevin 新增"是否為當日第一筆訊息"
+                           "name":"是否為當日第一筆訊息",
+                           "type":"boolean",
+                           "value":false,
+                           "format":"n/a",
+                           "id":"isFirst"
+                        },
                         "textType":{
                            "name":"訊息類型",
                            "type":"string",
@@ -230,6 +237,13 @@ Here is a JSON representation of request.
                            "value":false,
                            "format":"n/a",
                            "id":"isRead"
+                        },
+                        "isFirst":{    --kevin 新增"是否為當日第一筆訊息"
+                           "name":"是否為當日第一筆訊息",
+                           "type":"boolean",
+                           "value":false,
+                           "format":"n/a",
+                           "id":"isFirst"
                         },
                         "textType":{
                            "name":"訊息類型",
@@ -339,6 +353,13 @@ Here is a JSON representation of request.
                            "format":"n/a",
                            "id":"isRead"
                         },
+                        "isFirst":{    --kevin 新增"是否為當日第一筆訊息"
+                           "name":"是否為當日第一筆訊息",
+                           "type":"boolean",
+                           "value":false,
+                           "format":"n/a",
+                           "id":"isFirst"
+                        },
                         "textType":{
                            "name":"訊息類型",
                            "type":"string",
@@ -447,6 +468,13 @@ Here is a JSON representation of request.
                            "format":"n/a",
                            "id":"isRead"
                         },
+                        "isFirst":{    --kevin 新增"是否為當日第一筆訊息"
+                           "name":"是否為當日第一筆訊息",
+                           "type":"boolean",
+                           "value":false,
+                           "format":"n/a",
+                           "id":"isFirst"
+                        },
                         "textType":{
                            "name":"訊息類型",
                            "type":"string",
@@ -547,6 +575,13 @@ Here is a JSON representation of request.
                            "format":"n/a",
                            "id":"isRead"
                         },
+                        "isFirst":{    --kevin 新增"是否為當日第一筆訊息"
+                           "name":"是否為當日第一筆訊息",
+                           "type":"boolean",
+                           "value":false,
+                           "format":"n/a",
+                           "id":"isFirst"
+                        },
                         "textType":{
                            "name":"訊息類型",
                            "type":"string",
@@ -646,6 +681,13 @@ Here is a JSON representation of request.
                            "value":false,
                            "format":"n/a",
                            "id":"isRead"
+                        },
+                        "isFirst":{    --kevin 新增"是否為當日第一筆訊息"
+                           "name":"是否為當日第一筆訊息",
+                           "type":"boolean",
+                           "value":false,
+                           "format":"n/a",
+                           "id":"isFirst"
                         },
                         "textType":{
                            "name":"訊息類型",
@@ -755,6 +797,13 @@ Here is a JSON representation of request.
                            "format":"n/a",
                            "id":"isRead"
                         },
+                        "isFirst":{    --kevin 新增"是否為當日第一筆訊息"
+                           "name":"是否為當日第一筆訊息",
+                           "type":"boolean",
+                           "value":false,
+                           "format":"n/a",
+                           "id":"isFirst"
+                        },
                         "textType":{
                            "name":"訊息類型",
                            "type":"string",
@@ -855,6 +904,13 @@ Here is a JSON representation of request.
                            "format":"n/a",
                            "id":"isRead"
                         },
+                        "isFirst":{    --kevin 新增"是否為當日第一筆訊息"
+                           "name":"是否為當日第一筆訊息",
+                           "type":"boolean",
+                           "value":false,
+                           "format":"n/a",
+                           "id":"isFirst"
+                        },
                         "textType":{
                            "name":"訊息類型",
                            "type":"string",
@@ -954,6 +1010,13 @@ Here is a JSON representation of request.
                            "value":false,
                            "format":"n/a",
                            "id":"isRead"
+                        },
+                        "isFirst":{    --kevin 新增"是否為當日第一筆訊息"
+                           "name":"是否為當日第一筆訊息",
+                           "type":"boolean",
+                           "value":false,
+                           "format":"n/a",
+                           "id":"isFirst"
                         },
                         "textType":{
                            "name":"訊息類型",
