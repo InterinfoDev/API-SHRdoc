@@ -48,8 +48,8 @@ Here is a JSON representation of request.
 | groupName | xxx | String | 群組名稱 | Y | n/a |
 | empid | xxx | String | 群組人員 | Y | n/a |
 | groupPhoto |  | String | 群組圖片 |  | n/a |
-| fileName | test.jpg | String | 群組圖片 | N | n/a |
-| fileData |  | String | 群組圖片 | N | base64 |
+| fileName | test.jpg | String | 群組圖片 | Y | n/a |
+| fileData |  | String | 群組圖片 | Y | base64 |
 
 
 
