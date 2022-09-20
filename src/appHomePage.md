@@ -323,6 +323,13 @@ Here is a JSON representation of request.
       "format":"n/a",
       "id":"flow"
       },
+      "resetPincode":{	--kevin 新增resetPincode
+         "name":"重置PINCODE",
+         "type":"boolean",
+         "value":true,
+         "format":"n/a",
+         "id":"resetPincode"
+      },
       "properties":{
          "format":{ --lucas 拿掉YYYYmm
             "YYYYmmdd":"西元年月日",
