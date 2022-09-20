@@ -65,9 +65,76 @@ Here is a JSON representation of request.
             },
             "groupMember": {
               "name": "群組成員",
-              "type": "integer",
-              "value": 3,
-              "format": "count",
+              "type": "array",
+              "value": [
+                {
+                  "name": "員工資訊",
+                  "type": "object",
+                  "value": {
+                    "empid": {
+                      "name": "員工編號",
+                      "type": "string",
+                      "value": "00001",
+                      "format": "n/a",
+                      "id": "empid"
+                    },
+                    "empFullName": {
+                      "name": "員工中文姓名",
+                      "type": "string",
+                      "value": "報表一TEST1105",
+                      "format": "n/a",
+                      "id": "empFullName"
+                    }
+                  },
+                  "format": "n/a",
+                  "id": "employee"
+                },
+                {
+                  "name": "員工資訊",
+                  "type": "object",
+                  "value": {
+                    "empid": {
+                      "name": "員工編號",
+                      "type": "string",
+                      "value": "00002",
+                      "format": "n/a",
+                      "id": "empid"
+                    },
+                    "empFullName": {
+                      "name": "員工中文姓名",
+                      "type": "string",
+                      "value": "雙O菁",
+                      "format": "n/a",
+                      "id": "empFullName"
+                    }
+                  },
+                  "format": "n/a",
+                  "id": "employee"
+                },
+                {
+                  "name": "員工資訊",
+                  "type": "object",
+                  "value": {
+                    "empid": {
+                      "name": "員工編號",
+                      "type": "string",
+                      "value": "admin",
+                      "format": "n/a",
+                      "id": "empid"
+                    },
+                    "empFullName": {
+                      "name": "員工中文姓名",
+                      "type": "string",
+                      "value": "系統管理員",
+                      "format": "n/a",
+                      "id": "empFullName"
+                    }
+                  },
+                  "format": "n/a",
+                  "id": "employee"
+                }
+              ],
+              "format": "n/a",
               "id": "groupMember"
             },
             "unreadCount": {
