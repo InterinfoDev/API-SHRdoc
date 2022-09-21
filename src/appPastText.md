@@ -74,343 +74,6 @@ Here is a JSON representation of request.
          "type":"array",
          "value":[
             {
-               "name":"20220907(三)",
-               "type":"array",
-               "value":[
-                  {
-                     "name":"訊息資訊",
-                     "type":"object",
-                     "value":{
-                        "file":{
-                           "name":"檔案資訊",
-                           "type":"object",
-                           "value":{
-                              "fileType":{
-                                 "name":"檔案類型",
-                                 "type":"string",
-                                 "value":"image/png",
-                                 "format":"n/a",
-                                 "id":"fileType"
-                              },
-                              "fileUrl":{
-                                 "name":"檔案路徑",
-                                 "type":"string",
-                                 "value":"9764036988743946075692865908",
-                                 "format":"n/a",
-                                 "id":"fileUrl"
-                              },
-                              "fileName":{
-                                 "name":"檔案名稱",
-                                 "type":"string",
-                                 "value":"1662536227465_圖片1.png",
-                                 "format":"n/a",
-                                 "id":"fileName"
-                              }
-                           },
-                           "format":"n/a",
-                           "id":"file"
-                        },
-                        "sender":{
-                           "name":"發送人員",
-                           "type":"string",
-                           "value":"00001",
-                           "format":"n/a",
-                           "id":"sender"
-                        },
-                        "content":{
-                           "name":"內容",
-                           "type":"string",
-                           "value":".\\babylon\\files\\B2.1.請假單\\1662536227465_圖片1.png",
-                           "format":"n/a",
-                           "id":"content"
-                        },
-                        "isRead":{
-                           "name":"是否已讀",
-                           "type":"boolean",
-                           "value":false,
-                           "format":"n/a",
-                           "id":"isRead"
-                        },
-                        "isFirst":{    --kevin 新增"是否為當日第一筆訊息"
-                           "name":"是否為當日第一筆訊息",
-                           "type":"boolean",
-                           "value":false,
-                           "format":"n/a",
-                           "id":"isFirst"
-                        },
-                        "textType":{
-                           "name":"訊息類型",
-                           "type":"string",
-                           "value":"file",
-                           "format":"n/a",
-                           "id":"textType"
-                        },
-                        "sendTime":{
-                           "name":"發送時間",
-                           "type":"string",
-                           "value":"1023",
-                           "format":"HHmm",
-                           "id":"sendTime"
-                        },
-                        "sendDate":{
-                           "name":"發送日期",
-                           "type":"string",
-                           "value":"20220907",
-                           "format":"YYYYmmdd",
-                           "id":"sendDate"
-                        },
-                        "isLoginId":{
-                           "name":"是否為登入者",
-                           "type":"boolean",
-                           "value":false,
-                           "format":"n/a",
-                           "id":"isLoginId"
-                        },
-                        "readCount":{
-                           "name":"已讀數量",
-                           "type":"integer",
-                           "value":0,
-                           "format":"count",
-                           "id":"readCount"
-                        },
-                        "textId":{
-                           "name":"訊息鍵值",
-                           "type":"string",
-                           "value":"1119",
-                           "format":"n/a",
-                           "id":"textId"
-                        }
-                     },
-                     "format":"n/a",
-                     "id":"textInfo"
-                  },
-                  {
-                     "name":"訊息資訊",
-                     "type":"object",
-                     "value":{
-                        "file":{
-                           "name":"檔案資訊",
-                           "type":"object",
-                           "value":{
-                              "fileType":{
-                                 "name":"檔案類型",
-                                 "type":"string",
-                                 "value":"",
-                                 "format":"n/a",
-                                 "id":"fileType"
-                              },
-                              "fileUrl":{
-                                 "name":"檔案路徑",
-                                 "type":"string",
-                                 "value":"",
-                                 "format":"n/a",
-                                 "id":"fileUrl"
-                              },
-                              "fileName":{
-                                 "name":"檔案名稱",
-                                 "type":"string",
-                                 "value":"",
-                                 "format":"n/a",
-                                 "id":"fileName"
-                              }
-                           },
-                           "format":"n/a",
-                           "id":"file"
-                        },
-                        "sender":{
-                           "name":"發送人員",
-                           "type":"string",
-                           "value":"00001",
-                           "format":"n/a",
-                           "id":"sender"
-                        },
-                        "content":{
-                           "name":"內容",
-                           "type":"string",
-                           "value":".\\babylon\\files\\B2.1.請假單\\1662005650177_手動更新指令.txt",
-                           "format":"n/a",
-                           "id":"content"
-                        },
-                        "isRead":{
-                           "name":"是否已讀",
-                           "type":"boolean",
-                           "value":false,
-                           "format":"n/a",
-                           "id":"isRead"
-                        },
-                        "isFirst":{    --kevin 新增"是否為當日第一筆訊息"
-                           "name":"是否為當日第一筆訊息",
-                           "type":"boolean",
-                           "value":false,
-                           "format":"n/a",
-                           "id":"isFirst"
-                        },
-                        "textType":{
-                           "name":"訊息類型",
-                           "type":"string",
-                           "value":"file",
-                           "format":"n/a",
-                           "id":"textType"
-                        },
-                        "sendTime":{
-                           "name":"發送時間",
-                           "type":"string",
-                           "value":"1023",
-                           "format":"HHmm",
-                           "id":"sendTime"
-                        },
-                        "sendDate":{
-                           "name":"發送日期",
-                           "type":"string",
-                           "value":"20220907",
-                           "format":"YYYYmmdd",
-                           "id":"sendDate"
-                        },
-                        "isLoginId":{
-                           "name":"是否為登入者",
-                           "type":"boolean",
-                           "value":false,
-                           "format":"n/a",
-                           "id":"isLoginId"
-                        },
-                        "readCount":{
-                           "name":"已讀數量",
-                           "type":"integer",
-                           "value":0,
-                           "format":"count",
-                           "id":"readCount"
-                        },
-                        "textId":{
-                           "name":"訊息鍵值",
-                           "type":"string",
-                           "value":"1118",
-                           "format":"n/a",
-                           "id":"textId"
-                        }
-                     },
-                     "format":"n/a",
-                     "id":"textInfo"
-                  }
-               ],
-               "format":"n/a",
-               "id":"20220907"
-            },
-            {
-               "name":"20220906(二)",
-               "type":"array",
-               "value":[
-                  {
-                     "name":"訊息資訊",
-                     "type":"object",
-                     "value":{
-                        "file":{
-                           "name":"檔案資訊",
-                           "type":"object",
-                           "value":{
-                              "fileType":{
-                                 "name":"檔案類型",
-                                 "type":"string",
-                                 "value":"",
-                                 "format":"n/a",
-                                 "id":"fileType"
-                              },
-                              "fileUrl":{
-                                 "name":"檔案路徑",
-                                 "type":"string",
-                                 "value":"",
-                                 "format":"n/a",
-                                 "id":"fileUrl"
-                              },
-                              "fileName":{
-                                 "name":"檔案名稱",
-                                 "type":"string",
-                                 "value":"",
-                                 "format":"n/a",
-                                 "id":"fileName"
-                              }
-                           },
-                           "format":"n/a",
-                           "id":"file"
-                        },
-                        "sender":{
-                           "name":"發送人員",
-                           "type":"string",
-                           "value":"admin",
-                           "format":"n/a",
-                           "id":"sender"
-                        },
-                        "content":{
-                           "name":"內容",
-                           "type":"string",
-                           "value":".\\babylon\\files\\B2.1.請假單\\1662005650177_手動更新指令.txt",
-                           "format":"n/a",
-                           "id":"content"
-                        },
-                        "isRead":{
-                           "name":"是否已讀",
-                           "type":"boolean",
-                           "value":false,
-                           "format":"n/a",
-                           "id":"isRead"
-                        },
-                        "isFirst":{    --kevin 新增"是否為當日第一筆訊息"
-                           "name":"是否為當日第一筆訊息",
-                           "type":"boolean",
-                           "value":false,
-                           "format":"n/a",
-                           "id":"isFirst"
-                        },
-                        "textType":{
-                           "name":"訊息類型",
-                           "type":"string",
-                           "value":"file",
-                           "format":"n/a",
-                           "id":"textType"
-                        },
-                        "sendTime":{
-                           "name":"發送時間",
-                           "type":"string",
-                           "value":"1023",
-                           "format":"HHmm",
-                           "id":"sendTime"
-                        },
-                        "sendDate":{
-                           "name":"發送日期",
-                           "type":"string",
-                           "value":"20220906",
-                           "format":"YYYYmmdd",
-                           "id":"sendDate"
-                        },
-                        "isLoginId":{
-                           "name":"是否為登入者",
-                           "type":"boolean",
-                           "value":true,
-                           "format":"n/a",
-                           "id":"isLoginId"
-                        },
-                        "readCount":{
-                           "name":"已讀數量",
-                           "type":"integer",
-                           "value":0,
-                           "format":"count",
-                           "id":"readCount"
-                        },
-                        "textId":{
-                           "name":"訊息鍵值",
-                           "type":"string",
-                           "value":"1120",
-                           "format":"n/a",
-                           "id":"textId"
-                        }
-                     },
-                     "format":"n/a",
-                     "id":"textInfo"
-                  }
-               ],
-               "format":"n/a",
-               "id":"20220906"
-            },
-            {
                "name":"20220901(四)",
                "type":"array",
                "value":[
@@ -446,6 +109,13 @@ Here is a JSON representation of request.
                            },
                            "format":"n/a",
                            "id":"file"
+                        },
+                        "timestamp":{   --kevin新增時間戳
+                           "name":"時間戳",
+                           "type":"boolean",
+                           "value":"2022-09-13 16:54:03.93",
+                           "format":"n/a",
+                           "id":"timestamp"
                         },
                         "sender":{
                            "name":"發送人員",
@@ -554,6 +224,13 @@ Here is a JSON representation of request.
                            "format":"n/a",
                            "id":"file"
                         },
+                        "timestamp":{   --kevin新增時間戳
+                           "name":"時間戳",
+                           "type":"boolean",
+                           "value":"2022-09-13 16:54:03.93",
+                           "format":"n/a",
+                           "id":"timestamp"
+                        },
                         "sender":{
                            "name":"發送人員",
                            "type":"string",
@@ -660,6 +337,13 @@ Here is a JSON representation of request.
                            },
                            "format":"n/a",
                            "id":"file"
+                        },
+                        "timestamp":{   --kevin新增時間戳
+                           "name":"時間戳",
+                           "type":"boolean",
+                           "value":"2022-09-13 16:54:03.93",
+                           "format":"n/a",
+                           "id":"timestamp"
                         },
                         "sender":{
                            "name":"發送人員",
@@ -776,6 +460,13 @@ Here is a JSON representation of request.
                            "format":"n/a",
                            "id":"file"
                         },
+                        "timestamp":{   --kevin新增時間戳
+                           "name":"時間戳",
+                           "type":"boolean",
+                           "value":"2022-09-13 16:54:03.93",
+                           "format":"n/a",
+                           "id":"timestamp"
+                        },
                         "sender":{
                            "name":"發送人員",
                            "type":"string",
@@ -882,6 +573,13 @@ Here is a JSON representation of request.
                            },
                            "format":"n/a",
                            "id":"file"
+                        },
+                        "timestamp":{   --kevin新增時間戳
+                           "name":"時間戳",
+                           "type":"boolean",
+                           "value":"2022-09-13 16:54:03.93",
+                           "format":"n/a",
+                           "id":"timestamp"
                         },
                         "sender":{
                            "name":"發送人員",
@@ -990,6 +688,13 @@ Here is a JSON representation of request.
                            "format":"n/a",
                            "id":"file"
                         },
+                        "timestamp":{   --kevin新增時間戳
+                           "name":"時間戳",
+                           "type":"boolean",
+                           "value":"2022-09-13 16:54:03.93",
+                           "format":"n/a",
+                           "id":"timestamp"
+                        },
                         "sender":{
                            "name":"發送人員",
                            "type":"string",
@@ -1077,15 +782,30 @@ Here is a JSON representation of request.
 ```
 
 ### HTTP Response when No Data 
-無資料則屬於 Code 500 錯誤
+無資料則屬於正常範圍
 ```json
 {
-    "status": "fail",
-    "code": 500,
+    "status": "success",
     "message": [
-        "查無資料"
+        "回傳成功"
     ],
-    "data": {}
+    "data": {
+        "properties": {
+            "format": {
+                "base64": "Base64編碼格式",
+                "YYYYmmdd": "西元年月日",
+                "n/a": "",
+                "hyperlink": "超連結"
+            }
+        },
+        "textRecord": {
+            "name": "聊天紀錄",
+            "type": "array",
+            "value": [],
+            "format": "n/a",
+            "id": "textRecord"
+        }
+    }
 }
 ```
 
