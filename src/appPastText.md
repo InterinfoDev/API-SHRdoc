@@ -112,7 +112,7 @@ Here is a JSON representation of request.
                         },
                         "timestamp":{   --kevin新增時間戳
                            "name":"時間戳",
-                           "type":"boolean",
+                           "type":"string",
                            "value":"2022-09-13 16:54:03.93",
                            "format":"n/a",
                            "id":"timestamp"
@@ -226,7 +226,7 @@ Here is a JSON representation of request.
                         },
                         "timestamp":{   --kevin新增時間戳
                            "name":"時間戳",
-                           "type":"boolean",
+                           "type":"string",
                            "value":"2022-09-13 16:54:03.93",
                            "format":"n/a",
                            "id":"timestamp"
@@ -340,7 +340,7 @@ Here is a JSON representation of request.
                         },
                         "timestamp":{   --kevin新增時間戳
                            "name":"時間戳",
-                           "type":"boolean",
+                           "type":"string",
                            "value":"2022-09-13 16:54:03.93",
                            "format":"n/a",
                            "id":"timestamp"
@@ -462,7 +462,7 @@ Here is a JSON representation of request.
                         },
                         "timestamp":{   --kevin新增時間戳
                            "name":"時間戳",
-                           "type":"boolean",
+                           "type":"string",
                            "value":"2022-09-13 16:54:03.93",
                            "format":"n/a",
                            "id":"timestamp"
@@ -576,7 +576,7 @@ Here is a JSON representation of request.
                         },
                         "timestamp":{   --kevin新增時間戳
                            "name":"時間戳",
-                           "type":"boolean",
+                           "type":"string",
                            "value":"2022-09-13 16:54:03.93",
                            "format":"n/a",
                            "id":"timestamp"
@@ -690,7 +690,7 @@ Here is a JSON representation of request.
                         },
                         "timestamp":{   --kevin新增時間戳
                            "name":"時間戳",
-                           "type":"boolean",
+                           "type":"string",
                            "value":"2022-09-13 16:54:03.93",
                            "format":"n/a",
                            "id":"timestamp"
