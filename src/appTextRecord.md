@@ -110,6 +110,13 @@ Here is a JSON representation of request.
                            "format":"n/a",
                            "id":"file"
                         },
+                        "timestamp":{   --kevin新增時間戳
+                           "name":"時間戳",
+                           "type":"boolean",
+                           "value":"2022-09-13 16:54:03.93",
+                           "format":"n/a",
+                           "id":"timestamp"
+                        },
                         "sender":{
                            "name":"發送人員",
                            "type":"string",
@@ -216,6 +223,13 @@ Here is a JSON representation of request.
                            },
                            "format":"n/a",
                            "id":"file"
+                        },
+                        "timestamp":{   --kevin新增時間戳
+                           "name":"時間戳",
+                           "type":"boolean",
+                           "value":"2022-09-13 16:54:03.93",
+                           "format":"n/a",
+                           "id":"timestamp"
                         },
                         "sender":{
                            "name":"發送人員",
@@ -332,6 +346,13 @@ Here is a JSON representation of request.
                            "format":"n/a",
                            "id":"file"
                         },
+                        "timestamp":{   --kevin新增時間戳
+                           "name":"時間戳",
+                           "type":"boolean",
+                           "value":"2022-09-13 16:54:03.93",
+                           "format":"n/a",
+                           "id":"timestamp"
+                        },
                         "sender":{
                            "name":"發送人員",
                            "type":"string",
@@ -447,6 +468,13 @@ Here is a JSON representation of request.
                            "format":"n/a",
                            "id":"file"
                         },
+                        "timestamp":{   --kevin新增時間戳
+                           "name":"時間戳",
+                           "type":"boolean",
+                           "value":"2022-09-13 16:54:03.93",
+                           "format":"n/a",
+                           "id":"timestamp"
+                        },
                         "sender":{
                            "name":"發送人員",
                            "type":"string",
@@ -554,6 +582,13 @@ Here is a JSON representation of request.
                            "format":"n/a",
                            "id":"file"
                         },
+                        "timestamp":{   --kevin新增時間戳
+                           "name":"時間戳",
+                           "type":"boolean",
+                           "value":"2022-09-13 16:54:03.93",
+                           "format":"n/a",
+                           "id":"timestamp"
+                        },
                         "sender":{
                            "name":"發送人員",
                            "type":"string",
@@ -660,6 +695,13 @@ Here is a JSON representation of request.
                            },
                            "format":"n/a",
                            "id":"file"
+                        },
+                        "timestamp":{   --kevin新增時間戳
+                           "name":"時間戳",
+                           "type":"boolean",
+                           "value":"2022-09-13 16:54:03.93",
+                           "format":"n/a",
+                           "id":"timestamp"
                         },
                         "sender":{
                            "name":"發送人員",
@@ -776,6 +818,13 @@ Here is a JSON representation of request.
                            "format":"n/a",
                            "id":"file"
                         },
+                        "timestamp":{   --kevin新增時間戳
+                           "name":"時間戳",
+                           "type":"boolean",
+                           "value":"2022-09-13 16:54:03.93",
+                           "format":"n/a",
+                           "id":"timestamp"
+                        },
                         "sender":{
                            "name":"發送人員",
                            "type":"string",
@@ -882,6 +931,13 @@ Here is a JSON representation of request.
                            },
                            "format":"n/a",
                            "id":"file"
+                        },
+                        "timestamp":{   --kevin新增時間戳
+                           "name":"時間戳",
+                           "type":"boolean",
+                           "value":"2022-09-13 16:54:03.93",
+                           "format":"n/a",
+                           "id":"timestamp"
                         },
                         "sender":{
                            "name":"發送人員",
@@ -990,6 +1046,13 @@ Here is a JSON representation of request.
                            "format":"n/a",
                            "id":"file"
                         },
+                        "timestamp":{   --kevin新增時間戳
+                           "name":"時間戳",
+                           "type":"boolean",
+                           "value":"2022-09-13 16:54:03.93",
+                           "format":"n/a",
+                           "id":"timestamp"
+                        },
                         "sender":{
                            "name":"發送人員",
                            "type":"string",
@@ -1077,15 +1140,30 @@ Here is a JSON representation of request.
 ```
 
 ### HTTP Response when No Data 
-無資料則屬於 Code 500 錯誤
+無資料則屬於正常範圍
 ```json
 {
-    "status": "fail",
-    "code": 500,
+    "status": "success",
     "message": [
-        "查無資料"
+        "回傳成功"
     ],
-    "data": {}
+    "data": {
+        "properties": {
+            "format": {
+                "base64": "Base64編碼格式",
+                "YYYYmmdd": "西元年月日",
+                "n/a": "",
+                "hyperlink": "超連結"
+            }
+        },
+        "textRecord": {
+            "name": "聊天紀錄",
+            "type": "array",
+            "value": [],
+            "format": "n/a",
+            "id": "textRecord"
+        }
+    }
 }
 ```
 
