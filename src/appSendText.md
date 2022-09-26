@@ -16,7 +16,7 @@ POST
 |:----------|:-------------|:-----|:------------|
 | uid | 98599308101484732326 | String | 需透過appLogin取得
 | right | 51341911904173543336756162544864820 | String | 需透過appLogin取得 |
-| request | {'roomId':'123456789' ,'text':'' ,'textType':'img' ,'file':{'fileName':'kevin測試照片.jpg','fileData':'base64'}} | Object | 異動條件
+| request | {'roomId':'315f7d13-7d1f-401e-a208-b5cba320b8f1' ,'text':'' ,'textType':'img' ,'file':{'fileName':'kevin測試照片.jpg','fileData':'base64'}} | Object | 異動條件
 
 ### JSON representation Case 1
 Here is a JSON representation of request.
@@ -25,7 +25,7 @@ Here is a JSON representation of request.
    "uid":"98599308101484732326",
    "right":"51341911904173543336756162544864820",
    "request":{
-      "roomId":"123456789", 
+      "roomId":"315f7d13-7d1f-401e-a208-b5cba320b8f1", 
       "text":"",
       "textType":"img",
       "file":{
@@ -64,55 +64,69 @@ Here is a JSON representation of request.
 ### HTTP Response when Successful
 ```json
 {
-   "status":"success",
-   "message":[
-      "回傳成功"
-   ],
-   "data":{
-      "sendText":{
-         "name":"發送訊息",
-         "type":"object",
-         "value":{
-            "sendTime":{
-               "name":"發送訊息",
-               "type":"string",
-               "value":"1435",
-               "format":"HHmm",
-               "id":"sendTime"
-            },
-            "sendDate":{
-               "name":"發送日期",
-               "type":"string",
-               "value":"20220914",
-               "format":"YYYYmmdd",
-               "id":"sendDate"
-            },
-            "sendMesasge":{
-               "name":"發送訊息",
-               "type":"string",
-               "value":"發送成功",
-               "format":"n/a",
-               "id":"sendMesasge"
-            },
-            "isSend":{
-               "name":"是否發送",
-               "type":"boolean",
-               "value":true,
-               "format":"n/a",
-               "id":"isSend"
-            }
-         },
-         "format":"n/a",
-         "id":"sendText"
+  "status": "success",
+  "message": [
+    "回傳成功"
+  ],
+  "data": {
+    "sendText": {
+      "name": "發送訊息",
+      "type": "object",
+      "value": {
+        "sendTime": {
+          "name": "發送時間",
+          "type": "string",
+          "value": "1354",
+          "format": "HHmm",
+          "id": "sendTime"
+        },
+        "timestamp": {                 -- richard 新增資料 timestamp
+          "name": "時間戳",
+          "type": "string",
+          "value": "20220926135421220",
+          "format": "n/a",
+          "id": "timestamp"
+        },
+        "sendDate": {
+          "name": "發送日期",
+          "type": "string",
+          "value": "20220926",
+          "format": "YYYYmmdd",
+          "id": "sendDate"
+        },
+        "sendMesasge": {
+          "name": "發送訊息",
+          "type": "string",
+          "value": "發送成功",
+          "format": "n/a",
+          "id": "sendMesasge"
+        },
+        "isSend": {
+          "name": "是否發送",
+          "type": "boolean",
+          "value": true,
+          "format": "n/a",
+          "id": "isSend"
+        },
+        "textId": {               -- richard 新增資料 textId
+          "name": "訊息鍵值",
+          "type": "string",
+          "value": "4ffb1980-75bd-4ab0-b728-918829c63c46",
+          "format": "n/a",
+          "id": "textId"
+        }
       },
-      "properties":{
-         "format":{
-            "HHmm":"時間時分",
-            "YYYYmmdd":"西元年月日",
-            "n/a":""
-         }
+      "format": "n/a",
+      "id": "sendText"
+    },
+    "properties": {
+      "format": {
+        "HHmm": "時間時分",
+        "YYYYmmdd": "西元年月日",
+        "n/a": ""
       }
-   }
+    }
+  }
 }
 ```
 
