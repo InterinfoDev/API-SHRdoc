@@ -74,7 +74,7 @@ Here is a JSON representation of request.
          "type":"object",
          "value":{
             "sendTime":{
-               "name":"發送訊息",
+               "name":"發送時間",
                "type":"string",
                "value":"1435",
                "format":"HHmm",
