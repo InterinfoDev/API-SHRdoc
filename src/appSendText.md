@@ -94,12 +94,12 @@ Here is a JSON representation of request.
           "format": "YYYYmmdd",
           "id": "sendDate"
         },
-        "sendMesasge": {
+        "sendMessage": {
           "name": "發送訊息",
           "type": "string",
           "value": "發送成功",
           "format": "n/a",
-          "id": "sendMesasge"
+          "id": "sendMessage"
         },
         "isSend": {
           "name": "是否發送",
