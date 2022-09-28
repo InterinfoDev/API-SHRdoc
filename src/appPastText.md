@@ -110,6 +110,15 @@ Here is a JSON representation of request.
                            "format":"n/a",
                            "id":"file"
                         },
+                        "reader":{     --kevin新增已讀人員
+                           "name": "已讀人員",
+                           "type": "array",
+                           "value": [
+                               "00002"
+                           ],
+                           "format": "n/a",
+                           "id": "reader"
+                        },
                         "timestamp":{   --kevin新增時間戳
                            "name":"時間戳",
                            "type":"string",
@@ -224,6 +233,15 @@ Here is a JSON representation of request.
                            "format":"n/a",
                            "id":"file"
                         },
+                        "reader":{     --kevin新增已讀人員
+                           "name": "已讀人員",
+                           "type": "array",
+                           "value": [
+                               "00002"
+                           ],
+                           "format": "n/a",
+                           "id": "reader"
+                        },
                         "timestamp":{   --kevin新增時間戳
                            "name":"時間戳",
                            "type":"string",
@@ -337,6 +355,15 @@ Here is a JSON representation of request.
                            },
                            "format":"n/a",
                            "id":"file"
+                        },
+                        "reader":{     --kevin新增已讀人員
+                           "name": "已讀人員",
+                           "type": "array",
+                           "value": [
+                               "00002"
+                           ],
+                           "format": "n/a",
+                           "id": "reader"
                         },
                         "timestamp":{   --kevin新增時間戳
                            "name":"時間戳",
@@ -460,6 +487,15 @@ Here is a JSON representation of request.
                            "format":"n/a",
                            "id":"file"
                         },
+                        "reader":{     --kevin新增已讀人員
+                           "name": "已讀人員",
+                           "type": "array",
+                           "value": [
+                               "00002"
+                           ],
+                           "format": "n/a",
+                           "id": "reader"
+                        },
                         "timestamp":{   --kevin新增時間戳
                            "name":"時間戳",
                            "type":"string",
@@ -574,6 +610,15 @@ Here is a JSON representation of request.
                            "format":"n/a",
                            "id":"file"
                         },
+                        "reader":{     --kevin新增已讀人員
+                           "name": "已讀人員",
+                           "type": "array",
+                           "value": [
+                               "00002"
+                           ],
+                           "format": "n/a",
+                           "id": "reader"
+                        },
                         "timestamp":{   --kevin新增時間戳
                            "name":"時間戳",
                            "type":"string",
@@ -687,6 +732,15 @@ Here is a JSON representation of request.
                            },
                            "format":"n/a",
                            "id":"file"
+                        },
+                        "reader":{     --kevin新增已讀人員
+                           "name": "已讀人員",
+                           "type": "array",
+                           "value": [
+                               "00002"
+                           ],
+                           "format": "n/a",
+                           "id": "reader"
                         },
                         "timestamp":{   --kevin新增時間戳
                            "name":"時間戳",
