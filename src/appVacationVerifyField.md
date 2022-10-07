@@ -85,6 +85,7 @@ Here is a JSON representation of request.
 | FieldName | Description |
 |:---------|:-----|
 | startDate | 起始日期 |
+| specialDate | 特殊日期 |
 
 ### HTTP Response when Successful
 ```json
