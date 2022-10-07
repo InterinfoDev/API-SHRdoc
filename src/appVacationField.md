@@ -685,6 +685,28 @@ Here is a JSON representation of request.
                },
                "format":"n/a",
                "id":"specialDate"
+            },
+            "dateDesc": {   --20221007 kevin新增
+                "name": "日期說明",
+                "type": "string",
+                "value": {
+                    "fieldEditable": {
+                        "name": "開放編輯",
+                        "type": "boolean",
+                        "value": false,
+                        "format": "n/a",
+                        "id": "fieldEditable"
+                    },
+                    "fieldValue": {
+                        "name": "欄位預設值",
+                        "type": "string",
+                        "value": "產假：生產日期，可休截止日2022/12/01",
+                        "format": "n/a",
+                        "id": "fieldValue"
+                    }
+                },
+                "format": "n/a",
+                "id": "dateDesc"
             }
          },
          "format":"n/a",
