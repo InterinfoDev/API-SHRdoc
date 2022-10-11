@@ -92,7 +92,7 @@ Here is a JSON representation of request.
                            "name":"假期數量",
                            "type":"string",
                            "value":"32.00",
-                           "format":"小時",
+                           "format":"hour",
                            "id":"valueOfVaction"
                         }
                      },
@@ -121,7 +121,7 @@ Here is a JSON representation of request.
                            "name":"假期數量",
                            "type":"string",
                            "value":"0.00",
-                           "format":"小時",
+                           "format":"hour",
                            "id":"valueOfVaction"
                         }
                      },
@@ -150,7 +150,7 @@ Here is a JSON representation of request.
                            "name":"假期數量",
                            "type":"string",
                            "value":"32.00",
-                           "format":"小時",
+                           "format":"hour",
                            "id":"valueOfVaction"
                         }
                      },
@@ -187,7 +187,7 @@ Here is a JSON representation of request.
                            "name":"假期數量",
                            "type":"string",
                            "value":"無上限",
-                           "format":"小時",
+                           "format":"hour",
                            "id":"valueOfVaction"
                         }
                      },
@@ -216,7 +216,7 @@ Here is a JSON representation of request.
                            "name":"假期數量",
                            "type":"string",
                            "value":"0.00",
-                           "format":"小時",
+                           "format":"hour",
                            "id":"valueOfVaction"
                         }
                      },
@@ -245,7 +245,7 @@ Here is a JSON representation of request.
                            "name":"假期數量",
                            "type":"string",
                            "value":"無上限",
-                           "format":"小時",
+                           "format":"hour",
                            "id":"valueOfVaction"
                         }
                      },
@@ -282,7 +282,7 @@ Here is a JSON representation of request.
                            "name":"假期數量",
                            "type":"string",
                            "value":"0.00",
-                           "format":"小時",
+                           "format":"hour",
                            "id":"valueOfVaction"
                         }
                      },
@@ -311,7 +311,7 @@ Here is a JSON representation of request.
                            "name":"假期數量",
                            "type":"string",
                            "value":"0.00",
-                           "format":"小時",
+                           "format":"hour",
                            "id":"valueOfVaction"
                         }
                      },
@@ -340,7 +340,7 @@ Here is a JSON representation of request.
                            "name":"假期數量",
                            "type":"string",
                            "value":"0.00",
-                           "format":"小時",
+                           "format":"hour",
                            "id":"valueOfVaction"
                         }
                      },
