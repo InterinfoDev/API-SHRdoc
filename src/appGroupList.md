@@ -6,6 +6,7 @@
 https://114.34.125.246:8090/servlet/HRNative/appGroupList
 ```
 
+
 ### HTTP Request Mehod
 ```
 POST
