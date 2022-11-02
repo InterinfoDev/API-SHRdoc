@@ -82,6 +82,13 @@ Here is a JSON representation of request.
               "name": "聊天對象",
               "type": "object",
               "value": {
+                "photo":{
+                   "name":"員工照片",
+                   "type":"string",
+                   "value":"http://59.124.100.151:8090/servlet/jform?em_step=2&file=hrm8w.pkg&enc=93d23f3a4b3f055d5e5d46535051635956535a4c637d0d110e11d794b4dabeb8daa991630e0909080c08070b0c080e0b0760485e4b5a4d6b4a4d4b535a11554f58",
+                   "format":"n/a",
+                   "id":"photo"
+                },
                 "empFullName": {
                   "name": "員工中文姓名",
                   "type": "string",
