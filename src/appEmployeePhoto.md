@@ -61,20 +61,20 @@ Here is a JSON representation of request.
                "type":"string",
                "format":"n/a"
             },
-            "photo":{
+            "photo":{       -- richard 格式修改
                "id":"photo",
                "name":"員工照片",
-               "value":"",
-               "type":"string",
-               "format":"base64"
+               "value": "http://59.124.100.151:8090/servlet/jform?em_step=2&file=hrm8w.pkg&enc=93d23f3a4b3f055d5e5d46535051635956535a4c637d0d110e11d794b4dabeb8daa991630e0909080c08070b0c080e0b0760485e4b5a4d6b4a4d4b535a11554f58",
+              "format": "hyperlink",
+               "type":"string"
             }
          },
          "type":"object",
          "format":"n/a"
       },
-      "properties":{
+      "properties":{    -- richard 格式修改
          "format":{
-            "base64":"Base64資料庫格式",
+            "hyperlink":"超連結",
             "n/a":""
          }
       }
@@ -102,20 +102,20 @@ Here is a JSON representation of request.
                "type":"string",
                "format":"n/a"
             },
-            "photo":{
+            "photo":{       -- richard 格式修改
                "id":"photo",
                "name":"員工照片",
                "value":"",
                "type":"string",
-               "format":"base64"
+               "format":"hyperlink"
             }
          },
          "type":"object",
          "format":"n/a"
       },
-      "properties":{
+      "properties":{        -- richard 格式修改
          "format":{
-            "base64":"Base64資料庫格式",
+            "hyperlink":"超連結",
             "n/a":""
          }
       }
