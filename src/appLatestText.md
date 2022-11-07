@@ -256,11 +256,11 @@ Here is a JSON representation of request.
                            "format":"n/a",
                            "id":"sender"
                         },
-                        "content":{
+                        "content":{         --richard 格式修改
                            "name":"內容",
                            "type":"string",
-                           "value":"VBORw0KGgoAAA",
-                           "format":"base64",
+                           "value": "http://59.124.100.151:8090/servlet/jform?em_step=2&file=hrm8w.pkg&enc=93d23f3a4b3f055d5e5d46535051635956535a4c637d0d110e11d794b4dabeb8daa991630e0909080c08070b0c080e0b0760485e4b5a4d6b4a4d4b535a11554f58",
+                           "format": "hyperlink",
                            "id":"content"
                         },
                         "isRead":{
@@ -373,8 +373,8 @@ Here is a JSON representation of request.
                         "content":{
                            "name":"內容",
                            "type":"string",
-                           "value":"iVBORw0KG",
-                           "format":"base64",
+                           "value": "http://59.124.100.151:8090/servlet/jform?em_step=2&file=hrm8w.pkg&enc=93d23f3a4b3f055d5e5d46535051635956535a4c637d0d110e11d794b4dabeb8daa991630e0909080c08070b0c080e0b0760485e4b5a4d6b4a4d4b535a11554f58",
+                           "format": "hyperlink",
                            "id":"content"
                         },
                         "isRead":{
