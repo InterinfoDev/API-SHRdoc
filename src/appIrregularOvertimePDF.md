@@ -30,7 +30,7 @@ POST
       "viewType":"A",
       "beforeMins":30,
       "afterMins":30,
-      "outMins":30
+      "outMins":30 
    }
 }
 ```
