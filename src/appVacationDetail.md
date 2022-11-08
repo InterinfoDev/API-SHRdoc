@@ -93,7 +93,7 @@ Here is a JSON representation of request.
                "name":"欄位資訊",
                "type":"object",
                "value":{
-                  "fieldType":{
+                  "fieldType":{ 
                      "name":"欄位類型",
                      "type":"string",
                      "value":"text",
