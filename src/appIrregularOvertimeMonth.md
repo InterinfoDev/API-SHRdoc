@@ -29,7 +29,7 @@ Here is a JSON representation of request.
         "companyId":"TW",
         "irregularYM":"202207",     --  修改request key值 irregularYM
         "viewType":"A",
-        "beforeMins":30,
+        "beforeMins":30, 
         "afterMins":30,
         "outMins":30,
         "depNumber":[1]
