@@ -72,7 +72,7 @@ Here is a JSON representation of request.
          "type":"object",
          "format":"n/a"
       },
-      "properties":{    -- richard 格式修改
+      "properties":{    -- richard 格式修改 
          "format":{
             "hyperlink":"超連結",
             "n/a":""
