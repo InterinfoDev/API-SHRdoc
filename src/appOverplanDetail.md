@@ -105,7 +105,7 @@ Here is a JSON representation of request.
                      "format":"n/a",
                      "id":"fieldId"
                   },
-                  "fieldValue":{
+                  "fieldValue":{ 
                      "name":"欄位資料",
                      "type":"array",
                      "value":[
