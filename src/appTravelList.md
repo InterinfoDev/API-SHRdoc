@@ -19,7 +19,7 @@ POST
 | request | {travelYM:202203, empid:admin} | Object | 查詢條件(依據使用者所選擇要查看的員工及畫面上的年月取得)
 
 ### JSON representation
-Here is a JSON representation of request.
+Here is a JSON representation of request. 
 ```json
 {
     "uid":"98599308101484732326",
