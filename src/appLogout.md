@@ -51,7 +51,7 @@ Here is a JSON representation of request.
    ],
    "data":{
       "logout":{
-         "name":"登出記錄異動",
+         "name":"登出記錄異動", 
          "type":"object",
          "value":{
             "logoutTime":{
