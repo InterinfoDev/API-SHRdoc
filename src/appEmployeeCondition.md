@@ -78,7 +78,7 @@ Here is a JSON representation of request.
                      "value":"Lucas",
                      "type":"string",
                      "format":"n/a"
-                  },
+                  }, 
                   "depNumber":{
                      "id":"depNumber",
                      "name":"部門暗碼",
