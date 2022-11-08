@@ -52,7 +52,7 @@ Here is a JSON representation of request.
          "id":"empolyee",
          "name":"個人資訊",
          "value":{
-            "azureIP": {  --richard 增加 雲端IP
+            "azureIP": {  --richard 增加 azureIP
                 "name": "雲端IP",
                 "type": "string",
                 "value": "http://59.124.100.151:8090",
