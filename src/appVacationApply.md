@@ -90,7 +90,7 @@ Here is a JSON representation of request.
                            "value":"192.00",
                            "format":"hour",
                            "id":"valueOfVaction"
-                        }
+                        } 
                      },
                      "format":"n/a",
                      "id":"current"
