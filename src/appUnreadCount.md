@@ -82,7 +82,7 @@ Here is a JSON representation of request.
 
 ### HTTP Response when No Data 
 無資料則屬於 Code 500 錯誤
-```json
+```json 
 {
     "status": "fail",
     "code": 500,
