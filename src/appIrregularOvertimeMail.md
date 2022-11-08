@@ -59,7 +59,7 @@ Here is a JSON representation of request.
 | errorDate | 20220701 | String | 當筆資料的key值(日期) | Y | AC(YYYYmmdd) |
 
 
-### HTTP Response when Successful
+### HTTP Response when Successful 
 ```json
 {
    "status":"success",
