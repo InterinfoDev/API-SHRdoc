@@ -330,6 +330,13 @@ Here is a JSON representation of request.
          "format":"n/a",
          "id":"resetPincode"
       },
+      "azureIP": {	--richard 新增  azureIP
+	  "name": "雲端IP",
+	  "type": "string",
+	  "value": "http://59.124.100.151:8090",
+	  "format": "n/a",
+	  "id": "azureIP"
+      }
       "properties":{
          "format":{ --lucas 拿掉YYYYmm
             "YYYYmmdd":"西元年月日",
