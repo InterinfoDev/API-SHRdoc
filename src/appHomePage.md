@@ -217,9 +217,9 @@ Here is a JSON representation of request.
                   "picture":{
                      "id":"picture",
                      "name":"公告圖片",
-                     "value":"base64",  --lucas
+                     "value": "http://59.124.100.151:8090/servlet/jform?em_step=2&file=hrm8w.pkg&enc=93d23f3a4b3f055d5e5d46535051635956535a4c637d0d110e11d794b4dabeb8daa991630e0909080c08070b0c080e0b0760485e4b5a4d6b4a4d4b535a11554f58",
                      "type":"string",
-                     "format":"base64"  --lucas
+                     "format": "hyperlink",
                   },
                   "publisher":{
                      "id":"publisher",
@@ -382,6 +382,7 @@ Board 或 Attend 無資料，但Board無資料則隱藏該區塊，但整體來�
       "properties":{
          "format":{ --lucas 拿掉YYYYmm
             "YYYYmmdd":"西元年月日",
+	    "hyperlink":"超連結",
             "HHmm":"時間時分",
             "n/a":""
          }
