@@ -58,13 +58,6 @@ Here is a JSON representation of request.
                "id":"20211101",
                "name":"20211101考勤資訊",
                "value":{
-                   "photo": {
-                     "name": "員工照片",
-                     "type": "string",
-                     "value": "http://59.124.100.151:8090/servlet/jform?em_step=2&file=hrm8w.pkg&enc=93d23f3a4b3f1a574d52104f57504b50100e0909070f0b0b0607070b0b07600e0b0f070f060e0e0d114f5158",
-                     "format": "hyperlink",
-                     "id": "photo"
-                  },
                   "workDate":{
                      "id":"workDate",
                      "name":"出勤日期",
@@ -138,7 +131,6 @@ Here is a JSON representation of request.
       },
       "properties":{
          "format":{
-            "hyperlink":"超連結",
             "YYYYmmdd":"西元年月日", --lucas 增加
             "HHmm":"時間時分",  --lucas 描述更改
             "n/a":""
