@@ -54,6 +54,7 @@ POST
          "format":{
             "HHmm":"時間時分",
             "YYYYmmdd":"西元年月日",
+            "hyperlink":"超連結"
             "n/a":""
          }
       },
