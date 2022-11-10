@@ -4,7 +4,7 @@ HR Native Web API Document
 
 ### HTTP Request
 ```
-https://114.34.125.246:8090/servlet/HRNative/appAttendDetail
+http://114.34.125.246:8090/servlet/HRNative/appAttendDetail
 ```
 
 ### HTTP Request Mehod
