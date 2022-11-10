@@ -66,6 +66,13 @@ Here is a JSON representation of request.
                "type":"string",
                "format":"n/a"
             },
+            "azureFile": { --richard 新增 azureFile
+                "name": "雲端PKG檔",
+                "type": "string",
+                "value": "hrm8w.pkg",
+                "format": "n/a",
+                "id": "azureFile"
+            },
             "empFullName":{ --lucas
                "id":"empFullName",
                "name":"員工姓名",
