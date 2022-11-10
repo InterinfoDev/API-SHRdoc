@@ -28,7 +28,7 @@ Here is a JSON representation of request.
         "travelYM":"202203", 
         "companyId":"TW",
         "depNumber":[5], 
-        "empid":["admin"]
+        "empid":["admin"] 
     }
 }
 ```
