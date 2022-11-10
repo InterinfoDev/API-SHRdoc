@@ -106,11 +106,11 @@ POST
                "format":"n/a",
                "id":"category"
             },
-            "picture":{
+            "picture":{         --richard 修改格式
                "name":"公告圖片",
                "type":"string",
-               "value":"",
-               "format":"base64",
+               "value": "http://59.124.100.151:8090/servlet/jform?em_step=2&file=hrm8w.pkg&enc=93d23f3a4b3f055d5e5d46535051635956535a4c637d0d110e11d794b4dabeb8daa991630e0909080c08070b0c080e0b0760485e4b5a4d6b4a4d4b535a11554f58",
+               "format": "hyperlink",
                "id":"picture"
             },
             "publishTime":{
