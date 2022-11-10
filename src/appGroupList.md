@@ -199,6 +199,7 @@ Here is a JSON representation of request.
       "format": {
         "HHmm": "時間時分",
         "YYYYmmdd": "西元年月日",
+        "hyperlink":"超連結",
         "count": "數量",
         "n/a": ""
       }
