@@ -57,6 +57,13 @@ Here is a JSON representation of request.
                "name":"beacon資訊",
                "type":"object",
                "value":{
+                  "place": {
+                     "name": "beacon設定位置",
+                     "type": "string",
+                     "value": "雲林",
+                     "format": "n/a",
+                     "id": "place"
+                  },
                   "beaconMajor":{
                      "name":"主要",
                      "type":"integer",   --kevin改成integer
@@ -139,7 +146,7 @@ Here is a JSON representation of request.
 ```
 
 ### HTTP Response when No Data 
-無資料則屬於正常範圍，正常來說可以沒有資料
+無資料則屬於正常範圍，正常來說可以沒有資料,但在APP裡面需返回功能頁面
 ```json
 {
    "status":"success",
