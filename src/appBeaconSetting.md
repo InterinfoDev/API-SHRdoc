@@ -100,6 +100,13 @@ Here is a JSON representation of request.
                "name":"beacon資訊",
                "type":"object",
                "value":{
+                  "place": {
+                     "name": "beacon設定位置",
+                     "type": "string",
+                     "value": "台北",
+                     "format": "n/a",
+                     "id": "place"
+                  },
                   "beaconMajor":{
                      "name":"主要",
                      "type":"integer",   --kevin改成integer
