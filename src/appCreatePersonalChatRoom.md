@@ -68,6 +68,13 @@ Here is a JSON representation of request.
                "format":"n/a",
                "id":"roomType"
             },
+            "haveUnReadText":{  --kevin 新增haveUnReadText
+               "name":"是否有未讀訊息",
+               "type":"boolean",
+               "value":false,
+               "format":"n/a",
+               "id":"haveUnReadText"
+            },
             "roomMember":{
                "name":"聊天室成員",
                "type":"string",
