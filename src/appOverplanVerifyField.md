@@ -73,6 +73,7 @@ Here is a JSON representation of request.
 | endTime | 結束時間 |
 | payType | 給付方式 |
 | isEat | 是否用餐 |
+| specifyHour | 指定用餐時間 |
 
 ### HTTP Response when Successful
 ```json
