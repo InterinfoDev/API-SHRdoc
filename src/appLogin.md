@@ -59,6 +59,13 @@ Here is a JSON representation of request.
                 "format": "n/a",
                 "id": "azureIP"
             },
+            "haveDada": {  --kevin 增加 haveDada
+                "name": "是否有噠噠功能",
+                "type": "boolean",
+                "value": true,
+                "format": "n/a",
+                "id": "haveDada"
+            },
             "empid":{
                "id":"empid",
                "name":"員工編號",
