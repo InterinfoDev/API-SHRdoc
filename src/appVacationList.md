@@ -25,7 +25,7 @@ Here is a JSON representation of request.
     "uid":"98599308101484732326",
     "right":"51341911904173543336756162544864820",
     "request":{
-        "vacationCode":"00",    --kevin 改名vacationCode
+        "hcode":"00",
         "vacationYM":"202201", 
         "empid":"admin"
     }
