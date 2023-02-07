@@ -283,6 +283,13 @@ Here is a JSON representation of request.
                               "type":"string",
                               "format":"HHmm"
                            }
+                            "cardType": {
+                              "name": "刷卡卡別",
+                              "type": "string",
+                              "value": "進",
+                              "format": "n/a",
+                              "id": "cardType"
+                           }
                         }
                      ],
                      "type":"array",
