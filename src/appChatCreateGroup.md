@@ -1,9 +1,9 @@
-# appCreateGroupChatRoom
+# appChatCreateGroup
 創建群組聊天室
 
 ### HTTP Request
 ```
-https://114.34.125.246:8090/servlet/HRNative/appCreateGroupChatRoom
+https://114.34.125.246:8090/servlet/HRNative/appChatCreateGroup
 ```
 
 ### HTTP Request Mehod
@@ -16,7 +16,7 @@ POST
 |:----------|:-------------|:-----|:------------|
 | uid | 98599308101484732326 | String | 需透過appLogin取得
 | right | 51341911904173543336756162544864820 | String | 需透過appLogin取得 |
-| request | {'groupName':'xxx', 'empid':['xxx'], 'groupPhoto':{'fileName':'xxx', 'fileData':'base64'}} | Object | 查詢條件
+| request | {'groupName':'xxx', 'employeeId':['xxx'], 'groupPhoto':{'fileName':'xxx', 'fileData':'base64'}} | Object | 查詢條件
 
 ### JSON representation
 Here is a JSON representation of request.
@@ -26,7 +26,7 @@ Here is a JSON representation of request.
     "right":"51341911904173543336756162544864820",
     "request":{
       "groupName":"xxx", 
-      "empid":["admin"],
+      "employeeId":["admin"],
       "groupPhoto":{
         "fileName":"kevin.jpg",
         "fileData":"base64"
@@ -46,7 +46,7 @@ Here is a JSON representation of request.
 | Key | Value | Type | Description | Required | Format |
 |:----------|:-------------|:-----|:------------|:------------|:------------|
 | groupName | xxx | String | 群組名稱 | Y | n/a |
-| empid | xxx | String | 群組人員 | Y | n/a |
+| employeeId | xxx | String | 群組人員 | Y | n/a |
 | groupPhoto |  | String | 群組圖片 |  | n/a |
 | fileName | test.jpg | String | 群組圖片 | Y | n/a |
 | fileData |  | String | 群組圖片 | Y | base64 |
@@ -77,7 +77,7 @@ Here is a JSON representation of request.
                "format":"n/a",
                "id":"roomType"
             },
-            "roomName":{    --kevin新增roomName
+            "roomName":{
                "name":"聊天室名稱",
                "type":"string",
                "value":"xxx",
