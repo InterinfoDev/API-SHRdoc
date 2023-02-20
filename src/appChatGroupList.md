@@ -1,9 +1,9 @@
-# appGroupList
+# appChatGroupList
 群組聊天室資料列表
 
 ### HTTP Request
 ```
-https://114.34.125.246:8090/servlet/HRNative/appGroupList
+https://114.34.125.246:8090/servlet/HRNative/appChatGroupList
 ```
 
 
@@ -72,12 +72,12 @@ Here is a JSON representation of request.
                   "name": "員工資訊",
                   "type": "object",
                   "value": {
-                    "empid": {
+                    "employeeId": {
                       "name": "員工編號",
                       "type": "string",
                       "value": "00001",
                       "format": "n/a",
-                      "id": "empid"
+                      "id": "employeeId"
                     },
                     "empFullName": {
                       "name": "員工中文姓名",
@@ -94,12 +94,12 @@ Here is a JSON representation of request.
                   "name": "員工資訊",
                   "type": "object",
                   "value": {
-                    "empid": {
+                    "employeeId": {
                       "name": "員工編號",
                       "type": "string",
                       "value": "00002",
                       "format": "n/a",
-                      "id": "empid"
+                      "id": "employeeId"
                     },
                     "empFullName": {
                       "name": "員工中文姓名",
@@ -116,12 +116,12 @@ Here is a JSON representation of request.
                   "name": "員工資訊",
                   "type": "object",
                   "value": {
-                    "empid": {
+                    "employeeId": {
                       "name": "員工編號",
                       "type": "string",
                       "value": "admin",
                       "format": "n/a",
-                      "id": "empid"
+                      "id": "employeeId"
                     },
                     "empFullName": {
                       "name": "員工中文姓名",
@@ -145,11 +145,10 @@ Here is a JSON representation of request.
               "format": "count",
               "id": "unreadCount"
             },
-            "groupPhoto": {         -- richard 修改格式
+            "groupPhoto": {
               "name": "群組照片",
               "type": "string",
-              "value": "http://59.124.100.151:8090/servlet/jform?em_step=2&file=hrm8w.pkg&enc=93d23f3a4b3f055d5e5d46535051635956535a4c637d0d110e11d794b4dabeb8daa991630e0909080c08070b0c080e0b0760485e4b5a4d6b4a4d4b535a11554f58",
-              "format": "hyperlink",
+              "value": "url",
               "id": "groupPhoto"
             },
             "content": {
@@ -209,15 +208,22 @@ Here is a JSON representation of request.
 ```
 
 ### HTTP Response when No Data 
-無資料則屬於 Code 500 錯誤
+無資料則屬於正常現象
 ```json
 {
-    "status": "fail",
-    "code": 500,
+    "status": "success",
     "message": [
         "查無資料"
     ],
-    "data": {}
+    "data": {
+        "groupList": {
+            "name": "群組聊天室列表",
+            "type": "array",
+            "value": [],
+            "format": "n/a",
+            "id": "groupList"
+        }
+    }
 }
 ```
 
