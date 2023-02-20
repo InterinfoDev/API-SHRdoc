@@ -1,9 +1,9 @@
-# appUnreadCount
+# appChatUnread
 聊天室未讀訊息(群組+個人)
 
 ### HTTP Request
 ```
-https://114.34.125.246:8090/servlet/HRNative/appUnreadCount
+https://114.34.125.246:8090/servlet/HRNative/appChatUnread
 ```
 
 ### HTTP Request Mehod
