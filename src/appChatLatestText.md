@@ -74,265 +74,236 @@ Here is a JSON representation of request.
          "type":"array",
          "value":[
             {
-               "name":"20220901(四)",
-               "type":"array",
-               "value":[
-                  {
-                     "name":"訊息資訊",
+               "name":"訊息資訊",
+               "type":"object",
+               "value":{
+                  "file":{
+                     "name":"檔案資訊",
                      "type":"object",
                      "value":{
-                        "file":{
-                           "name":"檔案資訊",
-                           "type":"object",
-                           "value":{
-                              "fileType":{
-                                 "name":"檔案類型",
-                                 "type":"string",
-                                 "value":"",
-                                 "format":"n/a",
-                                 "id":"fileType"
-                              },
-                              "fileUrl":{
-                                 "name":"檔案路徑",
-                                 "type":"string",
-                                 "value":"",
-                                 "format":"n/a",
-                                 "id":"fileUrl"
-                              },
-                              "fileName":{
-                                 "name":"檔案名稱",
-                                 "type":"string",
-                                 "value":"",
-                                 "format":"n/a",
-                                 "id":"fileName"
-                              }
-                           },
-                           "format":"n/a",
-                           "id":"file"
-                        },
-                        "reader":{
-                           "name": "已讀人員",
-                           "type": "array",
-                           "value": [
-                               "00002"
-                           ],
-                           "format": "n/a",
-                           "id": "reader"
-                        },
-                        "timestamp":{
-                           "name":"時間戳",
+                        "fileType":{
+                           "name":"檔案類型",
                            "type":"string",
-                           "value":"20230220115252771",
+                           "value":"",
                            "format":"n/a",
-                           "id":"timestamp"
+                           "id":"fileType"
                         },
-                        "sender":{
-                           "name":"發送人員",
+                        "fileUrl":{
+                           "name":"檔案路徑",
                            "type":"string",
-                           "value":"admin",
+                           "value":"",
                            "format":"n/a",
-                           "id":"sender"
+                           "id":"fileUrl"
                         },
-                        "content":{
-                           "name":"內容",
+                        "fileName":{
+                           "name":"檔案名稱",
                            "type":"string",
-                           "value": "url",
-                           "id":"content"
-                        },
-                        "isRead":{
-                           "name":"是否已讀",
-                           "type":"boolean",
-                           "value":false,
+                           "value":"",
                            "format":"n/a",
-                           "id":"isRead"
-                        },
-                        "isFirst":{
-                           "name":"是否為當日第一筆訊息",
-                           "type":"boolean",
-                           "value":false,
-                           "format":"n/a",
-                           "id":"isFirst"
-                        },
-                        "textType":{
-                           "name":"訊息類型",
-                           "type":"string",
-                           "value":"img",
-                           "format":"n/a",
-                           "id":"textType"
-                        },
-                        "sendTime":{
-                           "name":"發送時間",
-                           "type":"string",
-                           "value":"1023",
-                           "format":"HHmm",
-                           "id":"sendTime"
-                        },
-                        "sendDate":{
-                           "name":"發送日期",
-                           "type":"string",
-                           "value":"20220901",
-                           "format":"YYYYmmdd",
-                           "id":"sendDate"
-                        },
-                        "isLoginId":{
-                           "name":"是否為登入者",
-                           "type":"boolean",
-                           "value":true,
-                           "format":"n/a",
-                           "id":"isLoginId"
-                        },
-                        "readCount":{
-                           "name":"已讀數量",
-                           "type":"integer",
-                           "value":0,
-                           "format":"count",
-                           "id":"readCount"
-                        },
-                        "textId":{
-                           "name":"訊息鍵值",
-                           "type":"string",
-                           "value":"1115",
-                           "format":"n/a",
-                           "id":"textId"
+                           "id":"fileName"
                         }
                      },
                      "format":"n/a",
-                     "id":"textInfo"
+                     "id":"file"
+                  },
+                  "sender":{
+                     "name":"發送人員",
+                     "type":"string",
+                     "value":"admin",
+                     "format":"n/a",
+                     "id":"sender"
+                  },
+                  "reader":{
+                     "name":"已讀人員",
+                     "type":"array",
+                     "value":[
+                        
+                     ],
+                     "format":"n/a",
+                     "id":"reader"
+                  },
+                  "timestamp":{
+                     "name":"時間戳",
+                     "type":"string",
+                     "value":"20230303121800605",
+                     "format":"n/a",
+                     "id":"timestamp"
+                  },
+                  "content":{
+                     "name":"內容",
+                     "type":"string",
+                     "value":"2",
+                     "format":"n/a",
+                     "id":"content"
+                  },
+                  "isRead":{
+                     "name":"是否已讀",
+                     "type":"boolean",
+                     "value":false,
+                     "format":"n/a",
+                     "id":"isRead"
+                  },
+                  "textType":{
+                     "name":"訊息類型",
+                     "type":"string",
+                     "value":"text",
+                     "format":"n/a",
+                     "id":"textType"
+                  },
+                  "sendTime":{
+                     "name":"發送時間",
+                     "type":"string",
+                     "value":"1218",
+                     "format":"HHmm",
+                     "id":"sendTime"
+                  },
+                  "sendDate":{
+                     "name":"發送日期",
+                     "type":"string",
+                     "value":"20230303",
+                     "format":"YYYYmmdd",
+                     "id":"sendDate"
+                  },
+                  "isLoginId":{
+                     "name":"是否為登入者",
+                     "type":"boolean",
+                     "value":true,
+                     "format":"n/a",
+                     "id":"isLoginId"
+                  },
+                  "readCount":{
+                     "name":"已讀數量",
+                     "type":"integer",
+                     "value":0,
+                     "format":"count",
+                     "id":"readCount"
+                  },
+                  "textId":{
+                     "name":"訊息鍵值",
+                     "type":"string",
+                     "value":"0c333dde-a83e-453e-9352-81a5177c1139",
+                     "format":"n/a",
+                     "id":"textId"
                   }
-               ],
+               },
                "format":"n/a",
-               "id":"20220901"
+               "id":"textInfo"
             },
             {
-               "name":"20220831(三)",
-               "type":"array",
-               "value":[
-                  {
-                     "name":"訊息資訊",
+               "name":"訊息資訊",
+               "type":"object",
+               "value":{
+                  "file":{
+                     "name":"檔案資訊",
                      "type":"object",
                      "value":{
-                        "file":{
-                           "name":"檔案資訊",
-                           "type":"object",
-                           "value":{
-                              "fileType":{
-                                 "name":"檔案類型",
-                                 "type":"string",
-                                 "value":"",
-                                 "format":"n/a",
-                                 "id":"fileType"
-                              },
-                              "fileUrl":{
-                                 "name":"檔案路徑",
-                                 "type":"string",
-                                 "value":"",
-                                 "format":"n/a",
-                                 "id":"fileUrl"
-                              },
-                              "fileName":{
-                                 "name":"檔案名稱",
-                                 "type":"string",
-                                 "value":"",
-                                 "format":"n/a",
-                                 "id":"fileName"
-                              }
-                           },
-                           "format":"n/a",
-                           "id":"file"
-                        },
-                        "reader":{
-                           "name": "已讀人員",
-                           "type": "array",
-                           "value": [
-                               "00002"
-                           ],
-                           "format": "n/a",
-                           "id": "reader"
-                        },
-                        "timestamp":{
-                           "name":"時間戳",
+                        "fileType":{
+                           "name":"檔案類型",
                            "type":"string",
-                           "value":"20230220115252771",
+                           "value":"",
                            "format":"n/a",
-                           "id":"timestamp"
+                           "id":"fileType"
                         },
-                        "sender":{
-                           "name":"發送人員",
+                        "fileUrl":{
+                           "name":"檔案路徑",
                            "type":"string",
-                           "value":"admin",
+                           "value":"",
                            "format":"n/a",
-                           "id":"sender"
+                           "id":"fileUrl"
                         },
-                        "content":{
-                           "name":"內容",
+                        "fileName":{
+                           "name":"檔案名稱",
                            "type":"string",
-                           "value":"吃噗噗",
+                           "value":"",
                            "format":"n/a",
-                           "id":"content"
-                        },
-                        "isRead":{
-                           "name":"是否已讀",
-                           "type":"boolean",
-                           "value":false,
-                           "format":"n/a",
-                           "id":"isRead"
-                        },
-                        "isFirst":{
-                           "name":"是否為當日第一筆訊息",
-                           "type":"boolean",
-                           "value":false,
-                           "format":"n/a",
-                           "id":"isFirst"
-                        },
-                        "textType":{
-                           "name":"訊息類型",
-                           "type":"string",
-                           "value":"text",
-                           "format":"n/a",
-                           "id":"textType"
-                        },
-                        "sendTime":{
-                           "name":"發送時間",
-                           "type":"string",
-                           "value":"1607",
-                           "format":"HHmm",
-                           "id":"sendTime"
-                        },
-                        "sendDate":{
-                           "name":"發送日期",
-                           "type":"string",
-                           "value":"20220831",
-                           "format":"YYYYmmdd",
-                           "id":"sendDate"
-                        },
-                        "isLoginId":{
-                           "name":"是否為登入者",
-                           "type":"boolean",
-                           "value":true,
-                           "format":"n/a",
-                           "id":"isLoginId"
-                        },
-                        "readCount":{
-                           "name":"已讀數量",
-                           "type":"integer",
-                           "value":0,
-                           "format":"count",
-                           "id":"readCount"
-                        },
-                        "textId":{
-                           "name":"訊息鍵值",
-                           "type":"string",
-                           "value":"1114",
-                           "format":"n/a",
-                           "id":"textId"
+                           "id":"fileName"
                         }
                      },
                      "format":"n/a",
-                     "id":"textInfo"
+                     "id":"file"
+                  },
+                  "sender":{
+                     "name":"發送人員",
+                     "type":"string",
+                     "value":"admin",
+                     "format":"n/a",
+                     "id":"sender"
+                  },
+                  "reader":{
+                     "name":"已讀人員",
+                     "type":"array",
+                     "value":[
+                        
+                     ],
+                     "format":"n/a",
+                     "id":"reader"
+                  },
+                  "timestamp":{
+                     "name":"時間戳",
+                     "type":"string",
+                     "value":"20230303121728232",
+                     "format":"n/a",
+                     "id":"timestamp"
+                  },
+                  "content":{
+                     "name":"內容",
+                     "type":"string",
+                     "value":"1",
+                     "format":"n/a",
+                     "id":"content"
+                  },
+                  "isRead":{
+                     "name":"是否已讀",
+                     "type":"boolean",
+                     "value":false,
+                     "format":"n/a",
+                     "id":"isRead"
+                  },
+                  "textType":{
+                     "name":"訊息類型",
+                     "type":"string",
+                     "value":"text",
+                     "format":"n/a",
+                     "id":"textType"
+                  },
+                  "sendTime":{
+                     "name":"發送時間",
+                     "type":"string",
+                     "value":"1217",
+                     "format":"HHmm",
+                     "id":"sendTime"
+                  },
+                  "sendDate":{
+                     "name":"發送日期",
+                     "type":"string",
+                     "value":"20230303",
+                     "format":"YYYYmmdd",
+                     "id":"sendDate"
+                  },
+                  "isLoginId":{
+                     "name":"是否為登入者",
+                     "type":"boolean",
+                     "value":true,
+                     "format":"n/a",
+                     "id":"isLoginId"
+                  },
+                  "readCount":{
+                     "name":"已讀數量",
+                     "type":"integer",
+                     "value":0,
+                     "format":"count",
+                     "id":"readCount"
+                  },
+                  "textId":{
+                     "name":"訊息鍵值",
+                     "type":"string",
+                     "value":"3a38fe12-22e9-44e9-92f2-15923d43b514",
+                     "format":"n/a",
+                     "id":"textId"
                   }
-               ],
+               },
                "format":"n/a",
-               "id":"20220831"
+               "id":"textInfo"
             }
          ],
          "format":"n/a",
