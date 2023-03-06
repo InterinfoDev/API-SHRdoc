@@ -49,6 +49,7 @@ Here is a JSON representation of request.
 |:---------|:------------|
 | text | 一般訊息 |
 | sysText | 系統訊息 |
+| date | 日期 |
 | img | 圖片 |
 | file | 檔案 |
 
