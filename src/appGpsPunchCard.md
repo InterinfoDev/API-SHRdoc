@@ -16,7 +16,7 @@ POST
 |:----------|:-------------|:-----|:------------|
 | uid | 98599308101484732326 | String | 需透過appLogin取得
 | right | 51341911904173543336756162544864820 | String | 需透過appLogin取得 |
-| request | {gps:{latitude:21.23444,longitude:345.32344}} | Object | 打卡資訊
+| request | {gps:{latitude:21.23444,longitude:345.32344}, pushType:B} | Object | 打卡資訊
 
 ### JSON representation
 Here is a JSON representation of request.
@@ -30,6 +30,7 @@ Here is a JSON representation of request.
             "latitude":21.23444, --lucas改名
             "longitude":345.32344 --lucas改名
           }
+         "pushType":"B"
     }
 }
 ```
@@ -47,6 +48,7 @@ Here is a JSON representation of request.
 | gps |  | Object | GPS資訊 | Y | n/a |
 | latitude | 21.23444 | Decimal | 緯度 | Y | GPS Location Data |
 | longitude | 345.32344 | Decimal | 經度 | Y | GPS Location Data |
+| pushType | B | String | 打卡方式 | Y | n/a |
 
 ### HTTP Response when Successful
 ```json
