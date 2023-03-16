@@ -36,232 +36,246 @@ Here is a JSON representation of request.
 ### HTTP Response when Successful
 ```json
 {
-   "status":"success",
-   "message":[
-      "回傳成功"
-   ],
-   "data":{
-      "properties":{
-         "format":{
-            "n/a":"",
-            "meter":"公尺"
-         }
-      },
-      "workCardOptionList":{
-         "name":"打卡項目清單",
-         "type":"array",
-         "value":[
-            {
-               "name":"打卡項目資訊",
-               "type":"object",
-               "value":{
-                  "workCardCode":{
-                     "name":"打卡項目代碼",
-                     "type":"string",
-                     "value":"E1",
-                     "format":"n/a",
-                     "id":"workCardCode"
-                  },
-                  "workPlaceList":{
-                     "name":"工作地點資訊",
-                     "type":"object",
-                     "value":{
-                        "location":{
-                           "name":"工作位置",
-                           "type":"string",
-                           "value":[
-                              {
-                                 "longitude":{
-                                    "name":"經度",
-                                    "type":"decimal",
-                                    "value":121.4857181,
-                                    "format":"n/a",
-                                    "id":"longitude"
-                                 },
-                                 "latitude":{
-                                    "name":"緯度",
-                                    "type":"decimal",
-                                    "value":24.9983947,
-                                    "format":"n/a",
-                                    "id":"latitude"
-                                 }
-                              },
-                              {
-                                 "longitude":{
-                                    "name":"經度",
-                                    "type":"decimal",
-                                    "value":121.4857181,
-                                    "format":"n/a",
-                                    "id":"longitude"
-                                 },
-                                 "latitude":{
-                                    "name":"緯度",
-                                    "type":"decimal",
-                                    "value":24.9983947,
-                                    "format":"n/a",
-                                    "id":"latitude"
-                                 }
-                              }
-                           ],
-                           "format":"n/a",
-                           "id":"location"
-                        }
-                     },
-                     "format":"n/a",
-                     "id":"workPlaceList"
-                  },
-                  "workCardName":{
-                     "name":"打卡項目名稱",
-                     "type":"string",
-                     "value":"北車GPS",
-                     "format":"n/a",
-                     "id":"workCardName"
-                  }
-               },
-               "format":"n/a",
-               "id":"workCardDetail"
-            },
-            {
-               "name":"打卡項目資訊",
-               "type":"object",
-               "value":{
-                  "workCardCode":{
-                     "name":"打卡項目代碼",
-                     "type":"string",
-                     "value":"D1",
-                     "format":"n/a",
-                     "id":"workCardCode"
-                  },
-                  "workPlaceList":{
-                     "name":"工作地點資訊",
-                     "type":"object",
-                     "value":{
-                        "location":{
-                           "name":"工作位置",
-                           "type":"string",
-                           "value":[
-                              {
-                                 "longitude":{
-                                    "name":"經度",
-                                    "type":"decimal",
-                                    "value":121.4857181,
-                                    "format":"n/a",
-                                    "id":"longitude"
-                                 },
-                                 "latitude":{
-                                    "name":"緯度",
-                                    "type":"decimal",
-                                    "value":24.9983947,
-                                    "format":"n/a",
-                                    "id":"latitude"
-                                 }
-                              },
-                              {
-                                 "longitude":{
-                                    "name":"經度",
-                                    "type":"decimal",
-                                    "value":121.4857181,
-                                    "format":"n/a",
-                                    "id":"longitude"
-                                 },
-                                 "latitude":{
-                                    "name":"緯度",
-                                    "type":"decimal",
-                                    "value":24.9983947,
-                                    "format":"n/a",
-                                    "id":"latitude"
-                                 }
-                              }
-                           ],
-                           "format":"n/a",
-                           "id":"location"
-                        }
-                     },
-                     "format":"n/a",
-                     "id":"workPlaceList"
-                  },
-                  "workCardName":{
-                     "name":"打卡項目名稱",
-                     "type":"string",
-                     "value":"英特內GPS-12F",
-                     "format":"n/a",
-                     "id":"workCardName"
-                  }
-               },
-               "format":"n/a",
-               "id":"workCardDetail"
+    "status": "success",
+    "message": [
+        "回傳成功"
+    ],
+    "data": {
+        "properties": {
+            "format": {
+                "n/a": "",
+                "meter": "公尺"
             }
-         ],
-         "format":"n/a",
-         "id":"workCardItem"
-      },
-      "workPlaceList":{
-         "name":"工作地點清單",
-         "type":"array",
-         "value":[
-            {
-               "name":"工作地點資訊",
-               "type":"object",
-               "value":{
-                  "radius":{
-                     "name":"打卡半徑",
-                     "type":"decimal",
-                     "value":0.1,
-                     "format":"meter",
-                     "id":"radius"
-                  },
-                  "location":{
-                     "name":"工作位置",
-                     "type":"object",
-                     "value":{
-                        "longitude":{
-                           "name":"經度",
-                           "type":"decimal",
-                           "value":121.4857181,
-                           "format":"n/a",
-                           "id":"longitude"
+        },
+        "workCardOptionList": {
+            "name": "打卡項目清單",
+            "type": "array",
+            "value": [
+                {
+                    "name": "打卡項目資訊",
+                    "type": "object",
+                    "value": {
+                        "workCardCode": {
+                            "name": "打卡項目代碼",
+                            "type": "string",
+                            "value": "E1",
+                            "format": "n/a",
+                            "id": "workCardCode"
                         },
-                        "latitude":{
-                           "name":"緯度",
-                           "type":"decimal",
-                           "value":24.9983947,
-                           "format":"n/a",
-                           "id":"latitude"
+                        "workPlaceList": {
+                            "name": "工作地點資訊",
+                            "type": "object",
+                            "value": {
+                                "radius": {
+                                    "name": "打卡半徑",
+                                    "type": "decimal",
+                                    "value": 0.6,
+                                    "format": "meter",
+                                    "id": "radius"
+                                },
+                                "location": {
+                                    "name": "工作位置",
+                                    "type": "string",
+                                    "value": [
+                                        {
+                                            "longitude": {
+                                                "name": "經度",
+                                                "type": "decimal",
+                                                "value": 121.4857181,
+                                                "format": "n/a",
+                                                "id": "longitude"
+                                            },
+                                            "latitude": {
+                                                "name": "緯度",
+                                                "type": "decimal",
+                                                "value": 24.9983947,
+                                                "format": "n/a",
+                                                "id": "latitude"
+                                            }
+                                        },
+                                        {
+                                            "longitude": {
+                                                "name": "經度",
+                                                "type": "decimal",
+                                                "value": 121.4857181,
+                                                "format": "n/a",
+                                                "id": "longitude"
+                                            },
+                                            "latitude": {
+                                                "name": "緯度",
+                                                "type": "decimal",
+                                                "value": 24.9983947,
+                                                "format": "n/a",
+                                                "id": "latitude"
+                                            }
+                                        }
+                                    ],
+                                    "format": "n/a",
+                                    "id": "location"
+                                }
+                            },
+                            "format": "n/a",
+                            "id": "workPlaceList"
+                        },
+                        "workCardName": {
+                            "name": "打卡項目名稱",
+                            "type": "string",
+                            "value": "北車GPS",
+                            "format": "n/a",
+                            "id": "workCardName"
                         }
-                     },
-                     "format":"n/a",
-                     "id":"location"
-                  },
-                  "placeName":{
-                     "name":"工作地點中文名稱",
-                     "type":"string",
-                     "value":"台北_南京東路辦公室",
-                     "format":"n/a",
-                     "id":"placeName"
-                  },
-                  "placeEname":{
-                     "name":"工作地點英文名稱",
-                     "type":"string",
-                     "value":"",
-                     "format":"n/a",
-                     "id":"placeEname"
-                  },
-                  "placeCode":{
-                     "name":"工作地點代號",
-                     "type":"string",
-                     "value":"B",
-                     "format":"n/a",
-                     "id":"placeCode"
-                  }
-               },
-               "format":"n/a",
-               "id":"workPlace"
-            }
-         ],
-         "format":"n/a",
-         "id":"workPlaceList"
-      }
-   }
+                    },
+                    "format": "n/a",
+                    "id": "workCardDetail"
+                },
+                {
+                    "name": "打卡項目資訊",
+                    "type": "object",
+                    "value": {
+                        "workCardCode": {
+                            "name": "打卡項目代碼",
+                            "type": "string",
+                            "value": "D1",
+                            "format": "n/a",
+                            "id": "workCardCode"
+                        },
+                        "workPlaceList": {
+                            "name": "工作地點資訊",
+                            "type": "object",
+                            "value": {
+                                "radius": {
+                                    "name": "打卡半徑",
+                                    "type": "decimal",
+                                    "value": 0.5,
+                                    "format": "meter",
+                                    "id": "radius"
+                                },
+                                "location": {
+                                    "name": "工作位置",
+                                    "type": "string",
+                                    "value": [
+                                        {
+                                            "longitude": {
+                                                "name": "經度",
+                                                "type": "decimal",
+                                                "value": 121.4857181,
+                                                "format": "n/a",
+                                                "id": "longitude"
+                                            },
+                                            "latitude": {
+                                                "name": "緯度",
+                                                "type": "decimal",
+                                                "value": 24.9983947,
+                                                "format": "n/a",
+                                                "id": "latitude"
+                                            }
+                                        },
+                                        {
+                                            "longitude": {
+                                                "name": "經度",
+                                                "type": "decimal",
+                                                "value": 121.4857181,
+                                                "format": "n/a",
+                                                "id": "longitude"
+                                            },
+                                            "latitude": {
+                                                "name": "緯度",
+                                                "type": "decimal",
+                                                "value": 24.9983947,
+                                                "format": "n/a",
+                                                "id": "latitude"
+                                            }
+                                        }
+                                    ],
+                                    "format": "n/a",
+                                    "id": "location"
+                                }
+                            },
+                            "format": "n/a",
+                            "id": "workPlaceList"
+                        },
+                        "workCardName": {
+                            "name": "打卡項目名稱",
+                            "type": "string",
+                            "value": "英特內GPS-12F",
+                            "format": "n/a",
+                            "id": "workCardName"
+                        }
+                    },
+                    "format": "n/a",
+                    "id": "workCardDetail"
+                }
+            ],
+            "format": "n/a",
+            "id": "workCardItem"
+        },
+        "workPlaceList": {
+            "name": "工作地點清單",
+            "type": "array",
+            "value": [
+                {
+                    "name": "工作地點資訊",
+                    "type": "object",
+                    "value": {
+                        "radius": {
+                            "name": "打卡半徑",
+                            "type": "decimal",
+                            "value": 0.1,
+                            "format": "meter",
+                            "id": "radius"
+                        },
+                        "location": {
+                            "name": "工作位置",
+                            "type": "object",
+                            "value": {
+                                "longitude": {
+                                    "name": "經度",
+                                    "type": "decimal",
+                                    "value": 121.4857181,
+                                    "format": "n/a",
+                                    "id": "longitude"
+                                },
+                                "latitude": {
+                                    "name": "緯度",
+                                    "type": "decimal",
+                                    "value": 24.9983947,
+                                    "format": "n/a",
+                                    "id": "latitude"
+                                }
+                            },
+                            "format": "n/a",
+                            "id": "location"
+                        },
+                        "placeName": {
+                            "name": "工作地點中文名稱",
+                            "type": "string",
+                            "value": "台北_南京東路辦公室",
+                            "format": "n/a",
+                            "id": "placeName"
+                        },
+                        "placeEname": {
+                            "name": "工作地點英文名稱",
+                            "type": "string",
+                            "value": "",
+                            "format": "n/a",
+                            "id": "placeEname"
+                        },
+                        "placeCode": {
+                            "name": "工作地點代號",
+                            "type": "string",
+                            "value": "B",
+                            "format": "n/a",
+                            "id": "placeCode"
+                        }
+                    },
+                    "format": "n/a",
+                    "id": "workPlace"
+                }
+            ],
+            "format": "n/a",
+            "id": "workPlaceList"
+        }
+    }
 }
 ```
 
