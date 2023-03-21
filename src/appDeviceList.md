@@ -86,6 +86,13 @@ Here is a JSON representation of request.
                      "value":"a46de6485262585a",
                      "format":"n/a",
                      "id":"deviceId"
+                  },
+                  "isNotifyDevice": {
+                      "name": "是否為推播裝置",
+                      "type": "boolean",
+                      "value": true,
+                      "format": "n/a",
+                      "id": "isNotifyDevice"
                   }
                },
                "format":"n/a",
@@ -126,7 +133,7 @@ Here is a JSON representation of request.
                   "isNotifyDevice": {
                       "name": "是否為推播裝置",
                       "type": "boolean",
-                      "value": true,
+                      "value": false,
                       "format": "n/a",
                       "id": "isNotifyDevice"
                   }
