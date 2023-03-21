@@ -107,50 +107,6 @@ Here is a JSON representation of request.
                      },
                      "format":"n/a",
                      "id":"employee"
-                  },
-                  {
-                     "name":"個人資訊",
-                     "type":"object",
-                     "value":{
-                        "empFullName":{
-                           "name":"員工中文姓名",
-                           "type":"string",
-                           "value":"弓O淇",
-                           "format":"n/a",
-                           "id":"empFullName"
-                        },
-                        "employeeId":{
-                           "name":"員工編號",
-                           "type":"string",
-                           "value":"1700",
-                           "format":"n/a",
-                           "id":"employeeId"
-                        }
-                     },
-                     "format":"n/a",
-                     "id":"employee"
-                  },
-                  {
-                     "name":"個人資訊",
-                     "type":"object",
-                     "value":{
-                        "empFullName":{
-                           "name":"員工中文姓名",
-                           "type":"string",
-                           "value":"系O管",
-                           "format":"n/a",
-                           "id":"empFullName"
-                        },
-                        "employeeId":{
-                           "name":"員工編號",
-                           "type":"string",
-                           "value":"admin",
-                           "format":"n/a",
-                           "id":"employeeId"
-                        }
-                     },
-                     "format":"n/a",
-                     "id":"employee"
                   }
                ],
                "format":"n/a",
