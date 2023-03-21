@@ -122,6 +122,13 @@ Here is a JSON representation of request.
                      "value":"TEST_DEVICE_ID",
                      "format":"n/a",
                      "id":"deviceId"
+                  },
+                  "isNotifyDevice": {
+                      "name": "是否為推播裝置",
+                      "type": "boolean",
+                      "value": true,
+                      "format": "n/a",
+                      "id": "isNotifyDevice"
                   }
                },
                "format":"n/a",
