@@ -52,127 +52,181 @@ Here is a JSON representation of request.
 
 ### HTTP Response when Successful
 ```json
-{ 
-   "status":"success",
-   "message":[
-      "回傳成功"
-   ],
-   "data":{
-      "gpsPunchCard":{ --lucas 移除punch 這層 20211210
-         "id":"gpsPunchCard",
-         "name":"GPS線上打卡結果",
-         "value":{ 
-              "punchDate":{
-                 "id":"punchDate",
-                 "name":"實際打卡日期",
-                 "value":"20211122",
-                 "type":"string",
-                 "format":"YYYYmmdd"
-              },
-              "punchTime":{
-                 "id":"punchTime",
-                 "name":"實際打卡時間",
-                 "value":"0911",
-                 "type":"string",
-                 "format":"HHmm"
-              },
-              "punchResult":{
-                 "id":"punchResult",
-                 "name":"實際打卡結果",
-                 "value":{
-                    "isError":{
-                       "id":"isError",
-                       "name":"是否為錯誤打卡",
-                       "value":true,
-                       "type":"boolean",
-                       "format":"n/a"
-                    },
-                    "errorMessage":{
-                       "id":"errorMessage",
-                       "name":"錯誤訊息(如果isError為true，代表使用者要重新打卡)",
-                       "value":"XXXXXXX",
-                       "type":"string",
-                       "format":"n/a"
-                    }
-                 },
-                 "type":"object",
-                 "format":"n/a"
-              }
+{
+    "status": "success",
+    "message": [
+        "回傳成功"
+    ],
+    "data": {
+        "gpsPunchCard": {
+            "name": "GPS線上打卡結果",
+            "type": "object",
+            "value": {
+                "errorMessage": {
+                    "name": "錯誤訊息",
+                    "type": "string",
+                    "value": "",
+                    "format": "n/a",
+                    "id": "errorMessage"
+                },
+                "isError": {
+                    "name": "是否為錯誤打卡",
+                    "type": "boolean",
+                    "value": false,
+                    "format": "n/a",
+                    "id": "isError"
+                },
+                "punchResult": {
+                    "name": "實際打卡結果",
+                    "type": "object",
+                    "value": [
+                        {
+                            "name": "打卡項目",
+                            "type": "string",
+                            "value": "英特內GPS-12F",
+                            "format": "n/a",
+                            "id": "pushTypeName"
+                        },
+                        {
+                            "name": "GPS-經度",
+                            "type": "string",
+                            "value": 24.9982389,
+                            "format": "n/a",
+                            "id": "latitude"
+                        },
+                        {
+                            "name": "GPS-緯度",
+                            "type": "string",
+                            "value": 121.48677,
+                            "format": "n/a",
+                            "id": "longitude"
+                        },
+                        {
+                            "name": "IP",
+                            "type": "string",
+                            "value": "0:0:0:0:0:0:0:1",
+                            "format": "n/a",
+                            "id": "ip"
+                        },
+                        {
+                            "name": "實際打卡日期",
+                            "type": "string",
+                            "value": "20230322",
+                            "format": "YYYYmmdd",
+                            "id": "punchDate"
+                        },
+                        {
+                            "name": "實際打卡時間",
+                            "type": "string",
+                            "value": "1538",
+                            "format": "HHmm",
+                            "id": "punchTime"
+                        }
+                    ],
+                    "format": "n/a",
+                    "id": "punchResult"
+                }
             },
-         
-         "type":"object",
-         "format":"n/a"
-      },
-      "properties":{
-         "format":{
-            "n/a":"",
-            "YYYYmmdd":"西元年月日",
-            "HHmm":"時間時分"
-         }
-      }
-   }
+            "format": "n/a",
+            "id": "gpsPunchCard"
+        },
+        "properties": {
+            "format": {
+                "HHmm": "時間時分",
+                "YYYYmmdd": "西元年月日",
+                "n/a": ""
+            }
+        }
+    }
 }
 ```
 
 ### HTTP Response when Punch Failed
 打卡失敗的時候，需考慮 punchResult 內的isError=true
 ```json
-{ --lucas增加案例
+{
    "status":"success",
    "message":[
       "回傳成功"
    ],
    "data":{
       "gpsPunchCard":{
-         "id":"gpsPunchCard",
          "name":"GPS線上打卡結果",
-         "value":{ --lucas 移除punch 這層 20211210
-              "punchDate":{
-                 "id":"punchDate",
-                 "name":"實際打卡日期",
-                 "value":"20211122",
-                 "type":"string",
-                 "format":"YYYYmmdd"
-              },
-              "punchTime":{
-                 "id":"punchTime",
-                 "name":"實際打卡時間",
-                 "value":"0911",
-                 "type":"string",
-                 "format":"HHmm"
-              },
-              "punchResult":{
-                 "id":"punchResult",
-                 "name":"實際打卡結果",
-                 "value":{
-                    "isError":{
-                       "id":"isError",
-                       "name":"是否為錯誤打卡",
-                       "value":true,
-                       "type":"boolean",
-                       "format":"n/a"
-                    },
-                    "errorMessage":{
-                       "id":"errorMessage",
-                       "name":"錯誤訊息(如果isError為true，代表使用者要重新打卡)",
-                       "value":"XXXXXXX",
-                       "type":"string",
-                       "format":"n/a"
-                    }
-                 },
-                 "type":"object",
-                 "format":"n/a"
-              }
+         "type":"object",
+         "value":{
+            "errorMessage":{
+               "name":"錯誤訊息",
+               "type":"string",
+               "value":"GPS位置 不符合",
+               "format":"n/a",
+               "id":"errorMessage"
+            },
+            "isError":{
+               "name":"是否為錯誤打卡",
+               "type":"boolean",
+               "value":true,
+               "format":"n/a",
+               "id":"isError"
+            },
+            "punchResult":{
+               "name":"實際打卡結果",
+               "type":"object",
+               "value":[
+                  {
+                     "name":"打卡項目",
+                     "type":"string",
+                     "value":"英特內GPS-12F",
+                     "format":"n/a",
+                     "id":"pushTypeName"
+                  },
+                  {
+                     "name":"GPS-經度",
+                     "type":"string",
+                     "value":21.23444,
+                     "format":"n/a",
+                     "id":"latitude"
+                  },
+                  {
+                     "name":"GPS-緯度",
+                     "type":"string",
+                     "value":345.32344,
+                     "format":"n/a",
+                     "id":"longitude"
+                  },
+                  {
+                     "name":"IP",
+                     "type":"string",
+                     "value":"0:0:0:0:0:0:0:1",
+                     "format":"n/a",
+                     "id":"ip"
+                  },
+                  {
+                     "name":"實際打卡日期",
+                     "type":"string",
+                     "value":"20230322",
+                     "format":"YYYYmmdd",
+                     "id":"punchDate"
+                  },
+                  {
+                     "name":"實際打卡時間",
+                     "type":"string",
+                     "value":"1529",
+                     "format":"HHmm",
+                     "id":"punchTime"
+                  }
+               ],
+               "format":"n/a",
+               "id":"punchResult"
             }
          },
-         "type":"object",
-         "format":"n/a"
+         "format":"n/a",
+         "id":"gpsPunchCard"
       },
       "properties":{
          "format":{
-            "n/a":"",
+            "HHmm":"時間時分",
             "YYYYmmdd":"西元年月日",
-            "HHmm":"時間時分"
+            "n/a":""
          }
       }
    }
