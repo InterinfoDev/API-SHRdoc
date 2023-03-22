@@ -109,13 +109,6 @@ Here is a JSON representation of request.
                             "id": "ip"
                         },
                         {
-                            "name": "實際打卡日期",
-                            "type": "string",
-                            "value": "20230322",
-                            "format": "YYYYmmdd",
-                            "id": "punchDate"
-                        },
-                        {
                             "name": "實際打卡時間",
                             "type": "string",
                             "value": "1538",
@@ -199,13 +192,6 @@ Here is a JSON representation of request.
                      "value":"0:0:0:0:0:0:0:1",
                      "format":"n/a",
                      "id":"ip"
-                  },
-                  {
-                     "name":"實際打卡日期",
-                     "type":"string",
-                     "value":"20230322",
-                     "format":"YYYYmmdd",
-                     "id":"punchDate"
                   },
                   {
                      "name":"實際打卡時間",
