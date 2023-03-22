@@ -73,6 +73,13 @@ Here is a JSON representation of request.
                            "value":"0006",
                            "format":"n/a",
                            "id":"employeeId"
+                        },
+                        "photo":{
+                           "name":"員工相片",
+                           "type":"string",
+                           "value":"url",
+                           "format":"hyperlink",
+                           "id":"photo"
                         }
                      },
                      "format":"n/a",
@@ -103,6 +110,13 @@ Here is a JSON representation of request.
                            "value":"1102",
                            "format":"n/a",
                            "id":"employeeId"
+                        },
+                        "photo":{
+                           "name":"員工相片",
+                           "type":"string",
+                           "value":"url",
+                           "format":"hyperlink",
+                           "id":"photo"
                         }
                      },
                      "format":"n/a",
