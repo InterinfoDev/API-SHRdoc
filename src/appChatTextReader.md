@@ -80,6 +80,13 @@ Here is a JSON representation of request.
                            "value":"url",
                            "format":"hyperlink",
                            "id":"photo"
+                        },
+                        "empFullEname":{
+                           "name":"員工英文姓名",
+                           "type":"string",
+                           "value":"Kevin",
+                           "format":"n/a",
+                           "id":"empFullEname"
                         }
                      },
                      "format":"n/a",
@@ -117,6 +124,13 @@ Here is a JSON representation of request.
                            "value":"url",
                            "format":"hyperlink",
                            "id":"photo"
+                        },
+                        "empFullEname":{
+                           "name":"員工英文姓名",
+                           "type":"string",
+                           "value":"Kevin",
+                           "format":"n/a",
+                           "id":"empFullEname"
                         }
                      },
                      "format":"n/a",
