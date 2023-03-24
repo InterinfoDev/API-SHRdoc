@@ -58,6 +58,50 @@ Here is a JSON representation of request.
                         "workCardCode": {
                             "name": "打卡項目代碼",
                             "type": "string",
+                            "value": "A",
+                            "format": "n/a",
+                            "id": "workCardCode"
+                        },
+                        "workPlaceList": {
+                            "name": "工作地點資訊",
+                            "type": "object",
+                            "value": {
+                                "radius": {
+                                    "name": "打卡半徑",
+                                    "type": "decimal",
+                                    "value": 0.0,
+                                    "format": "meter",
+                                    "id": "radius"
+                                },
+                                "location": {
+                                    "name": "工作位置",
+                                    "type": "string",
+                                    "value": [],
+                                    "format": "n/a",
+                                    "id": "location"
+                                }
+                            },
+                            "format": "n/a",
+                            "id": "workPlaceList"
+                        },
+                        "workCardName": {
+                            "name": "打卡項目名稱",
+                            "type": "string",
+                            "value": "",
+                            "format": "n/a",
+                            "id": "workCardName"
+                        }
+                    },
+                    "format": "n/a",
+                    "id": "workCardDetail"
+                },
+                {
+                    "name": "打卡項目資訊",
+                    "type": "object",
+                    "value": {
+                        "workCardCode": {
+                            "name": "打卡項目代碼",
+                            "type": "string",
                             "value": "E1",
                             "format": "n/a",
                             "id": "workCardCode"
@@ -69,7 +113,95 @@ Here is a JSON representation of request.
                                 "radius": {
                                     "name": "打卡半徑",
                                     "type": "decimal",
-                                    "value": 0.6,
+                                    "value": 0.0,
+                                    "format": "meter",
+                                    "id": "radius"
+                                },
+                                "location": {
+                                    "name": "工作位置",
+                                    "type": "string",
+                                    "value": [],
+                                    "format": "n/a",
+                                    "id": "location"
+                                }
+                            },
+                            "format": "n/a",
+                            "id": "workPlaceList"
+                        },
+                        "workCardName": {
+                            "name": "打卡項目名稱",
+                            "type": "string",
+                            "value": "高雄GPS",
+                            "format": "n/a",
+                            "id": "workCardName"
+                        }
+                    },
+                    "format": "n/a",
+                    "id": "workCardDetail"
+                },
+                {
+                    "name": "打卡項目資訊",
+                    "type": "object",
+                    "value": {
+                        "workCardCode": {
+                            "name": "打卡項目代碼",
+                            "type": "string",
+                            "value": "F1",
+                            "format": "n/a",
+                            "id": "workCardCode"
+                        },
+                        "workPlaceList": {
+                            "name": "工作地點資訊",
+                            "type": "object",
+                            "value": {
+                                "radius": {
+                                    "name": "打卡半徑",
+                                    "type": "decimal",
+                                    "value": 0.0,
+                                    "format": "meter",
+                                    "id": "radius"
+                                },
+                                "location": {
+                                    "name": "工作位置",
+                                    "type": "string",
+                                    "value": [],
+                                    "format": "n/a",
+                                    "id": "location"
+                                }
+                            },
+                            "format": "n/a",
+                            "id": "workPlaceList"
+                        },
+                        "workCardName": {
+                            "name": "打卡項目名稱",
+                            "type": "string",
+                            "value": "卡IP",
+                            "format": "n/a",
+                            "id": "workCardName"
+                        }
+                    },
+                    "format": "n/a",
+                    "id": "workCardDetail"
+                },
+                {
+                    "name": "打卡項目資訊",
+                    "type": "object",
+                    "value": {
+                        "workCardCode": {
+                            "name": "打卡項目代碼",
+                            "type": "string",
+                            "value": "E11",
+                            "format": "n/a",
+                            "id": "workCardCode"
+                        },
+                        "workPlaceList": {
+                            "name": "工作地點資訊",
+                            "type": "object",
+                            "value": {
+                                "radius": {
+                                    "name": "打卡半徑",
+                                    "type": "decimal",
+                                    "value": 0.5,
                                     "format": "meter",
                                     "id": "radius"
                                 },
@@ -81,30 +213,14 @@ Here is a JSON representation of request.
                                             "longitude": {
                                                 "name": "經度",
                                                 "type": "decimal",
-                                                "value": 121.4857181,
+                                                "value": 120.31268,
                                                 "format": "n/a",
                                                 "id": "longitude"
                                             },
                                             "latitude": {
                                                 "name": "緯度",
                                                 "type": "decimal",
-                                                "value": 24.9983947,
-                                                "format": "n/a",
-                                                "id": "latitude"
-                                            }
-                                        },
-                                        {
-                                            "longitude": {
-                                                "name": "經度",
-                                                "type": "decimal",
-                                                "value": 121.4857181,
-                                                "format": "n/a",
-                                                "id": "longitude"
-                                            },
-                                            "latitude": {
-                                                "name": "緯度",
-                                                "type": "decimal",
-                                                "value": 24.9983947,
+                                                "value": 22.6302489,
                                                 "format": "n/a",
                                                 "id": "latitude"
                                             }
@@ -120,7 +236,95 @@ Here is a JSON representation of request.
                         "workCardName": {
                             "name": "打卡項目名稱",
                             "type": "string",
-                            "value": "北車GPS",
+                            "value": "william測試用",
+                            "format": "n/a",
+                            "id": "workCardName"
+                        }
+                    },
+                    "format": "n/a",
+                    "id": "workCardDetail"
+                },
+                {
+                    "name": "打卡項目資訊",
+                    "type": "object",
+                    "value": {
+                        "workCardCode": {
+                            "name": "打卡項目代碼",
+                            "type": "string",
+                            "value": "TEST1",
+                            "format": "n/a",
+                            "id": "workCardCode"
+                        },
+                        "workPlaceList": {
+                            "name": "工作地點資訊",
+                            "type": "object",
+                            "value": {
+                                "radius": {
+                                    "name": "打卡半徑",
+                                    "type": "decimal",
+                                    "value": 0.0,
+                                    "format": "meter",
+                                    "id": "radius"
+                                },
+                                "location": {
+                                    "name": "工作位置",
+                                    "type": "string",
+                                    "value": [],
+                                    "format": "n/a",
+                                    "id": "location"
+                                }
+                            },
+                            "format": "n/a",
+                            "id": "workPlaceList"
+                        },
+                        "workCardName": {
+                            "name": "打卡項目名稱",
+                            "type": "string",
+                            "value": "",
+                            "format": "n/a",
+                            "id": "workCardName"
+                        }
+                    },
+                    "format": "n/a",
+                    "id": "workCardDetail"
+                },
+                {
+                    "name": "打卡項目資訊",
+                    "type": "object",
+                    "value": {
+                        "workCardCode": {
+                            "name": "打卡項目代碼",
+                            "type": "string",
+                            "value": "C1",
+                            "format": "n/a",
+                            "id": "workCardCode"
+                        },
+                        "workPlaceList": {
+                            "name": "工作地點資訊",
+                            "type": "object",
+                            "value": {
+                                "radius": {
+                                    "name": "打卡半徑",
+                                    "type": "decimal",
+                                    "value": 0.0,
+                                    "format": "meter",
+                                    "id": "radius"
+                                },
+                                "location": {
+                                    "name": "工作位置",
+                                    "type": "string",
+                                    "value": [],
+                                    "format": "n/a",
+                                    "id": "location"
+                                }
+                            },
+                            "format": "n/a",
+                            "id": "workPlaceList"
+                        },
+                        "workCardName": {
+                            "name": "打卡項目名稱",
+                            "type": "string",
+                            "value": "駐點",
                             "format": "n/a",
                             "id": "workCardName"
                         }
@@ -158,30 +362,14 @@ Here is a JSON representation of request.
                                             "longitude": {
                                                 "name": "經度",
                                                 "type": "decimal",
-                                                "value": 121.4857181,
+                                                "value": 121.48677,
                                                 "format": "n/a",
                                                 "id": "longitude"
                                             },
                                             "latitude": {
                                                 "name": "緯度",
                                                 "type": "decimal",
-                                                "value": 24.9983947,
-                                                "format": "n/a",
-                                                "id": "latitude"
-                                            }
-                                        },
-                                        {
-                                            "longitude": {
-                                                "name": "經度",
-                                                "type": "decimal",
-                                                "value": 121.4857181,
-                                                "format": "n/a",
-                                                "id": "longitude"
-                                            },
-                                            "latitude": {
-                                                "name": "緯度",
-                                                "type": "decimal",
-                                                "value": 24.9983947,
+                                                "value": 24.9982389,
                                                 "format": "n/a",
                                                 "id": "latitude"
                                             }
@@ -198,6 +386,50 @@ Here is a JSON representation of request.
                             "name": "打卡項目名稱",
                             "type": "string",
                             "value": "英特內GPS-12F",
+                            "format": "n/a",
+                            "id": "workCardName"
+                        }
+                    },
+                    "format": "n/a",
+                    "id": "workCardDetail"
+                },
+                {
+                    "name": "打卡項目資訊",
+                    "type": "object",
+                    "value": {
+                        "workCardCode": {
+                            "name": "打卡項目代碼",
+                            "type": "string",
+                            "value": "B",
+                            "format": "n/a",
+                            "id": "workCardCode"
+                        },
+                        "workPlaceList": {
+                            "name": "工作地點資訊",
+                            "type": "object",
+                            "value": {
+                                "radius": {
+                                    "name": "打卡半徑",
+                                    "type": "decimal",
+                                    "value": 0.0,
+                                    "format": "meter",
+                                    "id": "radius"
+                                },
+                                "location": {
+                                    "name": "工作位置",
+                                    "type": "string",
+                                    "value": [],
+                                    "format": "n/a",
+                                    "id": "location"
+                                }
+                            },
+                            "format": "n/a",
+                            "id": "workPlaceList"
+                        },
+                        "workCardName": {
+                            "name": "打卡項目名稱",
+                            "type": "string",
+                            "value": "",
                             "format": "n/a",
                             "id": "workCardName"
                         }
