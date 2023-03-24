@@ -202,7 +202,7 @@ Here is a JSON representation of request.
                 "punchTime": {
                     "name": "實際打卡時間",
                     "type": "string",
-                    "value": "1718",
+                    "value": "1409",
                     "format": "HHmm",
                     "id": "punchTime"
                 },
@@ -212,8 +212,23 @@ Here is a JSON representation of request.
                     "value": [
                         {
                             "name": "打卡項目",
-                            "type": "string",
-                            "value": "",
+                            "type": "object",
+                            "value": {
+                                "fieldValue": {
+                                    "name": "欄位資料",
+                                    "type": "string",
+                                    "value": "",
+                                    "format": "n/a",
+                                    "id": "fieldValue"
+                                },
+                                "fieldName": {
+                                    "name": "欄位名稱",
+                                    "type": "string",
+                                    "value": "打卡項目",
+                                    "format": "n/a",
+                                    "id": "fieldName"
+                                }
+                            },
                             "format": "n/a",
                             "id": "pushTypeName"
                         }
