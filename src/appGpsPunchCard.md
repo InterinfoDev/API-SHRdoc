@@ -79,7 +79,7 @@ Here is a JSON representation of request.
             "punchTime":{
                "name":"實際打卡時間",
                "type":"string",
-               "value":"1142",
+               "value":"1143",
                "format":"HHmm",
                "id":"punchTime"
             },
@@ -138,7 +138,7 @@ Here is a JSON representation of request.
                         "fieldValue":{
                            "name":"欄位資料",
                            "type":"string",
-                           "value":"0:0:0:0:0:0:0:1",
+                           "value":"114.32.167.155",
                            "format":"n/a",
                            "id":"fieldValue"
                         },
