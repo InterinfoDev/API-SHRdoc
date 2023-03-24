@@ -79,7 +79,7 @@ Here is a JSON representation of request.
             "punchTime":{
                "name":"實際打卡時間",
                "type":"string",
-               "value":"1715",
+               "value":"1142",
                "format":"HHmm",
                "id":"punchTime"
             },
@@ -89,29 +89,67 @@ Here is a JSON representation of request.
                "value":[
                   {
                      "name":"打卡項目",
-                     "type":"string",
-                     "value":"英特內GPS-12F",
+                     "type":"object",
+                     "value":{
+                        "fieldValue":{
+                           "name":"欄位資料",
+                           "type":"string",
+                           "value":"英特內GPS-12F",
+                           "format":"n/a",
+                           "id":"fieldValue"
+                        },
+                        "fieldName":{
+                           "name":"欄位名稱",
+                           "type":"string",
+                           "value":"打卡項目",
+                           "format":"n/a",
+                           "id":"fieldName"
+                        }
+                     },
                      "format":"n/a",
                      "id":"pushTypeName"
                   },
                   {
-                     "name":"GPS-經度",
-                     "type":"string",
-                     "value":24.9982389,
+                     "name":"GPS",
+                     "type":"object",
+                     "value":{
+                        "fieldValue":{
+                           "name":"欄位資料",
+                           "type":"string",
+                           "value":"24.9982389,121.48677",
+                           "format":"n/a",
+                           "id":"fieldValue"
+                        },
+                        "fieldName":{
+                           "name":"欄位名稱",
+                           "type":"string",
+                           "value":"GPS",
+                           "format":"n/a",
+                           "id":"fieldName"
+                        }
+                     },
                      "format":"n/a",
-                     "id":"latitude"
-                  },
-                  {
-                     "name":"GPS-緯度",
-                     "type":"string",
-                     "value":121.48677,
-                     "format":"n/a",
-                     "id":"longitude"
+                     "id":"gps"
                   },
                   {
                      "name":"IP",
-                     "type":"string",
-                     "value":"0:0:0:0:0:0:0:1",
+                     "type":"object",
+                     "value":{
+                        "fieldValue":{
+                           "name":"欄位資料",
+                           "type":"string",
+                           "value":"0:0:0:0:0:0:0:1",
+                           "format":"n/a",
+                           "id":"fieldValue"
+                        },
+                        "fieldName":{
+                           "name":"欄位名稱",
+                           "type":"string",
+                           "value":"IP",
+                           "format":"n/a",
+                           "id":"fieldName"
+                        }
+                     },
                      "format":"n/a",
                      "id":"ip"
                   }
