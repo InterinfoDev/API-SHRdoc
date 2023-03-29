@@ -56,32 +56,56 @@ Here is a JSON representation of request.
 {
    "status":"success",
    "message":[
-      "您已成功退簽1筆單據"
+      "回傳成功"
    ],
    "data":{
       "properties":{
          "format":{
             "YYYYmmdd":"西元年月日",
-            "count":"數量",
             "n/a":"",
             "HHmmss":"時間時分秒"
          }
       },
-      "signFlow":{                  --kevin 多增加signFlow這層，並把簽核相關資訊包進這層
+      "signFlow":{
          "name":"簽核資訊",
          "type":"object",
          "value":{
-            "signCount":{
-               "name":"簽核筆數",
-               "type":"integer",
-               "value":1,
-               "format":"count",
-               "id":"signCount"
+            "result":{
+               "name":"簽核結果",
+               "type":"array",
+               "value":[
+                  {
+                     "name":"結果資訊",
+                     "type":"object",
+                     "value":{
+                        "message":{
+                           "name":"檢核訊息",
+                           "type":"string",
+                           "value":"DMAKER:請輸入退簽理由",
+                           "format":"n/a",
+                           "id":"message"
+                        },
+                        "title":{
+                           "name":"標題",
+                           "type":"array",
+                           "value":[
+                              "單號:W00202303220004"
+                           ],
+                           "format":"n/a",
+                           "id":"title"
+                        }
+                     },
+                     "format":"n/a",
+                     "id":"resultInfo"
+                  }
+               ],
+               "format":"n/a",
+               "id":"result"
             },
             "signTime":{
                "name":"簽核時間",
                "type":"string",
-               "value":"153524",
+               "value":"190131",
                "format":"HHmmss",
                "id":"signTime"
             },
@@ -95,7 +119,7 @@ Here is a JSON representation of request.
             "signDate":{
                "name":"簽核日期",
                "type":"string",
-               "value":"20220428",
+               "value":"20230328",
                "format":"YYYYmmdd",
                "id":"signDate"
             }
