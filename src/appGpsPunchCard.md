@@ -266,78 +266,137 @@ Here is a JSON representation of request.
 打卡失敗的時候，需考慮 punchResult 內的isError=true
 ```json
 {
-    "status": "success",
-    "message": [
-        "回傳成功"
-    ],
-    "data": {
-        "gpsPunchCard": {
-            "name": "GPS線上打卡結果",
-            "type": "object",
-            "value": {
-                "errorMessage": {
-                    "name": "錯誤訊息",
-                    "type": "string",
-                    "value": "警告!系統設定錯誤，請洽客服人員",
-                    "format": "n/a",
-                    "id": "errorMessage"
-                },
-                "isError": {
-                    "name": "是否為錯誤打卡",
-                    "type": "boolean",
-                    "value": true,
-                    "format": "n/a",
-                    "id": "isError"
-                },
-                "punchTime": {
-                    "name": "實際打卡時間",
-                    "type": "string",
-                    "value": "1409",
-                    "format": "HHmm",
-                    "id": "punchTime"
-                },
-                "punchResult": {
-                    "name": "實際打卡結果",
-                    "type": "object",
-                    "value": [
-                        {
-                            "name": "打卡項目",
-                            "type": "object",
-                            "value": {
-                                "fieldValue": {
-                                    "name": "欄位資料",
-                                    "type": "string",
-                                    "value": "",
-                                    "format": "n/a",
-                                    "id": "fieldValue"
-                                },
-                                "fieldName": {
-                                    "name": "欄位名稱",
-                                    "type": "string",
-                                    "value": "打卡項目",
-                                    "format": "n/a",
-                                    "id": "fieldName"
-                                }
-                            },
-                            "format": "n/a",
-                            "id": "pushTypeName"
-                        }
-                    ],
-                    "format": "n/a",
-                    "id": "punchResult"
-                }
+   "status":"success",
+   "message":[
+      "回傳成功"
+   ],
+   "data":{
+      "gpsPunchCard":{
+         "name":"GPS線上打卡結果",
+         "type":"object",
+         "value":{
+            "isError":{
+               "name":"是否為錯誤打卡",
+               "type":"boolean",
+               "value":true,
+               "format":"n/a",
+               "id":"isError"
             },
-            "format": "n/a",
-            "id": "gpsPunchCard"
-        },
-        "properties": {
-            "format": {
-                "HHmm": "時間時分",
-                "YYYYmmdd": "西元年月日",
-                "n/a": ""
+            "punchTime":{
+               "name":"實際打卡時間",
+               "type":"string",
+               "value":"1430",
+               "format":"HHmm",
+               "id":"punchTime"
+            },
+            "punchResult":{
+               "name":"實際打卡結果",
+               "type":"object",
+               "value":[
+                  {
+                     "name":"打卡項目",
+                     "type":"object",
+                     "value":{
+                        "fieldValue":{
+                           "name":"欄位資料",
+                           "type":"string",
+                           "value":"",
+                           "format":"n/a",
+                           "id":"fieldValue"
+                        },
+                        "fieldName":{
+                           "name":"欄位名稱",
+                           "type":"string",
+                           "value":"打卡項目",
+                           "format":"n/a",
+                           "id":"fieldName"
+                        }
+                     },
+                     "format":"n/a",
+                     "id":"pushTypeName"
+                  },
+                  {
+                     "name":"錯誤訊息",
+                     "type":"object",
+                     "value":{
+                        "fieldValue":{
+                           "name":"欄位資料",
+                           "type":"string",
+                           "value":"警告!系統設定錯誤，請洽客服人員",
+                           "format":"n/a",
+                           "id":"fieldValue"
+                        },
+                        "fieldName":{
+                           "name":"欄位名稱",
+                           "type":"string",
+                           "value":"原因",
+                           "format":"n/a",
+                           "id":"fieldName"
+                        }
+                     },
+                     "format":"n/a",
+                     "id":"errorMessage"
+                  },
+                  {
+                     "name":"IP",
+                     "type":"object",
+                     "value":{
+                        "fieldValue":{
+                           "name":"欄位資料",
+                           "type":"string",
+                           "value":"",
+                           "format":"n/a",
+                           "id":"fieldValue"
+                        },
+                        "fieldName":{
+                           "name":"欄位名稱",
+                           "type":"string",
+                           "value":"IP",
+                           "format":"n/a",
+                           "id":"fieldName"
+                        }
+                     },
+                     "format":"n/a",
+                     "id":"ip"
+                  },
+                  {
+                     "name":"GPS",
+                     "type":"object",
+                     "value":{
+                        "fieldValue":{
+                           "name":"欄位資料",
+                           "type":"string",
+                           "value":"",
+                           "format":"n/a",
+                           "id":"fieldValue"
+                        },
+                        "fieldName":{
+                           "name":"欄位名稱",
+                           "type":"string",
+                           "value":"GPS",
+                           "format":"n/a",
+                           "id":"fieldName"
+                        }
+                     },
+                     "format":"n/a",
+                     "id":"gps"
+                  }
+               ],
+               "format":"n/a",
+               "id":"punchResult"
             }
-        }
-    }
+         },
+         "format":"n/a",
+         "id":"gpsPunchCard"
+      },
+      "properties":{
+         "format":{
+            "HHmm":"時間時分",
+            "YYYYmmdd":"西元年月日",
+            "n/a":""
+         }
+      }
+   }
 }
 ```
 
