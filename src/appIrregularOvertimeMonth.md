@@ -68,12 +68,12 @@ Here is a JSON representation of request.
             "name": "加班異常資訊",
             "type": "object",
             "value": {
-                "irregularYM": {            --richard 修改名稱irregularYM
+                "irregularYM": {
                     "name": "加班異常年月",
                     "type": "string",
-                    "value": "202207",
+                    "value": "202303",
                     "format": "YYYYmm",
-                    "id": "irregularYM"     --richard 修改名稱irregularYM
+                    "id": "irregularYM"
                 }
             },
             "format": "n/a",
@@ -90,44 +90,51 @@ Here is a JSON representation of request.
                         "position": {
                             "name": "職稱",
                             "type": "string",
-                            "value": "系統管理員",
+                            "value": "專員",
                             "format": "n/a",
                             "id": "position"
                         },
+                        "photo": {
+                            "name": "員工照片",
+                            "type": "string",
+                            "value": "http://59.124.100.151:8090/servlet/jform?em_step=2&file=hrm8w.pkg&enc=93d23f3a4b3f0b5d5e5d4653505163635956535a4c63635c575e4b604d50505263630b0d0c090a070a0a070e0f0a0b60db87b4d783b611554f5a58",
+                            "format": "hyperlink",
+                            "id": "photo"
+                        },
                         "count": {
-                            "name": "異常筆數",
+                            "name": "無異常筆數",
                             "type": "integer",
-                            "value": 5,
+                            "value": 23,
                             "format": "count",
                             "id": "count"
                         },
                         "empFullName": {
                             "name": "員工中文姓名",
                             "type": "string",
-                            "value": "系統管理員",
+                            "value": "仰秀英",
                             "format": "n/a",
                             "id": "empFullName"
                         },
                         "empid": {
                             "name": "員工編號",
                             "type": "string",
-                            "value": "admin",
+                            "value": "10206047",
                             "format": "n/a",
                             "id": "empid"
-                        },
-                        "photo": {
-                            "name": "員工照片",
-                            "type": "string",
-                            "value": "http://59.124.100.151:8090/servlet/jform?em_step=2&file=hrm8w.pkg&enc=93d23f3a4b3f1a574d52104f57504b50100e0909070f0b0b0607070b0b07600e0b0f070f060e0e0d114f5158",
-                            "format": "hyperlink",
-                            "id": "photo"
                         },
                         "depFullName": {
                             "name": "部門名稱",
                             "type": "string",
-                            "value": "英特內股份有限公司",
+                            "value": "總務部",
                             "format": "n/a",
                             "id": "depFullName"
+                        },
+                        "errorCount": {
+                            "name": "異常筆數",
+                            "type": "integer",
+                            "value": 8,
+                            "format": "count",
+                            "id": "errorCount"
                         }
                     },
                     "format": "n/a",
@@ -142,7 +149,7 @@ Here is a JSON representation of request.
                 "count": "數量",
                 "n/a": "",
                 "YYYYmm": "西元年月",
-                "hyperlink":"超連結"
+                "hyperlink": "超連結"
             }
         }
     }
