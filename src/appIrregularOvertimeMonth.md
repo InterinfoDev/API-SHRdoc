@@ -25,10 +25,10 @@ Here is a JSON representation of request.
     "uid":"98599308101484732326",
     "right":"51341911904173543336756162544864820",
     "request":{
-        "empid":["admin"], 
+        "empid":["10206047"], 
         "companyId":"TW",
-        "irregularYM":"202207",     --  修改request key值 irregularYM
-        "viewType":"A",
+        "irregularYM":"202303",
+        "viewType":"B",
         "beforeMins":30, 
         "afterMins":30,
         "outMins":30,
@@ -47,10 +47,10 @@ Here is a JSON representation of request.
 ### Request Properties
 | Key | Value | Type | Description | Required | Format |
 |:----------|:-------------|:-----|:------------|:------------|:------------|
-| empid | admin | Array(String) | 員工編號 | N | n/a |
+| empid | 10206047 | Array(String) | 員工編號 | N | n/a |
 | companyId | TW | String | 公司代號 | Y | n/a |
-| irregularYM | 202207 | String | 查詢年月 | Y | AC(YYYYmm) |
-| viewType | A | String | 顯示種類 | Y | n/a |
+| irregularYM | 202303 | String | 查詢年月 | Y | AC(YYYYmm) |
+| viewType | B | String | 顯示種類 | Y | n/a |
 | beforeMins | 30 | Integer | 提前多久刷卡視為異常 | Y | n/a |
 | afterMins | 30 | Integer | 延後多久刷卡視為異常 | Y | n/a |
 | outMins | 30 | Integer | 刷卡時間超過多久未報加班視為異常 | Y | n/a |
