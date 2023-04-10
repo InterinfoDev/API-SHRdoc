@@ -36,478 +36,588 @@ Here is a JSON representation of request.
 ### HTTP Response when Successful
 ```json
 {
-    "status": "success",
-    "message": [
-        "回傳成功"
-    ],
-    "data": {
-        "properties": {
-            "format": {
-                "n/a": "",
-                "meter": "公尺"
+   "status":"success",
+   "message":[
+      "回傳成功"
+   ],
+   "data":{
+      "properties":{
+         "format":{
+            "n/a":"",
+            "meter":"公尺"
+         }
+      },
+      "workCardOptionList":{
+         "name":"打卡項目清單",
+         "type":"array",
+         "value":[
+            {
+               "name":"打卡項目資訊",
+               "type":"object",
+               "value":{
+                  "workCardCode":{
+                     "name":"打卡項目代碼",
+                     "type":"string",
+                     "value":"A1",
+                     "format":"n/a",
+                     "id":"workCardCode"
+                  },
+                  "workPlaceList":{
+                     "name":"工作地點資訊",
+                     "type":"object",
+                     "value":{
+                        "radius":{
+                           "name":"打卡半徑",
+                           "type":"decimal",
+                           "value":0.5,
+                           "format":"meter",
+                           "id":"radius"
+                        },
+                        "location":{
+                           "name":"工作位置",
+                           "type":"string",
+                           "value":[
+                              {
+                                 "longitude":{
+                                    "name":"經度",
+                                    "type":"decimal",
+                                    "value":121.5845,
+                                    "format":"n/a",
+                                    "id":"longitude"
+                                 },
+                                 "latitude":{
+                                    "name":"緯度",
+                                    "type":"decimal",
+                                    "value":23.9545176,
+                                    "format":"n/a",
+                                    "id":"latitude"
+                                 }
+                              }
+                           ],
+                           "format":"n/a",
+                           "id":"location"
+                        }
+                     },
+                     "format":"n/a",
+                     "id":"workPlaceList"
+                  },
+                  "workCardName":{
+                     "name":"打卡項目名稱",
+                     "type":"string",
+                     "value":"線上打卡 12F",
+                     "format":"n/a",
+                     "id":"workCardName"
+                  }
+               },
+               "format":"n/a",
+               "id":"workCardDetail"
+            },
+            {
+               "name":"打卡項目資訊",
+               "type":"object",
+               "value":{
+                  "workCardCode":{
+                     "name":"打卡項目代碼",
+                     "type":"string",
+                     "value":"A2",
+                     "format":"n/a",
+                     "id":"workCardCode"
+                  },
+                  "workPlaceList":{
+                     "name":"工作地點資訊",
+                     "type":"object",
+                     "value":{
+                        "radius":{
+                           "name":"打卡半徑",
+                           "type":"decimal",
+                           "value":0.0,
+                           "format":"meter",
+                           "id":"radius"
+                        },
+                        "location":{
+                           "name":"工作位置",
+                           "type":"string",
+                           "value":[
+                              
+                           ],
+                           "format":"n/a",
+                           "id":"location"
+                        }
+                     },
+                     "format":"n/a",
+                     "id":"workPlaceList"
+                  },
+                  "workCardName":{
+                     "name":"打卡項目名稱",
+                     "type":"string",
+                     "value":"都不卡",
+                     "format":"n/a",
+                     "id":"workCardName"
+                  }
+               },
+               "format":"n/a",
+               "id":"workCardDetail"
+            },
+            {
+               "name":"打卡項目資訊",
+               "type":"object",
+               "value":{
+                  "workCardCode":{
+                     "name":"打卡項目代碼",
+                     "type":"string",
+                     "value":"B1",
+                     "format":"n/a",
+                     "id":"workCardCode"
+                  },
+                  "workPlaceList":{
+                     "name":"工作地點資訊",
+                     "type":"object",
+                     "value":{
+                        "radius":{
+                           "name":"打卡半徑",
+                           "type":"decimal",
+                           "value":0.5,
+                           "format":"meter",
+                           "id":"radius"
+                        },
+                        "location":{
+                           "name":"工作位置",
+                           "type":"string",
+                           "value":[
+                              {
+                                 "longitude":{
+                                    "name":"經度",
+                                    "type":"decimal",
+                                    "value":121.51709,
+                                    "format":"n/a",
+                                    "id":"longitude"
+                                 },
+                                 "latitude":{
+                                    "name":"緯度",
+                                    "type":"decimal",
+                                    "value":25.0474428,
+                                    "format":"n/a",
+                                    "id":"latitude"
+                                 }
+                              }
+                           ],
+                           "format":"n/a",
+                           "id":"location"
+                        }
+                     },
+                     "format":"n/a",
+                     "id":"workPlaceList"
+                  },
+                  "workCardName":{
+                     "name":"打卡項目名稱",
+                     "type":"string",
+                     "value":"居家上班 北車",
+                     "format":"n/a",
+                     "id":"workCardName"
+                  }
+               },
+               "format":"n/a",
+               "id":"workCardDetail"
+            },
+            {
+               "name":"打卡項目資訊",
+               "type":"object",
+               "value":{
+                  "workCardCode":{
+                     "name":"打卡項目代碼",
+                     "type":"string",
+                     "value":"C1",
+                     "format":"n/a",
+                     "id":"workCardCode"
+                  },
+                  "workPlaceList":{
+                     "name":"工作地點資訊",
+                     "type":"object",
+                     "value":{
+                        "radius":{
+                           "name":"打卡半徑",
+                           "type":"decimal",
+                           "value":0.0,
+                           "format":"meter",
+                           "id":"radius"
+                        },
+                        "location":{
+                           "name":"工作位置",
+                           "type":"string",
+                           "value":[
+                              
+                           ],
+                           "format":"n/a",
+                           "id":"location"
+                        }
+                     },
+                     "format":"n/a",
+                     "id":"workPlaceList"
+                  },
+                  "workCardName":{
+                     "name":"打卡項目名稱",
+                     "type":"string",
+                     "value":"駐點",
+                     "format":"n/a",
+                     "id":"workCardName"
+                  }
+               },
+               "format":"n/a",
+               "id":"workCardDetail"
+            },
+            {
+               "name":"打卡項目資訊",
+               "type":"object",
+               "value":{
+                  "workCardCode":{
+                     "name":"打卡項目代碼",
+                     "type":"string",
+                     "value":"CC",
+                     "format":"n/a",
+                     "id":"workCardCode"
+                  },
+                  "workPlaceList":{
+                     "name":"工作地點資訊",
+                     "type":"object",
+                     "value":{
+                        "radius":{
+                           "name":"打卡半徑",
+                           "type":"decimal",
+                           "value":0.0,
+                           "format":"meter",
+                           "id":"radius"
+                        },
+                        "location":{
+                           "name":"工作位置",
+                           "type":"string",
+                           "value":[
+                              
+                           ],
+                           "format":"n/a",
+                           "id":"location"
+                        }
+                     },
+                     "format":"n/a",
+                     "id":"workPlaceList"
+                  },
+                  "workCardName":{
+                     "name":"打卡項目名稱",
+                     "type":"string",
+                     "value":"測多組IP",
+                     "format":"n/a",
+                     "id":"workCardName"
+                  }
+               },
+               "format":"n/a",
+               "id":"workCardDetail"
+            },
+            {
+               "name":"打卡項目資訊",
+               "type":"object",
+               "value":{
+                  "workCardCode":{
+                     "name":"打卡項目代碼",
+                     "type":"string",
+                     "value":"D1",
+                     "format":"n/a",
+                     "id":"workCardCode"
+                  },
+                  "workPlaceList":{
+                     "name":"工作地點資訊",
+                     "type":"object",
+                     "value":{
+                        "radius":{
+                           "name":"打卡半徑",
+                           "type":"decimal",
+                           "value":5.0,
+                           "format":"meter",
+                           "id":"radius"
+                        },
+                        "location":{
+                           "name":"工作位置",
+                           "type":"string",
+                           "value":[
+                              {
+                                 "longitude":{
+                                    "name":"經度",
+                                    "type":"decimal",
+                                    "value":120.31268,
+                                    "format":"n/a",
+                                    "id":"longitude"
+                                 },
+                                 "latitude":{
+                                    "name":"緯度",
+                                    "type":"decimal",
+                                    "value":22.6302489,
+                                    "format":"n/a",
+                                    "id":"latitude"
+                                 }
+                              }
+                           ],
+                           "format":"n/a",
+                           "id":"location"
+                        }
+                     },
+                     "format":"n/a",
+                     "id":"workPlaceList"
+                  },
+                  "workCardName":{
+                     "name":"打卡項目名稱",
+                     "type":"string",
+                     "value":"william測試",
+                     "format":"n/a",
+                     "id":"workCardName"
+                  }
+               },
+               "format":"n/a",
+               "id":"workCardDetail"
+            },
+            {
+               "name":"打卡項目資訊",
+               "type":"object",
+               "value":{
+                  "workCardCode":{
+                     "name":"打卡項目代碼",
+                     "type":"string",
+                     "value":"F1",
+                     "format":"n/a",
+                     "id":"workCardCode"
+                  },
+                  "workPlaceList":{
+                     "name":"工作地點資訊",
+                     "type":"object",
+                     "value":{
+                        "radius":{
+                           "name":"打卡半徑",
+                           "type":"decimal",
+                           "value":0.5,
+                           "format":"meter",
+                           "id":"radius"
+                        },
+                        "location":{
+                           "name":"工作位置",
+                           "type":"string",
+                           "value":[
+                              {
+                                 "longitude":{
+                                    "name":"經度",
+                                    "type":"decimal",
+                                    "value":121.37124,
+                                    "format":"n/a",
+                                    "id":"longitude"
+                                 },
+                                 "latitude":{
+                                    "name":"緯度",
+                                    "type":"decimal",
+                                    "value":24.9463219,
+                                    "format":"n/a",
+                                    "id":"latitude"
+                                 }
+                              }
+                           ],
+                           "format":"n/a",
+                           "id":"location"
+                        }
+                     },
+                     "format":"n/a",
+                     "id":"workPlaceList"
+                  },
+                  "workCardName":{
+                     "name":"打卡項目名稱",
+                     "type":"string",
+                     "value":"測多組GPS",
+                     "format":"n/a",
+                     "id":"workCardName"
+                  }
+               },
+               "format":"n/a",
+               "id":"workCardDetail"
+            },
+            {
+               "name":"打卡項目資訊",
+               "type":"object",
+               "value":{
+                  "workCardCode":{
+                     "name":"打卡項目代碼",
+                     "type":"string",
+                     "value":"G1",
+                     "format":"n/a",
+                     "id":"workCardCode"
+                  },
+                  "workPlaceList":{
+                     "name":"工作地點資訊",
+                     "type":"object",
+                     "value":{
+                        "radius":{
+                           "name":"打卡半徑",
+                           "type":"decimal",
+                           "value":0.0,
+                           "format":"meter",
+                           "id":"radius"
+                        },
+                        "location":{
+                           "name":"工作位置",
+                           "type":"string",
+                           "value":[
+                              
+                           ],
+                           "format":"n/a",
+                           "id":"location"
+                        }
+                     },
+                     "format":"n/a",
+                     "id":"workPlaceList"
+                  },
+                  "workCardName":{
+                     "name":"打卡項目名稱",
+                     "type":"string",
+                     "value":"卡IP",
+                     "format":"n/a",
+                     "id":"workCardName"
+                  }
+               },
+               "format":"n/a",
+               "id":"workCardDetail"
+            },
+            {
+               "name":"打卡項目資訊",
+               "type":"object",
+               "value":{
+                  "workCardCode":{
+                     "name":"打卡項目代碼",
+                     "type":"string",
+                     "value":"GG",
+                     "format":"n/a",
+                     "id":"workCardCode"
+                  },
+                  "workPlaceList":{
+                     "name":"工作地點資訊",
+                     "type":"object",
+                     "value":{
+                        "radius":{
+                           "name":"打卡半徑",
+                           "type":"decimal",
+                           "value":0.6,
+                           "format":"meter",
+                           "id":"radius"
+                        },
+                        "location":{
+                           "name":"工作位置",
+                           "type":"string",
+                           "value":[
+                              {
+                                 "longitude":{
+                                    "name":"經度",
+                                    "type":"decimal",
+                                    "value":121.47988,
+                                    "format":"n/a",
+                                    "id":"longitude"
+                                 },
+                                 "latitude":{
+                                    "name":"緯度",
+                                    "type":"decimal",
+                                    "value":25.0127627,
+                                    "format":"n/a",
+                                    "id":"latitude"
+                                 }
+                              }
+                           ],
+                           "format":"n/a",
+                           "id":"location"
+                        }
+                     },
+                     "format":"n/a",
+                     "id":"workPlaceList"
+                  },
+                  "workCardName":{
+                     "name":"打卡項目名稱",
+                     "type":"string",
+                     "value":"6F GPS",
+                     "format":"n/a",
+                     "id":"workCardName"
+                  }
+               },
+               "format":"n/a",
+               "id":"workCardDetail"
             }
-        },
-        "workCardOptionList": {
-            "name": "打卡項目清單",
-            "type": "array",
-            "value": [
-                {
-                    "name": "打卡項目資訊",
-                    "type": "object",
-                    "value": {
-                        "workCardCode": {
-                            "name": "打卡項目代碼",
-                            "type": "string",
-                            "value": "A",
-                            "format": "n/a",
-                            "id": "workCardCode"
+         ],
+         "format":"n/a",
+         "id":"workCardItem"
+      },
+      "workPlaceList":{
+         "name":"工作地點清單",
+         "type":"array",
+         "value":[
+            {
+               "name":"工作地點資訊",
+               "type":"object",
+               "value":{
+                  "radius":{
+                     "name":"打卡半徑",
+                     "type":"decimal",
+                     "value":0.5,
+                     "format":"meter",
+                     "id":"radius"
+                  },
+                  "location":{
+                     "name":"工作位置",
+                     "type":"object",
+                     "value":{
+                        "longitude":{
+                           "name":"經度",
+                           "type":"decimal",
+                           "value":120.5986758,
+                           "format":"n/a",
+                           "id":"longitude"
                         },
-                        "workPlaceList": {
-                            "name": "工作地點資訊",
-                            "type": "object",
-                            "value": {
-                                "radius": {
-                                    "name": "打卡半徑",
-                                    "type": "decimal",
-                                    "value": 0.0,
-                                    "format": "meter",
-                                    "id": "radius"
-                                },
-                                "location": {
-                                    "name": "工作位置",
-                                    "type": "string",
-                                    "value": [],
-                                    "format": "n/a",
-                                    "id": "location"
-                                }
-                            },
-                            "format": "n/a",
-                            "id": "workPlaceList"
-                        },
-                        "workCardName": {
-                            "name": "打卡項目名稱",
-                            "type": "string",
-                            "value": "",
-                            "format": "n/a",
-                            "id": "workCardName"
+                        "latitude":{
+                           "name":"緯度",
+                           "type":"decimal",
+                           "value":24.1744773,
+                           "format":"n/a",
+                           "id":"latitude"
                         }
-                    },
-                    "format": "n/a",
-                    "id": "workCardDetail"
-                },
-                {
-                    "name": "打卡項目資訊",
-                    "type": "object",
-                    "value": {
-                        "workCardCode": {
-                            "name": "打卡項目代碼",
-                            "type": "string",
-                            "value": "E1",
-                            "format": "n/a",
-                            "id": "workCardCode"
-                        },
-                        "workPlaceList": {
-                            "name": "工作地點資訊",
-                            "type": "object",
-                            "value": {
-                                "radius": {
-                                    "name": "打卡半徑",
-                                    "type": "decimal",
-                                    "value": 0.0,
-                                    "format": "meter",
-                                    "id": "radius"
-                                },
-                                "location": {
-                                    "name": "工作位置",
-                                    "type": "string",
-                                    "value": [],
-                                    "format": "n/a",
-                                    "id": "location"
-                                }
-                            },
-                            "format": "n/a",
-                            "id": "workPlaceList"
-                        },
-                        "workCardName": {
-                            "name": "打卡項目名稱",
-                            "type": "string",
-                            "value": "高雄GPS",
-                            "format": "n/a",
-                            "id": "workCardName"
-                        }
-                    },
-                    "format": "n/a",
-                    "id": "workCardDetail"
-                },
-                {
-                    "name": "打卡項目資訊",
-                    "type": "object",
-                    "value": {
-                        "workCardCode": {
-                            "name": "打卡項目代碼",
-                            "type": "string",
-                            "value": "F1",
-                            "format": "n/a",
-                            "id": "workCardCode"
-                        },
-                        "workPlaceList": {
-                            "name": "工作地點資訊",
-                            "type": "object",
-                            "value": {
-                                "radius": {
-                                    "name": "打卡半徑",
-                                    "type": "decimal",
-                                    "value": 0.0,
-                                    "format": "meter",
-                                    "id": "radius"
-                                },
-                                "location": {
-                                    "name": "工作位置",
-                                    "type": "string",
-                                    "value": [],
-                                    "format": "n/a",
-                                    "id": "location"
-                                }
-                            },
-                            "format": "n/a",
-                            "id": "workPlaceList"
-                        },
-                        "workCardName": {
-                            "name": "打卡項目名稱",
-                            "type": "string",
-                            "value": "卡IP",
-                            "format": "n/a",
-                            "id": "workCardName"
-                        }
-                    },
-                    "format": "n/a",
-                    "id": "workCardDetail"
-                },
-                {
-                    "name": "打卡項目資訊",
-                    "type": "object",
-                    "value": {
-                        "workCardCode": {
-                            "name": "打卡項目代碼",
-                            "type": "string",
-                            "value": "E11",
-                            "format": "n/a",
-                            "id": "workCardCode"
-                        },
-                        "workPlaceList": {
-                            "name": "工作地點資訊",
-                            "type": "object",
-                            "value": {
-                                "radius": {
-                                    "name": "打卡半徑",
-                                    "type": "decimal",
-                                    "value": 0.5,
-                                    "format": "meter",
-                                    "id": "radius"
-                                },
-                                "location": {
-                                    "name": "工作位置",
-                                    "type": "string",
-                                    "value": [
-                                        {
-                                            "longitude": {
-                                                "name": "經度",
-                                                "type": "decimal",
-                                                "value": 120.31268,
-                                                "format": "n/a",
-                                                "id": "longitude"
-                                            },
-                                            "latitude": {
-                                                "name": "緯度",
-                                                "type": "decimal",
-                                                "value": 22.6302489,
-                                                "format": "n/a",
-                                                "id": "latitude"
-                                            }
-                                        }
-                                    ],
-                                    "format": "n/a",
-                                    "id": "location"
-                                }
-                            },
-                            "format": "n/a",
-                            "id": "workPlaceList"
-                        },
-                        "workCardName": {
-                            "name": "打卡項目名稱",
-                            "type": "string",
-                            "value": "william測試用",
-                            "format": "n/a",
-                            "id": "workCardName"
-                        }
-                    },
-                    "format": "n/a",
-                    "id": "workCardDetail"
-                },
-                {
-                    "name": "打卡項目資訊",
-                    "type": "object",
-                    "value": {
-                        "workCardCode": {
-                            "name": "打卡項目代碼",
-                            "type": "string",
-                            "value": "TEST1",
-                            "format": "n/a",
-                            "id": "workCardCode"
-                        },
-                        "workPlaceList": {
-                            "name": "工作地點資訊",
-                            "type": "object",
-                            "value": {
-                                "radius": {
-                                    "name": "打卡半徑",
-                                    "type": "decimal",
-                                    "value": 0.0,
-                                    "format": "meter",
-                                    "id": "radius"
-                                },
-                                "location": {
-                                    "name": "工作位置",
-                                    "type": "string",
-                                    "value": [],
-                                    "format": "n/a",
-                                    "id": "location"
-                                }
-                            },
-                            "format": "n/a",
-                            "id": "workPlaceList"
-                        },
-                        "workCardName": {
-                            "name": "打卡項目名稱",
-                            "type": "string",
-                            "value": "",
-                            "format": "n/a",
-                            "id": "workCardName"
-                        }
-                    },
-                    "format": "n/a",
-                    "id": "workCardDetail"
-                },
-                {
-                    "name": "打卡項目資訊",
-                    "type": "object",
-                    "value": {
-                        "workCardCode": {
-                            "name": "打卡項目代碼",
-                            "type": "string",
-                            "value": "C1",
-                            "format": "n/a",
-                            "id": "workCardCode"
-                        },
-                        "workPlaceList": {
-                            "name": "工作地點資訊",
-                            "type": "object",
-                            "value": {
-                                "radius": {
-                                    "name": "打卡半徑",
-                                    "type": "decimal",
-                                    "value": 0.0,
-                                    "format": "meter",
-                                    "id": "radius"
-                                },
-                                "location": {
-                                    "name": "工作位置",
-                                    "type": "string",
-                                    "value": [],
-                                    "format": "n/a",
-                                    "id": "location"
-                                }
-                            },
-                            "format": "n/a",
-                            "id": "workPlaceList"
-                        },
-                        "workCardName": {
-                            "name": "打卡項目名稱",
-                            "type": "string",
-                            "value": "駐點",
-                            "format": "n/a",
-                            "id": "workCardName"
-                        }
-                    },
-                    "format": "n/a",
-                    "id": "workCardDetail"
-                },
-                {
-                    "name": "打卡項目資訊",
-                    "type": "object",
-                    "value": {
-                        "workCardCode": {
-                            "name": "打卡項目代碼",
-                            "type": "string",
-                            "value": "D1",
-                            "format": "n/a",
-                            "id": "workCardCode"
-                        },
-                        "workPlaceList": {
-                            "name": "工作地點資訊",
-                            "type": "object",
-                            "value": {
-                                "radius": {
-                                    "name": "打卡半徑",
-                                    "type": "decimal",
-                                    "value": 0.5,
-                                    "format": "meter",
-                                    "id": "radius"
-                                },
-                                "location": {
-                                    "name": "工作位置",
-                                    "type": "string",
-                                    "value": [
-                                        {
-                                            "longitude": {
-                                                "name": "經度",
-                                                "type": "decimal",
-                                                "value": 121.48677,
-                                                "format": "n/a",
-                                                "id": "longitude"
-                                            },
-                                            "latitude": {
-                                                "name": "緯度",
-                                                "type": "decimal",
-                                                "value": 24.9982389,
-                                                "format": "n/a",
-                                                "id": "latitude"
-                                            }
-                                        }
-                                    ],
-                                    "format": "n/a",
-                                    "id": "location"
-                                }
-                            },
-                            "format": "n/a",
-                            "id": "workPlaceList"
-                        },
-                        "workCardName": {
-                            "name": "打卡項目名稱",
-                            "type": "string",
-                            "value": "英特內GPS-12F",
-                            "format": "n/a",
-                            "id": "workCardName"
-                        }
-                    },
-                    "format": "n/a",
-                    "id": "workCardDetail"
-                },
-                {
-                    "name": "打卡項目資訊",
-                    "type": "object",
-                    "value": {
-                        "workCardCode": {
-                            "name": "打卡項目代碼",
-                            "type": "string",
-                            "value": "B",
-                            "format": "n/a",
-                            "id": "workCardCode"
-                        },
-                        "workPlaceList": {
-                            "name": "工作地點資訊",
-                            "type": "object",
-                            "value": {
-                                "radius": {
-                                    "name": "打卡半徑",
-                                    "type": "decimal",
-                                    "value": 0.0,
-                                    "format": "meter",
-                                    "id": "radius"
-                                },
-                                "location": {
-                                    "name": "工作位置",
-                                    "type": "string",
-                                    "value": [],
-                                    "format": "n/a",
-                                    "id": "location"
-                                }
-                            },
-                            "format": "n/a",
-                            "id": "workPlaceList"
-                        },
-                        "workCardName": {
-                            "name": "打卡項目名稱",
-                            "type": "string",
-                            "value": "",
-                            "format": "n/a",
-                            "id": "workCardName"
-                        }
-                    },
-                    "format": "n/a",
-                    "id": "workCardDetail"
-                }
-            ],
-            "format": "n/a",
-            "id": "workCardItem"
-        },
-        "workPlaceList": {
-            "name": "工作地點清單",
-            "type": "array",
-            "value": [
-                {
-                    "name": "工作地點資訊",
-                    "type": "object",
-                    "value": {
-                        "radius": {
-                            "name": "打卡半徑",
-                            "type": "decimal",
-                            "value": 0.1,
-                            "format": "meter",
-                            "id": "radius"
-                        },
-                        "location": {
-                            "name": "工作位置",
-                            "type": "object",
-                            "value": {
-                                "longitude": {
-                                    "name": "經度",
-                                    "type": "decimal",
-                                    "value": 121.4857181,
-                                    "format": "n/a",
-                                    "id": "longitude"
-                                },
-                                "latitude": {
-                                    "name": "緯度",
-                                    "type": "decimal",
-                                    "value": 24.9983947,
-                                    "format": "n/a",
-                                    "id": "latitude"
-                                }
-                            },
-                            "format": "n/a",
-                            "id": "location"
-                        },
-                        "placeName": {
-                            "name": "工作地點中文名稱",
-                            "type": "string",
-                            "value": "台北_南京東路辦公室",
-                            "format": "n/a",
-                            "id": "placeName"
-                        },
-                        "placeEname": {
-                            "name": "工作地點英文名稱",
-                            "type": "string",
-                            "value": "",
-                            "format": "n/a",
-                            "id": "placeEname"
-                        },
-                        "placeCode": {
-                            "name": "工作地點代號",
-                            "type": "string",
-                            "value": "B",
-                            "format": "n/a",
-                            "id": "placeCode"
-                        }
-                    },
-                    "format": "n/a",
-                    "id": "workPlace"
-                }
-            ],
-            "format": "n/a",
-            "id": "workPlaceList"
-        }
-    }
+                     },
+                     "format":"n/a",
+                     "id":"location"
+                  },
+                  "placeName":{
+                     "name":"工作地點中文名稱",
+                     "type":"string",
+                     "value":"台中",
+                     "format":"n/a",
+                     "id":"placeName"
+                  },
+                  "placeEname":{
+                     "name":"工作地點英文名稱",
+                     "type":"string",
+                     "value":"",
+                     "format":"n/a",
+                     "id":"placeEname"
+                  },
+                  "placeCode":{
+                     "name":"工作地點代號",
+                     "type":"string",
+                     "value":"TC",
+                     "format":"n/a",
+                     "id":"placeCode"
+                  }
+               },
+               "format":"n/a",
+               "id":"workPlace"
+            }
+         ],
+         "format":"n/a",
+         "id":"workPlaceList"
+      },
+      "optionRight":{
+         "name":"是否有打卡項目權限",
+         "type":"boolean",
+         "value":true,
+         "format":"n/a",
+         "id":"optionRight"
+      }
+   }
 }
 ```
 
