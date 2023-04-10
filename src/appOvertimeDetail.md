@@ -583,6 +583,44 @@ Here is a JSON representation of request.
                "id":"field"
             },
             {
+                "name": "欄位資訊",
+                "type": "object",
+                "value": {
+                    "fieldType": {
+                        "name": "欄位類型",
+                        "type": "string",
+                        "value": "text",
+                        "format": "n/a",
+                        "id": "fieldType"
+                    },
+                    "fieldId": {
+                        "name": "欄位代號",
+                        "type": "string",
+                        "value": "oldPayTypeName",
+                        "format": "n/a",
+                        "id": "fieldId"
+                    },
+                    "fieldValue": {
+                        "name": "欄位資料",
+                        "type": "array",
+                        "value": [
+                            ""
+                        ],
+                        "format": "n/a",
+                        "id": "fieldValue"
+                    },
+                    "fieldName": {
+                        "name": "欄位名稱",
+                        "type": "string",
+                        "value": "原給付方式",
+                        "format": "n/a",
+                        "id": "fieldName"
+                    }
+                },
+                "format": "n/a",
+                "id": "field"
+            },
+            {
                "name":"欄位資訊",
                "type":"object",
                "value":{
@@ -955,6 +993,44 @@ Here is a JSON representation of request.
                },
                "format":"n/a",
                "id":"field"
+            },
+            {
+                "name": "欄位資訊",
+                "type": "object",
+                "value": {
+                    "fieldType": {
+                        "name": "欄位類型",
+                        "type": "string",
+                        "value": "text",
+                        "format": "n/a",
+                        "id": "fieldType"
+                    },
+                    "fieldId": {
+                        "name": "欄位代號",
+                        "type": "string",
+                        "value": "oldTotalRestAmt",
+                        "format": "n/a",
+                        "id": "fieldId"
+                    },
+                    "fieldValue": {
+                        "name": "欄位資料",
+                        "type": "array",
+                        "value": [
+                            "A"
+                        ],
+                        "format": "hour",
+                        "id": "fieldValue"
+                    },
+                    "fieldName": {
+                        "name": "欄位名稱",
+                        "type": "string",
+                        "value": "原補休時數",
+                        "format": "n/a",
+                        "id": "fieldName"
+                    }
+                },
+                "format": "n/a",
+                "id": "field"
             },
             {
                "name":"欄位資訊",
