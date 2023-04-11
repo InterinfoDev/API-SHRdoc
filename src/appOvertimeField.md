@@ -59,6 +59,13 @@ Here is a JSON representation of request.
          "name":"實際加班單顯示欄位資訊",
          "type":"object",
          "value":{
+            "threeMonthsApplyHours": {
+                "name": "三個月已累積加班時數(不含本次)",
+                "type": "string",
+                "value": "",
+                "format": "n/a",
+                "id": "threeMonthsApplyHours"
+            },
             "appliedHour":{
                "name":"當月已累積加班時數(不含本次)",
                "type":"decimal",
