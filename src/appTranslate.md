@@ -16,7 +16,7 @@ POST
 |:----------|:-------------|:-----|:------------|
 | uid | 98599308101484732326 | String | 需透過appLogin取得
 | right | 51341911904173543336756162544864820 | String | 需透過appLogin取得 |
-| request | {'locale':'TW','translateList':[{'translateId':'A','translateContent':'年資經歷'},{'translateId':'B','translateContent':'各部門教育訓練執行統計表'}]} | Object | 翻譯文字資訊
+| request | {'locale':'US','deviceType':'IOS'} | Object | 翻譯文字資訊
 
 ### JSON representation Case 1
 Here is a JSON representation of request.
@@ -26,15 +26,7 @@ Here is a JSON representation of request.
    "right":"51341911904173543336756162544864820",
    "request":{
       "locale":"US",
-      "translateList":[
-         {
-            "translateId":"A",
-            "translateContent":"年資經歷"
-         },
-         {
-            "translateId":"B",
-            "translateContent":"各部門教育訓練執行統計表"
-         }
+      "deviceType":"IOS"
       ]
    }
 }
@@ -50,9 +42,8 @@ Here is a JSON representation of request.
 ### Request Properties
 | Key | Value | Type | Description | Required | Format |
 |:----------|:-------------|:-----|:------------|:------------|:------------|
-| locale | TW | String | 語系代號 | N | n/a |
-| translateId | A | String | 發送端翻譯辨別代號 | N | n/a |
-| translateContent | XXX | String | 翻譯內容 | N | n/a |
+| locale | TW | String | 語系代號 | Y | n/a |
+| deviceType | XXX | String | 裝置類型 | Y | IOS / Android |
 
 ### HTTP Response when Successful
 ```json
@@ -70,19 +61,19 @@ Here is a JSON representation of request.
                "name":"翻譯詳細資料",
                "type":"object",
                "value":{
-                  "translateId":{
-                     "name":"翻譯代號",
+                  "MessageId":{
+                     "name":"訊息代號",
                      "type":"string",
-                     "value":"A",
+                     "value":"employeeName",
                      "format":"n/a",
-                     "id":"translateId"
+                     "id":"MessageId"
                   },
-                  "translateContent":{
-                     "name":"翻譯內容",
+                  "Content":{
+                     "name":"訊息內容",
                      "type":"string",
-                     "value":"Seniority & Experience",
+                     "value":"Name",
                      "format":"n/a",
-                     "id":"translateContent"
+                     "id":"Content"
                   }
                },
                "format":"n/a",
@@ -92,19 +83,19 @@ Here is a JSON representation of request.
                "name":"翻譯詳細資料",
                "type":"object",
                "value":{
-                  "translateId":{
-                     "name":"翻譯代號",
+                  "MessageId":{
+                     "name":"訊息代號",
                      "type":"string",
-                     "value":"B",
+                     "value":"empId",
                      "format":"n/a",
-                     "id":"translateId"
+                     "id":"MessageId"
                   },
-                  "translateContent":{
-                     "name":"翻譯內容",
+                  "Content":{
+                     "name":"訊息內容",
                      "type":"string",
-                     "value":"Training Execution Statistics (By Department)",
+                     "value":"ID",
                      "format":"n/a",
-                     "id":"translateContent"
+                     "id":"Content"
                   }
                },
                "format":"n/a",
