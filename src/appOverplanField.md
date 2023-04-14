@@ -306,6 +306,13 @@ Here is a JSON representation of request.
          "name":"預定加班單單顯示欄位資訊",
          "type":"object",
          "value":{
+            "threeMonthsApplyHours":{
+               "name":"三個月已累積加班時數(不含本次)",
+               "type":"string",
+               "value":"",
+               "format":"n/a",
+               "id":"threeMonthsApplyHours"
+            },
             "empid":{
                "name":"員工編號",
                "type":"string",
