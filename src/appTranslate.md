@@ -43,7 +43,7 @@ Here is a JSON representation of request.
 | Key | Value | Type | Description | Required | Format |
 |:----------|:-------------|:-----|:------------|:------------|:------------|
 | locale | TW | String | 語系代號 | Y | n/a |
-| deviceType | XXX | String | 裝置類型 | Y | IOS / Android |
+| deviceType | XXX | String | 裝置類型 | Y | IOS / ANDROID |
 
 ### HTTP Response when Successful
 ```json
