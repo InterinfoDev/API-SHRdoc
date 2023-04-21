@@ -11,6 +11,38 @@ https://114.34.125.246:8090/servlet/HRNative/appRecognitionTerms
 POST
 ```
 
+
+### Request body
+| Property | Type | Description |
+|:---------|:-----|:------------|
+| uid | 98599308101484732326 | String | 需透過appLogin取得
+| right | 51341911904173543336756162544864820 | String | 需透過appLogin取得 |
+| request | {locale : US} | Object | 查詢條件
+
+### JSON representation
+Here is a JSON representation of request.
+```json
+{
+    "uid":"98599308101484732326",
+    "right":"51341911904173543336756162544864820",
+    "request":{
+        "locale":"US"
+    }
+}
+```
+
+### Properties
+| Property | Type | Description |
+|:---------|:-----|:------------|
+| uid   | String | 加密後帳號 |
+| right | String | 加密後系統相關資料 |
+| request | Object | 要求本文 |
+
+### Request Properties
+| Key | Value | Type | Description | Required | Format |
+|:----------|:-------------|:-----|:------------|:------------|:------------|
+| locale | US | String | 語系 | N | n/a |
+
 ### HTTP Response when Successful
 ```json
 {
