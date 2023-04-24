@@ -323,11 +323,91 @@ Here is a JSON representation of request.
 ### HTTP Response when No Data 
 ```json
 {
-    "status": "fail",
+    "status": "success",
     "message": [
-        "查無資料"
+        "您已無待簽核單據"
     ],
-    "data": {}
+    "data": {
+        "properties": {
+            "format": {
+                "n/a": "",
+                "hyperlink": "超連結"
+            }
+        },
+        "flowList": {
+            "name": "CB2.12.出差時程變更單簽核-待簽核列表",
+            "type": "array",
+            "value": [],
+            "format": "n/a",
+            "id": "flowList"
+        },
+        "flowButton": {
+            "name": "流程按鈕",
+            "type": "object",
+            "value": {
+                "reject": {
+                    "name": "退簽",
+                    "type": "object",
+                    "value": {
+                        "buttonName": {
+                            "name": "按鈕名稱",
+                            "type": "string",
+                            "value": "退簽",
+                            "format": "n/a",
+                            "id": "buttonName"
+                        },
+                        "buttonKey": {
+                            "name": "按鈕代碼",
+                            "type": "string",
+                            "value": "[退簽]",
+                            "format": "n/a",
+                            "id": "buttonKey"
+                        },
+                        "visible": {
+                            "name": "是否顯示",
+                            "type": "boolean",
+                            "value": true,
+                            "format": "n/a",
+                            "id": "visible"
+                        }
+                    },
+                    "format": "n/a",
+                    "id": "reject"
+                },
+                "approve": {
+                    "name": "核准",
+                    "type": "object",
+                    "value": {
+                        "buttonName": {
+                            "name": "按鈕名稱",
+                            "type": "string",
+                            "value": "核准",
+                            "format": "n/a",
+                            "id": "buttonName"
+                        },
+                        "buttonKey": {
+                            "name": "按鈕代碼",
+                            "type": "string",
+                            "value": "核准",
+                            "format": "n/a",
+                            "id": "buttonKey"
+                        },
+                        "visible": {
+                            "name": "是否顯示",
+                            "type": "boolean",
+                            "value": true,
+                            "format": "n/a",
+                            "id": "visible"
+                        }
+                    },
+                    "format": "n/a",
+                    "id": "approve"
+                }
+            },
+            "format": "n/a",
+            "id": "flowButton"
+        }
+    }
 }
 ```
 
