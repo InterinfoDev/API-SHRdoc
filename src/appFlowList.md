@@ -223,6 +223,34 @@ Here is a JSON representation of request.
                      "name":"簽核資訊",
                      "type":"object",
                      "value":{
+                        "rejecterId":{
+                           "name":"退簽者工號",
+                           "type":"string",
+                           "value":"1783",
+                           "format":"n/a",
+                           "id":"rejecterId"
+                        },
+                        "isReject":{
+                           "name":"是否被退簽",
+                           "type":"boolean",
+                           "value":true,
+                           "format":"n/a",
+                           "id":"isReject"
+                        },
+                        "rejecterName":{
+                           "name":"退簽者姓名",
+                           "type":"string",
+                           "value":"岑O祐",
+                           "format":"n/a",
+                           "id":"rejecterName"
+                        },
+                        "rejecterReason":{
+                           "name":"退簽原因",
+                           "type":"string",
+                           "value":"[退簽] kevinishere",
+                           "format":"n/a",
+                           "id":"rejecterReason"
+                        },
                         "approveUrl":{
                            "name":"簽核網址",
                            "type":"string",
