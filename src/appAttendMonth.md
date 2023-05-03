@@ -107,6 +107,13 @@ Here is a JSON representation of request.
                      "type":"string",
                      "format":"HHmm"
                   },
+                  "isNextDay":{
+                     "name": "是否為跨日出卡",
+                     "type": "boolean",
+                     "value": false,
+                     "format": "n/a",
+                     "id": "isNextDay"
+                  }
                   "abnormal":{
                      "id":"abnormal",
                      "name":"考勤異常說明",
