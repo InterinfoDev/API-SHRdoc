@@ -14,9 +14,9 @@ POST
 ### Request body
 | Key | Value | Type | Description |
 |:----------|:-------------|:-----|:------------|
-| uid | 98599308101484732326 | String | 需透過appLogin取得
+| uid | 98599308101484732326 | String | 需透過appLogin取得 |
 | right | 51341911904173543336756162544864820 | String | 需透過appLogin取得 |
-| request | {salaryYM:202111 , salaryCount:1 , key:32262008498747441193712198021232260366087649257856381618231} | Object | 查詢條件
+| request | {salaryYM:202111 companyId:TW , salaryCount:1 , key:32262008498747441193712198021232260366087649257856381618231} | Object | 查詢條件 |
 
 ### JSON representation
 Here is a JSON representation of request.
@@ -25,7 +25,8 @@ Here is a JSON representation of request.
     "uid":"98599308101484732326",
     "right":"51341911904173543336756162544864820",
     "request":{ --lucas 取消empid傳入，改用getUser
-        "salaryYM":"202111", 
+        "salaryYM":"202111",
+        "companyId":"TW", 
         "salaryCount":1,
         "key":"32262008498747441193712198021232260366087649257856381618231",
     }
@@ -43,8 +44,10 @@ Here is a JSON representation of request.
 | Key | Value | Type | Description | Required | Format |
 |:----------|:-------------|:-----|:------------|:------------|:------------|
 | salaryYM | 202111 | String | 薪資年月 | Y | AC(YYYYmm) |
+| companyId | TW | String | 公司代號 | Y | n/a |
 | salaryCount | 1 | Integer | 發薪次數 | Y | n/a |
 | key | 32262008498747441193712198021232260366087649257856381618231 | String | 通行金鑰 | Y | n/a |
+
 
 ### HTTP Response when Successful
 ```json
@@ -100,6 +103,13 @@ Here is a JSON representation of request.
                "value":"Lucas",
                "type":"string",
                "format":"n/a"
+            },
+            "companyFullName": {
+               "name": "公司全名",
+               "type": "string",
+               "value": "XXXX公司",
+               "format": "n/a",
+               "id": "companyFullName"
             },
             "grade":{
                "id":"grade",
