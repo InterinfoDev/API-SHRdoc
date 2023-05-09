@@ -54,7 +54,14 @@ Here is a JSON representation of request.
       "salaryRecent":{
          "id":"salaryRecent", --lucas 改名
          "name":"最近一次薪資發放資訊",
-         "value":{
+         "value":{ 
+            "companyId":{
+               "name": "公司代號",
+               "type": "string",
+               "value": "TECXMN",
+               "format": "n/a",
+               "id": "companyId"
+            },
             "salaryYM":{ --lucas 改名
                "id":"salaryYM", --lucas 改名
                "name":"薪資年月",
