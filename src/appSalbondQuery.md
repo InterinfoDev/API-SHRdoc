@@ -108,6 +108,13 @@ Here is a JSON representation of request.
                "type":"string",
                "format":"n/a"
             },
+            "companyFullName":{
+               "id":"companyFullName",
+               "name":"公司全名",
+               "value":"XXXX公司",
+               "type":"string",
+               "format":"n/a"
+            },
             "empid":{
                "id":"empid",
                "name":"員工編號",
