@@ -16,7 +16,7 @@ POST
 |:----------|:-------------|:-----|:------------|
 | uid | 98599308101484732326 | String | 需透過appLogin取得
 | right | 51341911904173543336756162544864820 | String | 需透過appLogin取得 |
-| request | {specialDate:XXX, empid:admin, vacationCode:XXX} | Object | 查詢條件(依據申請畫面取得)
+| request | {specialDate:XXX, employeeId:admin, vacationCode:XXX, startDate:20230529} | Object | 查詢條件(依據申請畫面取得)
 
 ### JSON representation
 Here is a JSON representation of request.
@@ -25,9 +25,10 @@ Here is a JSON representation of request.
     "uid":"98599308101484732326",
     "right":"51341911904173543336756162544864820",
     "request":{
-        "specialDate":"0220425", 
-        "empid":"admin",
-        "vacationCode":"08-TW.01"
+        "specialDate":"20220425", 
+        "employeeId":"admin",
+        "vacationCode":"08-TW.01",
+        "startDate":"20230529"
     }
 }
 ```
@@ -44,8 +45,9 @@ Here is a JSON representation of request.
 | Key | Value | Type | Description | Required | Format |
 |:----------|:-------------|:-----|:------------|:------------|:------------|
 | specialDate | 20220425 | String | 特殊日期 | N | AC(YYYYmmdd) |
-| empid | admin | String | 員工編號 | Y | n/a |
+| employeeId | admin | String | 員工編號 | Y | n/a |
 | vacationCode | 06.061 | String | 假別代碼 | Y | n/a |
+| startDate | 20220425 | String | 起始日期 | N | AC(YYYYmmdd) |
 
 ### HTTP Response when Successful
 ```json
@@ -760,12 +762,12 @@ Here is a JSON representation of request.
                "format":"n/a",
                "id":"empFullName"
             },
-            "empid":{
+            "employeeId":{
                "name":"員工編號",
                "type":"string",
                "value":"admin",
                "format":"n/a",
-               "id":"empid"
+               "id":"employeeId"
             },
             "depFullName":{
                "name":"部門名稱",
