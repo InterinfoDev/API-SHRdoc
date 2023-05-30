@@ -35,7 +35,9 @@ Here is a JSON representation of request.
       },
        "reply":{
         "sender":"xxx",
-        "textId":"xxx"
+        "textId":"xxx",
+        "textType":"xxx",
+        "timestamp":"xxx"
       }
    }
 }
