@@ -16,7 +16,7 @@ POST
 |:----------|:-------------|:-----|:------------|
 | uid | 98599308101484732326 | String | 需透過appLogin取得
 | right | 51341911904173543336756162544864820 | String | 需透過appLogin取得 |
-| request | {'roomId':'xxx' ,'textId':'xxx', 'text':'' ,'textType':'img' ,'file':{'fileName':'kevin測試照片.jpg','fileData':'base64'}, 'reply':{'sender':'xxx','textId':'xxx'}} | Object | 異動條件
+| request | {'roomId':'xxx' ,'textId':'xxx', 'text':'' ,'textType':'img' ,'file':{'fileName':'kevin測試照片.jpg','fileData':'base64'}, 'reply':{'sender':'xxx','textId':'xxx','content':'xxx','textType':'xxx','timestamp':''}} | Object | 異動條件
 
 ### JSON representation Case 1
 Here is a JSON representation of request.
@@ -57,8 +57,9 @@ Here is a JSON representation of request.
 | textType | img | String | 訊息類型 | Y | n/a |
 | file |  | String | 附件檔案 |  | n/a |
 | fileName | test.jpg | String | 附件檔案 | N | n/a |
-| fileData |  | String | 附件檔案 | N | base64 |
-| reply |  | Object | 回覆內容 |  | n/a |
+| fileData | String | 附件檔案 | N | base64 |
+| reply | Object | 回覆內容 |  | n/a |
+| timestamp | String | 時間戳 | N | n/a |
 
 ### TextType
 | textType | Description |
