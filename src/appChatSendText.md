@@ -16,7 +16,7 @@ POST
 |:----------|:-------------|:-----|:------------|
 | uid | 98599308101484732326 | String | 需透過appLogin取得
 | right | 51341911904173543336756162544864820 | String | 需透過appLogin取得 |
-| request | {'roomId':'xxx' ,'textId':'xxx', 'text':'' ,'textType':'img' ,'file':{'fileName':'kevin測試照片.jpg','fileData':'base64'}} | Object | 異動條件
+| request | {'roomId':'xxx' ,'textId':'xxx', 'text':'' ,'textType':'img' ,'file':{'fileName':'kevin測試照片.jpg','fileData':'base64'}, 'reply':{'sender':'xxx','textId':'xxx'}} | Object | 異動條件
 
 ### JSON representation Case 1
 Here is a JSON representation of request.
@@ -32,6 +32,10 @@ Here is a JSON representation of request.
       "file":{
         "fileName":"kevin.jpg",
         "fileData":"base64"
+      },
+       "reply":{
+        "sender":"xxx",
+        "textId":"xxx"
       }
    }
 }
@@ -54,6 +58,7 @@ Here is a JSON representation of request.
 | file |  | String | 附件檔案 |  | n/a |
 | fileName | test.jpg | String | 附件檔案 | N | n/a |
 | fileData |  | String | 附件檔案 | N | base64 |
+| reply |  | Object | 回覆內容 |  | n/a |
 
 ### TextType
 | textType | Description |
@@ -62,6 +67,9 @@ Here is a JSON representation of request.
 | sysText | 系統訊息 |
 | img | 圖片 |
 | file | 檔案 |
+| replyFile | 回覆檔案 |
+| replyImg | 回覆圖片 |
+| replyText | 回覆文字 |
 
 ### HTTP Response when Successful
 ```json
