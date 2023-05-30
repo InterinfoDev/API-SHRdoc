@@ -98,6 +98,13 @@ Here is a JSON representation of request.
                             "value":"",
                             "format":"n/a",
                             "id":"textId"
+                         },
+                         "content":{
+                            "name":"訊息內容",
+                            "type":"string",
+                            "value":"",
+                            "format":"n/a",
+                            "id":"content"
                          }
                       },
                       "id":"reply"
@@ -235,6 +242,13 @@ Here is a JSON representation of request.
                             "value":"",
                             "format":"n/a",
                             "id":"textId"
+                         },
+                         "content":{
+                            "name":"訊息內容",
+                            "type":"string",
+                            "value":"",
+                            "format":"n/a",
+                            "id":"content"
                          }
                       },
                       "id":"reply"
