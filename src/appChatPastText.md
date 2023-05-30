@@ -78,6 +78,27 @@ Here is a JSON representation of request.
                "name":"訊息資訊",
                "type":"object",
                "value":{
+                  "reply":{
+                      "name":"回覆資訊",
+                      "type":"object",
+                      "value":{
+                         "sender":{
+                            "name":"發送人員",
+                            "type":"string",
+                            "value":"",
+                            "format":"n/a",
+                            "id":"sender"
+                         },
+                         "textId":{
+                            "name":"訊息鍵值",
+                            "type":"string",
+                            "value":"",
+                            "format":"n/a",
+                            "id":"textId"
+                         }
+                      },
+                      "id":"reply"
+                   },
                   "file":{
                      "name":"檔案資訊",
                      "type":"object",
@@ -194,6 +215,27 @@ Here is a JSON representation of request.
                "name":"訊息資訊",
                "type":"object",
                "value":{
+                  "reply":{
+                      "name":"回覆資訊",
+                      "type":"object",
+                      "value":{
+                         "sender":{
+                            "name":"發送人員",
+                            "type":"string",
+                            "value":"",
+                            "format":"n/a",
+                            "id":"sender"
+                         },
+                         "textId":{
+                            "name":"訊息鍵值",
+                            "type":"string",
+                            "value":"",
+                            "format":"n/a",
+                            "id":"textId"
+                         }
+                      },
+                      "id":"reply"
+                   },
                   "file":{
                      "name":"檔案資訊",
                      "type":"object",
