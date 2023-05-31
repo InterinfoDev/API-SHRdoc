@@ -177,6 +177,7 @@ Here is a JSON representation of request.
                             "id":"content"
                          }
                       },
+                      "format":"n/a",
                       "id":"reply"
                    },
                   "file":{
@@ -321,6 +322,7 @@ Here is a JSON representation of request.
                             "id":"content"
                          }
                       },
+                      "format":"n/a",
                       "id":"reply"
                    },
                   "file":{
