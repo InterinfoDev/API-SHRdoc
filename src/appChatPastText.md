@@ -52,6 +52,9 @@ Here is a JSON representation of request.
 | date | 日期 |
 | img | 圖片 |
 | file | 檔案 |
+| replyFile | 回覆檔案 |
+| replyImg | 回覆圖片 |
+| replyText | 回覆文字 |
 
 
 ### HTTP Response when Successful
