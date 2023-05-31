@@ -37,6 +37,7 @@ Here is a JSON representation of request.
         "sender":"xxx",
         "textId":"xxx",
         "textType":"xxx",
+        "content":"xxx",
         "timestamp":"xxx"
       }
    }
