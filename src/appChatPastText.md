@@ -105,6 +105,13 @@ Here is a JSON representation of request.
                             "value":"",
                             "format":"n/a",
                             "id":"content"
+                         },
+                         "textType":{
+                            "name":"訊息類型",
+                            "type":"string",
+                            "value":"",
+                            "format":"n/a",
+                            "id":"textType"
                          }
                       },
                       "format":"n/a",
