@@ -29,9 +29,9 @@ Here is a JSON representation of request.
         "companyId":"TW",
         "irregularYM":"202303",
         "viewType":"B",
-        "beforeMins":30, 
-        "afterMins":30,
-        "outMins":30,
+        "beforeMins":"30", 
+        "afterMins":"30",
+        "outMins":"30",
         "depNumber":[1]
     }
 }
@@ -51,9 +51,9 @@ Here is a JSON representation of request.
 | companyId | TW | String | 公司代號 | Y | n/a |
 | irregularYM | 202303 | String | 查詢年月 | Y | AC(YYYYmm) |
 | viewType | B | String | 顯示種類 | Y | n/a |
-| beforeMins | 30 | Integer | 提前多久刷卡視為異常 | Y | n/a |
-| afterMins | 30 | Integer | 延後多久刷卡視為異常 | Y | n/a |
-| outMins | 30 | Integer | 刷卡時間超過多久未報加班視為異常 | Y | n/a |
+| beforeMins | 30 | String | 提前多久刷卡視為異常 | Y | n/a |
+| afterMins | 30 | String | 延後多久刷卡視為異常 | Y | n/a |
+| outMins | 30 | String | 刷卡時間超過多久未報加班視為異常 | Y | n/a |
 | depNumber | [1] | Array(Integer) | 部門代號 | N | n/a |
 
 ### HTTP Response when Successful
