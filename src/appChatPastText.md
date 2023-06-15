@@ -16,7 +16,7 @@ POST
 |:----------|:-------------|:-----|:------------|
 | uid | 98599308101484732326 | String | 需透過appLogin取得
 | right | 51341911904173543336756162544864820 | String | 需透過appLogin取得 |
-| request | {'roomId':'123456789','textId':'xxx'} | Object | 查詢條件
+| request | {'roomId':'123456789','textId':'xxx','searchCount':0} | Object | 查詢條件
 
 ### JSON representation
 Here is a JSON representation of request.
@@ -26,7 +26,8 @@ Here is a JSON representation of request.
     "right":"51341911904173543336756162544864820",
     "request":{ 
         "roomId":"123456789",
-        "textId":"xxx"
+        "textId":"xxx",
+        "searchCount":0
     }
 }
 ```
@@ -43,6 +44,7 @@ Here is a JSON representation of request.
 |:----------|:-------------|:-----|:------------|:------------|:------------|
 | roomId | 123456789 | String | 員工編號 | Y | n/a |
 | textId | xxx | String | 取得最後一筆訊息的KEY | Y | n/a |
+| searchCount | 0 | int | 搜尋筆數 | Y | n/a |
 
 ### TextType
 | textType | Description |
