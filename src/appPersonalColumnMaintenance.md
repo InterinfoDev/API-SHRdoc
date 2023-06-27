@@ -57,6 +57,13 @@ Here is a JSON representation of request.
          "format":"n/a",
          "id":"isFlow"
       },
+      "isFlowMessage": {
+         "name": "有簽核單據顯示訊息",
+         "type": "string",
+         "value": "您的資料正在覆核中，請待覆核完成後再修改",
+         "format": "n/a",
+         "id": "isFlowMessage"
+      },
       "employee":{
          "name":"個人資料維護欄位",
          "type":"array",
