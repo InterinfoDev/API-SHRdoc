@@ -53,7 +53,7 @@ Here is a JSON representation of request.
       "isFlow":{
          "name":"是否有簽核單據",
          "type":"boolean",
-         "value":false,
+         "value":true,
          "format":"n/a",
          "id":"isFlow"
       },
