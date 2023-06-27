@@ -54,39 +54,46 @@ Here is a JSON representation of request.
 ### HTTP Response when Successful
 ```json
 {
-    "status": "success",
-    "message": [
-        "回傳成功"
-    ],
-    "data": {
-        "properties": {
-            "format": {
-                "n/a": ""
-            }
-        },
-        "personalData": {
-            "name": "異動個人資料",
-            "type": "object",
-            "value": {
-                "executeMessage": {
-                    "name": "異動訊息",
-                    "type": "string",
-                    "value": "異動成功",
-                    "format": "n/a",
-                    "id": "executeMessage"
-                },
-                "executeResult": {
-                    "name": "異動結果",
-                    "type": "boolean",
-                    "value": true,
-                    "format": "n/a",
-                    "id": "executeResult"
-                }
+   "status":"success",
+   "message":[
+      "回傳成功"
+   ],
+   "data":{
+      "properties":{
+         "format":{
+            "n/a":""
+         }
+      },
+      "personalData":{
+         "name":"異動個人資料",
+         "type":"object",
+         "value":{
+            "executeMessage":{
+               "name":"異動訊息",
+               "type":"string",
+               "value":"異動成功",
+               "format":"n/a",
+               "id":"executeMessage"
             },
-            "format": "n/a",
-            "id": "personalData"
-        }
-    }
+            "executeResult":{
+               "name":"異動結果",
+               "type":"boolean",
+               "value":true,
+               "format":"n/a",
+               "id":"executeResult"
+            },
+            "isFlow":{
+               "name":"是否有簽核單據",
+               "type":"boolean",
+               "value":false,
+               "format":"n/a",
+               "id":"isFlow"
+            }
+         },
+         "format":"n/a",
+         "id":"personalData"
+      }
+   }
 }
 ```
 
