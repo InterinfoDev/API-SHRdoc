@@ -50,6 +50,13 @@ Here is a JSON representation of request.
       "回傳成功"
    ],
    "data":{
+      "isFlow":{
+         "name":"是否有簽核單據",
+         "type":"boolean",
+         "value":false,
+         "format":"n/a",
+         "id":"isFlow"
+      },
       "employee":{
          "name":"個人資料維護欄位",
          "type":"array",
@@ -68,7 +75,7 @@ Here is a JSON representation of request.
                   "fieldKey":{
                      "name":"欄位序號",
                      "type":"string",
-                     "value":"102277580671345369035",
+                     "value":"108418179393993612479",
                      "format":"n/a",
                      "id":"fieldKey"
                   },
@@ -82,14 +89,14 @@ Here is a JSON representation of request.
                   "fieldId":{
                      "name":"欄位代號",
                      "type":"string",
-                     "value":"depNumber",
+                     "value":"empid",
                      "format":"n/a",
                      "id":"fieldId"
                   },
                   "editable":{
                      "name":"開放編輯",
                      "type":"boolean",
-                     "value":true,
+                     "value":false,
                      "format":"n/a",
                      "id":"editable"
                   },
@@ -106,7 +113,7 @@ Here is a JSON representation of request.
                      "name":"欄位資料",
                      "type":"array",
                      "value":[
-                        "5"
+                        "0105"
                      ],
                      "format":"n/a",
                      "id":"fieldValue"
@@ -114,13 +121,81 @@ Here is a JSON representation of request.
                   "fieldName":{
                      "name":"欄位名稱",
                      "type":"string",
-                     "value":"單位名稱",
+                     "value":"員工編號",
                      "format":"n/a",
                      "id":"fieldName"
                   }
                },
                "format":"n/a",
-               "id":"depNumber"
+               "id":"empid"
+            },
+            {
+               "name":"欄位資訊",
+               "type":"object",
+               "value":{
+                  "fieldType":{
+                     "name":"欄位類型",
+                     "type":"string",
+                     "value":"input",
+                     "format":"n/a",
+                     "id":"fieldType"
+                  },
+                  "fieldKey":{
+                     "name":"欄位序號",
+                     "type":"string",
+                     "value":"101790650935424122480",
+                     "format":"n/a",
+                     "id":"fieldKey"
+                  },
+                  "visiable":{
+                     "name":"是否顯示",
+                     "type":"boolean",
+                     "value":true,
+                     "format":"n/a",
+                     "id":"visiable"
+                  },
+                  "fieldId":{
+                     "name":"欄位代號",
+                     "type":"string",
+                     "value":"empFullName",
+                     "format":"n/a",
+                     "id":"fieldId"
+                  },
+                  "editable":{
+                     "name":"開放編輯",
+                     "type":"boolean",
+                     "value":false,
+                     "format":"n/a",
+                     "id":"editable"
+                  },
+                  "option":{
+                     "name":"選單項目",
+                     "type":"array",
+                     "value":[
+                        
+                     ],
+                     "format":"n/a",
+                     "id":"option"
+                  },
+                  "fieldValue":{
+                     "name":"欄位資料",
+                     "type":"array",
+                     "value":[
+                        "郁O如"
+                     ],
+                     "format":"n/a",
+                     "id":"fieldValue"
+                  },
+                  "fieldName":{
+                     "name":"欄位名稱",
+                     "type":"string",
+                     "value":"中文姓名",
+                     "format":"n/a",
+                     "id":"fieldName"
+                  }
+               },
+               "format":"n/a",
+               "id":"empFullName"
             },
             {
                "name":"欄位資訊",
@@ -136,7 +211,7 @@ Here is a JSON representation of request.
                   "fieldKey":{
                      "name":"欄位序號",
                      "type":"string",
-                     "value":"93688819624842418438",
+                     "value":"101396267003611582294",
                      "format":"n/a",
                      "id":"fieldKey"
                   },
@@ -150,7 +225,7 @@ Here is a JSON representation of request.
                   "fieldId":{
                      "name":"欄位代號",
                      "type":"string",
-                     "value":"position",
+                     "value":"schoolType",
                      "format":"n/a",
                      "id":"fieldId"
                   },
@@ -169,14 +244,14 @@ Here is a JSON representation of request.
                            "optionId":{
                               "name":"選單代號",
                               "type":"string",
-                              "value":"1",
+                              "value":"A",
                               "format":"n/a",
                               "id":"optionId"
                            },
                            "optionValue":{
                               "name":"選單名稱",
                               "type":"string",
-                              "value":"約聘人員",
+                              "value":"日間部",
                               "format":"n/a",
                               "id":"optionValue"
                            }
@@ -185,14 +260,14 @@ Here is a JSON representation of request.
                            "optionId":{
                               "name":"選單代號",
                               "type":"string",
-                              "value":"5001",
+                              "value":"B",
                               "format":"n/a",
                               "id":"optionId"
                            },
                            "optionValue":{
                               "name":"選單名稱",
                               "type":"string",
-                              "value":"系統管理員",
+                              "value":"夜間部",
                               "format":"n/a",
                               "id":"optionValue"
                            }
@@ -205,7 +280,7 @@ Here is a JSON representation of request.
                      "name":"欄位資料",
                      "type":"array",
                      "value":[
-                        "5001"
+                        "A"
                      ],
                      "format":"n/a",
                      "id":"fieldValue"
@@ -213,265 +288,13 @@ Here is a JSON representation of request.
                   "fieldName":{
                      "name":"欄位名稱",
                      "type":"string",
-                     "value":"職稱",
+                     "value":"日夜間部",
                      "format":"n/a",
                      "id":"fieldName"
                   }
                },
                "format":"n/a",
-               "id":"position"
-            },
-            {
-               "name":"欄位資訊",
-               "type":"object",
-               "value":{
-                  "fieldType":{
-                     "name":"欄位類型",
-                     "type":"string",
-                     "value":"dateYMD",
-                     "format":"n/a",
-                     "id":"fieldType"
-                  },
-                  "fieldKey":{
-                     "name":"欄位序號",
-                     "type":"string",
-                     "value":"1887060628679946711148997434246703780876",
-                     "format":"n/a",
-                     "id":"fieldKey"
-                  },
-                  "visiable":{
-                     "name":"是否顯示",
-                     "type":"boolean",
-                     "value":true,
-                     "format":"n/a",
-                     "id":"visiable"
-                  },
-                  "fieldId":{
-                     "name":"欄位代號",
-                     "type":"string",
-                     "value":"BIRTHDAY",
-                     "format":"n/a",
-                     "id":"fieldId"
-                  },
-                  "editable":{
-                     "name":"開放編輯",
-                     "type":"boolean",
-                     "value":true,
-                     "format":"n/a",
-                     "id":"editable"
-                  },
-                  "option":{
-                     "name":"選單項目",
-                     "type":"array",
-                     "value":[
-                        
-                     ],
-                     "format":"n/a",
-                     "id":"option"
-                  },
-                  "fieldValue":{
-                     "name":"欄位資料",
-                     "type":"array",
-                     "value":[
-                        "19890122"
-                     ],
-                     "format":"YYYYmmdd",
-                     "id":"fieldValue"
-                  },
-                  "fieldName":{
-                     "name":"欄位名稱",
-                     "type":"string",
-                     "value":"出生日期",
-                     "format":"n/a",
-                     "id":"fieldName"
-                  }
-               },
-               "format":"n/a",
-               "id":"BIRTHDAY"
-            },
-            {
-               "name":"欄位資訊",
-               "type":"object",
-               "value":{
-                  "fieldType":{
-                     "name":"欄位類型",
-                     "type":"string",
-                     "value":"upload",
-                     "format":"n/a",
-                     "id":"fieldType"
-                  },
-                  "fieldKey":{
-                     "name":"欄位序號",
-                     "type":"string",
-                     "value":"107217122158555495385",
-                     "format":"n/a",
-                     "id":"fieldKey"
-                  },
-                  "visiable":{
-                     "name":"是否顯示",
-                     "type":"boolean",
-                     "value":true,
-                     "format":"n/a",
-                     "id":"visiable"
-                  },
-                  "fieldId":{
-                     "name":"欄位代號",
-                     "type":"string",
-                     "value":"photo",
-                     "format":"n/a",
-                     "id":"fieldId"
-                  },
-                  "editable":{
-                     "name":"開放編輯",
-                     "type":"boolean",
-                     "value":true,
-                     "format":"n/a",
-                     "id":"editable"
-                  },
-                  "option":{
-                     "name":"選單項目",
-                     "type":"array",
-                     "value":[
-                        
-                     ],
-                     "format":"n/a",
-                     "id":"option"
-                  },
-                  "fieldValue":{
-                     "name":"欄位資料",
-                     "type":"array",
-                     "value":[
-                        ""
-                     ],
-                     "format":"n/a",
-                     "id":"fieldValue"
-                  },
-                  "fieldName":{
-                     "name":"欄位名稱",
-                     "type":"string",
-                     "value":"照片",
-                     "format":"n/a",
-                     "id":"fieldName"
-                  }
-               },
-               "format":"n/a",
-               "id":"photo"
-            },
-            {
-               "name":"欄位資訊",
-               "type":"object",
-               "value":{
-                  "fieldType":{
-                     "name":"欄位類型",
-                     "type":"string",
-                     "value":"alternative",
-                     "format":"n/a",
-                     "id":"fieldType"
-                  },
-                  "fieldKey":{
-                     "name":"欄位序號",
-                     "type":"string",
-                     "value":"109513126157858745861",
-                     "format":"n/a",
-                     "id":"fieldKey"
-                  },
-                  "visiable":{
-                     "name":"是否顯示",
-                     "type":"boolean",
-                     "value":true,
-                     "format":"n/a",
-                     "id":"visiable"
-                  },
-                  "fieldId":{
-                     "name":"欄位代號",
-                     "type":"string",
-                     "value":"vacationInformer",
-                     "format":"n/a",
-                     "id":"fieldId"
-                  },
-                  "editable":{
-                     "name":"開放編輯",
-                     "type":"boolean",
-                     "value":true,
-                     "format":"n/a",
-                     "id":"editable"
-                  },
-                  "option":{
-                     "name":"選單項目",
-                     "type":"array",
-                     "value":[
-                        {
-                           "optionId":{
-                              "name":"選單代號",
-                              "type":"string",
-                              "value":"0001",
-                              "format":"n/a",
-                              "id":"optionId"
-                           },
-                           "optionValue":{
-                              "name":"選單名稱",
-                              "type":"string",
-                              "value":"TEST_0001",
-                              "format":"n/a",
-                              "id":"optionValue"
-                           }
-                        },
-                        {
-                           "optionId":{
-                              "name":"選單代號",
-                              "type":"string",
-                              "value":"0002",
-                              "format":"n/a",
-                              "id":"optionId"
-                           },
-                           "optionValue":{
-                              "name":"選單名稱",
-                              "type":"string",
-                              "value":"TEST_0002",
-                              "format":"n/a",
-                              "id":"optionValue"
-                           }
-                        },
-                        {
-                           "optionId":{
-                              "name":"選單代號",
-                              "type":"string",
-                              "value":"0004",
-                              "format":"n/a",
-                              "id":"optionId"
-                           },
-                           "optionValue":{
-                              "name":"選單名稱",
-                              "type":"string",
-                              "value":"TEST_0004",
-                              "format":"n/a",
-                              "id":"optionValue"
-                           }
-                        }
-                     ],
-                     "format":"n/a",
-                     "id":"option"
-                  },
-                  "fieldValue":{
-                     "name":"欄位資料",
-                     "type":"array",
-                     "value":[
-                        "0002",
-                        "0004"
-                     ],
-                     "format":"n/a",
-                     "id":"fieldValue"
-                  },
-                  "fieldName":{
-                     "name":"欄位名稱",
-                     "type":"string",
-                     "value":"請假時通知人員",
-                     "format":"n/a",
-                     "id":"fieldName"
-                  }
-               },
-               "format":"n/a",
-               "id":"vacationInformer"
+               "id":"schoolType"
             }
          ],
          "format":"n/a",
