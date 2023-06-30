@@ -104,6 +104,13 @@ Here is a JSON representation of request.
                      "type":"string",
                      "format":"hyperlink"
                   },
+                  "webViewImg":{
+                     "name":"webView圖片代號",
+                     "type":"string",
+                     "value":"",
+                     "format":"n/a",
+                     "id":"webViewImg"
+                  },
                   "visible":{
                      "id":"visible",
                      "name":"是否顯示",
