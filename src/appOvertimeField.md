@@ -140,7 +140,7 @@ Here is a JSON representation of request.
          "format":"n/a",
          "id":"overtimeInfo"
       },
-      "holidayRateDetail":{ --kevin 新增假日加班倍率資訊，這區塊固定不能編輯，欄位標題請抓fieldName
+      "holidayRateDetail":{
          "name":"假日加班倍率資訊",
          "type":"array",
          "value":[
@@ -404,7 +404,7 @@ Here is a JSON representation of request.
                "format":"n/a",
                "id":"allowanceClass"
             },
-            "overtimeDepartment":{  --這邊的選項請抓appDeptCondition
+            "overtimeDepartment":{
                "name":"加班部門",
                "type":"object",
                "value":{
@@ -422,7 +422,7 @@ Here is a JSON representation of request.
                      "format":"n/a",
                      "id":"fieldValue"
                   },
-                  "fieldDisplay":{  --kevin 增加fieldDisplay
+                  "fieldDisplay":{
                      "name":"欄位顯示資料",
                      "type":"string",
                      "value":"台北總公司",
@@ -499,7 +499,7 @@ Here is a JSON representation of request.
                "format":"n/a",
                "id":"naturalDisaster"
             },
-            "uploadFile":{  --kevin 修改uploadFile結構
+            "uploadFile":{
                "name":"附件上傳",
                "type":"object",
                "value":{
@@ -736,7 +736,7 @@ Here is a JSON representation of request.
          "format":"n/a",
          "id":"payForm"
       },
-      "dailyRateDetail":{   --kevin 新增平日加班倍率資訊，這區塊固定不能編輯，欄位標題請抓fieldName
+      "dailyRateDetail":{ 
          "name":"平日加班倍率資訊",
          "type":"array",
          "value":[
@@ -858,27 +858,27 @@ Here is a JSON representation of request.
                "format":"n/a",
                "id":"specifyHour"
             },
-            "eatCount":{    --kevin 新增新用餐次數
-               "name":"新用餐次數",
+            "newEatHour":{
+               "name":"新用餐時間",
                "type":"object",
                "value":{
                   "fieldEditable":{
                      "name":"開放編輯",
                      "type":"boolean",
-                     "value":false,
+                     "value":true,
                      "format":"n/a",
                      "id":"fieldEditable"
                   },
                   "fieldValue":{
                      "name":"欄位預設值",
-                     "type":"integer",
-                     "value":0,
-                     "format":"count",
+                     "type":"decimal",
+                     "value":0.0,
+                     "format":"hour",
                      "id":"fieldValue"
                   }
                },
                "format":"n/a",
-               "id":"eatCount"
+               "id":"newEatHour"
             },
             "oldEatHour":{
                "name":"原用餐時間",
@@ -902,28 +902,6 @@ Here is a JSON representation of request.
                "format":"n/a",
                "id":"oldEatHour"
             },
-            "oldEatCount":{ --kevin 新增原用餐次數
-               "name":"原用餐次數",
-               "type":"object",
-               "value":{
-                  "fieldEditable":{
-                     "name":"開放編輯",
-                     "type":"boolean",
-                     "value":false,
-                     "format":"n/a",
-                     "id":"fieldEditable"
-                  },
-                  "fieldValue":{
-                     "name":"欄位預設值",
-                     "type":"integer",
-                     "value":0,
-                     "format":"count",
-                     "id":"fieldValue"
-                  }
-               },
-               "format":"n/a",
-               "id":"oldEatCount"
-            },
             "isEat":{
                "name":"是否用餐",
                "type":"object",
@@ -946,7 +924,7 @@ Here is a JSON representation of request.
                "format":"n/a",
                "id":"isEat"
             },
-            "misAmt":{  --kevin 新增誤餐費
+            "misAmt":{
                "name":"誤餐費",
                "type":"object",
                "value":{
