@@ -165,14 +165,14 @@ Here is a JSON representation of request.
                     "type": "string",
                     "value": "總公司班",
                     "format": "n/a",
-                    "id": "overtimeType"
+                    "id": "workClass"
                   },
                   "workClassTime": { 
                     "name": "班別時間",
                     "type": "string",
                     "value": "0900-1800",
                     "format": "n/a",
-                    "id": "overtimeType"
+                    "id": "workClassTime"
                   },
                   "overtimeType": { 
                     "name": "加班種類",
