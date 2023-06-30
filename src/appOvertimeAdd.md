@@ -16,7 +16,7 @@ POST
 |:----------|:-------------|:-----|:------------|
 | uid | 98599308101484732326 | String | 需透過appLogin取得
 | right | 51341911904173543336756162544864820 | String | 需透過appLogin取得 |
-| request | {'empid':'9912011', 'overplanPno':'', 'startDate':'20220711', 'startTime':'2100', 'endTime':'2300', 'reason':'kevin中文實際加班單測試', 'payType':'B', 'overtimeDepartment':'9', 'allowanceClass':'', 'overtimeType':'A', 'totalPayHour':2.0, 'totalRestHour':0.0, 'specifyHour':0.0, 'oldEatHour':0.0, 'isEat':true, 'beforeWork':false, 'naturalDisaster':false, 'earlyLeave':false, 'misAmt':0, 'eatCount':0, 'oldEatCount':0, 'file':[{'fileName':'kevin.jpg','fileData':'xxx'}], 'confirmDialog':[{'confirmKey':'value'}]} | Object | 異動條件
+| request | {'empid':'9912011', 'overplanPno':'', 'startDate':'20220711', 'startTime':'2100', 'endTime':'2300', 'reason':'kevin中文實際加班單測試', 'payType':'B', 'overtimeDepartment':'9', 'allowanceClass':'', 'overtimeType':'A', 'totalPayHour':2.0, 'totalRestHour':0.0, 'newEatHour':0.0, 'oldEatHour':0.0, 'isEat':true, 'beforeWork':false, 'naturalDisaster':false, 'earlyLeave':false, 'misAmt':0, 'file':[{'fileName':'kevin.jpg','fileData':'xxx'}], 'confirmDialog':[{'confirmKey':'value'}]} | Object | 異動條件
 
 ### JSON representation Case 1
 Here is a JSON representation of request.
@@ -37,15 +37,13 @@ Here is a JSON representation of request.
       "allowanceClass":"",
       "totalPayHour":2.0,
       "totalRestHour":0.0,
-      "specifyHour":0.0,
+      "newEatHour":0.0,
       "oldEatHour":0.0,
       "isEat":true,
       "earlyLeave":false,
       "naturalDisaster":false,
       "beforeWork":false,
       "misAmt":0,
-      "eatCount":0,
-      "oldEatCount":0,
       "file":[{
         "fileName":"kevin.jpg",
         "fileData":"base64"
@@ -78,15 +76,13 @@ Here is a JSON representation of request.
 | overtimeType | A | String | 加班類別 | Y | n/a |
 | totalPayHour | 0.0 | Decimal | 總計給薪時數 | Y | hour | 
 | totalRestHour | 0.0 | Decimal | 總計補休時數 | Y | hour |
-| specifyHour | 0.0 | Decimal | 指定用餐時間 | Y | hour |
+| newEatHour | 0.0 | Decimal | 新用餐時間 | Y | hour |
 | oldEatHour | 0.0 | Decimal | 原用餐時間 | Y | hour |
 | isEat | false | boolean | 是否用餐 | Y | n/a | 
 | beforeWork | false | boolean | 跨日往前加班 | Y | n/a | 
 | naturalDisaster | false | boolean | 天災 | Y | n/a | 
 | earlyLeave | false | boolean | 申請提早退勸 | Y | n/a | 
 | misAmt | 0 | integer | 誤餐費 | Y | currency | 
-| eatCount | 0 | integer | 新用餐次數 | Y | count | 
-| oldEatCount | 0 | integer | 原用餐次數 | Y | count | 
 | file |  | String | 附件檔案 |  | n/a |
 | fileName | test.jpg | String | 附件檔案 | N | n/a |
 | fileData |  | String | 附件檔案 | N | base64 |
