@@ -118,19 +118,19 @@ Here is a JSON representation of request.
                      "format":"hour",
                      "id":"amt"
                   },
-                  "startTime":{            --richard 欄位修改  startTime
+                  "startTime":{
                      "name":"起始時間",
                      "type":"string",
                      "value":"0800",
                      "format":"HHmm",
-                     "id":"startTime"       --richard 欄位修改  startTime
+                     "id":"startTime"
                   },
-                  "startDate":{              --richard 欄位修改  startDate
+                  "startDate":{
                      "name":"起始日期",
                      "type":"string",
                      "value":"20220108",
                      "format":"YYYYmmdd",
-                     "id":"startDate"         --richard 欄位修改  startDate
+                     "id":"startDate"
                   },
                   "pno":{
                      "name":"實際加班單號",
@@ -146,175 +146,40 @@ Here is a JSON representation of request.
                      "format":"n/a",
                      "id":"payTypeName"
                   },
-                  "endTime":{               --richard 欄位修改  endTime
+                  "endTime":{
                      "name":"結束時間",
                      "type":"string",
                      "value":"1700",
                      "format":"HHmm",
-                     "id":"endTime"         --richard 欄位修改  endTime
+                     "id":"endTime"
                   },
-                  "endDate": {              --richard 新增欄位 endDate
+                  "endDate": {
                      "name": "結束日期",
                      "type": "string",
                      "value": "20220108",
                      "format": "YYYYmmdd",
-                     "id": "endDate"        --richard 新增欄位 endDate
+                     "id": "endDate" 
                   },
-                  "overtimeType": {         --richard 新增欄位 overtimeType
+                  "workClass": { 
+                    "name": "當日班別",
+                    "type": "string",
+                    "value": "總公司班",
+                    "format": "n/a",
+                    "id": "overtimeType"
+                  },
+                  "workClassTime": { 
+                    "name": "班別時間",
+                    "type": "string",
+                    "value": "0900-1800",
+                    "format": "n/a",
+                    "id": "overtimeType"
+                  },
+                  "overtimeType": { 
                     "name": "加班種類",
                     "type": "string",
                     "value": "一般加班",
                     "format": "n/a",
-                    "id": "overtimeType"    --richard 新增欄位 overtimeType
-                  },
-                  "approved":{
-                     "name":"已生效",
-                     "type":"boolean",
-                     "value":true,
-                     "format":"n/a",
-                     "id":"approved"
-                  }
-               },
-               "format":"n/a",
-               "id":"overtime"
-            },
-            {
-               "name":"實際加班資訊",
-               "type":"object",
-               "value":{
-                  "amt":{
-                     "name":"總計",
-                     "type":"decimal",
-                     "value":8.0,
-                     "format":"hour",
-                     "id":"amt"
-                  },
-                  "startTime":{
-                     "name":"起始時間",
-                     "type":"string",
-                     "value":"0800",
-                     "format":"HHmm",
-                     "id":"startTime"
-                  },
-                  "startDate":{
-                     "name":"起始日期",
-                     "type":"string",
-                     "value":"20220101",
-                     "format":"YYYYmmdd",
-                     "id":"startDate"
-                  },
-                  "pno":{
-                     "name":"實際加班單號",
-                     "type":"string",
-                     "value":"H002022031100002",
-                     "format":"n/a",
-                     "id":"pno"
-                  },
-                  "payTypeName":{
-                     "name":"給付方式名稱",
-                     "type":"string",
-                     "value":"給薪",
-                     "format":"n/a",
-                     "id":"payTypeName"
-                  },
-                  "endTime":{
-                     "name":"結束時間",
-                     "type":"string",
-                     "value":"1600",
-                     "format":"HHmm",
-                     "id":"endTime"
-                  },
-                  "endDate": {              --richard 新增欄位 endDate
-                     "name": "結束日期",
-                     "type": "string",
-                     "value": "20220108",
-                     "format": "YYYYmmdd",
-                     "id": "endDate"        --richard 新增欄位 endDate
-                  },
-                  "overplanPno":{
-                     "name":"預定加班單號",
-                     "type":"string",
-                     "value":"",
-                     "format":"n/a",
-                     "id":"overplanPno"
-                  },
-                  "approved":{
-                     "name":"已生效",
-                     "type":"boolean",
-                     "value":true,
-                     "format":"n/a",
-                     "id":"approved"
-                  }
-               },
-               "format":"n/a",
-               "id":"overtime"
-            },
-            {
-               "name":"實際加班資訊",
-               "type":"object",
-               "value":{
-                  "amt":{
-                     "name":"總計",
-                     "type":"decimal",
-                     "value":4.0,
-                     "format":"hour",
-                     "id":"amt"
-                  },
-                  "startTime":{
-                     "name":"起始時間",
-                     "type":"string",
-                     "value":"1700",
-                     "format":"HHmm",
-                     "id":"startTime"
-                  },
-                  "startDate":{
-                     "name":"起始日期",
-                     "type":"string",
-                     "value":"20220105",
-                     "format":"YYYYmmdd",
-                     "id":"startDate"
-                  },
-                  "empid":{
-                     "name":"員工編號",
-                     "type":"string",
-                     "value":"admin",
-                     "format":"n/a",
-                     "id":"empid"
-                  },
-                  "pno":{
-                     "name":"實際加班單號",
-                     "type":"string",
-                     "value":"H002022031100003",
-                     "format":"n/a",
-                     "id":"pno"
-                  },
-                  "payTypeName":{
-                     "name":"給付方式名稱",
-                     "type":"string",
-                     "value":"給薪",
-                     "format":"n/a",
-                     "id":"payTypeName"
-                  },
-                  "endTime":{
-                     "name":"結束時間",
-                     "type":"string",
-                     "value":"2100",
-                     "format":"HHmm",
-                     "id":"endTime"
-                  },
-                  "endDate": {              --richard 新增欄位 endDate
-                     "name": "結束日期",
-                     "type": "string",
-                     "value": "20220108",
-                     "format": "YYYYmmdd",
-                     "id": "endDate"        --richard 新增欄位 endDate
-                  },
-                  "overplanPno":{
-                     "name":"預定加班單號",
-                     "type":"string",
-                     "value":"",
-                     "format":"n/a",
-                     "id":"overplanPno"
+                    "id": "overtimeType"
                   },
                   "approved":{
                      "name":"已生效",
