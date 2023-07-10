@@ -66,6 +66,13 @@ Here is a JSON representation of request.
                 "format": "n/a",
                 "id": "threeMonthsApplyHours"
             },
+            "attendClass": {
+                "name": "出勤班別",
+                "type": "string",
+                "value": "XX班",
+                "format": "n/a",
+                "id": "attendClass"
+            },
             "appliedHour":{
                "name":"當月已累積加班時數(不含本次)",
                "type":"decimal",
