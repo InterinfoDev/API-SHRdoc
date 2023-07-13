@@ -48,6 +48,21 @@ Here is a JSON representation of request.
    "data":{
       "uid":"99660492215776850458",
       "right":"xxxxx",
+      "loginState":{
+         "name":"登入狀態",
+         "type":"object",
+         "value":{
+            "resultType":{
+               "name":"回傳結果",
+               "type":"string",
+               "value":"success",
+               "format":"n/a",
+               "id":"resultType"
+            }
+         },
+         "format":"n/a",
+         "id":"loginState"
+      },
       "empolyee":{
          "id":"empolyee",
          "name":"個人資訊",
@@ -158,12 +173,28 @@ Here is a JSON representation of request.
 ### HTTP Response when Failed
 ```json
 {
-    "status": "fail",
-    "code": 500,
-    "message": [
-        "XXX"
-    ],
-    "data": {}
+   "status":"fail",
+   "code":500,
+   "message":[
+      "登入失敗已超過1次，帳號已鎖定 , 請洽 HR 人員! Failed to login , cause your account has been locked , please contact system manager."
+   ],
+   "data":{
+      "loginState":{
+         "name":"登入狀態",
+         "type":"object",
+         "value":{
+            "resultType":{
+               "name":"回傳結果",
+               "type":"string",
+               "value":"locked",
+               "format":"n/a",
+               "id":"resultType"
+            }
+         },
+         "format":"n/a",
+         "id":"loginState"
+      }
+   }
 }
 ```
 
