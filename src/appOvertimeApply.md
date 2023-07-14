@@ -213,7 +213,14 @@ Here is a JSON representation of request.
                      ],
                      "format":"n/a",
                      "id":"option"
-                  }
+                  },
+                  "fieldEditable":{
+                      "name":"開放編輯",
+                      "type":"boolean",
+                      "value":true,
+                      "format":"n/a",
+                      "id":"fieldEditable"
+                   }
                },
                "format":"n/a",
                "id":"overplanPno"
