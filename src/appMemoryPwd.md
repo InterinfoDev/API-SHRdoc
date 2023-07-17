@@ -46,16 +46,17 @@ Here is a JSON representation of request.
       "回傳成功"
    ],
    "data":{
-      "result":{
-         "name":"核對結果",
-         "type":"boolean",
-         "value":true,
-         "format":"n/a",
-         "id":"result"
-      },
-      "properties":{ 
-         "format":{
-            "n/a":""
+      "verifyState":{
+         "name":"驗證狀態",
+         "type":"object",
+         "value":{
+            "resultType":{
+               "name":"回傳結果",
+               "type":"string",
+               "value":"success",
+               "format":"n/a",
+               "id":"resultType"
+            }
          }
       }
    }
