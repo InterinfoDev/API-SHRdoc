@@ -1,5 +1,5 @@
 # appAnnouncementNotify
-取得未讀取通知數量
+取得未讀取通知數量(大聲公通知)
 
 ### HTTP Request
 ```
