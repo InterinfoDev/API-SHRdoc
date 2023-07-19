@@ -48,12 +48,12 @@ Here is a JSON representation of request.
          "name":"通知資訊",
          "type":"object",
          "value":{
-            "notifyConut":{
+            "notifyCount":{
                "name":"通知未讀數量",
                "type":"integer",
                "value":0,
                "format":"count",
-               "id":"notifyConut"
+               "id":"notifyCount"
             }
          },
          "format":"n/a",
