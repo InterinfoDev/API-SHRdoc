@@ -244,21 +244,19 @@ POST
       "回傳成功"
    ],
    "data":{
-      "properties":{
-         "format":{
-            "HHmm":"時間時分",
-            "YYYYmmdd":"西元年月日",
-            "n/a":""
-         }
-      },
-      "board":{
-         "name":"公告資訊",
+      "paperList":{
+         "name":"文件清單",
          "type":"object",
          "value":[
             
          ],
          "format":"n/a",
-         "id":"board"
+         "id":"paperList"
+      },
+      "properties":{
+         "format":{
+            "n/a":""
+         }
       }
    }
 }
