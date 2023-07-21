@@ -279,9 +279,9 @@ Here is a JSON representation of request.
                            "punchTime":{
                               "id":"punchTime",
                               "name":"刷卡時間",
-                              "value":"0854",
+                              "value":"08:54",
                               "type":"string",
-                              "format":"HHmm"
+                              "format":"n/a"
                            }
                             "cardType": {
                               "name": "刷卡卡別",
