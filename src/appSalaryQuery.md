@@ -645,6 +645,28 @@ Here is a JSON representation of request.
                },
                "type":"object",
                "format":"n/a"
+            },
+            {
+               "name":"退休金資訊",
+               "type":"object",
+               "format":"n/a",
+               "id":"totalCurrentPeriod",
+               "value":{
+                  "content":{
+                     "name":"其他補充事項內容",
+                     "type":"decimal",
+                     "value":30.0,
+                     "format":"currency",
+                     "id":"content"
+                  },
+                  "title":{
+                     "name":"其他補充事項標頭",
+                     "type":"string",
+                     "value":"本期提撥合計",
+                     "format":"n/a",
+                     "id":"title"
+                  }
+               }
             }
          ],
          "type":"array",
