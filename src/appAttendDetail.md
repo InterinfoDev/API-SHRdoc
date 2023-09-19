@@ -184,6 +184,30 @@ Here is a JSON representation of request.
                      "type":"array",
                      "format":"n/a"
                   },
+                  "overplanInfo":{
+                     "id":"overplanInfo",
+                     "name":"預定加班說明",
+                     "value":[
+                        {
+                           "overplanBeginTime":{
+                              "id":"overplanBeginTime",
+                              "name":"預定加班起始時間",
+                              "value":"1900",
+                              "type":"string",
+                              "format":"HHmm"
+                           },
+                           "overplanEndTime":{
+                              "id":"overplanEndTime",
+                              "name":"預定加班結束時間",
+                              "value":"2300",
+                              "type":"string",
+                              "format":"HHmm"
+                           }
+                        }
+                     ],
+                     "type":"array",
+                     "format":"n/a"
+                  },
                   "overtimeInfo":{
                      "id":"overtimeInfo",
                      "name":"加班說明",
