@@ -1,4 +1,4 @@
-# appCompanySuper
+# appSalaryCompanySuper
 取得某員工公司別可視範圍資料
 
 ### HTTP Request
