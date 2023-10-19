@@ -3,7 +3,7 @@
 
 ### HTTP Request
 ```
-https://114.34.125.246:8090/servlet/HRNative/appCompanySuper
+https://114.34.125.246:8090/servlet/HRNative/appSalaryCompanySuper
 ```
 
 ### HTTP Request Mehod
