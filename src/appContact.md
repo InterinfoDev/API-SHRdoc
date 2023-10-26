@@ -116,6 +116,13 @@ Here is a JSON representation of request.
                            "type":"string",
                            "format":"n/a"
                         },
+                        "inaDate":{
+                           "name":"到職日期",
+                           "type":"string",
+                           "value":"20230303",
+                           "format":"YYYYmmdd",
+                           "id":"inaDate"
+                        },
                         "email":{
                            "id":"email",
                            "name":"電子郵件",
