@@ -41,119 +41,133 @@ Here is a JSON representation of request.
 ### HTTP Response when Successful
 ```json
 {
-   "status":"success",
-   "message":[
-      "回傳成功"
-   ],
-   "data":{
-      "uid":"99660492215776850458",
-      "right":"xxxxx",
-      "loginState":{
-         "name":"登入狀態",
-         "type":"object",
-         "value":{
-            "resultType":{
-               "name":"回傳結果",
-               "type":"string",
-               "value":"success",
-               "format":"n/a",
-               "id":"resultType"
-            }
-         },
-         "format":"n/a",
-         "id":"loginState"
-      },
-      "empolyee":{
-         "id":"empolyee",
-         "name":"個人資訊",
-         "value":{
-            "azureIP": {  --richard 增加 azureIP
-                "name": "雲端IP",
-                "type": "string",
-                "value": "http://59.124.100.151:8090",
-                "format": "n/a",
-                "id": "azureIP"
+    "status": "success",
+    "message": [
+        "登入成功"
+    ],
+    "data": {
+        "loginState": {
+            "name": "登入狀態",
+            "type": "object",
+            "value": {
+                "resultType": {
+                    "name": "回傳結果",
+                    "type": "string",
+                    "value": "success",
+                    "format": "n/a",
+                    "id": "resultType"
+                }
             },
-            "haveDada": {  --kevin 增加 haveDada
-                "name": "是否有噠噠功能",
-                "type": "boolean",
-                "value": true,
-                "format": "n/a",
-                "id": "haveDada"
+            "format": "n/a",
+            "id": "loginState"
+        },
+        "employee": {
+            "name": "個人資訊",
+            "type": "object",
+            "value": {
+                "depCode": {
+                    "name": "部門代號",
+                    "type": "string",
+                    "value": "99999",
+                    "format": "n/a",
+                    "id": "depCode"
+                },
+                "companyId": {
+                    "name": "公司代號",
+                    "type": "string",
+                    "value": "TW",
+                    "format": "n/a",
+                    "id": "companyId"
+                },
+                "companySimpleName": {
+                    "name": "公司簡稱",
+                    "type": "string",
+                    "value": "72英特內(中和)",
+                    "format": "n/a",
+                    "id": "companySimpleName"
+                },
+                "depNumber": {
+                    "name": "部門暗碼",
+                    "type": "integer",
+                    "value": 1,
+                    "format": "n/a",
+                    "id": "depNumber"
+                },
+                "empFullName": {
+                    "name": "員工姓名",
+                    "type": "string",
+                    "value": "系統管理員",
+                    "format": "n/a",
+                    "id": "empFullName"
+                },
+                "empid": {
+                    "name": "員工編號",
+                    "type": "string",
+                    "value": "admin",
+                    "format": "n/a",
+                    "id": "empid"
+                },
+                "depFullName": {
+                    "name": "部門名稱",
+                    "type": "string",
+                    "value": "英特內股份有限公司",
+                    "format": "n/a",
+                    "id": "depFullName"
+                },
+                "empFullEname": {
+                    "name": "員工英文姓名",
+                    "type": "string",
+                    "value": "Administrator",
+                    "format": "n/a",
+                    "id": "empFullEname"
+                }
             },
-            "empid":{
-               "id":"empid",
-               "name":"員工編號",
-               "value":"L100387",
-               "type":"string",
-               "format":"n/a"
+            "format": "n/a",
+            "id": "employee"
+        },
+        "properties": {
+            "n/a": ""
+        },
+        "uid": "98599308101484732326",
+        "right": "513419119041735433367561625448648202801232182995256636587932016607439201462466556235182663080673828674556200385271466125559349357786197118252096238747191633938599840684449342490964011524427764799493328110221539965006552590466959002677036856863519908176241437809573716163508936719855927717064013479997584572837246619648420374378288189675965452573416450376175273412420409191239097059629612395701880365980754522949348194952849418106023010387607494224029080312442356345333827742668253005042661612460080367422756341547727876278364154894157386843084143654173589798053183478405081380635",
+        "type": "object",
+        "system": {
+            "name": "系統參數",
+            "type": "object",
+            "value": {
+                "tabBarController.third": {
+                    "name": "Tab Bar Controller 第三項功能",
+                    "type": "string",
+                    "value": "3",
+                    "format": "n/a",
+                    "id": "tabBarController.third"
+                },
+                "haveDada": {
+                    "name": "是否有噠噠功能",
+                    "type": "boolean",
+                    "value": true,
+                    "format": "n/a",
+                    "id": "haveDada"
+                },
+                "azureFile": {
+                    "name": "雲端PKG檔",
+                    "type": "string",
+                    "value": "hrm8w.pkg",
+                    "format": "n/a",
+                    "id": "azureFile"
+                },
+                "azureIP": {
+                    "name": "雲端IP",
+                    "type": "string",
+                    "value": "http://59.124.100.151:8090",
+                    "format": "n/a",
+                    "id": "azureIP"
+                }
             },
-            "azureFile": { --richard 新增 azureFile
-                "name": "雲端PKG檔",
-                "type": "string",
-                "value": "hrm8w.pkg",
-                "format": "n/a",
-                "id": "azureFile"
-            },
-            "empFullName":{ --lucas
-               "id":"empFullName",
-               "name":"員工姓名",
-               "value":"林奇杰",
-               "type":"string",
-               "format":"n/a"
-            },
-            "empFullEname":{ --lucas
-               "id":"empFullEname",
-               "name":"員工英文姓名",
-               "value":"Lucas",
-               "type":"string",
-               "format":"n/a"
-            },
-            "companyId":{
-               "id":"companyId",
-               "name":"公司代號",
-               "value":"97090920",
-               "type":"string",
-               "format":"n/a"
-            },
-            "companySimpleName": {
-               "id": "companySimpleName",
-               "name": "公司簡稱",
-               "value": "72英特內(中和)",
-               "type": "string",
-               "format": "n/a"
-            },              
-            "depNumber":{
-               "id":"depNumber",
-               "name":"部門暗碼",
-               "value":1,
-               "type":"integer",
-               "format":"n/a"
-            },
-            "depCode": {
-               "id": "depCode"
-               "name": "部門代號",
-               "value": "5",
-               "type": "string",
-               "format": "n/a",
-            },
-            "depFullName": {  --lucas
-               "id": "depFullName"
-               "name": "部門名稱",
-               "value": "CTO",
-               "type": "string",
-               "format": "n/a",
-            }
-         },
-         "type":"object",
-         "format":"n/a"
-      },
-      "properties":{
-         "format":{
-            "n/a":""
-         }
-      }
-   }
+            "format": "n/a",
+            "id": "system"
+        }
+    }
 }
 ```
 
