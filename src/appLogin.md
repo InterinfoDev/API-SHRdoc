@@ -135,19 +135,19 @@ Here is a JSON representation of request.
             "name": "系統參數",
             "type": "object",
             "value": {
-                "tabBarController.third": {
-                    "name": "Tab Bar Controller 第三項功能",
-                    "type": "string",
-                    "value": "3",
-                    "format": "n/a",
-                    "id": "tabBarController.third"
-                },
                 "haveDada": {
                     "name": "是否有噠噠功能",
                     "type": "boolean",
                     "value": true,
                     "format": "n/a",
                     "id": "haveDada"
+                },
+                "tabBarControllerTthirdFunction": {
+                    "name": "Tab Bar Controller 第三項功能",
+                    "type": "string",
+                    "value": "3",
+                    "format": "n/a",
+                    "id": "tabBarControllerTthirdFunction"
                 },
                 "azureFile": {
                     "name": "雲端PKG檔",
