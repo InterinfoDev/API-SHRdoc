@@ -32,6 +32,13 @@ Here is a JSON representation of request.
 |:---------|:-----|:------------|
 | request | Object | 要求本文 |
 
+### tabBarControllerTthirdFunction
+| FunctionCode | FunctionName |
+|:---------|:------------|
+| 1 | 鈴鐺 |
+| 2 | 大聲公 |
+| 3 | 噠噠 |
+
 ### Request Properties
 | Key | Value | Type | Description | Required | Format |
 |:----------|:-------------|:-----|:------------|:------------|:------------|
