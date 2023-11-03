@@ -149,12 +149,12 @@ Here is a JSON representation of request.
                     "format": "n/a",
                     "id": "haveDada"
                 },
-                "tabBarControllerTthirdFunction": {
+                "tabBarControllerThirdFunction": {
                     "name": "Tab Bar Controller 第三項功能",
                     "type": "string",
                     "value": "3",
                     "format": "n/a",
-                    "id": "tabBarControllerTthirdFunction"
+                    "id": "tabBarControllerThirdFunction"
                 },
                 "azureFile": {
                     "name": "雲端PKG檔",
