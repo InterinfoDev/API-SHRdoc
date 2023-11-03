@@ -180,7 +180,7 @@ Here is a JSON representation of request.
 ```
 
 ### HTTP Response when UUID format error 
-查詢資料中Beacon UUID 格式錯誤
+查詢資料中其一Beacon UUID格式錯誤 將返回錯誤訊息 beacon資訊為空
 ```json
 {
    "status":"fail",
