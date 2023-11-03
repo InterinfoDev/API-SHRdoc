@@ -179,6 +179,34 @@ Here is a JSON representation of request.
 }
 ```
 
+### HTTP Response when UUID format error 
+查詢資料中Beacon UUID 格式錯誤
+```json
+{
+   "status":"fail",
+   "code":500,
+   "message":[
+      "Beacon設定檔有誤，UUID設定異常，請聯繫系統管理員檢查設定"
+   ],
+   "data":{
+      "beacon":{
+         "name":"beacon",
+         "type":"array",
+         "value":[
+            
+         ],
+         "format":"n/a",
+         "id":"beacon"
+      },
+      "properties":{
+         "format":{
+            "n/a":""
+         }
+      }
+   }
+}
+```
+
 ### HTTP Response when Failed
 ```json
 {
