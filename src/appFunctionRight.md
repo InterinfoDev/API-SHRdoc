@@ -40,6 +40,7 @@ Here is a JSON representation of request.
 |:----------|:-------------|:-----|:------------|:------------|:------------|
 
 ### HTTP Response when Successful
+功能中文(functionName)與英文名稱(functionEnName)來自設定檔，顯示功能名稱(functionDisplayName)以設定檔優先，其次看翻譯
 ```json
 {
    "status":"success",
