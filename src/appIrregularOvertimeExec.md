@@ -16,7 +16,7 @@ POST
 |:----------|:-------------|:-----|:------------|
 | uid | 98599308101484732326 | String | 需透過appLogin取得
 | right | 51341911904173543336756162544864820 | String | 需透過appLogin取得 |
-| request | {code:A01,errorData:[{companyId:TW,empid:admin,irregularDate:20220615}]} | Object | 異動條件
+| request | {code:A01,reason:xxxx,errorData:[{companyId:TW,empid:admin,irregularDate:20220615}]} | Object | 異動條件
 
 ### JSON representation
 Here is a JSON representation of request.
@@ -26,6 +26,7 @@ Here is a JSON representation of request.
    "right":"51341911904173543336756162544864820",
    "request":{ 
       "code":"A01",
+      "reason":"xxxx",
         "errorData":[
          {
             "companyId":"TW",
@@ -47,11 +48,12 @@ Here is a JSON representation of request.
 ### Request Properties
 | Key | Value | Type | Description | Required | Format | Note |
 |:----------|:-------------|:-----|:------------|:------------|:------------|:------------|
-| code | A01 | String | 異常回應 | true | n/a |  |
-| errorData |  | Vector | 放key值 | n/a | n/a |  |
-| companyId | TW | String | 公司別 | n/a | n/a |  |
-| empid | admin | String | 員工編號 | n/a | n/a |  |
-| irregularDate | 20220615 | String | 日期 | YYYYmmdd | n/a |  |
+| code | A01 | String | 異常回應 | Y | n/a |  |
+| reason | xxx | String | 原因 | N | n/a |  |
+| errorData |  | Vector | 放key值 | Y | n/a |  |
+| companyId | TW | String | 公司別 | Y | n/a |  |
+| empid | admin | String | 員工編號 | Y | n/a |  |
+| irregularDate | 20220615 | String | 日期 | Y | YYYYmmdd |  |
 
 
 
