@@ -132,6 +132,13 @@ Here is a JSON representation of request.
                      "type":"boolean",
                      "format":"n/a"
                   },
+                  "haveLinkPermission":{
+                     "id":"haveLinkPermission",
+                     "name":"是否顯示補卡連結",
+                     "value":true,
+                     "type":"boolean",
+                     "format":"n/a"
+                  },
                   "isNextDay": {
                      "name": "是否跨日為出卡",
                      "type": "boolean",
