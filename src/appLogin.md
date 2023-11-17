@@ -142,13 +142,6 @@ Here is a JSON representation of request.
             "name": "系統參數",
             "type": "object",
             "value": {
-                "haveDada": {
-                    "name": "是否有噠噠功能",
-                    "type": "boolean",
-                    "value": true,
-                    "format": "n/a",
-                    "id": "haveDada"
-                },
                 "tabBarControllerThirdFunction": {
                     "name": "Tab Bar Controller 第三項功能",
                     "type": "string",
