@@ -246,6 +246,27 @@ Here is a JSON representation of request.
                             "value": false,
                             "format": "n/a",
                             "id": "editable"       --richard 新增欄位 editable
+                        },
+                        "mdate": {
+                             "name": "異動日期",
+                             "type": "string",
+                             "value": "20231123",
+                             "format": "YYYYmmdd",
+                             "id": "mdate"
+                         },
+                         "muser": {
+                             "name": "異動人",
+                             "type": "string",
+                             "value": "吳兵千",
+                             "format": "n/a",
+                             "id": "muser"
+                        },
+                         "mtime": {
+                              "name": "異動時間",
+                              "type": "string",
+                              "value": "172057",
+                              "format": "n/a",
+                              "id": "mtime"
                         }
                      },
                      "format":"n/a",
