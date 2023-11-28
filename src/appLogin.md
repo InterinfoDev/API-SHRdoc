@@ -184,7 +184,7 @@ Here is a JSON representation of request.
 }
 ```
 
-### HTTP Response when Failed
+### HTTP Response when Failed (Account Locked)
 ```json
 {
    "status":"fail",
@@ -207,6 +207,36 @@ Here is a JSON representation of request.
          },
          "format":"n/a",
          "id":"loginState"
+      }
+   }
+}
+```
+
+### HTTP Response when Failed (Password Expired)
+```json
+{
+   "Response":{
+      "status":"fail",
+      "code":500,
+      "message":[
+         "您的密碼因已到期無法登入，請至電腦版進行變更再操作"
+      ],
+      "data":{
+         "loginState":{
+            "name":"登入狀態",
+            "type":"object",
+            "value":{
+               "resultType":{
+                  "name":"回傳結果",
+                  "type":"string",
+                  "value":"passwordExpired",
+                  "format":"n/a",
+                  "id":"resultType"
+               }
+            },
+            "format":"n/a",
+            "id":"loginState"
+         }
       }
    }
 }
