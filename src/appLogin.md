@@ -213,6 +213,7 @@ Here is a JSON representation of request.
 ```
 
 ### HTTP Response when Failed (Password Expired)
+判斷雲端global_config密碼到期變更設定
 ```json
 {
    "Response":{
