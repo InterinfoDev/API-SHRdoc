@@ -243,38 +243,7 @@ Here is a JSON representation of request.
 }
 ```
 
-### HTTP Response when Failed (Setting Error)
-環境設定變數有誤
-```json
-{
-   "status":"fail",
-   "code":500,
-   "message":[
-      "查無噠噠網域設定，請確認"
-   ],
-   "data":{
-      "loginState":{
-         "name":"登入狀態",
-         "properties":{
-            "n/a":""
-         },
-         "type":"object",
-         "value":{
-            "resultType":{
-               "name":"回傳結果",
-               "type":"string",
-               "value":"settingError",
-               "format":"n/a",
-               "id":"resultType"
-            }
-         },
-         "format":"n/a",
-         "id":"loginState"
-      },
-      "type":"object"
-   }
-}
-```
+
 
 ### HTTP Response when Exception
 ```json
