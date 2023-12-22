@@ -243,6 +243,64 @@ Here is a JSON representation of request.
 }
 ```
 
+### HTTP Response when Failed (BindDevice Fail)
+綁定失敗
+```json
+{
+   "status":"fail",
+   "code":500,
+   "message":[
+      "裝置綁定失敗"
+   ],
+   "data":{
+      "loginState":{
+         "name":"登入狀態",
+         "type":"object",
+         "value":{
+            "resultType":{
+               "name":"回傳結果",
+               "type":"string",
+               "value":"bindDeviceFail",
+               "format":"n/a",
+               "id":"resultType"
+            }
+         },
+         "format":"n/a",
+         "id":"loginState"
+      }
+   }
+}
+```
+
+### HTTP Response when Failed (certifyDevice Fail)
+綁定驗證失敗
+```json
+{
+   "status":"fail",
+   "code":500,
+   "message":[
+      "裝置綁定和登入帳號驗證有誤"
+   ],
+   "data":{
+      "loginState":{
+         "name":"登入狀態",
+         "type":"object",
+         "value":{
+            "resultType":{
+               "name":"回傳結果",
+               "type":"string",
+               "value":"certifyDeviceFail",
+               "format":"n/a",
+               "id":"resultType"
+            }
+         },
+         "format":"n/a",
+         "id":"loginState"
+      }
+   }
+}
+```
+
 
 
 ### HTTP Response when Exception
