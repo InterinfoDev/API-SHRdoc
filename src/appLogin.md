@@ -307,7 +307,34 @@ Here is a JSON representation of request.
 }
 ```
 
-
+### HTTP Response when Failed (bindDevice inquire)
+綁定詢問
+```json
+{
+   "status":"fail",
+   "code":500,
+   "message":[
+      "裝置需綁定才可登入，請問是否需要綁定?"
+   ],
+   "data":{
+      "loginState":{
+         "name":"登入狀態",
+         "type":"object",
+         "value":{
+            "resultType":{
+               "name":"回傳結果",
+               "type":"string",
+               "value":"bindDevice",
+               "format":"n/a",
+               "id":"resultType"
+            }
+         },
+         "format":"n/a",
+         "id":"loginState"
+      }
+   }
+}
+```
 
 ### HTTP Response when Exception
 ```json
