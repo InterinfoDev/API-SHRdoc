@@ -25,7 +25,7 @@ Here is a JSON representation of request.
       "pwd":"1234",
       "confirmBind":false,
       "deviceType":"ios",
-      "deviceId":"test"
+      "deviceBindId":"test"
   }
 }
 ```
@@ -47,7 +47,7 @@ Here is a JSON representation of request.
 |:----------|:-------------|:-----|:------------|:------------|:------------|
 | uid | admin | String | 登入帳號 | Y | n/a |
 | pwd | 1234 | String | 登入密碼 | Y | n/a |
-| deviceId | test | String | 裝置id | Y | n/a |
+| deviceBindId | test | String | 裝置id | Y | n/a |
 | deviceType | ios | String | 裝置類型(ios , android) | Y | n/a |
 | confirmBind | false | boolean | 是否綁定(登入都輸入false，除了登入跳出詢問是否要綁定，才需二次呼叫並輸入true) | Y | n/a |
 
