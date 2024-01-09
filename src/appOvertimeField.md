@@ -16,7 +16,7 @@ POST
 |:----------|:-------------|:-----|:------------|
 | uid | 98599308101484732326 | String | 需透過appLogin取得
 | right | 51341911904173543336756162544864820 | String | 需透過appLogin取得 |
-| request | {startDate:xxx, empid:admin, overplanPno:xxx} | Object | 查詢條件(依據申請畫面取得，加班日期與預定加班單號只可擇一輸入)
+| request | {empid:admin, overplanPno:xxx} | Object | 查詢條件(依據申請畫面取得)
 
 ### JSON representation
 Here is a JSON representation of request.
@@ -26,7 +26,6 @@ Here is a JSON representation of request.
     "right":"51341911904173543336756162544864820",
     "request":{
         "empid":"admin",
-        "startDate":"20220526",
         "overplanPno":""
     }
 }
@@ -43,7 +42,6 @@ Here is a JSON representation of request.
 ### Request Properties
 | Key | Value | Type | Description | Required | Format |
 |:----------|:-------------|:-----|:------------|:------------|:------------|
-| startDate | 20220608 | String | 實際加班日期 | N | AC(YYYYmmdd) |
 | empid | admin | String | 員工編號 | Y | n/a |
 | overplanPno |  | String | 預定加班單號 | N | n/a |
 
