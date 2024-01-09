@@ -153,7 +153,7 @@ Here is a JSON representation of request.
         },
         "note": {
             "name": "n/A",
-            "type": "object",
+            "type": "string",
             "value": "",
             "format": "n/a",
             "id": "note"
