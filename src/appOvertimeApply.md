@@ -153,7 +153,7 @@ Here is a JSON representation of request.
         },
         "note": {
             "name": "n/A",
-            "type": "object",
+            "type": "string",
             "value": "備註：預定加班單申請完30天內須申請實際加班單，若逾期，則視同放棄。",
             "format": "n/a",
             "id": "note"
