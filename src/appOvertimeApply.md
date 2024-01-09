@@ -47,189 +47,152 @@ Here is a JSON representation of request.
 ### HTTP Response when Successful
 ```json
 {
-   "status":"success",
-   "message":[
-      "回傳成功"
-   ],
-   "data":{
-      "properties":{
-         "format":{
-            "hour":"小時",
-            "n/a":""
-         }
-      },
-      "overtime":{
-         "name":"當月加班資訊",
-         "type":"array",
-         "value":[
-            {
-               "name":"加班總時數",
-               "type":"object",
-               "value":{
-                  "note":{
-                     "name":"備註",
-                     "type":"string",
-                     "value":"",
-                     "format":"n/a",
-                     "id":"note"
-                  },
-                  "describe":{
-                     "name":"描述標題",
-                     "type":"string",
-                     "value":"當月已申請加班總時數",
-                     "format":"n/a",
-                     "id":"describe"
-                  },
-                  "value":{
-                     "name":"總時數",
-                     "type":"decimal",
-                     "value":0.0,
-                     "format":"hour",
-                     "id":"value"
-                  }
-               },
-               "format":"n/a",
-               "id":"overAmt"
-            },
-            {
-               "name":"加班給薪時數",
-               "type":"object",
-               "value":{
-                  "note":{
-                     "name":"備註",
-                     "type":"string",
-                     "value":"",
-                     "format":"n/a",
-                     "id":"note"
-                  },
-                  "describe":{
-                     "name":"描述標題",
-                     "type":"string",
-                     "value":"當月已申請加班給薪時數",
-                     "format":"n/a",
-                     "id":"describe"
-                  },
-                  "value":{
-                     "name":"給薪時數",
-                     "type":"decimal",
-                     "value":0.0,
-                     "format":"hour",
-                     "id":"value"
-                  }
-               },
-               "format":"n/a",
-               "id":"overPayHour"
-            },
-            {
-               "name":"加班補休時數",
-               "type":"object",
-               "value":{
-                  "note":{
-                     "name":"備註",
-                     "type":"string",
-                     "value":"",
-                     "format":"n/a",
-                     "id":"note"
-                  },
-                  "describe":{
-                     "name":"描述標題",
-                     "type":"string",
-                     "value":"當月已申請加班補休時數",
-                     "format":"n/a",
-                     "id":"describe"
-                  },
-                  "value":{
-                     "name":"補休時數",
-                     "type":"decimal",
-                     "value":0.0,
-                     "format":"hour",
-                     "id":"value"
-                  }
-               },
-               "format":"n/a",
-               "id":"overRestHour"
+    "status": "success",
+    "message": [
+        "回傳成功"
+    ],
+    "data": {
+        "properties": {
+            "format": {
+                "hour": "小時",
+                "n/a": ""
             }
-         ],
-         "format":"n/a",
-         "id":"overtime"
-      },
-      "note":{
-         "name":"備註",
-         "type":"object",
-         "value":"備註：預定加班單申請完30天內須申請實際加班單，若逾期，則視同放棄。",
-         "format":"n/a",
-         "id":"note"
-      },
-      "applyForm":{
-         "name":"加班單申請",
-         "type":"object",
-         "value":{
-            "overtimeDate":{
-               "name":"實際加班日期",
-               "type":"object",
-               "value":{
-                  "fieldEditable":{
-                     "name":"開放編輯",
-                     "type":"boolean",
-                     "value":true,
-                     "format":"n/a",
-                     "id":"fieldEditable"
-                  },
-                  "fieldValue":{
-                     "name":"欄位預設值",
-                     "type":"string",
-                     "value":"20220610",
-                     "format":"YYYYmmdd",
-                     "id":"fieldValue"
-                  }
-               },
-               "format":"n/a",
-               "id":"overtimeDate"
-            },
-            "overplanPno":{
-               "name":"預定加班單號",
-               "type":"object",
-               "value":{
-                  "option":{
-                     "name":"選項",
-                     "type":"array",
-                     "value":[
-                        {   --kevin 新增測試資料
-                           "optionId":{
-                              "name":"選項代號",
-                              "type":"string",
-                              "value":"A",
-                              "format":"n/a",
-                              "id":"optionId"
-                           },
-                           "optionValue":{
-                              "name":"選項名稱",
-                              "type":"string",
-                              "value":"補休",
-                              "format":"n/a",
-                              "id":"optionValue"
-                           }
+        },
+        "overtime": {
+            "name": "當月加班資訊",
+            "type": "array",
+            "value": [
+                {
+                    "name": "加班總時數",
+                    "type": "object",
+                    "value": {
+                        "note": {
+                            "name": "n/A",
+                            "type": "string",
+                            "value": "",
+                            "format": "n/a",
+                            "id": "note"
+                        },
+                        "describe": {
+                            "name": "描述標題",
+                            "type": "string",
+                            "value": "當月已申請加班總時數",
+                            "format": "n/a",
+                            "id": "describe"
+                        },
+                        "value": {
+                            "name": "總時數",
+                            "type": "decimal",
+                            "value": 0.0,
+                            "format": "hour",
+                            "id": "value"
                         }
-                     ],
-                     "format":"n/a",
-                     "id":"option"
-                  },
-                  "fieldEditable":{
-                      "name":"開放編輯",
-                      "type":"boolean",
-                      "value":true,
-                      "format":"n/a",
-                      "id":"fieldEditable"
-                   }
-               },
-               "format":"n/a",
-               "id":"overplanPno"
-            }
-         },
-         "format":"n/a",
-         "id":"applyForm"
-      }
-   }
+                    },
+                    "format": "n/a",
+                    "id": "overAmt"
+                },
+                {
+                    "name": "加班給薪時數",
+                    "type": "object",
+                    "value": {
+                        "note": {
+                            "name": "n/A",
+                            "type": "string",
+                            "value": "",
+                            "format": "n/a",
+                            "id": "note"
+                        },
+                        "describe": {
+                            "name": "描述標題",
+                            "type": "string",
+                            "value": "當月已申請加班給薪時數",
+                            "format": "n/a",
+                            "id": "describe"
+                        },
+                        "value": {
+                            "name": "給薪時數",
+                            "type": "decimal",
+                            "value": 0.0,
+                            "format": "hour",
+                            "id": "value"
+                        }
+                    },
+                    "format": "n/a",
+                    "id": "overPayHour"
+                },
+                {
+                    "name": "加班補休時數",
+                    "type": "object",
+                    "value": {
+                        "note": {
+                            "name": "n/A",
+                            "type": "string",
+                            "value": "",
+                            "format": "n/a",
+                            "id": "note"
+                        },
+                        "describe": {
+                            "name": "描述標題",
+                            "type": "string",
+                            "value": "當月已申請加班補休時數",
+                            "format": "n/a",
+                            "id": "describe"
+                        },
+                        "value": {
+                            "name": "補休時數",
+                            "type": "decimal",
+                            "value": 0.0,
+                            "format": "hour",
+                            "id": "value"
+                        }
+                    },
+                    "format": "n/a",
+                    "id": "overRestHour"
+                }
+            ],
+            "format": "n/a",
+            "id": "overtime"
+        },
+        "note": {
+            "name": "n/A",
+            "type": "object",
+            "value": "備註：預定加班單申請完30天內須申請實際加班單，若逾期，則視同放棄。",
+            "format": "n/a",
+            "id": "note"
+        },
+        "applyForm": {
+            "name": "加班單申請",
+            "type": "object",
+            "value": {
+                "overplanPno": {
+                    "name": "預定加班單號",
+                    "type": "array",
+                    "value": [
+                        {
+                            "optionId": {
+                                "name": "選項代號",
+                                "type": "string",
+                                "value": "W002024010900001",
+                                "format": "n/a",
+                                "id": "optionId"
+                            },
+                            "optionValue": {
+                                "name": "選項名稱",
+                                "type": "string",
+                                "value": "W002024010900001-T888-20240109",
+                                "format": "n/a",
+                                "id": "optionValue"
+                            }
+                        }
+                    ],
+                    "format": "n/a",
+                    "id": "overplanPno"
+                }
+            },
+            "format": "n/a",
+            "id": "applyForm"
+        }
+    }
 }
 ```
 
