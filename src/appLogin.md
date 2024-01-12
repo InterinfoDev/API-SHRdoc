@@ -22,10 +22,7 @@ Here is a JSON representation of request.
 {
   "request":{
       "uid":"admin",
-      "pwd":"1234",
-      "confirmBind":false,
-      "deviceType":"ios",
-      "deviceBindId":"test"
+      "pwd":"1234"
   }
 }
 ```
@@ -47,9 +44,6 @@ Here is a JSON representation of request.
 |:----------|:-------------|:-----|:------------|:------------|:------------|
 | uid | admin | String | 登入帳號 | Y | n/a |
 | pwd | 1234 | String | 登入密碼 | Y | n/a |
-| deviceBindId | test | String | 裝置id | Y | n/a |
-| deviceType | ios | String | 裝置類型(ios , android) | Y | n/a |
-| confirmBind | false | boolean | 是否綁定(登入都輸入false，除了登入跳出詢問是否要綁定，才需二次呼叫並輸入true) | Y | n/a |
 
 ### HTTP Response when Successful
 ```json
@@ -244,93 +238,6 @@ Here is a JSON representation of request.
             "format":"n/a",
             "id":"loginState"
          }
-      }
-   }
-}
-```
-
-### HTTP Response when Failed (BindDevice Fail)
-綁定失敗
-```json
-{
-   "status":"fail",
-   "code":500,
-   "message":[
-      "裝置綁定失敗"
-   ],
-   "data":{
-      "loginState":{
-         "name":"登入狀態",
-         "type":"object",
-         "value":{
-            "resultType":{
-               "name":"回傳結果",
-               "type":"string",
-               "value":"bindDeviceFail",
-               "format":"n/a",
-               "id":"resultType"
-            }
-         },
-         "format":"n/a",
-         "id":"loginState"
-      }
-   }
-}
-```
-
-### HTTP Response when Failed (certifyDevice Fail)
-綁定驗證失敗
-```json
-{
-   "status":"fail",
-   "code":500,
-   "message":[
-      "裝置綁定和登入帳號驗證有誤"
-   ],
-   "data":{
-      "loginState":{
-         "name":"登入狀態",
-         "type":"object",
-         "value":{
-            "resultType":{
-               "name":"回傳結果",
-               "type":"string",
-               "value":"certifyDeviceFail",
-               "format":"n/a",
-               "id":"resultType"
-            }
-         },
-         "format":"n/a",
-         "id":"loginState"
-      }
-   }
-}
-```
-
-### HTTP Response when Failed (bindDevice inquire)
-綁定詢問
-```json
-{
-   "status":"fail",
-   "code":500,
-   "message":[
-      "裝置需綁定才可登入，請問是否需要綁定?"
-   ],
-   "data":{
-      "loginState":{
-         "name":"登入狀態",
-         "type":"object",
-         "value":{
-            "resultType":{
-               "name":"回傳結果",
-               "type":"string",
-               "value":"bindDevice",
-               "format":"n/a",
-               "id":"resultType"
-            }
-         },
-         "format":"n/a",
-         "id":"loginState"
       }
    }
 }
