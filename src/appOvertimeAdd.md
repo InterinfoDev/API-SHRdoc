@@ -1,5 +1,5 @@
 # appOvertimeAdd
-新增實際加班單
+新增實際加班單，新增事後加班單
 
 ### HTTP Request
 ```
@@ -66,6 +66,7 @@ Here is a JSON representation of request.
 | Key | Value | Type | Description | Required | Format |
 |:----------|:-------------|:-----|:------------|:------------|:------------|
 | empid | admin | String | 員工編號 | Y | n/a |
+| overplanPno | xxx | String | 預定加班單號 | 實際加班單(Y)/事後加班單(N) | n/a |
 | startDate | 20220527 | String | 起始日期 | Y | YYYYmmdd |
 | startTime | 1900 | String | 起始時間 | Y | HHmm |  
 | endTime | 2300 | String | 結束時間 | Y | HHmm |         
