@@ -22,7 +22,9 @@ Here is a JSON representation of request.
 {
   "request":{
       "uid":"admin",
-      "pwd":"1234"
+      "pwd":"1234",
+      "deviceBindId":"test",
+      "deviceType":"ios"
   }
 }
 ```
@@ -44,6 +46,8 @@ Here is a JSON representation of request.
 |:----------|:-------------|:-----|:------------|:------------|:------------|
 | uid | admin | String | 登入帳號 | Y | n/a |
 | pwd | 1234 | String | 登入密碼 | Y | n/a |
+| deviceBindId | test | String | 綁定id | Y | n/a |
+| deviceType | ios | String | 裝置類型 | Y | n/a |
 
 ### HTTP Response when Successful
 ```json
@@ -127,6 +131,13 @@ Here is a JSON representation of request.
                     "value": "Administrator",
                     "format": "n/a",
                     "id": "empFullEname"
+                },
+                "bindingConfig": {
+                    "name": "裝置綁定設定強度",
+                    "type": "string",
+                    "value": "1",
+                    "format": "n/a",
+                    "id": "bindingConfig"
                 }
             },
             "format": "n/a",
