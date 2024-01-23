@@ -136,6 +136,17 @@ Here is a JSON representation of request.
     }
 }
 ```
+### HTTP Response when Failed
+```json
+{
+    "status": "fail",
+    "code": 500,
+    "message": [
+        "XXX"
+    ],
+    "data": {}
+}
+```
 
 ### HTTP Response when Exception
 ```json
