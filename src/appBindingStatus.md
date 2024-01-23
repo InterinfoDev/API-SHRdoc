@@ -112,30 +112,32 @@ Here is a JSON representation of request.
 無資料則顯示設定檔資料或是預設資料
 ```json
 {
-    "status": "success",
-    "message": [
-        "回傳成功"
-    ],
-    "data": {
-        "name": "綁定狀態資訊",
-        "properties": {
-            "format": {
-                "n/a": ""
+   "status":"success",
+   "message":[
+      "回傳成功"
+   ],
+   "data":{
+      "properties":{
+         "format":{
+            "n/a":""
+         }
+      },
+      "bindingInformation":{
+         "name":"綁定狀態資訊",
+         "type":"object",
+         "value":{
+            "level":{
+               "name":"綁定機制",
+               "type":"integer",
+               "value":3,
+               "format":"n/a",
+               "id":"level"
             }
-        },
-        "type": "object",
-        "value": {
-            "level": {
-                "name": "綁定機制",
-                "type": "integer",
-                "value": 1,
-                "format": "n/a",
-                "id": "level"
-            }
-        },
-        "format": "n/a",
-        "id": "bindingInformation"
-    }
+         },
+         "format":"n/a",
+         "id":"bindingInformation"
+      }
+   }
 }
 ```
 ### HTTP Response when Failed
