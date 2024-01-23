@@ -66,9 +66,17 @@ Here is a JSON representation of request.
    }
 }
 ```
-
-### HTTP Response when No Data
-不會發生
+### HTTP Response when Failed
+```json
+{
+    "status": "fail",
+    "code": 500,
+    "message": [
+        "XXX"
+    ],
+    "data": {}
+}
+```
 
 ### HTTP Response when Exception
 ```json
