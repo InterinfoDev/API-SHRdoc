@@ -49,31 +49,25 @@ Here is a JSON representation of request.
       "回傳成功"
    ],
    "data":{
-      "name":"綁定異動狀態",
+      "executeMessage":{
+         "name":"異動訊息",
+         "type":"string",
+         "value":"綁定解除成功",
+         "format":"n/a",
+         "id":"executeMessage"
+      },
+      "executeResult":{
+         "name":"異動結果",
+         "type":"boolean",
+         "value":true,
+         "format":"n/a",
+         "id":"executeResult"
+      },
       "properties":{
          "format":{
             "n/a":""
          }
-      },
-      "type":"object",
-      "value":{
-         "executeMessage":{
-            "name":"異動訊息",
-            "type":"string",
-            "value":"綁定解除成功",
-            "format":"n/a",
-            "id":"executeMessage"
-         },
-         "executeResult":{
-            "name":"異動結果",
-            "type":"boolean",
-            "value":true,
-            "format":"n/a",
-            "id":"executeResult"
-         }
-      },
-      "format":"n/a",
-      "id":"execBinding"
+      }
    }
 }
 ```
