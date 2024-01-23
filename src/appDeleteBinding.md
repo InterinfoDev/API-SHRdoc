@@ -85,7 +85,7 @@ Here is a JSON representation of request.
     "status": "fail",
     "code": 500,
     "message": [
-        "無裝置須解除綁定，解除失敗"
+        "XXXX"
     ],
     "data": {}
 }
