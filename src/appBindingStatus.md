@@ -49,59 +49,61 @@ Here is a JSON representation of request.
       "回傳成功"
    ],
    "data":{
-      "name":"綁定狀態資訊",
       "properties":{
          "format":{
             "n/a":""
          }
       },
-      "type":"object",
-      "value":{
-         "bindingDate":{
-            "name":"綁定日期",
-            "type":"string",
-            "value":"20240103",
-            "format":"n/a",
-            "id":"bindingDate"
+      "bindingInformation":{
+         "name":"綁定狀態資訊",
+         "type":"object",
+         "value":{
+            "bindingDate":{
+               "name":"綁定日期",
+               "type":"string",
+               "value":"20240123",
+               "format":"n/a",
+               "id":"bindingDate"
+            },
+            "empid":{
+               "name":"員工編號",
+               "type":"string",
+               "value":"admin",
+               "format":"n/a",
+               "id":"empid"
+            },
+            "bindingType":{
+               "name":"裝置類型",
+               "type":"integer",
+               "value":"ios",
+               "format":"n/a",
+               "id":"bindingTpe"
+            },
+            "bindingTime":{
+               "name":"綁定時間",
+               "type":"string",
+               "value":"161525",
+               "format":"n/a",
+               "id":"bindingTime"
+            },
+            "id":{
+               "name":"綁定ID",
+               "type":"string",
+               "value":"0:0:0:0:0:0:0:1",
+               "format":"n/a",
+               "id":"id"
+            },
+            "level":{
+               "name":"綁定機制",
+               "type":"integer",
+               "value":3,
+               "format":"n/a",
+               "id":"level"
+            }
          },
-         "empid":{
-            "name":"員工編號",
-            "type":"string",
-            "value":"admin",
-            "format":"n/a",
-            "id":"empid"
-         },
-         "bindingType":{
-            "name":"裝置類型",
-            "type":"integer",
-            "value":"ios",
-            "format":"n/a",
-            "id":"bindingTpe"
-         },
-         "bindingTime":{
-            "name":"綁定時間",
-            "type":"string",
-            "value":"104150",
-            "format":"n/a",
-            "id":"bindingTime"
-         },
-         "id":{
-            "name":"綁定ID",
-            "type":"string",
-            "value":"0:0:0:0:0:0:0:1",
-            "format":"n/a",
-            "id":"id"
-         },
-         "level":{
-            "name":"綁定機制",
-            "type":"integer",
-            "value":1,
-            "format":"n/a",
-            "id":"level"
-         }
-      },
-      "format":"n/a",
-      "id":"bindingInformation"
+         "format":"n/a",
+         "id":"bindingInformation"
+      }
    }
 }
 ```
