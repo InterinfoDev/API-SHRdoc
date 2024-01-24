@@ -57,7 +57,7 @@ Here is a JSON representation of request.
             }
          },
          "format":"n/a",
-         "id":"announcementNotify"
+         "id":"readNotification"
       },
       "properties":{
          "format":{
