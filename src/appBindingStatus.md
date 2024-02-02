@@ -49,19 +49,40 @@ Here is a JSON representation of request.
       "回傳成功"
    ],
    "data":{
+      "executeMessage":{
+         "name":"異動訊息",
+         "type":"string",
+         "value":"裝置綁定成功",
+         "format":"n/a",
+         "id":"executeMessage"
+      },
+      "executeResult":{
+         "name":"異動結果",
+         "type":"boolean",
+         "value":true,
+         "format":"n/a",
+         "id":"executeResult"
+      },
       "properties":{
          "format":{
             "n/a":""
          }
       },
-      "bindingInformation":{
-         "name":"綁定狀態資訊",
+      "executeData":{
+         "name":"異動後資料",
          "type":"object",
          "value":{
+            "hardwareModel":{
+               "name":"硬體型號",
+               "type":"integer",
+               "value":"iphone14",
+               "format":"n/a",
+               "id":"hardwareModel"
+            },
             "bindingDate":{
                "name":"綁定日期",
                "type":"string",
-               "value":"20240123",
+               "value":"20240202",
                "format":"n/a",
                "id":"bindingDate"
             },
@@ -82,27 +103,20 @@ Here is a JSON representation of request.
             "bindingTime":{
                "name":"綁定時間",
                "type":"string",
-               "value":"161525",
+               "value":"110154",
                "format":"n/a",
                "id":"bindingTime"
             },
             "id":{
-               "name":"綁定ID",
+               "name":"綁定編號",
                "type":"string",
-               "value":"0:0:0:0:0:0:0:1",
+               "value":"test",
                "format":"n/a",
                "id":"id"
-            },
-            "level":{
-               "name":"綁定機制",
-               "type":"integer",
-               "value":3,
-               "format":"n/a",
-               "id":"level"
             }
          },
          "format":"n/a",
-         "id":"bindingInformation"
+         "id":"executeData"
       }
    }
 }
