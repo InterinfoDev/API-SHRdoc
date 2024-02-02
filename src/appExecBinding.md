@@ -44,74 +44,81 @@ Here is a JSON representation of request.
 ### HTTP Response when Successful
 ```json
 {
-   "status":"success",
-   "message":[
-      "回傳成功"
-   ],
-   "data":{
-      "executeMessage":{
-         "name":"異動訊息",
-         "type":"string",
-         "value":"裝置綁定成功",
-         "format":"n/a",
-         "id":"executeMessage"
-      },
-      "executeResult":{
-         "name":"異動結果",
-         "type":"boolean",
-         "value":true,
-         "format":"n/a",
-         "id":"executeResult"
-      },
-      "properties":{
-         "format":{
-            "n/a":""
-         }
-      },
-      "executeData":{
-         "name":"異動後資料",
-         "type":"object",
-         "value":{
-            "bindingDate":{
-               "name":"綁定日期",
-               "type":"string",
-               "value":"20240123",
-               "format":"n/a",
-               "id":"bindingDate"
-            },
-            "empid":{
-               "name":"員工編號",
-               "type":"string",
-               "value":"admin",
-               "format":"n/a",
-               "id":"empid"
-            },
-            "bindingType":{
-               "name":"裝置類型",
-               "type":"integer",
-               "value":"ios",
-               "format":"n/a",
-               "id":"bindingTpe"
-            },
-            "bindingTime":{
-               "name":"綁定時間",
-               "type":"string",
-               "value":"160329",
-               "format":"n/a",
-               "id":"bindingTime"
-            },
-            "id":{
-               "name":"綁定ID",
-               "type":"string",
-               "value":"0:0:0:0:0:0:0:1",
-               "format":"n/a",
-               "id":"id"
+    "status": "success",
+    "message": [
+        "回傳成功"
+    ],
+    "data": {
+        "executeMessage": {
+            "name": "異動訊息",
+            "type": "string",
+            "value": "裝置綁定成功",
+            "format": "n/a",
+            "id": "executeMessage"
+        },
+        "executeResult": {
+            "name": "異動結果",
+            "type": "boolean",
+            "value": true,
+            "format": "n/a",
+            "id": "executeResult"
+        },
+        "properties": {
+            "format": {
+                "n/a": ""
             }
-         },
-         "format":"n/a",
-         "id":"executeData"
-      }
-   }
+        },
+        "executeData": {
+            "name": "異動後資料",
+            "type": "object",
+            "value": {
+                "hardwareModel": {
+                    "name": "硬體型號",
+                    "type": "integer",
+                    "value": "iphone14",
+                    "format": "n/a",
+                    "id": "hardwareModel"
+                },
+                "bindingDate": {
+                    "name": "綁定日期",
+                    "type": "string",
+                    "value": "20240202",
+                    "format": "n/a",
+                    "id": "bindingDate"
+                },
+                "empid": {
+                    "name": "員工編號",
+                    "type": "string",
+                    "value": "admin",
+                    "format": "n/a",
+                    "id": "empid"
+                },
+                "bindingType": {
+                    "name": "裝置類型",
+                    "type": "integer",
+                    "value": "ios",
+                    "format": "n/a",
+                    "id": "bindingTpe"
+                },
+                "bindingTime": {
+                    "name": "綁定時間",
+                    "type": "string",
+                    "value": "110154",
+                    "format": "n/a",
+                    "id": "bindingTime"
+                },
+                "id": {
+                    "name": "綁定編號",
+                    "type": "string",
+                    "value": "test",
+                    "format": "n/a",
+                    "id": "id"
+                }
+            },
+            "format": "n/a",
+            "id": "executeData"
+        }
+    }
 }
 ```
 ### HTTP Response when Failed
