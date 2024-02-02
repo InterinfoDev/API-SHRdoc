@@ -79,6 +79,13 @@ Here is a JSON representation of request.
                "format":"n/a",
                "id":"empid"
             },
+            "levelDescription":{
+               "name":"機制說明",
+               "type":"string",
+               "value":"不強制綁定\r\n當貴司採用不強制綁定機制，使用者可自行至『設定』→『裝置綁定』選擇是否綁定裝置，以降低資訊外洩的風險。",
+               "format":"n/a",
+               "id":"levelDescription"
+            },
             "bindingType":{
                "name":"裝置類型",
                "type":"integer",
