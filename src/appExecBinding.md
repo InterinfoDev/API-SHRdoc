@@ -24,7 +24,8 @@ Here is a JSON representation of request.
 ```json
 {
    "deviceBindId":"test",
-   "deviceType":"ios"
+   "deviceType":"ios",
+   "hardwareModel":"iphone14"
 }
 ```
 
