@@ -49,32 +49,18 @@ Here is a JSON representation of request.
       "回傳成功"
    ],
    "data":{
-      "executeMessage":{
-         "name":"異動訊息",
-         "type":"string",
-         "value":"裝置綁定成功",
-         "format":"n/a",
-         "id":"executeMessage"
-      },
-      "executeResult":{
-         "name":"異動結果",
-         "type":"boolean",
-         "value":true,
-         "format":"n/a",
-         "id":"executeResult"
-      },
       "properties":{
          "format":{
             "n/a":""
          }
       },
-      "executeData":{
-         "name":"異動後資料",
+      "bindingInformation":{
+         "name":"綁定狀態資訊",
          "type":"object",
          "value":{
             "hardwareModel":{
                "name":"硬體型號",
-               "type":"integer",
+               "type":"string",
                "value":"iphone14",
                "format":"n/a",
                "id":"hardwareModel"
@@ -113,10 +99,17 @@ Here is a JSON representation of request.
                "value":"test",
                "format":"n/a",
                "id":"id"
+            },
+            "level":{
+               "name":"綁定機制",
+               "type":"integer",
+               "value":3,
+               "format":"n/a",
+               "id":"level"
             }
          },
          "format":"n/a",
-         "id":"executeData"
+         "id":"bindingInformation"
       }
    }
 }
