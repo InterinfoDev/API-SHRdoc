@@ -17,14 +17,15 @@ POST
 |:---------|:-----|:------------|
 | uid | 98599308101484732326 | String | 需透過appLogin取得
 | right | 51341911904173543336756162544864820 | String | 需透過appLogin取得 |
-| request | {deviceBindId:test,deviceType:ios} | Object | 查詢條件
+| request | {deviceBindId:test,deviceType:ios,hardwareModel:iphone14 plus} | Object | 查詢條件
 
 ### JSON representation
 Here is a JSON representation of request.
 ```json
 {
    "deviceBindId":"test",
-   "deviceType":"ios"
+   "deviceType":"ios",
+   "hardwareModel":"iphone14 plus"
 }
 ```
 
@@ -38,8 +39,9 @@ Here is a JSON representation of request.
 ### Request Properties
 | Key | Value | Type | Description | Required | Format |
 |:----------|:-------------|:-----|:------------|:------------|:------------|
-| deviceBindId | test | String | 綁定id | N | n/a |
-| deviceType | ios | String | 綁定類型 | N | n/a |
+| deviceBindId | test | String | 綁定id | Y | n/a |
+| deviceType | ios | String | 綁定類型 | Y | n/a |
+| hardwareModel | iphone14 plus | String | Y | n/a |
 
 ### HTTP Response when Successful
 ```json
