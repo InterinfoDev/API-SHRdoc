@@ -41,7 +41,7 @@ Here is a JSON representation of request.
 |:----------|:-------------|:-----|:------------|:------------|:------------|
 | deviceBindId | test | String | 綁定id | Y | n/a |
 | deviceType | ios | String | 綁定類型 | Y | n/a |
-| hardwareModel | iphone14 plus | String | Y | n/a |
+| hardwareModel | iphone14 plus | String | 硬體類型 | Y | n/a |
 
 ### HTTP Response when Successful
 ```json
