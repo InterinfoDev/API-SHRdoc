@@ -74,6 +74,8 @@ Here is a JSON representation of request.
 | payType | 給付方式 |
 | isEat | 是否用餐 |
 | specifyHour | 指定用餐時間 |
+| totalPayHour | 總計給薪時數 |
+| totalRestHour | 總計補休時數 |
 
 ### HTTP Response when Successful
 ```json
