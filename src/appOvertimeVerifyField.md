@@ -16,7 +16,7 @@ POST
 |:----------|:-------------|:-----|:------------|
 | uid | 98599308101484732326 | String | 需透過appLogin取得
 | right | 51341911904173543336756162544864820 | String | 需透過appLogin取得 |
-| request | {'fieldName':'startTime','empid':'9912011','startDate':'20220712','startTime':'2100','endTime':'2300','reason':'ttt','payType':'B','totalPayHour':0.0,'totalRestHour':0.0,'specifyHour':0.0,'eatCount':0,'isEat':true,'beforeWork':false, 'naturalDisaster':false, 'earlyLeave':false, 'overplanPno':'W002022062700011', 'overtimeType':'A', 'overtimeDepartment':'9', 'overtimeProject':''} | Object | 異動條件
+| request | {'fieldName':'startTime','empid':'9912011','startDate':'20220712','startTime':'2100','endTime':'2300','reason':'ttt','payType':'B','totalPayHour':'','totalRestHour':'','specifyHour':'','eatCount':'','isEat':true,'beforeWork':false, 'naturalDisaster':false, 'earlyLeave':false, 'overplanPno':'W002022062700011', 'overtimeType':'A', 'overtimeDepartment':'9', 'overtimeProject':''} | Object | 異動條件
 
 ### JSON representation Case 1
 Here is a JSON representation of request.
@@ -36,10 +36,10 @@ Here is a JSON representation of request.
       "overtimeProject":"",
       "overtimeDepartment":"9",
       "payType":"A",          
-      "totalPayHour":0.0,
-      "totalRestHour":0.0,
-      "specifyHour":0.0,
-      "eatCount":0,
+      "totalPayHour":"",
+      "totalRestHour":"",
+      "specifyHour":"",
+      "eatCount":"",
       "isEat":false,
       "earlyLeave":false,
       "naturalDisaster":false,
@@ -68,9 +68,9 @@ Here is a JSON representation of request.
 | overplanPno | W002022062700011 | String | 預定加班單號 | N | n/a |
 | overtimeDepartment | 9 | String | 加班部門 | N | n/a |
 | overtimeType | A | String | 加班類別 | N | n/a |
-| totalPayHour | 0.0 | String | 總計給薪時數 | N | hour | 
-| totalRestHour | 0.0 | String | 總計補休時數 | N | hour |
-| specifyHour | 0.0 | String | 指定用餐時間 | N | hour |
+| totalPayHour | 0 | String | 總計給薪時數 | N | hour | 
+| totalRestHour | 0 | String | 總計補休時數 | N | hour |
+| specifyHour | 0 | String | 指定用餐時間 | N | hour |
 | eatCount | 0 | String | 新用餐次數 | N | count |
 | overtimeProject | xxx | String | 核准文號 | N | n/a |
 | isEat | false | boolean | 是否用餐 | N | n/a | 
