@@ -16,7 +16,7 @@ POST
 |:----------|:-------------|:-----|:------------|
 | uid | 98599308101484732326 | String | 需透過appLogin取得
 | right | 51341911904173543336756162544864820 | String | 需透過appLogin取得 |
-| request | {'fieldName':'startTime','empid':'9912011','startDate':'20220712','startTime':'2100','endTime':'2300','reason':'ttt','payType':'B','totalPayHour':0.0,'totalRestHour':0.0,'specifyHour':0.0,'eatCount':0,'isEat':true,'beforeWork':false, 'naturalDisaster':false, 'earlyLeave':false, 'overplanPno':'W002022062700011', 'overtimeType':'A', 'overtimeDepartment':'9'} | Object | 異動條件
+| request | {'fieldName':'startTime','empid':'9912011','startDate':'20220712','startTime':'2100','endTime':'2300','reason':'ttt','payType':'B','totalPayHour':0.0,'totalRestHour':0.0,'specifyHour':0.0,'eatCount':0,'isEat':true,'beforeWork':false, 'naturalDisaster':false, 'earlyLeave':false, 'overplanPno':'W002022062700011', 'overtimeType':'A', 'overtimeDepartment':'9', 'overtimeProject':''} | Object | 異動條件
 
 ### JSON representation Case 1
 Here is a JSON representation of request.
@@ -33,6 +33,7 @@ Here is a JSON representation of request.
       "reason":"20220524kevinOverplanTest",
       "overplanPno":'W002022062700011',
       "overtimeType":"A",
+      "overtimeProject":"",
       "overtimeDepartment":"9",
       "payType":"A",          
       "totalPayHour":0.0,
@@ -67,10 +68,11 @@ Here is a JSON representation of request.
 | overplanPno | W002022062700011 | String | 預定加班單號 | N | n/a |
 | overtimeDepartment | 9 | String | 加班部門 | N | n/a |
 | overtimeType | A | String | 加班類別 | N | n/a |
-| totalPayHour | 0.0 | Decimal | 總計給薪時數 | N | hour | 
-| totalRestHour | 0.0 | Decimal | 總計補休時數 | N | hour |
-| specifyHour | 0.0 | Decimal | 指定用餐時間 | N | hour |
-| eatCount | 0 | integer | 新用餐次數 | N | count |
+| totalPayHour | 0.0 | String | 總計給薪時數 | N | hour | 
+| totalRestHour | 0.0 | String | 總計補休時數 | N | hour |
+| specifyHour | 0.0 | String | 指定用餐時間 | N | hour |
+| eatCount | 0 | String | 新用餐次數 | N | count |
+| overtimeProject | xxx | String | 核准文號 | N | n/a |
 | isEat | false | boolean | 是否用餐 | N | n/a | 
 | beforeWork | false | boolean | 跨日往前加班 | N | n/a | 
 | naturalDisaster | false | boolean | 天災 | N | n/a | 
@@ -83,6 +85,9 @@ Here is a JSON representation of request.
 | endTime | 結束時間 |
 | payType | 給付方式 |
 | isEat | 是否用餐 |
+| overtimeType | 加班類別 |
+| totalPayHour | 總計給薪時數 |
+| totalRestHour | 總計補休時數 |
 
 ### HTTP Response when Successful
 ```json
