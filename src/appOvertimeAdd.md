@@ -35,7 +35,7 @@ Here is a JSON representation of request.
       "overtimeDepartment":"9",
       "payType":"B",
       "allowanceClass":"",
-      "totalPayHour":2.0,
+      "totalPayHour":"2.0",
       "totalRestHour":0.0,
       "newEatHour":0.0,
       "oldEatHour":0.0,
