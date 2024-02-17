@@ -16,7 +16,7 @@ POST
 |:----------|:-------------|:-----|:------------|
 | uid | 98599308101484732326 | String | 需透過appLogin取得
 | right | 51341911904173543336756162544864820 | String | 需透過appLogin取得 |
-| request | {{'fieldName':'startTime', 'empid':'admin', 'startDate':'20220527', 'startTime':'1900', 'endTime':'2200', 'reason':'20220524kevinOverplanTest', 'payType':'A', 'totalPayHour':0.0, 'totalRestHour':0.0, 'specifyHour':0.0, 'oldEatHour':0.0, 'isEat':false, 'beforeWork':false}} | Object | 異動條件
+| request | {{'fieldName':'startTime', 'empid':'admin', 'startDate':'20220527', 'startTime':'1900', 'endTime':'2200', 'reason':'20220524kevinOverplanTest', 'payType':'A', 'totalPayHour':'0.0', 'totalRestHour':'0.0', 'specifyHour':'0.0', 'oldEatHour':'0.0', 'newEatHour':'0.0', 'isEat':false, 'beforeWork':false}} | Object | 異動條件
 
 ### JSON representation Case 1
 Here is a JSON representation of request.
@@ -32,10 +32,11 @@ Here is a JSON representation of request.
       "endTime":"2200",      
       "reason":"20220524kevinOverplanTest",        
       "payType":"A",          
-      "totalPayHour":0.0,
-      "totalRestHour":0.0,
-      "specifyHour":0.0,
-      "oldEatHour":0.0,
+      "totalPayHour":"0.0",
+      "totalRestHour":"0.0",
+      "specifyHour":"0.0",
+      "oldEatHour":"0.0",
+      "newEatHour":"0.0",
       "isEat":false,
       "beforeWork":false
    }
@@ -59,10 +60,11 @@ Here is a JSON representation of request.
 | endTime | 2300 | String | 結束時間 | N | HHmm |         
 | reason | 20220524kevinOverplanTest | String | 請假說明 | N | n/a |
 | payType | A | String | 給付方式 | N | n/a |
-| totalPayHour | 0.0 | Decimal | 總計給薪時數 | N | hour | 
-| totalRestHour | 0.0 | Decimal | 總計補休時數 | N | hour |
-| specifyHour | 0.0 | Decimal | 指定用餐時間 | N | hour |
-| oldEatHour | 0.0 | Decimal | 原用餐時間 | N | hour |
+| totalPayHour | 0.0 | String | 總計給薪時數 | N | hour | 
+| totalRestHour | 0.0 | String | 總計補休時數 | N | hour |
+| specifyHour | 0.0 | String | 指定用餐時間 | N | hour |
+| oldEatHour | 0.0 | String | 原用餐時間 | N | hour |
+| newEatHour | 0.0 | String | 新用餐時間 | N | hour |
 | isEat | false | boolean | 是否用餐 | N | n/a | 
 | beforeWork | false | boolean | 跨日往前加班 | N | n/a | 
 
