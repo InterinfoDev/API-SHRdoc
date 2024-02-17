@@ -482,6 +482,35 @@ Here is a JSON representation of request.
                     "format": "n/a",
                     "id": "oldEatHour"
                 },
+                "newEatHour": {
+                    "name": "新用餐時間",
+                    "type": "object",
+                    "value": {
+                        "fieldEditable": {
+                            "name": "開放編輯",
+                            "type": "boolean",
+                            "value": false,
+                            "format": "n/a",
+                            "id": "fieldEditable"
+                        },
+                        "fieldValue": {
+                            "name": "欄位預設值",
+                            "type": "string",
+                            "value": "",
+                            "format": "n/a",
+                            "id": "fieldValue"
+                        },
+                        "fieldVisible": {
+                            "name": "是否顯示",
+                            "type": "boolean",
+                            "value": true,
+                            "format": "n/a",
+                            "id": "fieldVisible"
+                        }
+                    },
+                    "format": "n/a",
+                    "id": "newEatHour"
+                },
                 "isEat": {
                     "name": "是否用餐",
                     "type": "object",
