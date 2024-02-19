@@ -53,7 +53,7 @@ Here is a JSON representation of request.
         "回傳成功"
     ],
     "data": {
-        "overplanOverview": {
+        "overtimeOverview": {
             "name": "加班總覽",
             "type": "object",
             "value": {
@@ -175,7 +175,7 @@ Here is a JSON representation of request.
                 }
             },
             "format": "n/a",
-            "id": "overplanOverview"
+            "id": "overtimeOverview"
         },
         "punchCard": {
             "name": "刷卡資訊",
