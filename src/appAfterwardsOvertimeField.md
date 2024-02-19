@@ -48,929 +48,1169 @@ Here is a JSON representation of request.
 ### HTTP Response when Successful
 ```json
 {
-   "status":"success",
-   "message":[
-      "回傳成功"
-   ],
-   "data":{
-      "overtimeInfo":{
-         "name":"實際加班單顯示欄位資訊",
-         "type":"object",
-         "value":{
-            "threeMonthsApplyHours": {
-                "name": "三個月已累積加班時數(不含本次)",
-                "type": "string",
-                "value": "",
-                "format": "n/a",
-                "id": "threeMonthsApplyHours"
-            },
-            "attendClass": {
-                "name": "出勤班別",
-                "type": "string",
-                "value": "XX班",
-                "format": "n/a",
-                "id": "attendClass"
-            },
-            "appliedHour":{
-               "name":"當月已累積加班時數(不含本次)",
-               "type":"decimal",
-               "value":5.0,
-               "format":"hour",
-               "id":"appliedHour"
-            },
-            "companyId":{  --kevin 多給companyId
-               "name": "公司代號",
-               "type": "string",
-               "value": "1",
-               "format": "n/a",
-               "id": "companyId"
-            },
-            "companyFullName":{
-               "name":"公司全名",
-               "type":"string",
-               "value":"三澧企業股份有限公司",
-               "format":"n/a",
-               "id":"companyFullName"
-            },
-            "empFullName":{
-               "name":"員工中文姓名",
-               "type":"string",
-               "value":"管理者",
-               "format":"n/a",
-               "id":"empFullName"
-            },
-            "empid":{
-               "name":"員工編號",
-               "type":"string",
-               "value":"admin",
-               "format":"n/a",
-               "id":"empid"
-            },
-            "overDate":{
-               "name":"加班日期",
-               "type":"string",
-               "value":"20220621",
-               "format":"YYYYmmdd",
-               "id":"overDate"
-            },
-            "depFullName":{
-               "name":"部門名稱",
-               "type":"string",
-               "value":"台北總公司",
-               "format":"n/a",
-               "id":"depFullName"
-            },
-            "empFullEname":{
-               "name":"員工英文姓名",
-               "type":"string",
-               "value":"",
-               "format":"n/a",
-               "id":"empFullEname"
-            },
-            "depCode":{ --kevin 補上depCode
-               "name":"部門代號",
-               "type":"string",
-               "value":"1",
-               "format":"n/a",
-               "id":"depCode"
-            },
-            "overplanPno":{
-               "name":"預定加班單號",
-               "type":"string",
-               "value":"",
-               "format":"n/a",
-               "id":"overplanPno"
-            }
-         },
-         "format":"n/a",
-         "id":"overtimeInfo"
+  "status": "success",
+  "message": [
+    "回傳成功"
+  ],
+  "data": {
+    "punchCard": {
+      "name": "刷卡資訊",
+      "type": "object",
+      "value": {
+        "punchRecord": {
+          "name": "刷卡紀錄",
+          "type": "string",
+          "value": "進:1800 ",
+          "format": "n/a",
+          "id": "punchRecord"
+        },
+        "punchDate": {
+          "name": "刷卡日期",
+          "type": "string",
+          "value": "20240108",
+          "format": "YYYYmmdd",
+          "id": "punchDate"
+        },
+        "punchIn": {
+          "name": "進卡時間",
+          "type": "string",
+          "value": "18:00",
+          "format": "n/a",
+          "id": "punchIn"
+        },
+        "punchOut": {
+          "name": "出卡時間",
+          "type": "string",
+          "value": "",
+          "format": "n/a",
+          "id": "punchOut"
+        }
       },
-      "holidayRateDetail":{
-         "name":"假日加班倍率資訊",
-         "type":"array",
-         "value":[
-            {
-               "name":"假日第一段時數",
-               "type":"object",
-               "value":{
-                  "fieldValue":{
-                     "name":"欄位預設值",
-                     "type":"decimal",
-                     "value":0.0,
-                     "format":"hour",
-                     "id":"fieldValue"
-                  },
-                  "fieldName":{
-                     "name":"欄位名稱",
-                     "type":"string",
-                     "value":"1.00000",
-                     "format":"n/a",
-                     "id":"fieldName"
-                  }
-               },
-               "format":"n/a",
-               "id":"holidayRate1"
+      "format": "n/a",
+      "id": "punchCard"
+    },
+    "holidayRateDetail": {
+      "name": "假日加班倍率資訊",
+      "type": "array",
+      "value": [
+        {
+          "name": "假日第一段倍率時數",
+          "type": "object",
+          "value": {
+            "fieldValue": {
+              "name": "欄位預設值",
+              "type": "string",
+              "value": "",
+              "format": "hour",
+              "id": "fieldValue"
             },
-            {
-               "name":"假日第二段時數",
-               "type":"object",
-               "value":{
-                  "fieldValue":{
-                     "name":"欄位預設值",
-                     "type":"decimal",
-                     "value":0.0,
-                     "format":"hour",
-                     "id":"fieldValue"
-                  },
-                  "fieldName":{
-                     "name":"欄位名稱",
-                     "type":"string",
-                     "value":"1.33340",
-                     "format":"n/a",
-                     "id":"fieldName"
-                  }
-               },
-               "format":"n/a",
-               "id":"holidayRate2"
-            },
-            {
-               "name":"假日第三段時數",
-               "type":"object",
-               "value":{
-                  "fieldValue":{
-                     "name":"欄位預設值",
-                     "type":"decimal",
-                     "value":0.0,
-                     "format":"hour",
-                     "id":"fieldValue"
-                  },
-                  "fieldName":{
-                     "name":"欄位名稱",
-                     "type":"string",
-                     "value":"1.66670",
-                     "format":"n/a",
-                     "id":"fieldName"
-                  }
-               },
-               "format":"n/a",
-               "id":"holidayRate3"
-            },
-            {
-               "name":"假日第四段時數",
-               "type":"object",
-               "value":{
-                  "fieldValue":{
-                     "name":"欄位預設值",
-                     "type":"decimal",
-                     "value":0.0,
-                     "format":"hour",
-                     "id":"fieldValue"
-                  },
-                  "fieldName":{
-                     "name":"欄位名稱",
-                     "type":"string",
-                     "value":"1.6667",
-                     "format":"n/a",
-                     "id":"fieldName"
-                  }
-               },
-               "format":"n/a",
-               "id":"holidayRate4"
+            "fieldName": {
+              "name": "欄位名稱",
+              "type": "string",
+              "value": "1.000000",
+              "format": "n/a",
+              "id": "fieldName"
             }
-         ],
-         "format":"n/a",
-         "id":"holidayRateDetail"
-      },
-      "punchCard":{
-         "name":"刷卡資訊",
-         "type":"object",
-         "value":{
-            "punchRecord":{
-               "name":"刷卡紀錄",
-               "type":"string",
-               "value":"",
-               "format":"n/a",
-               "id":"punchRecord"
+          },
+          "format": "n/a",
+          "id": "holidayRate1"
+        },
+        {
+          "name": "假日第二段倍率時數",
+          "type": "object",
+          "value": {
+            "fieldValue": {
+              "name": "欄位預設值",
+              "type": "string",
+              "value": "",
+              "format": "hour",
+              "id": "fieldValue"
             },
-            "punchDate":{
-               "name":"刷卡日期",
-               "type":"string",
-               "value":"",
-               "format":"YYYYmmdd",
-               "id":"punchDate"
-            },
-            "punchIn":{
-               "name":"進卡時間",
-               "type":"string",
-               "value":"",
-               "format":"n/a",
-               "id":"punchIn"
-            },
-            "punchOut":{
-               "name":"出卡時間",
-               "type":"string",
-               "value":"",
-               "format":"n/a",
-               "id":"punchOut"
+            "fieldName": {
+              "name": "欄位名稱",
+              "type": "string",
+              "value": "1.333400",
+              "format": "n/a",
+              "id": "fieldName"
             }
-         },
-         "format":"n/a",
-         "id":"punchCard"
-      },
-      "overtimeForm":{
-         "name":"實際加班單填寫欄位資訊",
-         "type":"object",
-         "value":{
-            "startTime":{
-               "name":"起始時間",
-               "type":"object",
-               "value":{
-                  "fieldEditable":{
-                     "name":"開放編輯",
-                     "type":"boolean",
-                     "value":true,
-                     "format":"n/a",
-                     "id":"fieldEditable"
-                  },
-                  "fieldValue":{
-                     "name":"欄位預設值",
-                     "type":"string",
-                     "value":"1730",
-                     "format":"HHmm",
-                     "id":"fieldValue"
-                  }
-               },
-               "format":"n/a",
-               "id":"startTime"
+          },
+          "format": "n/a",
+          "id": "holidayRate2"
+        },
+        {
+          "name": "假日第三段倍率時數",
+          "type": "object",
+          "value": {
+            "fieldValue": {
+              "name": "欄位預設值",
+              "type": "string",
+              "value": "",
+              "format": "hour",
+              "id": "fieldValue"
             },
-            "beforeWork":{
-               "name":"跨日往前加班",
-               "type":"object",
-               "value":{
-                  "fieldEditable":{
-                     "name":"開放編輯",
-                     "type":"boolean",
-                     "value":true,
-                     "format":"n/a",
-                     "id":"fieldEditable"
-                  },
-                  "fieldValue":{
-                     "name":"欄位預設值",
-                     "type":"boolean",
-                     "value":false,
-                     "format":"n/a",
-                     "id":"fieldValue"
-                  }
-               },
-               "format":"n/a",
-               "id":"beforeWork"
-            },
-            "earlyLeave":{
-               "name":"申請提早退勤(加班時數=實際出勤時數)",  --kevin 改為"申請提早退勤(加班時數=實際出勤時數)"
-               "type":"object",
-               "value":{
-                  "fieldEditable":{
-                     "name":"開放編輯",
-                     "type":"boolean",
-                     "value":true,
-                     "format":"n/a",
-                     "id":"fieldEditable"
-                  },
-                  "fieldValue":{
-                     "name":"欄位預設值",
-                     "type":"boolean",
-                     "value":false,
-                     "format":"n/a",
-                     "id":"fieldValue"
-                  }
-               },
-               "format":"n/a",
-               "id":"earlyLeave"
-            },
-            "allowanceClass":{
-               "name":"津貼班別",
-               "type":"object",
-               "value":{
-                  "option":{
-                     "name":"選項",
-                     "type":"array",
-                     "value":[
-                        {
-                           "optionId":{
-                              "name":"選項代號",
-                              "type":"string",
-                              "value":"A",
-                              "format":"n/a",
-                              "id":"optionId"
-                           },
-                           "optionValue":{
-                              "name":"選項名稱",
-                              "type":"string",
-                              "value":"營業店鋪",
-                              "format":"n/a",
-                              "id":"optionValue"
-                           }
-                        },
-                        {
-                           "optionId":{
-                              "name":"選項代號",
-                              "type":"string",
-                              "value":"D",
-                              "format":"n/a",
-                              "id":"optionId"
-                           },
-                           "optionValue":{
-                              "name":"選項名稱",
-                              "type":"string",
-                              "value":"總公司班",
-                              "format":"n/a",
-                              "id":"optionValue"
-                           }
-                        }
-                     ],
-                     "format":"n/a",
-                     "id":"option"
-                  },
-                  "fieldEditable":{
-                     "name":"開放編輯",
-                     "type":"boolean",
-                     "value":false,
-                     "format":"n/a",
-                     "id":"fieldEditable"
-                  },
-                  "fieldValue":{
-                     "name":"欄位預設值",
-                     "type":"string",
-                     "value":"",
-                     "format":"n/a",
-                     "id":"fieldValue"
-                  }
-               },
-               "format":"n/a",
-               "id":"allowanceClass"
-            },
-            "overtimeDepartment":{
-               "name":"加班部門",
-               "type":"object",
-               "value":{
-                  "fieldEditable":{
-                     "name":"開放編輯",
-                     "type":"boolean",
-                     "value":true,
-                     "format":"n/a",
-                     "id":"fieldEditable"
-                  },
-                  "fieldValue":{
-                     "name":"欄位預設值",
-                     "type":"string",
-                     "value":"1",
-                     "format":"n/a",
-                     "id":"fieldValue"
-                  },
-                  "fieldDisplay":{
-                     "name":"欄位顯示資料",
-                     "type":"string",
-                     "value":"台北總公司",
-                     "format":"n/a",
-                     "id":"fieldDisplay"
-                  }
-               },
-               "format":"n/a",
-               "id":"overtimeDepartment"
-            },
-            "reason":{
-               "name":"加班內容",
-               "type":"object",
-               "value":{
-                  "fieldEditable":{
-                     "name":"開放編輯",
-                     "type":"boolean",
-                     "value":true,
-                     "format":"n/a",
-                     "id":"fieldEditable"
-                  },
-                  "fieldValue":{
-                     "name":"欄位預設值",
-                     "type":"string",
-                     "value":"",
-                     "format":"n/a",
-                     "id":"fieldValue"
-                  }
-               },
-               "format":"n/a",
-               "id":"reason"
-            },
-            "endTime":{
-               "name":"結束時間",
-               "type":"object",
-               "value":{
-                  "fieldEditable":{
-                     "name":"開放編輯",
-                     "type":"boolean",
-                     "value":true,
-                     "format":"n/a",
-                     "id":"fieldEditable"
-                  },
-                  "fieldValue":{
-                     "name":"欄位預設值",
-                     "type":"string",
-                     "value":"",
-                     "format":"HHmm",
-                     "id":"fieldValue"
-                  }
-               },
-               "format":"n/a",
-               "id":"endTime"
-            },
-            "naturalDisaster":{
-               "name":"天災",
-               "type":"object",
-               "value":{
-                  "fieldEditable":{
-                     "name":"開放編輯",
-                     "type":"boolean",
-                     "value":true,
-                     "format":"n/a",
-                     "id":"fieldEditable"
-                  },
-                  "fieldValue":{
-                     "name":"欄位預設值",
-                     "type":"boolean",
-                     "value":false,
-                     "format":"n/a",
-                     "id":"fieldValue"
-                  }
-               },
-               "format":"n/a",
-               "id":"naturalDisaster"
-            },
-            "uploadFile":{
-               "name":"附件上傳",
-               "type":"object",
-               "value":{
-                  "fieldEditable":{
-                     "name":"開放編輯",
-                     "type":"boolean",
-                     "value":true,
-                     "format":"n/a",
-                     "id":"fieldEditable"
-                  },
-                  "fieldValue":{
-                     "name":"欄位預設值",
-                     "type":"array",
-                     "value":[
-                        
-                     ],
-                     "format":"n/a",
-                     "id":"fieldValue"
-                  },
-                  "uploadLimit":{
-                     "name":"檔案上傳數量限制",
-                     "type":"integer",
-                     "value":1,
-                     "format":"count",
-                     "id":"uploadLimit"
-                  }
-               },
-               "format":"n/a",
-               "id":"uploadFile"
-            },
-            "overtimeType":{
-               "name":"加班類別",
-               "type":"object",
-               "value":{
-                  "option":{
-                     "name":"選項",
-                     "type":"array",
-                     "value":[
-                        {
-                           "optionId":{
-                              "name":"選項代號",
-                              "type":"string",
-                              "value":"A",
-                              "format":"n/a",
-                              "id":"optionId"
-                           },
-                           "optionValue":{
-                              "name":"選項名稱",
-                              "type":"string",
-                              "value":"一般加班",
-                              "format":"n/a",
-                              "id":"optionValue"
-                           }
-                        },
-                        {
-                           "optionId":{
-                              "name":"選項代號",
-                              "type":"string",
-                              "value":"B",
-                              "format":"n/a",
-                              "id":"optionId"
-                           },
-                           "optionValue":{
-                              "name":"選項名稱",
-                              "type":"string",
-                              "value":"特殊加班",
-                              "format":"n/a",
-                              "id":"optionValue"
-                           }
-                        },
-                        {
-                           "optionId":{
-                              "name":"選項代號",
-                              "type":"string",
-                              "value":"C",
-                              "format":"n/a",
-                              "id":"optionId"
-                           },
-                           "optionValue":{
-                              "name":"選項名稱",
-                              "type":"string",
-                              "value":"加班測試",
-                              "format":"n/a",
-                              "id":"optionValue"
-                           }
-                        }
-                     ],
-                     "format":"n/a",
-                     "id":"option"
-                  },
-                  "fieldEditable":{
-                     "name":"開放編輯",
-                     "type":"boolean",
-                     "value":true,
-                     "format":"n/a",
-                     "id":"fieldEditable"
-                  },
-                  "fieldValue":{
-                     "name":"欄位預設值",
-                     "type":"string",
-                     "value":"A",
-                     "format":"n/a",
-                     "id":"fieldValue"
-                  }
-               },
-               "format":"n/a",
-               "id":"overtimeType"
+            "fieldName": {
+              "name": "欄位名稱",
+              "type": "string",
+              "value": "1.666700",
+              "format": "n/a",
+              "id": "fieldName"
             }
-         },
-         "format":"n/a",
-         "id":"overtimeForm"
-      },
-      "properties":{
-         "format":{
-            "HHmm":"時間時分",
-            "currency":"元",
-            "hour":"小時",
-            "YYYYmmdd":"西元年月日",
-            "count":"數量",
-            "n/a":""
-         }
-      },
-      "payForm":{
-         "name":"給付欄位資訊",
-         "type":"object",
-         "value":{
-            "totalRestHour":{
-               "name":"總計補休時數",
-               "type":"object",
-               "value":{
-                  "fieldEditable":{
-                     "name":"開放編輯",
-                     "type":"boolean",
-                     "value":false,
-                     "format":"n/a",
-                     "id":"fieldEditable"
-                  },
-                  "fieldValue":{
-                     "name":"欄位預設值",
-                     "type":"decimal",
-                     "value":0.0,
-                     "format":"hour",
-                     "id":"fieldValue"
-                  }
-               },
-               "format":"n/a",
-               "id":"totalRestHour"
+          },
+          "format": "n/a",
+          "id": "holidayRate3"
+        },
+        {
+          "name": "假日第四段倍率時數",
+          "type": "object",
+          "value": {
+            "fieldValue": {
+              "name": "欄位預設值",
+              "type": "string",
+              "value": "",
+              "format": "hour",
+              "id": "fieldValue"
             },
-            "payType":{
-               "name":"給付方式",
-               "type":"object",
-               "value":{
-                  "option":{
-                     "name":"選項",
-                     "type":"array",
-                     "value":[
-                        {
-                           "optionId":{
-                              "name":"選項代號",
-                              "type":"string",
-                              "value":"A",
-                              "format":"n/a",
-                              "id":"optionId"
-                           },
-                           "optionValue":{
-                              "name":"選項名稱",
-                              "type":"string",
-                              "value":"補休",
-                              "format":"n/a",
-                              "id":"optionValue"
-                           }
-                        },
-                        {
-                           "optionId":{
-                              "name":"選項代號",
-                              "type":"string",
-                              "value":"B",
-                              "format":"n/a",
-                              "id":"optionId"
-                           },
-                           "optionValue":{
-                              "name":"選項名稱",
-                              "type":"string",
-                              "value":"給薪",
-                              "format":"n/a",
-                              "id":"optionValue"
-                           }
-                        }
-                     ],
-                     "format":"n/a",
-                     "id":"option"
-                  },
-                  "fieldEditable":{
-                     "name":"開放編輯",
-                     "type":"boolean",
-                     "value":true,
-                     "format":"n/a",
-                     "id":"fieldEditable"
-                  },
-                  "fieldValue":{
-                     "name":"欄位預設值",
-                     "type":"string",
-                     "value":"B",
-                     "format":"n/a",
-                     "id":"fieldValue"
-                  }
-               },
-               "format":"n/a",
-               "id":"payType"
-            },
-            "totalPayHour":{
-               "name":"總計給薪時數",
-               "type":"object",
-               "value":{
-                  "fieldEditable":{
-                     "name":"開放編輯",
-                     "type":"boolean",
-                     "value":false,
-                     "format":"n/a",
-                     "id":"fieldEditable"
-                  },
-                  "fieldValue":{
-                     "name":"欄位預設值",
-                     "type":"decimal",
-                     "value":0.0,
-                     "format":"hour",
-                     "id":"fieldValue"
-                  }
-               },
-               "format":"n/a",
-               "id":"totalPayHour"
+            "fieldName": {
+              "name": "欄位名稱",
+              "type": "string",
+              "value": "1.666700",
+              "format": "n/a",
+              "id": "fieldName"
             }
-         },
-         "format":"n/a",
-         "id":"payForm"
-      },
-      "dailyRateDetail":{ 
-         "name":"平日加班倍率資訊",
-         "type":"array",
-         "value":[
-            {
-               "name":"平日第一段倍率時數",
-               "type":"object",
-               "value":{
-                  "fieldValue":{
-                     "name":"欄位預設值",
-                     "type":"decimal",
-                     "value":0.0,
-                     "format":"hour",
-                     "id":"fieldValue"
-                  },
-                  "fieldName":{
-                     "name":"欄位名稱",
-                     "type":"string",
-                     "value":"1.00000",
-                     "format":"n/a",
-                     "id":"fieldName"
-                  }
-               },
-               "format":"n/a",
-               "id":"dailyRate1"
+          },
+          "format": "n/a",
+          "id": "holidayRate4"
+        }
+      ],
+      "format": "n/a",
+      "id": "holidayRateDetail"
+    },
+    "dailyRateDetail": {
+      "name": "平日加班倍率資訊",
+      "type": "array",
+      "value": [
+        {
+          "name": "平日第一段倍率時數",
+          "type": "object",
+          "value": {
+            "fieldValue": {
+              "name": "欄位預設值",
+              "type": "string",
+              "value": "",
+              "format": "hour",
+              "id": "fieldValue"
             },
-            {
-               "name":"平日第二段倍率時數",
-               "type":"object",
-               "value":{
-                  "fieldValue":{
-                     "name":"欄位預設值",
-                     "type":"decimal",
-                     "value":0.0,
-                     "format":"hour",
-                     "id":"fieldValue"
-                  },
-                  "fieldName":{
-                     "name":"欄位名稱",
-                     "type":"string",
-                     "value":"1.33340",
-                     "format":"n/a",
-                     "id":"fieldName"
-                  }
-               },
-               "format":"n/a",
-               "id":"dailyRate2"
-            },
-            {
-               "name":"平日第三段倍率時數",
-               "type":"object",
-               "value":{
-                  "fieldValue":{
-                     "name":"欄位預設值",
-                     "type":"decimal",
-                     "value":0.0,
-                     "format":"hour",
-                     "id":"fieldValue"
-                  },
-                  "fieldName":{
-                     "name":"欄位名稱",
-                     "type":"string",
-                     "value":"1.66670",
-                     "format":"n/a",
-                     "id":"fieldName"
-                  }
-               },
-               "format":"n/a",
-               "id":"dailyRate3"
-            },
-            {
-               "name":"平日第四段倍率時數",
-               "type":"object",
-               "value":{
-                  "fieldValue":{
-                     "name":"欄位預設值",
-                     "type":"decimal",
-                     "value":1.6667,
-                     "format":"hour",
-                     "id":"fieldValue"
-                  },
-                  "fieldName":{
-                     "name":"欄位名稱",
-                     "type":"string",
-                     "value":"1.6667",
-                     "format":"n/a",
-                     "id":"fieldName"
-                  }
-               },
-               "format":"n/a",
-               "id":"dailyRate4"
+            "fieldName": {
+              "name": "欄位名稱",
+              "type": "string",
+              "value": "1.000000",
+              "format": "n/a",
+              "id": "fieldName"
             }
-         ],
-         "format":"n/a",
-         "id":"dailyRateDetail"
-      },
-      "diningForm":{
-         "name":"用餐欄位資訊",
-         "type":"object",
-         "value":{
-            "specifyHour":{
-               "name":"指定用餐時間",
-               "type":"object",
-               "value":{
-                  "fieldEditable":{
-                     "name":"開放編輯",
-                     "type":"boolean",
-                     "value":true,
-                     "format":"n/a",
-                     "id":"fieldEditable"
-                  },
-                  "fieldValue":{
-                     "name":"欄位預設值",
-                     "type":"decimal",
-                     "value":0.0,
-                     "format":"hour",
-                     "id":"fieldValue"
-                  }
-               },
-               "format":"n/a",
-               "id":"specifyHour"
+          },
+          "format": "n/a",
+          "id": "dailyRate1"
+        },
+        {
+          "name": "平日第二段倍率時數",
+          "type": "object",
+          "value": {
+            "fieldValue": {
+              "name": "欄位預設值",
+              "type": "string",
+              "value": "",
+              "format": "hour",
+              "id": "fieldValue"
             },
-            "newEatHour":{
-               "name":"新用餐時間",
-               "type":"object",
-               "value":{
-                  "fieldEditable":{
-                     "name":"開放編輯",
-                     "type":"boolean",
-                     "value":true,
-                     "format":"n/a",
-                     "id":"fieldEditable"
-                  },
-                  "fieldValue":{
-                     "name":"欄位預設值",
-                     "type":"decimal",
-                     "value":0.0,
-                     "format":"hour",
-                     "id":"fieldValue"
-                  }
-               },
-               "format":"n/a",
-               "id":"newEatHour"
-            },
-            "oldEatHour":{
-               "name":"原用餐時間",
-               "type":"object",
-               "value":{
-                  "fieldEditable":{
-                     "name":"開放編輯",
-                     "type":"boolean",
-                     "value":false,
-                     "format":"n/a",
-                     "id":"fieldEditable"
-                  },
-                  "fieldValue":{
-                     "name":"欄位預設值",
-                     "type":"decimal",
-                     "value":0.0,
-                     "format":"hour",
-                     "id":"fieldValue"
-                  }
-               },
-               "format":"n/a",
-               "id":"oldEatHour"
-            },
-            "isEat":{
-               "name":"是否用餐",
-               "type":"object",
-               "value":{
-                  "fieldEditable":{
-                     "name":"開放編輯",
-                     "type":"boolean",
-                     "value":false,
-                     "format":"n/a",
-                     "id":"fieldEditable"
-                  },
-                  "fieldValue":{
-                     "name":"欄位預設值",
-                     "type":"boolean",
-                     "value":true,
-                     "format":"n/a",
-                     "id":"fieldValue"
-                  }
-               },
-               "format":"n/a",
-               "id":"isEat"
-            },
-            "misAmt":{
-               "name":"誤餐費",
-               "type":"object",
-               "value":{
-                  "fieldEditable":{
-                     "name":"開放編輯",
-                     "type":"boolean",
-                     "value":false,
-                     "format":"n/a",
-                     "id":"fieldEditable"
-                  },
-                  "fieldValue":{
-                     "name":"欄位預設值",
-                     "type":"integer",
-                     "value":0,
-                     "format":"currency",
-                     "id":"fieldValue"
-                  }
-               },
-               "format":"n/a",
-               "id":"misAmt"
+            "fieldName": {
+              "name": "欄位名稱",
+              "type": "string",
+              "value": "1.333400",
+              "format": "n/a",
+              "id": "fieldName"
             }
-         },
-         "format":"n/a",
-         "id":"diningForm"
-      },
-      "overtimeTip":{
-         "name":"加班單備註",
-         "type":"array",
-         "value":[
-            {
-               "name":"備註事項",
-               "type":"string",
-               "value":"平日加班",
-               "format":"n/a",
-               "id":"note"
+          },
+          "format": "n/a",
+          "id": "dailyRate2"
+        },
+        {
+          "name": "平日第三段倍率時數",
+          "type": "object",
+          "value": {
+            "fieldValue": {
+              "name": "欄位預設值",
+              "type": "string",
+              "value": "",
+              "format": "hour",
+              "id": "fieldValue"
+            },
+            "fieldName": {
+              "name": "欄位名稱",
+              "type": "string",
+              "value": "1.666700",
+              "format": "n/a",
+              "id": "fieldName"
             }
-         ],
-         "format":"n/a",
-         "id":"overtimeTip"
+          },
+          "format": "n/a",
+          "id": "dailyRate3"
+        },
+        {
+          "name": "平日第四段倍率時數",
+          "type": "object",
+          "value": {
+            "fieldValue": {
+              "name": "欄位預設值",
+              "type": "string",
+              "value": "",
+              "format": "hour",
+              "id": "fieldValue"
+            },
+            "fieldName": {
+              "name": "欄位名稱",
+              "type": "string",
+              "value": "1.666700",
+              "format": "n/a",
+              "id": "fieldName"
+            }
+          },
+          "format": "n/a",
+          "id": "dailyRate4"
+        }
+      ],
+      "format": "n/a",
+      "id": "dailyRateDetail"
+    },
+    "overtimeOverview": {
+      "name": "加班總覽",
+      "type": "object",
+      "value": {
+        "totalAmt": {
+          "name": "本次申請總時數",
+          "type": "object",
+          "value": {
+            "fieldEditable": {
+              "name": "開放編輯",
+              "type": "boolean",
+              "value": false,
+              "format": "n/a",
+              "id": "fieldEditable"
+            },
+            "fieldValue": {
+              "name": "欄位預設值",
+              "type": "string",
+              "value": "",
+              "format": "n/a",
+              "id": "fieldValue"
+            },
+            "fieldVisible": {
+              "name": "是否顯示",
+              "type": "boolean",
+              "value": true,
+              "format": "n/a",
+              "id": "fieldVisible"
+            }
+          },
+          "format": "n/a",
+          "id": "totalAmt"
+        },
+        "appliedHour": {
+          "name": "當月已累積加班時數(不含本次)",
+          "type": "object",
+          "value": {
+            "fieldEditable": {
+              "name": "開放編輯",
+              "type": "boolean",
+              "value": false,
+              "format": "n/a",
+              "id": "fieldEditable"
+            },
+            "fieldValue": {
+              "name": "欄位預設值",
+              "type": "string",
+              "value": "0.00",
+              "format": "n/a",
+              "id": "fieldValue"
+            },
+            "fieldVisible": {
+              "name": "是否顯示",
+              "type": "boolean",
+              "value": true,
+              "format": "n/a",
+              "id": "fieldVisible"
+            }
+          },
+          "format": "n/a",
+          "id": "appliedHour"
+        },
+        "threeMonthsApplyHours": {
+          "name": "當月已累積加班時數(不含本次)",
+          "type": "object",
+          "value": {
+            "fieldEditable": {
+              "name": "開放編輯",
+              "type": "boolean",
+              "value": false,
+              "format": "n/a",
+              "id": "fieldEditable"
+            },
+            "fieldValue": {
+              "name": "欄位預設值",
+              "type": "string",
+              "value": "",
+              "format": "n/a",
+              "id": "fieldValue"
+            },
+            "fieldVisible": {
+              "name": "是否顯示",
+              "type": "boolean",
+              "value": false,
+              "format": "n/a",
+              "id": "fieldVisible"
+            }
+          },
+          "format": "n/a",
+          "id": "threeMonthsApplyHours"
+        },
+        "overDate": {
+          "name": "加班日期",
+          "type": "object",
+          "value": {
+            "fieldEditable": {
+              "name": "開放編輯",
+              "type": "boolean",
+              "value": false,
+              "format": "n/a",
+              "id": "fieldEditable"
+            },
+            "fieldValue": {
+              "name": "欄位預設值",
+              "type": "string",
+              "value": "",
+              "format": "YYYYmmdd",
+              "id": "fieldValue"
+            },
+            "fieldVisible": {
+              "name": "是否顯示",
+              "type": "boolean",
+              "value": true,
+              "format": "n/a",
+              "id": "fieldVisible"
+            }
+          },
+          "format": "n/a",
+          "id": "overDate"
+        }
+      },
+      "format": "n/a",
+      "id": "overtimeOverview"
+    },
+    "overtimeForm": {
+      "name": "實際加班單填寫欄位資訊",
+      "type": "object",
+      "value": {
+        "startTime": {
+          "name": "起始時間",
+          "type": "object",
+          "value": {
+            "fieldEditable": {
+              "name": "開放編輯",
+              "type": "boolean",
+              "value": true,
+              "format": "n/a",
+              "id": "fieldEditable"
+            },
+            "fieldValue": {
+              "name": "欄位預設值",
+              "type": "string",
+              "value": "1800",
+              "format": "HHmm",
+              "id": "fieldValue"
+            },
+            "fieldVisible": {
+              "name": "是否顯示",
+              "type": "boolean",
+              "value": true,
+              "format": "n/a",
+              "id": "fieldVisible"
+            }
+          },
+          "format": "n/a",
+          "id": "startTime"
+        },
+        "beforeWork": {
+          "name": "跨日往前加班",
+          "type": "object",
+          "value": {
+            "fieldEditable": {
+              "name": "開放編輯",
+              "type": "boolean",
+              "value": true,
+              "format": "n/a",
+              "id": "fieldEditable"
+            },
+            "fieldValue": {
+              "name": "欄位預設值",
+              "type": "boolean",
+              "value": false,
+              "format": "n/a",
+              "id": "fieldValue"
+            },
+            "fieldVisible": {
+              "name": "是否顯示",
+              "type": "boolean",
+              "value": true,
+              "format": "n/a",
+              "id": "fieldVisible"
+            }
+          },
+          "format": "n/a",
+          "id": "beforeWork"
+        },
+        "earlyLeave": {
+          "name": "申請提早退勤(加班時數=實際出勤時數)",
+          "type": "object",
+          "value": {
+            "fieldEditable": {
+              "name": "開放編輯",
+              "type": "boolean",
+              "value": true,
+              "format": "n/a",
+              "id": "fieldEditable"
+            },
+            "fieldValue": {
+              "name": "欄位預設值",
+              "type": "boolean",
+              "value": true,
+              "format": "n/a",
+              "id": "fieldValue"
+            },
+            "fieldVisible": {
+              "name": "是否顯示",
+              "type": "boolean",
+              "value": true,
+              "format": "n/a",
+              "id": "fieldVisible"
+            }
+          },
+          "format": "n/a",
+          "id": "earlyLeave"
+        },
+        "allowanceClass": {
+          "name": "津貼班別",
+          "type": "object",
+          "value": {
+            "option": {
+              "name": "選項",
+              "type": "array",
+              "value": [
+                {
+                  "optionId": {
+                    "name": "選項代號",
+                    "type": "string",
+                    "value": "D",
+                    "format": "n/a",
+                    "id": "optionId"
+                  },
+                  "optionValue": {
+                    "name": "選項名稱",
+                    "type": "string",
+                    "value": "總公司班",
+                    "format": "n/a",
+                    "id": "optionValue"
+                  }
+                }
+              ],
+              "format": "n/a",
+              "id": "option"
+            },
+            "fieldEditable": {
+              "name": "開放編輯",
+              "type": "boolean",
+              "value": false,
+              "format": "n/a",
+              "id": "fieldEditable"
+            },
+            "fieldValue": {
+              "name": "欄位預設值",
+              "type": "string",
+              "value": "",
+              "format": "n/a",
+              "id": "fieldValue"
+            },
+            "fieldVisible": {
+              "name": "是否顯示",
+              "type": "boolean",
+              "value": true,
+              "format": "n/a",
+              "id": "fieldVisible"
+            }
+          },
+          "format": "n/a",
+          "id": "allowanceClass"
+        },
+        "overtimeDepartment": {
+          "name": "加班部門",
+          "type": "object",
+          "value": {
+            "fieldEditable": {
+              "name": "開放編輯",
+              "type": "boolean",
+              "value": true,
+              "format": "n/a",
+              "id": "fieldEditable"
+            },
+            "fieldValue": {
+              "name": "欄位預設值",
+              "type": "string",
+              "value": "284",
+              "format": "n/a",
+              "id": "fieldValue"
+            },
+            "fieldDisplay": {
+              "name": "欄位顯示資料",
+              "type": "string",
+              "value": "284 噠噠測試組",
+              "format": "n/a",
+              "id": "fieldDisplay"
+            },
+            "fieldVisible": {
+              "name": "是否顯示",
+              "type": "boolean",
+              "value": true,
+              "format": "n/a",
+              "id": "fieldVisible"
+            }
+          },
+          "format": "n/a",
+          "id": "overtimeDepartment"
+        },
+        "reason": {
+          "name": "加班內容",
+          "type": "object",
+          "value": {
+            "fieldEditable": {
+              "name": "開放編輯",
+              "type": "boolean",
+              "value": true,
+              "format": "n/a",
+              "id": "fieldEditable"
+            },
+            "fieldValue": {
+              "name": "欄位預設值",
+              "type": "string",
+              "value": "",
+              "format": "n/a",
+              "id": "fieldValue"
+            },
+            "fieldVisible": {
+              "name": "是否顯示",
+              "type": "boolean",
+              "value": true,
+              "format": "n/a",
+              "id": "fieldVisible"
+            }
+          },
+          "format": "n/a",
+          "id": "reason"
+        },
+        "endTime": {
+          "name": "結束時間",
+          "type": "object",
+          "value": {
+            "fieldEditable": {
+              "name": "開放編輯",
+              "type": "boolean",
+              "value": true,
+              "format": "n/a",
+              "id": "fieldEditable"
+            },
+            "fieldValue": {
+              "name": "欄位預設值",
+              "type": "string",
+              "value": "",
+              "format": "HHmm",
+              "id": "fieldValue"
+            },
+            "fieldVisible": {
+              "name": "是否顯示",
+              "type": "boolean",
+              "value": true,
+              "format": "n/a",
+              "id": "fieldVisible"
+            }
+          },
+          "format": "n/a",
+          "id": "endTime"
+        },
+        "naturalDisaster": {
+          "name": "天災",
+          "type": "object",
+          "value": {
+            "fieldEditable": {
+              "name": "開放編輯",
+              "type": "boolean",
+              "value": true,
+              "format": "n/a",
+              "id": "fieldEditable"
+            },
+            "fieldValue": {
+              "name": "欄位預設值",
+              "type": "boolean",
+              "value": false,
+              "format": "n/a",
+              "id": "fieldValue"
+            },
+            "fieldVisible": {
+              "name": "是否顯示",
+              "type": "boolean",
+              "value": true,
+              "format": "n/a",
+              "id": "fieldVisible"
+            }
+          },
+          "format": "n/a",
+          "id": "naturalDisaster"
+        },
+        "approvedProject": {
+          "name": "核准文號",
+          "type": "object",
+          "value": {
+            "fieldEditable": {
+              "name": "開放編輯",
+              "type": "boolean",
+              "value": false,
+              "format": "n/a",
+              "id": "fieldEditable"
+            },
+            "fieldValue": {
+              "name": "欄位預設值",
+              "type": "string",
+              "value": "",
+              "format": "n/a",
+              "id": "fieldValue"
+            },
+            "fieldVisible": {
+              "name": "是否顯示",
+              "type": "boolean",
+              "value": false,
+              "format": "n/a",
+              "id": "fieldVisible"
+            }
+          },
+          "format": "n/a",
+          "id": "approvedProject"
+        },
+        "uploadFile": {
+          "name": "附件上傳",
+          "type": "object",
+          "value": {
+            "fieldEditable": {
+              "name": "開放編輯",
+              "type": "boolean",
+              "value": true,
+              "format": "n/a",
+              "id": "fieldEditable"
+            },
+            "fieldValue": {
+              "name": "欄位預設值",
+              "type": "array",
+              "value": [],
+              "format": "n/a",
+              "id": "fieldValue"
+            },
+            "uploadLimit": {
+              "name": "檔案上傳數量限制",
+              "type": "integer",
+              "value": 1,
+              "format": "count",
+              "id": "uploadLimit"
+            },
+            "fieldVisible": {
+              "name": "是否顯示",
+              "type": "boolean",
+              "value": true,
+              "format": "n/a",
+              "id": "fieldVisible"
+            }
+          },
+          "format": "n/a",
+          "id": "uploadFile"
+        },
+        "overtimeType": {
+          "name": "加班類別",
+          "type": "object",
+          "value": {
+            "option": {
+              "name": "選項",
+              "type": "array",
+              "value": [
+                {
+                  "optionId": {
+                    "name": "選項代號",
+                    "type": "string",
+                    "value": "A",
+                    "format": "n/a",
+                    "id": "optionId"
+                  },
+                  "optionValue": {
+                    "name": "選項名稱",
+                    "type": "string",
+                    "value": "一般加班",
+                    "format": "n/a",
+                    "id": "optionValue"
+                  }
+                },
+                {
+                  "optionId": {
+                    "name": "選項代號",
+                    "type": "string",
+                    "value": "B",
+                    "format": "n/a",
+                    "id": "optionId"
+                  },
+                  "optionValue": {
+                    "name": "選項名稱",
+                    "type": "string",
+                    "value": "特殊加班",
+                    "format": "n/a",
+                    "id": "optionValue"
+                  }
+                },
+                {
+                  "optionId": {
+                    "name": "選項代號",
+                    "type": "string",
+                    "value": "C",
+                    "format": "n/a",
+                    "id": "optionId"
+                  },
+                  "optionValue": {
+                    "name": "選項名稱",
+                    "type": "string",
+                    "value": "專案加班",
+                    "format": "n/a",
+                    "id": "optionValue"
+                  }
+                }
+              ],
+              "format": "n/a",
+              "id": "option"
+            },
+            "fieldEditable": {
+              "name": "開放編輯",
+              "type": "boolean",
+              "value": true,
+              "format": "n/a",
+              "id": "fieldEditable"
+            },
+            "fieldValue": {
+              "name": "欄位預設值",
+              "type": "string",
+              "value": "A",
+              "format": "n/a",
+              "id": "fieldValue"
+            },
+            "fieldVisible": {
+              "name": "是否顯示",
+              "type": "boolean",
+              "value": true,
+              "format": "n/a",
+              "id": "fieldVisible"
+            }
+          },
+          "format": "n/a",
+          "id": "overtimeType"
+        }
+      },
+      "format": "n/a",
+      "id": "overtimeForm"
+    },
+    "payForm": {
+      "name": "給付欄位資訊",
+      "type": "object",
+      "value": {
+        "totalRestHour": {
+          "name": "總計補休時數",
+          "type": "object",
+          "value": {
+            "fieldEditable": {
+              "name": "開放編輯",
+              "type": "boolean",
+              "value": true,
+              "format": "n/a",
+              "id": "fieldEditable"
+            },
+            "fieldValue": {
+              "name": "欄位預設值",
+              "type": "string",
+              "value": "",
+              "format": "hour",
+              "id": "fieldValue"
+            },
+            "fieldVisible": {
+              "name": "是否顯示",
+              "type": "boolean",
+              "value": true,
+              "format": "n/a",
+              "id": "fieldVisible"
+            }
+          },
+          "format": "n/a",
+          "id": "totalRestHour"
+        },
+        "payType": {
+          "name": "給付方式",
+          "type": "object",
+          "value": {
+            "option": {
+              "name": "選項",
+              "type": "array",
+              "value": [
+                {
+                  "optionId": {
+                    "name": "選項代號",
+                    "type": "string",
+                    "value": "A",
+                    "format": "n/a",
+                    "id": "optionId"
+                  },
+                  "optionValue": {
+                    "name": "選項名稱",
+                    "type": "string",
+                    "value": "補休",
+                    "format": "n/a",
+                    "id": "optionValue"
+                  }
+                },
+                {
+                  "optionId": {
+                    "name": "選項代號",
+                    "type": "string",
+                    "value": "B",
+                    "format": "n/a",
+                    "id": "optionId"
+                  },
+                  "optionValue": {
+                    "name": "選項名稱",
+                    "type": "string",
+                    "value": "給薪",
+                    "format": "n/a",
+                    "id": "optionValue"
+                  }
+                }
+              ],
+              "format": "n/a",
+              "id": "option"
+            },
+            "fieldEditable": {
+              "name": "開放編輯",
+              "type": "boolean",
+              "value": true,
+              "format": "n/a",
+              "id": "fieldEditable"
+            },
+            "fieldValue": {
+              "name": "欄位預設值",
+              "type": "string",
+              "value": "B",
+              "format": "n/a",
+              "id": "fieldValue"
+            },
+            "fieldVisible": {
+              "name": "是否顯示",
+              "type": "boolean",
+              "value": true,
+              "format": "n/a",
+              "id": "fieldVisible"
+            }
+          },
+          "format": "n/a",
+          "id": "payType"
+        },
+        "totalPayHour": {
+          "name": "總計給薪時數",
+          "type": "object",
+          "value": {
+            "fieldEditable": {
+              "name": "開放編輯",
+              "type": "boolean",
+              "value": true,
+              "format": "n/a",
+              "id": "fieldEditable"
+            },
+            "fieldValue": {
+              "name": "欄位預設值",
+              "type": "string",
+              "value": "",
+              "format": "hour",
+              "id": "fieldValue"
+            },
+            "fieldVisible": {
+              "name": "是否顯示",
+              "type": "boolean",
+              "value": true,
+              "format": "n/a",
+              "id": "fieldVisible"
+            }
+          },
+          "format": "n/a",
+          "id": "totalPayHour"
+        }
+      },
+      "format": "n/a",
+      "id": "payForm"
+    },
+    "overtimeInfo": {
+      "name": "實際加班單顯示欄位資訊",
+      "type": "object",
+      "value": {
+        "empid": {
+          "name": "員工編號",
+          "type": "string",
+          "value": "T888",
+          "format": "n/a",
+          "id": "empid"
+        },
+        "overplanPno": {
+          "name": "預定加班單號",
+          "type": "string",
+          "value": "",
+          "format": "n/a",
+          "id": "overplanPno"
+        },
+        "attendClass": {
+          "name": "出勤班別",
+          "type": "string",
+          "value": "D 總公司班",
+          "format": "n/a",
+          "id": "attendClass"
+        },
+        "empFullName": {
+          "name": "員工中文姓名",
+          "type": "string",
+          "value": "夜OO",
+          "format": "n/a",
+          "id": "empFullName"
+        },
+        "depFullName": {
+          "name": "部門名稱",
+          "type": "string",
+          "value": "噠噠測試組",
+          "format": "n/a",
+          "id": "depFullName"
+        },
+        "companyId": {
+          "name": "公司代號",
+          "type": "string",
+          "value": "1",
+          "format": "n/a",
+          "id": "companyId"
+        },
+        "empFullEname": {
+          "name": "員工英文姓名",
+          "type": "string",
+          "value": "nigOO",
+          "format": "n/a",
+          "id": "empFullEname"
+        },
+        "depCode": {
+          "name": "部門代號",
+          "type": "string",
+          "value": "284",
+          "format": "n/a",
+          "id": "depCode"
+        },
+        "companyFullName": {
+          "name": "公司全名",
+          "type": "string",
+          "value": "三澧企業股份有限公司",
+          "format": "n/a",
+          "id": "companyFullName"
+        }
+      },
+      "format": "n/a",
+      "id": "overtimeInfo"
+    },
+    "properties": {
+      "format": {
+        "HHmm": "時間時分",
+        "currency": "元",
+        "hour": "小時",
+        "YYYYmmdd": "西元年月日",
+        "count": "數量",
+        "n/a": ""
       }
-   }
+    },
+    "overtimeTip": {
+      "name": "加班單備註",
+      "type": "array",
+      "value": [
+        {
+          "name": "備註事項",
+          "type": "string",
+          "value": "平日加班",
+          "format": "n/a",
+          "id": "note"
+        }
+      ],
+      "format": "n/a",
+      "id": "overtimeTip"
+    },
+    "diningForm": {
+      "name": "用餐欄位資訊",
+      "type": "object",
+      "value": {
+        "newEatHour": {
+          "name": "新用餐時間",
+          "type": "object",
+          "value": {
+            "fieldEditable": {
+              "name": "開放編輯",
+              "type": "boolean",
+              "value": false,
+              "format": "n/a",
+              "id": "fieldEditable"
+            },
+            "fieldValue": {
+              "name": "欄位預設值",
+              "type": "string",
+              "value": "",
+              "format": "hour",
+              "id": "fieldValue"
+            },
+            "fieldVisible": {
+              "name": "是否顯示",
+              "type": "boolean",
+              "value": true,
+              "format": "n/a",
+              "id": "fieldVisible"
+            }
+          },
+          "format": "n/a",
+          "id": "newEatHour"
+        },
+        "specifyHour": {
+          "name": "指定用餐時間",
+          "type": "object",
+          "value": {
+            "fieldEditable": {
+              "name": "開放編輯",
+              "type": "boolean",
+              "value": true,
+              "format": "n/a",
+              "id": "fieldEditable"
+            },
+            "fieldValue": {
+              "name": "欄位預設值",
+              "type": "string",
+              "value": "",
+              "format": "hour",
+              "id": "fieldValue"
+            },
+            "fieldVisible": {
+              "name": "是否顯示",
+              "type": "boolean",
+              "value": true,
+              "format": "n/a",
+              "id": "fieldVisible"
+            }
+          },
+          "format": "n/a",
+          "id": "specifyHour"
+        },
+        "oldEatHour": {
+          "name": "原用餐時間",
+          "type": "object",
+          "value": {
+            "fieldEditable": {
+              "name": "開放編輯",
+              "type": "boolean",
+              "value": false,
+              "format": "n/a",
+              "id": "fieldEditable"
+            },
+            "fieldValue": {
+              "name": "欄位預設值",
+              "type": "string",
+              "value": "",
+              "format": "hour",
+              "id": "fieldValue"
+            },
+            "fieldVisible": {
+              "name": "是否顯示",
+              "type": "boolean",
+              "value": true,
+              "format": "n/a",
+              "id": "fieldVisible"
+            }
+          },
+          "format": "n/a",
+          "id": "oldEatHour"
+        },
+        "misAmt": {
+          "name": "誤餐費",
+          "type": "object",
+          "value": {
+            "fieldEditable": {
+              "name": "開放編輯",
+              "type": "boolean",
+              "value": false,
+              "format": "n/a",
+              "id": "fieldEditable"
+            },
+            "fieldValue": {
+              "name": "欄位預設值",
+              "type": "string",
+              "value": "",
+              "format": "currency",
+              "id": "fieldValue"
+            },
+            "fieldVisible": {
+              "name": "是否顯示",
+              "type": "boolean",
+              "value": true,
+              "format": "n/a",
+              "id": "fieldVisible"
+            }
+          },
+          "format": "n/a",
+          "id": "misAmt"
+        },
+        "isEat": {
+          "name": "是否用餐",
+          "type": "object",
+          "value": {
+            "fieldEditable": {
+              "name": "開放編輯",
+              "type": "boolean",
+              "value": true,
+              "format": "n/a",
+              "id": "fieldEditable"
+            },
+            "fieldValue": {
+              "name": "欄位預設值",
+              "type": "boolean",
+              "value": true,
+              "format": "n/a",
+              "id": "fieldValue"
+            },
+            "fieldVisible": {
+              "name": "是否顯示",
+              "type": "boolean",
+              "value": true,
+              "format": "n/a",
+              "id": "fieldVisible"
+            }
+          },
+          "format": "n/a",
+          "id": "isEat"
+        }
+      },
+      "format": "n/a",
+      "id": "diningForm"
+    }
+  }
 }
 ```
 
