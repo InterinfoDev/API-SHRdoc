@@ -150,12 +150,12 @@ POST
                 "n/a": ""
             }
         },
-        "announcementList": {
+        "notificationList": {
             "name": "通知列表",
             "type": "array",
             "value": [],
             "format": "n/a",
-            "id": "announcementList"
+            "id": "notificationList"
         }
     }
 }
