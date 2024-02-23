@@ -51,11 +51,6 @@ Here is a JSON representation of request.
             "format": "n/a",
             "id": "resetPincode"
         },
-        "properties": {
-            "format": {
-                "n/a": ""
-            }
-        },
         "useBinding": {
             "name": "是否開啟綁定功能",
             "type": "boolean",
@@ -63,12 +58,10 @@ Here is a JSON representation of request.
             "format": "n/a",
             "id": "useBinding"
         },
-        "bindingConfig": {
-            "name": "裝置綁定機制設定",
-            "type": "integer",
-            "value": 2,
-            "format": "n/a",
-            "id": "bindingConfig"
+        "properties": {
+            "format": {
+                "n/a": ""
+            }
         }
     }
 }
