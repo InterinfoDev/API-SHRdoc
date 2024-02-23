@@ -62,6 +62,13 @@ Here is a JSON representation of request.
             "value": true,
             "format": "n/a",
             "id": "useBinding"
+        },
+        "bindingConfig": {
+            "name": "裝置綁定機制設定",
+            "type": "integer",
+            "value": 2,
+            "format": "n/a",
+            "id": "bindingConfig"
         }
     }
 }
