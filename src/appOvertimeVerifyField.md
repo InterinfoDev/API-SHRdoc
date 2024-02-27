@@ -16,7 +16,7 @@ POST
 |:----------|:-------------|:-----|:------------|
 | uid | 98599308101484732326 | String | 需透過appLogin取得
 | right | 51341911904173543336756162544864820 | String | 需透過appLogin取得 |
-| request | {'fieldName':'startTime','empid':'9912011','startDate':'20220712','startTime':'2100','endTime':'2300','reason':'ttt','payType':'B','totalPayHour':'','totalRestHour':'','specifyHour':'','isEat':true,'beforeWork':false, 'naturalDisaster':false, 'earlyLeave':false, 'overplanPno':'W002022062700011', 'overtimeType':'A', 'overtimeDepartment':'9', 'overtimeProject':''} | Object | 異動條件
+| request | {'fieldName':'startTime','empid':'9912011','startDate':'20220712','startTime':'2100','endTime':'2300','reason':'ttt','payType':'B','totalPayHour':'','totalRestHour':'','specifyHour':'','isEat':true,'beforeWork':false, 'naturalDisaster':false, 'earlyLeave':false, 'overplanPno':'W002022062700011', 'overtimeType':'A', 'overtimeDepartment':'9', 'approvedProject':''} | Object | 異動條件
 
 ### JSON representation Case 1
 Here is a JSON representation of request.
@@ -31,9 +31,9 @@ Here is a JSON representation of request.
       "startTime":"1900",    
       "endTime":"2200",      
       "reason":"20220524kevinOverplanTest",
-      "overplanPno":'W002022062700011',
+      "overplanPno":"W002022062700011",
       "overtimeType":"A",
-      "overtimeProject":"",
+      "approvedProject":"",
       "overtimeDepartment":"9",
       "payType":"A",          
       "totalPayHour":"",
@@ -71,7 +71,7 @@ Here is a JSON representation of request.
 | totalPayHour | 0 | String | 總計給薪時數 | N | hour | 
 | totalRestHour | 0 | String | 總計補休時數 | N | hour |
 | specifyHour | 0 | String | 指定用餐時間 | N | hour |
-| overtimeProject | xxx | String | 核准文號 | N | n/a |
+| approvedProject | xxx | String | 核准文號 | N | n/a |
 | isEat | false | boolean | 是否用餐 | N | n/a | 
 | beforeWork | false | boolean | 跨日往前加班 | N | n/a | 
 | naturalDisaster | false | boolean | 天災 | N | n/a | 
@@ -108,7 +108,7 @@ Here is a JSON representation of request.
                      "name":"設定欄位可否編輯",
                      "type":"array",
                      "value":[
-                        {  --kevin補上資料
+                        {
                            "name":"總計補休時數",
                            "type":"boolean",
                            "value":false,
