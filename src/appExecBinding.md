@@ -73,9 +73,23 @@ Here is a JSON representation of request.
          "name":"異動後資料",
          "type":"object",
          "value":{
+            "isBinding": {
+                "name": "是否綁定",
+                "type": "boolean",
+                "value": true,
+                "format": "n/a",
+                "id": "isBinding"
+            },
+            "statusDescription": {
+                "name": "綁定狀態說明",
+                "type": "string",
+                "value": "綁定中",
+                "format": "n/a",
+                "id": "statusDescription"
+            },
             "hardwareModel":{
                "name":"硬體型號",
-               "type":"integer",
+               "type":"string",
                "value":"iphone14",
                "format":"n/a",
                "id":"hardwareModel"
@@ -103,7 +117,7 @@ Here is a JSON representation of request.
             },
             "bindingType":{
                "name":"裝置類型",
-               "type":"integer",
+               "type":"string",
                "value":"ios",
                "format":"n/a",
                "id":"bindingTpe"
