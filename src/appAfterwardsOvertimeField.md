@@ -972,13 +972,6 @@ Here is a JSON representation of request.
           "format": "n/a",
           "id": "empid"
         },
-        "overplanPno": {
-          "name": "預定加班單號",
-          "type": "string",
-          "value": "",
-          "format": "n/a",
-          "id": "overplanPno"
-        },
         "attendClass": {
           "name": "出勤班別",
           "type": "string",
