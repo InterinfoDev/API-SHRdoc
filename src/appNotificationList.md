@@ -41,9 +41,9 @@ POST
 ### Request Properties
  Key | Value | Type | Description | Required | Format |
 |:----------|:-------------|:-----|:------------|:------------|:------------|
-| notificationKey | 5497D73A-8178-49E5-9073-CDAA25889B20 | String | 推播最後一筆通知ID | N | n/a |  |
-| notificationCount | 10 | Integer | 查詢資料筆數 | N | n/a | 預設筆數10 |
-| notificationType | add | String | 查詢通知類別 | Y | n/a | 全部:all , 簽核:flow , 訊息:hr , 系統:sys|
+| notificationKey | 5497D73A-8178-49E5-9073-CDAA25889B20 | String | 推播最後一筆通知ID | N | n/a |
+| notificationCount | 10 | Integer | 查詢資料筆數 | N | 預設筆數10 |
+| notificationType | all | String | 查詢通知類別 | Y | 全部:all , 簽核:flow , 訊息:hr , 系統:sys |
 
 ### HTTP Response when Successful
 ```json
