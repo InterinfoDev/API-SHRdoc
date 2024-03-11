@@ -16,7 +16,7 @@ POST
 |:----------|:-------------|:-----|:------------|
 | uid | 98599308101484732326 | String | 需透過appLogin取得
 | right | 51341911904173543336756162544864820 | String | 需透過appLogin取得 |
-| request | {notificationKey:0BB562CB-E166-4D69-9C50-C0EDF2511A38, notificationCount:10} | Object | 查詢條件
+| request | {notificationKey:0BB562CB-E166-4D69-9C50-C0EDF2511A38, notificationCount:10 ,notificationType:all} | Object | 查詢條件
 
 ### JSON representation
 ```json
