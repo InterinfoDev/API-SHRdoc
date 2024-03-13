@@ -16,7 +16,7 @@ POST
 |:----------|:-------------|:-----|:------------|
 | uid | 98599308101484732326 | String | 需透過appLogin取得
 | right | 51341911904173543336756162544864820 | String | 需透過appLogin取得 |
-| request | {notificationKey:0BB562CB-E166-4D69-9C50-C0EDF2511A38, notificationCount:10 ,notificationType:all} | Object | 查詢條件
+| request | {notificationKey:0BB562CB-E166-4D69-9C50-C0EDF2511A38, notificationCount:10 , notificationType:all , searchContent:} | Object | 查詢條件
 
 ### JSON representation
 ```json
@@ -26,7 +26,8 @@ POST
     "request":{
         "notificationKey":"5497D73A-8178-49E5-9073-CDAA25889B20",
         "notificationCount":10,
-        "notificationType":"all"
+        "notificationType":"all",
+        "searchContent":""
     }
 }
 ```
@@ -44,6 +45,7 @@ POST
 | notificationKey | 5497D73A-8178-49E5-9073-CDAA25889B20 | String | 推播最後一筆通知ID | N | n/a |
 | notificationCount | 10 | Integer | 查詢資料筆數 | N | 預設筆數10 |
 | notificationType | all | String | 查詢通知類別 | Y | 全部:all , 簽核:flow , 訊息:hr , 系統:sys |
+| searchContent |  | String | 搜尋關鍵字 | N | n/a |
 
 ### HTTP Response when Successful
 ```json
@@ -85,9 +87,16 @@ POST
                   "read":{
                      "name":"是否已讀推播",
                      "type":"boolean",
-                     "value":false,
+                     "value":true,
                      "format":"n/a",
                      "id":"read"
+                  },
+                  "isLast":{
+                     "name":"是否為最後一筆通知",
+                     "type":"boolean",
+                     "value":true,
+                     "format":"n/a",
+                     "id":"isLast"
                   },
                   "sendDate":{
                      "name":"發送日期",
