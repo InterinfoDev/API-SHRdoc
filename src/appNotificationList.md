@@ -62,6 +62,13 @@ POST
             "n/a":""
          }
       },
+   "isLast":{
+         "name":"是否為最後一筆通知",
+         "type":"boolean",
+         "value":true,
+         "format":"n/a",
+         "id":"isLast"
+     },
       "notificationList":{
          "name":"推播列表",
          "type":"array",
@@ -90,13 +97,6 @@ POST
                      "value":true,
                      "format":"n/a",
                      "id":"read"
-                  },
-                  "isLast":{
-                     "name":"是否為最後一筆通知",
-                     "type":"boolean",
-                     "value":true,
-                     "format":"n/a",
-                     "id":"isLast"
                   },
                   "sendDate":{
                      "name":"發送日期",
