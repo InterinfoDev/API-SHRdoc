@@ -78,8 +78,8 @@ POST
                   "sendTime":{
                      "name":"發送時間",
                      "type":"string",
-                     "value":"1535",
-                     "format":"HHmm",
+                     "value":"153500",
+                     "format":"HHmmss",
                      "id":"sendTime"
                   },
                   "content":{
