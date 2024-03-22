@@ -1,5 +1,6 @@
 # appNotificationListLatest
-查詢推播清單最新資訊
+查詢推播清單最新資訊(全部)
+2024/03/22 查詢上拉給予全部最新 不限制筆數
 
 ### HTTP Request
 ```
@@ -16,7 +17,7 @@ POST
 |:----------|:-------------|:-----|:------------|
 | uid | 98599308101484732326 | String | 需透過appLogin取得
 | right | 51341911904173543336756162544864820 | String | 需透過appLogin取得 |
-| request | {notificationKey:0BB562CB-E166-4D69-9C50-C0EDF2511A38, notificationCount:10 , notificationType:all} | Object | 查詢條件
+| request | {notificationKey:0BB562CB-E166-4D69-9C50-C0EDF2511A38, notificationType:all} | Object | 查詢條件
 
 ### JSON representation
 ```json
@@ -25,7 +26,6 @@ POST
     "right":"51341911904173543336756162544864820",
     "request":{
         "notificationKey":"5497D73A-8178-49E5-9073-CDAA25889B20",
-        "notificationCount":10,
         "notificationType":"all"
     }
 }
@@ -42,7 +42,6 @@ POST
  Key | Value | Type | Description | Required | Format |
 |:----------|:-------------|:-----|:------------|:------------|:------------|
 | notificationKey | 5497D73A-8178-49E5-9073-CDAA25889B20 | String | 推播最新一筆通知ID | N | n/a |
-| notificationCount | 10 | Integer | 查詢資料筆數 | N | 預設筆數10 |
 | notificationType | all | String | 查詢通知類別 | Y | 全部:all , 簽核:flow , 訊息:hr , 系統:sys |
 
 ### HTTP Response when Successful
