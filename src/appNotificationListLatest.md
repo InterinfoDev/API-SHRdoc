@@ -1,5 +1,6 @@
 # appNotificationListLatest
 查詢推播清單最新資訊(全部)
+
 2024/03/22 查詢上拉給予全部最新 不限制筆數
 
 ### HTTP Request
