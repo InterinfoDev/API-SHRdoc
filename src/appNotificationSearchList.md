@@ -44,7 +44,7 @@ POST
 |:----------|:-------------|:-----|:------------|:------------|:------------|
 | notificationKey | 5497D73A-8178-49E5-9073-CDAA25889B20 | String | 推播最後一筆通知ID | N | n/a |
 | notificationCount | 10 | Integer | 查詢資料筆數 | N | 預設筆數10 |
-| notificationType | all | String | 查詢通知類別 | Y | 全部:all , 簽核:flow , 訊息:hr , 系統:sys |
+| notificationType | all | String | 查詢通知類別 | Y | 全部:all , 簽核:flow , 大聲公:hr , 公告:sys |
 | searchContent |  | String | 搜尋關鍵字 | N | n/a |
 
 ### HTTP Response when Successful
