@@ -53,14 +53,14 @@ POST
          "type":"object",
          "value":{
             "sysUnRead":{
-               "name":"系統通知是否有未讀資訊",
+               "name":"公告是否有未讀資訊",
                "type":"boolean",
                "value":false,
                "format":"n/a",
                "id":"sysUnRead"
             },
             "hrUnRead":{
-               "name":"訊息通知是否有未讀資訊",
+               "name":"大聲公是否有未讀資訊",
                "type":"boolean",
                "value":false,
                "format":"n/a",
