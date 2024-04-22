@@ -1,5 +1,5 @@
 # appBeaconSetting
-取得可打卡的Beacon
+取得Beacon打卡資訊
 
 ### HTTP Request
 ```
@@ -57,16 +57,16 @@ Here is a JSON representation of request.
                "name":"beacon資訊",
                "type":"object",
                "value":{
-                  "place": {
-                     "name": "beacon設定位置",
-                     "type": "string",
-                     "value": "雲林",
-                     "format": "n/a",
-                     "id": "place"
+                  "place":{
+                     "name":"beacon設定位置",
+                     "type":"string",
+                     "value":"雲林",
+                     "format":"n/a",
+                     "id":"place"
                   },
                   "beaconMajor":{
                      "name":"主要",
-                     "type":"integer",   --kevin改成integer
+                     "type":"integer",
                      "value":1,
                      "format":"n/a",
                      "id":"beaconMajor"
@@ -80,7 +80,7 @@ Here is a JSON representation of request.
                   },
                   "beaconMinor":{
                      "name":"次要",
-                     "type":"integer",  --kevin改成integer
+                     "type":"integer",
                      "value":21356,
                      "format":"n/a",
                      "id":"beaconMinor"
@@ -100,16 +100,16 @@ Here is a JSON representation of request.
                "name":"beacon資訊",
                "type":"object",
                "value":{
-                  "place": {
-                     "name": "beacon設定位置",
-                     "type": "string",
-                     "value": "台北",
-                     "format": "n/a",
-                     "id": "place"
+                  "place":{
+                     "name":"beacon設定位置",
+                     "type":"string",
+                     "value":"台北",
+                     "format":"n/a",
+                     "id":"place"
                   },
                   "beaconMajor":{
                      "name":"主要",
-                     "type":"integer",   --kevin改成integer
+                     "type":"integer",
                      "value":1,
                      "format":"n/a",
                      "id":"beaconMajor"
@@ -123,7 +123,7 @@ Here is a JSON representation of request.
                   },
                   "beaconMinor":{
                      "name":"次要",
-                     "type":"integer",    --kevin改成integer
+                     "type":"integer",
                      "value":21356,
                      "format":"n/a",
                      "id":"beaconMinor"
@@ -142,6 +142,36 @@ Here is a JSON representation of request.
          ],
          "format":"n/a",
          "id":"beacon"
+      },
+      "button":{
+         "name":"打卡按鈕資訊",
+         "type":"array",
+         "value":[
+            {
+               "name":"打卡按鈕資訊",
+               "type":"object",
+               "value":{
+                  "buttonKey":{
+                     "name":"按鈕鍵值",
+                     "type":"string",
+                     "value":"99924066065569631271",
+                     "format":"n/a",
+                     "id":"buttonKey"
+                  },
+                  "buttonName":{
+                     "name":"按鈕名稱",
+                     "type":"string",
+                     "value":"打卡",
+                     "format":"n/a",
+                     "id":"buttonName"
+                  }
+               },
+               "format":"n/a",
+               "id":"buttonInfo"
+            }
+         ],
+         "format":"n/a",
+         "id":"button"
       },
       "properties":{
          "format":{
