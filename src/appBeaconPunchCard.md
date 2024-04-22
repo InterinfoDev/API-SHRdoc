@@ -16,7 +16,7 @@ POST
 |:----------|:-------------|:-----|:------------|
 | uid | 98599308101484732326 | String | 需透過appLogin取得
 | right | 51341911904173543336756162544864820 | String | 需透過appLogin取得 |
-| request | {"beaconId":"B5B182C7-EAB1-4988-AA99", "major":1, "minor":1} | Object | 打卡資訊
+| request | {"buttonKey":"xxxxxxx","beaconId":"B5B182C7-EAB1-4988-AA99", "major":1, "minor":1} | Object | 打卡資訊
 
 ### JSON representation
 Here is a JSON representation of request.
@@ -27,7 +27,8 @@ Here is a JSON representation of request.
     "request":{
         "beaconId":"B5B182C7-EAB1-4988-AA99",
         "major":1,  --kevin 新增major
-        "minor":1    --kevin 新增minor
+        "minor":1,    --kevin 新增minor
+        "buttonKey":"xxxxxxx"
     }
 }
 ```
@@ -45,6 +46,7 @@ Here is a JSON representation of request.
 | beaconId | B5B182C7-EAB1-4988-AA99 | String | ID名稱 | Y | N/A |
 | major | 1 | Integer | major | Y | N/A |
 | minor | 1 | Integer | minor  | Y | N/A |
+| buttonKey | xxxxxxx | String | 按鈕鍵值 | Y | n/a |
 
 ### HTTP Response when Successful
 ```json
@@ -61,14 +63,14 @@ Here is a JSON representation of request.
             "punchDate":{
                "name":"實際打卡日期",
                "type":"string",
-               "value":"20220628",
+               "value":"20240422",
                "format":"YYYYmmdd",
                "id":"punchDate"
             },
             "punchTime":{
                "name":"實際打卡時間",
                "type":"string",
-               "value":"1758",
+               "value":"1922",
                "format":"HHmm",
                "id":"punchTime"
             },
@@ -76,19 +78,26 @@ Here is a JSON representation of request.
                "name":"實際打卡結果",
                "type":"object",
                "value":{
-                  "errorMessage":{
-                     "name":"錯誤訊息",
-                     "type":"string",
-                     "value":"",
-                     "format":"n/a",
-                     "id":"errorMessage"
-                  },
                   "isError":{
                      "name":"是否為錯誤打卡",
                      "type":"boolean",
                      "value":false,
                      "format":"n/a",
                      "id":"isError"
+                  },
+                  "resultTitel":{
+                     "name":"回傳標題",
+                     "type":"string",
+                     "value":"打卡成功",
+                     "format":"n/a",
+                     "id":"resultTitel"
+                  },
+                  "resultMessage":{
+                     "name":"回傳訊息",
+                     "type":"string",
+                     "value":"時間:19:22\n務必前往系統再次確認",
+                     "format":"n/a",
+                     "id":"resultMessage"
                   }
                },
                "format":"n/a",
@@ -140,12 +149,19 @@ Here is a JSON representation of request.
                "name":"實際打卡結果",
                "type":"object",
                "value":{
-                  "errorMessage":{
-                     "name":"錯誤訊息",
+                  "resultTitel":{
+                     "name":"回傳標題",
                      "type":"string",
-                     "value":"資料異動失敗",
+                     "value":"打卡成功",
                      "format":"n/a",
-                     "id":"errorMessage"
+                     "id":"resultTitel"
+                  },
+                  "resultMessage":{
+                     "name":"回傳訊息",
+                     "type":"string",
+                     "value":"時間:19:22\n務必前往系統再次確認",
+                     "format":"n/a",
+                     "id":"resultMessage"
                   },
                   "isError":{
                      "name":"是否為錯誤打卡",
