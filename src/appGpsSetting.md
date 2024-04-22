@@ -1,9 +1,9 @@
-# appPunchCardSetting
-取得打卡按鈕資訊
+# appGpsSetting
+取得GPS打卡資訊
 
 ### HTTP Request
 ```
-https://114.34.125.246:8090/servlet/HRNative/appPunchCardSetting
+https://114.34.125.246:8090/servlet/HRNative/appGpsSetting
 ```
 
 ### HTTP Request Mehod
