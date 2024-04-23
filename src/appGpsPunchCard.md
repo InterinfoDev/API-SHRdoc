@@ -149,7 +149,7 @@ Here is a JSON representation of request.
                         }
                      },
                      "format":"n/a",
-                     "id":"resultTitel"
+                     "id":"resultTitle"
                   },
                   {
                      "name":"IP",
