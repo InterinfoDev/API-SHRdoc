@@ -85,12 +85,12 @@ Here is a JSON representation of request.
                      "format":"n/a",
                      "id":"isError"
                   },
-                  "resultTitel":{
+                  "resultTitle":{
                      "name":"回傳標題",
                      "type":"string",
                      "value":"打卡成功",
                      "format":"n/a",
-                     "id":"resultTitel"
+                     "id":"resultTitle"
                   },
                   "resultMessage":{
                      "name":"回傳訊息",
