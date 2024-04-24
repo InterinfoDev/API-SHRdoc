@@ -74,6 +74,20 @@ Here is a JSON representation of request.
                "format":"n/a",
                "id":"isError"
             },
+            "resultMessage":{
+               "name":"回傳標題",
+               "type":"boolean",
+               "value":"打卡成功",
+               "format":"n/a",
+               "id":"resultTitle"
+            },
+            "resultTitle":{
+               "name":"回傳訊息",
+               "type":"boolean",
+               "value":"時間:11:56\n務必前往系統再次確認",
+               "format":"n/a",
+               "id":"resultMessage"
+            },
             "punchTime":{
                "name":"實際打卡時間",
                "type":"string",
@@ -106,50 +120,6 @@ Here is a JSON representation of request.
                      },
                      "format":"n/a",
                      "id":"pushTypeName"
-                  },
-                  {
-                     "name":"回傳資訊",
-                     "type":"object",
-                     "value":{
-                        "fieldValue":{
-                           "name":"欄位資料",
-                           "type":"string",
-                           "value":"時間:19:17 務必前往系統再次確認",
-                           "format":"n/a",
-                           "id":"fieldValue"
-                        },
-                        "fieldName":{
-                           "name":"欄位名稱",
-                           "type":"string",
-                           "value":"回傳訊息",
-                           "format":"n/a",
-                           "id":"fieldName"
-                        }
-                     },
-                     "format":"n/a",
-                     "id":"resultMessage"
-                  },
-                  {
-                     "name":"回傳訊息",
-                     "type":"object",
-                     "value":{
-                        "fieldValue":{
-                           "name":"欄位資料",
-                           "type":"string",
-                           "value":"打卡成功",
-                           "format":"n/a",
-                           "id":"fieldValue"
-                        },
-                        "fieldName":{
-                           "name":"欄位名稱",
-                           "type":"string",
-                           "value":"回傳標題",
-                           "format":"n/a",
-                           "id":"fieldName"
-                        }
-                     },
-                     "format":"n/a",
-                     "id":"resultTitle"
                   },
                   {
                      "name":"IP",
@@ -234,6 +204,20 @@ Here is a JSON representation of request.
                "format":"n/a",
                "id":"isError"
             },
+            "resultMessage":{
+               "name":"回傳標題",
+               "type":"boolean",
+               "value":"打卡成功",
+               "format":"n/a",
+               "id":"resultTitle"
+            },
+            "resultTitle":{
+               "name":"回傳訊息",
+               "type":"boolean",
+               "value":"時間:11:56\n務必前往系統再次確認",
+               "format":"n/a",
+               "id":"resultMessage"
+            },
             "punchTime":{
                "name":"實際打卡時間",
                "type":"string",
@@ -245,50 +229,7 @@ Here is a JSON representation of request.
                "name":"實際打卡結果",
                "type":"object",
                "value":[
-                  {
-                     "name":"回傳資訊",
-                     "type":"object",
-                     "value":{
-                        "fieldValue":{
-                           "name":"欄位資料",
-                           "type":"string",
-                           "value":"時間:16:58 務必前往系統再次確認",
-                           "format":"n/a",
-                           "id":"fieldValue"
-                        },
-                        "fieldName":{
-                           "name":"欄位名稱",
-                           "type":"string",
-                           "value":"回傳訊息",
-                           "format":"n/a",
-                           "id":"fieldName"
-                        }
-                     },
-                     "format":"n/a",
-                     "id":"resultMessage"
-                  },
-                  {
-                     "name":"回傳訊息",
-                     "type":"object",
-                     "value":{
-                        "fieldValue":{
-                           "name":"欄位資料",
-                           "type":"string",
-                           "value":"打卡成功",
-                           "format":"n/a",
-                           "id":"fieldValue"
-                        },
-                        "fieldName":{
-                           "name":"欄位名稱",
-                           "type":"string",
-                           "value":"回傳標題",
-                           "format":"n/a",
-                           "id":"fieldName"
-                        }
-                     },
-                     "format":"n/a",
-                     "id":"resultTitel"
-                  }
+                  
                ],
                "format":"n/a",
                "id":"punchResult"
@@ -327,6 +268,20 @@ Here is a JSON representation of request.
                "value":true,
                "format":"n/a",
                "id":"isError"
+            },
+            "resultMessage":{
+               "name":"回傳標題",
+               "type":"boolean",
+               "value":"打卡失敗",
+               "format":"n/a",
+               "id":"resultTitle"
+            },
+            "resultTitle":{
+               "name":"回傳訊息",
+               "type":"boolean",
+               "value":"警告!系統設定錯誤，請洽客服人員",
+               "format":"n/a",
+               "id":"resultMessage"
             },
             "punchTime":{
                "name":"實際打卡時間",
