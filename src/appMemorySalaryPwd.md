@@ -6,7 +6,7 @@
 https://114.34.125.246:8090/servlet/HRNative/appMemorySalaryPwd
 ```
 
-### HTTP Request Mehod
+### HTTP Request Method
 ```
 POST
 ```
