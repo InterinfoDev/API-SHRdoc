@@ -105,6 +105,15 @@ Here is a JSON representation of request.
                "value":"Administrator",
                "format":"n/a",
                "id":"empFullEname"
+            },
+            {
+               "amt":{
+                  "name":"總計",
+                  "type":"string",
+                  "value":"8.00",
+                  "format":"hour",
+                  "id":"amt"
+               }
             }
          },
          "format":"n/a",
