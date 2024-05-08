@@ -16,7 +16,7 @@ POST
 |:----------|:-------------|:-----|:------------|
 | uid | 98599308101484732326 | String | 需透過appLogin取得
 | right | 51341911904173543336756162544864820 | String | 需透過appLogin取得 |
-| request | {'oldPno':'K00202206290001','pno':'K00202206290001','startDate':'20220629','endDate':'20220630','startTime':'1230','endTime':'1830','note':'測試出差變更備註','amt':16,'travelPlace':'台北南港','isHoliday':false,'version':2}]} | Object | 異動條件
+| request | {'oldPno':'K00202206290001','pno':'K00202206290001','startDate':'20220629','endDate':'20220630','startTime':'1230','endTime':'1830','note':'測試出差變更備註','amt':16,'travelPlace':'台北南港','isHoliday':false,'isBusinessTrip':false,'version':2}]} | Object | 異動條件
 
 ### JSON representation Case 1
 Here is a JSON representation of request.
@@ -35,6 +35,7 @@ Here is a JSON representation of request.
      "amt":16,
      "travelPlace":"台北南港",
      "isHoliday":false,
+     "isBusinessTrip":false,
      "version":2
   }
 ```
@@ -60,6 +61,7 @@ Here is a JSON representation of request.
 | version | 2 | Integer | 版次 | Y | n/a |
 | amt | 300.0 | Decimal | 出差總計 | Y | n/a |
 | isHoliday | false | boolean | 是否包含假日 | Y | n/a |
+| isBusinessTrip | false | boolean | 具公差性質 | Y | n/a |
 
 ### HTTP Response when Successful
 ```json
