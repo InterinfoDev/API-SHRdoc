@@ -6,7 +6,7 @@
 https://114.34.125.246:8090/servlet/HRNative/appTravelChangeField
 ```
 
-### HTTP Request Mehod
+### HTTP Request method
 ```
 POST
 ```
