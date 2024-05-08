@@ -194,6 +194,15 @@ Here is a JSON representation of request.
                      "value":false,
                      "format":"n/a",
                      "id":"approved"
+                  },
+                  {
+                     "amt":{
+                        "name":"總計",
+                        "type":"string",
+                        "value":"8.00",
+                        "format":"hour",
+                        "id":"amt"
+                      }
                   }
                },
                "format":"n/a",
