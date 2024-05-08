@@ -99,7 +99,6 @@ Here is a JSON representation of request.
          "name":"檢核結果",
          "type":"object",
          "value":{
-         --kevin 移除tipMessage
             "actions":{
                "name":"異動欄位",
                "type":"object",
@@ -109,39 +108,18 @@ Here is a JSON representation of request.
                      "type":"array",
                      "value":[
                         {
-                           "name":"起始日期",
-                           "type":"boolean",
-                           "value":true,
-                           "format":"n/a",
-                           "id":"startDate"   --kevin改名startDate
-                        },
-                        {
-                           "name":"結束日期",
-                           "type":"boolean",
-                           "value":true,
-                           "format":"n/a",
-                           "id":"endDate"  --kevin改名endDate
-                        },
-                        {
-                           "name":"起始時間",
-                           "type":"boolean",
-                           "value":true,
-                           "format":"n/a",
-                           "id":"startTime"   --kevin改名startTime
-                        },
-                        {
-                           "name":"結束時間",
-                           "type":"boolean",
-                           "value":true,
-                           "format":"n/a",
-                           "id":"endTime"  --kevin改名endTime
-                        },
-                        {
                            "name":"逾時請假原因",
+                           "type":"boolean",
+                           "value":true,
+                           "format":"n/a",
+                           "id":"delayReason"
+                        },
+                        {
+                           "name":"總計時數",
                            "type":"boolean",
                            "value":false,
                            "format":"n/a",
-                           "id":"delayReason"
+                           "id":"amt"
                         }
                      ],
                      "format":"n/a",
@@ -154,30 +132,44 @@ Here is a JSON representation of request.
                         {
                            "name":"起始日期",
                            "type":"string",
-                           "value":"20220503",
+                           "value":"20240506",
                            "format":"YYYYmmdd",
-                           "id":"startDate"   --kevin改名startDate
+                           "id":"startDate"
                         },
                         {
                            "name":"結束日期",
                            "type":"string",
-                           "value":"20220503",
+                           "value":"20240506",
                            "format":"YYYYmmdd",
-                           "id":"endDate"  --kevin改名endDate
+                           "id":"endDate"
                         },
                         {
                            "name":"起始時間",
                            "type":"string",
-                           "value":"0830",
+                           "value":"0900",
                            "format":"HHmm",
-                           "id":"startTime"   --kevin改名startTime
+                           "id":"startTime"
                         },
                         {
                            "name":"結束時間",
                            "type":"string",
-                           "value":"1730",
+                           "value":"1800",
                            "format":"HHmm",
-                           "id":"endTime"  --kevin改名endTime
+                           "id":"endTime"
+                        },
+                        {
+                           "name":"逾時請假原因",
+                           "type":"string",
+                           "value":"",
+                           "format":"n/a",
+                           "id":"delayReason"
+                        },
+                        {
+                           "name":"總計時數",
+                           "type":"string",
+                           "value":"8.00",
+                           "format":"hour",
+                           "id":"amt"
                         }
                      ],
                      "format":"n/a",
@@ -187,34 +179,6 @@ Here is a JSON representation of request.
                      "name":"設定欄位是否顯示",
                      "type":"array",
                      "value":[
-                        {
-                           "name":"起始日期",
-                           "type":"boolean",
-                           "value":true,
-                           "format":"n/a",
-                           "id":"startDate"   --kevin改名startDate
-                        },
-                        {
-                           "name":"結束日期",
-                           "type":"boolean",
-                           "value":true,
-                           "format":"n/a",
-                           "id":"endDate"  --kevin改名endDate
-                        },
-                        {
-                           "name":"起始時間",
-                           "type":"boolean",
-                           "value":true,
-                           "format":"n/a",
-                           "id":"startTime"   --kevin改名startTime
-                        },
-                        {
-                           "name":"結束時間",
-                           "type":"boolean",
-                           "value":true,
-                           "format":"n/a",
-                           "id":"endTime"  --kevin改名endTime
-                        },
                         {
                            "name":"逾時請假原因",
                            "type":"boolean",
