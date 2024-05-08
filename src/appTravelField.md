@@ -1523,7 +1523,7 @@ Here is a JSON representation of request.
             "companyFullName":{
                "name":"公司全名",
                "type":"string",
-               "value":"三澧企業股份有限公司",
+               "value":"xx企業股份有限公司",
                "format":"n/a",
                "id":"companyFullName"
             },
