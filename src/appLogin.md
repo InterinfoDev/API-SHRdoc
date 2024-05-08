@@ -14,7 +14,7 @@ POST
 ### Request body
 | Key | Value | Type | Description |
 |:----------|:-------------|:-----|:------------|
-| request | {uid:admin,pwd:1234} | Object | 請將帳號密碼組成物件 |
+| request | {uid:admin,pwd:1234,deviceBindId:test,deviceType:ios} | Object | 請將帳號密碼組成物件 |
 
 ### JSON representation
 Here is a JSON representation of request.
