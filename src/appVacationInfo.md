@@ -43,7 +43,7 @@ Here is a JSON representation of request.
 | Key | Value | Type | Description | Required | Format |
 |:----------|:-------------|:-----|:------------|:------------|:------------|
 | empid | 9306020 | string | 員工編號 | Y | n/a |
-| hcode | 39 | string | 假別代碼 | N | n/a |
+| vacationCode | 39 | string | 假別代碼 | N | n/a |
 | specialDate |  | string | 特殊日期 | N | YYMMDD |
 
 ### HTTP Response when Successful
