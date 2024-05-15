@@ -28,10 +28,10 @@ Here is a JSON representation of request.
       "fieldName":"vacationStartDate",
       "empid":"admin", 
       "vacationCode":"000",
-      "startDate":"20220429",    --kevin 改成startDate
-      "endDate":"20220429",      --kevin 改成endDate
-      "startTime":"0830",        --kevin 改成startTime
-      "endTime":"1700",          --kevin 改成endTime
+      "startDate":"20220429",    
+      "endDate":"20220429",      
+      "startTime":"0830",       
+      "endTime":"1700",         
       "reason":"kevin中文測試",
       "delayReason":"",
       "jobAgent":"10900015",
@@ -39,10 +39,10 @@ Here is a JSON representation of request.
       "isHoliday":false,
       "planeTicket":0,
       "flowAgent":"10900015",
-      "flowAgent1":"10900015",    --kevin 改成flowAgent1
-      "flowAgent2":"10900015",    --kevin 改成flowAgent2
-      "flowAgent3":"10900015",    --kevin 改成flowAgent3
-      "file":[{   --kevin 檔案改成陣列
+      "flowAgent1":"10900015",    
+      "flowAgent2":"10900015",    
+      "flowAgent3":"10900015",    
+      "file":[{
         "fileName":"kevin.jpg",
         "fileData":"base64"
       }]
@@ -110,12 +110,12 @@ Here is a JSON representation of request.
                         {
                            "name":"逾時請假原因",
                            "type":"boolean",
-                           "value":true,
+                           "value":false,
                            "format":"n/a",
                            "id":"delayReason"
                         },
                         {
-                           "name":"總計時數",
+                           "name":"本次請假時間合計",
                            "type":"boolean",
                            "value":false,
                            "format":"n/a",
@@ -132,28 +132,28 @@ Here is a JSON representation of request.
                         {
                            "name":"起始日期",
                            "type":"string",
-                           "value":"20240506",
+                           "value":"20240519",
                            "format":"YYYYmmdd",
                            "id":"startDate"
                         },
                         {
                            "name":"結束日期",
                            "type":"string",
-                           "value":"20240506",
+                           "value":"20240519",
                            "format":"YYYYmmdd",
                            "id":"endDate"
                         },
                         {
                            "name":"起始時間",
                            "type":"string",
-                           "value":"0900",
+                           "value":"",
                            "format":"HHmm",
                            "id":"startTime"
                         },
                         {
                            "name":"結束時間",
                            "type":"string",
-                           "value":"1800",
+                           "value":"",
                            "format":"HHmm",
                            "id":"endTime"
                         },
@@ -165,9 +165,9 @@ Here is a JSON representation of request.
                            "id":"delayReason"
                         },
                         {
-                           "name":"總計時數",
+                           "name":"本次請假時間合計",
                            "type":"string",
-                           "value":"8.00",
+                           "value":"0",
                            "format":"hour",
                            "id":"amt"
                         }
@@ -182,7 +182,7 @@ Here is a JSON representation of request.
                         {
                            "name":"逾時請假原因",
                            "type":"boolean",
-                           "value":true,
+                           "value":false,
                            "format":"n/a",
                            "id":"delayReason"
                         }
@@ -201,6 +201,7 @@ Here is a JSON representation of request.
       "properties":{
          "format":{
             "HHmm":"時間時分",
+            "hour":"小時",
             "YYYYmmdd":"西元年月日",
             "n/a":""
          }
