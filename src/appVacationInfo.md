@@ -44,7 +44,7 @@ Here is a JSON representation of request.
 |:----------|:-------------|:-----|:------------|:------------|:------------|
 | empid | 9306020 | string | 員工編號 | Y | n/a |
 | hcode | 39 | string | 假別代碼 | N | n/a |
-| specdate |  | string | 特殊日期 | N | YYMMDD |
+| specialDate |  | string | 特殊日期 | N | YYMMDD |
 
 ### HTTP Response when Successful
 ```json
