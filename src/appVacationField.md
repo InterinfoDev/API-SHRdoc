@@ -27,7 +27,7 @@ Here is a JSON representation of request.
     "request":{
         "specialDate":"20230602", 
         "employeeId":"9306020",
-        "vacationCode":"01",
+        "vacationCode":"04a",
         "startDate":""
     }
 }
@@ -102,7 +102,7 @@ Here is a JSON representation of request.
                            "optionId":{
                               "name":"選項代號",
                               "type":"string",
-                              "value":"8701001",
+                              "value":"801",
                               "format":"n/a",
                               "id":"optionId"
                            },
@@ -118,7 +118,7 @@ Here is a JSON representation of request.
                            "optionId":{
                               "name":"選項代號",
                               "type":"string",
-                              "value":"8703009",
+                              "value":"8709",
                               "format":"n/a",
                               "id":"optionId"
                            },
@@ -150,7 +150,7 @@ Here is a JSON representation of request.
                            "optionId":{
                               "name":"選項代號",
                               "type":"string",
-                              "value":"9006006",
+                              "value":"9006",
                               "format":"n/a",
                               "id":"optionId"
                            },
@@ -166,7 +166,7 @@ Here is a JSON representation of request.
                            "optionId":{
                               "name":"選項代號",
                               "type":"string",
-                              "value":"9111001",
+                              "value":"901",
                               "format":"n/a",
                               "id":"optionId"
                            },
@@ -214,7 +214,7 @@ Here is a JSON representation of request.
                            "optionId":{
                               "name":"選項代號",
                               "type":"string",
-                              "value":"10010033",
+                              "value":"10033",
                               "format":"n/a",
                               "id":"optionId"
                            },
@@ -233,7 +233,7 @@ Here is a JSON representation of request.
                   "fieldEditable":{
                      "name":"開放編輯",
                      "type":"boolean",
-                     "value":true,
+                     "value":false,
                      "format":"n/a",
                      "id":"fieldEditable"
                   },
@@ -247,7 +247,7 @@ Here is a JSON representation of request.
                   "fieldVisible":{
                      "name":"欄位顯示",
                      "type":"boolean",
-                     "value":true,
+                     "value":false,
                      "format":"n/a",
                      "id":"fieldVisible"
                   }
@@ -267,7 +267,7 @@ Here is a JSON representation of request.
                            "optionId":{
                               "name":"選項代號",
                               "type":"string",
-                              "value":"8701001",
+                              "value":"801",
                               "format":"n/a",
                               "id":"optionId"
                            },
@@ -283,7 +283,7 @@ Here is a JSON representation of request.
                            "optionId":{
                               "name":"選項代號",
                               "type":"string",
-                              "value":"8703009",
+                              "value":"8009",
                               "format":"n/a",
                               "id":"optionId"
                            },
@@ -315,7 +315,7 @@ Here is a JSON representation of request.
                            "optionId":{
                               "name":"選項代號",
                               "type":"string",
-                              "value":"9006006",
+                              "value":"9006",
                               "format":"n/a",
                               "id":"optionId"
                            },
@@ -363,7 +363,7 @@ Here is a JSON representation of request.
                            "optionId":{
                               "name":"選項代號",
                               "type":"string",
-                              "value":"10206047",
+                              "value":"10247",
                               "format":"n/a",
                               "id":"optionId"
                            },
@@ -398,7 +398,7 @@ Here is a JSON representation of request.
                   "fieldEditable":{
                      "name":"開放編輯",
                      "type":"boolean",
-                     "value":true,
+                     "value":false,
                      "format":"n/a",
                      "id":"fieldEditable"
                   },
@@ -412,7 +412,7 @@ Here is a JSON representation of request.
                   "fieldVisible":{
                      "name":"欄位顯示",
                      "type":"boolean",
-                     "value":true,
+                     "value":false,
                      "format":"n/a",
                      "id":"fieldVisible"
                   }
@@ -421,21 +421,21 @@ Here is a JSON representation of request.
                "id":"flowAgent2"
             },
             "amt":{
-               "name":"總計時數",
+               "name":"本次請假時間合計",
                "type":"object",
                "value":{
                   "fieldEditable":{
                      "name":"開放編輯",
                      "type":"boolean",
-                     "value":true,
+                     "value":false,
                      "format":"n/a",
                      "id":"fieldEditable"
                   },
                   "fieldValue":{
                      "name":"欄位預設值",
                      "type":"string",
-                     "value":"8.00",
-                     "format":"hour",
+                     "value":"1.00",
+                     "format":"day",
                      "id":"fieldValue"
                   },
                   "fieldVisible":{
@@ -461,7 +461,7 @@ Here is a JSON representation of request.
                            "optionId":{
                               "name":"選項代號",
                               "type":"string",
-                              "value":"8701001",
+                              "value":"81",
                               "format":"n/a",
                               "id":"optionId"
                            },
@@ -477,7 +477,7 @@ Here is a JSON representation of request.
                            "optionId":{
                               "name":"選項代號",
                               "type":"string",
-                              "value":"8703009",
+                              "value":"009",
                               "format":"n/a",
                               "id":"optionId"
                            },
@@ -509,7 +509,7 @@ Here is a JSON representation of request.
                            "optionId":{
                               "name":"選項代號",
                               "type":"string",
-                              "value":"9006006",
+                              "value":"06",
                               "format":"n/a",
                               "id":"optionId"
                            },
@@ -525,7 +525,7 @@ Here is a JSON representation of request.
                            "optionId":{
                               "name":"選項代號",
                               "type":"string",
-                              "value":"9111001",
+                              "value":"001",
                               "format":"n/a",
                               "id":"optionId"
                            },
@@ -541,7 +541,7 @@ Here is a JSON representation of request.
                            "optionId":{
                               "name":"選項代號",
                               "type":"string",
-                              "value":"10108001",
+                              "value":"1001",
                               "format":"n/a",
                               "id":"optionId"
                            },
@@ -557,7 +557,7 @@ Here is a JSON representation of request.
                            "optionId":{
                               "name":"選項代號",
                               "type":"string",
-                              "value":"10206047",
+                              "value":"17",
                               "format":"n/a",
                               "id":"optionId"
                            },
@@ -573,7 +573,7 @@ Here is a JSON representation of request.
                            "optionId":{
                               "name":"選項代號",
                               "type":"string",
-                              "value":"10010033",
+                              "value":"1033",
                               "format":"n/a",
                               "id":"optionId"
                            },
@@ -592,7 +592,7 @@ Here is a JSON representation of request.
                   "fieldEditable":{
                      "name":"開放編輯",
                      "type":"boolean",
-                     "value":true,
+                     "value":false,
                      "format":"n/a",
                      "id":"fieldEditable"
                   },
@@ -606,7 +606,7 @@ Here is a JSON representation of request.
                   "fieldVisible":{
                      "name":"欄位顯示",
                      "type":"boolean",
-                     "value":true,
+                     "value":false,
                      "format":"n/a",
                      "id":"fieldVisible"
                   }
@@ -657,7 +657,7 @@ Here is a JSON representation of request.
                   "fieldValue":{
                      "name":"欄位預設值",
                      "type":"string",
-                     "value":"20240508",
+                     "value":"20240515",
                      "format":"YYYYmmdd",
                      "id":"fieldValue"
                   },
@@ -684,7 +684,7 @@ Here is a JSON representation of request.
                            "optionId":{
                               "name":"選項代號",
                               "type":"string",
-                              "value":"8701001",
+                              "value":"8701",
                               "format":"n/a",
                               "id":"optionId"
                            },
@@ -700,7 +700,7 @@ Here is a JSON representation of request.
                            "optionId":{
                               "name":"選項代號",
                               "type":"string",
-                              "value":"8703009",
+                              "value":"8709",
                               "format":"n/a",
                               "id":"optionId"
                            },
@@ -732,7 +732,7 @@ Here is a JSON representation of request.
                            "optionId":{
                               "name":"選項代號",
                               "type":"string",
-                              "value":"9006006",
+                              "value":"906",
                               "format":"n/a",
                               "id":"optionId"
                            },
@@ -748,7 +748,7 @@ Here is a JSON representation of request.
                            "optionId":{
                               "name":"選項代號",
                               "type":"string",
-                              "value":"9111001",
+                              "value":"9001",
                               "format":"n/a",
                               "id":"optionId"
                            },
@@ -764,7 +764,7 @@ Here is a JSON representation of request.
                            "optionId":{
                               "name":"選項代號",
                               "type":"string",
-                              "value":"10108001",
+                              "value":"11",
                               "format":"n/a",
                               "id":"optionId"
                            },
@@ -780,7 +780,7 @@ Here is a JSON representation of request.
                            "optionId":{
                               "name":"選項代號",
                               "type":"string",
-                              "value":"10206047",
+                              "value":"10047",
                               "format":"n/a",
                               "id":"optionId"
                            },
@@ -796,7 +796,7 @@ Here is a JSON representation of request.
                            "optionId":{
                               "name":"選項代號",
                               "type":"string",
-                              "value":"10010033",
+                              "value":"033",
                               "format":"n/a",
                               "id":"optionId"
                            },
@@ -880,7 +880,7 @@ Here is a JSON representation of request.
                   "fieldValue":{
                      "name":"欄位預設值",
                      "type":"string",
-                     "value":"20240508",
+                     "value":"20240515",
                      "format":"YYYYmmdd",
                      "id":"fieldValue"
                   },
@@ -952,7 +952,7 @@ Here is a JSON representation of request.
                            "optionId":{
                               "name":"選項代號",
                               "type":"string",
-                              "value":"8703009",
+                              "value":"8009",
                               "format":"n/a",
                               "id":"optionId"
                            },
@@ -984,7 +984,7 @@ Here is a JSON representation of request.
                            "optionId":{
                               "name":"選項代號",
                               "type":"string",
-                              "value":"9006006",
+                              "value":"906",
                               "format":"n/a",
                               "id":"optionId"
                            },
@@ -1000,7 +1000,7 @@ Here is a JSON representation of request.
                            "optionId":{
                               "name":"選項代號",
                               "type":"string",
-                              "value":"9111001",
+                              "value":"901",
                               "format":"n/a",
                               "id":"optionId"
                            },
@@ -1016,7 +1016,7 @@ Here is a JSON representation of request.
                            "optionId":{
                               "name":"選項代號",
                               "type":"string",
-                              "value":"10108001",
+                              "value":"1001",
                               "format":"n/a",
                               "id":"optionId"
                            },
@@ -1032,7 +1032,7 @@ Here is a JSON representation of request.
                            "optionId":{
                               "name":"選項代號",
                               "type":"string",
-                              "value":"10206047",
+                              "value":"1047",
                               "format":"n/a",
                               "id":"optionId"
                            },
@@ -1048,7 +1048,7 @@ Here is a JSON representation of request.
                            "optionId":{
                               "name":"選項代號",
                               "type":"string",
-                              "value":"10010033",
+                              "value":"10033",
                               "format":"n/a",
                               "id":"optionId"
                            },
@@ -1096,7 +1096,7 @@ Here is a JSON representation of request.
                   "fieldEditable":{
                      "name":"開放編輯",
                      "type":"boolean",
-                     "value":false,
+                     "value":true,
                      "format":"n/a",
                      "id":"fieldEditable"
                   },
@@ -1110,7 +1110,7 @@ Here is a JSON representation of request.
                   "fieldVisible":{
                      "name":"欄位顯示",
                      "type":"boolean",
-                     "value":false,
+                     "value":true,
                      "format":"n/a",
                      "id":"fieldVisible"
                   }
@@ -1230,6 +1230,7 @@ Here is a JSON representation of request.
          "format":{
             "HHmm":"時間時分",
             "YYYYmmdd":"西元年月日",
+            "day":"天",
             "count":"數量",
             "n/a":"",
             "ticket":"張"
@@ -1242,7 +1243,7 @@ Here is a JSON representation of request.
             "vacationName":{
                "name":"假別名稱",
                "type":"string",
-               "value":"事假",
+               "value":"無薪病假(TEST)",
                "format":"n/a",
                "id":"vacationName"
             },
@@ -1256,7 +1257,7 @@ Here is a JSON representation of request.
             "vacationCode":{
                "name":"假別代碼",
                "type":"string",
-               "value":"01",
+               "value":"04a",
                "format":"n/a",
                "id":"vacationCode"
             },
@@ -1277,14 +1278,14 @@ Here is a JSON representation of request.
             "employeeId":{
                "name":"員工編號",
                "type":"string",
-               "value":"9355540",
+               "value":"9306020",
                "format":"n/a",
                "id":"employeeId"
             },
             "depFullName":{
                "name":"部門名稱",
                "type":"string",
-               "value":"營x部",
+               "value":"營業一部",
                "format":"n/a",
                "id":"depFullName"
             },
@@ -1303,19 +1304,13 @@ Here is a JSON representation of request.
          "name":"請假單備註",
          "type":"array",
          "value":[
-            {
-               "name":"備註事項",
-               "type":"string",
-               "value":"1年內合計不得超過14日",
-               "format":"n/a",
-               "id":"note"
-            }
+            
          ],
          "format":"n/a",
          "id":"vacationTip"
       }
    }
-}         
+}
 ```
 
 ### HTTP Response when No Data
