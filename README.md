@@ -54,65 +54,198 @@ POST
   <dd>2021/12/01 09:00 ~ 2021/12/31 18:00</dd>
 </dl>
 
-### Program list
-| Program Senario | Program Name | ReadyToUse | Description | Author | Last Modify Date |
-|:----------|:----------|:----------|:----------|:----------|:----------|
-| 考勤詳細 | appAttendDetail | Y | 取得指定年月、員工考勤詳細資料 | Daniel | 20211217 |
-| 考勤列表 | appAttendList | Y | 取得考勤列表資訊 | AndyHou | 20211202 |
-| 年月考勤 | appAttendMonth | Y | 取得員工指定某年月考勤資訊 | AndyHou | 20211202 |
-| 公司別權限 | appCompanySuper | Y | 取得某員工公司別可視範圍資料 | AndyHou | 20211202 |
-| 夥伴查詢 | appContact | Y | 取得夥伴查詢資料 | Kevin | 20211202 |
-| 部門權限 | appDeptCondition | Y | 取得某員工可視部門資料 | AndyHou | 20211202 |
-| 特定員工行事曆 | appEmployeeCalendarList | Y | 取得特定員工行事曆資訊 | Kevin | 20211206 |
-| 個人行事曆詳細 | appEmployeeCalendarQuery | Y | 取得員工個人行事曆特定事件詳細資料 | Kevin | 20211206 |
-| 異動行事曆 | appEditEmployeeCalendar | Y | 取得員工個人行事曆特定事件詳細資料 | Kevin | 20211206 |
-| 員工權限 | appEmployeeCondition | Y | 取得某員工可視範圍員工資料 | AndyHou | 20211202 |
-| 員工照片 | appEmployeePhoto | Y | 取得特定員工照片資訊 | AndyHou | 20211202 |
-| 忘記密碼 | appForgotPwd | N | 執行忘記密碼 | Kevin | 20211203 |
-| APP功能權限 | appFunctionRight | Y | 取得員工APP功能資訊 | Daniel | 20211207 |
-| 線上打卡 | appGpsPunchCardGPS | Y | 線上打卡 | AndyHou | 20211202 | 
-| 取得首頁 | appHomePage | Y | 取得首頁資訊 | AndyHou | 20211202 |
-| 驗證帳號密碼 | appLogin | Y | 驗證使用者帳號密碼 | AndyHou | 20211203 |
-| 發薪次數 | appSalaryCount | Y | 發薪次數資訊 | Kevin | 20211202 |
-| 驗證薪資條密碼 | appSalaryPwd | Y | 驗證員工薪資條密碼(獎金通用) | Kevin | 20211202 |
-| 薪資條明細 | appSalaryQuery | Y | 取得指定年月、員工薪資條明細資訊 | Daniel | 20211203 |
-| 最近一次薪資發放 | appSalaryRecent | Y | 取得某員工最近一次薪資發放資訊 | Daniel | 20211203 |
-| 獎金條明細 | appSalbondQuery | Y | 取得指定年月、員工獎金條明細資訊 | Daniel | 20211206 |
-| 最近一次獎金發放 | appSalbondRecent | Y | 取得某員工最近一次獎金發放資訊 | Daniel | 20211206 |
-| 體溫回報 | appBodyTemperature | Y | 提供使用者回報體溫資訊 | AndyHou | 20211202 |
-| GoogleMap | appGoogleMapKey | Y | 提供GoogleMapKey資訊 | AndyHou | 20211205 |
-| 量測體溫介面裝置資訊 | appTemperatureInterface | N | 提供量測體溫介面裝置資訊 | AndyHou | 20211222 |
-| 個人資料維護欄位 | appPersonalColumnMaintenance | N | 取得維護欄位 | AndyHou | 20220124 |
-| 個人資料維護異動 | appPersonalDataMaintenance | N | 異動個人資料 | AndyHou | 20220124 |
-| 下載檔案 | appDownloadFile | N | 取得下載檔案 | AndyHou | 20220106 |
-| 請假單詳細資料 | appVacationDetail | Y | 取得指定請假單詳細資料 | Kevin | 20220122 |
-| 請假單列表 | appVacationList | Y | 取得請假列表資訊 | Kevin | 20220122 |
-| 請假單年月 | appVacationMonth | Y | 取得員工指定某年月請假資訊 | Kevin | 20220122 |
-| 待簽核單據 | appFlowTodoList | Y | 取得員工待簽核單據列表 | Lucas | 20220215 |
-| 簽核詳細列表 | appFlowList | Y | 取得待簽核功能的詳細資料 | Lucas | 20220215 |
-| 請假畫面資訊 | appVacationApply | Y | 取得請假畫面資訊 | Kevin | 20220221 |
-| 流程簽核 | appSignFlow | Y | 簽核畫面按鈕程式 | Kevin | 20220321 |
-| 預定加班單詳細資料 | appOverplanDetail | Y | 取得指定預定加班單詳細資料 | Kevin | 20220412 |
-| 預定加班單列表 | appOverplanList | Y | 取得預定加班單列表資訊 | Kevin | 20220412 |
-| 預定加班單年月 | appOverplanMonth | Y | 取得員工指定某年月預定加班資訊 | Kevin | 20220412 |
-| 流程紀錄 | appFlowHistory | Y | 取得該筆單據流程紀錄 | Kevin | 20220412 |
-| 通知訊息資訊 | appAnnouncement | N | 查詢通知訊息資訊 | AndyHou | 20220425 |
-| 通知訊息數量 | appAnnouncementNotify | N | 取得未讀取通知數量 | AndyHou | 20220425 |
-| 公告清單 | appBoardList | N | 取得公告資訊 | AndyHou | 20220425 |
-| 公告資訊 | appBoardQuery | N | 取得公告資訊 | AndyHou | 20220425 |
-| 移除裝置紀錄 | appDeviceDelete | N | 移除使用者裝置紀錄 | AndyHou | 20220425 |
-| 裝置清單 | appDeviceList | N | 取得使用者裝置清單 | AndyHou | 20220425 |
-| 紀錄裝置 | appDeviecRecord | N | 紀錄裝置識別碼 | AndyHou | 20220425 |
-| 異動通知設定 | appExecPushSetting | N | 異動通知設定 | Richard | 20220425 |
-| 通知設定 | appPushSetting | N | 查詢通知設定 | Richard | 20220425 |
-| 簽核訊息數量 | appFlowNotify | N | 取得簽核通知數量 | AndyHou | 20220425 |
-| 考勤打卡 | appGpsPunchCard | N | 異動考勤打卡資訊 | AndyHou | 20220425 |
-| 登出帳號 | appLogout | N | 紀錄登出資訊 | AndyHou | 20220425 |
-| 預定加班單資訊 | appOverplanApply | Y | 預定加班單資訊 | Kevin | 20220425 |
-| 驗證識別碼 | appPinCode | N | 驗證識別碼取得設定資訊 | AndyHou | 20220425 |
-| 假別清單 | appQueryHkind | N | 取得假別清單 | AndyHou | 20220425 |
-| 補卡原因清單 | appQueryReason | N | 取得補卡原因清單 | AndyHou | 20220425 |
-| 公司法規條文 | appRecognitionTerms | N | 取得使用者公司法規條文 | AndyHou | 20220425 |
-| 獎金入帳日期 | appSalbondIndate | N | 取得員工指定年月獎金入帳日期 | AndyHou | 20220425 |
-| 員工請假 | appVacationAdd | Y | 員工請假 | Kevin | 20220503 |
-| 請假畫面欄位檢核 | appVacationVerifyField | Y | 請假畫面欄位檢核 | Kevin | 20220503 |
+## Program list
+### 登入
+
+| 功能名稱        | API名稱               | 功能說明                               |
+|-----------------|-----------------------|----------------------------------------|
+| 登入            | appLogin              | 驗證使用者帳號密碼                     |
+
+### 登出
+
+| 功能名稱        | API名稱               | 功能說明                               |
+|-----------------|-----------------------|----------------------------------------|
+| 登出            | appLogout             | 記錄使用者登出資訊                     |
+
+### 共用元件
+
+| 功能名稱        | API名稱               | 功能說明                               |
+|-----------------|-----------------------|----------------------------------------|
+| 登出            | appLogout             | 記錄使用者登出資訊                     |
+| 登入            | appLogin              | 驗證使用者帳號密碼                     |
+| 功能元件        | appAgentQuery         | 取得代理人清單                         |
+| 功能元件        | appAllDepartment      | 取得目前有在使用的全部部門             |
+| 功能元件        | appCompanySuper       | 取得某員工公司別可視範圍資料           |
+| 功能元件        | appDeptCondition      | 取得某員工可視部門資料                 |
+| 功能元件        | appEmployeeCondition  | 取得某員工可視範圍員工資料             |
+| 功能元件        | appEmployeePhoto      | 取得特定員工照片資訊                   |
+| 功能元件        | appFlowHistory        | 取得該筆單據流程紀錄                   |
+| 功能元件        | appGenerateQRCode     | 產生登入qrCode                         |
+| 功能元件        | appGoogleMapKey       | 取得GoogleMap使用Key                   |
+| 功能元件        | appNonEmployeeCondition| 取得全部員工資料                      |
+| 功能元件        | appPinCode            | 驗證識別碼取得設定資訊                 |
+| 功能元件        | appPushSetting        | 查詢通知設定                           |
+| 功能元件        | appQueryAgentFunction | 取得代理簽核的下拉選項                 |
+| 功能元件        | appQueryHkind         | 取得查詢條件假別的下拉選項             |
+| 功能元件        | appSetting            | 取得設定資料                           |
+| 功能元件        | appSignFlow           | 取得簽核畫面核准或退簽按鈕所回傳的資訊 |
+| 功能元件        | appTranslate          | 取得裝置端翻譯後訊息                   |
+| 功能元件        | appVerifyQRCode       | 驗證QRCODE資訊                         |
+
+### 大聲公
+
+| 功能名稱       | API名稱                   | 功能說明                               |
+|----------------|---------------------------|----------------------------------------|
+| 大聲公         | appAnnouncement           | 查詢通知訊息資訊                       |
+| 大聲公         | appAnnouncementLatest     | 查詢通知新訊息資訊                     |
+| 大聲公         | appAnnouncementNotify     | 取得未讀取通知數量                     |
+| 大聲公         | appAnnouncementQuery      | 查詢特定通知訊息資訊                   |
+
+## 互動打卡
+
+| 功能名稱       | API名稱                   | 功能說明                               |
+|----------------|---------------------------|----------------------------------------|
+| 互動打卡       | appBeaconPunchCard        | Beacon打卡                             |
+| 互動打卡       | appBeaconSetting          | 取得Beacon打卡資訊                     |
+
+## 公告訊息
+
+| 功能名稱       | API名稱                   | 功能說明                               |
+|----------------|---------------------------|----------------------------------------|
+| 公告訊息       | appBoardList              | 取得公告清單資訊                       |
+| 公告訊息       | appBoardQuery             | 取得公告詳細資訊                       |
+
+### 文件下載
+
+| 功能名稱       | API名稱                   | 功能說明                               |
+|----------------|---------------------------|----------------------------------------|
+| 文件下載       | appDownloadFile           | 檔案下載                               |
+| 文件下載       | appPaperList              | 取得文件下載清單                       |
+
+### 出差變更
+
+| 功能名稱       | API名稱                   | 功能說明                               |
+|----------------|---------------------------|----------------------------------------|
+| 出差變更       | appTravelChangeAdd        | 員工出差變更                           |
+| 出差變更       | appTravelChangeApply      | 新增出差時程變更申請單畫面所需要的資訊 |
+| 出差變更       | appTravelChangeDetail     | 查詢該出差變更單詳細資料               |
+| 出差變更       | appTravelChangeField      | 出差變更單申請畫面欄位                 |
+| 出差變更       | appTravelChangeList       | 查詢單一員工該年月區間的出差變更資訊   |
+| 出差變更       | appTravelChangeMonth      | 查詢員工出差變更資訊                   |
+| 出差變更       | appTravelChangeVerifyField| 出差變更畫面欄位檢核                   |
+
+### 加班異常
+
+| 功能名稱       | API名稱                   | 功能說明                               |
+|----------------|---------------------------|----------------------------------------|
+| 加班異常       | appIrregularOvertimeApply | 加班異常欄位預設值                     |
+| 加班異常       | appIrregularOvertimeExec  | 異動加班異常                           |
+| 加班異常       | appIrregularOvertimeList  | 取得加班異常列表資訊                   |
+| 加班異常       | appIrregularOvertimeMail  | 加班異常寄信                           |
+| 加班異常       | appIrregularOvertimeMailRecord | 取得加班異常信件通知紀錄            |
+| 加班異常       | appIrregularOvertimeMonth | 取得加班異常資訊                       |
+| 加班異常       | appIrregularOvertimePDF   | 取得員工加班異常名單PDF                |
+| 加班異常       | appIrregularOvertimeViewType | 取得查詢條件顯示種類的下拉選項       |
+
+### 未結案單據
+
+| 功能名稱       | API名稱                   | 功能說明                               |
+|----------------|---------------------------|----------------------------------------|
+| 未結案單據     | appCaseDetail             | 未結案詳細資料                         |
+
+### 生物辨識
+
+| 功能名稱       | API名稱                   | 功能說明                               |
+|----------------|---------------------------|----------------------------------------|
+| 生物辨識       | appMemoryPwd              | 生物辨識記憶密碼驗證員工登入密碼       |
+| 生物辨識       | appMemorySalaryPwd        | 生物辨識記憶密碼驗證員工薪資條密碼     |
+
+## 考勤打卡
+
+| 功能名稱       | API名稱                   | 功能說明                               |
+|----------------|---------------------------|----------------------------------------|
+| 考勤打卡       | appGpsPunchCard           | GPS線上打卡                            |
+| 考勤打卡       | appGpsSetting             | 取得GPS打卡資訊                        |
+| 考勤打卡       | appWorkPlace              | 取得使用者上班地點資訊                 |
+
+### 考勤報表
+
+| 功能名稱       | API名稱                   | 功能說明                               |
+|----------------|---------------------------|----------------------------------------|
+| 考勤報表       | appAttendDetail           | 取得指定年月、員工考勤詳細資料         |
+| 考勤報表       | appAttendList             | 取得考勤列表資訊                       |
+| 考勤報表       | appAttendMonth            | 取得員工指定某年月考勤資訊             |
+
+### 考勤補卡
+
+| 功能名稱       | API名稱                   | 功能說明                               |
+|----------------|---------------------------|----------------------------------------|
+| 考勤補卡       | appQueryReason            | 取得補卡原因的下拉選項                 |
+| 考勤補卡       | appSupplementaryApply     | 取得補卡資訊與當天班別資訊             |
+| 考勤補卡       | appSupplementaryCardAdd   | 員工考勤補卡                           |
+| 考勤補卡       | appSupplementaryCardDetail| 查詢該補假詳細資料                     |
+| 考勤補卡       | appSupplementaryCardList  | 查詢單一員工該年月區間的補卡資訊       |
+| 考勤補卡       | appSupplementaryCardMonth | 取得員工補卡資訊                       |
+
+### 行事曆
+
+| 功能名稱       | API名稱                   | 功能說明                               |
+|----------------|---------------------------|----------------------------------------|
+| 行事曆         | appDeleteEmployeeCalendar | 刪除員工行事曆                         |
+| 行事曆         | appEditEmployeeCalendar   | 異動員工個人行事曆                     |
+| 行事曆         | appEmployeeCalendarList   | 取得特定員工行事曆資訊                 |
+| 行事曆         | appEmployeeCalendarQuery  | 取得員工個人行事曆特定事件詳細資料     |
+
+### 忘記密碼
+
+| 功能名稱       | API名稱                   | 功能說明                               |
+|----------------|---------------------------|----------------------------------------|
+| 忘記密碼       | appForgotPwd              | 執行忘記密碼                           |
+
+### 事後加班
+
+| 功能名稱       | API名稱                   | 功能說明                               |
+|----------------|---------------------------|----------------------------------------|
+| 事後加班       | appAfterwardsOvertimeApply| 新增事後加班單畫面所需要的資訊         |
+| 事後加班       | appAfterwardsOvertimeField| 事後加班單申請畫面欄位                 |
+
+### 待簽核單據
+
+| 功能名稱       | API名稱                   | 功能說明                               |
+|----------------|---------------------------|----------------------------------------|
+| 待簽核單據     | appFlowList               | 取得使用者待簽核單據詳細資料           |
+| 待簽核單據     | appFlowNotify             | 取得簽核單據數量                       |
+| 待簽核單據     | appFlowTodoList           | 取得使用者待簽核單據                   |
+
+## 首頁資訊
+
+| 功能名稱       | API名稱                   | 功能說明                               |
+|----------------|---------------------------|----------------------------------------|
+| 首頁資訊       | appHomePage               | 取得首頁資訊                           |
+
+### 個人獎金
+
+| 功能名稱       | API名稱                   | 功能說明                               |
+|----------------|---------------------------|----------------------------------------|
+| 個人獎金       | appSalbondIndate          | 取得員工指定年月獎金入帳日期資訊       |
+| 個人獎金       | appSalbondQuery           | 取得指定年月、員工獎金條明細資訊       |
+| 個人獎金       | appSalbondRecent          | 取得某員工最近一次獎金發放資訊         |
+
+### 個人薪資
+
+| 功能名稱       | API名稱                   | 功能說明                               |
+|----------------|---------------------------|----------------------------------------|
+| 個人薪資       | appSalaryCompanySuper     | 取得某員工公司別可視薪資範圍資料       |
+| 個人薪資       | appSalaryCount            | 發薪次數資訊                           |
+| 個人薪資       | appSalaryPwd              | 驗證員工薪資條密碼(獎金通用)           |
+| 個人薪資       | appSalaryQuery            | 取得指定年月、員工薪資條明細資訊       |
+| 個人薪資       | appSalaryRecent           | 取得某員工最近一次薪資發放資訊         |
+
+### 員工出差
+
+| 功能名稱       | API名稱                   | 功能說明                               |
+|----------------|---------------------------|----------------------------------------|
+| 員工出差       | appTravelAdd              | 員工出差                               |
+| 員工出差       | appTravelVerifyField      | 出差單畫面欄位檢核                     |
+| 員工出差       | appTravelDetail           | 查詢該出差單詳細資料                   |
+| 員工出差       | appTravelField            | 出差單申請畫面欄位                     |
