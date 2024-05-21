@@ -319,7 +319,7 @@ Here is a JSON representation of request.
                   "fieldName":{
                      "name":"欄位名稱",
                      "type":"string",
-                     "value":"申請時間",
+                     "value":"申請日期",
                      "format":"n/a",
                      "id":"fieldName"
                   }
