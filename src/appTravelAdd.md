@@ -1,5 +1,5 @@
 # appTravelAdd
-員工出差
+新增員工出差
 
 ### HTTP Request
 ```
@@ -17,6 +17,23 @@ POST
 | uid | 98599308101484732326 | String | 需透過appLogin取得
 | right | 51341911904173543336756162544864820 | String | 需透過appLogin取得 |
 | request | {'empid':'admin','startDate':'20220628','endDate':'20220630','startTime':'1230','endTime':'1830','note':'AndyHou測試出差單備註','jobAgent':'0169','flowAgent':'0169','flowAgent1':'','flowAgent2':'','flowAgent3':'',"travelType":"A",'travelPlace':'台北南港','traffic':'4','contact':'測試-聯絡方式','currency':'USD','isHoliday':false,'isBusinessTrip':false,'people':'測試-出差人員及分工方式','visit':'測試-拜訪對象','schedule':'測試-行程規劃','point':'測試-訪談重點及預期效果','authorize':'測試-希望授權事項及幅度','assist':'測試-協助他部門辦理事項','preCost':300.0,'scheduleList':[{'startDate':'20220628','endDate':'20220630','days':'3','city':'台北'}],'scheduleFile':[{'fileName':'測試檔案.jpg','fileData':''}],'travelFile':[{'fileName':'測試檔案.jpg','fileData':''}]} | Object | 異動條件
+
+### JSON representation
+Here is a JSON representation of request.
+```json
+{
+    "uid":"98599308101484732326",
+    "right":"51341911904173543336756162544864820",
+    "request":"{'empid':'admin','startDate':'20220628','endDate':'20220630','startTime':'1230','endTime':'1830','note':'AndyHou測試出差單備                      註','jobAgent':'0169','flowAgent':'0169','flowAgent1':'','flowAgent2':'','flowAgent3':'','travelType':'A','travelPlace':'台北南港','traffic':'4','contact':'測試-聯絡方式','currency':'USD','isHoliday':false,'isBusinessTrip':false,'people':'測試-出差人員及分工方式','visit':'測試-拜訪對象','schedule':'測試-行程規劃','point':'測試-訪談重點及預期效果','authorize':'測試-希望授權事項及幅度','assist':'測試-協助他部門辦理事項','preCost':300.0,'scheduleList':[{'startDate':'20220628','endDate':'20220630','days':'3','city':'台北'}],'scheduleFile':[{'fileName':'測試檔案.jpg','fileData':''}],'travelFile':[{'fileName':'測試檔案.jpg','fileData':''}]}"
+}
+```
+
+### Properties
+| Property | Type | Description |
+|:---------|:-----|:------------|
+| uid   | String | 加密後帳號 |
+| right | String | 加密後系統相關資料 |
+| request | Object | 要求本文 |
 
 ### JSON representation Case 1
 Here is a JSON representation of request.
@@ -136,7 +153,7 @@ Here is a JSON representation of request.
               "format": "n/a",
               "id": "confirmTitle"
             },
-            "confirmOption": {   --測試資料
+            "confirmOption": {
               "name": "確認視窗選項",
               "type": "array",
               "value": [
