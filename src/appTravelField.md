@@ -1513,6 +1513,13 @@ Here is a JSON representation of request.
                "format":"n/a",
                "id":"depCode"
             },
+            "workPlace":{
+               "name":"工作地點",
+               "type":"string",
+               "value":"台北-建八",
+               "format":"n/a",
+               "id":"workPlace"
+            },
             "applyDate":{
                "name":"申請日期",
                "type":"string",
