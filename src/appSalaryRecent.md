@@ -92,20 +92,49 @@ Here is a JSON representation of request.
 ```
 
 ### HTTP Response when No Data
-無資料則屬於正常範圍，正常來說可以沒有資料
+無資料則屬於正常範圍，將帶出系統年月與登入者公司等預設資料
 ```json
-{ --lucas修改架構
+{
    "status":"success",
    "message":[
       "回傳成功"
    ],
    "data":{
       "salaryRecent":{
-         "id":"salaryRecent", --lucas 改名
          "name":"最近一次薪資發放資訊",
-         "value":{},
          "type":"object",
-         "format":"n/a"
+         "value":{
+            "companyId":{
+               "name":"公司代號",
+               "type":"string",
+               "value":"1",
+               "format":"n/a",
+               "id":"companyId"
+            },
+            "salaryYM":{
+               "name":"薪資年月",
+               "type":"string",
+               "value":"202405",
+               "format":"YYYYmm",
+               "id":"salaryYM"
+            },
+            "count":{
+               "name":"計薪次數",
+               "type":"integer",
+               "value":1,
+               "format":"count",
+               "id":"count"
+            },
+            "indate":{
+               "name":"入帳日期",
+               "type":"string",
+               "value":"20240531",
+               "format":"YYYYmmdd",
+               "id":"indate"
+            }
+         },
+         "format":"n/a",
+         "id":"salaryRecent"
       }
    }
 }
