@@ -39,7 +39,8 @@ Here is a JSON representation of request.
 |:----------|:-------------|:-----|:------------|:------------|:------------|
 | uid | admin | String | 登入帳號 | Y | n/a |
 | pwd | 1234 | String | 登入舊密碼 | Y | n/a |
-| newPwd | 1234 | String | 登入新密碼 | Y | n/a |
+| newPwd | 12345 | String | 登入新密碼 | Y | n/a |
+| checkNewPwd | 12345 | String | 登入新密碼確認 | Y | n/a |
 
 ### HTTP Response when Successful
 ```json
