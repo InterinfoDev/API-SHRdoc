@@ -24,6 +24,7 @@ Here is a JSON representation of request.
       "uid":"admin",
       "pwd":"1234",
       "newPwd":"test",
+      "checkNewPwd":"test"
   }
 }
 ```
