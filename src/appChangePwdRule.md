@@ -3,7 +3,7 @@
 
 ### HTTP Request
 ```
-https://114.34.125.246:8090/servlet/HRNative/appChangePwd
+https://114.34.125.246:8090/servlet/HRNative/appChangePwdRule
 ```
 
 ### HTTP Request Method
