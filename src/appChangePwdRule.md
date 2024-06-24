@@ -44,7 +44,7 @@ Here is a JSON representation of request.
    "data":{
       "checkRule":{
          "name":"清單資訊",
-         "type":"array",
+         "type":"object",
          "value":{
             "checkUppercase":{
                "name":"大寫長度需大於等於",
