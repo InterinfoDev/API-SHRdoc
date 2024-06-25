@@ -14,14 +14,11 @@ POST
 ### Request body
 | Key | Value | Type | Description |
 |:----------|:-------------|:-----|:------------|
-| request | {} | Object | 請將帳號密碼組成物件 |
 
 ### JSON representation
 Here is a JSON representation of request.
 ```json
 {
-  "request":{
-  }
 }
 ```
 
