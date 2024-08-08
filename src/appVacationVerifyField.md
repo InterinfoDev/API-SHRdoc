@@ -16,37 +16,28 @@ POST
 |:----------|:-------------|:-----|:------------|
 | uid | 98599308101484732326 | String | 需透過appLogin取得
 | right | 51341911904173543336756162544864820 | String | 需透過appLogin取得 |
-| request | {'fieldName':'startDate', 'empid':'admin', 'vacationCode':'000', 'startDate':'20220429', 'endDate':'20220429', 'startTime':'0830', 'endTime':'1700', 'reason':'kevin中文測試', 'delayReason':'', 'jobAgent':'10900015', 'specialDate':'', 'isHoliday':false, 'planeTicket':0, 'flowAgent':'10900015', 'flowAgent1':'10900015', 'flowAgent2':'10900015', 'flowAgent3':'10900015', 'file':[{'fileName':'kevin.jpg','fileData':'base64'}]} | Object | 異動條件
+| request | {'fieldName':'vacationType', 'empid':'admin', 'vacationCode':'05', 'startDate':'20240808', 'endDate':'20240808', 'startTime':'0900', 'endTime':'1800', 'reason':'kevin中文測試', 'delayReason':'', 'jobAgent':'', 'specialDate':'20240506', 'isHoliday':false, 'planeTicket':0, 'flowAgent':'', 'firstFile':'', 'vacationType':'2'} | Object | 異動條件
 
 ### JSON representation Case 1
 Here is a JSON representation of request.
 ```json
 {
-   "uid":"98599308101484732326",
-   "right":"51341911904173543336756162544864820",
-   "request":{
-      "fieldName":"vacationStartDate",
-      "empid":"admin", 
-      "vacationCode":"000",
-      "startDate":"20220429",    
-      "endDate":"20220429",      
-      "startTime":"0830",       
-      "endTime":"1700",         
-      "reason":"kevin中文測試",
-      "delayReason":"",
-      "jobAgent":"10900015",
-      "specialDate":"",
-      "isHoliday":false,
-      "planeTicket":0,
-      "flowAgent":"10900015",
-      "flowAgent1":"10900015",    
-      "flowAgent2":"10900015",    
-      "flowAgent3":"10900015",    
-      "file":[{
-        "fileName":"kevin.jpg",
-        "fileData":"base64"
-      }]
-   }
+   "fieldName":"vacationType",
+   "empid":"admin",
+   "vacationCode":"05",
+   "startDate":"20240808",
+   "endDate":"20240808",
+   "startTime":"0900",
+   "endTime":"1800",
+   "reason":"kevin中文測試",
+   "delayReason":"",
+   "jobAgent":"",
+   "specialDate":"20240506",
+   "isHoliday":false,
+   "planeTicket":0,
+   "flowAgent":"",
+   "firstFile":"",
+   "vacationType":"2"
 }
 ```
 
@@ -80,6 +71,7 @@ Here is a JSON representation of request.
 | file |  | String | 附件檔案 |  | n/a |
 | fileName | test.jpg | String | 附件檔案 | N | n/a |
 | fileData |  | String | 附件檔案 | N | base64 |
+| vacationType | 2 | String | 請假類別 | N | n/a |
 
 ### Using Field
 | FieldName | Description |
@@ -108,18 +100,11 @@ Here is a JSON representation of request.
                      "type":"array",
                      "value":[
                         {
-                           "name":"逾時請假原因",
+                           "name":"相關單號",
                            "type":"boolean",
-                           "value":false,
+                           "value":true,
                            "format":"n/a",
-                           "id":"delayReason"
-                        },
-                        {
-                           "name":"本次請假時間合計",
-                           "type":"boolean",
-                           "value":false,
-                           "format":"n/a",
-                           "id":"amt"
+                           "id":"outSideId"
                         }
                      ],
                      "format":"n/a",
@@ -130,46 +115,11 @@ Here is a JSON representation of request.
                      "type":"array",
                      "value":[
                         {
-                           "name":"起始日期",
-                           "type":"string",
-                           "value":"20240519",
-                           "format":"YYYYmmdd",
-                           "id":"startDate"
-                        },
-                        {
-                           "name":"結束日期",
-                           "type":"string",
-                           "value":"20240519",
-                           "format":"YYYYmmdd",
-                           "id":"endDate"
-                        },
-                        {
-                           "name":"起始時間",
-                           "type":"string",
-                           "value":"",
-                           "format":"HHmm",
-                           "id":"startTime"
-                        },
-                        {
-                           "name":"結束時間",
-                           "type":"string",
-                           "value":"",
-                           "format":"HHmm",
-                           "id":"endTime"
-                        },
-                        {
-                           "name":"逾時請假原因",
+                           "name":"相關單號",
                            "type":"string",
                            "value":"",
                            "format":"n/a",
-                           "id":"delayReason"
-                        },
-                        {
-                           "name":"本次請假時間合計",
-                           "type":"string",
-                           "value":"0",
-                           "format":"hour",
-                           "id":"amt"
+                           "id":"outSideId"
                         }
                      ],
                      "format":"n/a",
@@ -179,13 +129,7 @@ Here is a JSON representation of request.
                      "name":"設定欄位是否顯示",
                      "type":"array",
                      "value":[
-                        {
-                           "name":"逾時請假原因",
-                           "type":"boolean",
-                           "value":false,
-                           "format":"n/a",
-                           "id":"delayReason"
-                        }
+                        
                      ],
                      "format":"n/a",
                      "id":"setVisible"
@@ -201,7 +145,6 @@ Here is a JSON representation of request.
       "properties":{
          "format":{
             "HHmm":"時間時分",
-            "hour":"小時",
             "YYYYmmdd":"西元年月日",
             "n/a":""
          }
