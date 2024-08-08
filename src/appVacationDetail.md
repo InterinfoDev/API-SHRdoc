@@ -64,8 +64,8 @@ Here is a JSON representation of request.
       "properties":{
          "format":{
             "HHmm":"時間時分",
-            "hour":"小時",
             "YYYYmmdd":"西元年月日",
+            "day":"天",
             "n/a":""
          }
       },
@@ -76,7 +76,7 @@ Here is a JSON representation of request.
             "historyKey":{
                "name":"流程鍵值",
                "type":"string",
-               "value":"4155331322073258637810082871479386793510277398195316129455310019418389165116920755637226659208981954929854555966043052020559239038575437",
+               "value":"4155331322073258637810082871479386793510277398195316129455310019418389165116921234860488396039548966231257580264609128168951505392104391",
                "format":"n/a",
                "id":"historyKey"
             }
@@ -110,7 +110,7 @@ Here is a JSON representation of request.
                      "name":"欄位資料",
                      "type":"array",
                      "value":[
-                        "W00202309200001"
+                        "I00202408070001"
                      ],
                      "format":"n/a",
                      "id":"fieldValue"
@@ -148,7 +148,7 @@ Here is a JSON representation of request.
                      "name":"欄位資料",
                      "type":"array",
                      "value":[
-                        "三澧企業股份有限公司"
+                        "72英特內全名(中和)軟體股份有限公司"
                      ],
                      "format":"n/a",
                      "id":"fieldValue"
@@ -186,7 +186,7 @@ Here is a JSON representation of request.
                      "name":"欄位資料",
                      "type":"array",
                      "value":[
-                        "黃OO"
+                        "李OO"
                      ],
                      "format":"n/a",
                      "id":"fieldValue"
@@ -216,51 +216,6 @@ Here is a JSON representation of request.
                   "fieldId":{
                      "name":"欄位代號",
                      "type":"string",
-                     "value":"empFullEname",
-                     "format":"n/a",
-                     "id":"fieldId"
-                  },
-                  "fieldValue":{
-                     "name":"欄位資料",
-                     "type":"array",
-                     "value":[
-                        "SeaOO"
-                     ],
-                     "format":"n/a",
-                     "id":"fieldValue"
-                  },
-                  "fieldVisible":{
-                     "name":"欄位顯示",
-                     "type":"boolean",
-                     "value":true,
-                     "format":"n/a",
-                     "id":"fieldVisible"
-                  },
-                  "fieldName":{
-                     "name":"欄位名稱",
-                     "type":"string",
-                     "value":"員工英文姓名",
-                     "format":"n/a",
-                     "id":"fieldName"
-                  }
-               },
-               "format":"n/a",
-               "id":"field"
-            },
-            {
-               "name":"欄位資訊",
-               "type":"object",
-               "value":{
-                  "fieldType":{
-                     "name":"欄位類型",
-                     "type":"string",
-                     "value":"text",
-                     "format":"n/a",
-                     "id":"fieldType"
-                  },
-                  "fieldId":{
-                     "name":"欄位代號",
-                     "type":"string",
                      "value":"depFullName",
                      "format":"n/a",
                      "id":"fieldId"
@@ -269,7 +224,7 @@ Here is a JSON representation of request.
                      "name":"欄位資料",
                      "type":"array",
                      "value":[
-                        "營業一部"
+                        "英特內股份有限公司"
                      ],
                      "format":"n/a",
                      "id":"fieldValue"
@@ -307,7 +262,7 @@ Here is a JSON representation of request.
                      "name":"欄位資料",
                      "type":"array",
                      "value":[
-                        "公假"
+                        "喪假-八日-父母、繼養父母、配偶、承重祖父母"
                      ],
                      "format":"n/a",
                      "id":"fieldValue"
@@ -345,7 +300,7 @@ Here is a JSON representation of request.
                      "name":"欄位資料",
                      "type":"array",
                      "value":[
-                        "2023/09/20 09:00"
+                        "2024/08/08 09:30"
                      ],
                      "format":"n/a",
                      "id":"fieldValue"
@@ -383,7 +338,7 @@ Here is a JSON representation of request.
                      "name":"欄位資料",
                      "type":"array",
                      "value":[
-                        "2023/09/20 18:00"
+                        "2024/08/08 18:30"
                      ],
                      "format":"n/a",
                      "id":"fieldValue"
@@ -413,6 +368,44 @@ Here is a JSON representation of request.
                   "fieldId":{
                      "name":"欄位代號",
                      "type":"string",
+                     "value":"specialDate",
+                     "format":"n/a",
+                     "id":"fieldId"
+                  },
+                  "fieldValue":{
+                     "name":"欄位資料",
+                     "type":"array",
+                     "value":[
+                        "20240808"
+                     ],
+                     "format":"YYYYmmdd",
+                     "id":"fieldValue"
+                  },
+                  "fieldName":{
+                     "name":"欄位名稱",
+                     "type":"string",
+                     "value":"特殊日期",
+                     "format":"n/a",
+                     "id":"fieldName"
+                  }
+               },
+               "format":"n/a",
+               "id":"field"
+            },
+            {
+               "name":"欄位資訊",
+               "type":"object",
+               "value":{
+                  "fieldType":{
+                     "name":"欄位類型",
+                     "type":"string",
+                     "value":"text",
+                     "format":"n/a",
+                     "id":"fieldType"
+                  },
+                  "fieldId":{
+                     "name":"欄位代號",
+                     "type":"string",
                      "value":"amt",
                      "format":"n/a",
                      "id":"fieldId"
@@ -421,9 +414,9 @@ Here is a JSON representation of request.
                      "name":"欄位資料",
                      "type":"array",
                      "value":[
-                        "8.00"
+                        "1.00"
                      ],
-                     "format":"hour",
+                     "format":"day",
                      "id":"fieldValue"
                   },
                   "fieldName":{
@@ -497,7 +490,7 @@ Here is a JSON representation of request.
                      "name":"欄位資料",
                      "type":"array",
                      "value":[
-                        "送一張隱藏職務代理人iOS"
+                        ""
                      ],
                      "format":"n/a",
                      "id":"fieldValue"
@@ -527,6 +520,141 @@ Here is a JSON representation of request.
                   "fieldId":{
                      "name":"欄位代號",
                      "type":"string",
+                     "value":"vacationType",
+                     "format":"n/a",
+                     "id":"fieldId"
+                  },
+                  "fieldValue":{
+                     "name":"欄位資料",
+                     "type":"array",
+                     "value":[
+                        "大陸（不含港澳）"
+                     ],
+                     "format":"n/a",
+                     "id":"fieldValue"
+                  },
+                  "fieldVisible":{
+                     "name":"欄位顯示",
+                     "type":"boolean",
+                     "value":true,
+                     "format":"n/a",
+                     "id":"fieldVisible"
+                  },
+                  "fieldName":{
+                     "name":"欄位名稱",
+                     "type":"string",
+                     "value":"請假類別",
+                     "format":"n/a",
+                     "id":"fieldName"
+                  }
+               },
+               "format":"n/a",
+               "id":"field"
+            },
+            {
+               "name":"欄位資訊",
+               "type":"object",
+               "value":{
+                  "fieldType":{
+                     "name":"欄位類型",
+                     "type":"string",
+                     "value":"text",
+                     "format":"n/a",
+                     "id":"fieldType"
+                  },
+                  "fieldId":{
+                     "name":"欄位代號",
+                     "type":"string",
+                     "value":"vacationType",
+                     "format":"n/a",
+                     "id":"fieldId"
+                  },
+                  "fieldValue":{
+                     "name":"欄位資料",
+                     "type":"array",
+                     "value":[
+                        "testName"
+                     ],
+                     "format":"n/a",
+                     "id":"fieldValue"
+                  },
+                  "fieldVisible":{
+                     "name":"欄位顯示",
+                     "type":"boolean",
+                     "value":false,
+                     "format":"n/a",
+                     "id":"fieldVisible"
+                  },
+                  "fieldName":{
+                     "name":"欄位名稱",
+                     "type":"string",
+                     "value":"親屬姓名",
+                     "format":"n/a",
+                     "id":"fieldName"
+                  }
+               },
+               "format":"n/a",
+               "id":"field"
+            },
+            {
+               "name":"欄位資訊",
+               "type":"object",
+               "value":{
+                  "fieldType":{
+                     "name":"欄位類型",
+                     "type":"string",
+                     "value":"text",
+                     "format":"n/a",
+                     "id":"fieldType"
+                  },
+                  "fieldId":{
+                     "name":"欄位代號",
+                     "type":"string",
+                     "value":"vacationType",
+                     "format":"n/a",
+                     "id":"fieldId"
+                  },
+                  "fieldValue":{
+                     "name":"欄位資料",
+                     "type":"array",
+                     "value":[
+                        "GB000202408070001"
+                     ],
+                     "format":"n/a",
+                     "id":"fieldValue"
+                  },
+                  "fieldVisible":{
+                     "name":"欄位顯示",
+                     "type":"boolean",
+                     "value":true,
+                     "format":"n/a",
+                     "id":"fieldVisible"
+                  },
+                  "fieldName":{
+                     "name":"欄位名稱",
+                     "type":"string",
+                     "value":"相關單號",
+                     "format":"n/a",
+                     "id":"fieldName"
+                  }
+               },
+               "format":"n/a",
+               "id":"field"
+            },
+            {
+               "name":"欄位資訊",
+               "type":"object",
+               "value":{
+                  "fieldType":{
+                     "name":"欄位類型",
+                     "type":"string",
+                     "value":"text",
+                     "format":"n/a",
+                     "id":"fieldType"
+                  },
+                  "fieldId":{
+                     "name":"欄位代號",
+                     "type":"string",
                      "value":"jobAgent",
                      "format":"n/a",
                      "id":"fieldId"
@@ -535,7 +663,7 @@ Here is a JSON representation of request.
                      "name":"欄位資料",
                      "type":"array",
                      "value":[
-                        "9111001 張OO"
+                        "0310 卓OO"
                      ],
                      "format":"n/a",
                      "id":"fieldValue"
