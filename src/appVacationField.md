@@ -193,7 +193,7 @@ Here is a JSON representation of request.
             "fieldEditable": {
               "name": "開放編輯",
               "type": "boolean",
-              "value": "true",
+              "value": true,
               "format": "n/a",
               "id": "fieldEditable"
             },
@@ -207,7 +207,7 @@ Here is a JSON representation of request.
             "fieldVisible": {
               "name": "欄位顯示",
               "type": "boolean",
-              "value": "true",
+              "value": true,
               "format": "n/a",
               "id": "fieldVisible"
             }
