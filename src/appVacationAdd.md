@@ -16,7 +16,7 @@ POST
 |:----------|:-------------|:-----|:------------|
 | uid | 98599308101484732326 | String | 需透過appLogin取得
 | right | 51341911904173543336756162544864820 | String | 需透過appLogin取得 |
-| request | {'empid':'admin', 'vacationCode':'000', 'startDate':'20220429', 'endDate':'20220429', 'startTime':'0830', 'endTime':'1700', 'reason':'kevin中文測試', 'delayReason':'', 'jobAgent':'10900015', 'specialDate':'', 'isHoliday':false, 'planeTicket':0, 'flowAgent':'10900015', 'flowAgent1':'10900015', 'flowAgent2':'10900015', 'flowAgent3':'10900015', 'file':[{'fileName':'kevin.jpg','fileData':'base64'}], 'confirmDialog':[{'confirmKey':'value'}]} | Object | 異動條件
+| request | {'empid':'admin', 'vacationCode':'000', 'startDate':'20220429', 'endDate':'20220429', 'startTime':'0830', 'endTime':'1700', 'reason':'kevin中文測試', 'delayReason':'', 'place':'', 'vacationType':'','outSideId':'', 'familyName':'','jobAgent':'10900015', 'specialDate':'', 'isHoliday':false, 'planeTicket':0, 'flowAgent':'10900015', 'flowAgent1':'10900015', 'flowAgent2':'10900015', 'flowAgent3':'10900015', 'file':[{'fileName':'kevin.jpg','fileData':'base64'}], 'confirmDialog':[{'confirmKey':'value'}]} | Object | 異動條件
 
 ### JSON representation Case 1
 Here is a JSON representation of request.
@@ -27,20 +27,24 @@ Here is a JSON representation of request.
    "request":{
       "empid":"admin", 
       "vacationCode":"000",
-      "startDate":"20220429",  --kevin 改成startDate
-      "endDate":"20220429",    --kevin 改成endDate
-      "startTime":"0830",      --kevin 改成startTime
-      "endTime":"1700",        --kevin 改成endTime
+      "startDate":"20220429",  
+      "endDate":"20220429",   
+      "startTime":"0830",    
+      "endTime":"1700",    
       "reason":"kevin中文測試",
       "delayReason":"",
       "jobAgent":"10900015",
       "specialDate":"",
       "isHoliday":false,
       "planeTicket":0,
+      "specialDate":"",
+      "place":"",
+      "outSideId":"",
+      "familyName":"",
       "flowAgent":"10900015",
-      "flowAgent1":"10900015",   --kevin 改成flowAgent1
-      "flowAgent2":"10900015",   --kevin 改成flowAgent2
-      "flowAgent3":"10900015",   --kevin 改成flowAgent3
+      "flowAgent1":"10900015",   
+      "flowAgent2":"10900015",   
+      "flowAgent3":"10900015",  
       "file":[{
         "fileName":"kevin.jpg",
         "fileData":"base64"
@@ -74,6 +78,10 @@ Here is a JSON representation of request.
 | specialDate |  | String | 特殊日期 | N | YYYYmmdd |
 | isHoliday | false | boolean | 是否包含假日 | N | n/a |
 | planeTicket | 0 | integer | 機票 | N | ticket |
+| place |  | String | 地點 | N | ticket |
+| vacationType |  | String | 請假類別 | N | ticket |
+| outSideId |  | String | 相關單號 | N | ticket |
+| familyName |  | String | 親屬姓名 | N | ticket |
 | flowAgent | 10900015 | String | 簽核代理人 | N | n/a | 
 | flowAgent1 | 10900015 | String | 代理人一 | N | n/a | 
 | flowAgent2 | 10900015 | String | 代理人二 | N | n/a | 
