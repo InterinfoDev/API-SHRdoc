@@ -39,6 +39,7 @@ Here is a JSON representation of request.
       "planeTicket":0,
       "specialDate":"",
       "place":"",
+      "vacationType":"",
       "outSideId":"",
       "familyName":"",
       "flowAgent":"10900015",
