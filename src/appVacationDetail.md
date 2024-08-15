@@ -610,7 +610,7 @@ Here is a JSON representation of request.
                   "fieldId":{
                      "name":"欄位代號",
                      "type":"string",
-                     "value":"vacationType",
+                     "value":"outsideId",
                      "format":"n/a",
                      "id":"fieldId"
                   },
