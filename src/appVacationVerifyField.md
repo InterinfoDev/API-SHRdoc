@@ -104,7 +104,7 @@ Here is a JSON representation of request.
                   "type": "boolean",
                   "value": true,
                   "format": "n/a",
-                  "id": "outSideId"
+                  "id": "outsideId"
                 }
               ],
               "format": "n/a",
@@ -119,7 +119,7 @@ Here is a JSON representation of request.
                   "type": "string",
                   "value": "",
                   "format": "n/a",
-                  "id": "outSideId"
+                  "id": "outsideId"
                 }
               ],
               "format": "n/a",
@@ -134,7 +134,7 @@ Here is a JSON representation of request.
                   "type": "boolean",
                   "value": true,
                   "format": "n/a",
-                  "id": "outSideId"
+                  "id": "outsideId"
                 }
               ],
               "format": "n/a",
