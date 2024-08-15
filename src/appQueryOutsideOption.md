@@ -61,20 +61,6 @@ Here is a JSON representation of request.
                "name":"相關單號資訊",
                "type":"object",
                "value":{
-                  "startDate":{
-                     "name":"起始日期",
-                     "type":"string",
-                     "value":"20240808",
-                     "format":"YYYYmmdd",
-                     "id":"startDate"
-                  },
-                  "endDate":{
-                     "name":"結束日期",
-                     "type":"string",
-                     "value":"20240808",
-                     "format":"YYYYmmdd",
-                     "id":"endDate"
-                  },
                   "id":{
                      "name":"相關單號",
                      "type":"string",
