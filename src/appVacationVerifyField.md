@@ -82,74 +82,80 @@ Here is a JSON representation of request.
 ### HTTP Response when Successful
 ```json
 {
-   "status":"success",
-   "message":[
-      "回傳成功"
-   ],
-   "data":{
-      "verifyResult":{
-         "name":"檢核結果",
-         "type":"object",
-         "value":{
-            "actions":{
-               "name":"異動欄位",
-               "type":"object",
-               "value":{
-                  "setEditable":{
-                     "name":"設定欄位可否編輯",
-                     "type":"array",
-                     "value":[
-                        {
-                           "name":"相關單號",
-                           "type":"boolean",
-                           "value":true,
-                           "format":"n/a",
-                           "id":"outSideId"
-                        }
-                     ],
-                     "format":"n/a",
-                     "id":"setEditable"
-                  },
-                  "setValue":{
-                     "name":"設定欄位值",
-                     "type":"array",
-                     "value":[
-                        {
-                           "name":"相關單號",
-                           "type":"string",
-                           "value":"",
-                           "format":"n/a",
-                           "id":"outSideId"
-                        }
-                     ],
-                     "format":"n/a",
-                     "id":"setValue"
-                  },
-                  "setVisible":{
-                     "name":"設定欄位是否顯示",
-                     "type":"array",
-                     "value":[
-                        
-                     ],
-                     "format":"n/a",
-                     "id":"setVisible"
-                  }
-               },
-               "format":"n/a",
-               "id":"actions"
+  "status": "success",
+  "message": [
+    "回傳成功"
+  ],
+  "data": {
+    "verifyResult": {
+      "name": "檢核結果",
+      "type": "object",
+      "value": {
+        "actions": {
+          "name": "異動欄位",
+          "type": "object",
+          "value": {
+            "setEditable": {
+              "name": "設定欄位可否編輯",
+              "type": "array",
+              "value": [
+                {
+                  "name": "相關單號",
+                  "type": "boolean",
+                  "value": true,
+                  "format": "n/a",
+                  "id": "outSideId"
+                }
+              ],
+              "format": "n/a",
+              "id": "setEditable"
+            },
+            "setValue": {
+              "name": "設定欄位值",
+              "type": "array",
+              "value": [
+                {
+                  "name": "相關單號",
+                  "type": "string",
+                  "value": "",
+                  "format": "n/a",
+                  "id": "outSideId"
+                }
+              ],
+              "format": "n/a",
+              "id": "setValue"
+            },
+            "setVisible": {
+              "name": "設定欄位是否顯示",
+              "type": "array",
+              "value": [
+                {
+                  "name": "相關單號",
+                  "type": "boolean",
+                  "value": true,
+                  "format": "n/a",
+                  "id": "outSideId"
+                }
+              ],
+              "format": "n/a",
+              "id": "setVisible"
             }
-         },
-         "format":"n/a",
-         "id":"verifyResult"
+          },
+          "format": "n/a",
+          "id": "actions"
+        }
       },
-      "properties":{
-         "format":{
-            "HHmm":"時間時分",
-            "YYYYmmdd":"西元年月日",
-            "n/a":""
-         }
+      "format": "n/a",
+      "id": "verifyResult"
+    },
+    "properties": {
+      "format": {
+        "HHmm": "時間時分",
+        "YYYYmmdd": "西元年月日",
+        "n/a": ""
       }
-   }
+    }
+  }
 }
 ```
 
