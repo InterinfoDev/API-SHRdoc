@@ -244,7 +244,7 @@ Here is a JSON representation of request.
           "format": "n/a",
           "id": "startDate"
         },
-        "outSideId": {
+        "outsideId": {
           "name": "相關單號",
           "type": "object",
           "value": {
@@ -271,7 +271,7 @@ Here is a JSON representation of request.
             }
           },
           "format": "n/a",
-          "id": "outSideId"
+          "id": "outsideId"
         },
         "uploadFile": {
           "name": "附件上傳",
