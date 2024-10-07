@@ -41,6 +41,12 @@ Here is a JSON representation of request.
 | 2 | 大聲公 |
 | 3 | 噠噠 |
 
+### bellType
+| FunctionCode | FunctionName |
+|:---------|:------------|
+| 1 | 紅點 |
+| 2 | NEW |
+
 ### Request Properties
 | Key | Value | Type | Description | Required | Format |
 |:----------|:-------------|:-----|:------------|:------------|:------------|
@@ -100,7 +106,7 @@ Here is a JSON representation of request.
             "companySimpleName":{
                "name":"公司簡稱",
                "type":"string",
-               "value":"三澧",
+               "value":"英特內",
                "format":"n/a",
                "id":"companySimpleName"
             },
@@ -167,12 +173,26 @@ Here is a JSON representation of request.
          "name":"系統參數",
          "type":"object",
          "value":{
+            "bellType":{
+               "name":"鈴鐺預設新通知樣式",
+               "type":"string",
+               "value":"2",
+               "format":"n/a",
+               "id":"bellType"
+            },
             "tabBarControllerThirdFunction":{
                "name":"Tab Bar Controller 第三項功能",
                "type":"string",
-               "value":"1",
+               "value":"3",
                "format":"n/a",
                "id":"tabBarControllerThirdFunction"
+            },
+            "azureIP":{
+               "name":"雲端IP",
+               "type":"string",
+               "value":"https://www.interinfo.com.tw",
+               "format":"n/a",
+               "id":"azureIP"
             }
          },
          "format":"n/a",
