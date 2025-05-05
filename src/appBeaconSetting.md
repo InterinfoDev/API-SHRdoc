@@ -310,6 +310,101 @@ Here is a JSON representation of request.
                     "value": "999",
                     "format": "n/a",
                     "id": "routeKey"
+                  },
+                  "commuteDetail": {
+                    "name": "路線資訊",
+                    "type": "array",
+                    "value": [
+                      {
+                        "name": "子路線資訊",
+                        "type": "object",
+                        "value": {
+                          "startLocation": {
+                            "name": "起始地點",
+                            "type": "string",
+                            "value": "竹東 ",
+                            "format": "n/a",
+                            "id": "startLocation"
+                          },
+                          "endLocation": {
+                            "name": "結束地點",
+                            "type": "string",
+                            "value": "竹北",
+                            "format": "n/a",
+                            "id": "endLocation"
+                          },
+                          "transportation": {
+                            "name": "交通工具",
+                            "type": "string",
+                            "value": "計程車",
+                            "format": "n/a",
+                            "id": "transportation"
+                          }
+                        },
+                        "format": "n/a",
+                        "id": "subRoute"
+                      },
+                      {
+                        "name": "子路線資訊",
+                        "type": "object",
+                        "value": {
+                          "startLocation": {
+                            "name": "起始地點",
+                            "type": "string",
+                            "value": "竹北 ",
+                            "format": "n/a",
+                            "id": "startLocation"
+                          },
+                          "endLocation": {
+                            "name": "結束地點",
+                            "type": "string",
+                            "value": "台北",
+                            "format": "n/a",
+                            "id": "endLocation"
+                          },
+                          "transportation": {
+                            "name": "交通工具",
+                            "type": "string",
+                            "value": "高鐵",
+                            "format": "n/a",
+                            "id": "transportation"
+                          }
+                        },
+                        "format": "n/a",
+                        "id": "subRoute"
+                      },
+                      {
+                        "name": "子路線資訊",
+                        "type": "object",
+                        "value": {
+                          "startLocation": {
+                            "name": "起始地點",
+                            "type": "string",
+                            "value": "台北車站 ",
+                            "format": "n/a",
+                            "id": "startLocation"
+                          },
+                          "endLocation": {
+                            "name": "結束地點",
+                            "type": "string",
+                            "value": "英特內軟體股份有限公司",
+                            "format": "n/a",
+                            "id": "endLocation"
+                          },
+                          "transportation": {
+                            "name": "交通工具",
+                            "type": "string",
+                            "value": "捷運",
+                            "format": "n/a",
+                            "id": "transportation"
+                          }
+                        },
+                        "format": "n/a",
+                        "id": "subRoute"
+                      }
+                    ],
+                    "format": "n/a",
+                    "id": "routeInformation"
                   }
                 }
               ],
