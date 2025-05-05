@@ -43,47 +43,206 @@ Here is a JSON representation of request.
 ### HTTP Response when Successful2
 ```json
 {
-   "status":"success",
-   "message":[
-      "回傳成功"
-   ],
-   "data":{
-      "properties":{
-         "format":{
-            "n/a":""
-         }
-      },
-      "button":{
-         "name":"打卡按鈕資訊",
-         "type":"array",
-         "value":[
-            {
-               "name":"打卡按鈕資訊",
-               "type":"object",
-               "value":{
-                  "buttonKey":{
-                     "name":"按鈕鍵值",
-                     "type":"string",
-                     "value":"99924066065569631271",
-                     "format":"n/a",
-                     "id":"buttonKey"
-                  },
-                  "buttonName":{
-                     "name":"按鈕名稱",
-                     "type":"string",
-                     "value":"打卡",
-                     "format":"n/a",
-                     "id":"buttonName"
-                  }
-               },
-               "format":"n/a",
-               "id":"buttonInfo"
-            }
-         ],
-         "format":"n/a",
-         "id":"button"
+  "status": "success",
+  "message": [
+    "回傳成功"
+  ],
+  "data": {
+    "properties": {
+      "format": {
+        "n/a": ""
       }
-   }
+    },
+    "button": {
+      "name": "打卡按鈕資訊",
+      "type": "array",
+      "value": [
+        {
+          "name": "打卡按鈕資訊",
+          "type": "object",
+          "value": {
+            "buttonKey": {
+              "name": "按鈕鍵值",
+              "type": "string",
+              "value": "99924066065569631271",
+              "format": "n/a",
+              "id": "buttonKey"
+            },
+            "buttonName": {
+              "name": "按鈕名稱",
+              "type": "string",
+              "value": "打卡",
+              "format": "n/a",
+              "id": "buttonName"
+            }
+          },
+          "format": "n/a",
+          "id": "buttonInfo"
+        }
+      ],
+      "format": "n/a",
+      "id": "button"
+    },
+    "commuteDetail": {
+      "name": "通勤資訊",
+      "type": "array",
+      "value": [
+        {
+          "name": "路線資訊",
+          "type": "array",
+          "value": [
+            {
+              "name": "子路線資訊",
+              "type": "object",
+              "value": {
+                "startLocation": {
+                  "name": "起始地點",
+                  "type": "string",
+                  "value": "竹東 ",
+                  "format": "n/a",
+                  "id": "startLocation"
+                },
+                "endLocation": {
+                  "name": "結束地點",
+                  "type": "string",
+                  "value": "竹北",
+                  "format": "n/a",
+                  "id": "endLocation"
+                },
+                "transportation": {
+                  "name": "交通工具",
+                  "type": "string",
+                  "value": "計程車",
+                  "format": "n/a",
+                  "id": "transportation"
+                }
+              },
+              "format": "n/a",
+              "id": "subRoute"
+            },
+            {
+              "name": "子路線資訊",
+              "type": "object",
+              "value": {
+                "startLocation": {
+                  "name": "起始地點",
+                  "type": "string",
+                  "value": "竹北 ",
+                  "format": "n/a",
+                  "id": "startLocation"
+                },
+                "endLocation": {
+                  "name": "結束地點",
+                  "type": "string",
+                  "value": "台北",
+                  "format": "n/a",
+                  "id": "endLocation"
+                },
+                "transportation": {
+                  "name": "交通工具",
+                  "type": "string",
+                  "value": "高鐵",
+                  "format": "n/a",
+                  "id": "transportation"
+                }
+              },
+              "format": "n/a",
+              "id": "subRoute"
+            },
+            {
+              "name": "子路線資訊",
+              "type": "object",
+              "value": {
+                "startLocation": {
+                  "name": "起始地點",
+                  "type": "string",
+                  "value": "台北車站 ",
+                  "format": "n/a",
+                  "id": "startLocation"
+                },
+                "endLocation": {
+                  "name": "結束地點",
+                  "type": "string",
+                  "value": "英特內軟體股份有限公司",
+                  "format": "n/a",
+                  "id": "endLocation"
+                },
+                "transportation": {
+                  "name": "交通工具",
+                  "type": "string",
+                  "value": "捷運",
+                  "format": "n/a",
+                  "id": "transportation"
+                }
+              },
+              "format": "n/a",
+              "id": "subRoute"
+            }
+          ],
+          "format": "n/a",
+          "id": "routeInformation"
+        }
+      ],
+      "format": "n/a",
+      "id": "commuteDetail"
+    },
+    "applyForm": {
+      "name": "路線選擇",
+      "type": "object",
+      "value": {
+        "applyCommuteRoute ": {
+          "name": "申請路線",
+          "type": "object",
+          "value": {
+            "option": {
+              "name": "欄位選單項目",
+              "type": "array",
+              "value": [
+                {
+                  "routeName": {
+                    "name": "路線項目",
+                    "type": "string",
+                    "value": "路線1",
+                    "format": "n/a",
+                    "id": "routeName"
+                  },
+                  "routeKey": {
+                    "name": "路線key",
+                    "type": "string",
+                    "value": "1",
+                    "format": "n/a",
+                    "id": "routeKey"
+                  }
+                },
+                {
+                  "routeName": {
+                    "name": "路線項目",
+                    "type": "string",
+                    "value": "其他",
+                    "format": "n/a",
+                    "id": "routeName"
+                  },
+                  "routeKey": {
+                    "name": "路線key",
+                    "type": "string",
+                    "value": "999",
+                    "format": "n/a",
+                    "id": "routeKey"
+                  }
+                }
+              ],
+              "format": "n/a",
+              "id": "option"
+            }
+          },
+          "format": "n/a",
+          "id": "applyCommuteRoute"
+        }
+      },
+      "format": "n/a",
+      "id": "applyForm"
+    }
+  }
 }
 ```
 
