@@ -31,7 +31,8 @@ Here is a JSON representation of request.
             "longitude":345.32344 --lucas改名
           },
          "pushType":"B",
-         "buttonKey":"xxxxxxx"
+         "buttonKey":"xxxxxxx",
+         "commuteRoute":"1"
     }
 }
 ```
