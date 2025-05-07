@@ -16,7 +16,7 @@ POST
 |:----------|:-------------|:-----|:------------|
 | uid | 98599308101484732326 | String | 需透過appLogin取得
 | right | 51341911904173543336756162544864820 | String | 需透過appLogin取得 |
-| request | {buttonKey:xxxxxxx,gps:{latitude:21.23444,longitude:345.32344}, pushType:B} | Object | 打卡資訊
+| request | {buttonKey:xxxxxxx,gps:{latitude:21.23444,longitude:345.32344}, pushType:B, commuteRoute:"1"} | Object | 打卡資訊
 
 ### JSON representation
 Here is a JSON representation of request.
@@ -51,7 +51,7 @@ Here is a JSON representation of request.
 | longitude | 345.32344 | Decimal | 經度 | Y | GPS Location Data |
 | pushType | B | String | 打卡方式 | Y | n/a |
 | buttonKey | xxxxxxx | String | 按鈕鍵值 | Y | n/a |
-
+| commuteRoute | 1 | String | 路線 | Y | n/a |
 
 ### HTTP Response when Successful
 動態顯示規則:可以判斷punchResult底下的陣列fieldValue的value，如果有值就代表動態顯示，如果為空白就代表動態不顯示
