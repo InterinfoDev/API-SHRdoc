@@ -84,7 +84,7 @@ Here is a JSON representation of request.
       "id": "button"
     },
     "applyForm": {
-      "name": "路線選擇",
+      "name": "下拉選項",
       "type": "object",
       "value": {
         "applyCommuteRoute ": {
