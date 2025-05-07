@@ -47,7 +47,7 @@ Here is a JSON representation of request.
 | major | 1 | Integer | major | Y | N/A |
 | minor | 1 | Integer | minor  | Y | N/A |
 | buttonKey | xxxxxxx | String | 按鈕鍵值 | Y | n/a |
-
+| commuteRoute | 1 | String | 路線選項 | Y | n/a |
 ### HTTP Response when Successful
 ```json
 {
