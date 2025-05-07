@@ -16,7 +16,7 @@ POST
 |:----------|:-------------|:-----|:------------|
 | uid | 98599308101484732326 | String | 需透過appLogin取得
 | right | 51341911904173543336756162544864820 | String | 需透過appLogin取得 |
-| request | {"buttonKey":"xxxxxxx","beaconId":"B5B182C7-EAB1-4988-AA99", "major":1, "minor":1} | Object | 打卡資訊
+| request | {"buttonKey":"xxxxxxx","beaconId":"B5B182C7-EAB1-4988-AA99", "major":1, "minor":1, "commuteRoute":"1"} | Object | 打卡資訊
 
 ### JSON representation
 Here is a JSON representation of request.
@@ -28,7 +28,8 @@ Here is a JSON representation of request.
         "beaconId":"B5B182C7-EAB1-4988-AA99",
         "major":1,  --kevin 新增major
         "minor":1,    --kevin 新增minor
-        "buttonKey":"xxxxxxx"
+        "buttonKey":"xxxxxxx",
+        "commuteRoute":"1"
     }
 }
 ```
