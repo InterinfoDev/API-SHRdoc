@@ -203,7 +203,7 @@ Here is a JSON representation of request.
                       }
                     ],
                     "format": "n/a",
-                    "id": "routeInformation"
+                    "id": "commuteDetail"
                   }
                 },
                 {
@@ -314,7 +314,7 @@ Here is a JSON representation of request.
                       }
                     ],
                     "format": "n/a",
-                    "id": "routeInformation"
+                    "id": "commuteDetail"
                   }
                 }
               ],
