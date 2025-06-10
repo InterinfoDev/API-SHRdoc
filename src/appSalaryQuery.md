@@ -677,9 +677,9 @@ Here is a JSON representation of request.
             {
               "content": {
                 "name": "其他補充事項內容",
-                "type": "decimal",
+                "type": "string",
                 "value": "test123",
-                "format": "currency",
+                "format": "n/a",
                 "id": "content"
               },
               "title": {
