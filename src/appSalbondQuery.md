@@ -341,9 +341,29 @@ Here is a JSON representation of request.
       },
       "notes":{
          "id":"notes", --lucas 改名
-         "name":"其他補充事項(預留空間)",
+         "name":"其他補充事項",
          "value":[
-            
+             "salNo": {
+                "name": "獎金項目代號",
+                "type": "string",
+                "value": "",
+                "format": "n/a",
+                "id": "salNo"
+            },
+            "salAmount": {
+                "name": "獎金項目金額",
+                "type": "decimal",
+                "value": 0.0,
+                "format": "currency",
+                "id": "salAmount"
+            },
+            "salName": {
+                "name": "獎金項目名稱",
+                "type": "string",
+                "value": "補充保費",
+                "format": "n/a",
+                "id": "salName"
+            }
          ],
          "type":"array",
          "format":"n/a"
