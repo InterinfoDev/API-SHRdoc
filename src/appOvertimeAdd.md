@@ -16,7 +16,7 @@ POST
 |:----------|:-------------|:-----|:------------|
 | uid | 98599308101484732326 | String | 需透過appLogin取得
 | right | 51341911904173543336756162544864820 | String | 需透過appLogin取得 |
-| request | {'empid':'9912011', 'overplanPno':'', 'startDate':'20220711', 'startTime':'2100', 'endTime':'2300', 'reason':'kevin中文實際加班單測試', 'payType':'B', 'overtimeDepartment':'9', 'allowanceClass':'', 'overtimeType':'A', 'totalPayHour':'2.0', 'totalRestHour':'0.0', 'newEatHour':'0.0', 'approvedProject':'000', 'oldEatHour':'0.0', 'isEat':true, 'beforeWork':false, 'naturalDisaster':false, 'earlyLeave':false, 'misAmt':'0', 'file':[{'fileName':'kevin.jpg','fileData':'xxx'}], 'confirmDialog':[{'confirmKey':'value'}]} | Object | 異動條件
+| request | {'empid':'9912011', 'overplanPno':'', 'startDate':'20220711', 'startTime':'2100', 'endTime':'2300', 'reason':'kevin中文實際加班單測試', 'payType':'B', 'overtimeDepartment':'9', 'allowanceClass':'', 'overtimeType':'A', 'totalPayHour':'2.0', 'totalRestHour':'0.0', 'newEatHour':'0.0', 'approvedProject':'000', 'oldEatHour':'0.0', 'isEat':true, 'isNotCard':true, 'beforeWork':false, 'naturalDisaster':false, 'earlyLeave':false, 'misAmt':'0', 'file':[{'fileName':'kevin.jpg','fileData':'xxx'}], 'confirmDialog':[{'confirmKey':'value'}]} | Object | 異動條件
 
 ### JSON representation Case 1
 Here is a JSON representation of request.
@@ -41,6 +41,7 @@ Here is a JSON representation of request.
       "oldEatHour":"0.0",
       "approvedProject":"222",
       "isEat":true,
+      "isNotCard":true,
       "earlyLeave":false,
       "naturalDisaster":false,
       "beforeWork":false,
@@ -82,6 +83,7 @@ Here is a JSON representation of request.
 | oldEatHour | 0.0 | String | 原用餐時間 | Y | hour |
 | approvedProject | 222 | String | 核准文號 | Y | n/a |
 | isEat | false | boolean | 是否用餐 | Y | n/a | 
+| isNotCard | false | boolean | 免刷卡 | Y | n/a | 
 | beforeWork | false | boolean | 跨日往前加班 | Y | n/a | 
 | naturalDisaster | false | boolean | 天災 | Y | n/a | 
 | earlyLeave | false | boolean | 申請提早退勸 | Y | n/a | 
