@@ -881,6 +881,42 @@ Here is a JSON representation of request.
                "id":"field"
             },
             {
+                "name": "欄位資訊",
+                    "type": "object",
+                    "value": {
+                        "fieldType": {
+                            "name": "欄位類型",
+                            "type": "string",
+                            "value": "switch",
+                            "format": "n/a",
+                            "id": "fieldType"
+                        },
+                        "fieldId": {
+                            "name": "欄位代號",
+                            "type": "string",
+                            "value": "isNotCard",
+                            "format": "n/a",
+                            "id": "fieldId"
+                        },
+                        "switch": {
+                            "name": "開關",
+                            "type": "boolean",
+                            "value": true,
+                            "format": "n/a",
+                            "id": "switch"
+                        },
+                        "fieldName": {
+                            "name": "欄位名稱",
+                            "type": "string",
+                            "value": "免刷卡",
+                            "format": "n/a",
+                            "id": "fieldName"
+                        }
+                    },
+                    "format": "n/a",
+                    "id": "field"
+                },
+            {
                "name":"欄位資訊",
                "type":"object",
                "value":{
@@ -892,6 +928,546 @@ Here is a JSON representation of request.
                      "id":"fieldType"
                   },
                   "fieldId":{
+                     "name":"欄位代號",
+                     "type":"string",
+                     "value":"newEatAmt",
+                     "format":"n/a",
+                     "id":"fieldId"
+                  },
+                  "fieldValue":{
+                     "name":"欄位資料",
+                     "type":"array",
+                     "value":[
+                        "0.00"
+                     ],
+                     "format":"hour",
+                     "id":"fieldValue"
+                  },
+                  "fieldName":{
+                     "name":"欄位名稱",
+                     "type":"string",
+                     "value":"新用餐時間",
+                     "format":"n/a",
+                     "id":"fieldName"
+                  }
+               },
+               "format":"n/a",
+               "id":"field"
+            },
+            {
+               "name":"欄位資訊",
+               "type":"object",
+               "value":{
+                  "fieldType":{
+                     "name":"欄位類型",
+                     "type":"string",
+                     "value":"text",
+                     "format":"n/a",
+                     "id":"fieldType"
+                  },
+                  "fieldId":{
+                     "name":"欄位代號",
+                     "type":"string",
+                     "value":"oldEatAmt",
+                     "format":"n/a",
+                     "id":"fieldId"
+                  },
+                  "fieldValue":{
+                     "name":"欄位資料",
+                     "type":"array",
+                     "value":[
+                        "0.00"
+                     ],
+                     "format":"hour",
+                     "id":"fieldValue"
+                  },
+                  "fieldName":{
+                     "name":"欄位名稱",
+                     "type":"string",
+                     "value":"原用餐時間",
+                     "format":"n/a",
+                     "id":"fieldName"
+                  }
+               },
+               "format":"n/a",
+               "id":"field"
+            },
+            {
+               "name":"欄位資訊",
+               "type":"object",
+               "value":{
+                  "fieldType":{
+                     "name":"欄位類型",
+                     "type":"string",
+                     "value":"text",
+                     "format":"n/a",
+                     "id":"fieldType"
+                  },
+                  "fieldId":{
+                     "name":"欄位代號",
+                     "type":"string",
+                     "value":"totalPaidAmt",
+                     "format":"n/a",
+                     "id":"fieldId"
+                  },
+                  "fieldValue":{
+                     "name":"欄位資料",
+                     "type":"array",
+                     "value":[
+                        "8.00"
+                     ],
+                     "format":"hour",
+                     "id":"fieldValue"
+                  },
+                  "fieldName":{
+                     "name":"欄位名稱",
+                     "type":"string",
+                     "value":"總計給薪時數",
+                     "format":"n/a",
+                     "id":"fieldName"
+                  }
+               },
+               "format":"n/a",
+               "id":"field"
+            },
+            {
+                "name": "欄位資訊",
+                "type": "object",
+                "value": {
+                    "fieldType": {
+                        "name": "欄位類型",
+                        "type": "string",
+                        "value": "text",
+                        "format": "n/a",
+                        "id": "fieldType"
+                    },
+                    "fieldId": {
+                        "name": "欄位代號",
+                        "type": "string",
+                        "value": "oldTotalRestAmt",
+                        "format": "n/a",
+                        "id": "fieldId"
+                    },
+                    "fieldValue": {
+                        "name": "欄位資料",
+                        "type": "array",
+                        "value": [
+                            "A"
+                        ],
+                        "format": "hour",
+                        "id": "fieldValue"
+                    },
+                    "fieldName": {
+                        "name": "欄位名稱",
+                        "type": "string",
+                        "value": "原補休時數",
+                        "format": "n/a",
+                        "id": "fieldName"
+                    }
+                },
+                "format": "n/a",
+                "id": "field"
+            },
+            {
+               "name":"欄位資訊",
+               "type":"object",
+               "value":{
+                  "fieldType":{
+                     "name":"欄位類型",
+                     "type":"string",
+                     "value":"text",
+                     "format":"n/a",
+                     "id":"fieldType"
+                  },
+                  "fieldId":{
+                     "name":"欄位代號",
+                     "type":"string",
+                     "value":"totalRestAmt",
+                     "format":"n/a",
+                     "id":"fieldId"
+                  },
+                  "fieldValue":{
+                     "name":"欄位資料",
+                     "type":"array",
+                     "value":[
+                        "0.00"
+                     ],
+                     "format":"hour",
+                     "id":"fieldValue"
+                  },
+                  "fieldName":{
+                     "name":"欄位名稱",
+                     "type":"string",
+                     "value":"總計補休時數",
+                     "format":"n/a",
+                     "id":"fieldName"
+                  }
+               },
+               "format":"n/a",
+               "id":"field"
+            },
+            {
+                "name": "欄位資訊",
+                "type": "object",
+                "value": {
+                    "fieldType": {
+                        "name": "欄位類型",
+                        "type": "string",
+                        "value": "text",
+                        "format": "n/a",
+                        "id": "fieldType"
+                    },
+                    "fieldId": {
+                        "name": "欄位代號",
+                        "type": "string",
+                        "value": "misAmt",
+                        "format": "n/a",
+                        "id": "fieldId"
+                    },
+                    "fieldValue": {
+                        "name": "欄位資料",
+                        "type": "array",
+                        "value": [
+                            "0"
+                        ],
+                        "format": "currency",
+                        "id": "fieldValue"
+                    },
+                    "fieldName": {
+                        "name": "欄位名稱",
+                        "type": "string",
+                        "value": "誤餐費金額",
+                        "format": "n/a",
+                        "id": "fieldName"
+                    }
+                },
+                "format": "n/a",
+                "id": "field"
+            },
+            {
+               "name":"欄位資訊",
+               "type":"object",
+               "value":{
+                  "fieldType":{
+                     "name":"欄位類型",
+                     "type":"string",
+                     "value":"text",
+                     "format":"n/a",
+                     "id":"fieldType"
+                  },
+                  "fieldId":{
+                     "name":"欄位代號",
+                     "type":"string",
+                     "value":"apprdate",
+                     "format":"n/a",
+                     "id":"fieldId"
+                  },
+                  "fieldValue":{
+                     "name":"欄位資料",
+                     "type":"array",
+                     "value":[
+                        "20220101"
+                     ],
+                     "format":"YYYYmmdd",
+                     "id":"fieldValue"
+                  },
+                  "fieldName":{
+                     "name":"欄位名稱",
+                     "type":"string",
+                     "value":"入帳日期",
+                     "format":"n/a",
+                     "id":"fieldName"
+                  }
+               },
+               "format":"n/a",
+               "id":"field"
+            },
+            {
+               "name":"欄位資訊",
+               "type":"object",
+               "value":{
+                  "fieldType":{
+                     "name":"欄位類型",
+                     "type":"string",
+                     "value":"text",
+                     "format":"n/a",
+                     "id":"fieldType"
+                  },
+                  "fieldId":{
+                     "name":"欄位代號",
+                     "type":"string",
+                     "value":"note",
+                     "format":"n/a",
+                     "id":"fieldId"
+                  },
+                  "fieldValue":{
+                     "name":"欄位資料",
+                     "type":"array",
+                     "value":[
+                        "aa"
+                     ],
+                     "format":"n/a",
+                     "id":"fieldValue"
+                  },
+                  "fieldName":{
+                     "name":"欄位名稱",
+                     "type":"string",
+                     "value":"詳細資料",
+                     "format":"n/a",
+                     "id":"fieldName"
+                  }
+               },
+               "format":"n/a",
+               "id":"field"
+            },
+            {
+               "name":"欄位資訊",
+               "type":"object",
+               "value":{
+                  "fieldType":{
+                     "name":"欄位類型",
+                     "type":"string",
+                     "value":"switch",
+                     "format":"n/a",
+                     "id":"fieldType"
+                  },
+                  "fieldId":{
+                     "name":"欄位代號",
+                     "type":"string",
+                     "value":"beforeWork",
+                     "format":"n/a",
+                     "id":"fieldId"
+                  },
+                  "switch":{
+                     "name":"開關",
+                     "type":"boolean",
+                     "value":false,
+                     "format":"n/a",
+                     "id":"switch"
+                  },
+                  "fieldName":{
+                     "name":"欄位名稱",
+                     "type":"string",
+                     "value":"跨日往前加班",
+                     "format":"n/a",
+                     "id":"fieldName"
+                  }
+               },
+               "format":"n/a",
+               "id":"field"
+            },
+            {
+               "name":"欄位資訊",
+               "type":"object",
+               "value":{
+                  "fieldType":{
+                     "name":"欄位類型",
+                     "type":"string",
+                     "value":"file",
+                     "format":"n/a",
+                     "id":"fieldType"
+                  },
+                  "fieldId":{
+                     "name":"欄位代號",
+                     "type":"string",
+                     "value":"uploadFiles",
+                     "format":"n/a",
+                     "id":"fieldId"
+                  },
+                  "files":{
+                     "name":"附件資訊",
+                     "type":"array",
+                     "value":[
+                        
+                     ],
+                     "format":"n/a",
+                     "id":"files"
+                  },
+                  "fieldName":{
+                     "name":"欄位名稱",
+                     "type":"string",
+                     "value":"附件",
+                     "format":"n/a",
+                     "id":"fieldName"
+                  }
+               },
+               "format":"n/a",
+               "id":"field"
+            }
+         ],
+         "format":"n/a",
+         "id":"overtimeDetail"
+      },
+      "properties":{
+         "format":{
+            "HHmm":"時間時分",
+            "hour":"小時",
+            "YYYYmmdd":"西元年月日",
+            "n/a":""
+         }
+      },
+      "dailyRateDetail":{
+         "name":"平日加班倍率時數",
+         "type":"object",
+         "value":[
+            {
+               "name":"欄位資訊",
+               "type":"object",
+               "value":{
+                  "fieldType":{
+                     "name":"欄位類型",
+                     "type":"string",
+                     "value":"text",
+                     "format":"n/a",
+                     "id":"fieldType"
+                  },
+                  "fieldId":{
+                     "name":"欄位代號",
+                     "type":"string",
+                     "value":"dailyRate1",
+                     "format":"n/a",
+                     "id":"fieldId"
+                  },
+                  "fieldValue":{
+                     "name":"欄位資料",
+                     "type":"array",
+                     "value":[
+                        "0.00"
+                     ],
+                     "format":"hour",
+                     "id":"fieldValue"
+                  },
+                  "fieldName":{
+                     "name":"欄位名稱",
+                     "type":"string",
+                     "value":"0.00",
+                     "format":"n/a",
+                     "id":"fieldName"
+                  }
+               },
+               "format":"n/a",
+               "id":"field"
+            },
+            {
+               "name":"欄位資訊",
+               "type":"object",
+               "value":{
+                  "fieldType":{
+                     "name":"欄位類型",
+                     "type":"string",
+                     "value":"text",
+                     "format":"n/a",
+                     "id":"fieldType"
+                  },
+                  "fieldId":{
+                     "name":"欄位代號",
+                     "type":"string",
+                     "value":"dailyRate2",
+                     "format":"n/a",
+                     "id":"fieldId"
+                  },
+                  "fieldValue":{
+                     "name":"欄位資料",
+                     "type":"array",
+                     "value":[
+                        "0.00"
+                     ],
+                     "format":"hour",
+                     "id":"fieldValue"
+                  },
+                  "fieldName":{
+                     "name":"欄位名稱",
+                     "type":"string",
+                     "value":"1.34",
+                     "format":"n/a",
+                     "id":"fieldName"
+                  }
+               },
+               "format":"n/a",
+               "id":"field"
+            },
+            {
+               "name":"欄位資訊",
+               "type":"object",
+               "value":{
+                  "fieldType":{
+                     "name":"欄位類型",
+                     "type":"string",
+                     "value":"text",
+                     "format":"n/a",
+                     "id":"fieldType"
+                  },
+                  "fieldId":{
+                     "name":"欄位代號",
+                     "type":"string",
+                     "value":"dailyRate3",
+                     "format":"n/a",
+                     "id":"fieldId"
+                  },
+                  "fieldValue":{
+                     "name":"欄位資料",
+                     "type":"array",
+                     "value":[
+                        "0.00"
+                     ],
+                     "format":"hour",
+                     "id":"fieldValue"
+                  },
+                  "fieldName":{
+                     "name":"欄位名稱",
+                     "type":"string",
+                     "value":"1.67000",
+                     "format":"n/a",
+                     "id":"fieldName"
+                  }
+               },
+               "format":"n/a",
+               "id":"field"
+            },
+            {
+               "name":"欄位資訊",
+               "type":"object",
+               "value":{
+                  "fieldType":{
+                     "name":"欄位類型",
+                     "type":"string",
+                     "value":"text",
+                     "format":"n/a",
+                     "id":"fieldType"
+                  },
+                  "fieldId":{
+                     "name":"欄位代號",
+                     "type":"string",
+                     "value":"dailyRate4",
+                     "format":"n/a",
+                     "id":"fieldId"
+                  },
+                  "fieldValue":{
+                     "name":"欄位資料",
+                     "type":"array",
+                     "value":[
+                        "0.00"
+                     ],
+                     "format":"hour",
+                     "id":"fieldValue"
+                  },
+                  "fieldName":{
+                     "name":"欄位名稱",
+                     "type":"string",
+                     "value":"1.6700",
+                     "format":"n/a",
+                     "id":"fieldName"
+                  }
+               },
+               "format":"n/a",
+               "id":"field"
+            }
+         ],
+         "format":"n/a",
+         "id":"dailyRateDetail"
+      }
+   }
+}
                      "name":"欄位代號",
                      "type":"string",
                      "value":"newEatAmt",
