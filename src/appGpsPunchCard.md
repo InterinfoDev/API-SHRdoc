@@ -75,6 +75,13 @@ Here is a JSON representation of request.
                "format":"n/a",
                "id":"isError"
             },
+            "isBodyTempReport":{
+               "name":"是否需要跳轉體溫回報",
+               "type":"boolean",
+               "value":true,
+               "format":"n/a",
+               "id":"isBodyTempReport"
+            },
             "resultMessage":{
                "name":"回傳標題",
                "type":"boolean",
@@ -205,6 +212,13 @@ Here is a JSON representation of request.
                "format":"n/a",
                "id":"isError"
             },
+            "isBodyTempReport":{
+               "name":"是否需要跳轉體溫回報",
+               "type":"boolean",
+               "value":true,
+               "format":"n/a",
+               "id":"isBodyTempReport"
+            },
             "resultMessage":{
                "name":"回傳標題",
                "type":"boolean",
@@ -269,6 +283,13 @@ Here is a JSON representation of request.
                "value":true,
                "format":"n/a",
                "id":"isError"
+            },
+            "isBodyTempReport":{
+               "name":"是否需要跳轉體溫回報",
+               "type":"boolean",
+               "value":true,
+               "format":"n/a",
+               "id":"isBodyTempReport"
             },
             "resultMessage":{
                "name":"回傳標題",
