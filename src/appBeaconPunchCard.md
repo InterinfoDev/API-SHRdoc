@@ -86,12 +86,12 @@ Here is a JSON representation of request.
                      "format":"n/a",
                      "id":"isError"
                   },
-                  "isBodyTempReport":{
+                  "isBodyTemperatureReport":{
                      "name":"是否需要跳轉體溫回報",
                      "type":"boolean",
                      "value":true,
                      "format":"n/a",
-                     "id":"isBodyTempReport"
+                     "id":"isBodyTemperatureReport"
                   },
                   "resultTitle":{
                      "name":"回傳標題",
