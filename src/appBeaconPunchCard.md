@@ -86,6 +86,13 @@ Here is a JSON representation of request.
                      "format":"n/a",
                      "id":"isError"
                   },
+                  "isBodyTempReport":{
+                     "name":"是否需要跳轉體溫回報",
+                     "type":"boolean",
+                     "value":true,
+                     "format":"n/a",
+                     "id":"isBodyTempReport"
+                  },
                   "resultTitle":{
                      "name":"回傳標題",
                      "type":"string",
@@ -170,6 +177,13 @@ Here is a JSON representation of request.
                      "value":true,
                      "format":"n/a",
                      "id":"isError"
+                  },
+                  "isBodyTempReport":{
+                     "name":"是否需要跳轉體溫回報",
+                     "type":"boolean",
+                     "value":true,
+                     "format":"n/a",
+                     "id":"isBodyTempReport"
                   }
                },
                "format":"n/a",
