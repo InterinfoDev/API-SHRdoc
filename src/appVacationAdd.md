@@ -16,7 +16,7 @@ POST
 |:----------|:-------------|:-----|:------------|
 | uid | 98599308101484732326 | String | 需透過appLogin取得
 | right | 51341911904173543336756162544864820 | String | 需透過appLogin取得 |
-| request | {'empid':'admin', 'vacationCode':'000', 'startDate':'20220429', 'endDate':'20220429', 'startTime':'0830', 'endTime':'1700', 'reason':'kevin中文測試', 'delayReason':'', 'place':'', 'vacationType':'','outsideId':'', 'familyName':'','jobAgent':'10900015', 'specialDate':'', 'isHoliday':false, 'planeTicket':0, 'flowAgent':'10900015', 'flowAgent1':'10900015', 'flowAgent2':'10900015', 'flowAgent3':'10900015', 'file':[{'fileName':'kevin.jpg','fileData':'base64'}], 'confirmDialog':[{'confirmKey':'value'}]} | Object | 異動條件
+| request | {'empid':'admin', 'vacationCode':'000', 'startDate':'20220429', 'endDate':'20220429', 'startTime':'0830', 'endTime':'1700', 'reason':'kevin中文測試', 'delayReason':'', 'place':'', 'vacationType':'','outsideId':'', 'familyName':'','jobAgent':'10900015', 'specialDate':'', 'isHoliday':false, 'isReportFile':false, 'planeTicket':0, 'flowAgent':'10900015', 'flowAgent1':'10900015', 'flowAgent2':'10900015', 'flowAgent3':'10900015', 'file':[{'fileName':'kevin.jpg','fileData':'base64'}], 'confirmDialog':[{'confirmKey':'value'}]} | Object | 異動條件
 
 ### JSON representation Case 1
 Here is a JSON representation of request.
@@ -36,6 +36,7 @@ Here is a JSON representation of request.
       "jobAgent":"10900015",
       "specialDate":"",
       "isHoliday":false,
+      "isReportFile":false,
       "planeTicket":0,
       "specialDate":"",
       "place":"",
@@ -78,6 +79,7 @@ Here is a JSON representation of request.
 | jobAgent | 10900015 | String | 職務代理人 | N | n/a | 
 | specialDate |  | String | 特殊日期 | N | YYYYmmdd |
 | isHoliday | false | boolean | 是否包含假日 | N | n/a |
+| isReportFile | false | boolean | 是否附證明文件 | N | n/a |
 | planeTicket | 0 | integer | 機票 | N | ticket |
 | place |  | String | 地點 | N | ticket |
 | vacationType |  | String | 請假類別 | N | ticket |
